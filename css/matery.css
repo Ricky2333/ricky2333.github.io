@@ -241,7 +241,15 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    /* background: linear-gradient(to right, #7F7FD5 0%,#86A8E7 50%,#91EAE4 100%); */
+    /* background-image: linear-gradient(to right, #8360c3 0%, #2ebf91 100%); */
+    background-image: linear-gradient(to right, #009FFF 0%, #ec2F4B 100%); /* blue to red */
+    /* background-image: linear-gradient(to right, #FC5C7D 0%, #6A82FB 100%);  */
+    /* background-image: linear-gradient(to right, #FC466B 0%, #3F5EFB 100%); */
+    /* background-image: linear-gradient(to right, #30E8BF 0%, #FF8235 100%); # green to orange */
+    /* background-image: linear-gradient(to right, #3494E6 0%, #EC6EAD 100%);
+    background-image: linear-gradient(to right, #de6161 0%,  #2657eb 100%); */
+    opacity: 0.6;
 }
 
 .text-color {
@@ -595,7 +603,7 @@ header .go-back i {
 
 @-webkit-keyframes rainbow {
 
-    0%,
+    /* 0%,
     100% {
         background: rgba(156, 39, 176, 0.75);
         background: linear-gradient(45deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
@@ -636,12 +644,12 @@ header .go-back i {
         background: linear-gradient(45deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
-    }
+    } */
 }
 
 @keyframes rainbow {
 
-    0%,
+    /* 0%,
     100% {
         background: rgba(156, 39, 176, 0.75);
         background: linear-gradient(45deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
@@ -682,7 +690,7 @@ header .go-back i {
         background: linear-gradient(45deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
-    }
+    } */
 }
 
 .index-card {
