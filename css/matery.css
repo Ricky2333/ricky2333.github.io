@@ -249,7 +249,7 @@ mark {
     /* background-image: linear-gradient(to right, #30E8BF 0%, #FF8235 100%); # green to orange */
     /* background-image: linear-gradient(to right, #3494E6 0%, #EC6EAD 100%);
     background-image: linear-gradient(to right, #de6161 0%,  #2657eb 100%); */
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .text-color {
