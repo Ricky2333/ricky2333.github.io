@@ -243,13 +243,14 @@ mark {
 .bg-color {
     /* background: linear-gradient(to right, #7F7FD5 0%,#86A8E7 50%,#91EAE4 100%); */
     /* background-image: linear-gradient(to right, #8360c3 0%, #2ebf91 100%); */
-    background-image: linear-gradient(to right, #009FFF 0%, #ec2F4B 100%); /* blue to red */
+    background-image: linear-gradient(to right, #009FFF 0%, #ec2F4B 100%); /* blue to red
     /* background-image: linear-gradient(to right, #FC5C7D 0%, #6A82FB 100%);  */
     /* background-image: linear-gradient(to right, #FC466B 0%, #3F5EFB 100%); */
-    /* background-image: linear-gradient(to right, #30E8BF 0%, #FF8235 100%); # green to orange */
-    /* background-image: linear-gradient(to right, #3494E6 0%, #EC6EAD 100%);
-    background-image: linear-gradient(to right, #de6161 0%,  #2657eb 100%); */
-    opacity: 0.5;
+    /* background-image: linear-gradient(to right, #30E8BF 0%, #FF8235 100%); /* green to orange */
+    /* background-image: linear-gradient(to right, #3494E6 0%, #EC6EAD 100%); */
+    /* background-image: linear-gradient(to right, #de6161 0%,  #2657eb 100%); */
+    /* background-image: linear-gradient(to right, #bf30ac 0%, #0f9d58 100%); */
+    opacity: 0.65;
 }
 
 .text-color {
@@ -1097,6 +1098,7 @@ article .article-tags .chip {
 #articleContent a {
     padding: 0 2px;
     color: #42b983;
+    /* color: #009FFF; */
     font-weight: 500;
     text-decoration: underline;
     word-wrap: break-word;
@@ -1147,6 +1149,7 @@ article .article-tags .chip {
     border-collapse: collapse;
     border-spacing: 0;
     overflow: auto;
+    /* background-color: transparent; */
 }
 
 /**
@@ -1161,6 +1164,8 @@ td {
 table tr:nth-child(2n),
 thead {
     background-color: #fafafa;
+    /* background-color: #009FFF; */
+    /* background-color: transparent; */
 }
 
 #articleContent table th {
