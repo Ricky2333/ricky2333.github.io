@@ -352,7 +352,9 @@
 
 
 <script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
 
@@ -527,7 +529,7 @@
                         <a href="/2023/03/26/ubuntu/">
                             <div class="card-image">
                                 
-                                <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Ubuntu">
+                                <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Ubuntu">
                                 
                                 <span class="card-title">Ubuntu</span>
                             </div>
