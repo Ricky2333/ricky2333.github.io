@@ -241,7 +241,6 @@ mark {
 }
 
 .bg-color {
-    /* background: linear-gradient(to right, #7F7FD5 0%,#86A8E7 50%,#91EAE4 100%); */
     /* background-image: linear-gradient(to right, #8360c3 0%, #2ebf91 100%); */
     background-image: linear-gradient(to right, #009FFF 0%, #ec2F4B 100%); /* blue to red
     /* background-image: linear-gradient(to right, #FC5C7D 0%, #6A82FB 100%);  */
@@ -266,7 +265,8 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    /* background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); */
+    background: linear-gradient(to right, #009FFF 0%, #ec2F4B 100%);
     opacity: 0.8;
 }
 
