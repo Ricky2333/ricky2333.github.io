@@ -2,7 +2,7 @@
 /* 修改首页轮播的标题大小 */
 @media only screen and (max-width: 601px) {
     .bg-cover .title {
-        font-size: 2.35rem;
+        font-size: 2.75rem;
     }
 }
 
