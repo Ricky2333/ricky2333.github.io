@@ -170,3 +170,17 @@ $(function () {
     // 初始化加载 tooltipped.
     $('.tooltipped').tooltip();
 });
+
+    //黑夜模式提醒开启功能
+    setTimeout(function () {
+        if (
+          new Date().getHours() >= 19 &&
+          new Date().getHours() < 20 &&
+          !$("#dark-mode").length > 0
+        ) {
+          let toastHTML =
+            '<span style="color:#97b8b2;border-radius: 10px;>' +
+            '<i class="fa fa-bell" aria-hidden="true"></i>晚上使用黑夜模式阅读能够减轻视觉疲劳</span>';
+          M.toast({ html: toastHTML });
+        }
+      }, 2000);

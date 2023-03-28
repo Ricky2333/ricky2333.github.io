@@ -2065,3 +2065,198 @@ footer .copy-right {
     padding: 0;
     margin: 0;
 }
+
+/* 字体颜色变灰白色 */
+#dark-mode .fas,
+#dark-mode .title,
+#dark-mode .row .text,
+#dark-mode article .article-content .summary,
+#dark-mode .card .card-image .card-title,
+#dark-mode .fa-moon-o:before,
+#dark-mode .fa-lightbulb-o:before,
+#dark-mode article .article-tags .chip,
+#dark-mode .chip-container .tag-title,
+#dark-mode div.jqcloud a,
+#dark-mode .friends-container .tag-title,
+#dark-mode .frind-ship .title h1,
+#dark-mode .card .card-content p,
+#dark-mode .card .card-content .dss,
+#dark-mode .v[data-class="v"] .vcount,
+#dark-mode .v[data-class="v"] .vcount .vnum,
+#dark-mode pre code,
+#dark-mode h1,
+#dark-mode h2,
+#dark-mode h3,
+#dark-mode h4,
+#dark-mode h5,
+#dark-mode h6,
+#dark-mode li,
+#dark-mode p,
+#dark-mode header .side-nav .mobile-head .logo-name,
+#dark-mode header .side-nav .mobile-head .logo-desc,
+#dark-mode header .side-nav .menu-list a,
+#dark-mode .bg-cover .post-title,
+#dark-mode .search-input,
+#dark-mode.read .bg-cover .description {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* 背景颜色变灰色 */
+#dark-mode .card,
+#dark-mode .block-with-text:after {
+  background-color: #282c34;
+}
+
+/* 背景颜色变黑色 */
+#dark-mode,
+#dark-mode .v[data-class="v"] .vcount,
+#dark-mode #rewardModal .modal-content,
+#dark-mode .modal,
+#dark-mode header .side-nav,
+#dark-mode header .side-nav .menu-list .m-nav-show {
+  background-color: #12121c;
+}
+
+/* 改变透明度 */
+#dark-mode .aplayer {
+  background: #2f3742 !important;
+}
+
+#dark-mode img,
+#dark-mode strong {
+  filter: brightness(0.7);
+}
+
+/* 统计图滤镜 */
+#dark-mode #post-calendar,
+#dark-mode #category-radar,
+#dark-mode #tags-chart,
+#dark-mode #categories-chart,
+#dark-mode #posts-chart {
+  filter: invert(1);
+}
+
+/*toc目录滤镜*/
+#dark-mode .toc-widget {
+  filter: invert(0.8);
+}
+
+#dark-mode .toc-widget .toc-list-item {
+  color: #000;
+}
+
+/* Skill bar text color */
+#dark-mode .skillbar .skill-bar-percent {
+  color: #000;
+}
+
+#dark-mode table,
+#dark-mode table tr,
+#dark-mode table th,
+#dark-mode table td {
+    border: none;
+}
+
+#dark-mode table th {
+    background: #282c34;
+}
+
+#dark-mode table tr {
+    background: #606266;
+    color: rgb(243, 244, 246);
+}
+
+#dark-mode table tbody tr:nth-child(odd) td {
+    background: #282c34;
+}
+
+/* 黑夜模式动画 */
+@-webkit-keyframes CuteenPlanetMove {
+    0% {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes CuteenPlanetMove {
+    0% {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .Cuteen_DarkSky,
+  .Cuteen_DarkSky:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 8888;
+  }
+  
+  .Cuteen_DarkSky {
+    background: linear-gradient(#feb8b0, #fef9db);
+  }
+  
+  .Cuteen_DarkSky:before {
+    transition: 2s ease all;
+    opacity: 0;
+    background: linear-gradient(#4c3f6d, #6c62bb, #93b1ed);
+  }
+  
+  #dark-mode .Cuteen_DarkSky:before {
+    opacity: 1;
+  }
+  
+  .Cuteen_DarkPlanet {
+    z-index: 9999;
+    position: fixed;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    -webkit-animation: CuteenPlanetMove 2s cubic-bezier(0.7, 0, 0, 1);
+    animation: CuteenPlanetMove 2s cubic-bezier(0.7, 0, 0, 1);
+    transform-origin: center bottom;
+  }
+  
+  .Cuteen_DarkPlanet:after {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    content: "";
+    background: linear-gradient(#fefefe, #fffbe8);
+  }
+  
+  /*黑夜模式按钮*/
+  .sum-moon-box {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 15px;
+    bottom: 195px;
+    margin-bottom: 0;
+    z-index: 900;
+  }
+  
+  .sum-moon-box .btn-floating {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .sum-moon-box i {
+    font-size: 1.8rem;
+    line-height: 48px !important;
+  }
+  
