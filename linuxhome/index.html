@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+    <title>Rickyの水果摊</title>
+    <meta name="description"
+        content="欢迎来到Rickyの水果摊🍉">
+    <meta name="keywords" content="CodeCheng个人主页,前端,JAVA">
+    <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
+    <link rel="stylesheet" type="text/css" href="./css/flesx.css">
+    <link rel="shortcut icon" href="https://codecheng-1305009997.cos.ap-chengdu.myqcloud.com/img/20210501222811.webp">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+</head>
+
+<body>
+    <div id="box">
+        <!-- 个人资料卡片 -->
+        <div class="meBox">
+            <!-- 头像 -->
+            <div class="headPhoto"></div>
+            <!-- 介绍 -->
+            <div class="meBox-title">
+                <p> Rickyの水果摊</p>
+                <div class="fg"></div>
+            </div>
+            <div class="meBox-text">
+                <p>梦想是开水果摊</p>
+                <p>CSer | AIer 🧑🏻‍💻</p>
+                <p>乒乓爱好者 🏓️</p>
+                <p></p>
+            </div>
+            <!-- 两个按钮 -->
+            <div class="meBox-Button">
+                <a href="https://rickyxcoder.top">个人博客 🚀</a>
+                <a href="https://github.com/Ricky2333">GitHub 🖥</a>
+            </div>
+        </div>
+
+        <!-- 伪终端介绍 -->
+        <div id="cmdBox">
+            <!-- 第一个终端 -->
+            <div class="cmd">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>Rickyの水果摊 - bash</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                   
+                    <span style="color: rgb(0, 190, 0);">root@rickyxcoder</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">cat ./me.txt</span>
+                    <p>昵称：Ricky X</p>
+                    <p>年龄：00后</p>
+                    <p>邮箱：rickyxlearner@qq.com</p>
+                    <p>专业：计算机科学与技术</p>
+                    <span style="color: rgb(0, 190, 0);">root@rickyxcoder</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">sudo rm -rf ./过去的自己/*</span>
+                    <p>sudo: 请输入密码: *******</p>
+                    <p>bash:  请再次确认是否删除，您准备好了吗？(y/n) </p>
+                    <span style="color: rgb(0, 190, 0);">root@rickyxcoder</span>
+                    <span style="color: blue;">~ y<span id="Y"></span></span>
+                </div>
+            </div>
+            <!-- 第二个终端 -->
+            <div class="cmd cmd2">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>codecheng- bash</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">root@rickyxcoder</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./links.sh</span>
+                    <p>我的站点：</p>
+                    <ul class="ul">
+                        <li><a href="https://rickyxcoder.top/">个人博客网站</a></li>
+                        <li><a href="https://blog.csdn.net/qq_46025844?type=blog">CSDN</a></li>
+                    </ul>
+                    <span style="color: rgb(0, 190, 0);">root@rickyxcoder</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./yiyan.sh</span>
+                    <p class="hito">踏足其中,云开雾散.</p>
+                    <span style="color: rgb(0, 190, 0);">root@rickyxcoder</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./ip.sh</span>
+                    <p class="getip"></p>
+                    <span style="color: rgb(0, 190, 0);">root@rickyxcoder</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./autoPlayer.sh</span>
+					<p>[autoPlayer]正在加载，请稍后...</p>
+						<div class="aplayer" data-id="31877628" data-server="netease" data-type="song" mini="true" data-volume="0.35"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚内容 -->
+
+    <script src="https://v1.hitokoto.cn/?encode=js&select=.hito" defer></script>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script type="text/javascript">(function getip(selector){var ip="你的 IP: "+returnCitySN["cip"];var ele=document.querySelector(selector);Array.isArray(ele)?ele[0].innerText=ip:ele.innerText=ip;})('.getip')</script>
+	<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>	<!-- 360站长平台自动提交 -->
+	<script>
+	(function(){
+	var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+	document.write('<script src="' + src + '" id="sozz"><\/script>');
+	})();
+	</script>
+</body>
+
+</html>
