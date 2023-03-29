@@ -46,8 +46,8 @@ function buble () {
             var t = document.createElement("canvas");
             t.id = "canvas";
             t.style.top = 0;
-            t.style.left = 0
-            t.style.right = 0
+            t.style.left = 0;
+            t.style.right = 0;
             t.style.zIndex = 0;
             t.style.position = "absolute";
   

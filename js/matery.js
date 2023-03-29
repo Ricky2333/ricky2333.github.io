@@ -182,7 +182,7 @@ setTimeout(function () {
     ) {
         let toastHTML =
         '<span style="color:#97b8b2;border-radius: 10px;>' +
-        '<i class="fa fa-bell" aria-hidden="true"></i>来自摊主的温馨提示：晚上使用黑夜模式会缓解视觉疲劳哦～</span>';
+        '<i class="fa fa-bell" aria-hidden="true"></i>摊主提醒您：晚上使用黑夜模式会缓解视觉疲劳哦～</span>';
         M.toast({ html: toastHTML });
     }
     }, 2000);
