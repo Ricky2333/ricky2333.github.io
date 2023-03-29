@@ -146,7 +146,6 @@ $(function () {
         }
     }
 
-    	
 	$(".nav-menu>li").hover(function(){
 		$(this).children('ul').stop(true,true).show();
 		 $(this).addClass('nav-show').siblings('li').removeClass('nav-show');
@@ -171,16 +170,19 @@ $(function () {
     $('.tooltipped').tooltip();
 });
 
-    //黑夜模式提醒开启功能
-    setTimeout(function () {
-        if (
-          new Date().getHours() >= 19 &&
-          new Date().getHours() < 20 &&
-          !$("#dark-mode").length > 0
-        ) {
-          let toastHTML =
-            '<span style="color:#97b8b2;border-radius: 10px;>' +
-            '<i class="fa fa-bell" aria-hidden="true"></i>晚上使用黑夜模式阅读能够减轻视觉疲劳</span>';
-          M.toast({ html: toastHTML });
-        }
-      }, 2000);
+//黑夜模式提醒开启功能
+setTimeout(function () {
+    if (
+        new Date().getHours() >= 19 &&
+        new Date().getHours() < 24 &&
+        !$("#dark-mode").length > 0 || 
+        new Date().getHours() >= 0 &&
+        new Date().getHours() < 5 &&
+        !$("#dark-mode").length > 0
+    ) {
+        let toastHTML =
+        '<span style="color:#97b8b2;border-radius: 10px;>' +
+        '<i class="fa fa-bell" aria-hidden="true"></i>来自摊主的温馨提示：晚上使用黑夜模式会缓解视觉疲劳哦～</span>';
+        M.toast({ html: toastHTML });
+    }
+    }, 2000);

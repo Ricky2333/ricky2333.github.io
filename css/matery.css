@@ -1242,6 +1242,7 @@ thead {
     z-index: 0;
 }
 
+
 .chip-container .chip:hover {
     color: #fff;
     /* background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important; */
@@ -2068,6 +2069,8 @@ footer .copy-right {
     margin: 0;
 }
 
+
+/* 黑夜-白天模式转换 */
 /* 字体颜色变灰白色 */
 #dark-mode .fas,
 #dark-mode .title,
@@ -2251,7 +2254,7 @@ footer .copy-right {
     margin-bottom: 0;
     z-index: 900;
   }
-  
+
   .sum-moon-box .btn-floating {
     width: 48px;
     height: 48px;
@@ -2262,6 +2265,7 @@ footer .copy-right {
     line-height: 48px !important;
   }
   
+
 
   /* 滚动条 */
 ::-webkit-scrollbar {
