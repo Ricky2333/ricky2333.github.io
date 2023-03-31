@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Linux命令行大全｜读书笔记</title>
+      <link href="/2023/03/31/linux-ming-ling-xing-da-quan-du-shu-bi-ji/"/>
+      <url>/2023/03/31/linux-ming-ling-xing-da-quan-du-shu-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Book-Notes-The-Linux-Command-Line-Chapter-5"><a href="#Book-Notes-The-Linux-Command-Line-Chapter-5" class="headerlink" title="Book Notes: The Linux Command Line - Chapter 5"></a>Book Notes: The Linux Command Line - Chapter 5</h1><hr><h2 id="About-this-Book-📚"><a href="#About-this-Book-📚" class="headerlink" title="About this Book 📚"></a>About this Book 📚</h2><p><strong>Name</strong>: <em>The Linux Command Line</em></p><p><strong>Author</strong>: William E. Shotts</p><p><strong>Publisher</strong>: No Starch Press</p><p><strong>Cover</strong>:</p><p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/51kjjarKXBL._SX376_BO1,204,203,200_.jpg" alt="The Linux Command Line"></p><p><strong>Translation Version:</strong></p><p><img src="https://img2.doubanio.com/view/subject/l/public/s27318531.jpg" alt="Linux命令行大全"></p><hr><h2 id="Notes-✍️"><a href="#Notes-✍️" class="headerlink" title="Notes ✍️"></a>Notes ✍️</h2><h3 id="4-Types-of-Commands"><a href="#4-Types-of-Commands" class="headerlink" title="4 Types of Commands"></a>4 Types of Commands</h3><ul><li><strong>An executable program</strong><ul><li>All files we saw in <code>/usr/bin</code> are executable programs. Within this category, programs can be <em><strong>compiled binaries</strong></em> such as programs written in C and C++, or programs written in scripting languages such as the shell, Perl, Python, Ruby, and so on.</li></ul></li><li><strong>A built-in command</strong><ul><li>A command <em><strong>built into the shell itself</strong></em>. <code>bash</code> supports a number of commands internally called <em>shell builtins</em>. The <code>cd</code> command, for example, is a shell builtin.</li></ul></li><li><strong>A shell function</strong><ul><li>Shell functions are miniature shell scripts incorporated into the environment.</li></ul></li><li><strong>An alias</strong><ul><li>Aliases are commands that we can <em><strong>define by ourselves</strong></em>, built from other commands.</li></ul></li></ul><h3 id="Commands-of-Chapter-5"><a href="#Commands-of-Chapter-5" class="headerlink" title="Commands of Chapter 5"></a>Commands of Chapter 5</h3><ul><li><p><code>type</code></p><ul><li>Display information about command type</li><li>Examples<ul><li><code>type ls</code></li><li><code>type cd</code></li><li><code>type mv</code></li></ul></li></ul></li><li><p><code>which</code></p><ul><li>Display an Executeable’s Location</li><li>Examples<ul><li><code>which ls</code></li><li><code>which cp</code></li></ul></li></ul></li><li><p><code>help</code></p><ul><li>Display information about built-in commands</li><li>Examples<ul><li><code>help cd</code></li></ul></li></ul></li><li><p><code>--help</code></p><ul><li>Display a description of the command’s supported syntax and options</li><li>Examples<ul><li><code>mkdir --help</code></li><li><code>mv --help</code></li></ul></li></ul></li><li><p><code>man</code> </p><ul><li>Display a program’s mannual page</li><li>Examples<ul><li><code>man mv</code></li></ul></li></ul></li><li><p><code>whatis</code></p><ul><li>Display one-line manual page descriptions<ul><li><code>whatis mv</code></li><li><code>whatis cp</code></li></ul></li></ul></li><li><p><code>alias</code></p><ul><li>Create an alias for a command</li><li>🍉 PS: The <code>alias</code> commands disappear when shell session ends, but we will learn how to store them for future use in later chapters.</li></ul></li></ul><hr><h2 id="Lab-🧑🏻‍💻"><a href="#Lab-🧑🏻‍💻" class="headerlink" title="Lab 🧑🏻‍💻"></a>Lab 🧑🏻‍💻</h2><h3 id="Why-Labs"><a href="#Why-Labs" class="headerlink" title="Why Labs ?"></a>Why Labs ?</h3><p>Lab provides <strong>a hands-on learning experience</strong> that allows us <strong>to apply theoretical knowledge to practical situations</strong>. This helps us to better understand concepts and retain information more effectively.</p><h3 id="Lab1"><a href="#Lab1" class="headerlink" title="Lab1"></a>Lab1</h3><blockquote><p>use <code>type</code> , <code>which</code>, <code>help</code>, <code>whatis</code>, <code>man</code> to check fundamental commands</p></blockquote><ul><li><code>pwd</code></li><li><code>cd</code></li><li><code>ls</code></li><li><code>mkdir</code></li><li><code>cp</code></li><li><code>mv</code></li><li><code>rm</code></li><li><code>less</code></li><li><code>file</code></li></ul><hr><h3 id="Lab2"><a href="#Lab2" class="headerlink" title="Lab2"></a>Lab2</h3><p><strong>Prerequisites</strong></p><blockquote><p> Try using <code>;</code> to write commands in 1 line</p></blockquote><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span><span class="token punctuation">;</span> <span class="token builtin class-name">cd</span> Desktop<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><strong>Task</strong></p><blockquote><p>Use <code>alias</code> to change current directory to <code>Desktop</code></p></blockquote><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">type</span> cdd <span class="token comment"># check if 'cdd' is used</span><span class="token builtin class-name">alias</span> <span class="token assign-left variable">cdd</span><span class="token operator">=</span><span class="token string">'cd; cd Desktop;'</span> <span class="token comment"># if not, assgin these command lines to 'cdd'</span>cdd <span class="token comment"># use this command</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 英文读书笔记 </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>信息奥赛实训报告｜STL</title>
       <link href="/2023/03/26/xin-xi-ao-sai-shi-xun-bao-gao-stl/"/>
       <url>/2023/03/26/xin-xi-ao-sai-shi-xun-bao-gao-stl/</url>
