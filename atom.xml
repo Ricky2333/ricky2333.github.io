@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-01T06:56:10.441Z</updated>
+  <updated>2023-04-04T06:11:13.609Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,49 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python学习笔记｜List</title>
+    <link href="https://ricky2333.github.io/2023/04/02/python-xue-xi-bi-ji-list/"/>
+    <id>https://ricky2333.github.io/2023/04/02/python-xue-xi-bi-ji-list/</id>
+    <published>2023-04-02T06:34:40.000Z</published>
+    <updated>2023-04-04T06:11:13.609Z</updated>
+    
+    
+    
+    
+    <category term="Python基础" scheme="https://ricky2333.github.io/categories/Python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    
+    <category term="学习笔记" scheme="https://ricky2333.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛题解｜爬楼梯</title>
+    <link href="https://ricky2333.github.io/2023/04/01/pa-lou-ti-xin-xi-ao-sai-ti-jie/"/>
+    <id>https://ricky2333.github.io/2023/04/01/pa-lou-ti-xin-xi-ao-sai-ti-jie/</id>
+    <published>2023-04-01T12:58:07.000Z</published>
+    <updated>2023-04-01T13:00:28.233Z</updated>
+    
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux命令行大全｜读书笔记</title>
     <link href="https://ricky2333.github.io/2023/03/31/linux-ming-ling-xing-da-quan-du-shu-bi-ji/"/>
     <id>https://ricky2333.github.io/2023/03/31/linux-ming-ling-xing-da-quan-du-shu-bi-ji/</id>
     <published>2023-03-31T13:17:20.000Z</published>
-    <updated>2023-04-01T06:56:10.441Z</updated>
+    <updated>2023-04-01T07:39:02.087Z</updated>
     
     
       
