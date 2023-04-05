@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="信息奥赛题解｜爬楼梯, Rickyの水果摊">
+    <meta name="keywords" content="嵌入式系统｜期末指北, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信息奥赛题解｜爬楼梯 | Rickyの水果摊</title>
+    <title>嵌入式系统｜期末指北 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -483,12 +483,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信息奥赛题解｜爬楼梯</h1>
+                    <h1 class="description center-align post-title">嵌入式系统｜期末指北</h1>
                 </div>
             </div>
         </div>
@@ -609,16 +609,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                                <span class="chip bg-color">信息奥赛</span>
+                            <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/">
+                                <span class="chip bg-color">嵌入式系统</span>
                             </a>
                         
-                            <a href="/tags/C/">
-                                <span class="chip bg-color">C++</span>
+                            <a href="/tags/%E6%9C%9F%E6%9C%AB%E6%8C%87%E5%8C%97/">
+                                <span class="chip bg-color">期末指北</span>
                             </a>
                         
-                            <a href="/tags/%E9%80%92%E6%8E%A8/">
-                                <span class="chip bg-color">递推</span>
+                            <a href="/tags/ChatGPT/">
+                                <span class="chip bg-color">ChatGPT</span>
                             </a>
                         
                     </div>
@@ -629,8 +629,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
-                                信息奥赛题解
+                            <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/" class="post-category">
+                                嵌入式系统
                             </a>
                         
                     </div>
@@ -642,7 +642,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-01
+                    2023-04-05
                 </div>
                 
 
@@ -651,14 +651,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    804
+                    4.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    17 分
                 </div>
                 
 
@@ -681,63 +681,342 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<h1 id="信息奥赛题解｜爬楼梯"><a href="#信息奥赛题解｜爬楼梯" class="headerlink" title="信息奥赛题解｜爬楼梯"></a>信息奥赛题解｜爬楼梯</h1><hr>
-<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>树老师爬楼梯，他可以每次走 $1$ 级或者 $2$ 级，输入楼梯的级数，求不同的走法数。</p>
-<p>例如：楼梯一共有 $3$ 级，他可以每次都走一级，或者第一次走一级，第二次走两级，也可以第一次走两级，第二次走一级，一共 $3$ 种方法。</p>
-<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>输入包含若干行，每行包含一个正整数 $N$，代表楼梯级数，$1≤N≤30$。</p>
-<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>不同的走法数，每一行输入对应一行输出。</p>
-<h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span>
-<span class="token number">8</span>
-<span class="token number">10</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">8</span>
-<span class="token number">34</span>
-<span class="token number">89</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1204">http://ybt.ssoier.cn:8088/problem_show.php?pid=1204</a></p>
+                <h1 id="期末指北——嵌入式系统（feat-ChatGPT）"><a href="#期末指北——嵌入式系统（feat-ChatGPT）" class="headerlink" title="期末指北——嵌入式系统（feat. ChatGPT）"></a>期末指北——嵌入式系统（feat. ChatGPT）</h1><p><img src="http://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-164338.png" alt="嵌入式系统｜期末指北"></p>
+<h2 id="写在最前-✍️"><a href="#写在最前-✍️" class="headerlink" title="写在最前 ✍️"></a>写在最前 ✍️</h2><p>本文摘录了一些 《嵌入式系统》课程的 <strong>常见选择题</strong>，供有需求的同学们学习使用。</p>
+<p>部分答案解析由 <strong>ChatGPT</strong> 生成，摊主进行审核。</p>
+<p><strong>教材版本</strong>：《嵌入式系统设计与应用——基于 ARM Cortex-A8 和 Linux（第二版）》</p>
 <hr>
-<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>爬楼梯问题也是 <strong>递推思想</strong> 的典型体现。</p>
-<p>我们可以把走到第 <code>i</code> 级楼梯的方案数 <code>f[i]</code>  看成 <strong>一个集合</strong>，由「最后一步走 1 级楼梯的方案数 <code>f[i-1]</code> 」和 「最后一步走 2 级楼梯的方案数 <code>f[i-2]</code> 」这 <strong>两个子集</strong> 构成。</p>
-<p>比如走到第 <code>5</code> 级楼梯的方案数 <code>f[5]</code> ，按照最后一步走的级数可以分为以下两个子集：</p>
+<h2 id="题目概览-🧑🏻‍💻"><a href="#题目概览-🧑🏻‍💻" class="headerlink" title="题目概览 🧑🏻‍💻"></a>题目概览 🧑🏻‍💻</h2><p><strong>1、下面关于哈佛结构描述正确的是（ ）</strong> </p>
+<p>A、程序存储空间与数据存储空间分离 </p>
+<p>B、存储空间与 IO 空间分离 </p>
+<p>C、程序存储空间与数据存储空间合并 </p>
+<p>D、存储空间与 IO 空间合并</p>
+<br>
+
+<p><strong>2、关于ARM处理器的工作模式，以下说法错误的是（ ）</strong></p>
+<p>A、用户模式是程序正常执行的工作模式 </p>
+<p>B、管理模式负责处理存储器故障，实现虚拟存储器和存储器的保护 </p>
+<p>C、系统模式运行特权级的操作系统任务 </p>
+<p>D、当处理器处于用户模式时，如果没有异常发生是不能改变工作模式的 </p>
+<br>
+
+<p><strong>3、存储一个 32 位数 0x2168465 到 2000H~2003H 四个字节单元中，若以小端模式存储，则 2000H 存储单元内容为（ ）</strong></p>
+<p>A、 0x21 B、 0x68 C、0x65 D、0x02 </p>
+<br>
+
+<p><strong>4、下面关于 ARM 处理器的体系结构描述哪一个是错误的（ ）</strong> </p>
+<p>A、三地址指令格式 </p>
+<p>B、所有的指令都是单周期执行 </p>
+<p>C、指令长度固定 </p>
+<p>D、Load-Store结构</p>
+<br>
+
+<p><strong>5、ARM 指令集和 Thumb 指令集分别是（ ）位的。</strong> </p>
+<p>A、8 位，16 位 </p>
+<p>B、16 位，32 位 </p>
+<p>C、16 位，16 位 </p>
+<p>D、32 位，16 位 </p>
+<br>
+
+<p><strong>6、ARM Cortex A8的工作状态包括（ ）。</strong></p>
+<p>A、测试状态和运行状态 </p>
+<p>B、挂起状态和就绪状态 </p>
+<p>C、就绪状态和运行状态 </p>
+<p>D、ARM状态和Thumb状态 </p>
+<br>
+
+<p><strong>7、对于 ARM7 三级流水线，当一条指令被译码时，下一条指令正被（ ）</strong></p>
+<p>A、取指</p>
+<p>B、译码</p>
+<p>C、PC值递增</p>
+<p>D、执行</p>
+<br>
+
+<p><strong>8、复位后，ARM处理器处于（ ）模式</strong></p>
+<p>A. USER</p>
+<p>B. SVC</p>
+<p>C. SYSTEM</p>
+<p>D. ARM</p>
+<br>
+
+<p><strong>9、寄存器 R13 除可做通用寄存器外，还可以做（ ）</strong> </p>
+<p>A、程序计数器 B、链接寄存器 C、栈指针寄存器 D、基址寄存器</p>
+<br>
+
+<p><strong>10、在下列ARM处理器的各种模式中，只有（ ）模式不可以自由地改变处理器的工作模式</strong></p>
+<p>A、用户模式</p>
+<p>B、系统模式</p>
+<p>C、终止模式</p>
+<p>D、中断模式 </p>
+<br>
+
+<p><strong>11、0x17 &amp; 0x1A 的运算结果是（ ）</strong></p>
+<p>A、<code>0x01</code></p>
+<p>B、<code>0x11</code></p>
+<p>C、<code>0x17</code></p>
+<p>D、<code>0x12</code></p>
+<br>
+
+<p><strong>12、对寄存器 R1 的内容乘以 4 的正确指令是（）</strong></p>
+<p>A. <code>LSR R1, #2</code></p>
+<p>B. <code>LSL R1, #2</code></p>
+<p>C. <code>MOV R1, R1, LSL #2</code></p>
+<p>D. <code>MOV R1, R1, LSR #2</code></p>
+<br>
+
+<p><strong>13、MOV R1, #0x1000 LDR R0, [R1], #4 执行上述指令序列后，R1 寄存器的值是（ ）</strong></p>
+<p>A. <code>0x1000</code></p>
+<p>B. <code>0x1004</code></p>
+<p>C. <code>0x0FFC</code></p>
+<p>D. <code>0x4</code></p>
+<br>
+
+<p><strong>14、R0=0x05, 执行BIC R0,R0,#3的运算后，R0结果是（ ）</strong></p>
+<p>A. <code>0x02</code></p>
+<p>B. <code>0x03</code></p>
+<p>C. <code>0x04</code></p>
+<p>D. <code>0x05</code> </p>
+<br>
+
+<p><strong>15、GET伪指令的含义是（ ）</strong></p>
+<p>A. 包含一个外部文件</p>
+<p>B. 定义程序的入口</p>
+<p>C. 定义一个宏</p>
+<p>D. 声明一个变量</p>
+<br>
+
+<p><strong>16、若 R1 = 2000H，（2000H）= 0x86，（2008H）= 0x39 ，则执行指令 LDR R0，[R1,#8]! 后 R0 的值为（ ）</strong></p>
+<p>A. <code>0x2000</code></p>
+<p>B. <code>0x86</code></p>
+<p>C. <code>0x2008</code></p>
+<p>D. <code>0x39</code></p>
+<br>
+
+<p><strong>17、将 ARM 处理器 R0 中的一个字节的数据，存入由 R1+4 指示的内存区域,且地址自动更新,则使用的 ARM 指令是（ ）</strong></p>
+<p>A. <code>STR R0,［R1,#4]</code></p>
+<p>B. <code>STRH R0,［R1，＃4]!</code></p>
+<p>C. <code>STRH R0，[R1,＃4]</code></p>
+<p>D. <code>STRB R0,[R1，#4]!</code></p>
+<br>
+
+<h2 id="答案解析-✍️"><a href="#答案解析-✍️" class="headerlink" title="答案解析 ✍️"></a>答案解析 ✍️</h2><p><strong>1、下面关于哈佛结构描述正确的是（ ）</strong> </p>
+<p>A、程序存储空间与数据存储空间分离</p>
+<p>B、存储空间与 IO 空间分离 </p>
+<p>C、程序存储空间与数据存储空间合并 </p>
+<p>D、存储空间与 IO 空间合并</p>
+<p><strong>【参考答案】</strong> A</p>
+<p><strong>【ChatGPT 解析】</strong></p>
+<p><strong>哈佛结构</strong> 是指在计算机体系结构中，将 <strong>「指令存储器（程序存储空间）与数据存储器」</strong> 分离的结构。在哈佛结构中，指令和数据存储器使用不同的总线和不同的物理存储器，这种结构可以提高数据存取的效率，因为指令和数据可以并行地访问。</p>
+<p>而存储空间与IO空间分离，是指在计算机体系结构中，将存储器和IO接口分离的结构。在这种结构中，存储器和IO设备使用不同的总线和不同的物理接口，以实现相互独立的访问。这种结构可以提高计算机系统的稳定性和可靠性，同时也方便了硬件和软件的设计和维护。</p>
+<p>和哈佛结构类似，存储空间与IO空间分离的结构也可以提高访问效率，因为存储器和IO设备可以并行地访问。但是这两者的分离方式不同，哈佛结构分离的是指令存储器和数据存储器，而存储空间与IO空间分离的结构分离的是存储器和IO接口。</p>
+<p>因此，选项A描述的是哈佛结构的特点，程序存储空间和数据存储空间是分离的，选项B、C、D均不符合哈佛结构的定义。</p>
+<br>
+
+<p><strong>2、关于ARM处理器的工作模式，以下说法错误的是（ ）</strong></p>
+<p>A、用户模式是程序正常执行的工作模式 </p>
+<p>B、管理模式负责处理存储器故障，实现虚拟存储器和存储器的保护 </p>
+<p>C、系统模式运行特权级的操作系统任务 </p>
+<p>D、当处理器处于用户模式时，如果没有异常发生是不能改变工作模式的 </p>
+<p><strong>【参考答案】</strong> B</p>
+<p><strong>【ChatGPT 解析】</strong></p>
+<p>B、<strong>管理模式</strong> 也称为特权模式，用于处理特殊的系统操作，如中断、异常、操作系统的内核代码等。</p>
+<p>但是 <strong>管理模式并不负责处理存储器故障</strong> ，这是由 <strong>数据访问中止模式</strong> 负责的。</p>
+<p>A、<strong>用户模式是程序正常执行的工作模式</strong>，ARM处理器在用户模式下执行应用程序，访问受限的系统资源和寄存器，并且无法直接执行特权指令。如果应用程序试图执行特权指令或访问受限的资源，会导致异常发生，处理器会切换到异常模式。</p>
+<p>C、<strong>系统模式也是一种特权模式</strong>，用于运行特权级别的操作系统任务。在系统模式下，操作系统可以执行特权指令，访问所有资源和寄存器，并且可以进行特权级别的操作，如任务切换、内存管理等。</p>
+<p>D、该选项略有争议，但是按照教材P27、P28的内容，并且对比 B 选项，该选项也算正确。</p>
+<br>
+
+<p><strong>3、存储一个 32 位数 0x2168465 到 2000H~2003H 四个字节单元中，若以小端模式存储，则 2000H 存储单元内容为（ ）</strong></p>
+<p>A、 0x21 B、 0x68 C、0x65 D、0x02</p>
+<p><strong>【参考答案】</strong> C</p>
+<p><strong>【摊主解析】</strong></p>
+<p>大端/小端模式是重点知识，可以把小端模式按照下图中「<strong>倒车入库</strong>」的方式理解，就会容易很多了。</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-164350.png" alt="大端/小端记忆方式"></p>
+<br>
+
+<p><strong>4、下面关于 ARM 处理器的体系结构描述哪一个是错误的（ ）</strong> </p>
+<p>A、三地址指令格式 </p>
+<p>B、所有的指令都是单周期执行 </p>
+<p>C、指令长度固定 </p>
+<p>D、Load-Store结构</p>
+<p><strong>【参考答案】</strong> B</p>
+<p><strong>【ChatGPT 解析】</strong></p>
+<p>ARM处理器的指令集体系结构（ISA）采用的是 RISC（Reduced Instruction Set Computing）架构，以精简的指令集为基础，支持高效的指令流水线执行。</p>
+<p>B、<strong>并非所有的ARM指令都是单周期执行的</strong>。由于指令的复杂度不同，一些指令需要多个时钟周期才能完成执行。ARM处理器为了保持高效性，采用了流水线执行的方式，可以在一个时钟周期内执行多个指令的不同阶段。但是，在某些情况下，由于数据相关性或控制相关性等因素，可能需要中断流水线执行，从而导致指令执行的延迟。</p>
+<p>A、ARM 指令集采用三地址指令格式，即一个指令可以同时操作三个操作数（源操作数1、源操作数2 和 目的操作数）。</p>
+<p>C、该选项略有争议，指令长度方面，ARM处理器采用变长指令长度的方式，指令长度可以是 2 字节或 4 字节，以满足不同的应用需求。这里的固定可能是指 指令长度要么是 2 字节或 4 字节。（本题在一些搜题软件上的答案也是B）</p>
+<p>D、Load-Store 结构则是 ARM 处理器的一种常见的指令执行方式，即只有 Load 和 Store 指令才能访问存储器中的数据，其他指令只能通过寄存器来操作数据，这样可以提高存储器的访问效率。</p>
+<br>
+
+<p><strong>5、ARM 指令集和 Thumb 指令集分别是（ ）位的。</strong> </p>
+<p>A、8 位，16 位 </p>
+<p>B、16 位，32 位 </p>
+<p>C、16 位，16 位 </p>
+<p>D、32 位，16 位 </p>
+<p><strong>【参考答案】</strong> D</p>
+<p><strong>【ChatGPT解析】</strong></p>
+<p>ARM 指令集和 Thumb 指令集分别是 32 位和 16 位的。</p>
+<p>ARM指令集具有更强的功能和灵活性，而Thumb指令集则具有更小的指令长度和更高的代码密度，可以在节省存储空间和提高执行速度之间做出平衡。</p>
+<p>在 ARMv7 指令集中，还有一种指令集，称为 Thumb-2，它既支持 16 位指令，又支持 32 位指令，可以在需要时灵活地切换使用。</p>
+<br>
+
+<p><strong>6、ARM Cortex A8的工作状态包括（ ）。</strong></p>
+<p>A、测试状态和运行状态 </p>
+<p>B、挂起状态和就绪状态 </p>
+<p>C、就绪状态和运行状态 </p>
+<p>D、ARM状态和Thumb状态</p>
+<p><strong>【参考答案】</strong> D</p>
+<p><strong>【ChatGPT解析】</strong></p>
+<p>ARM Cortex A8是一款基于 ARMv7 架构的处理器，<strong>支持 ARM 状态和 Thumb 状态两种工作状态</strong>。</p>
+<p>在 ARM 状态下，处理器执行 32 位的 ARM 指令，提供较高的性能和复杂度；在 Thumb 状态下，处理器执行 16 位的Thumb指令，提供较高的代码密度和低功耗。处理器可以在 ARM 状态和 Thumb 状态之间切换，以根据应用程序的需求来平衡性能和功耗。</p>
+<p>除了ARM状态和Thumb状态，处理器还支持一些特殊状态，如 Jazelle 状态和 ThumbEE 状态。在 Jazelle 状态下，处理器执行 Java 字节码，用于支持 Java 虚拟机（JVM）和Just-In-Time（JIT）编译器。在 ThumbEE 状态下，处理器执行基于Thumb指令的执行环境（TEE），用于安全应用程序的运行。</p>
+<br>
+
+<p><strong>7、对于 ARM7 三级流水线，当一条指令被译码时，下一条指令正被（ ）</strong></p>
+<p>A、取指</p>
+<p>B、译码</p>
+<p>C、PC值递增</p>
+<p>D、执行</p>
+<p><strong>【参考答案】</strong> A</p>
+<p><strong>【摊主解析】</strong></p>
+<p>理想的 ARM7 的流水线由三个阶段组成，分别是取指、译码和执行。如下图所示：</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-164351.png" alt="三级流水指令"></p>
+<p>可以看到，当前指令正在被译码时，下一条指令已经被取指，等待进入译码阶段。这样可以充分利用处理器的性能，提高指令的执行效率。</p>
+<br>
+
+<p><strong>8、复位后，ARM处理器处于（ ）模式</strong></p>
+<p>A. USER</p>
+<p>B. SVC</p>
+<p>C. SYSTEM</p>
+<p>D. ARM</p>
+<p><strong>【参考答案】</strong> B</p>
+<p><strong>【摊主解析】</strong></p>
+<p>根据教材 P27 页表格，复位后，ARM 处理器位于 <strong>管理模式</strong>（Supervisor，SVC）</p>
+<br>
+
+<p><strong>9、寄存器 R13 除可做通用寄存器外，还可以做（ ）</strong> </p>
+<p>A、程序计数器 B、链接寄存器 C、栈指针寄存器 D、基址寄存器</p>
+<p><strong>【参考答案】</strong> C</p>
+<p><strong>【ChatGPT解析】</strong></p>
+<p>在ARM体系结构中，R13 是栈指针寄存器（Stack Pointer），通常简称 SP。它的作用是存储当前栈的地址，以及在函数调用时分配和回收栈空间。</p>
+<br>
+
+<p><strong>10、在下列ARM处理器的各种模式中，只有（ ）模式不可以自由地改变处理器的工作模式</strong></p>
+<p>A、用户模式</p>
+<p>B、系统模式</p>
+<p>C、终止模式</p>
+<p>D、中断模式</p>
+<p><strong>【参考答案】</strong> A</p>
+<p><strong>【摊主解析】</strong></p>
+<p>根据教材 P27、28 页内容，只有用户模式（User）模式不可以自由地改变处理器的工作模式。</p>
+<p>用户模式是 ARM 处理器最基本的工作模式，用于一般的应用程序的执行。在用户模式下，处理器只能访问受保护的寄存器和内存区域，不能执行特权指令，也不能改变处理器的工作模式。</p>
+<p>其他模式，如系统模式、中断模式和终止模式，都具有更高的特权级别，可以执行更多的指令和操作，并且可以改变处理器的工作模式。例如，系统模式用于操作系统内核的执行，中断模式用于响应外部中断事件，终止模式用于处理严重的错误情况。</p>
+<p>因此，只有用户模式不可以自由地改变处理器的工作模式。</p>
+<br>
+
+<p><strong>11、0x17 &amp; 0x1A 的运算结果是（ ）</strong></p>
+<p>A、<code>0x01</code></p>
+<p>B、<code>0x11</code></p>
+<p>C、<code>0x17</code></p>
+<p>D、<code>0x12</code></p>
+<p><strong>【参考答案】</strong> D</p>
+<p><strong>【ChatGPT解析】</strong></p>
+<p>进行位运算时，按位与运算符（&amp;）会将两个操作数的对应位上的值进行「与」运算，只有当两个操作数的对应位上的值都为1时，结果位上的值才为1，否则为0。</p>
+<p>对于 <code>0x17 &amp; 0x1A</code>，按位进行与运算：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">  <span class="token number">0001</span> <span class="token number">0111</span>
+<span class="token operator">&amp;</span> <span class="token number">0001</span> <span class="token number">1010</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+  <span class="token number">0001</span> <span class="token number">0010</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>因此，<code>0x17 &amp; 0x1A</code> 的运算结果是 <code>0x12</code>（十六进制），或者 <code>18</code>（十进制），所以选项 D 是正确的答案。</p>
+<br>
+
+<p><strong>12、对寄存器 R1 的内容乘以 4 的正确指令是（）</strong></p>
+<p>A. <code>LSR R1, #2</code></p>
+<p>B. <code>LSL R1, #2</code></p>
+<p>C. <code>MOV R1, R1, LSL #2</code></p>
+<p>D. <code>MOV R1, R1, LSR #2</code></p>
+<p><strong>【参考答案】</strong> D</p>
+<p><strong>【ChatGPT解析】</strong></p>
+<p>要将寄存器 R1 中的内容乘以 4，可以使用逻辑左移指令（LSL）或移位后的移动指令（MOV）。</p>
+<p>逻辑左移指令将操作数的二进制位向左移动指定的位数，并在右侧插入 0。移位后的移动指令将操作数左移指定的位数，并将结果移回到目标寄存器。</p>
+<p>在选项A和D中，都使用了移位指令，但是是逻辑右移（LSR），而不是逻辑左移（LSL），这样不会得到正确的乘法结果。因此，选项A和D都是错误的。</p>
+<p>在选项B中，使用了逻辑左移指令，但是没有将结果移回到目标寄存器，因此也是错误的。</p>
+<p>正确的选项是C，使用移位后的移动指令将 R1 左移两位，然后将结果移回到 R1 中，从而得到 R1 的内容乘以4 的结果。</p>
+<p>因此，正确的指令是：</p>
+<pre class="line-numbers language-arm" data-language="arm"><code class="language-arm">MOV R1, R1, LSL #2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<br>
+
+<p><strong>13、执行下面指令序列后，R1 寄存器的值是（ ）</strong></p>
+<pre class="line-numbers language-arm" data-language="arm"><code class="language-arm">MOV R1,#0x1000
+LDR R0,[R1],#4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>A. <code>0x1000</code></p>
+<p>B. <code>0x1004</code></p>
+<p>C. <code>0x0FFC</code></p>
+<p>D. <code>0x4</code></p>
+<p><strong>【参考答案】</strong> B</p>
+<p><strong>【ChatGPT解析】</strong></p>
+<p>执行上述指令序列后，R1寄存器的值是 <code>0x1004</code>。</p>
+<p>该指令首先将 <code>0x1000</code> 赋值给 R1，然后从地址 R1 开始，读取 4 个字节的数据到 R0，同时 R1 值加上 4。</p>
+<p>因此，执行完指令序列后，R1 的值应该是 <code>0x1004</code>。</p>
+<br>
+
+<p><strong>14、R0=0x05, 执行BIC R0,R0,#3的运算后，R0结果是（ ）</strong></p>
+<p>A. <code>0x02</code></p>
+<p>B. <code>0x03</code></p>
+<p>C. <code>0x04</code></p>
+<p>D. <code>0x05</code> </p>
+<p><strong>【参考答案】</strong> C</p>
+<p><strong>【ChatGPT解析1】</strong></p>
+<p><code>BIC R0, R0, #3</code></p>
+<p>其中，「BIC」是指位清零指令（Bit Clear），将目标寄存器的指定位清零。</p>
+<p>R0 是 ARM 处理器的寄存器名，这里表示目标寄存器。</p>
+<p><code>#3</code> 是一个立即数，表示要清零的位所在的位偏移量。因为 3 的二进制是 00000011，所以这个指令会将R0的二进制表示的低两位清零。</p>
+<p><strong>【ChatGPT解析2】</strong></p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-164352-20230406000739987.png" alt="ChatGPT解析2"></p>
+<br>
+
+<p><strong>15、GET伪指令的含义是（ ）</strong></p>
+<p>A. 包含一个外部文件</p>
+<p>B. 定义程序的入口</p>
+<p>C. 定义一个宏</p>
+<p>D. 声明一个变量</p>
+<p><strong>【参考答案】</strong> A</p>
+<p><strong>【ChatGPT解析】</strong></p>
+<p><strong>GET</strong> 是 ARM 汇编语言中的一个伪指令，<strong>用于将一个外部文件的内容包含到当前汇编文件中</strong>。可以将 GET 指令看作是「复制粘贴」操作，它会将外部文件的内容复制到指令所在的位置，从而使程序能够使用外部文件中的变量、常量、函数等信息。</p>
+<br>
+
+<p><strong>16、若 R1 = 2000H，（2000H）= 0x86，（2008H）= 0x39 ，则执行指令 LDR R0，[R1,#8]! 后 R0 的值为（ ）</strong></p>
+<p>A. <code>0x2000</code></p>
+<p>B. <code>0x86</code></p>
+<p>C. <code>0x2008</code></p>
+<p>D. <code>0x39</code></p>
+<p><strong>【参考答案】</strong> D</p>
+<p><strong>【摊主解析】</strong></p>
+<p>该指令的含义是：将地址为 <code>R1+8</code> 的内存数据读取到 R0 寄存器中，并将R1的值加上 8（! 表示自动修改基地址R1的值）。</p>
+<p>在本题中，R1 = 2000H，（2008H）= 0x39，所以将 0x39 读入 R0 中，同时 R1 的值变为 <code>2008H</code>。因此，R0 的值为 <code>0x39</code>。</p>
+<br>
+
+<p><strong>17、将 ARM 处理器 R0 中的一个字节的数据，存入由 R1+4 指示的内存区域,且地址自动更新,则使用的 ARM 指令是（ ）</strong></p>
+<p>A. <code>STR R0,［R1,#4]</code></p>
+<p>B. <code>STRH R0,［R1，＃4]!</code></p>
+<p>C. <code>STRH R0，[R1,＃4]</code></p>
+<p>D. <code>STRB R0,[R1，#4]!</code></p>
+<p><strong>【参考答案】</strong> D</p>
+<p><strong>【ChatGPT解析】</strong></p>
 <ul>
-<li>最后一步走 1 级，那么走最后一步之前，我们处在第 4 级台阶，所以这个子集的大小为 <code>f[4]</code></li>
-<li>最后一步走 2 级，那么走最后一步之前，我们处在第 3 级台阶，所以这个子集的大小为 <code>f[3]</code></li>
+<li><p><code>STRB</code> 指令是将 R0 寄存器中的 <strong>一个字节的数据</strong> 存储到存储器中，存储器的地址为 R1+4，即 [ R1, #4]。而且在存储数据后，R1自动加上1，指向下一个字节。因此，STRB指令是将一个字节的数据从寄存器存储到内存中，并且自动更新目标地址。</p>
+</li>
+<li><p><code>STR</code>指令是将 R0 寄存器中的 <strong>一个字的数据</strong> 存储到存储器中，存储器的地址为R1+4，即[ R1, #4]。和STRB指令不同，STR 指令存储的是一个字的数据，而不是一个字节，因此存储后 R1 自动加上 4，指向下一个字的地址。</p>
+</li>
+<li><p><code>STRH</code> 指令是将R0寄存器中的 <strong>一个半字的数据</strong> 存储到存储器中，存储器的地址为 R1+4，即[ R1, #4]。和STRB指令类似，STRH指令存储的是一个半字的数据，存储后 R1 自动加上 2，指向下一个半字的地址。</p>
+</li>
 </ul>
-<p>这样的分割方法做到了 <strong>不重复、不遗漏</strong>，因此只需按照方程 <code>f[i] = f[i-1] + f[i-2]</code> 去递推即可。</p>
-<h2 id="❗️-误区提示"><a href="#❗️-误区提示" class="headerlink" title="❗️ 误区提示"></a>❗️ 误区提示</h2><p>此题的一个 <strong>常见错误</strong>，就是把递推方程书写成 <code>f[i] = f[i-1] + 2*f[i-2]</code>。</p>
-<p>这是因为在划分子集时，把第二个子集「<strong>最后一步走 2 级</strong>」✅ 误解成了「<strong>最后一步走 2 级有多少种方案</strong>」❌</p>
-<p>这就导致在考虑 <code>f[i-2]</code> 时，认为 <strong>最后一步走 2 级有 2 种方案</strong>：即一次走 2 级，或先走 1 级，再走 1 级。把 <code>f[i-2]</code> 与 <code>f[2]</code> 产生了联系，所以在 <code>f[i-2]</code> 前乘了 2。❌ </p>
-<p>但是仔细思考，我们会发现上面这种错误的想法，<strong>本质上是因为两个子集出现了重复</strong>。</p>
-<p> 「最后一步走 2 级，但是每次走 1 级」的方案，其实是包含在第一个子集 「最后一步走 1 级」中的。因为如果先走 1 级，再走 1 级，那最后一步就是 1 级，根本不能划分在「最后一步走 2 级」这个子集中，从而产生了错误。</p>
-<p>也就是说，<code>f[i-2]</code> 与 <code>f[2]</code> 是没有关系的❗️</p>
-<p>初学者在初学时犯了这种错误后，需要仔细思考原因，避免下次再走入这个误区。🍀</p>
-<hr>
-<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
-
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-
-<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">35</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> tmp<span class="token punctuation">;</span>
-<span class="token keyword">int</span> f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
-    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    f<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        f<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">//最后一步走1级的方案 + 最后一步走2级的方案</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> tmp<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>tmp<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>字</strong> 与 <strong>字节</strong> 换算公式：1 个字 = 2 个半字 = 4 个字节</p>
+<p>本题需要存储一个字节的数据，所以选择 D</p>
+<br>
                 
             </div>
             <hr/>
@@ -763,7 +1042,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/04/01/pa-lou-ti-xin-xi-ao-sai-ti-jie/">https://ricky2333.github.io/2023/04/01/pa-lou-ti-xin-xi-ao-sai-ti-jie/</a>
+                    <a href="https://ricky2333.github.io/2023/04/05/qian-ru-shi-xi-tong-qi-mo-zhi-bei/">https://ricky2333.github.io/2023/04/05/qian-ru-shi-xi-tong-qi-mo-zhi-bei/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -801,16 +1080,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                                    <span class="chip bg-color">信息奥赛</span>
+                                <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/">
+                                    <span class="chip bg-color">嵌入式系统</span>
                                 </a>
                             
-                                <a href="/tags/C/">
-                                    <span class="chip bg-color">C++</span>
+                                <a href="/tags/%E6%9C%9F%E6%9C%AB%E6%8C%87%E5%8C%97/">
+                                    <span class="chip bg-color">期末指北</span>
                                 </a>
                             
-                                <a href="/tags/%E9%80%92%E6%8E%A8/">
-                                    <span class="chip bg-color">递推</span>
+                                <a href="/tags/ChatGPT/">
+                                    <span class="chip bg-color">ChatGPT</span>
                                 </a>
                             
                         </div>
@@ -980,49 +1259,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/04/02/python-xue-xi-bi-ji-list/">
+                <a href="/2023/04/05/qian-ru-shi-xi-tong-qi-mo-zhi-bei/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Python学习笔记｜List">
                         
-                        <span class="card-title">Python学习笔记｜List</span>
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="嵌入式系统｜期末指北">
+                        
+                        <span class="card-title">嵌入式系统｜期末指北</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Python学习笔记｜List
+                            嵌入式系统常见选择题题解（feat.ChatGPT）
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E5%9F%BA%E7%A1%80/" class="post-category">
-                                    Python基础
+                            <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/" class="post-category">
+                                    嵌入式系统
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/">
+                        <span class="chip bg-color">嵌入式系统</span>
                     </a>
                     
-                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">学习笔记</span>
+                    <a href="/tags/%E6%9C%9F%E6%9C%AB%E6%8C%87%E5%8C%97/">
+                        <span class="chip bg-color">期末指北</span>
+                    </a>
+                    
+                    <a href="/tags/ChatGPT/">
+                        <span class="chip bg-color">ChatGPT</span>
                     </a>
                     
                 </div>
@@ -1036,30 +1322,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/03/31/linux-ming-ling-xing-da-quan-du-shu-bi-ji/">
+                <a href="/2023/04/04/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/5.webp" class="responsive-img" alt="Linux命令行大全｜读书笔记">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="信息奥赛题解｜昆虫繁殖">
                         
-                        <span class="card-title">Linux命令行大全｜读书笔记</span>
+                        <span class="card-title">信息奥赛题解｜昆虫繁殖</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Chpt5 - type, help, alias等命令｜英文读书笔记
+                            信息奥赛题解｜昆虫繁殖
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-04
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux%E5%9F%BA%E7%A1%80/" class="post-category">
-                                    Linux基础
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    信息奥赛题解
                                 </a>
                             
                             
@@ -1069,12 +1355,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%8B%B1%E6%96%87%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">英文读书笔记</span>
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                        <span class="chip bg-color">信息奥赛</span>
                     </a>
                     
-                    <a href="/tags/Linux/">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%80%92%E6%8E%A8/">
+                        <span class="chip bg-color">递推</span>
                     </a>
                     
                 </div>
