@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Ubuntu下安装Clang编译器, Rickyの水果摊">
+    <meta name="keywords" content="信息奥赛题解｜四平方和, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Ubuntu下安装Clang编译器 | Rickyの水果摊</title>
+    <title>信息奥赛题解｜四平方和 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -483,12 +483,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Ubuntu下安装Clang编译器</h1>
+                    <h1 class="description center-align post-title">信息奥赛题解｜四平方和</h1>
                 </div>
             </div>
         </div>
@@ -609,16 +609,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                                <span class="chip bg-color">信息奥赛</span>
                             </a>
                         
-                            <a href="/tags/Ubuntu/">
-                                <span class="chip bg-color">Ubuntu</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
                             </a>
                         
-                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
-                                <span class="chip bg-color">软件安装教程</span>
+                            <a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/">
+                                <span class="chip bg-color">哈希表</span>
                             </a>
                         
                     </div>
@@ -629,8 +629,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux%E5%9F%BA%E7%A1%80/" class="post-category">
-                                Linux基础
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
+                                信息奥赛题解
                             </a>
                         
                     </div>
@@ -642,7 +642,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-03-26
+                    2023-04-07
                 </div>
                 
 
@@ -651,14 +651,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    529
+                    692
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 
@@ -681,86 +681,74 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="【Linux】Ubuntu-22-04-安装-Clang-编译器"><a href="#【Linux】Ubuntu-22-04-安装-Clang-编译器" class="headerlink" title="【Linux】Ubuntu 22.04 安装 Clang 编译器"></a>【Linux】Ubuntu 22.04 安装 Clang 编译器</h1><p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/Ubuntu-22-04-LTSpng.png" alt="Ubuntu-22-04-LTS"></p>
-<p>摊主将在本文中介绍如何在 Ubuntu 上安装 Clang 编译器。</p>
+                <h1 id="信息奥赛题解｜四平方和"><a href="#信息奥赛题解｜四平方和" class="headerlink" title="信息奥赛题解｜四平方和"></a>信息奥赛题解｜四平方和</h1><hr>
+<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>四平方和定理，又称为拉格朗日定理：</p>
+<p>每个正整数都可以表示为至多 $4$ 个正整数的平方和。</p>
+<p>如果把 $0$ 包括进去，就正好可以表示为 $4$ 个数的平方和。</p>
+<p>比如：</p>
+<p>$5=0^2+0^2+1^2+2^2$<br>$7=1^2+1^2+1^2+2^2$</p>
+<p>对于一个给定的正整数，可能存在多种平方和的表示法。</p>
+<p>要求你对 $4$ 个数排序：</p>
+<p>$0 \le a \le b \le c \le d$</p>
+<p>并对所有的可能表示法按 $a,b,c,d$ 为联合主键升序排列，最后输出第一个表示法。</p>
+<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>输入一个正整数 $N$。</p>
+<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>输出 $4$ 个非负整数，按从小到大排序，中间用空格分开。</p>
+<h3 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h3><p>$0 \lt N \lt 5∗10^6$</p>
+<h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">0</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P8635">https://www.luogu.com.cn/problem/P8635</a></p>
 <hr>
-<h2 id="Clang-介绍-☘️"><a href="#Clang-介绍-☘️" class="headerlink" title="Clang 介绍 ☘️"></a>Clang 介绍 ☘️</h2><p><strong>Clang</strong> 是一款由 LLVM 项目开发的 C、C++、Objective-C 和 Objective-C++ <strong>编译器</strong>。它被设计成可以替代 GCC（GNU Compiler Collection）编译器，并且在许多方面都比 GCC 更优秀，可以提供更好的编译速度、准确性和兼容性。</p>
-<h2 id="系统版本-🖥"><a href="#系统版本-🖥" class="headerlink" title="系统版本 🖥"></a>系统版本 🖥</h2><p>系统版本：Ubuntu 22.04 LTS</p>
-<h2 id="安装步骤-🚀"><a href="#安装步骤-🚀" class="headerlink" title="安装步骤 🚀"></a>安装步骤 🚀</h2><ol>
-<li>打开终端并更新系统软件包：在终端中输入以下命令并执行。</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> update<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230322232323046.png" alt="sudo apt-get update"></p>
-<ol start="2">
-<li>安装 Clang 编译器：在终端中输入以下命令并执行。（安装过程请耐心等待）</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> clang<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230322232633305.png" alt="sudo apt-get install clang"></p>
-<ol start="3">
-<li>检查 Clang 版本：在终端中输入以下命令并执行。</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">clang <span class="token parameter variable">--version</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230322232732832.png" alt="clang --version"></p>
-<p>如果出现 Clang 版本信息，则表示 Clang 编译器已经安装成功。</p>
+<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>四重循环的暴力枚举做法，显然会 TLE，所以可以采用 <strong>哈希</strong> 的方法，来降低时间复杂度。</p>
+<p><strong>正确思路</strong>：</p>
+<ul>
+<li>将 $c$ 和 $d$ 的平方和存储到自己模拟的哈希表中，该步复杂度为 $O(\sqrt n) * O(\sqrt n) = O(n)$</li>
+<li>枚举 $a，b$，并且在哈希表中查找  $n - a * a - b * b$，该步复杂度为 $(O\sqrt n) * O(\sqrt n) * O(1) = O(n)$</li>
+</ul>
+<p>所以该思路的时间复杂度为 $O(n) + O(n) = O(n)$，满足该题的数据范围。</p>
+<p>本题推荐使用自己 <strong>用数组模拟的哈希表</strong>（相较于 STL 会更加快）</p>
 <hr>
-<h2 id="C语言编译测试-🧑🏻‍💻"><a href="#C语言编译测试-🧑🏻‍💻" class="headerlink" title="C语言编译测试 🧑🏻‍💻"></a>C语言编译测试 🧑🏻‍💻</h2><ol>
-<li>创建一个名为 <code>helloworld.c</code> 的文件，输入以下代码：</li>
-</ol>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">5e6</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> n<span class="token punctuation">;</span>
+<span class="token keyword">int</span> C<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> D<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">// 哈希表，C[k]存储平方和为k时，c的值；D[k]存储平方和为k时，d的值</span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Hello, World!\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+
+    <span class="token comment">// 将c、d的平方和存入哈希表（复杂度为O(N))）</span>
+    <span class="token function">memset</span><span class="token punctuation">(</span>C<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>C<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 初始化为-1，因为0是有实际含义的</span>
+    <span class="token function">memset</span><span class="token punctuation">(</span>D<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>D<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> c <span class="token operator">*</span> c <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> c<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> d <span class="token operator">=</span> c<span class="token punctuation">;</span> c <span class="token operator">*</span> c <span class="token operator">+</span> d <span class="token operator">*</span> d <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> d<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> sum <span class="token operator">=</span> c <span class="token operator">*</span> c <span class="token operator">+</span> d <span class="token operator">*</span> d<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>C<span class="token punctuation">[</span>sum<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>  <span class="token comment">// 该总和第一次出现,记录此时c和d的值</span>
+                C<span class="token punctuation">[</span>sum<span class="token punctuation">]</span> <span class="token operator">=</span> c<span class="token punctuation">,</span> D<span class="token punctuation">[</span>sum<span class="token punctuation">]</span> <span class="token operator">=</span> d<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 枚举a，b，查找 n - a*a - b*b 的哈希值</span>
+    <span class="token comment">// 哈希值存在，说明此时a,b,c,d平方和为n</span>
+    <span class="token comment">// 复杂度是sqrt(n) * sqrt(n) * O(1)= O(n) 哈希表查找为O(1)</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> a <span class="token operator">*</span> a <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> a<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> b <span class="token operator">=</span> a<span class="token punctuation">;</span> a <span class="token operator">*</span> a <span class="token operator">+</span> b <span class="token operator">*</span> b <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> b<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> dis <span class="token operator">=</span> n <span class="token operator">-</span> a <span class="token operator">*</span> a <span class="token operator">-</span> b <span class="token operator">*</span> b<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>C<span class="token punctuation">[</span>dis<span class="token punctuation">]</span> <span class="token operator">&gt;</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                cout <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> C<span class="token punctuation">[</span>dis<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> D<span class="token punctuation">[</span>dis<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token comment">// 下面没有更多需求的话，直接return 0结束即可，不用写goto</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<ol start="2">
-<li>打开终端，进入 <code>helloworld.c</code> 文件所在的目录。</li>
-<li>输入以下命令来使用 Clang 编译程序：</li>
-</ol>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">clang <span class="token operator">-</span>o helloworld helloworld<span class="token punctuation">.</span>c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>其中，<code>clang</code> 是 Clang 编译器的可执行文件，<code>-o</code> 选项表示输出文件名，<code>helloworld</code> 是输出的可执行文件的名称，<code>helloworld.c</code> 是源代码文件的名称。</p>
-<ol start="4">
-<li>执行程序：</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./helloworld<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>输出结果应该是：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Hello, World<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>说明当前 C 语言程序已经成功编译并运行了。</p>
-<hr>
-<h2 id="C-编译测试-🧑🏻‍💻"><a href="#C-编译测试-🧑🏻‍💻" class="headerlink" title="C++编译测试 🧑🏻‍💻"></a>C++编译测试 🧑🏻‍💻</h2><ol>
-<li>创建一个名为 <code>test.cpp</code> 的文件，输入以下代码：</li>
-</ol>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
-
-using namespace std<span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Hello, World!"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ol start="2">
-<li>打开终端，进入 <code>test.cpp</code> 文件所在的目录。</li>
-<li>输入以下命令来使用 Clang 编译程序：</li>
-</ol>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">clang<span class="token operator">++</span> <span class="token operator">-</span>o test test<span class="token punctuation">.</span>cpp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>其中，<code>clang++</code> 是 Clang 编译器的可执行文件，<code>-o</code> 选项表示输出文件名，<code>test</code> 是输出的可执行文件的名称，<code>test.cpp</code> 是源代码文件的名称。 </p>
-<ol start="4">
-<li>执行程序：</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./test<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>输出结果应该是：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Hello, World<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>说明当前 C++ 语言程序已经成功编译并运行了。</p>
 
                 
             </div>
@@ -787,7 +775,7 @@ using namespace std<span class="token punctuation">;</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/03/26/ubuntu/">https://ricky2333.github.io/2023/03/26/ubuntu/</a>
+                    <a href="https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/">https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -825,16 +813,16 @@ using namespace std<span class="token punctuation">;</span>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
+                                <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                                    <span class="chip bg-color">信息奥赛</span>
                                 </a>
                             
-                                <a href="/tags/Ubuntu/">
-                                    <span class="chip bg-color">Ubuntu</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
                                 </a>
                             
-                                <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
-                                    <span class="chip bg-color">软件安装教程</span>
+                                <a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/">
+                                    <span class="chip bg-color">哈希表</span>
                                 </a>
                             
                         </div>
@@ -1004,28 +992,30 @@ using namespace std<span class="token punctuation">;</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/03/26/xin-xi-ao-sai-shi-xun-bao-gao-stl/">
+                <a href="/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="信息奥赛实训报告｜STL">
                         
-                        <span class="card-title">信息奥赛实训报告｜STL</span>
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="信息奥赛题解｜四平方和">
+                        
+                        <span class="card-title">信息奥赛题解｜四平方和</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息奥赛实训报告｜STL
+                            信息奥赛题解｜四平方和
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1038,6 +1028,7 @@ using namespace std<span class="token punctuation">;</span>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1047,6 +1038,10 @@ using namespace std<span class="token punctuation">;</span>
                     
                     <a href="/tags/C/">
                         <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/">
+                        <span class="chip bg-color">哈希表</span>
                     </a>
                     
                 </div>
@@ -1060,30 +1055,31 @@ using namespace std<span class="token punctuation">;</span>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/03/24/acwing-zhou-sai-fu-pan/">
+                <a href="/2023/04/06/git-jiao-cheng/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Acwing第91场周赛复盘">
                         
-                        <span class="card-title">Acwing第91场周赛复盘</span>
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Git教程">
+                        
+                        <span class="card-title">Git教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Acwing第91场周赛复盘
+                            Git 学习笔记
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-06
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/" class="post-category">
-                                    Acwing周赛复盘
+                            <a href="/categories/Git%E6%95%99%E7%A8%8B/" class="post-category">
+                                    Git教程
                                 </a>
                             
                             
@@ -1093,16 +1089,8 @@ using namespace std<span class="token punctuation">;</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                        <span class="chip bg-color">信息奥赛</span>
-                    </a>
-                    
-                    <a href="/tags/Acwing/">
-                        <span class="chip bg-color">Acwing</span>
-                    </a>
-                    
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
                     </a>
                     
                 </div>
@@ -1272,6 +1260,13 @@ using namespace std<span class="token punctuation">;</span>
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 

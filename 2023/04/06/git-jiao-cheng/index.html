@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Ubuntu下安装Clang编译器, Rickyの水果摊">
+    <meta name="keywords" content="Git教程, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Ubuntu下安装Clang编译器 | Rickyの水果摊</title>
+    <title>Git教程 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -483,12 +483,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Ubuntu下安装Clang编译器</h1>
+                    <h1 class="description center-align post-title">Git教程</h1>
                 </div>
             </div>
         </div>
@@ -609,16 +609,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
-                            </a>
-                        
-                            <a href="/tags/Ubuntu/">
-                                <span class="chip bg-color">Ubuntu</span>
-                            </a>
-                        
-                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
-                                <span class="chip bg-color">软件安装教程</span>
+                            <a href="/tags/Git/">
+                                <span class="chip bg-color">Git</span>
                             </a>
                         
                     </div>
@@ -629,8 +621,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux%E5%9F%BA%E7%A1%80/" class="post-category">
-                                Linux基础
+                            <a href="/categories/Git%E6%95%99%E7%A8%8B/" class="post-category">
+                                Git教程
                             </a>
                         
                     </div>
@@ -642,7 +634,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-03-26
+                    2023-04-06
                 </div>
                 
 
@@ -651,14 +643,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    529
+                    0
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -681,87 +673,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="【Linux】Ubuntu-22-04-安装-Clang-编译器"><a href="#【Linux】Ubuntu-22-04-安装-Clang-编译器" class="headerlink" title="【Linux】Ubuntu 22.04 安装 Clang 编译器"></a>【Linux】Ubuntu 22.04 安装 Clang 编译器</h1><p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/Ubuntu-22-04-LTSpng.png" alt="Ubuntu-22-04-LTS"></p>
-<p>摊主将在本文中介绍如何在 Ubuntu 上安装 Clang 编译器。</p>
-<hr>
-<h2 id="Clang-介绍-☘️"><a href="#Clang-介绍-☘️" class="headerlink" title="Clang 介绍 ☘️"></a>Clang 介绍 ☘️</h2><p><strong>Clang</strong> 是一款由 LLVM 项目开发的 C、C++、Objective-C 和 Objective-C++ <strong>编译器</strong>。它被设计成可以替代 GCC（GNU Compiler Collection）编译器，并且在许多方面都比 GCC 更优秀，可以提供更好的编译速度、准确性和兼容性。</p>
-<h2 id="系统版本-🖥"><a href="#系统版本-🖥" class="headerlink" title="系统版本 🖥"></a>系统版本 🖥</h2><p>系统版本：Ubuntu 22.04 LTS</p>
-<h2 id="安装步骤-🚀"><a href="#安装步骤-🚀" class="headerlink" title="安装步骤 🚀"></a>安装步骤 🚀</h2><ol>
-<li>打开终端并更新系统软件包：在终端中输入以下命令并执行。</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> update<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230322232323046.png" alt="sudo apt-get update"></p>
-<ol start="2">
-<li>安装 Clang 编译器：在终端中输入以下命令并执行。（安装过程请耐心等待）</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> clang<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230322232633305.png" alt="sudo apt-get install clang"></p>
-<ol start="3">
-<li>检查 Clang 版本：在终端中输入以下命令并执行。</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">clang <span class="token parameter variable">--version</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230322232732832.png" alt="clang --version"></p>
-<p>如果出现 Clang 版本信息，则表示 Clang 编译器已经安装成功。</p>
-<hr>
-<h2 id="C语言编译测试-🧑🏻‍💻"><a href="#C语言编译测试-🧑🏻‍💻" class="headerlink" title="C语言编译测试 🧑🏻‍💻"></a>C语言编译测试 🧑🏻‍💻</h2><ol>
-<li>创建一个名为 <code>helloworld.c</code> 的文件，输入以下代码：</li>
-</ol>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Hello, World!\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ol start="2">
-<li>打开终端，进入 <code>helloworld.c</code> 文件所在的目录。</li>
-<li>输入以下命令来使用 Clang 编译程序：</li>
-</ol>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">clang <span class="token operator">-</span>o helloworld helloworld<span class="token punctuation">.</span>c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>其中，<code>clang</code> 是 Clang 编译器的可执行文件，<code>-o</code> 选项表示输出文件名，<code>helloworld</code> 是输出的可执行文件的名称，<code>helloworld.c</code> 是源代码文件的名称。</p>
-<ol start="4">
-<li>执行程序：</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./helloworld<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>输出结果应该是：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Hello, World<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>说明当前 C 语言程序已经成功编译并运行了。</p>
-<hr>
-<h2 id="C-编译测试-🧑🏻‍💻"><a href="#C-编译测试-🧑🏻‍💻" class="headerlink" title="C++编译测试 🧑🏻‍💻"></a>C++编译测试 🧑🏻‍💻</h2><ol>
-<li>创建一个名为 <code>test.cpp</code> 的文件，输入以下代码：</li>
-</ol>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
-
-using namespace std<span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Hello, World!"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ol start="2">
-<li>打开终端，进入 <code>test.cpp</code> 文件所在的目录。</li>
-<li>输入以下命令来使用 Clang 编译程序：</li>
-</ol>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">clang<span class="token operator">++</span> <span class="token operator">-</span>o test test<span class="token punctuation">.</span>cpp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>其中，<code>clang++</code> 是 Clang 编译器的可执行文件，<code>-o</code> 选项表示输出文件名，<code>test</code> 是输出的可执行文件的名称，<code>test.cpp</code> 是源代码文件的名称。 </p>
-<ol start="4">
-<li>执行程序：</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./test<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>输出结果应该是：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Hello, World<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>说明当前 C++ 语言程序已经成功编译并运行了。</p>
-
+                
                 
             </div>
             <hr/>
@@ -787,7 +699,7 @@ using namespace std<span class="token punctuation">;</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/03/26/ubuntu/">https://ricky2333.github.io/2023/03/26/ubuntu/</a>
+                    <a href="https://ricky2333.github.io/2023/04/06/git-jiao-cheng/">https://ricky2333.github.io/2023/04/06/git-jiao-cheng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -825,16 +737,8 @@ using namespace std<span class="token punctuation">;</span>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
-                                </a>
-                            
-                                <a href="/tags/Ubuntu/">
-                                    <span class="chip bg-color">Ubuntu</span>
-                                </a>
-                            
-                                <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
-                                    <span class="chip bg-color">软件安装教程</span>
+                                <a href="/tags/Git/">
+                                    <span class="chip bg-color">Git</span>
                                 </a>
                             
                         </div>
@@ -1008,23 +912,24 @@ using namespace std<span class="token punctuation">;</span>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/03/26/xin-xi-ao-sai-shi-xun-bao-gao-stl/">
+                <a href="/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="信息奥赛实训报告｜STL">
                         
-                        <span class="card-title">信息奥赛实训报告｜STL</span>
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="信息奥赛题解｜四平方和">
+                        
+                        <span class="card-title">信息奥赛题解｜四平方和</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息奥赛实训报告｜STL
+                            信息奥赛题解｜四平方和
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-26
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-07
                         </span>
                         <span class="publish-author">
                             
@@ -1049,6 +954,10 @@ using namespace std<span class="token punctuation">;</span>
                         <span class="chip bg-color">C++</span>
                     </a>
                     
+                    <a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/">
+                        <span class="chip bg-color">哈希表</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1060,30 +969,30 @@ using namespace std<span class="token punctuation">;</span>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/03/24/acwing-zhou-sai-fu-pan/">
+                <a href="/2023/04/05/qian-ru-shi-xi-tong-qi-mo-zhi-bei/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Acwing第91场周赛复盘">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="嵌入式系统｜期末指北">
                         
-                        <span class="card-title">Acwing第91场周赛复盘</span>
+                        <span class="card-title">嵌入式系统｜期末指北</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Acwing第91场周赛复盘
+                            嵌入式系统常见选择题题解（feat.ChatGPT）
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-05
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/" class="post-category">
-                                    Acwing周赛复盘
+                            <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/" class="post-category">
+                                    嵌入式系统
                                 </a>
                             
                             
@@ -1093,16 +1002,16 @@ using namespace std<span class="token punctuation">;</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                        <span class="chip bg-color">信息奥赛</span>
+                    <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/">
+                        <span class="chip bg-color">嵌入式系统</span>
                     </a>
                     
-                    <a href="/tags/Acwing/">
-                        <span class="chip bg-color">Acwing</span>
+                    <a href="/tags/%E6%9C%9F%E6%9C%AB%E6%8C%87%E5%8C%97/">
+                        <span class="chip bg-color">期末指北</span>
                     </a>
                     
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
+                    <a href="/tags/ChatGPT/">
+                        <span class="chip bg-color">ChatGPT</span>
                     </a>
                     
                 </div>
@@ -1272,6 +1181,13 @@ using namespace std<span class="token punctuation">;</span>
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 

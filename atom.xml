@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-05T16:18:31.703Z</updated>
+  <updated>2023-04-07T11:02:20.366Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>信息奥赛题解｜四平方和</title>
+    <link href="https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/"/>
+    <id>https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/</id>
+    <published>2023-04-07T10:44:37.000Z</published>
+    <updated>2023-04-07T11:02:20.366Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜四平方和&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜四平方和&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜四平方和&quot;&gt;&lt;/a&gt;信息奥赛题解｜四平方和&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="哈希表" scheme="https://ricky2333.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git教程</title>
+    <link href="https://ricky2333.github.io/2023/04/06/git-jiao-cheng/"/>
+    <id>https://ricky2333.github.io/2023/04/06/git-jiao-cheng/</id>
+    <published>2023-04-06T11:47:02.000Z</published>
+    <updated>2023-04-06T11:48:23.965Z</updated>
+    
+    
+    
+    
+    <category term="Git教程" scheme="https://ricky2333.github.io/categories/Git%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Git" scheme="https://ricky2333.github.io/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>嵌入式系统｜期末指北</title>
@@ -96,10 +143,10 @@
   
   <entry>
     <title>信息奥赛题解｜爬楼梯</title>
-    <link href="https://ricky2333.github.io/2023/04/01/pa-lou-ti-xin-xi-ao-sai-ti-jie/"/>
-    <id>https://ricky2333.github.io/2023/04/01/pa-lou-ti-xin-xi-ao-sai-ti-jie/</id>
+    <link href="https://ricky2333.github.io/2023/04/01/xin-xi-ao-sai-ti-jie-pa-lou-ti/"/>
+    <id>https://ricky2333.github.io/2023/04/01/xin-xi-ao-sai-ti-jie-pa-lou-ti/</id>
     <published>2023-04-01T12:58:07.000Z</published>
-    <updated>2023-04-04T15:47:10.998Z</updated>
+    <updated>2023-04-07T11:01:06.391Z</updated>
     
     
       
@@ -146,9 +193,9 @@
     <category term="Linux基础" scheme="https://ricky2333.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="英文读书笔记" scheme="https://ricky2333.github.io/tags/%E8%8B%B1%E6%96%87%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
     <category term="Linux" scheme="https://ricky2333.github.io/tags/Linux/"/>
+    
+    <category term="英文读书笔记" scheme="https://ricky2333.github.io/tags/%E8%8B%B1%E6%96%87%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
