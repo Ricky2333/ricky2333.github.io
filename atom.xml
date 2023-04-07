@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-07T11:02:20.366Z</updated>
+  <updated>2023-04-07T11:45:24.870Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>信息奥赛题解｜位数问题</title>
+    <link href="https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/"/>
+    <id>https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/</id>
+    <published>2023-04-07T11:43:52.000Z</published>
+    <updated>2023-04-07T11:45:24.870Z</updated>
+    
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python VS C</title>
+    <link href="https://ricky2333.github.io/2023/04/07/python-vs-c/"/>
+    <id>https://ricky2333.github.io/2023/04/07/python-vs-c/</id>
+    <published>2023-04-07T11:43:06.000Z</published>
+    <updated>2023-04-07T11:50:49.032Z</updated>
+    
+    
+    
+    
+    <category term="Python基础" scheme="https://ricky2333.github.io/categories/Python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+  </entry>
+  
+  <entry>
     <title>信息奥赛题解｜四平方和</title>
     <link href="https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/"/>
     <id>https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/</id>
     <published>2023-04-07T10:44:37.000Z</published>
-    <updated>2023-04-07T11:02:20.366Z</updated>
+    <updated>2023-04-07T11:42:27.418Z</updated>
     
     
       
@@ -51,7 +93,7 @@
     <link href="https://ricky2333.github.io/2023/04/06/git-jiao-cheng/"/>
     <id>https://ricky2333.github.io/2023/04/06/git-jiao-cheng/</id>
     <published>2023-04-06T11:47:02.000Z</published>
-    <updated>2023-04-06T11:48:23.965Z</updated>
+    <updated>2023-04-07T11:46:04.939Z</updated>
     
     
     
@@ -193,9 +235,9 @@
     <category term="Linux基础" scheme="https://ricky2333.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="Linux" scheme="https://ricky2333.github.io/tags/Linux/"/>
-    
     <category term="英文读书笔记" scheme="https://ricky2333.github.io/tags/%E8%8B%B1%E6%96%87%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Linux" scheme="https://ricky2333.github.io/tags/Linux/"/>
     
   </entry>
   
