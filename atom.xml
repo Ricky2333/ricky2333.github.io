@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-07T13:03:38.392Z</updated>
+  <updated>2023-04-09T15:50:02.844Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,82 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>信息奥赛题解｜踩方格</title>
+    <link href="https://ricky2333.github.io/2023/04/09/xin-xi-ao-sai-ti-jie-cai-fang-ge/"/>
+    <id>https://ricky2333.github.io/2023/04/09/xin-xi-ao-sai-ti-jie-cai-fang-ge/</id>
+    <published>2023-04-09T15:30:53.000Z</published>
+    <updated>2023-04-09T15:50:02.844Z</updated>
+    
+    
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Acwing第87场周赛复盘</title>
+    <link href="https://ricky2333.github.io/2023/04/09/acwing-di-87-chang-zhou-sai-fu-pan/"/>
+    <id>https://ricky2333.github.io/2023/04/09/acwing-di-87-chang-zhou-sai-fu-pan/</id>
+    <published>2023-04-09T14:44:48.000Z</published>
+    <updated>2023-04-09T15:28:04.734Z</updated>
+    
+    
+    
+    
+    <category term="Acwing周赛复盘" scheme="https://ricky2333.github.io/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Acwing" scheme="https://ricky2333.github.io/tags/Acwing/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Acwing第86场周赛复盘</title>
+    <link href="https://ricky2333.github.io/2023/04/08/acwing-di-86-chang-zhou-sai-fu-pan/"/>
+    <id>https://ricky2333.github.io/2023/04/08/acwing-di-86-chang-zhou-sai-fu-pan/</id>
+    <published>2023-04-08T11:56:51.000Z</published>
+    <updated>2023-04-08T14:08:26.221Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;【Acwing-周赛复盘】第86场周赛复盘（2023-1-14）&quot;&gt;&lt;a href=&quot;#【Acwing-周赛复盘】第86场周赛复盘（2023-1-14）&quot; class=&quot;headerlink&quot; title=&quot;【Acwing</summary>
+        
+      
+    
+    
+    
+    <category term="Acwing周赛复盘" scheme="https://ricky2333.github.io/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Acwing" scheme="https://ricky2333.github.io/tags/Acwing/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>信息奥赛题解｜位数问题</title>
     <link href="https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/"/>
     <id>https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/</id>
     <published>2023-04-07T11:43:52.000Z</published>
-    <updated>2023-04-07T13:03:38.392Z</updated>
+    <updated>2023-04-08T11:55:45.786Z</updated>
     
     
       
@@ -72,7 +143,7 @@
     <link href="https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/"/>
     <id>https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/</id>
     <published>2023-04-07T10:44:37.000Z</published>
-    <updated>2023-04-07T11:42:27.418Z</updated>
+    <updated>2023-04-09T15:14:30.386Z</updated>
     
     
       
@@ -228,7 +299,7 @@
     <link href="https://ricky2333.github.io/2023/03/31/linux-ming-ling-xing-da-quan-du-shu-bi-ji/"/>
     <id>https://ricky2333.github.io/2023/03/31/linux-ming-ling-xing-da-quan-du-shu-bi-ji/</id>
     <published>2023-03-31T13:17:20.000Z</published>
-    <updated>2023-04-01T07:39:02.087Z</updated>
+    <updated>2023-04-09T15:36:48.444Z</updated>
     
     
       
@@ -255,7 +326,7 @@
     <link href="https://ricky2333.github.io/2023/03/26/xin-xi-ao-sai-shi-xun-bao-gao-stl/"/>
     <id>https://ricky2333.github.io/2023/03/26/xin-xi-ao-sai-shi-xun-bao-gao-stl/</id>
     <published>2023-03-26T04:17:38.000Z</published>
-    <updated>2023-04-07T13:06:39.174Z</updated>
+    <updated>2023-04-09T15:28:47.635Z</updated>
     
     
       
@@ -308,8 +379,8 @@
   
   <entry>
     <title>Acwing第91场周赛复盘</title>
-    <link href="https://ricky2333.github.io/2023/03/24/acwing-zhou-sai-fu-pan/"/>
-    <id>https://ricky2333.github.io/2023/03/24/acwing-zhou-sai-fu-pan/</id>
+    <link href="https://ricky2333.github.io/2023/03/24/acwing-di-91-chang-zhou-sai-fu-pan/"/>
+    <id>https://ricky2333.github.io/2023/03/24/acwing-di-91-chang-zhou-sai-fu-pan/</id>
     <published>2023-03-24T10:14:58.000Z</published>
     <updated>2023-04-01T04:52:22.214Z</updated>
     
