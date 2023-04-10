@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Acwing第87场周赛复盘, Rickyの水果摊">
+    <meta name="keywords" content="信息奥赛题解｜踩方格, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Acwing第87场周赛复盘 | Rickyの水果摊</title>
+    <title>信息奥赛题解｜踩方格 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -483,12 +483,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Acwing第87场周赛复盘</h1>
+                    <h1 class="description center-align post-title">信息奥赛题解｜踩方格</h1>
                 </div>
             </div>
         </div>
@@ -613,12 +613,12 @@
                                 <span class="chip bg-color">信息奥赛</span>
                             </a>
                         
-                            <a href="/tags/Acwing/">
-                                <span class="chip bg-color">Acwing</span>
-                            </a>
-                        
                             <a href="/tags/C/">
                                 <span class="chip bg-color">C++</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%80%92%E6%8E%A8/">
+                                <span class="chip bg-color">递推</span>
                             </a>
                         
                     </div>
@@ -629,8 +629,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/" class="post-category">
-                                Acwing周赛复盘
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
+                                信息奥赛题解
                             </a>
                         
                     </div>
@@ -642,7 +642,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-09
+                    2023-04-10
                 </div>
                 
 
@@ -651,14 +651,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    6 分
                 </div>
                 
 
@@ -681,7 +681,114 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="信息奥赛题解｜踩方格"><a href="#信息奥赛题解｜踩方格" class="headerlink" title="信息奥赛题解｜踩方格"></a>信息奥赛题解｜踩方格</h1><hr>
+<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>有一个方格矩阵，矩阵边界在无穷远处。我们做如下假设：</p>
+<p>a、每走一步时，只能从当前方格移动一格，走到某个相邻的方格上；</p>
+<p>b、走过的格子立即塌陷无法再走第二次；</p>
+<p>c、只能向北、东、西三个方向走；</p>
+<p>请问：如果允许在方格矩阵上走 $n$ 步，共有多少种不同的方案。（$2$ 种走法只要有一步不一样，即被认为是不同的方案）</p>
+<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>允许在方格上行走的步数 $n(n \le 20)$。</p>
+<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>计算出的方案数量。</p>
+<h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">7</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1196">http://ybt.ssoier.cn:8088/problem_show.php?pid=1196</a></p>
+<hr>
+<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>本题是递推问题的经典问题之一，属于 「<strong>全局移动路线方案数</strong>」问题。</p>
+<p>在之前的题解中，我们已经讲解了「<strong>单点移动路线</strong>」问题，其目标是求到达 <strong>某一个点</strong> 的方案数，但并没有涉及走到该点的步数；而本题的「<strong>全局移动路线</strong>」则是给定步数，求解所有该步数内能够走的不同路线数量。</p>
+<blockquote>
+<p>附：单点移动路线问题相关题解<br><a target="_blank" rel="noopener" href="http://t.csdn.cn/duSvd">【信息奥赛题解】移动路线（详细分析题解 &amp; C++ 代码）</a><br><a target="_blank" rel="noopener" href="http://t.csdn.cn/Cff37">【信息奥赛题解】过河卒（详细分析题解 &amp; C++ 代码）</a></p>
+</blockquote>
+<p>在本题中，我们假设 <code>f[n]</code> 为 <strong>走 n 步的不同路线总数</strong>，那么这个 <code>f[n]</code> 可以拆分成 3 个独立的部分：</p>
+<ul>
+<li><strong>最后一步</strong> 向 <strong>左</strong> 走的路线数 <code>l[n]</code></li>
+<li><strong>最后一步</strong> 向 <strong>右</strong> 走的路线数 <code>r[n]</code></li>
+<li><strong>最后一步</strong> 向 <strong>上</strong> 走的路线数 <code>u[n]</code></li>
+</ul>
+<p>即 <code>f[n] = l[n] + r[n] + u[n]</code> ，所以我们可以去计算 <code>l[n],r[n],u[n]</code> 来得到 <code>f[n]</code></p>
+<p>而对于 <code>l[n]，r[n],u[n]</code> ，我们可以由 <code>f[n - 1]</code> 来推断。</p>
+<p>按照我们的假设， <code>f[n-1]</code> 表示 走 n-1 步的不同路线总数，由于这里面的每条路线都是不同的，所以在这些路线的基础上，再往左走 1 步，得到的路线也都是不同的，就有 <code>l[n] = f[n-1]</code> 🧐</p>
+<p>但是我们知道 <strong>并不是所有路线，都能再往左走的</strong>。在所有走 n -1 步的路线中，如果 <strong>n - 1步是往右走的</strong>，就 <strong>没有办法在第 n 步的时候往左走的</strong>，因为左边的方格塌陷了。</p>
+<p>所以 <strong>只有第 n - 1步往左走，或者往上走的路线</strong>，才能在第 n 步时，往左走。✅</p>
+<p>而 所有 <strong>n -1步 往左走</strong>的路线数量，按照我们的假设，就等于 <code>l[n-1]</code>；所有 n -1步 <strong>往上走</strong>的路线数量，按照我们的假设，就等于 <code>u[n-1]</code> 。所以 <code>l[n] = l[n - 1] + u[n-1]</code> 🍒</p>
+<p>同理，<code>r[n] = r[n-1] + u[n-1]</code></p>
+<p><code>u[n]</code> 比较特殊，因为 n-1 步往左、往右的路线在走第 n 步时，均可以向上走，所以 <code>u[n] = l[n-1] + r[n-1] + u[n-1]</code></p>
+<p>边界条件很好确定，<code>l[1] = r[1] = u[1] = 1</code>，因此就可以由递推关系，推出 <code>l[2],l[3], ... ,l[n]</code>，同理推出 <code>r[2],r[3], ... ,r[n]</code> 和 <code>u[2],u[3], ... ,u[n]</code> 🎉</p>
+<p>最后再计算，$f[n] = l[n] + r[n] + u[n]$ 即可得到答案。</p>
+<blockquote>
+<p>本题还可以简化，不过该简化式一下子不容易想到，需要用一些数学知识，推导如下：</p>
+<p>$f[n] = l[n] + r[n] + u[n] = 2 * l[n -1] + 2 * r[n-1] + 3 * u[n-1] = 2 * f[n-1] + u[n-1] = 2 * f[n-1] + u[n-2] + l[n -2] + r[n - 2] = 2 * f[n-1] + f[n-2]$</p>
+<p>即递推式为 $f[n] = 2 * f[n - 1] + f[n-2](n \ge 3)$</p>
+</blockquote>
+<p>🍉 总结：该题从 <strong>不同路线</strong> 和 <strong>路线的第 n 步和 n-1 步方向</strong> 角度去展开递推，会比较清晰明了（不建议像「单点移动路线」问题那样从某个点开始考虑）</p>
+<h2 id="❗️-误区提示"><a href="#❗️-误区提示" class="headerlink" title="❗️ 误区提示"></a>❗️ 误区提示</h2><p>此题的一个 <strong>常见错误</strong>，就是把递推方程书写成 <code>f[i] = f[i-1] + 2*f[i-2]</code>。</p>
+<p>这是因为在划分子集时，把第二个子集「<strong>最后一步走 2 级</strong>」✅ 误解成了「<strong>最后一步走 2 级有多少种方案</strong>」❌</p>
+<p>这就导致在考虑 <code>f[i-2]</code> 时，认为 <strong>最后一步走 2 级有 2 种方案</strong>：即一次走 2 级，或先走 1 级，再走 1 级。把 <code>f[i-2]</code> 与 <code>f[2]</code> 产生了联系，所以在 <code>f[i-2]</code> 前乘了 2。❌ </p>
+<p>但是仔细思考，我们会发现上面这种错误的想法，<strong>本质上是因为两个子集出现了重复</strong>。</p>
+<p> 「最后一步走 2 级，但是每次走 1 级」的方案，其实是包含在第一个子集 「最后一步走 1 级」中的。因为如果先走 1 级，再走 1 级，那最后一步就是 1 级，根本不能划分在「最后一步走 2 级」这个子集中，从而产生了错误。</p>
+<p>也就是说，<code>f[i-2]</code> 与 <code>f[2]</code> 是没有关系的❗️</p>
+<p>初学者在初学时犯了这种错误后，需要仔细思考原因，避免下次再走入这个误区。🍀</p>
+<hr>
+<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><p>标准版</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">;</span>
+ll f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> l<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> r<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> u<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+    <span class="token comment">//边界条件</span>
+    l<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> r<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> u<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> l<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> r<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> u<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//递推</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        l<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> l<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> u<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        r<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> r<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> u<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        u<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> l<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> r<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> u<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        f<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> l<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> r<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> u<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>优化版</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> n<span class="token punctuation">;</span>
+ll f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+
+    <span class="token comment">//数学简化后的递推</span>
+    f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+    f<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">//注意i从3开始</span>
+        f<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">*</span> f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
                 
             </div>
             <hr/>
@@ -707,7 +814,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/04/09/acwing-di-87-chang-zhou-sai-fu-pan/">https://ricky2333.github.io/2023/04/09/acwing-di-87-chang-zhou-sai-fu-pan/</a>
+                    <a href="https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/">https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -749,12 +856,12 @@
                                     <span class="chip bg-color">信息奥赛</span>
                                 </a>
                             
-                                <a href="/tags/Acwing/">
-                                    <span class="chip bg-color">Acwing</span>
-                                </a>
-                            
                                 <a href="/tags/C/">
                                     <span class="chip bg-color">C++</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%80%92%E6%8E%A8/">
+                                    <span class="chip bg-color">递推</span>
                                 </a>
                             
                         </div>
@@ -924,14 +1031,16 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/04/09/xin-xi-ao-sai-ti-jie-cai-fang-ge/">
+                <a href="/2023/04/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="信息奥赛题解｜踩方格">
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="信息奥赛题解｜踩方格">
                         
                         <span class="card-title">信息奥赛题解｜踩方格</span>
                     </div>
@@ -943,21 +1052,22 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/" class="post-category">
-                                    信息奥赛
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    信息奥赛题解
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -984,30 +1094,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/04/08/acwing-di-86-chang-zhou-sai-fu-pan/">
+                <a href="/2023/04/10/xin-xi-ao-sai-ti-jie-guo-he-zu/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Acwing第86场周赛复盘">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="信息奥赛题解｜过河卒">
                         
-                        <span class="card-title">Acwing第86场周赛复盘</span>
+                        <span class="card-title">信息奥赛题解｜过河卒</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Acwing第86场周赛复盘
+                            信息奥赛题解｜过河卒
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-10
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/" class="post-category">
-                                    Acwing周赛复盘
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    信息奥赛题解
                                 </a>
                             
                             
@@ -1021,12 +1131,12 @@
                         <span class="chip bg-color">信息奥赛</span>
                     </a>
                     
-                    <a href="/tags/Acwing/">
-                        <span class="chip bg-color">Acwing</span>
-                    </a>
-                    
                     <a href="/tags/C/">
                         <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%80%92%E6%8E%A8/">
+                        <span class="chip bg-color">递推</span>
                     </a>
                     
                 </div>
@@ -1275,7 +1385,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">21.9k</span>&nbsp;字
+                class="white-color">22.1k</span>&nbsp;字
             
             
             
