@@ -999,36 +999,36 @@ ll ans<span class="token punctuation">[</span>N<span class="token punctuation">]
 </ul>
 <p>这里非常精妙的对数值进行线性DP，而不是像很多模型那样对下标进行线性DP（有点像「二分答案」那样）</p>
 <p>只能说 DP 的题目思路都太精妙了，只有多看，多学，多练，才能让自己「顿悟」，继续加油。</p>
-<h4 id="【复盘后的优化代码】✅-2"><a href="#【复盘后的优化代码】✅-2" class="headerlink" title="【复盘后的优化代码】✅"></a>【复盘后的优化代码】✅</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;bits/stdc++.h&gt;
+<h4 id="【复盘后的优化代码】✅-2"><a href="#【复盘后的优化代码】✅-2" class="headerlink" title="【复盘后的优化代码】✅"></a>【复盘后的优化代码】✅</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
-using namespace std;
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-const int N = 1e5 + 10;
-typedef long long ll;
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
 
-ll s[N], dp[N];
-int n, x;
+ll s<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> dp<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> x<span class="token punctuation">;</span>
 
-int main() {
-    ios::sync_with_stdio(false);  //cin读入优化
-    cin.tie(0);
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    cin &gt;&gt; n;
-    for (int i = 1; i &lt;= n; ++i) {
-        cin &gt;&gt; x;
-        s[x] += x;  // s数组类似于"桶"，这里的"桶"直接存储总和
-    }
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span>
+        s<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">+=</span> x<span class="token punctuation">;</span>  <span class="token comment">// s数组类似于"桶"，这里的"桶"直接存储总和</span>
+    <span class="token punctuation">}</span>
 
-    // 动态规划
-    for (int i = 1; i &lt;= N - 1; ++i) {
-        // 状态转移方程
-        dp[i] = max(dp[i - 1], dp[max(0, i - 2)] + s[i]);
-    }
+    <span class="token comment">// 动态规划</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> N <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 状态转移方程</span>
+        dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> dp<span class="token punctuation">[</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">+</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    cout &lt;&lt; dp[N - 1] &lt;&lt; endl;
+    cout <span class="token operator">&lt;&lt;</span> dp<span class="token punctuation">[</span>N <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 
-    return 0;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="【周赛现场-AC-代码】-2"><a href="#【周赛现场-AC-代码】-2" class="headerlink" title="【周赛现场 AC 代码】"></a>【周赛现场 AC 代码】</h4><p>该题现场未AC 😂</p>
 <h4 id="【代码对比总结】-1"><a href="#【代码对比总结】-1" class="headerlink" title="【代码对比总结】"></a>【代码对比总结】</h4><ul>
