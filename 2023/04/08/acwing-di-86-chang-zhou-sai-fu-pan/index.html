@@ -651,14 +651,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.1k
+                    3.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    13 分
                 </div>
                 
 
@@ -962,7 +962,7 @@ ll ans<span class="token punctuation">[</span>N<span class="token punctuation">]
 <h4 id="【原题链接】-2"><a href="#【原题链接】-2" class="headerlink" title="【原题链接】"></a>【原题链接】</h4><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/4799/">https://www.acwing.com/problem/content/4799/</a></p>
 <hr>
 <h4 id="【题目分析】-2"><a href="#【题目分析】-2" class="headerlink" title="【题目分析】"></a>【题目分析】</h4><p>动态规划题，需要平时积累，详细讲解见 y总讲解录像：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1284y1h7ip/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249&amp;t=1814">链接</a></p>
-<p><img src="http://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-170405.png" alt="image-20230115160302183"></p>
+<p><img src="http://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-170405.png" alt="y总的分析图"></p>
 <p><strong>【二刷经历】</strong></p>
 <p>2023 年 4 月 8 日（考完蓝桥杯的晚上），摊主想要把这篇文章上传至自己的博客网站，于是再次阅读了这篇寒假写的复盘，打算检查文章可能存在的错误。</p>
 <p>在检查的过程中，摊主突然发现 C 题又不会做了，说明当时还是没有理解透彻，需要回炉重造。😂</p>
@@ -973,30 +973,31 @@ ll ans<span class="token punctuation">[</span>N<span class="token punctuation">]
 <li>想到使用 <strong>线性DP</strong> 求解，但是始终无法推出状态转移方程，或者说究竟如何表示状态？<ul>
 <li>自己模拟的序列是这样的 <code>1 1 1 2 2 2 2 2 3 3 3</code></li>
 <li>DP 考虑如下<ul>
-<li><code>dp[i]</code> 表示删去第 i 个数字后（一定要删去第 <code>i</code> 个数字），能得到的最大值</li>
+<li><code>dp[i]</code> 表示删去第 <code>i</code> 个数字后（一定要删去第 <code>i</code> 个数字），能得到的最大值</li>
 <li><code>dp[i]</code> 表示 <code>1~i</code> 序列能得到的最大值（不一定删去第 <code>i</code> 个数字）</li>
 </ul>
 </li>
 <li>但是在考虑上面两种情况是，总是会遇到 <strong>无法往下思考的点</strong>（这种状态在题目难时经常出现），有时候情况有点杂，自己就开始理不清了。<ul>
-<li>比如第 1 种情况，如果一定删去第 <code>i</code> 个数字，那这时候前面的状态怎么办，状态好像没办法转移过来，或者说需要记录一连串数字的左右下标，感觉有点麻烦。（其实这里就应当考虑到，如果把一连串数字进行合并，会不会简单些）</li>
-<li>再如第 2 种情况，那就需要讨论是否删除第 <code>i</code> 个数字，但是这样也需要讨论 第 i 个数字和前面数字的差值等情况：比如 <code>1 1 1 2</code> ，执行到 2 时，如果删了2，<code>dp[4]</code> 就是 2，不删 <code>dp[4] = 3</code>，所以取 <code>dp[3] = 3</code>。但是假如在后面再添一个 <code>2</code>，这时候 <code>dp[5]</code> 应该为 4，这种情况下 <code>dp[3]</code> 就应该等于 2 才对，出现了前后矛盾。</li>
+<li>比如第 1 种情况，如果一定删去第 <code>i</code> 个数字 <code>a[i]</code>，那这时候如何删除前面所有的 <code>a[i]-1</code>？状态好像没办法转移过来，或者说需要记录一连串数字的左右下标，感觉有点麻烦。（其实这里就应当考虑到，如果把一连串数字进行合并，会不会简单些）</li>
+<li>再如第 2 种情况，那就需要讨论是否删除第 <code>i</code> 个数字，但是这样也需要讨论：比如 <code>1 1 1 2</code> ，执行到 2 时，如果删了 2，<code>dp[4] = 2</code>，不删 2 的话， <code>dp[4] = 3</code>，取两者最大值 → <code>dp[4] = 3</code>。但是假如在后面再添一个 <code>2</code>，我们一眼能看出来 <code>dp[5] = 4</code>，但是落实到具体方程时，<code>dp[5]=dp[4]+2=5</code>，显然有问题，因为这时候 <code>dp[4]</code> 应该为 2，出现了前后矛盾。</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>最后只能遗憾告终</li>
 </ul>
-<p>于是又去温习了一遍 y总的讲解，发现一开始 y总直接把 <code>1 1 1 2 2 2 2 2 3 3 3</code> 这种合并成了 <code>1 2 3</code>，就直接对这样 3 个数进行讨论就可以了，省去了记录一连串数字的左右下标。</p>
+<p>于是又去温习了一遍 y总的讲解，发现一开始 y总直接把 <code>1 1 1 2 2 2 2 2 3 3 3</code> 这种合并成了 <code>1 2 3</code>，就直接对 3 个数值进行 线性DP，省去了记录一连串数字的左右下标。（这里有一步贪心过程，如想要删除数字 2，一定是把 5 个 2 都删除）</p>
 <p>然后 <code>dp[i]</code> 的表示是选择了上面线性DP的第二种方案，思路如下：</p>
 <ul>
 <li>序列 <code>1 2 ... i</code>，这里 <code>i</code> 并非下标，而是原序列中出现的值<ul>
 <li>如果不选数字 <code>i</code>，则 <code>dp[i] = dp[i-1]</code></li>
 <li>如果选择数字 <code>i</code>，则 <code>dp[i] = dp[i-2] + s[i]</code></li>
 <li>取两者最大值即可。</li>
+<li>注意 🍉：由于状态转移方程中出现了 <code>i-2</code>，所以为了防止下标越界，循环需要从 2 开始；或者写成这种形式 <code>dp[max(0,i-2)]</code></li>
 </ul>
 </li>
 </ul>
-<p>这里非常精妙的避开了上面用 <code>1 1 1 2 2 2 2 2 3 3 3</code> 出现的矛盾，而且利用了</p>
+<p>这里非常精妙的对数值进行线性DP，而不是像很多模型那样对下标进行线性DP（有点像「二分答案」那样）</p>
 <p>只能说 DP 的题目思路都太精妙了，只有多看，多学，多练，才能让自己「顿悟」，继续加油。</p>
 <h4 id="【复盘后的优化代码】✅-2"><a href="#【复盘后的优化代码】✅-2" class="headerlink" title="【复盘后的优化代码】✅"></a>【复盘后的优化代码】✅</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;bits/stdc++.h&gt;
 
@@ -1021,7 +1022,7 @@ int main() {
     // 动态规划
     for (int i = 1; i &lt;= N - 1; ++i) {
         // 状态转移方程
-        dp[i] = max(dp[i - 1], dp[(max(0, i - 2))] + s[i]);
+        dp[i] = max(dp[i - 1], dp[max(0, i - 2)] + s[i]);
     }
 
     cout &lt;&lt; dp[N - 1] &lt;&lt; endl;
@@ -1628,7 +1629,7 @@ int main() {
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">21.8k</span>&nbsp;字
+                class="white-color">21.9k</span>&nbsp;字
             
             
             
