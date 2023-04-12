@@ -857,20 +857,41 @@
 </tr>
 </tbody></table>
 <p><strong>过了 3 个月后</strong>（3月），此时 1 月的卵成长为了成虫，<strong>成虫数量增加</strong>，所以 $c[3] = c[2] + r[3 - 2] = 3$；对于卵来说，此时有 2 只卵变成成虫，但是原先的 1 对成虫又产生了 2 只卵，所以 $r[3] = r[2] - 2 + 2 = 4$</p>
-<div align="center">
-|        月份         | 0月  | 1月  | 2月  | 3月  | 4月  |
-| :-----------------: | :--: | :--: | :--: | :--: | :--: |
-| 每月成虫总数量 c[i] |  1   |  1   |  1   |  3   |      |
-|  每月卵总数量 r[i]  |  0   |  2   |  4   |  4   |      |
-</div>
-
+<table>
+<thead>
+<tr>
+<th align="center">月份</th>
+<th align="center">0月</th>
+<th align="center">1月</th>
+<th align="center">2月</th>
+<th align="center">3月</th>
+<th align="center">4月</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">每月成虫总数量 c[i]</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">每月卵总数量 r[i]</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
 <p>于是我们容易总结得到，成虫数量 $c[i] = c[i - 1] + r[i -2]$ （但是这其实是有问题的 ❌）</p>
 <p>我们继续来看 <strong>4 月份</strong>，如果按照上面这种方式，那么 $c[4] = c[3] + r[4-2] = 8$。</p>
 <p>但是仔细思考，2 月份的 4 对卵，已经有 2 对在 3 月份变成了成虫，实际上只有 2 对卵在 4 月份变成了成虫，正确的 $c[4] = c[3] + 2 = 6$ 才对。🤔</p>
 <p>经过思考，我们发现上面公式里的 <code>r[i-2]</code>，<strong>不应该设成 2 个月前卵的总数量</strong>，因为如果是总数量，那么这些卵中有一部分来自于上个月，这部分卵在下一个月就会变成成虫，而不是等 2 个月后才变成成虫。💡</p>
 <p>所以，更加合理的表示方式，应该是将「<strong>r 数组设置为每个月新增的卵的数量</strong>」。即每个月的成虫总数量 <code>c[i]</code>，应该等于 上个月成虫的总数量 <code>c[i-1]</code> + 上 2 个月新增的卵的数量 <code>r[i-2]</code>（其他时间产生的卵和 <code>c[i]</code> 的计算并没有关系）✅ </p>
-<p>这也是为什么很多题解中，选择设置 **c 为每月成虫<u><em>总数量</em></u>**，但是 <strong>r 为每月<u><em>新增</em></u> 的卵的数量</strong>的原因。</p>
-<p>这样设定变量含义，就能够得到正确的递推方程：<br>$$<br>c[i] = c[i - 1] + r[i - 2]\r[i] = c[i -x] * y<br>$$<br>递推方程含义为（在 x 个月之后）：</p>
+<p>这也是为什么很多题解中，选择设置 <strong>c为每月成虫总数量</strong>，但是 <strong>r 为每月<u><em>新增</em></u> 的卵的数量</strong>的原因。</p>
+<p>这样设定变量含义，就能够得到正确的递推方程：<br>$$<br>c[i] = c[i - 1] + r[i - 2] ; r[i] = c[i -x] * y<br>$$<br>递推方程含义为（在 x 个月之后）：</p>
 <p>每月成虫总数量 $c[i]$ = 上一个月成虫总数量 $c[i -1]$ + 上 2 个月新增的卵的数量 $r[i - 2]$</p>
 <p>每月新增的卵的数量 $r[i]$ = 上 x 个月的成虫总数量 $c[i-x] * y$</p>
 <p>在理解了这一步后，我们再重新来推一下这个表格：</p>
@@ -1762,7 +1783,7 @@ ll x<span class="token punctuation">,</span> y<span class="token punctuation">,<
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">22k</span>&nbsp;字
+                class="white-color">24.9k</span>&nbsp;字
             
             
             

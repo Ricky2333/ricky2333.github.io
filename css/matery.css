@@ -1203,7 +1203,7 @@ article .article-tags .chip {
 
 #articleContent table {
     width: 100%;
-    display: block;
+    /* display: block; */
     border-collapse: collapse;
     border-spacing: 0;
     overflow: auto;
@@ -2202,6 +2202,7 @@ footer .copy-right {
 /*toc目录滤镜*/
 #dark-mode .toc-widget {
   filter: invert(0.8);
+  /* color: #000; */
 }
 
 #dark-mode .toc-widget .toc-list-item {
@@ -2226,6 +2227,7 @@ footer .copy-right {
 
 #dark-mode table tr {
     background: #606266;
+    /* background: #282c34; */
     color: rgb(243, 244, 246);
 }
 

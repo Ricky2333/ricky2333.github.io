@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-10T04:27:59.335Z</updated>
+  <updated>2023-04-12T03:46:45.059Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>信息奥赛题解｜</title>
+    <link href="https://ricky2333.github.io/2023/04/12/xin-xi-ao-sai-ti-jie/"/>
+    <id>https://ricky2333.github.io/2023/04/12/xin-xi-ao-sai-ti-jie/</id>
+    <published>2023-04-12T03:29:58.000Z</published>
+    <updated>2023-04-12T03:46:45.059Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Acwing第87场周赛复盘</title>
+    <link href="https://ricky2333.github.io/2023/04/11/acwing-di-87-chang-zhou-sai-fu-pan/"/>
+    <id>https://ricky2333.github.io/2023/04/11/acwing-di-87-chang-zhou-sai-fu-pan/</id>
+    <published>2023-04-11T00:17:57.000Z</published>
+    <updated>2023-04-12T04:34:42.217Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;【Acwing-周赛复盘】第87场周赛复盘（2023-1-21）&quot;&gt;&lt;a href=&quot;#【Acwing-周赛复盘】第87场周赛复盘（2023-1-21）&quot; class=&quot;headerlink&quot; title=&quot;【Acwing</summary>
+        
+      
+    
+    
+    
+    <category term="Acwing周赛复盘" scheme="https://ricky2333.github.io/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Acwing" scheme="https://ricky2333.github.io/tags/Acwing/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>信息奥赛题解｜踩方格</title>
     <link href="https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/"/>
     <id>https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/</id>
     <published>2023-04-10T03:41:21.000Z</published>
-    <updated>2023-04-10T04:27:59.335Z</updated>
+    <updated>2023-04-10T10:46:32.855Z</updated>
     
     
       
@@ -287,7 +329,7 @@
     <link href="https://ricky2333.github.io/2023/04/04/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/"/>
     <id>https://ricky2333.github.io/2023/04/04/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/</id>
     <published>2023-04-04T15:24:33.000Z</published>
-    <updated>2023-04-04T15:54:39.768Z</updated>
+    <updated>2023-04-11T01:16:25.016Z</updated>
     
     
       
