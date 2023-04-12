@@ -651,14 +651,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3k
+                    3.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    14 分
                 </div>
                 
 
@@ -987,6 +987,52 @@
 <p>Step2：求出以 <strong>结点 i 为根</strong> 的 <strong>子树高度最大值</strong> 和 <strong>次大值</strong>，两者之和就是以当前结点 i 为根的直径</p>
 <p>Step3：输出 n 个结点的直径最大值</p>
 <p>根据该解题思路，编写相应代码，具体见 y总讲解视频：<a target="_blank" rel="noopener" href="https://www.acwing.com/video/4611/">视频链接</a></p>
+<p><strong>【二刷经历】</strong></p>
+<p>2023 年 4 月 11 日，摊主想要把这篇文章上传至自己的博客网站，于是再次阅读了这篇复盘，打算检查文章可能存在的错误。</p>
+<p>在检查的过程中，摊主突然发现 C 题又不会做了，说明当时还是没有理解透彻，需要回炉重造。😂</p>
+<p>回顾一下自己晚上的做题流程：</p>
+<ul>
+<li><p>发现该题描述的数据结构为「树」</p>
+</li>
+<li><p>书写「邻接表」代码，存储树的结点和边</p>
+</li>
+<li><p>发现解题策略</p>
+<ul>
+<li>选择一个结点 <code>u</code> 作为根结点</li>
+<li>计算 <code>u</code> 的所有子树深度</li>
+<li>取最大深度和次大深度为最终答案</li>
+</ul>
+</li>
+<li><p>根据思路书写代码框架</p>
+</li>
+<li><p>但是在写 <code>dfs</code> 时，发现理不清输入值、返回值、终止条件以及是否往回搜的判断条件</p>
+</li>
+</ul>
+<p>于是又去回顾了y总的讲解视频，以及自己写的代码注释，发现上面的思路其实存在一定问题。</p>
+<p>上面的思路其实默认了「一开始选择哪个点作为根结点，得到的子树最大深度和次大深度之和都是一样的」，这是不对的 ❌ </p>
+<p>比如根结点 <code>u</code> 有 3 棵子树 <code>ch1</code>，<code>ch2</code>，<code>ch3</code></p>
+<ul>
+<li>子树 <code>ch1</code> 的深度为 2</li>
+<li>子树 <code>ch3</code> 的深度为 1</li>
+<li>子树 <code>ch2</code> 的根结点为 <code>v</code>，<code>v</code> 上又有两棵子树<ul>
+<li>一棵深度为 7 </li>
+<li>另一棵深度为 8</li>
+</ul>
+</li>
+</ul>
+<p>按照上面的思路，最后答案是 子树 <code>ch2</code> 的最大深度 8 + <code>ch1</code> 的深度 2 等于 10。</p>
+<p>但是显然，正确答案应该是 <code>v</code> 的两棵子树的深度之和，应该为 15 才对。</p>
+<p>由此可见，从 <code>u</code> 往下遍历的过程中，<code>ans</code> 应该不断进行比较，即 <code>ans = max(d1+d2,ans)</code>，才能保证最后的答案是正确的。✅</p>
+<p>同时还需思考，如何书写代码，才能使搜索从 <code>u</code> 一直往下，而 <strong>不会出现往回搜</strong> 的情况。</p>
+<p>本题 <strong>值得反复咀嚼</strong> 的一些点：</p>
+<ul>
+<li>dfs 的含义究竟是什么？</li>
+<li>dfs 的输入值为什么是 <code>int dfs(int u, int fa)</code>，<code>fa</code> 有什么作用？</li>
+<li>添加 <code>st[]</code> 数组可以达到 <code>fa</code> 的作用吗？</li>
+<li>dfs 的返回值是什么?</li>
+<li>dfs 是如何实现深度累加的？</li>
+<li>为什么是 <code>ans = max(ans,d1 + d2)</code> 而不是直接 <code>ans = d1 + d2</code> ？</li>
+</ul>
 <h4 id="【复盘后的优化代码】✅-2"><a href="#【复盘后的优化代码】✅-2" class="headerlink" title="【复盘后的优化代码】✅"></a>【复盘后的优化代码】✅</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
@@ -1001,10 +1047,11 @@
     e<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> b<span class="token punctuation">,</span> ne<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> h<span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">,</span> h<span class="token punctuation">[</span>a<span class="token punctuation">]</span> <span class="token operator">=</span> idx<span class="token operator">++</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
+<span class="token comment">// 返回结点fa以u为根结点的子树的最大深度</span>
 <span class="token keyword">int</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">,</span> <span class="token keyword">int</span> fa<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">int</span> d1 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> d2 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token comment">// d1 表示当前结点子树高度最大值，d2表示当前结点子树高度次大值</span>
 
-    <span class="token comment">// 遍历当前结点的所有子树</span>
+    <span class="token comment">// 遍历当前结点u的所有子树</span>
     <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> h<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token operator">~</span>i<span class="token punctuation">;</span> i <span class="token operator">=</span> ne<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 注意此时的i为idx的值，而非结点的值，容易和dfs的参数搞混</span>
         <span class="token comment">// 由于是无向边，需要不走回路</span>
         <span class="token keyword">int</span> j <span class="token operator">=</span> e<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -1039,11 +1086,11 @@
     cout <span class="token operator">&lt;&lt;</span> ans <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="【周赛现场-AC-代码】-2"><a href="#【周赛现场-AC-代码】-2" class="headerlink" title="【周赛现场 AC 代码】"></a>【周赛现场 AC 代码】</h4><p>该题现场未AC 😂</p>
 <h4 id="【代码对比总结】-1"><a href="#【代码对比总结】-1" class="headerlink" title="【代码对比总结】"></a>【代码对比总结】</h4><ul>
-<li>周赛现场虽然想出了求解最长直径的思路，但是由于 图论/搜索 部分的理论内容学习不够扎实充分，导致没能够顺利写出 dfs 的代码，需要在复盘后，认真学习总结。</li>
+<li>周赛现场虽然想出了求解最长直径的思路，但是由于 图论/搜索 部分的理论内容学习不够扎实充分，导致没能够顺利写出 <code>dfs</code> 的代码，需要在复盘后，认真学习总结。</li>
 </ul>
 <hr>
 
@@ -1621,7 +1668,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.9k</span>&nbsp;字
+                class="white-color">25.6k</span>&nbsp;字
             
             
             
