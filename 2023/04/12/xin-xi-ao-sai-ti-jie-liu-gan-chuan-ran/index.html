@@ -30,9 +30,9 @@
 
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
 
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
 </head>
 
 
@@ -701,12 +701,12 @@
 
 <h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1191">http://ybt.ssoier.cn:8088/problem_show.php?pid=1191</a></p>
 <hr>
-<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>在博主看来，本题对于 <strong>算法初学者</strong> 主要有以下几个 <strong>难点</strong>：</p>
+<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>在摊主看来，本题对于 <strong>算法初学者</strong> 主要有以下几个 <strong>难点</strong>：</p>
 <ul>
 <li>如何读入字符矩阵 ？</li>
 <li>如何模拟感染过程 ？</li>
 </ul>
-<p><strong>对于第一个难点</strong>，博主采用的方式是 「定义一个 <strong>二维的字符数组</strong>、使用 <strong>cin</strong> 读入数据」（需要开启 <strong>cin 读入优化</strong>，减少读入数据的时间）。</p>
+<p><strong>对于第一个难点</strong>，摊主采用的方式是 「定义一个 <strong>二维的字符数组</strong>、使用 <strong>cin</strong> 读入数据」（需要开启 <strong>cin 读入优化</strong>，减少读入数据的时间）。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">105</span><span class="token punctuation">;</span>
 <span class="token keyword">char</span> s<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">// 定义一个二维的字符数组</span>
 
@@ -729,7 +729,7 @@
 <p><code>cin</code> 在开了 <code>cin</code> 读入优化后，速度基本上能达到 <code>scanf</code> 的水平，此题完全够用了。</p>
 <br>
 
-<p><strong>对于第二个难点</strong>，博主采用了 <strong>遍历模拟</strong> 的方法，每天都遍历一次二维矩阵，模拟感染过程。</p>
+<p><strong>对于第二个难点</strong>，摊主采用了 <strong>遍历模拟</strong> 的方法，每天都遍历一次二维矩阵，模拟感染过程。</p>
 <p>模拟过程也非常简单，只需在遍历时，遇到 ‘@’ 的房间，就把四周非空的房间置为 ‘@’</p>
 <p>❗️❗️❗️但是这种方式非常容易出现 <strong>一个误区</strong>，就是 「<strong>每次矩阵还没有遍历完</strong>，就急着把 <strong>当前房间感染的新房间置为 ‘@’</strong> 」</p>
 <p>这样会出现下面这种情况：</p>
