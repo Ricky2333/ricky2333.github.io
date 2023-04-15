@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-14T04:28:31.424Z</updated>
+  <updated>2023-04-15T13:36:32.437Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python VS C（下篇）</title>
+    <link href="https://ricky2333.github.io/2023/04/15/python-vs-c-xia-pian/"/>
+    <id>https://ricky2333.github.io/2023/04/15/python-vs-c-xia-pian/</id>
+    <published>2023-04-15T11:16:29.000Z</published>
+    <updated>2023-04-15T13:36:32.437Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;写在最前-✍️&quot;&gt;&lt;a href=&quot;#写在最前-✍️&quot; class=&quot;headerlink&quot; title=&quot;写在最前 ✍️&quot;&gt;&lt;/a&gt;写在最前 ✍️&lt;/h2&gt;&lt;p&gt;在上一篇博客 &lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python VS C（上篇）</title>
     <link href="https://ricky2333.github.io/2023/04/14/python-vs-c-shang-pian/"/>
     <id>https://ricky2333.github.io/2023/04/14/python-vs-c-shang-pian/</id>
     <published>2023-04-14T02:20:06.000Z</published>
-    <updated>2023-04-14T04:28:31.424Z</updated>
+    <updated>2023-04-14T04:38:43.532Z</updated>
     
     
       
@@ -50,7 +77,7 @@
     <link href="https://ricky2333.github.io/2023/04/13/acwing-di-88-chang-zhou-sai-fu-pan/"/>
     <id>https://ricky2333.github.io/2023/04/13/acwing-di-88-chang-zhou-sai-fu-pan/</id>
     <published>2023-04-13T02:32:14.000Z</published>
-    <updated>2023-04-13T02:37:31.332Z</updated>
+    <updated>2023-04-15T12:58:25.259Z</updated>
     
     
       
@@ -168,7 +195,7 @@
     <link href="https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-guo-he-zu/"/>
     <id>https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-guo-he-zu/</id>
     <published>2023-04-10T03:40:27.000Z</published>
-    <updated>2023-04-10T04:13:03.527Z</updated>
+    <updated>2023-04-15T12:35:34.540Z</updated>
     
     
       
@@ -224,70 +251,11 @@
   </entry>
   
   <entry>
-    <title>Acwing第86场周赛复盘</title>
-    <link href="https://ricky2333.github.io/2023/04/08/acwing-di-86-chang-zhou-sai-fu-pan/"/>
-    <id>https://ricky2333.github.io/2023/04/08/acwing-di-86-chang-zhou-sai-fu-pan/</id>
-    <published>2023-04-08T11:56:51.000Z</published>
-    <updated>2023-04-10T03:26:58.441Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;【Acwing-周赛复盘】第86场周赛复盘（2023-1-14）&quot;&gt;&lt;a href=&quot;#【Acwing-周赛复盘】第86场周赛复盘（2023-1-14）&quot; class=&quot;headerlink&quot; title=&quot;【Acwing</summary>
-        
-      
-    
-    
-    
-    <category term="Acwing周赛复盘" scheme="https://ricky2333.github.io/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="Acwing" scheme="https://ricky2333.github.io/tags/Acwing/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜位数问题</title>
-    <link href="https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/"/>
-    <id>https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/</id>
-    <published>2023-04-07T11:43:52.000Z</published>
-    <updated>2023-04-12T05:58:14.667Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜位数问题&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜位数问题&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜位数问题&quot;&gt;&lt;/a&gt;信息奥赛题解｜位数问题&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
     <title>信息奥赛题解｜四平方和</title>
-    <link href="https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/"/>
-    <id>https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/</id>
-    <published>2023-04-07T10:44:37.000Z</published>
-    <updated>2023-04-09T15:14:30.386Z</updated>
+    <link href="https://ricky2333.github.io/2023/04/08/xin-xi-ao-sai-ti-jie-si-ping-fang-he/"/>
+    <id>https://ricky2333.github.io/2023/04/08/xin-xi-ao-sai-ti-jie-si-ping-fang-he/</id>
+    <published>2023-04-08T10:44:37.000Z</published>
+    <updated>2023-04-15T12:38:35.950Z</updated>
     
     
       
@@ -313,29 +281,61 @@
   </entry>
   
   <entry>
-    <title>Git教程</title>
-    <link href="https://ricky2333.github.io/2023/04/06/git-jiao-cheng/"/>
-    <id>https://ricky2333.github.io/2023/04/06/git-jiao-cheng/</id>
-    <published>2023-04-06T11:47:02.000Z</published>
-    <updated>2023-04-10T04:34:43.288Z</updated>
+    <title>Acwing第86场周赛复盘</title>
+    <link href="https://ricky2333.github.io/2023/04/07/acwing-di-86-chang-zhou-sai-fu-pan/"/>
+    <id>https://ricky2333.github.io/2023/04/07/acwing-di-86-chang-zhou-sai-fu-pan/</id>
+    <published>2023-04-07T11:56:51.000Z</published>
+    <updated>2023-04-15T12:37:42.822Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;本篇博客还在修改润色中～&lt;/p&gt;
-&lt;p&gt;敬请期待～&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h1 id=&quot;【Acwing-周赛复盘】第86场周赛复盘（2023-1-14）&quot;&gt;&lt;a href=&quot;#【Acwing-周赛复盘】第86场周赛复盘（2023-1-14）&quot; class=&quot;headerlink&quot; title=&quot;【Acwing</summary>
         
       
     
     
     
-    <category term="Git教程" scheme="https://ricky2333.github.io/categories/Git%E6%95%99%E7%A8%8B/"/>
+    <category term="Acwing周赛复盘" scheme="https://ricky2333.github.io/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
     
     
-    <category term="Git" scheme="https://ricky2333.github.io/tags/Git/"/>
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Acwing" scheme="https://ricky2333.github.io/tags/Acwing/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛题解｜位数问题</title>
+    <link href="https://ricky2333.github.io/2023/04/06/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/"/>
+    <id>https://ricky2333.github.io/2023/04/06/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/</id>
+    <published>2023-04-06T11:43:52.000Z</published>
+    <updated>2023-04-15T12:37:19.395Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜位数问题&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜位数问题&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜位数问题&quot;&gt;&lt;/a&gt;信息奥赛题解｜位数问题&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
     
   </entry>
   
@@ -490,7 +490,7 @@
     <link href="https://ricky2333.github.io/2023/03/26/xin-xi-ao-sai-shi-xun-bao-gao-stl/"/>
     <id>https://ricky2333.github.io/2023/03/26/xin-xi-ao-sai-shi-xun-bao-gao-stl/</id>
     <published>2023-03-26T04:17:38.000Z</published>
-    <updated>2023-04-09T15:28:47.635Z</updated>
+    <updated>2023-04-14T04:32:13.831Z</updated>
     
     
       
@@ -514,10 +514,10 @@
   
   <entry>
     <title>Ubuntu下安装Clang编译器</title>
-    <link href="https://ricky2333.github.io/2023/03/26/ubuntu/"/>
-    <id>https://ricky2333.github.io/2023/03/26/ubuntu/</id>
-    <published>2023-03-26T04:14:35.000Z</published>
-    <updated>2023-04-13T03:23:02.462Z</updated>
+    <link href="https://ricky2333.github.io/2023/03/25/ubuntu/"/>
+    <id>https://ricky2333.github.io/2023/03/25/ubuntu/</id>
+    <published>2023-03-25T04:14:35.000Z</published>
+    <updated>2023-04-15T12:35:58.717Z</updated>
     
     
       

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="信息奥赛题解｜位数问题, Rickyの水果摊">
+    <meta name="keywords" content="Python VS C（下篇）, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信息奥赛题解｜位数问题 | Rickyの水果摊</title>
+    <title>Python VS C（下篇） | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -30,9 +30,9 @@
 
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
 
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
 </head>
 
 
@@ -483,12 +483,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/30.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信息奥赛题解｜位数问题</h1>
+                    <h1 class="description center-align post-title">Python VS C（下篇）</h1>
                 </div>
             </div>
         </div>
@@ -609,31 +609,22 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                                <span class="chip bg-color">信息奥赛</span>
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
                             </a>
                         
                             <a href="/tags/C/">
-                                <span class="chip bg-color">C++</span>
+                                <span class="chip bg-color">C</span>
                             </a>
                         
-                            <a href="/tags/%E9%80%92%E6%8E%A8/">
-                                <span class="chip bg-color">递推</span>
+                            <a href="/tags/CS50/">
+                                <span class="chip bg-color">CS50</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
-                                信息奥赛题解
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -642,7 +633,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-07
+                    2023-04-15
                 </div>
                 
 
@@ -651,14 +642,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
+                    2.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    8 分
                 </div>
                 
 
@@ -681,136 +672,262 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="信息奥赛题解｜位数问题"><a href="#信息奥赛题解｜位数问题" class="headerlink" title="信息奥赛题解｜位数问题"></a>信息奥赛题解｜位数问题</h1><hr>
-<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>在所有的 $N$ 位数中，有多少个数中有偶数个数字 $3$ ? 由于结果可能很大，你只需要输出这个答案对 $12345$ 取余的值。</p>
-<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>读入一个数 $N(N \le 1000)$。</p>
-<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>输出有多少个数中有偶数个数字 $3$。</p>
-<h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">73</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1313">http://ybt.ssoier.cn:8088/problem_show.php?pid=1313</a></p>
+                <h2 id="写在最前-✍️"><a href="#写在最前-✍️" class="headerlink" title="写在最前 ✍️"></a>写在最前 ✍️</h2><p>在上一篇博客 <a target="_blank" rel="noopener" href="https://rickyxcoder.top/2023/04/14/python-vs-c-shang-pian/">Python VS C（上篇）</a>中，摊主从程序运行过程、模块导入、基本数据类型、变量、运算符、条件语句等角度对 C语言 和 Python 进行了对比。</p>
+<p>那在这篇博客中，摊主将更进一步，从循环、函数定义、输入、输出等角度，对这两个语言进行对比，帮助掌握其中一门语言的小伙伴快速上手另一门语言。</p>
+<blockquote>
+<p>本篇博客也是摊主的 <strong><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">CS50</a></strong> 课程学习笔记。</p>
+<p><strong><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">CS50</a></strong> 是哈佛大学的计算机导论公开课，也是摊主截止目前认为最棒的计算机导论课程。</p>
+<p>授课的 <a target="_blank" rel="noopener" href="https://cs.harvard.edu/malan/">David J. Malan</a> 教授是摊主见过的对计算机教学最热情的老师，也是在计算机基础教学领域对摊主影响最大的一位老师。摊主也希望通过自己的努力，不断向 Malan 教授这样的大牛看齐。</p>
+<p>有兴趣的小伙伴可以点击下面的链接，查看 <strong>CS50</strong> 课程的相关信息。</p>
+<p><strong>CS50</strong> 官方课程网站：<a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">https://cs50.harvard.edu/x/2023/</a></p>
+</blockquote>
 <hr>
-<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>本题对于 <strong>算法初学者</strong> 来说有点难度，且网络上的题解都不是特别清晰，故摊主撰写了本篇详细的题解分析，希望能在未来帮助到更多的同学。</p>
-<br>
-
-<p>首先以 $N=1$，即 <strong>一位数</strong> 为例，统计一位数中 包含偶数个 3 的个数，记作 $f[1]_偶$ ；统计包含奇数个 3 的个数，记作 $f[1]_奇$ </p>
+<p>内容大纲</p>
 <ul>
-<li>由于 0 也是偶数，所以 「<strong>0 个 3</strong>」 也满足偶数个 3 的条件，故 $f[1]_偶$ 为 1～2，4～9，共 8 个数（注意：0 不是一位数），$f[1]_偶 = 8$</li>
-<li>奇数个3 的情况只有单独的 3，所以 $f[1]_奇 = 1$</li>
+<li>循环</li>
+<li>输入输出</li>
+<li>函数定义</li>
 </ul>
-<blockquote>
-<p>🍉 PS：有的小伙伴可能会问，题目不是求偶数的情况就够了吗？为什么要还要统计奇数的情况？继续往下看，你就明白了）</p>
-</blockquote>
-<br>
+<h2 id="正文（下篇）"><a href="#正文（下篇）" class="headerlink" title="正文（下篇）"></a>正文（下篇）</h2><h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><h4 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h4><p>基本语法</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">while</span> <span class="token punctuation">(</span>条件<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    循环体
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>然后以 $N=2$，即 <strong>两位数</strong> 为例，统计两位数中 包含偶数个 3 的个数，记作 $f[2]_偶$ ；统计包含奇数个 3 的个数，记作 $f[2]_奇$ </p>
-<p>对于 $f[2]_偶$，可以分两种情况进行统计：</p>
+<p>实例</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    i<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><p>基本语法</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">while</span> 条件<span class="token punctuation">:</span>
+    循环体<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>实例</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">i <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">while</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+  i<span class="token operator">+</span><span class="token operator">+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>不同点：</p>
 <ul>
-<li><strong>十位为 3</strong>，则 个位必须为奇数个 3，数量为 $f[1]_奇$</li>
-<li><strong>十位不为 3</strong>（十位可以为 1～2，4～9，<strong>共 8 个数</strong>），则 个位必须为偶数个 3 ，数量为 $f[1]_偶$</li>
+<li>C语言的条件表达式需要由括号<code>()</code> 括起来，而 Python 的条件表达式无需添加 <code>()</code> （但是加了也没错）</li>
+<li>C语言中，循环体需要使用 <strong>花括号</strong> <code>{}</code> 括起来；而 Python 中，循环体是由 <strong>缩进</strong> 来表示的一段代码块，且需要在条件表达式后添加 <code>:</code></li>
 </ul>
-<p>所以 $f[2]_偶 = f[1]_奇 + 8 * f[1]_偶$ </p>
-<p>然后我们带入 $f[1]_奇$、$f[1]_偶$ ，得 $f[2]_偶 = f[1]_奇 + 8 * f[1]_偶=1+8*8=64$ ，却发现与样例答案 73 不相等。❌		</p>
-<br>
-
-<p>这是什么原因造成的呢 ?  🧐 　</p>
-<p>实际上，当我们单独拿$f[1]_奇$、$f[1]_偶$ 讨论时，由于 <strong>0 不为一位数</strong>，所以 $f[1]_偶$ 为 1～2，4～9，共 8 个。</p>
-<p>但是当 $N=2$ 时，由于十位上有了数字，所以此时个位上的数字是可以为 0 的，因此在计算 $f[2]_偶$ 时，$f[1]_偶$ 可以取到 0～2，4～9，共 9 个。（<strong>本质</strong>是 <strong>一位数</strong> 和 <strong>个位上的数字</strong> 的区别）</p>
-<p>同理，$f[1]_奇$ 也要考虑 0 的情况，但是此时 0 并不满足 「奇数个3的条件」，所以 $f[1]_奇$ 仍然为 1（这里 $f[1]_奇$ 的值虽然没有变，但是后面的 $f[2]_奇、f[3]_奇$、…、$f[n]_奇$ 的值会在更新后发生改变）</p>
-<p>把新的 $f[1]_偶$、$f[1]_奇$ 的值带入，得到  $f[2]_偶 = f[1]_奇 + 8 * f[1]_偶=1+8*9=73$ </p>
-<p>即为样例答案 73。</p>
-<p>同理，$f[2]_奇 = f[1]_偶 + 8 * f[1]_奇=9+8*1=17$</p>
-<blockquote>
-<p>上面这个 $f[1]_偶$、$f[1]_奇$ 为什么要更新的的原因，是本题的难点，也是本题的解题关键。现在不理解也没关系，继续往下阅读，再分析一个案例，也许你就理解了。</p>
-</blockquote>
-<br>
-
-<p>然后以 $N=3$，即 <strong>三位数</strong> 为例，也是类似的过程。</p>
-<p>对于 $f[3]_偶$，可以分两种情况：</p>
-<ul>
-<li><strong>百位为 3</strong>，则 十位和个位总体 必须为 奇数个 3，数量为 $f[2]_奇$</li>
-<li><strong>百位不为 3</strong>，则 十位和个位总体 必须为 偶数个 3，数量为 $f[2]_偶$</li>
-</ul>
-<p>所以 $f[3]_偶 = f[2]_奇 + 8 * f[2]_偶$</p>
-<p>同理，$f[3]_奇 = f[2]_偶 + 8 * f[2]_奇$</p>
-<p>同样，由于在计算 $f[2]_奇$ 、$f[2]_偶$ 时，十位不能为0；而引入百位后，十位可以为 0，所以如果要输出的是三位数的结果，则在计算 $f[2]_奇$ 、$f[2]_偶$ 时，也需要考虑 0</p>
-<br>
-
-<p>现在我们 <strong>重新计算</strong> 求解 $f[3]_偶$ 、$f[3]_奇$ 情况下的 $f[2]_偶$ 、$f[2]_奇$ </p>
-<p>我们在上一步中计算的 $f[2]_偶 = f[1]_奇 + 8 * f[1]_偶=1+8*9=73$ </p>
-<p>其中 8 这个系数，是十位不为 3 ，取 1～2，4～9 得到的（当时十位不能为 0）。但是现在，由于十位可以为0 ，所以十位可以取 0～2，4～9 共 9 个数字，所以上面式子中的系数应该为 9，而不是 8。</p>
-<p>所以新的 $f[2]_偶 = f[1]_奇 + 9 * f[1]_偶=1+9*9=82$ </p>
-<p>同理，新的 $f[2]_奇 = f[1]_偶 + 9 * f[1]_奇=9+9*1=18$</p>
-<p>在得到了新的 $f[2]_偶$、$f[2]_奇$ 后，再带入 $f[3]_偶 = f[2]_奇 + 8 * f[2]_偶$，就能得到正确的 $f[3]_偶$</p>
-<p>🍉 PS：$f[3]_偶 = f[2]_奇 + 8 * f[2]_偶$，这里的系数 8 并不会变成 9，因为此时百位是最高位，不能为 0。</p>
-<p>但是同理，当 $N=4$ 时，由于有千位的存在，百位就可以为 0 ，那么计算$f[3]_偶$ 时，其数值就应该更新为 $f[3]_偶 = f[2]_奇 + 9 * f[2]_偶$</p>
-<blockquote>
-<p>上面推导过程中， $f[2]_偶$、$f[2]_奇$ 为什么要更新，并且 「公式系数从 8 改为 9」的原因，以及计算 $f[3]_偶$、$f[3]_奇$ 时，「公式系数仍为 8 」的原因，是本题的难点，也是本题的解题关键。⭐️</p>
-</blockquote>
-<br>
-
-<p>根据上面的推导，我们可以得到最终 <strong>n 位数的结果</strong>：</p>
-<ul>
-<li><p>$f[n]_偶 = f[n-1]_奇 + 8 * f[n-1]_偶$</p>
-</li>
-<li><p>$f[n]_奇 = f[n-1]_偶 + 8 * f[n-1]_奇$</p>
-</li>
-</ul>
-<p>而在计算 $f[n-1]_奇$、$f[n-1]_偶$ 时，由于此时最高位可以为 0，上面递推式中表示 1～2，4～9的系数「8」就变成了0～2，4～9的系数「9」，递推公式为：</p>
-<ul>
-<li><p>$f[n-1]_偶 = f[n-2]_奇 + 9 * f[n-2]_偶$</p>
-</li>
-<li><p>$f[n-1]_奇 = f[n-2]_偶 + 9 * f[n-2]_奇$</p>
-</li>
-</ul>
-<p>所以在书写代码时，也需要分为两个表达式来写。✅</p>
-<p>🍉 PS1：在实际编程中，我们可以用 $f[N][0]$ 来表示 $f[N]_偶$ ，用 $f[N][1]$ 来表示 $f[N]_奇$</p>
-<p>🍉 PS2：这种递推问题的答案可能很大，甚至超出 <code>long long</code> 的范围，所以不要忘记题干中的取模要求。</p>
 <hr>
-<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><h4 id="C语言-1"><a href="#C语言-1" class="headerlink" title="C语言"></a>C语言</h4><p>基本语法</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">for</span> <span class="token punctuation">(</span>初始化表达式<span class="token punctuation">;</span> 条件表达式<span class="token punctuation">;</span> 更新表达式<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    循环体
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<p>实例</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e3</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token keyword">int</span> K <span class="token operator">=</span> <span class="token number">12345</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> n<span class="token punctuation">;</span>
-<span class="token keyword">int</span> f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">//f[n][0]表示 n位数 中包含偶数个3的情况</span>
+<h4 id="Python-1"><a href="#Python-1" class="headerlink" title="Python"></a>Python</h4><p>在 Python 中，for 循环的变量是 <strong>迭代器</strong>（iterator），可以是任何可迭代的对象，例如列表、元组、字典、字符串等。</p>
+<p>基本语法</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">for</span> 变量 <span class="token keyword">in</span> 序列<span class="token punctuation">:</span>
+    循环体<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
-    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<p>实例</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>  <span class="token comment">//1~2,4~9 共 8 个</span>
-        f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment">//3，共1个</span>
-        cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>  <span class="token comment">//更高位上有数字，需要考虑0</span>
-        f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-      
-        <span class="token comment">//递推2～n-1位数</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token comment">//K = 12345</span>
-            f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">9</span> <span class="token operator">*</span> <span class="token punctuation">(</span>f<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">;</span>
-            f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">9</span> <span class="token operator">*</span> <span class="token punctuation">(</span>f<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+<p>不同点：</p>
+<ul>
+<li>在 C 语言中，for 循环使用一个 <strong>循环变量</strong> 来表示循环次数，可以使用 <code>++</code> 和 <code>--</code> 运算符来递增或递减循环变量的值；而在 Python 中，for 循环使用一个 <strong>迭代器</strong> 来表示循环次数，循环变量是根据迭代器的值自动计算得到的。</li>
+<li>在 C 语言中，循环范围是一个数值区间，通常使用循环变量的值来表示循环次数；而在 Python 中，循环范围是一个序列，可以是任何可迭代的对象，例如列表、元组、字典、字符串等。</li>
+</ul>
+<hr>
+<h3 id="do-while循环"><a href="#do-while循环" class="headerlink" title="do-while循环"></a>do-while循环</h3><h4 id="C语言-2"><a href="#C语言-2" class="headerlink" title="C语言"></a>C语言</h4><p>和 <code>while</code> 循环不同， <code>do-while</code> 循环会 <strong>先执行一次循环体</strong>，然后再根据循环条件来决定是否继续执行循环。</p>
+<p>基本语法</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">do</span> <span class="token punctuation">{</span>
+    循环体
+<span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>条件<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-        <span class="token comment">//单独计算n位数</span>
-        f<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">8</span> <span class="token operator">*</span> <span class="token punctuation">(</span>f<span class="token punctuation">[</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">;</span>
-        cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+<p>实例</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">do</span> <span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    i<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Python-2"><a href="#Python-2" class="headerlink" title="Python"></a>Python</h4><p>Python 中 <strong>没有原生的 do-while 循环结构</strong>，但是可以通过 <code>while</code> 循环和 <code>break</code> 语句来实现类似于 <code>do-while</code> 循环的效果。</p>
+<p>实例</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">i <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    i <span class="token operator">+=</span> <span class="token number">1</span>
+    <span class="token keyword">if</span> i <span class="token operator">&gt;=</span> <span class="token number">10</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="函数定义"><a href="#函数定义" class="headerlink" title="函数定义"></a>函数定义</h3><h4 id="C语言-3"><a href="#C语言-3" class="headerlink" title="C语言"></a>C语言</h4><p>基本语法</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c">返回类型 函数名<span class="token punctuation">(</span>参数列表<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    函数体
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>实例</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">// 计算1～n之和</span>
+<span class="token keyword">int</span> <span class="token function">get_sum</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        res <span class="token operator">+=</span> i<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="Python-3"><a href="#Python-3" class="headerlink" title="Python"></a>Python</h4><p>基本语法</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> 函数名<span class="token punctuation">(</span>参数列表<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    函数体<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
+<p>实例</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 计算1～n之和</span>
+<span class="token keyword">def</span> <span class="token function">get_sum</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    res <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        res <span class="token operator">+=</span> i
+    <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>🍉 PS：C语言中，需要指定返回值类型（没有返回值，需要写 <code>void</code>）；而在 Python 中，就像无需指定变量类型一样，无需指定返回值类型。</p>
 <hr>
-<h3 id="😑-吐槽时间"><a href="#😑-吐槽时间" class="headerlink" title="😑 吐槽时间"></a>😑 吐槽时间</h3><p>摊主本人在阅读其他一些题解时，发现有的题解在分析时，认为 $f[1][0]=8$（ 1～2，4～9，因为 0 不算一位数），但是实际代码中，却出现 $f[1][0] = 9$ 的情况，并且没有交代原因。这样的前后矛盾，让不少看题解的小伙伴们感到困惑。</p>
-<p>摊主还发现，有的题解就直接认为 $f[1][0]$ 就应该等于 9，把 0 也算成了一位数，这从 <strong>数学定义的角度</strong> 来看是错误的。❌ （有疑惑的小伙伴可以查阅以下问题：0 算不算一位数 ? 一位数和个位数有什么区别？）</p>
-<p>从推导过程中，我们看到只有在 $N &gt; 1$ 时，<code>f[1][0]</code> 才因为进制的规则，变成了 9。</p>
-<p>说明写其他题解的作者可能没有仔细考虑这其中的关系，这也是摊主撰写此篇题解的原因，希望本题解能真正解答一些小伙伴们的困难。</p>
-<p>摊主也希望阅读此篇题解后，理解了本题的小伙伴，在未来自己写其他题目的题解时，多一份耐心与细致，不要让更多灌水、没有太多思考的题解，污染了这片土壤，浪费其他小伙伴搜索与阅读的时间。☘️</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><h4 id="C语言-4"><a href="#C语言-4" class="headerlink" title="C语言"></a>C语言</h4><p>C语言使用<code>scanf</code> 语句进行输入，<code>scanf</code> 在读取不同类型的数据时，需要使用不同的格式读取。</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> n<span class="token punctuation">;</span>
+<span class="token keyword">float</span> f<span class="token punctuation">;</span>
+<span class="token keyword">double</span> avg<span class="token punctuation">;</span>
+<span class="token keyword">char</span> c<span class="token punctuation">;</span>
+<span class="token keyword">char</span> str<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 读入一个整数</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%f"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>f<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 读入一个单精度浮点数</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%lf"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>avg<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 读入一个双精度浮点数</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%c"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 读入一个字符</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%s"</span><span class="token punctuation">,</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 读入一个字符串</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Python-4"><a href="#Python-4" class="headerlink" title="Python"></a>Python</h4><p>Python 使用 <code>input()</code> 语句进行输入，其返回值均为字符串。所以如果想要对输入值进行后续处理，需要进行数据类型的转换。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">n <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入一个整数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+f <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入一个浮点数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+s <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入一个字符串："</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>🍉 PS：在读取用户输入的数据时，可能会出现一些异常情况，例如输入的数据格式不正确等。为了避免这些异常情况导致程序崩溃，Python 使用 <strong>异常处理机制</strong> 对这些异常情况进行处理。</p>
+<p>Python 使用 <code>try-except</code> 语句来捕获 <strong>ValueError</strong> 异常，如果发生这种异常，则输出提示信息。通过这种方式，可以保证程序在发生异常情况时不会崩溃，而是进行相应的处理。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">try</span><span class="token punctuation">:</span>
+    n <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入一个整数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">except</span> ValueError<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"输入的数据不是整数，请重新输入！"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>在 <strong>算法竞赛</strong> 中，C/C++ 和 Python 的输入也有不少差别。</p>
+<p>由于算法竞赛中的输入类型较为繁多，摊主打算单独写一篇博客，列举算法竞赛中 C/C++ 和 Python 的输入对比，有兴趣的小伙伴们可以小小期待一下。</p>
+</blockquote>
+<hr>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><h4 id="C语言-5"><a href="#C语言-5" class="headerlink" title="C语言"></a>C语言</h4><p>C语言使用 <code>printf</code> 语句进行输出，且需要自行使用 <code>\n</code> 控制换行。</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token keyword">float</span> f <span class="token operator">=</span> <span class="token number">3.14</span><span class="token punctuation">;</span>
+<span class="token keyword">double</span> avg <span class="token operator">=</span> <span class="token number">3.1415926</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token char">'a'</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> str<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"hello, world"</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token operator">*</span>pn <span class="token operator">=</span> <span class="token operator">&amp;</span>n<span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>n<span class="token punctuation">)</span>     <span class="token comment">// 输出一个整数</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%f\n"</span><span class="token punctuation">,</span>f<span class="token punctuation">)</span>     <span class="token comment">// 输出一个单精度浮点数</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lf\n"</span><span class="token punctuation">,</span>avg<span class="token punctuation">)</span>  <span class="token comment">// 输出一个双精度浮点数</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%c\n"</span><span class="token punctuation">,</span>c<span class="token punctuation">)</span>     <span class="token comment">// 输出一个字符</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%s\n"</span><span class="token punctuation">,</span>str<span class="token punctuation">)</span>   <span class="token comment">// 输出一个字符串</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%p\n"</span><span class="token punctuation">,</span> pn<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 输出一个指针</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Python-5"><a href="#Python-5" class="headerlink" title="Python"></a>Python</h4><p>Python 使用 <code>print</code> 语句进行输出，且 <code>print</code> 语句默认在结尾补充一个 <code>\n</code> 进行换行。（可以通过设置 <code>end</code> 参数改变默认的 <code>\n</code> 值，见下文）</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 输出一个整数</span>
+n <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入一个整数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"整数："</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span>
+
+<span class="token comment"># 输出一个浮点数</span>
+f <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入一个浮点数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"浮点数："</span><span class="token punctuation">,</span> f<span class="token punctuation">)</span>
+
+<span class="token comment"># 输出一个字符串</span>
+s <span class="token operator">=</span> <span class="token string">"Hello, world!"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"字符串："</span><span class="token punctuation">,</span> s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<br>
+
+<p>🍉 补充1：在 <strong>Python 3</strong> 中，<code>print</code> 函数的用法发生了一些变化，可以通过设置 <code>sep</code> 和 <code>end</code> 参数来控制输出的格式：</p>
+<ul>
+<li><p><code>sep</code> 参数用于指定各个参数之间的分隔符，默认为一个空格；</p>
+<ul>
+<li><p>输入</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">n <span class="token operator">=</span> <span class="token number">123</span>
+f <span class="token operator">=</span> <span class="token number">3.14</span>
+s <span class="token operator">=</span> <span class="token string">"Hello, world!"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> f<span class="token punctuation">,</span> s<span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">", "</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>输出</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token number">123</span><span class="token punctuation">,</span> <span class="token number">3.14</span><span class="token punctuation">,</span> Hello<span class="token punctuation">,</span> world!<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ul>
+</li>
+<li><p><code>end</code> 参数用于指定输出结束时使用的字符，默认为一个换行符。</p>
+<ul>
+<li><p>输入</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">n <span class="token operator">=</span> <span class="token number">123</span>
+f <span class="token operator">=</span> <span class="token number">3.14</span>
+s <span class="token operator">=</span> <span class="token string">"Hello, world!"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> f<span class="token punctuation">,</span> s<span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">"~"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>输出</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token number">123</span> <span class="token number">3.14</span> Hello<span class="token punctuation">,</span> world!<span class="token operator">~</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ul>
+</li>
+</ul>
+<br>
+
+<p>🍉 补充2：在 <strong>Python 3</strong> 中，<code>print</code> 函数还可以通过指定 <strong>格式化字符串</strong> 的方式来输出变量值。</p>
+<p>通过在字符串前添加 <code>f</code> 代表 <strong>format</strong> 字符串，字符串内使用一对花括号 <code>{变量名}</code> 来输出变量的值。</p>
+<ul>
+<li><p>实例1：字符串拼接</p>
+<ul>
+<li><p>代码</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">name <span class="token operator">=</span> <span class="token string">"Ricky"</span>
+hobby <span class="token operator">=</span> <span class="token string">"coding"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Hello, </span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string">\nYour hobby is </span><span class="token interpolation"><span class="token punctuation">{</span>hobby<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>输出结果</p>
+<pre class="line-numbers language-none"><code class="language-none">Hello, Ricky
+Your hobby is coding<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+</ul>
+</li>
+<li><p>实例2：字符串拼接其他类型变量</p>
+<ul>
+<li><p>代码</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">name <span class="token operator">=</span> <span class="token string">"Ricky"</span>
+age <span class="token operator">=</span> <span class="token number">20</span>
+score <span class="token operator">=</span> <span class="token number">99.99</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Hello, </span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string">\nYour age is </span><span class="token interpolation"><span class="token punctuation">{</span>age<span class="token punctuation">}</span></span><span class="token string">\nYour score is </span><span class="token interpolation"><span class="token punctuation">{</span>score<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>输出结果</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">Hello<span class="token punctuation">,</span> Ricky
+Your age <span class="token keyword">is</span> <span class="token number">20</span>
+Your score <span class="token keyword">is</span> <span class="token number">99.99</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+</li>
+<li><p>实例3：指定浮点数精度为4位</p>
+<ul>
+<li><p>代码</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">pi <span class="token operator">=</span> <span class="token number">3.1415926</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"圆周率是：</span><span class="token interpolation"><span class="token punctuation">{</span>pi<span class="token punctuation">:</span><span class="token format-spec">.4f</span><span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>输出结果</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">圆周率是：<span class="token number">3.1415</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="写在最后-✍️"><a href="#写在最后-✍️" class="headerlink" title="写在最后 ✍️"></a>写在最后 ✍️</h2><p>由于篇幅有限，博客中有不少语法细节没有展开，例如 Python <code>print</code> 输出的多种方式等，有兴趣的小伙伴可以自行探索。</p>
+<p>而像 Python 中的一些可迭代对象（如列表、字典、集合、元组等）与 C++ 中各种 STL 容器的对比也没有在本篇博客中呈现，是因为这些数据类型的对比，每一个都值得写一整篇博客，所以没有匆忙的列入这篇博客中。</p>
+<p>当然，摊主也会在后续的博客中不断完善相关内容，感兴趣的小伙伴们可以期待一波，我们下篇博客再见👋</p>
+<hr>
+<h2 id="参考资料-📚"><a href="#参考资料-📚" class="headerlink" title="参考资料 📚"></a>参考资料 📚</h2><p>Python官方教程：<a target="_blank" rel="noopener" href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a></p>
+<p>CS50：<a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">https://cs50.harvard.edu/x/2023/</a></p>
+<p>ChatGPT：<a target="_blank" rel="noopener" href="https://openai.com/blog/chatgpt">https://openai.com/blog/chatgpt</a></p>
 
                 
             </div>
@@ -837,7 +954,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/">https://ricky2333.github.io/2023/04/07/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/</a>
+                    <a href="https://ricky2333.github.io/2023/04/15/python-vs-c-xia-pian/">https://ricky2333.github.io/2023/04/15/python-vs-c-xia-pian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -875,16 +992,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                                    <span class="chip bg-color">信息奥赛</span>
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
                                 </a>
                             
                                 <a href="/tags/C/">
-                                    <span class="chip bg-color">C++</span>
+                                    <span class="chip bg-color">C</span>
                                 </a>
                             
-                                <a href="/tags/%E9%80%92%E6%8E%A8/">
-                                    <span class="chip bg-color">递推</span>
+                                <a href="/tags/CS50/">
+                                    <span class="chip bg-color">CS50</span>
                                 </a>
                             
                         </div>
@@ -1054,53 +1171,51 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/04/08/acwing-di-86-chang-zhou-sai-fu-pan/">
+                <a href="/2023/04/15/python-vs-c-xia-pian/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Acwing第86场周赛复盘">
+                        <img src="/medias/featureimages/30.jpg" class="responsive-img" alt="Python VS C（下篇）">
                         
-                        <span class="card-title">Acwing第86场周赛复盘</span>
+                        <span class="card-title">Python VS C（下篇）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Acwing第86场周赛复盘
+                            CS50学习笔记｜Python VS C（下篇）
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-15
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/" class="post-category">
-                                    Acwing周赛复盘
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Rickyの水果摊
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                        <span class="chip bg-color">信息奥赛</span>
-                    </a>
-                    
-                    <a href="/tags/Acwing/">
-                        <span class="chip bg-color">Acwing</span>
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
                     <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
+                        <span class="chip bg-color">C</span>
+                    </a>
+                    
+                    <a href="/tags/CS50/">
+                        <span class="chip bg-color">CS50</span>
                     </a>
                     
                 </div>
@@ -1114,30 +1229,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/04/07/xin-xi-ao-sai-ti-jie-si-ping-fang-he/">
+                <a href="/2023/04/14/python-vs-c-shang-pian/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="信息奥赛题解｜四平方和">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Python VS C（上篇）">
                         
-                        <span class="card-title">信息奥赛题解｜四平方和</span>
+                        <span class="card-title">Python VS C（上篇）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息奥赛题解｜四平方和
+                            CS50学习笔记｜Python VS C（上篇）
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    信息奥赛题解
+                            <a href="/categories/Python%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    Python基础
                                 </a>
                             
                             
@@ -1147,16 +1262,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                        <span class="chip bg-color">信息奥赛</span>
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
                     <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
+                        <span class="chip bg-color">C</span>
                     </a>
                     
-                    <a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/">
-                        <span class="chip bg-color">哈希表</span>
+                    <a href="/tags/CS50/">
+                        <span class="chip bg-color">CS50</span>
                     </a>
                     
                 </div>
@@ -1405,7 +1520,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">33.8k</span>&nbsp;字
+                class="white-color">35.9k</span>&nbsp;字
             
             
             
