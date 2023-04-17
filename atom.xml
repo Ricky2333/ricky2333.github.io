@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-15T13:42:39.140Z</updated>
+  <updated>2023-04-17T09:11:08.753Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS50 Lab1</title>
+    <link href="https://ricky2333.github.io/2023/04/17/cs50-lab1/"/>
+    <id>https://ricky2333.github.io/2023/04/17/cs50-lab1/</id>
+    <published>2023-04-17T08:32:23.000Z</published>
+    <updated>2023-04-17T09:11:08.753Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Lab-1-Population-Growth&quot;&gt;&lt;a href=&quot;#Lab-1-Population-Growth&quot; class=&quot;headerlink&quot; title=&quot;Lab 1: Population Growth&quot;&gt;&lt;/a&gt;Lab 1:</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git教程</title>
+    <link href="https://ricky2333.github.io/2023/04/16/git-jiao-cheng/"/>
+    <id>https://ricky2333.github.io/2023/04/16/git-jiao-cheng/</id>
+    <published>2023-04-16T11:47:02.000Z</published>
+    <updated>2023-04-16T12:49:32.758Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本篇博客还在修改润色中～&lt;/p&gt;
+&lt;p&gt;敬请期待～&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="Git教程" scheme="https://ricky2333.github.io/categories/Git%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Git" scheme="https://ricky2333.github.io/tags/Git/"/>
+    
+    <category term="CS50W" scheme="https://ricky2333.github.io/tags/CS50W/"/>
+    
+  </entry>
   
   <entry>
     <title>Python VS C（下篇）</title>
@@ -538,31 +594,6 @@
     <category term="Ubuntu" scheme="https://ricky2333.github.io/tags/Ubuntu/"/>
     
     <category term="软件安装教程" scheme="https://ricky2333.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的第一篇博客</title>
-    <link href="https://ricky2333.github.io/2023/03/24/wo-de-di-yi-pian-bo-ke/"/>
-    <id>https://ricky2333.github.io/2023/03/24/wo-de-di-yi-pian-bo-ke/</id>
-    <published>2023-03-24T07:49:30.000Z</published>
-    <updated>2023-04-01T04:51:56.124Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;我的第一篇博客&quot;&gt;&lt;a href=&quot;#我的第一篇博客&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="随笔" scheme="https://ricky2333.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-    <category term="随笔" scheme="https://ricky2333.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
