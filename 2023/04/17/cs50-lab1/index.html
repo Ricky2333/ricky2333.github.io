@@ -609,12 +609,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/C/">
-                                <span class="chip bg-color">C</span>
-                            </a>
-                        
                             <a href="/tags/CS50/">
                                 <span class="chip bg-color">CS50</span>
+                            </a>
+                        
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C</span>
                             </a>
                         
                     </div>
@@ -647,7 +647,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    993
+                    994
                 </div>
                 
 
@@ -680,10 +680,10 @@
                 <h1 id="Lab-1-Population-Growth"><a href="#Lab-1-Population-Growth" class="headerlink" title="Lab 1: Population Growth"></a>Lab 1: Population Growth</h1><blockquote>
 <p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/labs/1/">https://cs50.harvard.edu/x/2023/labs/1/</a></p>
 </blockquote>
-<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>Say we have a population of <code>n</code> llamas. Each year, <code>n / 3</code> new llamas are born, and <code>n / 4</code> llamas pass away.</p>
+<h2 id="Background-🧐"><a href="#Background-🧐" class="headerlink" title="Background 🧐"></a>Background 🧐</h2><p>Say we have a population of <code>n</code> llamas. Each year, <code>n / 3</code> new llamas are born, and <code>n / 4</code> llamas pass away.</p>
 <p>For example, if we were to start with <code>n = 1200</code> llamas, then in the first year, <code>1200 / 3 = 400</code> new llamas would be born and <code>1200 / 4 = 300</code> llamas would pass away. At the end of that year, we would have <code>1200 + 400 - 300 = 1300</code> llamas.</p>
 <p>To try another example, if we were to start with <code>n = 1000</code> llamas, at the end of the year, we would have <code>1000 / 3 = 333.33</code> new llamas. We can’t have a decimal portion of a llama, though, so we’ll truncate the decimal to get <code>333</code> new llamas born. <code>1000 / 4 = 250</code> llamas will pass away, so we’ll end up with a total of <code>1000 + 333 - 250 = 1083</code> llamas at the end of the year.</p>
-<h2 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h2><p>Recall that Visual Studio Code (aka VS Code) is a popular “integrated development environment” (IDE) via which you can write code. So that you don’t have to download, install, and configure your own copy of VS Code, we’ll use a cloud-based version instead that has everything you’ll need pre-installed.</p>
+<h2 id="Getting-Started-🍉"><a href="#Getting-Started-🍉" class="headerlink" title="Getting Started 🍉"></a>Getting Started 🍉</h2><p>Recall that Visual Studio Code (aka VS Code) is a popular “integrated development environment” (IDE) via which you can write code. So that you don’t have to download, install, and configure your own copy of VS Code, we’ll use a cloud-based version instead that has everything you’ll need pre-installed.</p>
 <ol>
 <li>Log into <a target="_blank" rel="noopener" href="https://code.cs50.io/">code.cs50.io</a> using your GitHub account and follow the on-screen instructions to set up your very own “codespace” for Visual Studio Code. Once your codespace loads, you should see that, by default, VS Code is divided into three regions. Toward the top of VS Code is your “text editor,” where you’ll write all of your programs. Toward the bottom is a “terminal window,” a command-line interface (CLI) that allows you to explore your codespace’s files and directories (aka folders), compile code, and run programs. And on the left is your file “explorer,” a graphical user interface (GUI) via which you can also explore your codespace’s files and directories.</li>
 <li>Once your codespace has loaded, close any <strong>Welcome</strong> tabs that might have opened by default</li>
@@ -711,11 +711,11 @@
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>and see a file named <code>population.c</code>. Executing <code>code population.c</code> should open the file where you will type your code for this lab. If not, retrace your steps and see if you can determine where you went wrong!</p>
-<h2 id="Walkthrough"><a href="#Walkthrough" class="headerlink" title="Walkthrough"></a>Walkthrough</h2><blockquote>
+<h2 id="Walkthrough-🎥"><a href="#Walkthrough-🎥" class="headerlink" title="Walkthrough 🎥"></a>Walkthrough 🎥</h2><blockquote>
 <p>YouTube: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dZmtRHHUB1M&amp;ab_channel=CS50">https://www.youtube.com/watch?v=dZmtRHHUB1M&amp;ab_channel=CS50</a></p>
 <p>bilibili: <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1CX4y1z79G?share_source=copy_web">https://www.bilibili.com/video/BV1CX4y1z79G?share_source=copy_web</a></p>
 </blockquote>
-<h2 id="Implementation-Details"><a href="#Implementation-Details" class="headerlink" title="Implementation Details"></a>Implementation Details</h2><p>Complete the implementation of <code>population.c</code>, such that it calculates the number of years required for the population to grow from the start size to the end size.</p>
+<h2 id="Implementation-Details-☘️"><a href="#Implementation-Details-☘️" class="headerlink" title="Implementation Details ☘️"></a>Implementation Details ☘️</h2><p>Complete the implementation of <code>population.c</code>, such that it calculates the number of years required for the population to grow from the start size to the end size.</p>
 <ul>
 <li>Your program should first prompt the user for a starting population size.<ul>
 <li>If the user enters a number less than 9 (the minimum allowed population size), the user should be re-prompted to enter a starting population size until they enter a number that is greater than or equal to 9. (If we start with fewer than 9 llamas, the population of llamas will quickly become stagnant!)</li>
@@ -728,7 +728,7 @@
 <li>Your program should then calculate the (integer) number of years required for the population to reach at least the size of the end value.</li>
 <li>Finally, your program should print the number of years required for the llama population to reach that end size, as by printing to the terminal <code>Years: n</code>, where <code>n</code> is the number of years.</li>
 </ul>
-<h2 id="How-to-Test-Your-Code"><a href="#How-to-Test-Your-Code" class="headerlink" title="How to Test Your Code"></a>How to Test Your Code</h2><p>Your program should behave per these examples below.</p>
+<h2 id="How-to-Test-Your-Code-🖥"><a href="#How-to-Test-Your-Code-🖥" class="headerlink" title="How to Test Your Code 🖥"></a>How to Test Your Code 🖥</h2><p>Your program should behave per these examples below.</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ./population
 Start size: <span class="token number">1200</span>
 End size: <span class="token number">1300</span>
@@ -751,8 +751,6 @@ Start size: <span class="token number">100</span>
 End size: <span class="token number">1000000</span>
 Years: <span class="token number">115</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<details style="box-sizing: border-box; word-break: break-word; margin-bottom: 1rem; color: rgb(33, 37, 41); font-family: &quot;PT Sans&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><summary style="box-sizing: border-box; word-break: break-word; display: list-item; cursor: pointer; font-weight: bold;">Not sure how to solve?</summary><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="border" data-video="" src="https://video.cs50.io/2CcqQnLbGOE" scrolling="no" id="iFrameResizer1" style="box-sizing: border-box; word-break: break-word; border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)  !important; margin-top: 1rem; display: block; height: 480px; margin-bottom: 0px; min-width: 100%; width: 1px; background-color: rgb(0, 0, 0); overflow: hidden;"></iframe></details>
-
 <p>Execute the below to evaluate the correctness of your code using <code>check50</code>. But be sure to compile and test it yourself as well!</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">check50 cs50/labs/2023/x/population<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -761,11 +759,11 @@ Years: <span class="token number">115</span><span aria-hidden="true" class="line
 
 
 
-<h2 id="How-to-Submit"><a href="#How-to-Submit" class="headerlink" title="How to Submit"></a>How to Submit</h2><p>In your terminal, execute the below to submit your work.</p>
+<h2 id="How-to-Submit-🚀"><a href="#How-to-Submit-🚀" class="headerlink" title="How to Submit 🚀"></a>How to Submit 🚀</h2><p>In your terminal, execute the below to submit your work.</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">submit50 cs50/labs/2023/x/population<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Ricky’s GitHub Repository for CS50 Labs: <a target="_blank" rel="noopener" href="https://github.com/Ricky2333/CS50-Labs">https://github.com/Ricky2333/CS50-Labs</a></p>
+<h2 id="Solution-🧑🏻‍💻"><a href="#Solution-🧑🏻‍💻" class="headerlink" title="Solution 🧑🏻‍💻"></a>Solution 🧑🏻‍💻</h2><p>Ricky’s GitHub Repository for CS50 Labs: <a target="_blank" rel="noopener" href="https://github.com/Ricky2333/CS50-Labs">https://github.com/Ricky2333/CS50-Labs</a></p>
 
                 
             </div>
@@ -830,12 +828,12 @@ Years: <span class="token number">115</span><span aria-hidden="true" class="line
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/C/">
-                                    <span class="chip bg-color">C</span>
-                                </a>
-                            
                                 <a href="/tags/CS50/">
                                     <span class="chip bg-color">CS50</span>
+                                </a>
+                            
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C</span>
                                 </a>
                             
                         </div>
@@ -1005,29 +1003,28 @@ Years: <span class="token number">115</span><span aria-hidden="true" class="line
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/04/17/cs50-lab1/">
+                <a href="/2023/04/18/cs50-problem-set1/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="CS50 Lab1">
+                        <img src="/medias/featureimages/29.jpg" class="responsive-img" alt="CS50 Problem Set1">
                         
-                        <span class="card-title">CS50 Lab1</span>
+                        <span class="card-title">CS50 Problem Set1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CS50 Lab1 - Population Size
+                            CS50 Problem Set1
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-17
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-18
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1040,16 +1037,15 @@ Years: <span class="token number">115</span><span aria-hidden="true" class="line
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C</span>
-                    </a>
-                    
                     <a href="/tags/CS50/">
                         <span class="chip bg-color">CS50</span>
+                    </a>
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C</span>
                     </a>
                     
                 </div>
@@ -1272,6 +1268,14 @@ Years: <span class="token number">115</span><span aria-hidden="true" class="line
 </main>
 
 
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        // tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
+
 
 
     <footer class="page-footer bg-color">
@@ -1343,7 +1347,7 @@ Years: <span class="token number">115</span><span aria-hidden="true" class="line
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">36.9k</span>&nbsp;字
+                class="white-color">37.1k</span>&nbsp;字
             
             
             

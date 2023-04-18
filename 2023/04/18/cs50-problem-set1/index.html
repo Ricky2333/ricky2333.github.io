@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="信息奥赛题解｜四平方和, Rickyの水果摊">
+    <meta name="keywords" content="CS50 Problem Set1, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信息奥赛题解｜四平方和 | Rickyの水果摊</title>
+    <title>CS50 Problem Set1 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -483,12 +483,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/29.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信息奥赛题解｜四平方和</h1>
+                    <h1 class="description center-align post-title">CS50 Problem Set1</h1>
                 </div>
             </div>
         </div>
@@ -609,16 +609,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                                <span class="chip bg-color">信息奥赛</span>
+                            <a href="/tags/CS50/">
+                                <span class="chip bg-color">CS50</span>
                             </a>
                         
                             <a href="/tags/C/">
-                                <span class="chip bg-color">C++</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/">
-                                <span class="chip bg-color">哈希表</span>
+                                <span class="chip bg-color">C</span>
                             </a>
                         
                     </div>
@@ -629,8 +625,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
-                                信息奥赛题解
+                            <a href="/categories/CS50/" class="post-category">
+                                CS50
                             </a>
                         
                     </div>
@@ -642,7 +638,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-08
+                    2023-04-18
                 </div>
                 
 
@@ -651,14 +647,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    692
+                    203
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -681,74 +677,46 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="信息奥赛题解｜四平方和"><a href="#信息奥赛题解｜四平方和" class="headerlink" title="信息奥赛题解｜四平方和"></a>信息奥赛题解｜四平方和</h1><hr>
-<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>四平方和定理，又称为拉格朗日定理：</p>
-<p>每个正整数都可以表示为至多 $4$ 个正整数的平方和。</p>
-<p>如果把 $0$ 包括进去，就正好可以表示为 $4$ 个数的平方和。</p>
-<p>比如：</p>
-<p>$5=0^2+0^2+1^2+2^2$<br>$7=1^2+1^2+1^2+2^2$</p>
-<p>对于一个给定的正整数，可能存在多种平方和的表示法。</p>
-<p>要求你对 $4$ 个数排序：</p>
-<p>$0 \le a \le b \le c \le d$</p>
-<p>并对所有的可能表示法按 $a,b,c,d$ 为联合主键升序排列，最后输出第一个表示法。</p>
-<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>输入一个正整数 $N$。</p>
-<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>输出 $4$ 个非负整数，按从小到大排序，中间用空格分开。</p>
-<h3 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h3><p>$0 \lt N \lt 5∗10^6$</p>
-<h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">0</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P8635">https://www.luogu.com.cn/problem/P8635</a></p>
-<hr>
-<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>四重循环的暴力枚举做法，显然会 TLE，所以可以采用 <strong>哈希</strong> 的方法，来降低时间复杂度。</p>
-<p><strong>正确思路</strong>：</p>
-<ul>
-<li>将 $c$ 和 $d$ 的平方和存储到自己模拟的哈希表中，该步复杂度为 $O(\sqrt n) * O(\sqrt n) = O(n)$</li>
-<li>枚举 $a，b$，并且在哈希表中查找  $n - a * a - b * b$，该步复杂度为 $(O\sqrt n) * O(\sqrt n) * O(1) = O(n)$</li>
+                <h1 id="CS50-Problem-Set1"><a href="#CS50-Problem-Set1" class="headerlink" title="CS50 Problem Set1"></a>CS50 Problem Set1</h1><blockquote>
+<p>CS50 Problem Set1 Link：<a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/">https://cs50.harvard.edu/x/2023/psets/1/</a></p>
+</blockquote>
+<h2 id="What-to-Do-🚀"><a href="#What-to-Do-🚀" class="headerlink" title="What to Do 🚀"></a>What to Do 🚀</h2><blockquote>
+<p>Be sure you have completed <a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/labs/1/">Lab 1</a> before beginning this problem set.</p>
+</blockquote>
+<ol>
+<li>Log into <a target="_blank" rel="noopener" href="https://code.cs50.io/">code.cs50.io</a> using your GitHub account.</li>
+<li>Run <code>update50</code> in your codespace’s terminal window to ensure your codespace is up-to-date and, when prompted, click <strong>Rebuild now</strong></li>
+<li>Submit <a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/hello/">Hello</a></li>
+<li>Submit one of:<ul>
+<li><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/mario/less/">this version of Mario</a> if feeling less comfortable</li>
+<li><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/mario/more/">this version of Mario</a> if feeling more comfortable</li>
 </ul>
-<p>所以该思路的时间复杂度为 $O(n) + O(n) = O(n)$，满足该题的数据范围。</p>
-<p>本题推荐使用自己 <strong>用数组模拟的哈希表</strong>（相较于 STL 会更加快）</p>
+</li>
+<li>Submit one of:<ul>
+<li><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/cash/">Cash</a> if feeling less comfortable</li>
+<li><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/credit/">Credit</a> if feeling more comfortable</li>
+</ul>
+</li>
+</ol>
+<p>If you submit both versions of Mario, we’ll record the higher of your two scores. If you submit both Cash and Credit, we’ll record the higher of your two scores.</p>
 <hr>
-<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
-
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">5e6</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> n<span class="token punctuation">;</span>
-<span class="token keyword">int</span> C<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> D<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">// 哈希表，C[k]存储平方和为k时，c的值；D[k]存储平方和为k时，d的值</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
-
-    <span class="token comment">// 将c、d的平方和存入哈希表（复杂度为O(N))）</span>
-    <span class="token function">memset</span><span class="token punctuation">(</span>C<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>C<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 初始化为-1，因为0是有实际含义的</span>
-    <span class="token function">memset</span><span class="token punctuation">(</span>D<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>D<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> c <span class="token operator">*</span> c <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> c<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> d <span class="token operator">=</span> c<span class="token punctuation">;</span> c <span class="token operator">*</span> c <span class="token operator">+</span> d <span class="token operator">*</span> d <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> d<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> sum <span class="token operator">=</span> c <span class="token operator">*</span> c <span class="token operator">+</span> d <span class="token operator">*</span> d<span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>C<span class="token punctuation">[</span>sum<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>  <span class="token comment">// 该总和第一次出现,记录此时c和d的值</span>
-                C<span class="token punctuation">[</span>sum<span class="token punctuation">]</span> <span class="token operator">=</span> c<span class="token punctuation">,</span> D<span class="token punctuation">[</span>sum<span class="token punctuation">]</span> <span class="token operator">=</span> d<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment">// 枚举a，b，查找 n - a*a - b*b 的哈希值</span>
-    <span class="token comment">// 哈希值存在，说明此时a,b,c,d平方和为n</span>
-    <span class="token comment">// 复杂度是sqrt(n) * sqrt(n) * O(1)= O(n) 哈希表查找为O(1)</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> a <span class="token operator">*</span> a <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> a<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> b <span class="token operator">=</span> a<span class="token punctuation">;</span> a <span class="token operator">*</span> a <span class="token operator">+</span> b <span class="token operator">*</span> b <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> b<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> dis <span class="token operator">=</span> n <span class="token operator">-</span> a <span class="token operator">*</span> a <span class="token operator">-</span> b <span class="token operator">*</span> b<span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>C<span class="token punctuation">[</span>dis<span class="token punctuation">]</span> <span class="token operator">&gt;</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                cout <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> C<span class="token punctuation">[</span>dis<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> D<span class="token punctuation">[</span>dis<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-                <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token comment">// 下面没有更多需求的话，直接return 0结束即可，不用写goto</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
+<h2 id="Problem-Set-📚"><a href="#Problem-Set-📚" class="headerlink" title="Problem Set 📚"></a>Problem Set 📚</h2><h3 id="P1-Hello"><a href="#P1-Hello" class="headerlink" title="P1 - Hello"></a>P1 - Hello</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/hello/">https://cs50.harvard.edu/x/2023/psets/1/hello/</a></p>
+</blockquote>
+<h3 id="P2-Mario-less"><a href="#P2-Mario-less" class="headerlink" title="P2 - Mario-less"></a>P2 - Mario-less</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/mario/less/">https://cs50.harvard.edu/x/2023/psets/1/mario/less/</a></p>
+</blockquote>
+<h3 id="P3-Mario-more"><a href="#P3-Mario-more" class="headerlink" title="P3 - Mario-more"></a>P3 - Mario-more</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/mario/more/">https://cs50.harvard.edu/x/2023/psets/1/mario/more/</a></p>
+</blockquote>
+<h3 id="P4-Cash"><a href="#P4-Cash" class="headerlink" title="P4 - Cash"></a>P4 - Cash</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/cash/">https://cs50.harvard.edu/x/2023/psets/1/cash/</a></p>
+</blockquote>
+<h3 id="P5-Credit"><a href="#P5-Credit" class="headerlink" title="P5 - Credit"></a>P5 - Credit</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/credit/">https://cs50.harvard.edu/x/2023/psets/1/credit/</a></p>
+</blockquote>
+<hr>
+<h2 id="Solution-🧑🏻‍💻"><a href="#Solution-🧑🏻‍💻" class="headerlink" title="Solution 🧑🏻‍💻"></a>Solution 🧑🏻‍💻</h2><p>Ricky’s GitHub Repository for CS50 Problem Sets: <a target="_blank" rel="noopener" href="https://github.com/Ricky2333/CS50-PSet">https://github.com/Ricky2333/CS50-PSet</a></p>
 
                 
             </div>
@@ -775,7 +743,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/04/08/xin-xi-ao-sai-ti-jie-si-ping-fang-he/">https://ricky2333.github.io/2023/04/08/xin-xi-ao-sai-ti-jie-si-ping-fang-he/</a>
+                    <a href="https://ricky2333.github.io/2023/04/18/cs50-problem-set1/">https://ricky2333.github.io/2023/04/18/cs50-problem-set1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -813,16 +781,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                                    <span class="chip bg-color">信息奥赛</span>
+                                <a href="/tags/CS50/">
+                                    <span class="chip bg-color">CS50</span>
                                 </a>
                             
                                 <a href="/tags/C/">
-                                    <span class="chip bg-color">C++</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/">
-                                    <span class="chip bg-color">哈希表</span>
+                                    <span class="chip bg-color">C</span>
                                 </a>
                             
                         </div>
@@ -992,53 +956,51 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/04/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/">
+                <a href="/2023/04/18/cs50-problem-set1/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="信息奥赛题解｜移动路线">
+                        <img src="/medias/featureimages/29.jpg" class="responsive-img" alt="CS50 Problem Set1">
                         
-                        <span class="card-title">信息奥赛题解｜移动路线</span>
+                        <span class="card-title">CS50 Problem Set1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息奥赛题解｜移动路线
+                            CS50 Problem Set1
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    信息奥赛题解
+                            <a href="/categories/CS50/" class="post-category">
+                                    CS50
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                        <span class="chip bg-color">信息奥赛</span>
+                    <a href="/tags/CS50/">
+                        <span class="chip bg-color">CS50</span>
                     </a>
                     
                     <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
-                    </a>
-                    
-                    <a href="/tags/%E9%80%92%E6%8E%A8/">
-                        <span class="chip bg-color">递推</span>
+                        <span class="chip bg-color">C</span>
                     </a>
                     
                 </div>
@@ -1052,30 +1014,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/04/07/acwing-di-86-chang-zhou-sai-fu-pan/">
+                <a href="/2023/04/17/cs50-lab1/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Acwing第86场周赛复盘">
+                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="CS50 Lab1">
                         
-                        <span class="card-title">Acwing第86场周赛复盘</span>
+                        <span class="card-title">CS50 Lab1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Acwing第86场周赛复盘
+                            CS50 Lab1 - Population Size
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/" class="post-category">
-                                    Acwing周赛复盘
+                            <a href="/categories/CS50/" class="post-category">
+                                    CS50
                                 </a>
                             
                             
@@ -1085,16 +1047,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                        <span class="chip bg-color">信息奥赛</span>
-                    </a>
-                    
-                    <a href="/tags/Acwing/">
-                        <span class="chip bg-color">Acwing</span>
+                    <a href="/tags/CS50/">
+                        <span class="chip bg-color">CS50</span>
                     </a>
                     
                     <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
+                        <span class="chip bg-color">C</span>
                     </a>
                     
                 </div>

@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-17T09:11:08.753Z</updated>
+  <updated>2023-04-18T02:17:19.299Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CS50 Problem Set1</title>
+    <link href="https://ricky2333.github.io/2023/04/18/cs50-problem-set1/"/>
+    <id>https://ricky2333.github.io/2023/04/18/cs50-problem-set1/</id>
+    <published>2023-04-18T02:17:49.000Z</published>
+    <updated>2023-04-18T02:17:19.299Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CS50-Problem-Set1&quot;&gt;&lt;a href=&quot;#CS50-Problem-Set1&quot; class=&quot;headerlink&quot; title=&quot;CS50 Problem Set1&quot;&gt;&lt;/a&gt;CS50 Problem</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CS50 Lab1</title>
     <link href="https://ricky2333.github.io/2023/04/17/cs50-lab1/"/>
     <id>https://ricky2333.github.io/2023/04/17/cs50-lab1/</id>
     <published>2023-04-17T08:32:23.000Z</published>
-    <updated>2023-04-17T09:11:08.753Z</updated>
+    <updated>2023-04-18T02:16:09.631Z</updated>
     
     
       
@@ -37,9 +64,9 @@
     <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
     
     
-    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
-    
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
   </entry>
   
@@ -77,7 +104,7 @@
     <link href="https://ricky2333.github.io/2023/04/15/python-vs-c-xia-pian/"/>
     <id>https://ricky2333.github.io/2023/04/15/python-vs-c-xia-pian/</id>
     <published>2023-04-15T11:16:29.000Z</published>
-    <updated>2023-04-15T13:42:39.140Z</updated>
+    <updated>2023-04-18T02:16:38.575Z</updated>
     
     
       
@@ -91,11 +118,11 @@
     
     
     
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
-    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
     
   </entry>
   
@@ -120,11 +147,11 @@
     <category term="Python基础" scheme="https://ricky2333.github.io/categories/Python%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
-    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
     
   </entry>
   
@@ -565,35 +592,6 @@
     <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
     
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu下安装Clang编译器</title>
-    <link href="https://ricky2333.github.io/2023/03/25/ubuntu/"/>
-    <id>https://ricky2333.github.io/2023/03/25/ubuntu/</id>
-    <published>2023-03-25T04:14:35.000Z</published>
-    <updated>2023-04-15T12:35:58.717Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;【Linux】Ubuntu-22-04-安装-Clang-编译器&quot;&gt;&lt;a href=&quot;#【Linux】Ubuntu-22-04-安装-Clang-编译器&quot; class=&quot;headerlink&quot; title=&quot;【Linux】Ubuntu 22.04 安装</summary>
-        
-      
-    
-    
-    
-    <category term="Linux基础" scheme="https://ricky2333.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="Linux" scheme="https://ricky2333.github.io/tags/Linux/"/>
-    
-    <category term="Ubuntu" scheme="https://ricky2333.github.io/tags/Ubuntu/"/>
-    
-    <category term="软件安装教程" scheme="https://ricky2333.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
