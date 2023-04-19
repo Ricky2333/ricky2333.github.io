@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-18T02:17:19.299Z</updated>
+  <updated>2023-04-19T02:41:04.017Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,88 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS50 Problem Set2</title>
+    <link href="https://ricky2333.github.io/2023/04/19/cs50-problem-set2/"/>
+    <id>https://ricky2333.github.io/2023/04/19/cs50-problem-set2/</id>
+    <published>2023-04-19T02:40:49.000Z</published>
+    <updated>2023-04-19T02:41:04.017Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CS50-Problem-Set2&quot;&gt;&lt;a href=&quot;#CS50-Problem-Set2&quot; class=&quot;headerlink&quot; title=&quot;CS50 Problem Set2&quot;&gt;&lt;/a&gt;CS50 Problem</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CS50 Lab2</title>
+    <link href="https://ricky2333.github.io/2023/04/19/cs50-lab2/"/>
+    <id>https://ricky2333.github.io/2023/04/19/cs50-lab2/</id>
+    <published>2023-04-19T02:35:23.000Z</published>
+    <updated>2023-04-19T02:40:52.391Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Lab-2-Scrabble&quot;&gt;&lt;a href=&quot;#Lab-2-Scrabble&quot; class=&quot;headerlink&quot; title=&quot;Lab 2: Scrabble&quot;&gt;&lt;/a&gt;Lab 2: Scrabble&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CS50 Practice Problems</title>
+    <link href="https://ricky2333.github.io/2023/04/18/cs50-practice-problems-week1/"/>
+    <id>https://ricky2333.github.io/2023/04/18/cs50-practice-problems-week1/</id>
+    <published>2023-04-18T02:22:03.000Z</published>
+    <updated>2023-04-19T02:38:43.397Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Week1-Practice-Problems&quot;&gt;&lt;a href=&quot;#Week1-Practice-Problems&quot; class=&quot;headerlink&quot; title=&quot;Week1-Practice Problems&quot;&gt;&lt;/a&gt;Week1-Practice</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>CS50 Problem Set1</title>
@@ -507,91 +589,6 @@
     <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
     
     <category term="学习笔记" scheme="https://ricky2333.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜爬楼梯</title>
-    <link href="https://ricky2333.github.io/2023/04/01/xin-xi-ao-sai-ti-jie-pa-lou-ti/"/>
-    <id>https://ricky2333.github.io/2023/04/01/xin-xi-ao-sai-ti-jie-pa-lou-ti/</id>
-    <published>2023-04-01T12:58:07.000Z</published>
-    <updated>2023-04-10T03:27:23.191Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;
-&lt;h1 id=&quot;信息奥赛题解｜爬楼梯&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜爬楼梯&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜爬楼梯&quot;&gt;&lt;/a&gt;信息奥赛题解｜爬楼梯&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux命令行大全｜读书笔记</title>
-    <link href="https://ricky2333.github.io/2023/03/31/linux-ming-ling-xing-da-quan-du-shu-bi-ji/"/>
-    <id>https://ricky2333.github.io/2023/03/31/linux-ming-ling-xing-da-quan-du-shu-bi-ji/</id>
-    <published>2023-03-31T13:17:20.000Z</published>
-    <updated>2023-04-15T13:42:59.376Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Book-Notes-The-Linux-Command-Line-Chapter-5&quot;&gt;&lt;a href=&quot;#Book-Notes-The-Linux-Command-Line-Chapter-5&quot; class=&quot;headerlink&quot; title=&quot;Book</summary>
-        
-      
-    
-    
-    
-    <category term="Linux基础" scheme="https://ricky2333.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="英文读书笔记" scheme="https://ricky2333.github.io/tags/%E8%8B%B1%E6%96%87%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Linux" scheme="https://ricky2333.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛实训报告｜STL</title>
-    <link href="https://ricky2333.github.io/2023/03/26/xin-xi-ao-sai-shi-xun-bao-gao-stl/"/>
-    <id>https://ricky2333.github.io/2023/03/26/xin-xi-ao-sai-shi-xun-bao-gao-stl/</id>
-    <published>2023-03-26T04:17:38.000Z</published>
-    <updated>2023-04-14T04:32:13.831Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;【信息奥赛实训报告】STL&quot;&gt;&lt;a href=&quot;#【信息奥赛实训报告】STL&quot; class=&quot;headerlink&quot; title=&quot;【信息奥赛实训报告】STL&quot;&gt;&lt;/a&gt;【信息奥赛实训报告】STL&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
   </entry>
   

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CS50 Problem Set1, Rickyの水果摊">
+    <meta name="keywords" content="CS50 Lab2, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CS50 Problem Set1 | Rickyの水果摊</title>
+    <title>CS50 Lab2 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -483,12 +483,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/29.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CS50 Problem Set1</h1>
+                    <h1 class="description center-align post-title">CS50 Lab2</h1>
                 </div>
             </div>
         </div>
@@ -638,7 +638,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-18
+                    2023-04-19
                 </div>
                 
 
@@ -647,14 +647,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    203
+                    746
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -677,46 +677,201 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="CS50-Problem-Set1"><a href="#CS50-Problem-Set1" class="headerlink" title="CS50 Problem Set1"></a>CS50 Problem Set1</h1><blockquote>
-<p>CS50 Problem Set1 Link：<a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/">https://cs50.harvard.edu/x/2023/psets/1/</a></p>
+                <h1 id="Lab-2-Scrabble"><a href="#Lab-2-Scrabble" class="headerlink" title="Lab 2: Scrabble"></a>Lab 2: Scrabble</h1><blockquote>
+<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/labs/2/">https://cs50.harvard.edu/x/2023/labs/2/</a></p>
 </blockquote>
-<h2 id="What-to-Do-🚀"><a href="#What-to-Do-🚀" class="headerlink" title="What to Do 🚀"></a>What to Do 🚀</h2><blockquote>
-<p>Be sure you have completed <a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/labs/1/">Lab 1</a> before beginning this problem set.</p>
+<h2 id="Background-🧐"><a href="#Background-🧐" class="headerlink" title="Background 🧐"></a>Background 🧐</h2><p>In the game of <a target="_blank" rel="noopener" href="https://scrabble.hasbro.com/en-us/rules">Scrabble</a>, players create words to score points, and the number of points is the sum of the point values of each letter in the word.</p>
+<table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>A</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>E</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>F</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>G</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>H</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>J</strong></td>
+<td>8</td>
+</tr>
+<tr>
+<td><strong>K</strong></td>
+<td>5</td>
+</tr>
+<tr>
+<td><strong>L</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>M</strong></td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>N</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>O</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>P</strong></td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Q</strong></td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>R</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>T</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>U</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>V</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>W</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>X</strong></td>
+<td>8</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>10</td>
+</tr>
+</tbody></table>
+<p>For example, if we wanted to score the word <code>Code</code>, we would note that in general Scrabble rules, the <code>C</code> is worth <code>3</code> points, the <code>o</code> is worth <code>1</code> point, the <code>d</code> is worth <code>2</code> points, and the <code>e</code> is worth <code>1</code> point. Summing these, we get that <code>Code</code> is worth <code>3 + 1 + 2 + 1 = 7</code> points.</p>
+<h2 id="Getting-Started-🍉"><a href="#Getting-Started-🍉" class="headerlink" title="Getting Started 🍉"></a>Getting Started 🍉</h2><p>Open <a target="_blank" rel="noopener" href="https://code.cs50.io/">VS Code</a>.</p>
+<p>Start by clicking inside your terminal window, then execute <code>cd</code> by itself. You should find that its “prompt” resembles the below.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>Click inside of that terminal window and then execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> https://cdn.cs50.net/2022/fall/labs/2/scrabble.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>followed by Enter in order to download a ZIP called <code>scrabble.zip</code> in your codespace. Take care not to overlook the space between <code>wget</code> and the following URL, or any other character for that matter!</p>
+<p>Now execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">unzip</span> scrabble.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>to create a folder called <code>scrabble</code>. You no longer need the ZIP file, so you can execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> scrabble.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>and respond with “y” followed by Enter at the prompt to remove the ZIP file you downloaded.</p>
+<p>Now type</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> scrabble<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>followed by Enter to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">scrabble/ $<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>If all was successful, you should execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>and you should see a file called <code>scrabble.c</code>. Open that file by executing the below:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">code scrabble.c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>If you run into any trouble, follow these same steps steps again and see if you can determine where you went wrong!</p>
+<h2 id="Walkthrough-🎥"><a href="#Walkthrough-🎥" class="headerlink" title="Walkthrough 🎥"></a>Walkthrough 🎥</h2><blockquote>
+<p>YouTube: <a target="_blank" rel="noopener" href="https://youtu.be/RtjxxxlN1gc">https://youtu.be/RtjxxxlN1gc</a></p>
+<p>bilibili: <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Do4y1t7Dv?share_source=copy_web">https://www.bilibili.com/video/BV1Do4y1t7Dv?share_source=copy_web</a></p>
 </blockquote>
-<ol>
-<li>Log into <a target="_blank" rel="noopener" href="https://code.cs50.io/">code.cs50.io</a> using your GitHub account.</li>
-<li>Run <code>update50</code> in your codespace’s terminal window to ensure your codespace is up-to-date and, when prompted, click <strong>Rebuild now</strong></li>
-<li>Submit <a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/hello/">Hello</a></li>
-<li>Submit one of:<ul>
-<li><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/mario/less/">this version of Mario</a> if feeling less comfortable</li>
-<li><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/mario/more/">this version of Mario</a> if feeling more comfortable</li>
+<h2 id="Implementation-Details-☘️"><a href="#Implementation-Details-☘️" class="headerlink" title="Implementation Details ☘️"></a>Implementation Details ☘️</h2><p>Complete the implementation of <code>scrabble.c</code>, such that it determines the winner of a short scrabble-like game, where two players each enter their word, and the higher scoring player wins.</p>
+<ul>
+<li>Notice that we’ve stored the point values of each letter of the alphabet in an integer array named <code>POINTS</code><ul>
+<li>For example, <code>A</code> or <code>a</code> is worth 1 point (represented by <code>POINTS[0]</code>), <code>B</code> or <code>b</code> is worth 3 points (represented by <code>POINTS[1]</code>), etc.</li>
 </ul>
 </li>
-<li>Submit one of:<ul>
-<li><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/cash/">Cash</a> if feeling less comfortable</li>
-<li><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/credit/">Credit</a> if feeling more comfortable</li>
+<li>Notice that we’ve created a prototype for a helper function called <code>compute_score()</code> that takes a string as input and returns an <code>int</code>. Whenever we would like to assign point values to a particular word, we can call this function. Note that this prototype is required for C to know that <code>compute_score()</code> exists later in the program.</li>
+<li>In <code>main()</code>, the program prompts the two players for their words using the <code>get_string()</code> function. These values are stored inside variables named <code>word1</code> and <code>word2</code>.</li>
+<li>In <code>compute_score()</code>, your program should compute, using the <code>POINTS</code> array, and return the score for the string argument. Characters that are not letters should be given zero points, and uppercase and lowercase letters should be given the same point values.<ul>
+<li>For example, <code>!</code> is worth <code>0</code> points while <code>A</code> and <code>a</code> are both worth <code>1</code> point.</li>
+<li>Though Scrabble rules normally require that a word be in the dictionary, no need to check for that in this problem!</li>
 </ul>
 </li>
-</ol>
-<p>If you submit both versions of Mario, we’ll record the higher of your two scores. If you submit both Cash and Credit, we’ll record the higher of your two scores.</p>
+<li>In <code>main()</code>, your program should print, depending on the players’ scores, <code>Player 1 wins!</code>, <code>Player 2 wins!</code>, or <code>Tie!</code>.</li>
+</ul>
+<h2 id="How-to-Test-Your-Code-🖥"><a href="#How-to-Test-Your-Code-🖥" class="headerlink" title="How to Test Your Code 🖥"></a>How to Test Your Code 🖥</h2><p>Your program should behave per the examples below.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ./scrabble
+Player <span class="token number">1</span>: Question?
+Player <span class="token number">2</span>: Question<span class="token operator">!</span>
+Tie<span class="token operator">!</span>
+$ ./scrabble
+Player <span class="token number">1</span>: Oh,
+Player <span class="token number">2</span>: hai<span class="token operator">!</span>
+Player <span class="token number">2</span> wins<span class="token operator">!</span>
+$ ./scrabble
+Player <span class="token number">1</span>: COMPUTER
+Player <span class="token number">2</span>: science
+Player <span class="token number">1</span> wins<span class="token operator">!</span>
+$ ./scrabble
+Player <span class="token number">1</span>: Scrabble
+Player <span class="token number">2</span>: wiNNeR
+Player <span class="token number">1</span> wins<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Execute the below to evaluate the correctness of your code using <code>check50</code>. But be sure to compile and test it yourself as well!</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">check50 cs50/labs/2023/x/scrabble<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>Execute the below to evaluate the style of your code using <code>style50</code>.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">style50 scrabble.c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="How-to-Submit-🚀"><a href="#How-to-Submit-🚀" class="headerlink" title="How to Submit 🚀"></a>How to Submit 🚀</h2><p>In your terminal, execute the below to submit your work.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">submit50 cs50/labs/2023/x/scrabble<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <hr>
-<h2 id="Problem-Set-📚"><a href="#Problem-Set-📚" class="headerlink" title="Problem Set 📚"></a>Problem Set 📚</h2><h3 id="P1-Hello"><a href="#P1-Hello" class="headerlink" title="P1 - Hello"></a>P1 - Hello</h3><blockquote>
-<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/hello/">https://cs50.harvard.edu/x/2023/psets/1/hello/</a></p>
-</blockquote>
-<h3 id="P2-Mario-less"><a href="#P2-Mario-less" class="headerlink" title="P2 - Mario-less"></a>P2 - Mario-less</h3><blockquote>
-<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/mario/less/">https://cs50.harvard.edu/x/2023/psets/1/mario/less/</a></p>
-</blockquote>
-<h3 id="P3-Mario-more"><a href="#P3-Mario-more" class="headerlink" title="P3 - Mario-more"></a>P3 - Mario-more</h3><blockquote>
-<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/mario/more/">https://cs50.harvard.edu/x/2023/psets/1/mario/more/</a></p>
-</blockquote>
-<h3 id="P4-Cash"><a href="#P4-Cash" class="headerlink" title="P4 - Cash"></a>P4 - Cash</h3><blockquote>
-<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/cash/">https://cs50.harvard.edu/x/2023/psets/1/cash/</a></p>
-</blockquote>
-<h3 id="P5-Credit"><a href="#P5-Credit" class="headerlink" title="P5 - Credit"></a>P5 - Credit</h3><blockquote>
-<p><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/psets/1/credit/">https://cs50.harvard.edu/x/2023/psets/1/credit/</a></p>
-</blockquote>
-<hr>
-<h2 id="Solution-🧑🏻‍💻"><a href="#Solution-🧑🏻‍💻" class="headerlink" title="Solution 🧑🏻‍💻"></a>Solution 🧑🏻‍💻</h2><p>Ricky’s GitHub Repository for CS50 Problem Sets: <a target="_blank" rel="noopener" href="https://github.com/Ricky2333/CS50-PSet">https://github.com/Ricky2333/CS50-PSet</a></p>
+<h2 id="Solution-🧑🏻‍💻"><a href="#Solution-🧑🏻‍💻" class="headerlink" title="Solution 🧑🏻‍💻"></a>Solution 🧑🏻‍💻</h2><p>Ricky’s GitHub Repository for CS50 Labs: <a target="_blank" rel="noopener" href="https://github.com/Ricky2333/CS50-Labs">https://github.com/Ricky2333/CS50-Labs</a></p>
 
                 
             </div>
@@ -743,7 +898,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/04/18/cs50-problem-set1/">https://ricky2333.github.io/2023/04/18/cs50-problem-set1/</a>
+                    <a href="https://ricky2333.github.io/2023/04/19/cs50-lab2/">https://ricky2333.github.io/2023/04/19/cs50-lab2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -960,23 +1115,23 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/04/18/cs50-practice-problems-week1/">
+                <a href="/2023/04/19/cs50-problem-set2/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/31.jpg" class="responsive-img" alt="CS50 Practice Problems">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="CS50 Problem Set2">
                         
-                        <span class="card-title">CS50 Practice Problems</span>
+                        <span class="card-title">CS50 Problem Set2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CS50 Practice Problems｜Week1
+                            CS50 Problem Set2
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-19
                         </span>
                         <span class="publish-author">
                             
@@ -1012,23 +1167,23 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/04/17/cs50-lab1/">
+                <a href="/2023/04/18/cs50-practice-problems-week1/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="CS50 Lab1">
+                        <img src="/medias/featureimages/31.jpg" class="responsive-img" alt="CS50 Practice Problems">
                         
-                        <span class="card-title">CS50 Lab1</span>
+                        <span class="card-title">CS50 Practice Problems</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CS50 Lab1 - Population Size
+                            CS50 Practice Problems｜Week1
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-18
                             </span>
                         <span class="publish-author">
                             
