@@ -651,14 +651,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    909
+                    705
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    4 分
                 </div>
                 
 
@@ -734,25 +734,13 @@
 </li>
 <li>Record your answers in <code>answers.txt</code>, along with an explanation for each program, by filling in the blanks marked <code>TODO</code>.</li>
 </ul>
+<h2 id="Hints-💡"><a href="#Hints-💡" class="headerlink" title="Hints 💡"></a>Hints 💡</h2><ul>
+<li>The different types of <code>.txt</code> files may help you determine which sort is which. Consider how each algorithm performs with an already sorted list. How about a reversed list? Or shuffled list? It may help to work through a smaller list of each type and walk through each sorting process.</li>
+</ul>
 <h2 id="Walkthrough-🎥"><a href="#Walkthrough-🎥" class="headerlink" title="Walkthrough 🎥"></a>Walkthrough 🎥</h2><blockquote>
 <p>YouTube: <a target="_blank" rel="noopener" href="https://youtu.be/-Bhxxw6JKKY">https://youtu.be/-Bhxxw6JKKY</a></p>
 <p>bilibili: <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pX4y1B7cj?share_source=copy_web">https://www.bilibili.com/video/BV1pX4y1B7cj?share_source=copy_web</a></p>
 </blockquote>
-<h2 id="Implementation-Details-☘️"><a href="#Implementation-Details-☘️" class="headerlink" title="Implementation Details ☘️"></a>Implementation Details ☘️</h2><p>Complete the implementation of <code>scrabble.c</code>, such that it determines the winner of a short scrabble-like game, where two players each enter their word, and the higher scoring player wins.</p>
-<ul>
-<li>Notice that we’ve stored the point values of each letter of the alphabet in an integer array named <code>POINTS</code><ul>
-<li>For example, <code>A</code> or <code>a</code> is worth 1 point (represented by <code>POINTS[0]</code>), <code>B</code> or <code>b</code> is worth 3 points (represented by <code>POINTS[1]</code>), etc.</li>
-</ul>
-</li>
-<li>Notice that we’ve created a prototype for a helper function called <code>compute_score()</code> that takes a string as input and returns an <code>int</code>. Whenever we would like to assign point values to a particular word, we can call this function. Note that this prototype is required for C to know that <code>compute_score()</code> exists later in the program.</li>
-<li>In <code>main()</code>, the program prompts the two players for their words using the <code>get_string()</code> function. These values are stored inside variables named <code>word1</code> and <code>word2</code>.</li>
-<li>In <code>compute_score()</code>, your program should compute, using the <code>POINTS</code> array, and return the score for the string argument. Characters that are not letters should be given zero points, and uppercase and lowercase letters should be given the same point values.<ul>
-<li>For example, <code>!</code> is worth <code>0</code> points while <code>A</code> and <code>a</code> are both worth <code>1</code> point.</li>
-<li>Though Scrabble rules normally require that a word be in the dictionary, no need to check for that in this problem!</li>
-</ul>
-</li>
-<li>In <code>main()</code>, your program should print, depending on the players’ scores, <code>Player 1 wins!</code>, <code>Player 2 wins!</code>, or <code>Tie!</code>.</li>
-</ul>
 <h2 id="How-to-Check-Your-Answers-🖥"><a href="#How-to-Check-Your-Answers-🖥" class="headerlink" title="How to Check Your Answers 🖥"></a>How to Check Your Answers 🖥</h2><p>Execute the below to evaluate the correctness of your answers using <code>check50</code>. But be sure to fill in your explanations as well, which <code>check50</code> won’t check here!</p>
 <pre class="line-numbers language-none"><code class="language-none">check50 cs50/labs/2023/x/sort<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -1364,7 +1352,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">39.4k</span>&nbsp;字
+                class="white-color">39.2k</span>&nbsp;字
             
             
             
