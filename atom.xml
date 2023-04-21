@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-20T02:38:15.195Z</updated>
+  <updated>2023-04-21T06:41:28.223Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CS50 Lab3</title>
+    <link href="https://ricky2333.github.io/2023/04/21/cs50-lab3/"/>
+    <id>https://ricky2333.github.io/2023/04/21/cs50-lab3/</id>
+    <published>2023-04-21T04:21:46.000Z</published>
+    <updated>2023-04-21T06:41:28.223Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Lab-3-Sort&quot;&gt;&lt;a href=&quot;#Lab-3-Sort&quot; class=&quot;headerlink&quot; title=&quot;Lab 3: Sort&quot;&gt;&lt;/a&gt;Lab 3: Sort&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Lab3 Page: &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CS50 Problem Set2</title>
     <link href="https://ricky2333.github.io/2023/04/20/cs50-problem-set2/"/>
     <id>https://ricky2333.github.io/2023/04/20/cs50-problem-set2/</id>
     <published>2023-04-20T02:38:49.000Z</published>
-    <updated>2023-04-20T02:38:15.195Z</updated>
+    <updated>2023-04-21T06:42:05.864Z</updated>
     
     
       
@@ -41,6 +71,8 @@
     
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
+    <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
+    
   </entry>
   
   <entry>
@@ -48,7 +80,7 @@
     <link href="https://ricky2333.github.io/2023/04/19/cs50-lab2/"/>
     <id>https://ricky2333.github.io/2023/04/19/cs50-lab2/</id>
     <published>2023-04-19T02:35:23.000Z</published>
-    <updated>2023-04-19T02:40:52.391Z</updated>
+    <updated>2023-04-21T06:41:32.847Z</updated>
     
     
       
@@ -56,7 +88,7 @@
         
         
     <summary type="html">&lt;h1 id=&quot;Lab-2-Scrabble&quot;&gt;&lt;a href=&quot;#Lab-2-Scrabble&quot; class=&quot;headerlink&quot; title=&quot;Lab 2: Scrabble&quot;&gt;&lt;/a&gt;Lab 2: Scrabble&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a</summary>
+&lt;p&gt;Lab2</summary>
         
       
     
@@ -67,6 +99,8 @@
     
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
+    <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
+    
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
   </entry>
@@ -76,7 +110,7 @@
     <link href="https://ricky2333.github.io/2023/04/18/cs50-practice-problems-week1/"/>
     <id>https://ricky2333.github.io/2023/04/18/cs50-practice-problems-week1/</id>
     <published>2023-04-18T02:22:03.000Z</published>
-    <updated>2023-04-19T02:38:43.397Z</updated>
+    <updated>2023-04-21T06:41:21.087Z</updated>
     
     
       
@@ -103,7 +137,7 @@
     <link href="https://ricky2333.github.io/2023/04/18/cs50-problem-set1/"/>
     <id>https://ricky2333.github.io/2023/04/18/cs50-problem-set1/</id>
     <published>2023-04-18T02:17:49.000Z</published>
-    <updated>2023-04-18T02:17:19.299Z</updated>
+    <updated>2023-04-21T06:41:58.758Z</updated>
     
     
       
@@ -123,6 +157,8 @@
     
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
+    <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
+    
   </entry>
   
   <entry>
@@ -130,7 +166,7 @@
     <link href="https://ricky2333.github.io/2023/04/17/cs50-lab1/"/>
     <id>https://ricky2333.github.io/2023/04/17/cs50-lab1/</id>
     <published>2023-04-17T08:32:23.000Z</published>
-    <updated>2023-04-18T02:16:09.631Z</updated>
+    <updated>2023-04-21T06:41:37.207Z</updated>
     
     
       
@@ -147,6 +183,8 @@
     
     
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
     
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
@@ -560,35 +598,6 @@
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python学习笔记｜List</title>
-    <link href="https://ricky2333.github.io/2023/04/02/python-xue-xi-bi-ji-list/"/>
-    <id>https://ricky2333.github.io/2023/04/02/python-xue-xi-bi-ji-list/</id>
-    <published>2023-04-02T06:34:40.000Z</published>
-    <updated>2023-04-10T04:35:06.079Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本篇博客还在修改润色中～&lt;/p&gt;
-&lt;p&gt;敬请期待～&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="Python基础" scheme="https://ricky2333.github.io/categories/Python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
-    
-    <category term="学习笔记" scheme="https://ricky2333.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   

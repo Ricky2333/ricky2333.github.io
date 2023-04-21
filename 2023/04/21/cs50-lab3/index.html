@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python VS C（上篇）, Rickyの水果摊">
+    <meta name="keywords" content="CS50 Lab3, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Python VS C（上篇） | Rickyの水果摊</title>
+    <title>CS50 Lab3 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -483,12 +483,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python VS C（上篇）</h1>
+                    <h1 class="description center-align post-title">CS50 Lab3</h1>
                 </div>
             </div>
         </div>
@@ -613,12 +613,12 @@
                                 <span class="chip bg-color">CS50</span>
                             </a>
                         
-                            <a href="/tags/C/">
-                                <span class="chip bg-color">C</span>
+                            <a href="/tags/CS50-Lab/">
+                                <span class="chip bg-color">CS50 Lab</span>
                             </a>
                         
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C</span>
                             </a>
                         
                     </div>
@@ -629,8 +629,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Python%E5%9F%BA%E7%A1%80/" class="post-category">
-                                Python基础
+                            <a href="/categories/CS50/" class="post-category">
+                                CS50
                             </a>
                         
                     </div>
@@ -642,7 +642,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-14
+                    2023-04-21
                 </div>
                 
 
@@ -651,14 +651,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.7k
+                    909
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    10 分
+                    5 分
                 </div>
                 
 
@@ -681,356 +681,92 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="写在最前-✍️"><a href="#写在最前-✍️" class="headerlink" title="写在最前 ✍️"></a>写在最前 ✍️</h2><p>相信不少科班的同学最先学习的编程语言是 <strong>C语言</strong>。</p>
-<p>之后因为各种各样的需求，就去学习了更多的语言，比如 <strong>Python</strong>，<strong>Java</strong> 等。</p>
-<p>如今 <strong>Python</strong> 的热度可以说是越来越高，依靠其强大的计算生态，Python 牢牢占据 <a target="_blank" rel="noopener" href="https://www.tiobe.com/tiobe-index/">TIOBE 热门编程语言排行榜</a> TOP3 的位置（写稿日：2023 年 4 月 14 日，Python 是 TOP1）。</p>
-<p>相比 C语言，<strong>Python</strong> 在人工智能、数据科学、自动化、网页开发等领域有更加广泛的应用。</p>
-<p>但是从 <strong>基本语法</strong> 的角度来看，Python 和 C语言 <strong>有不少共通之处</strong>。</p>
-<p>所以本文将从这个角度切入，列举 Python 和 C语言 在基础语法上的异同点，帮助已经掌握 C语言的同学更快上手 Python。</p>
-<blockquote>
-<p>本篇博客也是摊主的 <strong><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">CS50</a></strong> 课程学习笔记。</p>
-<p><strong><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">CS50</a></strong> 是哈佛大学的计算机导论公开课，也是摊主截止目前认为最棒的计算机导论课程。</p>
-<p>授课的 <a target="_blank" rel="noopener" href="https://cs.harvard.edu/malan/">David J. Malan</a> 教授是摊主见过的对计算机教学最热情的老师，也是在计算机基础教学领域对摊主影响最大的一位老师。摊主也希望通过自己的努力，不断向 Malan 教授这样的大牛看齐。</p>
-<p>有兴趣的小伙伴可以点击下面的链接，查看 <strong>CS50</strong> 课程的相关信息。</p>
-<p><strong>CS50</strong> 官方课程网站：<a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">https://cs50.harvard.edu/x/2023/</a></p>
+                <h1 id="Lab-3-Sort"><a href="#Lab-3-Sort" class="headerlink" title="Lab 3: Sort"></a>Lab 3: Sort</h1><blockquote>
+<p>Lab3 Page: <a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/labs/3/">https://cs50.harvard.edu/x/2023/labs/3/</a></p>
+<p>CS50 Study Group：677535709（QQ Group）</p>
 </blockquote>
-<hr>
-<h2 id="正文（上篇）"><a href="#正文（上篇）" class="headerlink" title="正文（上篇）"></a>正文（上篇）</h2><h3 id="程序运行过程"><a href="#程序运行过程" class="headerlink" title="程序运行过程"></a>程序运行过程</h3><h4 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h4><p>在 <strong>C语言</strong> 中，源代码 <code>test.c</code> 通过 <strong>编译器</strong> 编译为可执行文件 <code>test</code></p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">gcc <span class="token parameter variable">-o</span> <span class="token builtin class-name">test</span> test.c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>执行该文件</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./test<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><p>Python 是 <strong>解释型语言</strong>，不需要编译成可执行文件，源代码 <code>test.py</code> 可以直接被 <strong>解释器</strong> 读取和执行，解释器会逐行解释代码并执行相应的操作。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">python test.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<hr>
-<h3 id="库-x2F-模块的导入"><a href="#库-x2F-模块的导入" class="headerlink" title="库/模块的导入"></a>库/模块的导入</h3><h4 id="C语言-1"><a href="#C语言-1" class="headerlink" title="C语言"></a>C语言</h4><p>基本语法</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;...&gt;</span>  <span class="token comment">// 基本语法</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>实例</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span>  <span class="token comment">// 实例</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string.h&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;math.h&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="Python-1"><a href="#Python-1" class="headerlink" title="Python"></a>Python</h4><p>基本语法</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span>            <span class="token comment"># 导入整个模块</span>
-<span class="token keyword">import</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> <span class="token keyword">as</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span>   <span class="token comment"># 导入整个模块并且给模块取别名</span>
-<span class="token keyword">from</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> <span class="token comment"># 导入模块中的某个方法或属性</span>
-<span class="token keyword">from</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> <span class="token operator">*</span>     <span class="token comment"># 导入模块中的所有方法和属性</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>实例</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> csv
-<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">from</span> math <span class="token keyword">import</span> sqrt<span class="token punctuation">,</span> sin<span class="token punctuation">,</span> cos
-<span class="token keyword">from</span> datetime <span class="token keyword">import</span> <span class="token operator">*</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<hr>
-<h3 id="主函数"><a href="#主函数" class="headerlink" title="主函数"></a>主函数</h3><h4 id="C语言-2"><a href="#C语言-2" class="headerlink" title="C语言"></a>C语言</h4><p>在C语言中，主函数 <code>main</code> 是程序执行的起点，它的函数原型如下：</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>其中，<code>argc</code> 表示命令行参数的数量，<code>argv</code> 是一个指向每个参数的指针数组。主函数可以通过命令行参数来接收外部传递进来的数据。</p>
-<p>一些特点</p>
+<h2 id="Background-🧐"><a href="#Background-🧐" class="headerlink" title="Background 🧐"></a>Background 🧐</h2><p>Recall from lecture that we saw a few algorithms for sorting a sequence of numbers: selection sort, bubble sort, and merge sort.</p>
 <ul>
-<li><p><code>main</code> 函数必须存在于程序中，否则编译器会报错。</p>
-</li>
-<li><p><code>main</code> 函数中的代码将按照从上到下的顺序依次执行。</p>
-</li>
-<li><p>程序执行结束后，<code>main</code> 函数可以返回一个整数值，表示程序的执行结果。一般来说，返回值为 0 表示程序执行成功，非零值表示程序执行失败或出错。</p>
-</li>
+<li>Selection sort iterates through the unsorted portions of a list, selecting the smallest element each time and moving it to its correct location.</li>
+<li>Bubble sort compares pairs of adjacent values one at a time and swaps them if they are in the incorrect order. This continues until the list is sorted.</li>
+<li>Merge sort recursively divides the list into two repeatedly and then merges the smaller lists back into a larger one in the correct order.</li>
 </ul>
-<p>C语言 <code>main</code> 函数实例：</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<h2 id="Getting-Started-🍉"><a href="#Getting-Started-🍉" class="headerlink" title="Getting Started 🍉"></a>Getting Started 🍉</h2><p>Open <a target="_blank" rel="noopener" href="https://code.cs50.io/">VS Code</a>.</p>
+<p>Start by clicking inside your terminal window, then execute <code>cd</code> by itself. You should find that its “prompt” resembles the below.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Hello, World!\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Click inside of that terminal window and then execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> https://cdn.cs50.net/2022/fall/labs/3/sort.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<p>followed by Enter in order to download a ZIP called <code>sort.zip</code> in your codespace. Take care not to overlook the space between <code>wget</code> and the following URL, or any other character for that matter!</p>
+<p>Now execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">unzip</span> sort.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<p>to create a folder called <code>sort</code>. You no longer need the ZIP file, so you can execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> sort.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h4 id="Python-2"><a href="#Python-2" class="headerlink" title="Python"></a>Python</h4><p>Python 中没有像 C 语言中的 <code>main</code> 函数那样的入口函数，整个 Python 脚本都是可执行的。</p>
-<p>但是，<strong>为了方便编写测试代码和模块化编程</strong>，Python 提供了一种 <strong>判断当前脚本是否作为主程序执行</strong> 的方式，即通过判断 <code>__name__</code> 变量的值是否为 <code>"__main__"</code>。</p>
+<p>and respond with “y” followed by Enter at the prompt to remove the ZIP file you downloaded.</p>
+<p>Now type</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token function">sort</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>followed by Enter to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">sort/ $<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>If all was successful, you should execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>and you should see a collection of <code>.txt</code> files alongside executable programs <code>sort1</code>, <code>sort2</code>, and <code>sort3</code>.</p>
+<p>If you run into any trouble, follow these same steps steps again and see if you can determine where you went wrong!</p>
+<h2 id="Instructions"><a href="#Instructions" class="headerlink" title="Instructions"></a>Instructions</h2><p>Provided to you are three already-compiled C programs, <code>sort1</code>, <code>sort2</code>, and <code>sort3</code>. Each of these programs implements a different sorting algorithm: selection sort, bubble sort, or merge sort (though not necessarily in that order!). Your task is to determine which sorting algorithm is used by each file.</p>
 <ul>
-<li>当 Python 脚本作为主程序执行时，<code>__name__</code> 的值会被设置为 <code>"__main__"</code></li>
-<li>当 Python 脚本作为模块被导入时，<code>__name__</code> 的值会被设置为模块的名称。</li>
+<li><code>sort1</code>, <code>sort2</code>, and <code>sort3</code> are binary files, so you won’t be able to view the C source code for each. To assess which sort implements which algorithm, run the sorts on different lists of values.</li>
+<li>Multiple <code>.txt</code> files are provided to you. These files contain <code>n</code> lines of values, either reversed, shuffled, or sorted.<ul>
+<li>For example, <code>reversed10000.txt</code> contains 10000 lines of numbers that are reversed from <code>10000</code>, while <code>random10000.txt</code> contains 10000 lines of numbers that are in random order.</li>
 </ul>
-<p>这个特性可以让我们在 Python 脚本中编写一些测试代码，但不会影响到被导入的代码。</p>
-<p>通常，在 Python 脚本的末尾会使用以下代码来判断当前脚本是否作为主程序执行：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
-    <span class="token comment"># 在这里编写主程序</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>在这个代码块中，我们可以编写 Python 脚本的主要逻辑。当我们在命令行中执行这个脚本时，就会执行这个代码块中的代码。例如，下面是一个简单的 Python 脚本示例：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">say_hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span>
-
-<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
-    say_hello<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>当我们在命令行中执行这个脚本时，将会输出 <code>"Hello, World!"</code>；而如果我们将这个脚本作为模块导入到其他脚本中时，<code>say_hello</code> 函数不会被执行。</p>
-<hr>
-<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="C-x2F-C"><a href="#C-x2F-C" class="headerlink" title="C/C++"></a>C/C++</h4><table>
-<thead>
-<tr>
-<th align="center">数据类型</th>
-<th align="center">实例</th>
-<th align="center">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">bool</td>
-<td align="center"><code>bool is_prime = true</code>、<code>bool is_odd = false</code></td>
-<td align="center">早期 C语言 并不支持 <code>bool</code> 类型，通常用0和1表示<br>而 C++ 支持 <code>bool</code> 类型</td>
-</tr>
-<tr>
-<td align="center">char</td>
-<td align="center"><code>char c = 'b'</code></td>
-<td align="center">表示单个字符</td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center"><code>int n = 10</code></td>
-<td align="center">整数</td>
-</tr>
-<tr>
-<td align="center">float</td>
-<td align="center"><code>float a = 1.101</code></td>
-<td align="center">单精度浮点数</td>
-</tr>
-<tr>
-<td align="center">double</td>
-<td align="center"><code>double b = 1.10001</code></td>
-<td align="center">双精度浮点数</td>
-</tr>
-<tr>
-<td align="center">long</td>
-<td align="center"><code>long long n = 10000</code></td>
-<td align="center">长整形</td>
-</tr>
-<tr>
-<td align="center">string</td>
-<td align="center"><code>string s = "hello"</code></td>
-<td align="center">C语言 并没有 <code>string</code> 类型，通常用字符数组或字符指针表示<br>而 C++ 支持 <code>string</code> 类型</td>
-</tr>
-</tbody></table>
-<p>🍉 PS：更多语法细节由于篇幅所限，且本文重点是两个语言的语法对比，故暂不列出，有需要同学可以自行查阅相关细节。</p>
-<h4 id="Python-3"><a href="#Python-3" class="headerlink" title="Python"></a>Python</h4><table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>实例</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>bool</td>
-<td><code>is_prime = True</code> 、<code>is_odd = False</code></td>
-<td>首字母需大写</td>
-</tr>
-<tr>
-<td>int</td>
-<td><code>num = 10</code></td>
-<td>整数</td>
-</tr>
-<tr>
-<td>float</td>
-<td><code>avg = 33.333</code></td>
-<td>浮点数</td>
-</tr>
-<tr>
-<td>complex</td>
-<td><code>c = 1 + 2j</code></td>
-<td>复数</td>
-</tr>
-<tr>
-<td>str</td>
-<td><code>s = 'hello'</code>、<code>t = "world"</code></td>
-<td>单引号和双引号均可表示字符串</td>
-</tr>
-<tr>
-<td>NoneType</td>
-<td><code>n = None</code></td>
-<td>空类型，表示没有值，用于占位或表示不存在的情况。</td>
-</tr>
-</tbody></table>
-<p>🍉 PS：C 语言中的整数类型有固定的位数，例如 int 类型通常是 32 位或 64 位。而 Python 中的整数类型是动态的，可以表示任意大小的整数。</p>
-<blockquote>
-<p>Python中的列表（list）、集合（set）、字典（dictionary）等将在 Python VS C（下篇）中对比。</p>
+</li>
+<li>To run the sorts on the text files, in the terminal, run <code>./[program_name] [text_file.txt]</code> . Make sure you have made use of <code>cd</code> to move into the <code>sort</code> directory!<ul>
+<li>For example, to sort <code>reversed10000.txt</code> with <code>sort1</code>, run <code>./sort1 reversed10000.txt</code>.</li>
+</ul>
+</li>
+<li>You may find it helpful to time your sorts. To do so, run <code>time ./[sort_file] [text_file.txt]</code>.<ul>
+<li>For example, you could run <code>time ./sort1 reversed10000.txt</code> to run <code>sort1</code> on 10,000 reversed numbers. At the end of your terminal’s output, you can look at the <code>real</code> time to see how much time actually elapsed while running the program.</li>
+</ul>
+</li>
+<li>Record your answers in <code>answers.txt</code>, along with an explanation for each program, by filling in the blanks marked <code>TODO</code>.</li>
+</ul>
+<h2 id="Walkthrough-🎥"><a href="#Walkthrough-🎥" class="headerlink" title="Walkthrough 🎥"></a>Walkthrough 🎥</h2><blockquote>
+<p>YouTube: <a target="_blank" rel="noopener" href="https://youtu.be/-Bhxxw6JKKY">https://youtu.be/-Bhxxw6JKKY</a></p>
+<p>bilibili: <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pX4y1B7cj?share_source=copy_web">https://www.bilibili.com/video/BV1pX4y1B7cj?share_source=copy_web</a></p>
 </blockquote>
-<hr>
-<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><h4 id="C语言-3"><a href="#C语言-3" class="headerlink" title="C语言"></a>C语言</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token comment">// 需要指定变量的数据类型</span>
-counter<span class="token operator">++</span><span class="token punctuation">;</span>        <span class="token comment">// 支持++等自增运算符</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p> C 语言是一种 <strong>静态类型语言</strong>，需要 <strong>在使用变量之前明确定义变量的数据类型</strong>。</p>
-<h4 id="Python-4"><a href="#Python-4" class="headerlink" title="Python"></a>Python</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">counter <span class="token operator">=</span> <span class="token number">0</span>  <span class="token comment"># 无需指定变量的数据类型</span>
-counter <span class="token operator">+=</span> <span class="token number">1</span> <span class="token comment"># 不支持++等自增运算符</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>Python 是一种 <strong>动态类型语言</strong>，因此它的数据类型是动态推断的，<strong>不需要事先定义变量的数据类型</strong>。</p>
-<p>🍉PS：Python 中的数据类型通常是对象，具有更加丰富和灵活的操作和属性，例如字符串类型的方法和属性可以方便地进行字符串的处理和操作。而 C 语言中的数据类型则通常是基本数据类型，需要使用函数来进行操作和处理。</p>
-<hr>
-<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>Python 和 C 语言都支持「与」、「或」、「非」等逻辑运算符，但是具体的语法略有不同。</p>
-<h4 id="C语言-4"><a href="#C语言-4" class="headerlink" title="C语言"></a>C语言</h4><ul>
-<li><code>&amp;&amp;</code> 运算符：当两个操作数都为真（非零）时，结果为真，否则为假。</li>
-<li><code>||</code> 运算符：当两个操作数中至少有一个为真（非零）时，结果为真，否则为假。</li>
-<li><code>!</code> 运算符：对操作数取反，即真变为假，假变为真。</li>
-</ul>
-<h4 id="Python-5"><a href="#Python-5" class="headerlink" title="Python"></a>Python</h4><ul>
-<li><p><code>and</code> 运算符：当两个操作数都为 True 时，结果为 True，否则为 False。</p>
-</li>
-<li><p><code>or</code> 运算符：当两个操作数中有至少一个为 True 时，结果为 True，否则为 False。</p>
-</li>
-<li><p><code>not</code> 运算符：对操作数取反，即 True 变为 False，False 变为 True。</p>
-</li>
-</ul>
-<p>🍉 PS：C 语言 中的逻辑运算符 <strong>不具有短路运算</strong> 的特性，总是会计算左右两侧的操作数；而 Python 中的逻辑运算符具有 <strong>短路运算</strong> 的特性，当左侧操作数已经可以确定结果时，右侧操作数不再进行计算。</p>
-<hr>
-<h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>描述</th>
-<th>C 示例</th>
-<th>Python 示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>+</td>
-<td>加法</td>
-<td><code>a + b</code></td>
-<td><code>a + b</code></td>
-</tr>
-<tr>
-<td>-</td>
-<td>减法</td>
-<td><code>a - b</code></td>
-<td><code>a - b</code></td>
-</tr>
-<tr>
-<td>*</td>
-<td>乘法</td>
-<td><code>a * b</code></td>
-<td><code>a * b</code></td>
-</tr>
-<tr>
-<td>/</td>
-<td>浮点除法</td>
-<td><code>a / b</code></td>
-<td><code>a / b</code></td>
-</tr>
-<tr>
-<td>%</td>
-<td>取模</td>
-<td><code>a % b</code></td>
-<td><code>a % b</code></td>
-</tr>
-<tr>
-<td>/</td>
-<td>整除</td>
-<td><code>a / b</code></td>
-<td><code>a // b</code></td>
-</tr>
-<tr>
-<td>$a^b$</td>
-<td>幂运算</td>
-<td><code>pow()</code></td>
-<td><code>a ** b</code></td>
-</tr>
-</tbody></table>
-<p>🍉 PS1：在 C 语言中，没有幂运算符，需要使用库函数 <code>pow()</code> 来进行幂运算，且 <code>pow()</code> 函数返回的是一个浮点数值，需要进行类型转换才能得到整数类型的结果。</p>
-<p>例如：</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;math.h&gt;</span></span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token function">pow</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// c 的值为 8，</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>🍉 PS2：需要注意的是，在 C 语言中进行整数除法时，如果两个操作数都是整数，则除法运算符 <code>/</code> 返回的是一个整数值，会向下取整；而在 Python 中，除法运算符 <code>/</code> 返回的是一个浮点数值。</p>
-<hr>
-<h3 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h3><p>Python 和 C 语言中的位运算符均包括按位与（&amp;）、按位或（|）、按位异或（^）、按位取反（~）、左移位（&lt;&lt;）和右移位（&gt;&gt;）等运算。</p>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>描述</th>
-<th>C 示例</th>
-<th>Python 示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>&amp;</td>
-<td>按位与</td>
-<td><code>a &amp; b</code></td>
-<td><code>a &amp; b</code></td>
-</tr>
-<tr>
-<td>|</td>
-<td>按位或</td>
-<td>`a</td>
-<td>b`</td>
-</tr>
-<tr>
-<td>^</td>
-<td>按位异或</td>
-<td><code>a ^ b</code></td>
-<td><code>a ^ b</code></td>
-</tr>
-<tr>
-<td>~</td>
-<td>按位取反</td>
-<td><code>~a</code></td>
-<td><code>~a</code></td>
-</tr>
-<tr>
-<td>&lt;&lt;</td>
-<td>左移位</td>
-<td><code>a &lt;&lt; b</code></td>
-<td><code>a &lt;&lt; b</code></td>
-</tr>
-<tr>
-<td>&gt;&gt;</td>
-<td>右移位</td>
-<td><code>a &gt;&gt; b</code></td>
-<td><code>a &gt;&gt; b</code></td>
-</tr>
-</tbody></table>
-<p>🍉 PS1：C 语言中的位运算符只能用于整数类型，包括有符号整数和无符号整数，而 Python 中的位运算符可以用于整数类型和布尔类型，布尔类型会被转换为整数类型（True 转换为 1，False 转换为 0）。</p>
-<p>🍉 PS2：Python 和 C 语言的右移运算符（&gt;&gt;）在处理有符号整数时表现不同。Python 对负数的右移是向零舍入（也称为算术右移），而 C 语言的行为是依赖于编译器实现的（可能是算术右移或逻辑右移）。</p>
-<hr>
-<h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><h4 id="C语言-5"><a href="#C语言-5" class="headerlink" title="C语言"></a>C语言</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&gt;</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"x &gt; y\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">==</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"x = y\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"x &lt; y\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="Python-6"><a href="#Python-6" class="headerlink" title="Python"></a>Python</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">x <span class="token operator">=</span> <span class="token number">3</span>
-y <span class="token operator">=</span> <span class="token number">5</span>
-<span class="token keyword">if</span> x <span class="token operator">&gt;</span> y<span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x &gt; y"</span><span class="token punctuation">)</span>
-<span class="token keyword">elif</span> x <span class="token operator">==</span> y<span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x = y"</span><span class="token punctuation">)</span>
-<span class="token keyword">else</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x &lt; y"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>不同点：</p>
+<h2 id="Implementation-Details-☘️"><a href="#Implementation-Details-☘️" class="headerlink" title="Implementation Details ☘️"></a>Implementation Details ☘️</h2><p>Complete the implementation of <code>scrabble.c</code>, such that it determines the winner of a short scrabble-like game, where two players each enter their word, and the higher scoring player wins.</p>
 <ul>
-<li>C语言的条件表达式需要由括号<code>()</code> 括起来，而 Python 的条件表达式无需添加 <code>()</code> （但是加了也没错）</li>
-<li>C语言使用 <strong>花括号</strong> <code>{}</code> 来表示代码块，而 Python 使用 <strong>缩进</strong> 来表示代码块，且需要在条件表达式后添加 <code>:</code></li>
-<li>C语言使用 <code>else if</code>，而 Python 使用 <code>elif</code></li>
+<li>Notice that we’ve stored the point values of each letter of the alphabet in an integer array named <code>POINTS</code><ul>
+<li>For example, <code>A</code> or <code>a</code> is worth 1 point (represented by <code>POINTS[0]</code>), <code>B</code> or <code>b</code> is worth 3 points (represented by <code>POINTS[1]</code>), etc.</li>
 </ul>
-<hr>
-<h2 id="写在最后-✍️"><a href="#写在最后-✍️" class="headerlink" title="写在最后 ✍️"></a>写在最后 ✍️</h2><p>由于篇幅有限，且为了读者更好的阅读体验，摊主把内容拆成了上篇和下篇，更多对比内容见 <a target="_blank" rel="noopener" href="https://rickyxcoder.top/2023/04/15/python-vs-c-xia-pian/">Python VS C（下篇）</a>☘️</p>
-<hr>
-<h2 id="参考资料-📚"><a href="#参考资料-📚" class="headerlink" title="参考资料 📚"></a>参考资料 📚</h2><p>Python官方教程：<a target="_blank" rel="noopener" href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a></p>
-<p>CS50：<a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">https://cs50.harvard.edu/x/2023/</a></p>
-<p>ChatGPT：<a target="_blank" rel="noopener" href="https://openai.com/blog/chatgpt">https://openai.com/blog/chatgpt</a></p>
+</li>
+<li>Notice that we’ve created a prototype for a helper function called <code>compute_score()</code> that takes a string as input and returns an <code>int</code>. Whenever we would like to assign point values to a particular word, we can call this function. Note that this prototype is required for C to know that <code>compute_score()</code> exists later in the program.</li>
+<li>In <code>main()</code>, the program prompts the two players for their words using the <code>get_string()</code> function. These values are stored inside variables named <code>word1</code> and <code>word2</code>.</li>
+<li>In <code>compute_score()</code>, your program should compute, using the <code>POINTS</code> array, and return the score for the string argument. Characters that are not letters should be given zero points, and uppercase and lowercase letters should be given the same point values.<ul>
+<li>For example, <code>!</code> is worth <code>0</code> points while <code>A</code> and <code>a</code> are both worth <code>1</code> point.</li>
+<li>Though Scrabble rules normally require that a word be in the dictionary, no need to check for that in this problem!</li>
+</ul>
+</li>
+<li>In <code>main()</code>, your program should print, depending on the players’ scores, <code>Player 1 wins!</code>, <code>Player 2 wins!</code>, or <code>Tie!</code>.</li>
+</ul>
+<h2 id="How-to-Check-Your-Answers-🖥"><a href="#How-to-Check-Your-Answers-🖥" class="headerlink" title="How to Check Your Answers 🖥"></a>How to Check Your Answers 🖥</h2><p>Execute the below to evaluate the correctness of your answers using <code>check50</code>. But be sure to fill in your explanations as well, which <code>check50</code> won’t check here!</p>
+<pre class="line-numbers language-none"><code class="language-none">check50 cs50/labs/2023/x/sort<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="How-to-Submit-🚀"><a href="#How-to-Submit-🚀" class="headerlink" title="How to Submit 🚀"></a>How to Submit 🚀</h2><p>In your terminal, execute the below to submit your work.</p>
+<pre class="line-numbers language-none"><code class="language-none">submit50 cs50/labs/2023/x/sort<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="Solution-🧑🏻‍💻"><a href="#Solution-🧑🏻‍💻" class="headerlink" title="Solution 🧑🏻‍💻"></a>Solution 🧑🏻‍💻</h2><p>Ricky’s GitHub Repository for CS50 Labs: <a target="_blank" rel="noopener" href="https://github.com/Ricky2333/CS50-Labs">https://github.com/Ricky2333/CS50-Labs</a></p>
+<blockquote>
+<p>CS50 Study Group：677535709（QQ Group）</p>
+</blockquote>
 
                 
             </div>
@@ -1057,7 +793,7 @@ y <span class="token operator">=</span> <span class="token number">5</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/04/14/python-vs-c-shang-pian/">https://ricky2333.github.io/2023/04/14/python-vs-c-shang-pian/</a>
+                    <a href="https://ricky2333.github.io/2023/04/21/cs50-lab3/">https://ricky2333.github.io/2023/04/21/cs50-lab3/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1099,12 +835,12 @@ y <span class="token operator">=</span> <span class="token number">5</span>
                                     <span class="chip bg-color">CS50</span>
                                 </a>
                             
-                                <a href="/tags/C/">
-                                    <span class="chip bg-color">C</span>
+                                <a href="/tags/CS50-Lab/">
+                                    <span class="chip bg-color">CS50 Lab</span>
                                 </a>
                             
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C</span>
                                 </a>
                             
                         </div>
@@ -1274,32 +1010,94 @@ y <span class="token operator">=</span> <span class="token number">5</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/04/15/python-vs-c-xia-pian/">
+                <a href="/2023/04/21/cs50-lab3/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/30.jpg" class="responsive-img" alt="Python VS C（下篇）">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="CS50 Lab3">
                         
-                        <span class="card-title">Python VS C（下篇）</span>
+                        <span class="card-title">CS50 Lab3</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CS50学习笔记｜Python VS C（下篇）
+                            CS50 Lab3 - Sort
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-21
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Rickyの水果摊
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/CS50/" class="post-category">
+                                    CS50
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/CS50/">
+                        <span class="chip bg-color">CS50</span>
+                    </a>
+                    
+                    <a href="/tags/CS50-Lab/">
+                        <span class="chip bg-color">CS50 Lab</span>
+                    </a>
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/04/20/cs50-problem-set2/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="CS50 Problem Set2">
+                        
+                        <span class="card-title">CS50 Problem Set2</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            CS50 Problem Set2
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/CS50/" class="post-category">
+                                    CS50
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1315,64 +1113,8 @@ y <span class="token operator">=</span> <span class="token number">5</span>
                         <span class="chip bg-color">C</span>
                     </a>
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/04/13/acwing-di-88-chang-zhou-sai-fu-pan/">
-                    <div class="card-image">
-                        
-                        <img src="/medias/featureimages/35.jpg" class="responsive-img" alt="Acwing第88场周赛复盘">
-                        
-                        <span class="card-title">Acwing第88场周赛复盘</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Acwing第88场周赛复盘
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-13
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/" class="post-category">
-                                    Acwing周赛复盘
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                        <span class="chip bg-color">信息奥赛</span>
-                    </a>
-                    
-                    <a href="/tags/Acwing/">
-                        <span class="chip bg-color">Acwing</span>
-                    </a>
-                    
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
+                    <a href="/tags/CS50-PSet/">
+                        <span class="chip bg-color">CS50 PSet</span>
                     </a>
                     
                 </div>
