@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-21T07:03:16.386Z</updated>
+  <updated>2023-04-22T04:41:39.538Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS50-Lab4</title>
+    <link href="https://ricky2333.github.io/2023/04/22/cs50-lab4/"/>
+    <id>https://ricky2333.github.io/2023/04/22/cs50-lab4/</id>
+    <published>2023-04-22T04:39:46.000Z</published>
+    <updated>2023-04-22T04:41:39.538Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Lab-4-Smiley-amp-Volume&quot;&gt;&lt;a href=&quot;#Lab-4-Smiley-amp-Volume&quot; class=&quot;headerlink&quot; title=&quot;Lab 4: Smiley &amp;amp; Volume&quot;&gt;&lt;/a&gt;Lab 4: Smiley</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CS50-Problem-Set3</title>
+    <link href="https://ricky2333.github.io/2023/04/22/cs50-problem-set3/"/>
+    <id>https://ricky2333.github.io/2023/04/22/cs50-problem-set3/</id>
+    <published>2023-04-22T04:38:17.000Z</published>
+    <updated>2023-04-22T04:38:56.544Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CS50-Problem-Set3&quot;&gt;&lt;a href=&quot;#CS50-Problem-Set3&quot; class=&quot;headerlink&quot; title=&quot;CS50 Problem Set3&quot;&gt;&lt;/a&gt;CS50 Problem</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
+    
+  </entry>
   
   <entry>
     <title>CS50 Lab3</title>
@@ -51,7 +109,7 @@
     <link href="https://ricky2333.github.io/2023/04/20/cs50-problem-set2/"/>
     <id>https://ricky2333.github.io/2023/04/20/cs50-problem-set2/</id>
     <published>2023-04-20T02:38:49.000Z</published>
-    <updated>2023-04-21T06:42:05.864Z</updated>
+    <updated>2023-04-21T08:09:36.635Z</updated>
     
     
       
@@ -137,7 +195,7 @@
     <link href="https://ricky2333.github.io/2023/04/18/cs50-problem-set1/"/>
     <id>https://ricky2333.github.io/2023/04/18/cs50-problem-set1/</id>
     <published>2023-04-18T02:17:49.000Z</published>
-    <updated>2023-04-21T06:41:58.758Z</updated>
+    <updated>2023-04-21T08:09:41.381Z</updated>
     
     
       
@@ -525,65 +583,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜位数问题&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜位数问题&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜位数问题&quot;&gt;&lt;/a&gt;信息奥赛题解｜位数问题&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>嵌入式系统｜期末指北</title>
-    <link href="https://ricky2333.github.io/2023/04/05/qian-ru-shi-xi-tong-qi-mo-zhi-bei/"/>
-    <id>https://ricky2333.github.io/2023/04/05/qian-ru-shi-xi-tong-qi-mo-zhi-bei/</id>
-    <published>2023-04-05T15:15:33.000Z</published>
-    <updated>2023-04-05T16:18:31.703Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;期末指北——嵌入式系统（feat-ChatGPT）&quot;&gt;&lt;a href=&quot;#期末指北——嵌入式系统（feat-ChatGPT）&quot; class=&quot;headerlink&quot; title=&quot;期末指北——嵌入式系统（feat.</summary>
-        
-      
-    
-    
-    
-    <category term="嵌入式系统" scheme="https://ricky2333.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-    <category term="嵌入式系统" scheme="https://ricky2333.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/"/>
-    
-    <category term="期末指北" scheme="https://ricky2333.github.io/tags/%E6%9C%9F%E6%9C%AB%E6%8C%87%E5%8C%97/"/>
-    
-    <category term="ChatGPT" scheme="https://ricky2333.github.io/tags/ChatGPT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜昆虫繁殖</title>
-    <link href="https://ricky2333.github.io/2023/04/04/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/"/>
-    <id>https://ricky2333.github.io/2023/04/04/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/</id>
-    <published>2023-04-04T15:24:33.000Z</published>
-    <updated>2023-04-11T01:16:25.016Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜昆虫繁殖&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜昆虫繁殖&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜昆虫繁殖&quot;&gt;&lt;/a&gt;信息奥赛题解｜昆虫繁殖&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
         
       
