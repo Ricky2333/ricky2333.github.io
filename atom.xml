@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-25T00:12:43.773Z</updated>
+  <updated>2023-04-25T07:21:13.484Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS50-Problem-Set4</title>
+    <link href="https://ricky2333.github.io/2023/04/25/cs50-problem-set4/"/>
+    <id>https://ricky2333.github.io/2023/04/25/cs50-problem-set4/</id>
+    <published>2023-04-25T07:13:53.000Z</published>
+    <updated>2023-04-25T07:21:13.484Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CS50-Problem-Set4&quot;&gt;&lt;a href=&quot;#CS50-Problem-Set4&quot; class=&quot;headerlink&quot; title=&quot;CS50 Problem Set4&quot;&gt;&lt;/a&gt;CS50 Problem</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
+    
+  </entry>
   
   <entry>
     <title>Bash Script｜学习笔记1</title>
@@ -48,7 +77,7 @@
     <link href="https://ricky2333.github.io/2023/04/23/cs50-lab4/"/>
     <id>https://ricky2333.github.io/2023/04/23/cs50-lab4/</id>
     <published>2023-04-23T00:00:46.000Z</published>
-    <updated>2023-04-23T00:16:56.081Z</updated>
+    <updated>2023-04-25T00:27:04.912Z</updated>
     
     
       
@@ -565,35 +594,6 @@
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="哈希表" scheme="https://ricky2333.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Acwing第86场周赛复盘</title>
-    <link href="https://ricky2333.github.io/2023/04/07/acwing-di-86-chang-zhou-sai-fu-pan/"/>
-    <id>https://ricky2333.github.io/2023/04/07/acwing-di-86-chang-zhou-sai-fu-pan/</id>
-    <published>2023-04-07T11:56:51.000Z</published>
-    <updated>2023-04-15T12:37:42.822Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;【Acwing-周赛复盘】第86场周赛复盘（2023-1-14）&quot;&gt;&lt;a href=&quot;#【Acwing-周赛复盘】第86场周赛复盘（2023-1-14）&quot; class=&quot;headerlink&quot; title=&quot;【Acwing</summary>
-        
-      
-    
-    
-    
-    <category term="Acwing周赛复盘" scheme="https://ricky2333.github.io/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="Acwing" scheme="https://ricky2333.github.io/tags/Acwing/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
   </entry>
   
