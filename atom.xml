@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-25T07:21:13.484Z</updated>
+  <updated>2023-04-25T13:34:08.093Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CS50-Problem-Set4</title>
+    <title>CS61A HW1</title>
+    <link href="https://ricky2333.github.io/2023/04/26/cs61a-hw1/"/>
+    <id>https://ricky2333.github.io/2023/04/26/cs61a-hw1/</id>
+    <published>2023-04-26T00:10:54.000Z</published>
+    <updated>2023-04-25T13:34:08.093Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CS61A-HW1&quot;&gt;&lt;a href=&quot;#CS61A-HW1&quot; class=&quot;headerlink&quot; title=&quot;CS61A HW1&quot;&gt;&lt;/a&gt;CS61A HW1&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;CS61A HW1 Page: &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="CS61A" scheme="https://ricky2333.github.io/categories/CS61A/"/>
+    
+    
+    <category term="CS61A" scheme="https://ricky2333.github.io/tags/CS61A/"/>
+    
+    <category term="CS61A HW" scheme="https://ricky2333.github.io/tags/CS61A-HW/"/>
+    
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CS50 Problem Set4</title>
     <link href="https://ricky2333.github.io/2023/04/25/cs50-problem-set4/"/>
     <id>https://ricky2333.github.io/2023/04/25/cs50-problem-set4/</id>
     <published>2023-04-25T07:13:53.000Z</published>
-    <updated>2023-04-25T07:21:13.484Z</updated>
+    <updated>2023-04-25T13:21:37.182Z</updated>
     
     
       
@@ -73,11 +103,11 @@
   </entry>
   
   <entry>
-    <title>CS50-Lab4</title>
+    <title>CS50 Lab4</title>
     <link href="https://ricky2333.github.io/2023/04/23/cs50-lab4/"/>
     <id>https://ricky2333.github.io/2023/04/23/cs50-lab4/</id>
     <published>2023-04-23T00:00:46.000Z</published>
-    <updated>2023-04-25T00:27:04.912Z</updated>
+    <updated>2023-04-25T13:22:22.683Z</updated>
     
     
       
@@ -102,11 +132,11 @@
   </entry>
   
   <entry>
-    <title>CS50-Problem-Set3</title>
+    <title>CS50 Problem Set3</title>
     <link href="https://ricky2333.github.io/2023/04/22/cs50-problem-set3/"/>
     <id>https://ricky2333.github.io/2023/04/22/cs50-problem-set3/</id>
     <published>2023-04-22T04:38:17.000Z</published>
-    <updated>2023-04-22T04:38:56.544Z</updated>
+    <updated>2023-04-25T13:21:49.159Z</updated>
     
     
       
@@ -135,7 +165,7 @@
     <link href="https://ricky2333.github.io/2023/04/21/cs50-lab3/"/>
     <id>https://ricky2333.github.io/2023/04/21/cs50-lab3/</id>
     <published>2023-04-21T04:21:46.000Z</published>
-    <updated>2023-04-21T07:03:16.386Z</updated>
+    <updated>2023-04-25T13:22:34.646Z</updated>
     
     
       
@@ -165,7 +195,7 @@
     <link href="https://ricky2333.github.io/2023/04/20/cs50-problem-set2/"/>
     <id>https://ricky2333.github.io/2023/04/20/cs50-problem-set2/</id>
     <published>2023-04-20T02:38:49.000Z</published>
-    <updated>2023-04-21T08:09:36.635Z</updated>
+    <updated>2023-04-25T13:21:52.324Z</updated>
     
     
       
@@ -194,7 +224,7 @@
     <link href="https://ricky2333.github.io/2023/04/19/cs50-lab2/"/>
     <id>https://ricky2333.github.io/2023/04/19/cs50-lab2/</id>
     <published>2023-04-19T02:35:23.000Z</published>
-    <updated>2023-04-21T06:41:32.847Z</updated>
+    <updated>2023-04-25T13:22:36.420Z</updated>
     
     
       
@@ -224,7 +254,7 @@
     <link href="https://ricky2333.github.io/2023/04/18/cs50-practice-problems-week1/"/>
     <id>https://ricky2333.github.io/2023/04/18/cs50-practice-problems-week1/</id>
     <published>2023-04-18T02:22:03.000Z</published>
-    <updated>2023-04-21T06:41:21.087Z</updated>
+    <updated>2023-04-25T13:22:06.356Z</updated>
     
     
       
@@ -251,7 +281,7 @@
     <link href="https://ricky2333.github.io/2023/04/18/cs50-problem-set1/"/>
     <id>https://ricky2333.github.io/2023/04/18/cs50-problem-set1/</id>
     <published>2023-04-18T02:17:49.000Z</published>
-    <updated>2023-04-21T08:09:41.381Z</updated>
+    <updated>2023-04-25T13:21:53.840Z</updated>
     
     
       
@@ -280,7 +310,7 @@
     <link href="https://ricky2333.github.io/2023/04/17/cs50-lab1/"/>
     <id>https://ricky2333.github.io/2023/04/17/cs50-lab1/</id>
     <published>2023-04-17T08:32:23.000Z</published>
-    <updated>2023-04-21T06:41:37.207Z</updated>
+    <updated>2023-04-25T13:22:53.923Z</updated>
     
     
       
@@ -564,36 +594,6 @@
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜四平方和</title>
-    <link href="https://ricky2333.github.io/2023/04/08/xin-xi-ao-sai-ti-jie-si-ping-fang-he/"/>
-    <id>https://ricky2333.github.io/2023/04/08/xin-xi-ao-sai-ti-jie-si-ping-fang-he/</id>
-    <published>2023-04-08T10:44:37.000Z</published>
-    <updated>2023-04-15T12:38:35.950Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜四平方和&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜四平方和&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜四平方和&quot;&gt;&lt;/a&gt;信息奥赛题解｜四平方和&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="哈希表" scheme="https://ricky2333.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
     
   </entry>
   
