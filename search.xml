@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Bash Script｜学习笔记1</title>
+      <link href="/2023/04/24/bash-script-ji-chu/"/>
+      <url>/2023/04/24/bash-script-ji-chu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Bash-Script-简介-📚"><a href="#Bash-Script-简介-📚" class="headerlink" title="Bash Script 简介 📚"></a>Bash Script 简介 📚</h2><p><strong>Bash  Script（Bash 脚本）</strong> 是一种由 <strong>Bash shell</strong> 编写的脚本文件，可以 <strong>自动化地执行一系列命令</strong>。</p><p>Bash 脚本通常以 <code>.sh</code> 为文件扩展名，可以通过命令行终端或者其它脚本来执行。</p><p>Bash 脚本通常由一系列的命令和逻辑语句组成，可以包括循环、条件语句、函数、变量等。</p><p>Bash 脚本可以用于自动化各种任务，例如批量处理文件、执行系统命令、备份数据、部署应用程序等等。因为Bash脚本是文本文件，所以可以通过编辑器来编写和修改，也可以被版本控制系统管理。</p><h2 id="Bash-Script-实践🧑🏻‍💻"><a href="#Bash-Script-实践🧑🏻‍💻" class="headerlink" title="Bash Script 实践🧑🏻‍💻"></a>Bash Script 实践🧑🏻‍💻</h2><blockquote><p>以下内容需要有一定的 Linux 基础，如基本的 Linux 命令，Linux 权限等。</p></blockquote><h3 id="1-创建脚本并赋予执行权限"><a href="#1-创建脚本并赋予执行权限" class="headerlink" title="1. 创建脚本并赋予执行权限"></a>1. 创建脚本并赋予执行权限</h3><p>创建 Bash 脚本 <code>test.sh</code></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">touch</span> test.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><ol start="2"><li><strong>检查文件权限</strong></li></ol><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> <span class="token parameter variable">-l</span> test.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>可以看到当前文件 <strong>没有执行权限</strong></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">-rw-rw-r-- <span class="token number">1</span> rickyx rickyx <span class="token number">0</span> Apr <span class="token number">23</span> 00:28 test.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><ol start="3"><li><strong>添加执行权限</strong></li></ol><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">chmod</span> +x test.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>再次检查该文件权限</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> <span class="token parameter variable">-l</span> test.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>可以看到当前文件已经拥有执行权限</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">-rwxrwxr-x <span class="token number">1</span> rickyx rickyx <span class="token number">0</span> Apr <span class="token number">23</span> 00:28 test.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="2-编写脚本"><a href="#2-编写脚本" class="headerlink" title="2. 编写脚本"></a>2. 编写脚本</h3><p>一个简单的脚本，功能是「欢迎用户」</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span><span class="token builtin class-name">echo</span> <span class="token string">"Hello, Ricky!!"</span> <span class="token comment"># 在终端上打印该语句</span><span class="token function">sleep</span> <span class="token number">1</span> <span class="token comment"># 等待1秒</span><span class="token builtin class-name">echo</span> <span class="token string">"You're looking good today, Ricky!!"</span> <span class="token comment"># 在终端上打印该语句</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>关于 <strong>shebang</strong> 🍉</p><p><code>#!</code>（称为 <strong>shebang</strong> 或 <strong>hashbang</strong>）是一个特殊的字符序列，告诉操作系统所要使用的 shell 的路径。在 Linux 和 Unix 系统中，shebang 必须是脚本文件的第一行，否则操作系统将无法识别并使用指定的 shell 解释器来执行脚本。</p><p>在本实例中，<code>#!/bin/bash</code> 指定了要使用 Bash shell 来执行该脚本。这意味着，当这个脚本被执行时，操作系统会自动查找 Bash 解释器的位置，然后使用 Bash 解释器来解释并执行这个脚本文件。</p><blockquote><p>在使用 Bash 编写脚本时，始终将 <code>#!/bin/bash</code> 作为脚本的开头部分是一个很好的习惯，以确保脚本可以正确地被执行。</p></blockquote><hr><h3 id="3-优化（引入变量）"><a href="#3-优化（引入变量）" class="headerlink" title="3. 优化（引入变量）"></a>3. 优化（引入变量）</h3><ol><li>使用变量</li></ol><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span><span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">"Ricky"</span> <span class="token comment"># 创建变量，并且赋值</span><span class="token builtin class-name">echo</span> <span class="token string">"Hello, <span class="token variable">$name</span>!!"</span><span class="token function">sleep</span> <span class="token number">1</span><span class="token builtin class-name">echo</span> <span class="token string">"You're looking good today, <span class="token variable">$name</span>!!"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p>通过 <code>read</code> 获取变量值</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span><span class="token builtin class-name">read</span> <span class="token parameter variable">-p</span> <span class="token string">"What's your name? "</span> name  <span class="token comment"># 创建变量，并且通过read赋值（使用-p参数添加Prompt提示）</span><span class="token builtin class-name">echo</span> <span class="token string">"Hello, <span class="token variable">$name</span>!!"</span><span class="token function">sleep</span> <span class="token number">1</span><span class="token builtin class-name">echo</span> <span class="token string">"You're looking good today, <span class="token variable">$name</span>!!"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p>通过 <strong>命令行参数</strong> 获取变量值</p><p>执行时，添加命令行参数：<code>./test.sh Ricky</code></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span><span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token variable">$1</span> <span class="token comment"># 获取第1个命令行参数（第0个命令行参数 ./test.sh）</span><span class="token builtin class-name">echo</span> <span class="token string">"Hello, <span class="token variable">$name</span>!!"</span><span class="token function">sleep</span> <span class="token number">1</span><span class="token builtin class-name">echo</span> <span class="token string">"You're looking good today, <span class="token variable">$name</span>!!"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p>通过 <strong>命令结果</strong> 获取变量值</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span><span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">whoami</span><span class="token variable">)</span></span> <span class="token comment">#获取whoami命令的结果，并且赋值给name</span><span class="token builtin class-name">echo</span> <span class="token string">"Hello, <span class="token variable">$name</span>!!"</span><span class="token function">sleep</span> <span class="token number">1</span><span class="token builtin class-name">echo</span> <span class="token string">"You're looking good today, <span class="token variable">$name</span>!!"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Bash Script </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CS50-Lab4</title>
       <link href="/2023/04/23/cs50-lab4/"/>
       <url>/2023/04/23/cs50-lab4/</url>
@@ -704,9 +731,9 @@
       
         <tags>
             
-            <tag> 英文读书笔记 </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> 英文读书笔记 </tag>
             
         </tags>
       
