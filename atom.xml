@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-04-25T13:34:08.093Z</updated>
+  <updated>2023-05-02T11:32:19.280Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,69 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CS50 PSet5</title>
+    <link href="https://ricky2333.github.io/2023/05/02/cs50-problem-set5/"/>
+    <id>https://ricky2333.github.io/2023/05/02/cs50-problem-set5/</id>
+    <published>2023-05-02T11:20:26.000Z</published>
+    <updated>2023-05-02T11:32:19.280Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CS50-Problem-Set5&quot;&gt;&lt;a href=&quot;#CS50-Problem-Set5&quot; class=&quot;headerlink&quot; title=&quot;CS50 Problem Set5&quot;&gt;&lt;/a&gt;CS50 Problem</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CS50 Lab5</title>
+    <link href="https://ricky2333.github.io/2023/05/01/cs50-lab5/"/>
+    <id>https://ricky2333.github.io/2023/05/01/cs50-lab5/</id>
+    <published>2023-05-01T11:21:18.000Z</published>
+    <updated>2023-05-02T11:32:29.414Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Lab-5-Inheritance&quot;&gt;&lt;a href=&quot;#Lab-5-Inheritance&quot; class=&quot;headerlink&quot; title=&quot;Lab 5: Inheritance&quot;&gt;&lt;/a&gt;Lab 5:</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CS61A HW1</title>
     <link href="https://ricky2333.github.io/2023/04/26/cs61a-hw1/"/>
     <id>https://ricky2333.github.io/2023/04/26/cs61a-hw1/</id>
     <published>2023-04-26T00:10:54.000Z</published>
-    <updated>2023-04-25T13:34:08.093Z</updated>
+    <updated>2023-04-25T14:06:04.647Z</updated>
     
     
       
@@ -521,66 +579,6 @@
         
     <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜踩方格&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜踩方格&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜踩方格&quot;&gt;&lt;/a&gt;信息奥赛题解｜踩方格&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a href=&quot;#🚀-题目浏览&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜过河卒</title>
-    <link href="https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-guo-he-zu/"/>
-    <id>https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-guo-he-zu/</id>
-    <published>2023-04-10T03:40:27.000Z</published>
-    <updated>2023-04-15T12:35:34.540Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜过河卒&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜过河卒&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜过河卒&quot;&gt;&lt;/a&gt;信息奥赛题解｜过河卒&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a href=&quot;#🚀-题目浏览&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜移动路线</title>
-    <link href="https://ricky2333.github.io/2023/04/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/"/>
-    <id>https://ricky2333.github.io/2023/04/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/</id>
-    <published>2023-04-09T15:30:53.000Z</published>
-    <updated>2023-04-10T03:54:53.565Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜移动路线&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜移动路线&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜移动路线&quot;&gt;&lt;/a&gt;信息奥赛题解｜移动路线&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
         
       
     
