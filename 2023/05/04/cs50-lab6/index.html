@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="books, Rickyの水果摊">
+    <meta name="keywords" content="CS50 Lab6, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>books | Rickyの水果摊</title>
+    <title>CS50 Lab6 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -483,12 +483,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">books</h1>
+                    <h1 class="description center-align post-title">CS50 Lab6</h1>
                 </div>
             </div>
         </div>
@@ -607,12 +607,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/CS50/">
+                                <span class="chip bg-color">CS50</span>
+                            </a>
+                        
+                            <a href="/tags/CS50-Lab/">
+                                <span class="chip bg-color">CS50 Lab</span>
+                            </a>
+                        
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/CS50/" class="post-category">
+                                CS50
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -621,7 +642,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-03-29
+                    2023-05-04
                 </div>
                 
 
@@ -630,14 +651,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    14 分
                 </div>
                 
 
@@ -660,7 +681,216 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="Lab-6-World-Cup"><a href="#Lab-6-World-Cup" class="headerlink" title="Lab 6: World Cup"></a>Lab 6: World Cup</h1><blockquote>
+<p>Lab6 Page: <a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/labs/6/">https://cs50.harvard.edu/x/2023/labs/6/</a></p>
+<p>CS50 Study Group：677535709（QQ Group）</p>
+</blockquote>
+<p>You are welcome to collaborate with one or two classmates on this lab, though it is expected that every student in any such group contribute equally to the lab.</p>
+<p>Write a program to run simulations of the FIFA World Cup.</p>
+<pre class="line-numbers language-none"><code class="language-none">$ python tournament.py 2018m.csv
+Belgium: 20.9% chance of winning
+Brazil: 20.3% chance of winning
+Portugal: 14.5% chance of winning
+Spain: 13.6% chance of winning
+Switzerland: 10.5% chance of winning
+Argentina: 6.5% chance of winning
+England: 3.7% chance of winning
+France: 3.3% chance of winning
+Denmark: 2.2% chance of winning
+Croatia: 2.0% chance of winning
+Colombia: 1.8% chance of winning
+Sweden: 0.5% chance of winning
+Uruguay: 0.1% chance of winning
+Mexico: 0.1% chance of winning<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="Background-🧐"><a href="#Background-🧐" class="headerlink" title="Background 🧐"></a>Background 🧐</h2><p>In soccer’s World Cup, the knockout round consists of 16 teams. In each round, each team plays another team and the losing teams are eliminated. When only two teams remain, the winner of the final match is the champion.</p>
+<p>In soccer, teams are given <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/FIFA_World_Rankings#Current_calculation_method">FIFA Ratings</a>, which are numerical values representing each team’s relative skill level. Higher FIFA ratings indicate better previous game results, and given two teams’ FIFA ratings, it’s possible to estimate the probability that either team wins a game based on their current ratings. The FIFA Ratings from two previous World Cups are available as the <a target="_blank" rel="noopener" href="https://www.fifa.com/fifa-world-ranking/ranking-table/men/rank/id12189/">May 2018 Men’s FIFA Ratings</a> and <a target="_blank" rel="noopener" href="https://www.fifa.com/fifa-world-ranking/ranking-table/women/rank/ranking_20190329/">March 2019 Women’s FIFA Ratings</a>.</p>
+<p>Using this information, we can simulate the entire tournament by repeatedly simulating rounds until we’re left with just one team. And if we want to estimate how likely it is that any given team wins the tournament, we might simulate the tournament many times (e.g. 1000 simulations) and count how many times each team wins a simulated tournament. 1000 simulations might seem like many, but with today’s computing power we can accomplish those simulations in a matter of milliseconds. At the end of this lab, we’ll experiment with how worthwhile it might be to increase the number of simulations we run, given the trade-off of runtime.</p>
+<p>Your task in this lab is to do just that using Python!</p>
+<h2 id="Getting-Started-🍉"><a href="#Getting-Started-🍉" class="headerlink" title="Getting Started 🍉"></a>Getting Started 🍉</h2><p>Open <a target="_blank" rel="noopener" href="https://code.cs50.io/">VS Code</a>.</p>
+<p>Start by clicking inside your terminal window, then execute <code>cd</code> by itself. You should find that its “prompt” resembles the below.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>Click inside of that terminal window and then execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> https://cdn.cs50.net/2022/fall/labs/6/world-cup.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>followed by Enter in order to download a ZIP called <code>world-cup.zip</code> in your codespace. Take care not to overlook the space between <code>wget</code> and the following URL, or any other character for that matter!</p>
+<p>Now execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">unzip</span> world-cup.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>to create a folder called <code>world-cup</code>. You no longer need the ZIP file, so you can execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> world-cup.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>and respond with “y” followed by Enter at the prompt to remove the ZIP file you downloaded.</p>
+<p>Now type</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> world-cup<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>followed by Enter to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">world-cup/ $<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>If all was successful, you should execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>and you should see the following files:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">answers.txt  2018m.csv  2019w.csv  tournament.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>If you run into any trouble, follow these same steps again and see if you can determine where you went wrong!</p>
+<h2 id="Understanding-☘️"><a href="#Understanding-☘️" class="headerlink" title="Understanding ☘️"></a>Understanding ☘️</h2><p>Start by taking a look at the <code>2018m.csv</code> file. This file contains the 16 teams in the knockout round of the 2018 Men’s World Cup and the ratings for each team. Notice that the CSV file has two columns, one called <code>team</code> (representing the team’s country name) and one called <code>rating</code> (representing the team’s rating).</p>
+<p>The order in which the teams are listed determines which teams will play each other in each round (in the first round, for example, Uruguay will play Portugal and France will play Argentina; in the next round, the winner of the Uruguay-Portugal match will play the winner of the France-Argentina match). So be sure not to edit the order in which teams appear in this file!</p>
+<p>Ultimately, in Python, we can represent each team as a dictionary that contains two values: the team name and the rating. Uruguay, for example, we would want to represent in Python as <code>{"team": "Uruguay", "rating": 976}</code>.</p>
+<p>Next, take a look at <code>2019w.csv</code>, which contains data formatted the same way for the 2019 Women’s World Cup.</p>
+<p>Now, open <code>tournament.py</code> and see that we’ve already written some code for you. The variable <code>N</code> at the top represents how many World Cup simulations to run: in this case, 1000.</p>
+<p>The <code>simulate_game</code> function accepts two teams as inputs (recall that each team is a dictionary containing the team name and the team’s rating), and simulates a game between them. If the first team wins, the function returns <code>True</code>; otherwise, the function returns <code>False</code>.</p>
+<p>The <code>simulate_round</code> function accepts a list of teams (in a variable called <code>teams</code>) as input, and simulates games between each pair of teams. The function then returns a list of all of the teams that won the round.</p>
+<p>In the <code>main</code> function, notice that we first ensure that <code>len(sys.argv)</code> (the number of command-line arguments) is 2. We’ll use command-line arguments to tell Python which team CSV file to use to run the tournament simulation. We’ve then defined a list called <code>teams</code> (which will eventually be a list of teams) and a dictionary called <code>counts</code> (which will associate team names with the number of times that team won a simulated tournament). Right now they’re both empty, so populating them is left up to you!</p>
+<p>Finally, at the end of <code>main</code>, we sort the teams in descending order of how many times they won simulations (according to <code>counts</code>) and print the estimated probability that each team wins the World Cup.</p>
+<p>Populating <code>teams</code> and <code>counts</code> and writing the <code>simulate_tournament</code> function are left up to you!</p>
+<h2 id="Implementation-Details-📚"><a href="#Implementation-Details-📚" class="headerlink" title="Implementation Details 📚"></a>Implementation Details 📚</h2><p>Complete the implementation of <code>tournament.py</code>, such that it simulates a number of tournaments and outputs each team’s probability of winning.</p>
+<p>First, in <code>main</code>, read the team data from the CSV file into your program’s memory, and add each team to the list <code>teams</code>.</p>
+<ul>
+<li>The file to use will be provided as a command-line argument. You can access the name of the file, then, with <code>sys.argv[1]</code>.</li>
+<li>Recall that you can open a file with <code>open(filename)</code>, where <code>filename</code> is a variable storing the name of the file.</li>
+<li>Once you have a file <code>f</code>, you can use <code>csv.DictReader(f)</code> to give you a “reader”: an object in Python that you can loop over to read the file one row at a time, treating each row as a dictionary.</li>
+<li>By default, all values read from the file will be strings. So be sure to first convert the team’s <code>rating</code> to an <code>int</code> (you can use the <code>int</code> function in Python to do this).</li>
+<li>Ultimately, append each team’s dictionary to <code>teams</code>. The function call <code>teams.append(x)</code> will append <code>x</code> to the list <code>teams</code>.</li>
+<li>Recall that each team should be a dictionary with a <code>team</code> name and a <code>rating</code>.</li>
+</ul>
+<p>Next, implement the <code>simulate_tournament</code> function. This function should accept as input a list of teams and should repeatedly simulate rounds until you’re left with one team. The function should the return the name of that team.</p>
+<ul>
+<li>You can call the <code>simulate_round</code> function, which simulates a single round, accepting a list of teams as input and returning a list of all of the winners.</li>
+<li>Recall that if <code>x</code> is a list, you can use <code>len(x)</code> to determine the length of the list.</li>
+<li>You should not assume the number of teams in the tournament, but you may assume it will be a power of 2.</li>
+</ul>
+<p>Finally, back in the <code>main</code> function, run <code>N</code> tournament simulations, and keep track of how many times each team wins in the <code>counts</code> dictionary.</p>
+<ul>
+<li>For example, if Uruguay won 2 tournaments and Portugal won 3 tournaments, then your <code>counts</code> dictionary should be <code>{"Uruguay": 2, "Portugal": 3}</code>.</li>
+<li>You should use your <code>simulate_tournament</code> to simulate each tournament and determine the winner.</li>
+<li>Recall that if <code>counts</code> is a dictionary, then syntax like <code>counts[team_name] = x</code> will associate the key stored in <code>team_name</code> with the value stored in <code>x</code>.</li>
+<li>You can use the <code>in</code> keyword in Python to check if a dictionary has a particular key already. For example, <code>if "Portugal" in counts:</code> will check to see if <code>"Portugal"</code> already has an existing value in the <code>counts</code> dictionary.</li>
+</ul>
+<h2 id="Walkthrough-🎥"><a href="#Walkthrough-🎥" class="headerlink" title="Walkthrough 🎥"></a>Walkthrough 🎥</h2><p>This video was recorded when the course was still using CS50 IDE for writing code. Though the interface may look different from your codespace, the behavior of the two environments should be largely similar!</p>
+<blockquote>
+<p>YouTube: <a target="_blank" rel="noopener" href="https://youtu.be/o5Bkc7gtRjo">https://youtu.be/o5Bkc7gtRjo</a></p>
+<p>bilibili: <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1124y1T7Rg?share_source=copy_web">https://www.bilibili.com/video/BV1124y1T7Rg?share_source=copy_web</a></p>
+</blockquote>
+<h2 id="Hints-💡"><a href="#Hints-💡" class="headerlink" title="Hints 💡"></a>Hints 💡</h2><ul>
+<li><p>When reading in the file, you may find this syntax helpful, with <code>filename</code> as the name of your file and <code>file</code> as a variable.</p>
+<pre class="line-numbers language-none"><code class="language-none">with open(filename) as file:
+    reader = csv.DictReader(file)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>In Python, to append to the end of a list, use the <code>.append()</code> function.</p>
+</li>
+</ul>
+<h2 id="Testing"><a href="#Testing" class="headerlink" title="Testing"></a>Testing</h2><p>Your program should behave per the examples below. Since simulations have randomness within each, your output will likely not perfectly match the examples below.</p>
+<pre class="line-numbers language-none"><code class="language-none">$ python tournament.py 2018m.csv
+Belgium: 20.9% chance of winning
+Brazil: 20.3% chance of winning
+Portugal: 14.5% chance of winning
+Spain: 13.6% chance of winning
+Switzerland: 10.5% chance of winning
+Argentina: 6.5% chance of winning
+England: 3.7% chance of winning
+France: 3.3% chance of winning
+Denmark: 2.2% chance of winning
+Croatia: 2.0% chance of winning
+Colombia: 1.8% chance of winning
+Sweden: 0.5% chance of winning
+Uruguay: 0.1% chance of winning
+Mexico: 0.1% chance of winning<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">$ python tournament.py 2019w.csv
+Germany: 17.1% chance of winning
+United States: 14.8% chance of winning
+England: 14.0% chance of winning
+France: 9.2% chance of winning
+Canada: 8.5% chance of winning
+Japan: 7.1% chance of winning
+Australia: 6.8% chance of winning
+Netherlands: 5.4% chance of winning
+Sweden: 3.9% chance of winning
+Italy: 3.0% chance of winning
+Norway: 2.9% chance of winning
+Brazil: 2.9% chance of winning
+Spain: 2.2% chance of winning
+China PR: 2.1% chance of winning
+Nigeria: 0.1% chance of winning<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>You might be wondering what actually happened at the 2018 and 2019 World Cups! For Men’s, France won, defeating Croatia in the final. Belgium defeated England for the third place position. For Women’s, the United States won, defeating the Netherlands in the final. England defeated Sweden for the third place position.</li>
+</ul>
+<h2 id="Number-of-Simulations"><a href="#Number-of-Simulations" class="headerlink" title="Number of Simulations"></a>Number of Simulations</h2><p>Once you’re sure your code is correct, let’s tinker with the value of <code>N</code>, the constant at the top of our file, to adjust the number of times we simulate the tournament. More tournament simulations will give us more accurate predictions (why?), at the cost of time.</p>
+<p>We can time programs by prepending their execution at the command-line with <code>time</code>. For example, with <code>N</code> set to 1000 (the default) execute</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">time</span> python tournament.py 2018m.csv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>or</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">time</span> python tournament.py 2019w.csv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>which should output something like</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">real    0m0.037s
+user    0m0.028s
+sys     0m0.008s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>though your own times might vary.</p>
+<p>Pay attention to the <strong>real</strong> metric, which is the time, in total, it took <code>tournament.py</code> to run. And notice that you’re given time in minutes and seconds, with accuracy to thousandths of a second.</p>
+<p>In <code>answers.txt</code>, keep track of how long it takes <code>tournament.py</code> to simulate…</p>
+<ul>
+<li>10 (ten) tournaments</li>
+<li>100 (one hundred) tournaments</li>
+<li>1000 (one thousand) tournaments</li>
+<li>10000 (ten thousand) tournaments</li>
+<li>100000 (one hundred thousand) tournaments</li>
+<li>1000000 (one million) tournaments</li>
+</ul>
+<p>Each time you adjust <code>N</code>, record the <strong>real</strong> time in the appropriate TODO in <code>answers.txt</code> by using the same <code>0m0.000s</code> format. After timing each scenario, answer the two follow-up questions by overwriting the given TODO:</p>
+<ul>
+<li>Which predictions, if any, proved incorrect as you increased the number of simulations?</li>
+<li>Suppose you’re charged a fee for each second of compute time your program uses. After how many simulations would you call the predictions “good enough”?</li>
+</ul>
+<p><strong>See a correctly formatted</strong> <code>answers.txt</code></p>
+<pre class="line-numbers language-none"><code class="language-none">Times:
+
+10 simulations: 0m0.028s
+100 simulations: 0m0.030s
+1000 simulations: 0m0.041s
+10000 simulations: 0m0.139s
+100000 simulations: 0m1.031s
+1000000 simulations: 0m11.961s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+With a small number of simulations...
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+It seems like the predictions stabilized after about...<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="How-to-Test-Your-Code-🖥"><a href="#How-to-Test-Your-Code-🖥" class="headerlink" title="How to Test Your Code 🖥"></a>How to Test Your Code 🖥</h2><p>Execute the below to evaluate the correctness of your code using <code>check50</code>. But be sure to compile and test it yourself as well!</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">check50 cs50/labs/2023/x/worldcup<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>Execute the below to evaluate the style of your code using <code>style50</code>.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">style50 tournament.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="How-to-Submit-🚀"><a href="#How-to-Submit-🚀" class="headerlink" title="How to Submit 🚀"></a>How to Submit 🚀</h2><p>In your terminal, execute the below to submit your work.</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">submit50 cs50/labs/2023/x/worldcup<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+
+
+<h2 id="Solution-🧑🏻‍💻"><a href="#Solution-🧑🏻‍💻" class="headerlink" title="Solution 🧑🏻‍💻"></a>Solution 🧑🏻‍💻</h2><p>Ricky’s GitHub Repository for CS50 Labs: <a target="_blank" rel="noopener" href="https://github.com/Ricky2333/CS50-Labs">https://github.com/Ricky2333/CS50-Labs</a></p>
+<blockquote>
+<p>CS50 Study Group：677535709（QQ Group）</p>
+</blockquote>
+
                 
             </div>
             <hr/>
@@ -686,7 +916,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/books/index.html">https://ricky2333.github.io/books/index.html</a>
+                    <a href="https://ricky2333.github.io/2023/05/04/cs50-lab6/">https://ricky2333.github.io/2023/05/04/cs50-lab6/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -723,7 +953,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/CS50/">
+                                    <span class="chip bg-color">CS50</span>
+                                </a>
+                            
+                                <a href="/tags/CS50-Lab/">
+                                    <span class="chip bg-color">CS50 Lab</span>
+                                </a>
+                            
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -896,34 +1138,53 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/books/index.html">
+                <a href="/2023/05/04/cs50-lab6/">
                     <div class="card-image">
                         
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="CS50 Lab6">
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="books">
-                        
-                        <span class="card-title">books</span>
+                        <span class="card-title">CS50 Lab6</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            CS50 Lab6 - World Cup｜2023 Spring
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Rickyの水果摊
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/CS50/" class="post-category">
+                                    CS50
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/CS50/">
+                        <span class="chip bg-color">CS50</span>
+                    </a>
+                    
+                    <a href="/tags/CS50-Lab/">
+                        <span class="chip bg-color">CS50 Lab</span>
+                    </a>
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -931,37 +1192,55 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/books/index.html">
+                <a href="/2023/05/02/cs50-problem-set5/">
                     <div class="card-image">
                         
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="CS50 Problem Set5">
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="books">
-                        
-                        <span class="card-title">books</span>
+                        <span class="card-title">CS50 Problem Set5</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            CS50 Problem Set5｜2023 Spring
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-02
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Rickyの水果摊
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/CS50/" class="post-category">
+                                    CS50
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/CS50/">
+                        <span class="chip bg-color">CS50</span>
+                    </a>
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C</span>
+                    </a>
+                    
+                    <a href="/tags/CS50-PSet/">
+                        <span class="chip bg-color">CS50 PSet</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1128,6 +1407,14 @@
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        // tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
 
 
 

@@ -725,11 +725,11 @@ Child (Generation 0): blood type OO
 
 <p>and you should see <code>inheritance.c</code>.</p>
 <p>If you run into any trouble, follow these same steps again and see if you can determine where you went wrong!</p>
-<h2 id="Understanding"><a href="#Understanding" class="headerlink" title="Understanding"></a>Understanding</h2><p>Take a look at the distribution code in <code>inheritance.c</code>.</p>
+<h2 id="Understanding-☘️"><a href="#Understanding-☘️" class="headerlink" title="Understanding ☘️"></a>Understanding ☘️</h2><p>Take a look at the distribution code in <code>inheritance.c</code>.</p>
 <p>Notice the definition of a type called <code>person</code>. Each person has an array of two <code>parents</code>, each of which is a pointer to another <code>person</code> struct. Each person also has an array of two <code>alleles</code>, each of which is a <code>char</code> (either <code>'A'</code>, <code>'B'</code>, or <code>'O'</code>).</p>
 <p>Now, take a look at the <code>main</code> function. The function begins by “seeding” (i.e., providing some initial input to) a random number generator, which we’ll use later to generate random alleles. The <code>main</code> function then calls the <code>create_family</code> function to simulate the creation of <code>person</code> structs for a family of 3 generations (i.e. a person, their parents, and their grandparents). We then call <code>print_family</code> to print out each of those family members and their blood types. Finally, the function calls <code>free_family</code> to <code>free</code> any memory that was previously allocated with <code>malloc</code>.</p>
 <p>The <code>create_family</code> and <code>free_family</code> functions are left to you to write!</p>
-<h2 id="Implementation-Details"><a href="#Implementation-Details" class="headerlink" title="Implementation Details"></a>Implementation Details</h2><p>Complete the implementation of <code>inheritance.c</code>, such that it creates a family of a specified generation size and assigns blood type alleles to each family member. The oldest generation will have alleles assigned randomly to them.</p>
+<h2 id="Implementation-Details-📚"><a href="#Implementation-Details-📚" class="headerlink" title="Implementation Details 📚"></a>Implementation Details 📚</h2><p>Complete the implementation of <code>inheritance.c</code>, such that it creates a family of a specified generation size and assigns blood type alleles to each family member. The oldest generation will have alleles assigned randomly to them.</p>
 <ul>
 <li>The <code>create_family</code> function takes an integer (<code>generations</code>) as input and should allocate (as via <code>malloc</code> ) one <code>person</code> for each member of the family of that number of generations, returning a pointer to the <code>person</code> in the youngest generation.<ul>
 <li>For example, <code>create_family(3)</code> should return a pointer to a person with two parents, where each parent also has two parents.</li>
@@ -1392,7 +1392,7 @@ Child (Generation 0): blood type OO
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">46.1k</span>&nbsp;字
+                class="white-color">48.3k</span>&nbsp;字
             
             
             
