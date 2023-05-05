@@ -804,7 +804,7 @@
 f <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入一个浮点数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 s <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入一个字符串："</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>🍉 PS：在读取用户输入的数据时，可能会出现一些异常情况，例如输入的数据格式不正确等。为了避免这些异常情况导致程序崩溃，Python 使用 <strong>异常处理机制</strong> 对这些异常情况进行处理。</p>
+<p>🍉 PS：在转换用户输入的数据类型时，可能会出现一些异常情况，例如输入的数据格式不正确。为了避免这些异常情况导致程序崩溃，Python 使用 <strong>异常处理机制</strong> 对这些异常情况进行处理。</p>
 <p>Python 使用 <code>try-except</code> 语句来捕获 <strong>ValueError</strong> 异常，如果发生这种异常，则输出提示信息。通过这种方式，可以保证程序在发生异常情况时不会崩溃，而是进行相应的处理。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">try</span><span class="token punctuation">:</span>
     n <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入一个整数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -885,8 +885,8 @@ hobby <span class="token operator">=</span> <span class="token string">"coding"<
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Hello, </span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string">\nYour hobby is </span><span class="token interpolation"><span class="token punctuation">{</span>hobby<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>输出结果</p>
-<pre class="line-numbers language-none"><code class="language-none">Hello, Ricky
-Your hobby is coding<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">Hello<span class="token punctuation">,</span> Ricky
+Your hobby <span class="token keyword">is</span> coding<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 </ul>
 </li>
 <li><p>实例2：字符串拼接其他类型变量</p>
@@ -1513,7 +1513,7 @@ Your score <span class="token keyword">is</span> <span class="token number">99.9
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">48.3k</span>&nbsp;字
+                class="white-color">48.6k</span>&nbsp;字
             
             
             
