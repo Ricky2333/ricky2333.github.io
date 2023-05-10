@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-05-08T11:26:48.834Z</updated>
+  <updated>2023-05-10T02:42:38.482Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ricky2333.github.io/2023/05/09/cs50-problem-set7/"/>
     <id>https://ricky2333.github.io/2023/05/09/cs50-problem-set7/</id>
     <published>2023-05-09T00:20:18.000Z</published>
-    <updated>2023-05-08T11:26:48.834Z</updated>
+    <updated>2023-05-10T02:42:38.482Z</updated>
     
     
       
@@ -39,8 +39,6 @@
     
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
-    
     <category term="SQL" scheme="https://ricky2333.github.io/tags/SQL/"/>
     
     <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
@@ -52,7 +50,7 @@
     <link href="https://ricky2333.github.io/2023/05/08/cs50-lab7/"/>
     <id>https://ricky2333.github.io/2023/05/08/cs50-lab7/</id>
     <published>2023-05-08T10:08:54.000Z</published>
-    <updated>2023-05-08T10:24:16.173Z</updated>
+    <updated>2023-05-10T02:42:25.036Z</updated>
     
     
       
@@ -72,8 +70,6 @@
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
     <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
-    
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
     
     <category term="SQL" scheme="https://ricky2333.github.io/tags/SQL/"/>
     
