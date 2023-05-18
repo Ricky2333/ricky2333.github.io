@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-05-18T08:52:27.582Z</updated>
+  <updated>2023-05-18T09:21:03.110Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CS50 Problem Set8</title>
+    <link href="https://ricky2333.github.io/2023/05/18/cs50-problem-set8/"/>
+    <id>https://ricky2333.github.io/2023/05/18/cs50-problem-set8/</id>
+    <published>2023-05-18T09:04:32.000Z</published>
+    <updated>2023-05-18T09:21:03.110Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Problem-Set-8&quot;&gt;&lt;a href=&quot;#Problem-Set-8&quot; class=&quot;headerlink&quot; title=&quot;Problem Set 8&quot;&gt;&lt;/a&gt;Problem Set 8&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;CS50 Problem</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="Web" scheme="https://ricky2333.github.io/tags/Web/"/>
+    
+    <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CS50 Lab8</title>
-    <link href="https://ricky2333.github.io/2023/05/18/cs50-lab8/"/>
-    <id>https://ricky2333.github.io/2023/05/18/cs50-lab8/</id>
-    <published>2023-05-18T08:39:38.000Z</published>
-    <updated>2023-05-18T08:52:27.582Z</updated>
+    <link href="https://ricky2333.github.io/2023/05/17/cs50-lab8/"/>
+    <id>https://ricky2333.github.io/2023/05/17/cs50-lab8/</id>
+    <published>2023-05-17T08:39:38.000Z</published>
+    <updated>2023-05-18T09:21:18.030Z</updated>
     
     
       
@@ -565,35 +595,6 @@
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS50 Problem Set1</title>
-    <link href="https://ricky2333.github.io/2023/04/18/cs50-problem-set1/"/>
-    <id>https://ricky2333.github.io/2023/04/18/cs50-problem-set1/</id>
-    <published>2023-04-18T02:17:49.000Z</published>
-    <updated>2023-04-25T13:21:53.840Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;CS50-Problem-Set1&quot;&gt;&lt;a href=&quot;#CS50-Problem-Set1&quot; class=&quot;headerlink&quot; title=&quot;CS50 Problem Set1&quot;&gt;&lt;/a&gt;CS50 Problem</summary>
-        
-      
-    
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
-    
-    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
     
   </entry>
   
