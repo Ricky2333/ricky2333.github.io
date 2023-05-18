@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-05-10T02:42:38.482Z</updated>
+  <updated>2023-05-18T08:52:27.582Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS50 Lab8</title>
+    <link href="https://ricky2333.github.io/2023/05/18/cs50-lab8/"/>
+    <id>https://ricky2333.github.io/2023/05/18/cs50-lab8/</id>
+    <published>2023-05-18T08:39:38.000Z</published>
+    <updated>2023-05-18T08:52:27.582Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Lab-8-Trivia&quot;&gt;&lt;a href=&quot;#Lab-8-Trivia&quot; class=&quot;headerlink&quot; title=&quot;Lab 8: Trivia&quot;&gt;&lt;/a&gt;Lab 8: Trivia&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Lab7 Page: &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
+    
+    <category term="Web" scheme="https://ricky2333.github.io/tags/Web/"/>
+    
+  </entry>
   
   <entry>
     <title>CS50 Problem Set7</title>
@@ -564,35 +594,6 @@
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS50 Lab1</title>
-    <link href="https://ricky2333.github.io/2023/04/17/cs50-lab1/"/>
-    <id>https://ricky2333.github.io/2023/04/17/cs50-lab1/</id>
-    <published>2023-04-17T08:32:23.000Z</published>
-    <updated>2023-04-25T13:22:53.923Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Lab-1-Population-Growth&quot;&gt;&lt;a href=&quot;#Lab-1-Population-Growth&quot; class=&quot;headerlink&quot; title=&quot;Lab 1: Population Growth&quot;&gt;&lt;/a&gt;Lab 1:</summary>
-        
-      
-    
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
-    
-    <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
-    
-    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
   </entry>
   
