@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-05-18T09:21:03.110Z</updated>
+  <updated>2023-05-22T06:58:59.774Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,95 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>信息奥赛题解｜位数问题</title>
+    <link href="https://ricky2333.github.io/2023/05/21/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/"/>
+    <id>https://ricky2333.github.io/2023/05/21/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/</id>
+    <published>2023-05-21T11:43:52.000Z</published>
+    <updated>2023-05-22T06:58:59.774Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜位数问题&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜位数问题&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜位数问题&quot;&gt;&lt;/a&gt;信息奥赛题解｜位数问题&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛题解｜流感传染</title>
+    <link href="https://ricky2333.github.io/2023/05/20/xin-xi-ao-sai-ti-jie-liu-gan-chuan-ran/"/>
+    <id>https://ricky2333.github.io/2023/05/20/xin-xi-ao-sai-ti-jie-liu-gan-chuan-ran/</id>
+    <published>2023-05-20T03:29:58.000Z</published>
+    <updated>2023-05-22T07:00:05.328Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜流感传染&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜流感传染&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜流感传染&quot;&gt;&lt;/a&gt;信息奥赛题解｜流感传染&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Acwing第87场周赛复盘</title>
+    <link href="https://ricky2333.github.io/2023/05/19/acwing-di-87-chang-zhou-sai-fu-pan/"/>
+    <id>https://ricky2333.github.io/2023/05/19/acwing-di-87-chang-zhou-sai-fu-pan/</id>
+    <published>2023-05-19T00:17:57.000Z</published>
+    <updated>2023-05-22T07:02:12.189Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;【Acwing-周赛复盘】第87场周赛复盘（2023-1-21）&quot;&gt;&lt;a href=&quot;#【Acwing-周赛复盘】第87场周赛复盘（2023-1-21）&quot; class=&quot;headerlink&quot; title=&quot;【Acwing</summary>
+        
+      
+    
+    
+    
+    <category term="Acwing周赛复盘" scheme="https://ricky2333.github.io/categories/Acwing%E5%91%A8%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Acwing" scheme="https://ricky2333.github.io/tags/Acwing/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>CS50 Problem Set8</title>
@@ -51,7 +140,7 @@
     <link href="https://ricky2333.github.io/2023/05/17/cs50-lab8/"/>
     <id>https://ricky2333.github.io/2023/05/17/cs50-lab8/</id>
     <published>2023-05-17T08:39:38.000Z</published>
-    <updated>2023-05-18T09:21:18.030Z</updated>
+    <updated>2023-05-18T09:25:45.795Z</updated>
     
     
       
@@ -132,64 +221,6 @@
     <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
     
     <category term="SQL" scheme="https://ricky2333.github.io/tags/SQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python学习笔记｜String</title>
-    <link href="https://ricky2333.github.io/2023/05/07/python-xue-xi-bi-ji-string/"/>
-    <id>https://ricky2333.github.io/2023/05/07/python-xue-xi-bi-ji-string/</id>
-    <published>2023-05-07T08:14:41.000Z</published>
-    <updated>2023-05-08T11:25:17.446Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本篇博客还在修改润色中～&lt;/p&gt;
-&lt;p&gt;敬请期待～&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://ricky2333.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
-    
-    <category term="学习笔记" scheme="https://ricky2333.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python学习笔记｜CSV</title>
-    <link href="https://ricky2333.github.io/2023/05/06/python-xue-xi-bi-ji-csv/"/>
-    <id>https://ricky2333.github.io/2023/05/06/python-xue-xi-bi-ji-csv/</id>
-    <published>2023-05-06T08:14:52.000Z</published>
-    <updated>2023-05-08T10:52:09.678Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本篇博客还在修改润色中～&lt;/p&gt;
-&lt;p&gt;敬请期待～&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://ricky2333.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
-    
-    <category term="学习笔记" scheme="https://ricky2333.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -335,6 +366,35 @@
     <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
     
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python学习笔记｜String</title>
+    <link href="https://ricky2333.github.io/2023/04/28/python-xue-xi-bi-ji-string/"/>
+    <id>https://ricky2333.github.io/2023/04/28/python-xue-xi-bi-ji-string/</id>
+    <published>2023-04-28T08:14:41.000Z</published>
+    <updated>2023-05-22T07:01:14.419Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本篇博客还在修改润色中～&lt;/p&gt;
+&lt;p&gt;敬请期待～&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://ricky2333.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    
+    <category term="学习笔记" scheme="https://ricky2333.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -538,63 +598,6 @@
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS50 Lab2</title>
-    <link href="https://ricky2333.github.io/2023/04/19/cs50-lab2/"/>
-    <id>https://ricky2333.github.io/2023/04/19/cs50-lab2/</id>
-    <published>2023-04-19T02:35:23.000Z</published>
-    <updated>2023-05-08T10:22:32.364Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Lab-2-Scrabble&quot;&gt;&lt;a href=&quot;#Lab-2-Scrabble&quot; class=&quot;headerlink&quot; title=&quot;Lab 2: Scrabble&quot;&gt;&lt;/a&gt;Lab 2: Scrabble&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;Lab2</summary>
-        
-      
-    
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
-    
-    <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
-    
-    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS50 Practice Problems</title>
-    <link href="https://ricky2333.github.io/2023/04/18/cs50-practice-problems-week1/"/>
-    <id>https://ricky2333.github.io/2023/04/18/cs50-practice-problems-week1/</id>
-    <published>2023-04-18T02:22:03.000Z</published>
-    <updated>2023-04-25T13:22:06.356Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Week1-Practice-Problems&quot;&gt;&lt;a href=&quot;#Week1-Practice-Problems&quot; class=&quot;headerlink&quot; title=&quot;Week1-Practice Problems&quot;&gt;&lt;/a&gt;Week1-Practice</summary>
-        
-      
-    
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
-    
-    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
   </entry>
   
