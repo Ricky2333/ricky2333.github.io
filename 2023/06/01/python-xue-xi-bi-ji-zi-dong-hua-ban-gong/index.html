@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="教学反思｜模拟上课练习, Rickyの水果摊">
+    <meta name="keywords" content="Python｜自动化办公（一）, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>教学反思｜模拟上课练习 | Rickyの水果摊</title>
+    <title>Python｜自动化办公（一） | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -483,12 +483,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/41.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">教学反思｜模拟上课练习</h1>
+                    <h1 class="description center-align post-title">Python｜自动化办公（一）</h1>
                 </div>
             </div>
         </div>
@@ -609,16 +609,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%B8%88%E8%8C%83%E6%8A%80%E8%83%BD/">
-                                <span class="chip bg-color">师范技能</span>
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
                             </a>
                         
-                            <a href="/tags/%E6%A8%A1%E6%8B%9F%E4%B8%8A%E8%AF%BE/">
-                                <span class="chip bg-color">模拟上课</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%95%99%E5%AD%A6%E5%8F%8D%E6%80%9D/">
-                                <span class="chip bg-color">教学反思</span>
+                            <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8A%9E%E5%85%AC/">
+                                <span class="chip bg-color">自动化办公</span>
                             </a>
                         
                     </div>
@@ -629,8 +625,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%B8%88%E8%8C%83%E6%8A%80%E8%83%BD/" class="post-category">
-                                师范技能
+                            <a href="/categories/Python/" class="post-category">
+                                Python
                             </a>
                         
                     </div>
@@ -642,7 +638,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-05-24
+                    2023-06-01
                 </div>
                 
 
@@ -651,14 +647,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    9
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -681,7 +677,146 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>本篇博客还在润色中～</p>
+                <h2 id="任务需求-🚀"><a href="#任务需求-🚀" class="headerlink" title="任务需求 🚀"></a>任务需求 🚀</h2><p><code>test</code> 文件夹下存在多个子文件夹，每个子文件夹下都包含若干个 <code>csv</code> 文件（以 <code>.csv</code> 结尾），如下图所示：</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230601135054545.png" alt="文件列表"></p>
+<p>假设想要把这些 <code>csv</code> 文件全部移动至同一个汇总文件夹 <code>total</code> 中，请问如何编写 Python 脚本，实现这一目标？</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230601135626933.png" alt="执行效果"></p>
+<hr>
+<h2 id="基础知识-✍️"><a href="#基础知识-✍️" class="headerlink" title="基础知识 ✍️"></a>基础知识 ✍️</h2><blockquote>
+<p>阅读须知：本案例代码均以 MacOS 为例子，Window系统的路径名和 MacOS 略有不同❗️</p>
+<p>Python版本：3.9.10</p>
+</blockquote>
+<h3 id="shutil-模块"><a href="#shutil-模块" class="headerlink" title="shutil 模块"></a>shutil 模块</h3><p><code>shutil</code> 是 Python 标准库中的一个文件操作工具，提供了一系列用于 <strong>对文件和目录进行高级操作</strong> 的函数。它的目标是提供一种简单、易于使用的接口，使文件操作更加方便和灵活。</p>
+<blockquote>
+<p>官方文档：<a target="_blank" rel="noopener" href="https://docs.python.org/3/library/shutil.html">https://docs.python.org/3/library/shutil.html</a></p>
+</blockquote>
+<p>下面是一些 <code>shutil</code> 库的简单例子：</p>
+<ol>
+<li><p>复制文件：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> shutil
+
+<span class="token comment"># 复制单个文件</span>
+shutil<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token string">'source_file.txt'</span><span class="token punctuation">,</span> <span class="token string">'destination_folder/'</span><span class="token punctuation">)</span>
+shutil<span class="token punctuation">.</span>copy2<span class="token punctuation">(</span><span class="token string">'source_file.txt'</span><span class="token punctuation">,</span> <span class="token string">'destination_folder/'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 复制整个文件夹</span>
+shutil<span class="token punctuation">.</span>copytree<span class="token punctuation">(</span><span class="token string">'source_folder/'</span><span class="token punctuation">,</span> <span class="token string">'destination_folder/'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>🍉PS：<code>copy2</code> 和 <code>copy</code> 都可以用于复制，但是 <code>copy2</code> 还会复制文件的元数据（如权限、时间戳等）</p>
+</li>
+<li><p>移动文件：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> shutil
+
+<span class="token comment"># 移动单个文件</span>
+shutil<span class="token punctuation">.</span>move<span class="token punctuation">(</span><span class="token string">'source_file.txt'</span><span class="token punctuation">,</span> <span class="token string">'destination_folder/'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 移动整个文件夹</span>
+shutil<span class="token punctuation">.</span>move<span class="token punctuation">(</span><span class="token string">'source_folder/'</span><span class="token punctuation">,</span> <span class="token string">'destination_folder/'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<p>这些例子只是 <code>shutil</code> 库提供功能的一小部分，该库还提供了其他功能，如归档文件、修改文件权限、处理文件链接等。通过 <code>shutil</code> 库，可以更方便地进行文件和目录的操作和管理。</p>
+<h3 id="glob-模块"><a href="#glob-模块" class="headerlink" title="glob 模块"></a>glob 模块</h3><p><code>glob</code> 库是用于匹配文件路径名的模块，它提供了一种简单且易用的方法来查找符合特定模式的文件和目录。</p>
+<p><code>glob</code> 库是Python标准库的一部分，因此 <strong>无需安装</strong> 即可使用。</p>
+<p>使用 <code>glob</code> 库，你可以使用通配符来匹配文件名，类似于在命令行中使用通配符进行文件查找。</p>
+<blockquote>
+<p>通配符是一种表示文件名模式的特殊字符，如 <code>*</code>（匹配任意多个字符）和 <code>?</code>（匹配单个字符），这使得在一个目录中查找满足某种模式的文件变得非常方便。</p>
+</blockquote>
+<p>下面是一些 <code>glob</code> 库常用的函数和通配符的示例：</p>
+<ul>
+<li><code>glob.glob(pattern)</code>：返回一个符合指定模式的文件路径列表。模式可以包含通配符，例如<code>*.txt</code>表示匹配所有以<code>.txt</code>为扩展名的文件。</li>
+<li><code>glob.iglob(pattern)</code>：返回一个迭代器，逐个产生符合指定模式的文件路径。</li>
+<li><code>*</code>：匹配任意多个字符，例如 <code>*.txt</code> 可以匹配所有以 <code>.txt</code> 为扩展名的文件。</li>
+<li><code>?</code>：匹配单个字符，例如 <code>?.txt</code> 可以匹配一个字符加上 <code>.txt</code> 的文件名。</li>
+</ul>
+<p>下面是一个简单的示例，演示如何使用<code>glob</code>库来查找所有以 <code>.txt</code> 为扩展名的文件：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> glob
+
+files <span class="token operator">=</span> glob<span class="token punctuation">.</span>glob<span class="token punctuation">(</span><span class="token string">'*.txt'</span><span class="token punctuation">)</span> <span class="token comment"># files为列表</span>
+
+<span class="token keyword">for</span> <span class="token builtin">file</span> <span class="token keyword">in</span> files<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">file</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>该示例将打印出当前目录下所有以<code>.txt</code>为扩展名的文件名。</p>
+<h3 id="os-模块"><a href="#os-模块" class="headerlink" title="os 模块"></a>os 模块</h3><p>Python的<code>os</code>模块是用于与操作系统进行交互的模块。它提供了许多函数来处理文件和目录以及执行其他与操作系统相关的任务。</p>
+<blockquote>
+<p>官方文档：</p>
+</blockquote>
+<p>下面是<code>os</code>模块的一些常用功能：</p>
+<ol>
+<li>文件和目录操作：<ul>
+<li><code>os.getcwd()</code>：获取当前工作目录的路径。</li>
+<li><code>os.chdir(path)</code>：改变当前工作目录为指定路径。</li>
+<li><code>os.listdir(path)</code>：返回指定目录中的文件和目录列表。</li>
+<li><code>os.mkdir(path)</code>：创建一个新目录。</li>
+<li><code>os.remove(path)</code>：删除指定路径的文件。</li>
+<li><code>os.rmdir(path)</code>：删除指定路径的目录（必须是空目录）。</li>
+<li><code>os.path.join(path1, path2)</code>：将两个路径组合成一个完整的路径。</li>
+</ul>
+</li>
+<li>路径操作：<ul>
+<li><code>os.path.abspath(path)</code>：返回指定路径的绝对路径。</li>
+<li><code>os.path.exists(path)</code>：检查指定路径是否存在。</li>
+<li><code>os.path.isfile(path)</code>：检查指定路径是否为文件。</li>
+<li><code>os.path.isdir(path)</code>：检查指定路径是否为目录。</li>
+<li><code>os.path.splitext(path)</code>：分割路径的扩展名。</li>
+</ul>
+</li>
+<li>系统环境和变量：<ul>
+<li><code>os.environ</code>：包含当前系统环境变量的字典。</li>
+<li><code>os.getenv(name)</code>：获取指定环境变量的值。</li>
+<li><code>os.putenv(name, value)</code>：设置指定环境变量的值。</li>
+</ul>
+</li>
+<li>执行系统命令：<ul>
+<li><code>os.system(command)</code>：在子shell中执行系统命令。</li>
+<li><code>os.popen(command)</code>：打开一个管道，执行系统命令。</li>
+<li><code>os.exec*()</code>：执行一个新的程序，替代当前进程。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="Python代码-🧑🏻‍💻"><a href="#Python代码-🧑🏻‍💻" class="headerlink" title="Python代码 🧑🏻‍💻"></a>Python代码 🧑🏻‍💻</h2><blockquote>
+<p>阅读须知：本案例代码均以 MacOS 为例，Window系统的路径名和 MacOS 略有不同❗️</p>
+<p>Python版本：3.9.10</p>
+</blockquote>
+<p>本任务代码</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> shutil
+<span class="token keyword">import</span> glob
+<span class="token keyword">import</span> os
+
+source_folder <span class="token operator">=</span> <span class="token string">'/Users/rickyx/Desktop/test'</span>  <span class="token comment"># 大文件夹的路径</span>
+destination_folder <span class="token operator">=</span> <span class="token string">'/Users/rickyx/Desktop/test/total'</span>  <span class="token comment"># 目标文件夹的路径</span>
+
+<span class="token comment"># 当前目标文件夹不存在，自动创建该汇总文件夹</span>
+<span class="token keyword">if</span> <span class="token keyword">not</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span>destination_folder<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span>destination_folder<span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> csv_file <span class="token keyword">in</span> glob<span class="token punctuation">.</span>glob<span class="token punctuation">(</span>source_folder <span class="token operator">+</span> <span class="token string">'/**/*.csv'</span><span class="token punctuation">,</span> recursive<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    shutil<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>csv_file<span class="token punctuation">,</span> destination_folder<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>扩展代码</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> shutil
+<span class="token keyword">import</span> glob
+<span class="token keyword">import</span> os
+
+source_folder <span class="token operator">=</span> <span class="token string">''</span>  <span class="token comment"># 在引号中添加大文件夹的路径</span>
+destination_folder <span class="token operator">=</span> <span class="token string">''</span>  <span class="token comment"># 在引号中添加目标汇总文件夹的路径</span>
+
+<span class="token comment"># 当前目标文件夹不存在，自动创建该汇总文件夹</span>
+<span class="token keyword">if</span> <span class="token keyword">not</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span>destination_folder<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span>destination_folder<span class="token punctuation">)</span>
+
+<span class="token comment"># 可以将csv后缀换成自己需要的文件后缀名</span>
+<span class="token keyword">for</span> csv_file <span class="token keyword">in</span> glob<span class="token punctuation">.</span>glob<span class="token punctuation">(</span>source_folder <span class="token operator">+</span> <span class="token string">'/**/*.csv'</span><span class="token punctuation">,</span> recursive<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    shutil<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>csv_file<span class="token punctuation">,</span> destination_folder<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="参考资料-📚"><a href="#参考资料-📚" class="headerlink" title="参考资料 📚"></a>参考资料 📚</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://docs.python.org/3/library/shutil.html">https://docs.python.org/3/library/shutil.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.python.org/3/library/os.html">https://docs.python.org/3/library/os.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.python.org/3/library/glob.html">https://docs.python.org/3/library/glob.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://openai.com/blog/chatgpt">https://openai.com/blog/chatgpt</a></li>
+</ul>
 
                 
             </div>
@@ -708,7 +843,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/05/24/jiao-xue-fan-si-mo-ni-shang-ke-lian-xi/">https://ricky2333.github.io/2023/05/24/jiao-xue-fan-si-mo-ni-shang-ke-lian-xi/</a>
+                    <a href="https://ricky2333.github.io/2023/06/01/python-xue-xi-bi-ji-zi-dong-hua-ban-gong/">https://ricky2333.github.io/2023/06/01/python-xue-xi-bi-ji-zi-dong-hua-ban-gong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -746,16 +881,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%B8%88%E8%8C%83%E6%8A%80%E8%83%BD/">
-                                    <span class="chip bg-color">师范技能</span>
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
                                 </a>
                             
-                                <a href="/tags/%E6%A8%A1%E6%8B%9F%E4%B8%8A%E8%AF%BE/">
-                                    <span class="chip bg-color">模拟上课</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%95%99%E5%AD%A6%E5%8F%8D%E6%80%9D/">
-                                    <span class="chip bg-color">教学反思</span>
+                                <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8A%9E%E5%85%AC/">
+                                    <span class="chip bg-color">自动化办公</span>
                                 </a>
                             
                         </div>
@@ -925,9 +1056,63 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/06/01/python-xue-xi-bi-ji-zi-dong-hua-ban-gong/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/41.jpg" class="responsive-img" alt="Python｜自动化办公（一）">
+                        
+                        <span class="card-title">Python｜自动化办公（一）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            将多个文件夹中的csv文件复制到一个文件夹中
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8A%9E%E5%85%AC/">
+                        <span class="chip bg-color">自动化办公</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2023/05/29/jiao-xue-fan-si-xiao-shi-fan-ji-neng-kao-he/">
                     <div class="card-image">
@@ -944,9 +1129,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -972,62 +1157,6 @@
                     
                     <a href="/tags/%E6%95%99%E5%AD%A6%E5%8F%8D%E6%80%9D/">
                         <span class="chip bg-color">教学反思</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/05/21/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/">
-                    <div class="card-image">
-                        
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="信息奥赛题解｜位数问题">
-                        
-                        <span class="card-title">信息奥赛题解｜位数问题</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            信息奥赛题解｜位数问题
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-21
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    信息奥赛题解
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                        <span class="chip bg-color">信息奥赛</span>
-                    </a>
-                    
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
-                    </a>
-                    
-                    <a href="/tags/%E9%80%92%E6%8E%A8/">
-                        <span class="chip bg-color">递推</span>
                     </a>
                     
                 </div>
