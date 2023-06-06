@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-06-01T09:40:32.692Z</updated>
+  <updated>2023-06-06T01:23:01.694Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>期末指北｜人工智能（一）</title>
+    <link href="https://ricky2333.github.io/2023/06/06/qi-mo-zhi-bei-ren-gong-zhi-neng-dao-lun/"/>
+    <id>https://ricky2333.github.io/2023/06/06/qi-mo-zhi-bei-ren-gong-zhi-neng-dao-lun/</id>
+    <published>2023-06-06T01:09:07.000Z</published>
+    <updated>2023-06-06T01:23:01.694Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;【期末指北】人工智能导论（feat-ChatGPT）&quot;&gt;&lt;a href=&quot;#【期末指北】人工智能导论（feat-ChatGPT）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="人工智能导论" scheme="https://ricky2333.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%BC%E8%AE%BA/"/>
+    
+    
+    <category term="期末指北" scheme="https://ricky2333.github.io/tags/%E6%9C%9F%E6%9C%AB%E6%8C%87%E5%8C%97/"/>
+    
+    <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>Python｜自动化办公（一）</title>
@@ -216,9 +245,9 @@
     
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
-    <category term="Web" scheme="https://ricky2333.github.io/tags/Web/"/>
-    
     <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
+    
+    <category term="Web" scheme="https://ricky2333.github.io/tags/Web/"/>
     
   </entry>
   
@@ -570,33 +599,6 @@
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bash Script｜学习笔记1</title>
-    <link href="https://ricky2333.github.io/2023/04/24/bash-script-ji-chu/"/>
-    <id>https://ricky2333.github.io/2023/04/24/bash-script-ji-chu/</id>
-    <published>2023-04-24T00:32:30.000Z</published>
-    <updated>2023-04-25T00:12:43.773Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Bash-Script-简介-📚&quot;&gt;&lt;a href=&quot;#Bash-Script-简介-📚&quot; class=&quot;headerlink&quot; title=&quot;Bash Script 简介 📚&quot;&gt;&lt;/a&gt;Bash Script 简介</summary>
-        
-      
-    
-    
-    
-    <category term="Linux基础" scheme="https://ricky2333.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="Linux" scheme="https://ricky2333.github.io/tags/Linux/"/>
-    
-    <category term="Bash Script" scheme="https://ricky2333.github.io/tags/Bash-Script/"/>
     
   </entry>
   

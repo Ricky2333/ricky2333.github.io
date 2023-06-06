@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>期末指北｜人工智能（一）</title>
+      <link href="/2023/06/06/qi-mo-zhi-bei-ren-gong-zhi-neng-dao-lun/"/>
+      <url>/2023/06/06/qi-mo-zhi-bei-ren-gong-zhi-neng-dao-lun/</url>
+      
+        <content type="html"><![CDATA[<h1 id="【期末指北】人工智能导论（feat-ChatGPT）"><a href="#【期末指北】人工智能导论（feat-ChatGPT）" class="headerlink" title="【期末指北】人工智能导论（feat.ChatGPT）"></a>【期末指北】人工智能导论（feat.ChatGPT）</h1><h2 id="写在最前-✍️"><a href="#写在最前-✍️" class="headerlink" title="写在最前 ✍️"></a>写在最前 ✍️</h2><p>本文记录了一些 《<strong>人工智能导论</strong>》课程的 <strong>主要知识点</strong>，供有需求的同学们学习使用。</p><p>部分内容由 <strong>ChatGPT</strong> 生成，摊主进行审核及整理。</p><p><strong>教材版本</strong>：《人工智能导论（第五版）》王万良</p><hr><h2 id="第一章：绪论"><a href="#第一章：绪论" class="headerlink" title="第一章：绪论"></a>第一章：绪论</h2><h3 id="一、智能"><a href="#一、智能" class="headerlink" title="一、智能"></a>一、智能</h3><h4 id="智能的定义"><a href="#智能的定义" class="headerlink" title="智能的定义"></a>智能的定义</h4><p>人类智能是自然界四大奥秘之一，很难给出确切的定义，目前有思维理论、知识阈值理论、进化理论等理论。</p><p>综合各种观点，可以认为：</p><ul><li><strong>智能</strong> 是 <strong>知识和智力的总和</strong></li><li>知识是一切智能行为的基础</li><li>智力是获取知识并且应用知识解决问题的能力</li></ul><h4 id="智能的特征"><a href="#智能的特征" class="headerlink" title="智能的特征"></a>智能的特征</h4><ol><li>具有感知能力</li><li>具有记忆和与思维能力</li><li>具有学习能力</li><li>具有行为能力</li></ol><hr><h3 id="二、人工智能"><a href="#二、人工智能" class="headerlink" title="二、人工智能"></a>二、人工智能</h3><h4 id="人工智能的概念"><a href="#人工智能的概念" class="headerlink" title="人工智能的概念"></a>人工智能的概念</h4><p><strong>人工智能</strong> 是用人工的方法在机器（计算机）上实现的智能，也称为机器智能。</p><p>人工智能是一门研究如何构造智能机器或智能系统，使它能模拟、延伸、扩展人类智能的学科。</p><h4 id="人工智能的发展历史"><a href="#人工智能的发展历史" class="headerlink" title="人工智能的发展历史"></a>人工智能的发展历史</h4><table><thead><tr><th align="center">阶段</th><th align="center">时间</th><th align="center">关键词</th></tr></thead><tbody><tr><td align="center">孕育</td><td align="center">1956年之前</td><td align="center">/</td></tr><tr><td align="center">形成</td><td align="center">1956-1969年</td><td align="center">达特茅斯会议、麦卡锡</td></tr><tr><td align="center">发展</td><td align="center">1970年以后</td><td align="center">/</td></tr><tr><td align="center">大数据驱动发展期</td><td align="center">2011年以后</td><td align="center">算法、算力、数据</td></tr></tbody></table><h4 id="人工智能分类"><a href="#人工智能分类" class="headerlink" title="人工智能分类"></a>人工智能分类</h4><table><thead><tr><th align="center">类别</th><th align="center">说明</th><th align="center">案例</th></tr></thead><tbody><tr><td align="center">专用人工智能</td><td align="center"><strong>面向特定任务</strong>，处理的任务需求明确、应用边界清晰、领域知识丰富，在 <strong>局部智能水平</strong> 测试中往往超过人类</td><td align="center">AlphaGo</td></tr><tr><td align="center">通用人工智能</td><td align="center">事实上，人的大脑是一个通用的智能系统，可以处理视觉、听觉、推理、学习等各类问题，这是未来人工智能的发展方向</td><td align="center">/</td></tr></tbody></table><h4 id="人工智能研究的基本内容"><a href="#人工智能研究的基本内容" class="headerlink" title="人工智能研究的基本内容"></a>人工智能研究的基本内容</h4><table><thead><tr><th align="center">内容</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">知识表示</td><td align="center">符号表示法和连接机制表示法</td></tr><tr><td align="center">机器感知</td><td align="center">机器感知就是使机器具有类似于人的感知能力，以机器视觉与机器听觉为主</td></tr><tr><td align="center">机器思维</td><td align="center">机器思维是指对通过感知得来的外部信息及机器内部的各种工作信息进行有目的的处理</td></tr><tr><td align="center">机器学习</td><td align="center">机器学习研究如何使计算机具有类似于人的学习能力，使它能通过学习自动地获取知识</td></tr><tr><td align="center">机器行为</td><td align="center">机器行为主要是计算机的表达能力，即「说」「写」「画」等能力</td></tr></tbody></table><h4 id="人工智能的主要研究领域"><a href="#人工智能的主要研究领域" class="headerlink" title="人工智能的主要研究领域"></a>人工智能的主要研究领域</h4><table><thead><tr><th align="center">领域</th><th align="center">英文术语</th><th align="center">介绍</th></tr></thead><tbody><tr><td align="center">机器学习</td><td align="center">Machine Learning</td><td align="center">计算机系统通过学习数据和模式，自动改善和优化其性能和预测能力的技术领域。</td></tr><tr><td align="center">深度学习</td><td align="center">Deep Learning</td><td align="center">一种机器学习方法，通过使用多层神经网络模型来处理和学习大规模数据，用于图像识别、自然语言处理等任务。</td></tr><tr><td align="center">博弈</td><td align="center">Game Playing</td><td align="center">下棋、打牌、战争等一类竞争性的智能活动称为博弈</td></tr><tr><td align="center">模式识别</td><td align="center">Pattern Recognition</td><td align="center">识别和分类数据中的模式和结构，用于图像识别、语音识别、手写识别等任务。</td></tr><tr><td align="center">自然语言处理</td><td align="center">Natural Language Processing (NLP)</td><td align="center">计算机处理和理解人类自然语言的能力，包括文本分析、语义理解、机器翻译等任务。</td></tr><tr><td align="center">计算机视觉</td><td align="center">Computer Vision</td><td align="center">计算机通过处理和解释图像和视频来模拟和理解人类视觉系统的能力，用于图像识别、目标检测等任务。</td></tr><tr><td align="center">知识图谱</td><td align="center">Knowledge Graph</td><td align="center">一种结构化的知识表示形式，用于描述实体、关系和属性之间的关联关系，用于知识推理、信息检索等任务。</td></tr><tr><td align="center">自动推理</td><td align="center">Automated Reasoning</td><td align="center">计算机通过逻辑和推理规则来自动解决问题、推导结论或验证命题的能力，用于证明定理、故障诊断等任务。</td></tr><tr><td align="center">数据挖掘</td><td align="center">Data Mining</td><td align="center">从大规模数据集中发现模式、关联和趋势，以提取有用的信息和知识。</td></tr><tr><td align="center">机器人学</td><td align="center">Robotics</td><td align="center">研究和开发机器人技术，包括感知、运动控制、人机交互等，以实现自主决策和物理操作能力的智能机器人系统。</td></tr></tbody></table><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 人工智能导论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 期末指北 </tag>
+            
+            <tag> 人工智能 </tag>
+            
+            <tag> AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python｜自动化办公（一）</title>
       <link href="/2023/06/01/python-xue-xi-bi-ji-zi-dong-hua-ban-gong/"/>
       <url>/2023/06/01/python-xue-xi-bi-ji-zi-dong-hua-ban-gong/</url>
@@ -194,9 +223,9 @@
             
             <tag> CS50 </tag>
             
-            <tag> Web </tag>
-            
             <tag> CS50 PSet </tag>
+            
+            <tag> Web </tag>
             
         </tags>
       
