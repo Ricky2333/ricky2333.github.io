@@ -1665,6 +1665,7 @@ thead {
 
 .post-charts,
 .my-projects,
+.my-courses,
 .my-skills,
 .post-charts {
     padding: 3.8rem 1.5rem 0.8rem 1.5rem;
@@ -1673,6 +1674,7 @@ thead {
 .post-charts,
 .title,
 .my-projects .title,
+.my-courses .title,
 .my-skills .title,
 .my-gallery .title {
     font-size: 2rem;
@@ -1712,6 +1714,42 @@ thead {
     font-size: 0.9rem;
     color: #999;
 }
+
+
+.my-courses .info {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 1rem 0 1rem;
+}
+
+.my-courses .info .icon {
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    text-align: center;
+    line-height: 76px;
+    color: #fff;
+    font-size: 1.75rem;
+    border-radius: 50%;
+}
+
+.my-courses .info .info-title {
+    margin: 1.25rem 0 0.875rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.my-courses .info .info-title a {
+    color: #34495e;
+}
+
+.my-courses .info .info-desc {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
 
 .my-skills .skillbar {
     position: relative;

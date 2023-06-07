@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-06-06T09:15:37.951Z</updated>
+  <updated>2023-06-07T09:08:52.344Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>期末指北｜人工智能（三）</title>
-    <link href="https://ricky2333.github.io/2023/06/06/qi-mo-zhi-bei-ren-gong-zhi-neng-san/"/>
-    <id>https://ricky2333.github.io/2023/06/06/qi-mo-zhi-bei-ren-gong-zhi-neng-san/</id>
-    <published>2023-06-06T09:10:22.000Z</published>
-    <updated>2023-06-06T09:15:37.951Z</updated>
+    <link href="https://ricky2333.github.io/2023/06/07/qi-mo-zhi-bei-ren-gong-zhi-neng-san/"/>
+    <id>https://ricky2333.github.io/2023/06/07/qi-mo-zhi-bei-ren-gong-zhi-neng-san/</id>
+    <published>2023-06-07T09:06:20.000Z</published>
+    <updated>2023-06-07T09:08:52.344Z</updated>
     
     
       
@@ -34,7 +34,36 @@
     
     
     
-    <category term="人工智能导论" scheme="https://ricky2333.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%BC%E8%AE%BA/"/>
+    <category term="人工智能" scheme="https://ricky2333.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    
+    <category term="期末指北" scheme="https://ricky2333.github.io/tags/%E6%9C%9F%E6%9C%AB%E6%8C%87%E5%8C%97/"/>
+    
+    <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>期末指北｜人工智能（二）</title>
+    <link href="https://ricky2333.github.io/2023/06/06/qi-mo-zhi-bei-ren-gong-zhi-neng-er/"/>
+    <id>https://ricky2333.github.io/2023/06/06/qi-mo-zhi-bei-ren-gong-zhi-neng-er/</id>
+    <published>2023-06-06T08:48:56.000Z</published>
+    <updated>2023-06-07T09:29:13.054Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;【期末指北】人工智能导论（feat-ChatGPT）&quot;&gt;&lt;a href=&quot;#【期末指北】人工智能导论（feat-ChatGPT）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="人工智能" scheme="https://ricky2333.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
     
     <category term="期末指北" scheme="https://ricky2333.github.io/tags/%E6%9C%9F%E6%9C%AB%E6%8C%87%E5%8C%97/"/>
@@ -50,7 +79,7 @@
     <link href="https://ricky2333.github.io/2023/06/05/qi-mo-zhi-bei-ren-gong-zhi-neng-yi/"/>
     <id>https://ricky2333.github.io/2023/06/05/qi-mo-zhi-bei-ren-gong-zhi-neng-yi/</id>
     <published>2023-06-05T01:09:07.000Z</published>
-    <updated>2023-06-06T09:13:26.859Z</updated>
+    <updated>2023-06-07T09:05:06.549Z</updated>
     
     
       
@@ -63,7 +92,7 @@
     
     
     
-    <category term="人工智能导论" scheme="https://ricky2333.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%BC%E8%AE%BA/"/>
+    <category term="人工智能" scheme="https://ricky2333.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
     
     <category term="期末指北" scheme="https://ricky2333.github.io/tags/%E6%9C%9F%E6%9C%AB%E6%8C%87%E5%8C%97/"/>
@@ -166,7 +195,7 @@
     <link href="https://ricky2333.github.io/2023/05/21/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/"/>
     <id>https://ricky2333.github.io/2023/05/21/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/</id>
     <published>2023-05-21T11:43:52.000Z</published>
-    <updated>2023-05-22T06:58:59.774Z</updated>
+    <updated>2023-06-07T09:11:59.214Z</updated>
     
     
       
@@ -196,7 +225,7 @@
     <link href="https://ricky2333.github.io/2023/05/20/xin-xi-ao-sai-ti-jie-liu-gan-chuan-ran/"/>
     <id>https://ricky2333.github.io/2023/05/20/xin-xi-ao-sai-ti-jie-liu-gan-chuan-ran/</id>
     <published>2023-05-20T03:29:58.000Z</published>
-    <updated>2023-05-22T07:00:05.328Z</updated>
+    <updated>2023-06-07T09:12:11.812Z</updated>
     
     
       
@@ -569,36 +598,6 @@
     <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
     
     <category term="学习笔记" scheme="https://ricky2333.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61A HW1</title>
-    <link href="https://ricky2333.github.io/2023/04/26/cs61a-hw1/"/>
-    <id>https://ricky2333.github.io/2023/04/26/cs61a-hw1/</id>
-    <published>2023-04-26T00:10:54.000Z</published>
-    <updated>2023-04-25T14:06:04.647Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;CS61A-HW1&quot;&gt;&lt;a href=&quot;#CS61A-HW1&quot; class=&quot;headerlink&quot; title=&quot;CS61A HW1&quot;&gt;&lt;/a&gt;CS61A HW1&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;CS61A HW1 Page: &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="CS61A" scheme="https://ricky2333.github.io/categories/CS61A/"/>
-    
-    
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
-    
-    <category term="CS61A" scheme="https://ricky2333.github.io/tags/CS61A/"/>
-    
-    <category term="CS61A HW" scheme="https://ricky2333.github.io/tags/CS61A-HW/"/>
     
   </entry>
   
