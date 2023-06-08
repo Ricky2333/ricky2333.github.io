@@ -651,14 +651,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    7 分
                 </div>
                 
 
@@ -687,25 +687,16 @@
 <p>❗️ 本博客仅涵盖一些主要知识点，适合 <strong>有一定基础</strong> 的同学 <strong>搭配教材</strong> 使用，<strong>非常不建议只看博客学习</strong>❗️</p>
 <hr>
 <h2 id="第三章：确定性推理方法"><a href="#第三章：确定性推理方法" class="headerlink" title="第三章：确定性推理方法"></a>第三章：确定性推理方法</h2><h3 id="一、推理"><a href="#一、推理" class="headerlink" title="一、推理"></a>一、推理</h3><h4 id="推理概念"><a href="#推理概念" class="headerlink" title="推理概念"></a>推理概念</h4><p><strong>推理</strong>：从 <strong>初始证据</strong> 出发，按 <strong>某种策略</strong> 不断运用 <strong>知识库</strong> 中的已知知识，<strong>逐步推出结论的过程</strong> 称为推理。</p>
-<p><strong>自然演绎推理</strong>：从一组已知为真的事实出发，直接运用 <strong>经典逻辑的推理规则</strong> 推出结论的过程。</p>
-<h4 id="推理类型"><a href="#推理类型" class="headerlink" title="推理类型"></a>推理类型</h4><p>按照确定性分类</p>
-<table>
-<thead>
-<tr>
-<th align="center">推理类型</th>
-<th align="center">原理</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">确定性推理</td>
-<td align="center">推理时所用的知识与证据都是确定的，推出的结论也是确定的</td>
-</tr>
-<tr>
-<td align="center">不确定性推理</td>
-<td align="center">推理时所用的知识与证据不都是确定的，推出的结论也是不确定的</td>
-</tr>
-</tbody></table>
-<p>按照原理分类</p>
+<p>在 <strong>人工智能系统</strong> 中，<strong>推理是由程序实现的</strong>，称为 <strong>推理机</strong>。</p>
+<p><strong>已知事实</strong> 和 <strong>知识</strong> 是构成推理的两个基本要素。</p>
+<ul>
+<li><strong>已知事实</strong> 又称为证据，用以指出推理的出发点及推理时应该使用的知识</li>
+<li><strong>知识</strong> 是使推理得以向前推进，并逐步达到最终目标的依据。</li>
+</ul>
+<blockquote>
+<p>🍉 <strong>实际案例</strong>：在医疗诊断专家系统中，<strong>专家的经验及医学常识</strong> 以某种表示形式 <strong>存储于知识库</strong> 中。为病人诊治庆病时，<strong>推理机</strong> 就是 <strong>从存储在综合数据库中的病人症状及化验结果等初始证据</strong> 出发，按 <strong>某种搜索策略</strong> 在知识库中搜寻 <strong>可与之匹配的知识</strong>，推出某些 <strong>中间结论</strong>，然后 <strong>再以这些中间结论为证据</strong>，在知识库中搜素与之匹配的知识，推出进一步的中间结论，如此反复进行，直到 <strong>最终推出结论</strong>，即病人的病因与治疗方案为止。</p>
+</blockquote>
+<h4 id="推理类型"><a href="#推理类型" class="headerlink" title="推理类型"></a>推理类型</h4><p><strong>按照推出结论的途径分类</strong></p>
 <table>
 <thead>
 <tr>
@@ -716,21 +707,42 @@
 </thead>
 <tbody><tr>
 <td align="center">演绎推理</td>
-<td align="center">从一般性知识推出某一具体情况的结论</td>
+<td align="center">从 <strong>一般性知识</strong> 推出 <strong>某一具体情况的结论</strong></td>
 <td align="center">一般 → 个别</td>
 </tr>
 <tr>
 <td align="center">归纳推理</td>
-<td align="center">从足够多的事例中归纳出一般性结论的推理</td>
+<td align="center">从 <strong>足够多的事例</strong> 中 <strong>归纳</strong> 出 <strong>一般性结论</strong> 的推理</td>
 <td align="center">个别 → 一般</td>
 </tr>
 <tr>
 <td align="center">默认推理</td>
-<td align="center">在知识不完全的情况下，假设某些条件已经具备的推理</td>
+<td align="center">在 <strong>知识不完全</strong> 的情况下，<strong>假设某些条件已经具备</strong> 的推理</td>
 <td align="center">/</td>
 </tr>
 </tbody></table>
-<p>按照单调性分类</p>
+<br>
+
+<p><strong>按照推理所用知识的确定性分类</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">推理类型</th>
+<th align="center">原理</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">确定性推理</td>
+<td align="center">推理时 <strong>所用的知识与证据</strong> 都是 <strong>确定的</strong>，<strong>推出的结论</strong> 也是 <strong>确定的</strong></td>
+</tr>
+<tr>
+<td align="center">不确定性推理</td>
+<td align="center">推理时所用的知识与证据不都是确定的，推出的结论也是不确定的</td>
+</tr>
+</tbody></table>
+<br>
+
+<p><strong>按推理过程中推出的结论是否越来越接近最终目标来划分</strong></p>
 <table>
 <thead>
 <tr>
@@ -756,7 +768,7 @@
 </thead>
 <tbody><tr>
 <td align="center">正向推理</td>
-<td align="center">已知事实 →  结论</td>
+<td align="center">以 <strong>已知事实作为出发点</strong></td>
 </tr>
 <tr>
 <td align="center">逆向推理</td>
@@ -771,7 +783,9 @@
 <td align="center">正向推理与逆向推理同时进行，且在推理过程中的某一步骤上“<strong>碰头</strong>”的一种推理</td>
 </tr>
 </tbody></table>
-<h4 id="事实与知识的匹配情况"><a href="#事实与知识的匹配情况" class="headerlink" title="事实与知识的匹配情况"></a>事实与知识的匹配情况</h4><table>
+<hr>
+<h3 id="二、冲突消解策略"><a href="#二、冲突消解策略" class="headerlink" title="二、冲突消解策略"></a>二、冲突消解策略</h3><h4 id="事实与知识匹配情况"><a href="#事实与知识匹配情况" class="headerlink" title="事实与知识匹配情况"></a>事实与知识匹配情况</h4><p>在 <strong>推理过程</strong> 中，系统要不断地用当前 <strong>已知的事实</strong> 与 <strong>知识库中的知识</strong> 进行 <strong>匹配</strong>，可能发生如下三种情况</p>
+<table>
 <thead>
 <tr>
 <th align="center">匹配情况</th>
@@ -791,7 +805,10 @@
 <td align="center">一对多、多对多、多对一</td>
 </tr>
 </tbody></table>
-<h4 id="消解策略"><a href="#消解策略" class="headerlink" title="消解策略"></a>消解策略</h4><table>
+<p>在第三种情况中，<strong>有多个知识匹配成功</strong>，称为 <strong>发生了冲突</strong>。</p>
+<p>按 <strong>一定的策略</strong> 从匹配成功的 <strong>多个知识中挑出一个知识</strong> 用于当前推理的过程称为 <strong>冲突消解</strong>，解决冲突时所用的策略称为 <strong>冲突消解策略</strong>。</p>
+<h4 id="冲突消解策略"><a href="#冲突消解策略" class="headerlink" title="冲突消解策略"></a>冲突消解策略</h4><p>目前已有多种消解冲突的策略，其 <strong>基本思想都是对知识进行排序</strong>，常用的有以下几种：</p>
+<table>
 <thead>
 <tr>
 <th align="center">类型</th>
@@ -815,19 +832,18 @@
 <td align="center">优先应用条件少的产生式规则，其匹配话费时间横扫</td>
 </tr>
 </tbody></table>
-<h4 id="归结原理"><a href="#归结原理" class="headerlink" title="归结原理"></a>归结原理</h4><p><strong>鲁滨逊归结原理</strong></p>
-<ul>
-<li>将要证明的定理表示为谓词公式，然后转化为子句集</li>
-<li>再进行归结，一旦出现空子句，则定理得证。</li>
-</ul>
-<p><strong>应用归结原理</strong></p>
-<ul>
-<li>把已知前提用谓词公式表示出来，并且化为相应的子句集，</li>
-<li>把待求解的问题也用谓词公式表示出来，然后<strong>把它否定并与谓词 ANSWER 构成析取式</strong>，化为子句<br>集</li>
-<li>对子句集进行归结，若得到归结式 ANSWER，则答案就在 ANSWER中。</li>
+<hr>
+<h3 id="三、自然演绎推理"><a href="#三、自然演绎推理" class="headerlink" title="三、自然演绎推理"></a>三、自然演绎推理</h3><h4 id="自然演绎推理概念"><a href="#自然演绎推理概念" class="headerlink" title="自然演绎推理概念"></a>自然演绎推理概念</h4><p>从一组 <strong>已知为真的事实</strong> 出发，直接运用 <strong>经典逻辑的推理规则</strong> <strong>推出结论的过程</strong> 称为 <strong>自然演绎推理</strong>。</p>
+<p>基本的推理是 P规则、T规则、假言推理、拒取式推理等。</p>
+<blockquote>
+<p>具体案例请参考课本相关内容。</p>
+</blockquote>
+<h4 id="自然演绎推理的特点"><a href="#自然演绎推理的特点" class="headerlink" title="自然演绎推理的特点"></a>自然演绎推理的特点</h4><ul>
+<li><strong>优点</strong> 是表达定理证明过程自然，容易理解，而且它拥有丰富的推理规则，推理过程灵活，便于在它的推理规则中嵌入领域启发式知识。</li>
+<li><strong>缺点</strong> 是容易产生组合爆炸，推理过程得到的中间结论一般呈指数形式递增，这对于一个大的推理问题来说是十分不利的。</li>
 </ul>
 <hr>
-<h3 id="二、谓词公式转化为子句集"><a href="#二、谓词公式转化为子句集" class="headerlink" title="二、谓词公式转化为子句集"></a>二、谓词公式转化为子句集</h3><h4 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h4><table>
+<h3 id="四、谓词公式转化为子句集"><a href="#四、谓词公式转化为子句集" class="headerlink" title="四、谓词公式转化为子句集"></a>四、谓词公式转化为子句集</h3><h4 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h4><table>
 <thead>
 <tr>
 <th align="center">术语</th>
@@ -851,8 +867,63 @@
 <td align="center">子句构成的集合</td>
 </tr>
 </tbody></table>
-<h4 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h4><p>【谓词公式化为子句集步骤】 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Fo4y177vd/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249">https://www.bilibili.com/video/BV1Fo4y177vd/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249</a></p>
-<p>习题讲解——P82 3.4（3） <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1qA4y1D75N/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249">https://www.bilibili.com/video/BV1qA4y1D75N/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249</a></p>
+<blockquote>
+<p><strong>互补文字</strong>：$P$ 与 $\neg P$ 为互补文字。</p>
+<p><strong>NIL</strong>：不包含任何文字的字句称为空字句，表示为 NIL。空字句不含有文字，不能被任何解释满足，所以 <strong>空字句是永假的、不可满足</strong> 的。</p>
+</blockquote>
+<h4 id="谓词公式转化为字句集"><a href="#谓词公式转化为字句集" class="headerlink" title="谓词公式转化为字句集"></a>谓词公式转化为字句集</h4><p>在谓词逻辑中，<strong>任何一个谓词公式</strong> 都可以<strong>通过应用等价关系及推理规则</strong> <strong>化成相应的子句集</strong>，从而能够比较容易地 <strong>判定谓词公式的不可满足性</strong>。</p>
+<blockquote>
+<p>该节内容通常出现在考试的计算题部分。</p>
+<p>具体例子参考 <strong>课本例题3.2</strong> 以及 <strong>课后习题3.4</strong>。</p>
+<p>摊主复习时，看过的一些讲解视频：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Fo4y177vd/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249">谓词公式化为子句集步骤（UP主：邝AI）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1qA4y1D75N/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249">谓词公式化成子句集（UP主：超凡影帝）</a></li>
+</ul>
+</blockquote>
+<p>一般步骤为：</p>
+<ul>
+<li>消去谓词公式中的「蕴含」和「等价」符号</li>
+<li>把否定符号移到紧靠谓词的位置上</li>
+<li>变量标准化，重新命名变元，使每个量词采用不同的变元，从而使不同量词的约束变元有不同的名字</li>
+<li>消去存在量词</li>
+<li>化为前束形<ul>
+<li>前束形 = （前缀）{母式}</li>
+</ul>
+</li>
+<li>化为 Skolem 标准形<ul>
+<li>$\left(\forall x_{1}\right)\left(\forall x_{2}\right) \cdots\left(\forall x_{n}\right) M$ （$M$ 是子句的合取式，称为 Skolem 标准形的母式）</li>
+</ul>
+</li>
+<li>略去全称量词</li>
+<li>消去合取词，把母式用子句集表示</li>
+<li>子句变量标准化，即使每个子句中的变量符号不同</li>
+</ul>
+<hr>
+<h3 id="五、鲁滨逊归结原理"><a href="#五、鲁滨逊归结原理" class="headerlink" title="五、鲁滨逊归结原理"></a>五、鲁滨逊归结原理</h3><h4 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h4><p><strong>谓词公式不可满足</strong> 的充要条件是 <strong>其子句集不可满足</strong>。</p>
+<p>为了判定子句集的不可满足性，就需要对子句集中的子句进行判定。而为了判定一个子句的不可满足性，需要对个体域上的一切解释逐个地进行判定，只有当子句对任何非空个体域<br>上的任何一个解释都是不可满足的时候，才能判定该子句是不可满足的，这是一件非常困难的工作，要在计算机上实现其证明过程是很困难的。</p>
+<p>1965 年鲁滨逊提出了归结原理，使机器定理证明进入应用阶段。</p>
+<h4 id="鲁滨逊归结原理"><a href="#鲁滨逊归结原理" class="headerlink" title="鲁滨逊归结原理"></a>鲁滨逊归结原理</h4><p><strong>鲁滨逊归结原理</strong> 又称为消解原理，是鲁滨逊提出的一种<strong>证明子句集不可满足性</strong>，从而实现定理证明的一种理论及方法，它是机器定理证明的基础。</p>
+<p><strong>基本方法</strong></p>
+<ul>
+<li>将要证明的定理 <strong>表示为谓词公式</strong></li>
+<li>将其 <strong>转化为子句集</strong></li>
+<li>再进行归结，一旦出现 <strong>空子句</strong>，则定理得证。</li>
+</ul>
+<blockquote>
+<p>该节内容通常出现在考试的计算题部分。</p>
+<p>具体例子参考 <strong>课本例题</strong> 以及 <strong>课后习题3.5</strong>。</p>
+</blockquote>
+<h4 id="应用归结原理"><a href="#应用归结原理" class="headerlink" title="应用归结原理"></a>应用归结原理</h4><ul>
+<li>把已知前提用谓词公式表示出来，并且化为相应的子句集，</li>
+<li>把待求解的问题也用谓词公式表示出来，然后 <strong>把它否定并与谓词 ANSWER 构成析取式</strong>，化为子句集</li>
+<li>对子句集进行归结，若得到归结式 ANSWER，则答案就在 ANSWER中。</li>
+</ul>
+<blockquote>
+<p>该节内容通常出现在考试的计算题部分。</p>
+<p>具体例子参考 <strong>课本例题3.11</strong> 以及 <strong>课后习题3.10</strong>。</p>
+</blockquote>
+<hr>
 <h2 id="参考资料-📚"><a href="#参考资料-📚" class="headerlink" title="参考资料 📚"></a>参考资料 📚</h2><ul>
 <li>《人工智能导论（第五版）》王万良</li>
 <li><a target="_blank" rel="noopener" href="https://openai.com/blog/chatgpt">https://openai.com/blog/chatgpt</a></li>
@@ -1454,7 +1525,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">61.1k</span>&nbsp;字
+                class="white-color">62.4k</span>&nbsp;字
             
             
             
