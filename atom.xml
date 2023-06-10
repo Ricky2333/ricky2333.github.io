@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-06-10T06:31:28.220Z</updated>
+  <updated>2023-06-10T11:45:19.471Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -21,16 +21,14 @@
     <link href="https://ricky2333.github.io/2023/06/09/qi-mo-zhi-bei-mao-gai/"/>
     <id>https://ricky2333.github.io/2023/06/09/qi-mo-zhi-bei-mao-gai/</id>
     <published>2023-06-09T08:21:25.000Z</published>
-    <updated>2023-06-10T06:31:28.220Z</updated>
+    <updated>2023-06-10T11:45:19.471Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;毛概期末考试&quot;&gt;&lt;a href=&quot;#毛概期末考试&quot; class=&quot;headerlink&quot; title=&quot;毛概期末考试&quot;&gt;&lt;/a&gt;毛概期末考试&lt;/h1&gt;&lt;p&gt;考试时间：2023-6-10 15:30-16:30&lt;/p&gt;
-&lt;p&gt;考试地点：25-211&lt;/p&gt;
-&lt;h2</summary>
+    <summary type="html">&lt;h1 id=&quot;期末指北｜毛概&quot;&gt;&lt;a href=&quot;#期末指北｜毛概&quot; class=&quot;headerlink&quot; title=&quot;期末指北｜毛概&quot;&gt;&lt;/a&gt;期末指北｜毛概&lt;/h1&gt;&lt;h2 id=&quot;题目类型-☘️&quot;&gt;&lt;a href=&quot;#题目类型-☘️&quot;</summary>
         
       
     
@@ -332,9 +330,9 @@
     
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
-    <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
-    
     <category term="Web" scheme="https://ricky2333.github.io/tags/Web/"/>
+    
+    <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
     
   </entry>
   
@@ -479,9 +477,9 @@
     
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
-    
     <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
+    
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
     
   </entry>
   
