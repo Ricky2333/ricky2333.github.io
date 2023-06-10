@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-06-10T06:26:40.114Z</updated>
+  <updated>2023-06-10T06:31:28.220Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ricky2333.github.io/2023/06/09/qi-mo-zhi-bei-mao-gai/"/>
     <id>https://ricky2333.github.io/2023/06/09/qi-mo-zhi-bei-mao-gai/</id>
     <published>2023-06-09T08:21:25.000Z</published>
-    <updated>2023-06-10T06:26:40.114Z</updated>
+    <updated>2023-06-10T06:31:28.220Z</updated>
     
     
       
@@ -332,9 +332,9 @@
     
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
-    <category term="Web" scheme="https://ricky2333.github.io/tags/Web/"/>
-    
     <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
+    
+    <category term="Web" scheme="https://ricky2333.github.io/tags/Web/"/>
     
   </entry>
   
