@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-06-11T07:46:48.093Z</updated>
+  <updated>2023-06-17T03:03:16.304Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>EECS498｜Assignment1</title>
+    <link href="https://ricky2333.github.io/2023/06/17/eecs498-assignment1/"/>
+    <id>https://ricky2333.github.io/2023/06/17/eecs498-assignment1/</id>
+    <published>2023-06-17T02:53:14.000Z</published>
+    <updated>2023-06-17T03:03:16.304Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;EECS498-Assignment1&quot;&gt;&lt;a href=&quot;#EECS498-Assignment1&quot; class=&quot;headerlink&quot; title=&quot;EECS498 - Assignment1&quot;&gt;&lt;/a&gt;EECS498 -</summary>
+        
+      
+    
+    
+    
+    <category term="EECS498" scheme="https://ricky2333.github.io/categories/EECS498/"/>
+    
+    
+    <category term="EECS498" scheme="https://ricky2333.github.io/tags/EECS498/"/>
+    
+    <category term="Computer Vision" scheme="https://ricky2333.github.io/tags/Computer-Vision/"/>
+    
+  </entry>
+  
+  <entry>
     <title>科研工具｜Zotero数据同步</title>
-    <link href="https://ricky2333.github.io/2023/06/11/ke-yan-zotero-tong-bu/"/>
-    <id>https://ricky2333.github.io/2023/06/11/ke-yan-zotero-tong-bu/</id>
-    <published>2023-06-11T04:25:43.000Z</published>
-    <updated>2023-06-11T07:46:48.093Z</updated>
+    <link href="https://ricky2333.github.io/2023/06/12/ke-yan-zotero-tong-bu/"/>
+    <id>https://ricky2333.github.io/2023/06/12/ke-yan-zotero-tong-bu/</id>
+    <published>2023-06-12T04:25:43.000Z</published>
+    <updated>2023-06-17T02:52:37.909Z</updated>
     
     
       
@@ -570,35 +597,6 @@
     <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
     
     <category term="CS50 PSet" scheme="https://ricky2333.github.io/tags/CS50-PSet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS50 Lab6</title>
-    <link href="https://ricky2333.github.io/2023/05/04/cs50-lab6/"/>
-    <id>https://ricky2333.github.io/2023/05/04/cs50-lab6/</id>
-    <published>2023-05-04T09:35:46.000Z</published>
-    <updated>2023-05-08T10:22:16.285Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Lab-6-World-Cup&quot;&gt;&lt;a href=&quot;#Lab-6-World-Cup&quot; class=&quot;headerlink&quot; title=&quot;Lab 6: World Cup&quot;&gt;&lt;/a&gt;Lab 6: World</summary>
-        
-      
-    
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/categories/CS50/"/>
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
-    
-    <category term="CS50 Lab" scheme="https://ricky2333.github.io/tags/CS50-Lab/"/>
-    
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
     
   </entry>
   
