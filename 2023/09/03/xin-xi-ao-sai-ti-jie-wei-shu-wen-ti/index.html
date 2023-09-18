@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="信息奥赛题解｜踩方格, Rickyの水果摊">
+    <meta name="keywords" content="信息奥赛题解｜位数问题, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信息奥赛题解｜踩方格 | Rickyの水果摊</title>
+    <title>信息奥赛题解｜位数问题 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -474,12 +474,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信息奥赛题解｜踩方格</h1>
+                    <h1 class="description center-align post-title">信息奥赛题解｜位数问题</h1>
                 </div>
             </div>
         </div>
@@ -633,7 +633,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-10
+                    2023-09-03
                 </div>
                 
 
@@ -642,14 +642,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    2.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    9 分
                 </div>
                 
 
@@ -672,116 +672,136 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="信息奥赛题解｜踩方格"><a href="#信息奥赛题解｜踩方格" class="headerlink" title="信息奥赛题解｜踩方格"></a>信息奥赛题解｜踩方格</h1><hr>
-<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>有一个方格矩阵，矩阵边界在无穷远处。我们做如下假设：</p>
-<p>a、每走一步时，只能从当前方格移动一格，走到某个相邻的方格上；</p>
-<p>b、走过的格子立即塌陷无法再走第二次；</p>
-<p>c、只能向北、东、西三个方向走；</p>
-<p>请问：如果允许在方格矩阵上走 $n$ 步，共有多少种不同的方案。（$2$ 种走法只要有一步不一样，即被认为是不同的方案）</p>
-<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>允许在方格上行走的步数 $n(n \le 20)$。</p>
-<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>计算出的方案数量。</p>
+                <h1 id="信息奥赛题解｜位数问题"><a href="#信息奥赛题解｜位数问题" class="headerlink" title="信息奥赛题解｜位数问题"></a>信息奥赛题解｜位数问题</h1><hr>
+<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>在所有的 $N$ 位数中，有多少个数中有偶数个数字 $3$ ? 由于结果可能很大，你只需要输出这个答案对 $12345$ 取余的值。</p>
+<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>读入一个数 $N(N \le 1000)$。</p>
+<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>输出有多少个数中有偶数个数字 $3$。</p>
 <h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">7</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">73</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1196">http://ybt.ssoier.cn:8088/problem_show.php?pid=1196</a></p>
+<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1313">http://ybt.ssoier.cn:8088/problem_show.php?pid=1313</a></p>
 <hr>
-<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>本题是递推问题的经典问题之一，属于 「<strong>全局移动路线方案数</strong>」问题。</p>
-<p>在之前的题解中，我们已经讲解了「<strong>单点移动路线</strong>」问题，其目标是求到达 <strong>某一个点</strong> 的方案数，但并没有涉及走到该点的步数；而本题的「<strong>全局移动路线</strong>」则是给定步数，求解所有该步数内能够走的不同路线数量。</p>
-<blockquote>
-<p>附：单点移动路线问题相关题解</p>
-<p>主站点：</p>
-<p><a target="_blank" rel="noopener" href="https://rickyxcoder.top/2023/04/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/">【信息奥赛题解】移动路线（详细分析题解 &amp; C++ 代码）</a><br><a target="_blank" rel="noopener" href="https://rickyxcoder.top/2023/04/10/xin-xi-ao-sai-ti-jie-guo-he-zu/">【信息奥赛题解】过河卒（详细分析题解 &amp; C++ 代码）</a></p>
-<p>备用站点：</p>
-<p><a target="_blank" rel="noopener" href="https://rickyxcoder.gitee.io/2023/04/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/">【信息奥赛题解】移动路线（详细分析题解 &amp; C++ 代码）</a><br><a target="_blank" rel="noopener" href="https://rickyxcoder.gitee.io/2023/04/10/xin-xi-ao-sai-ti-jie-guo-he-zu/">【信息奥赛题解】过河卒（详细分析题解 &amp; C++ 代码）</a></p>
-</blockquote>
-<p>在本题中，我们假设 <code>f[n]</code> 为 <strong>走 n 步的不同路线总数</strong>，那么这个 <code>f[n]</code> 可以拆分成 3 个独立的部分：</p>
-<ul>
-<li><strong>最后一步</strong> 向 <strong>左</strong> 走的路线数 <code>l[n]</code></li>
-<li><strong>最后一步</strong> 向 <strong>右</strong> 走的路线数 <code>r[n]</code></li>
-<li><strong>最后一步</strong> 向 <strong>上</strong> 走的路线数 <code>u[n]</code></li>
-</ul>
-<p>即 <code>f[n] = l[n] + r[n] + u[n]</code> ，所以我们可以通过计算 <code>l[n], r[n], u[n]</code> 来得到 <code>f[n]</code></p>
-<p>而对于 <code>l[n]，r[n], u[n]</code> ，我们可以由 <code>f[n - 1]</code> 来推断。</p>
+<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>本题对于 <strong>算法初学者</strong> 来说有点难度，且网络上的题解都不是特别清晰，故摊主撰写了本篇详细的题解分析，希望能在未来帮助到更多的同学。</p>
 <br>
 
-<p>按照我们的假设， <code>f[n-1]</code> 表示 走 n-1 步的不同路线总数，由于这里面的每条路线都是不同的，所以在这些路线的基础上，再往左走 1 步，得到的路线也都是不同的，就有 <code>l[n] = f[n-1]</code> ❌ </p>
-<p>但是我们知道 <strong>并不是所有路线，都能再往左走的</strong>。在所有走 n -1 步的路线中，如果第 <strong>n - 1步是往右走的</strong>，就 <strong>没有办法在第 n 步的时候往左走的</strong>，因为左边的方格塌陷了。</p>
-<p>所以 <strong>只有第 n - 1步往左走，或者往上走的路线</strong>，才能在第 n 步时，往左走。</p>
-<p>而 所有 <strong>n -1步 往左走</strong>的路线数量，按照我们的假设，就等于 <code>l[n-1]</code>；所有 n -1步 <strong>往上走</strong>的路线数量，按照我们的假设，就等于 <code>u[n-1]</code> 。所以 <code>l[n] = l[n - 1] + u[n-1]</code> ✅</p>
-<p>同理，<code>r[n] = r[n-1] + u[n-1]</code> ✅ </p>
-<p><code>u[n]</code> 比较特殊，因为 n-1 步往左、往右的路线在走第 n 步时，均可以向上走，所以 <code>u[n] = l[n-1] + r[n-1] + u[n-1]=f[n-1]</code> ✅ </p>
-<p>边界条件很好确定，<code>l[1] = r[1] = u[1] = 1</code>，因此就可以由递推关系，推出 <code>l[2],l[3], ... ,l[n]</code>，同理推出 <code>r[2],r[3], ... ,r[n]</code> 和 <code>u[2],u[3], ... ,u[n]</code> 🎉</p>
-<p>最后再计算，$f[n] = l[n] + r[n] + u[n]$ 即可得到答案。</p>
+<p>首先以 $N=1$，即 <strong>一位数</strong> 为例，统计一位数中 包含偶数个 3 的个数，记作 $f[1]_偶$ ；统计包含奇数个 3 的个数，记作 $f[1]_奇$ </p>
+<ul>
+<li>由于 0 也是偶数，所以 「<strong>0 个 3</strong>」 也满足偶数个 3 的条件，故 $f[1]_偶$ 为 1～2，4～9，共 8 个数（注意：0 不是一位数），$f[1]_偶 = 8$</li>
+<li>奇数个3 的情况只有单独的 3，所以 $f[1]_奇 = 1$</li>
+</ul>
 <blockquote>
-<p>本题还可以简化，不过该简化式一下子不容易想到，需要用一些数学知识，推导如下：</p>
-<p>$f[n]$</p>
-<p>$= l[n] + r[n] + u[n]$</p>
-<p>$= 2 * l[n -1] + 2 * r[n-1] + 3 * u[n-1]$</p>
-<p>$= 2 * f[n-1] + u[n-1]$</p>
-<p>$= 2 * f[n-1] + u[n-2] + l[n -2] + r[n - 2]$</p>
-<p>$= 2 * f[n-1] + f[n-2]$</p>
-<p>即递推式为 $f[n] = 2 * f[n - 1] + f[n-2](n \ge 3)$</p>
+<p>🍉 PS：有的小伙伴可能会问，题目不是求偶数的情况就够了吗？为什么要还要统计奇数的情况？继续往下看，你就明白了）</p>
 </blockquote>
-<p>🍉 总结：该题从 <strong>不同路线</strong> 和 <strong>路线的第 n 步和 n-1 步方向</strong> 角度去展开递推，会比较清晰明了（不建议像「单点移动路线」问题那样从某个点开始考虑）</p>
+<br>
+
+<p>然后以 $N=2$，即 <strong>两位数</strong> 为例，统计两位数中 包含偶数个 3 的个数，记作 $f[2]_偶$ ；统计包含奇数个 3 的个数，记作 $f[2]_奇$ </p>
+<p>对于 $f[2]_偶$，可以分两种情况进行统计：</p>
+<ul>
+<li><strong>十位为 3</strong>，则 个位必须为奇数个 3，数量为 $f[1]_奇$</li>
+<li><strong>十位不为 3</strong>（十位可以为 1～2，4～9，<strong>共 8 个数</strong>），则 个位必须为偶数个 3 ，数量为 $f[1]_偶$</li>
+</ul>
+<p>所以 $f[2]_偶 = f[1]_奇 + 8 * f[1]_偶$ </p>
+<p>然后我们带入 $f[1]_奇$、$f[1]_偶$ ，得 $f[2]_偶 = f[1]_奇 + 8 * f[1]_偶=1+8*8=65$ ，却发现与样例答案 73 不相等。❌		</p>
+<br>
+
+<p>这是什么原因造成的呢 ?  🧐 　</p>
+<p>实际上，当我们单独拿$f[1]_奇$、$f[1]_偶$ 讨论时，由于 <strong>0 不为一位数</strong>，所以 $f[1]_偶$ 为 1～2，4～9，共 8 个。</p>
+<p>但是当 $N=2$ 时，由于十位上有了数字，所以此时个位上的数字是可以为 0 的，因此在计算 $f[2]_偶$ 时，$f[1]_偶$ 可以取到 0～2，4～9，共 9 个。（<strong>本质</strong>是 <strong>一位数</strong> 和 <strong>个位上的数字</strong> 的区别）</p>
+<p>同理，$f[1]_奇$ 也要考虑 0 的情况，但是此时 0 并不满足 「奇数个3的条件」，所以 $f[1]_奇$ 仍然为 1（这里 $f[1]_奇$ 的值虽然没有变，但是后面的 $f[2]_奇、f[3]_奇$、…、$f[n]_奇$ 的值会在更新后发生改变）</p>
+<p>把新的 $f[1]_偶$、$f[1]_奇$ 的值带入，得到  $f[2]_偶 = f[1]_奇 + 8 * f[1]_偶=1+8*9=73$ </p>
+<p>即为样例答案 73。</p>
+<p>同理，$f[2]_奇 = f[1]_偶 + 8 * f[1]_奇=9+8*1=17$</p>
+<blockquote>
+<p>上面这个 $f[1]_偶$、$f[1]_奇$ 为什么要更新的的原因，是本题的难点，也是本题的解题关键。现在不理解也没关系，继续往下阅读，再分析一个案例，也许你就理解了。</p>
+</blockquote>
+<br>
+
+<p>然后以 $N=3$，即 <strong>三位数</strong> 为例，也是类似的过程。</p>
+<p>对于 $f[3]_偶$，可以分两种情况：</p>
+<ul>
+<li><strong>百位为 3</strong>，则 十位和个位总体 必须为 奇数个 3，数量为 $f[2]_奇$</li>
+<li><strong>百位不为 3</strong>，则 十位和个位总体 必须为 偶数个 3，数量为 $f[2]_偶$</li>
+</ul>
+<p>所以 $f[3]_偶 = f[2]_奇 + 8 * f[2]_偶$</p>
+<p>同理，$f[3]_奇 = f[2]_偶 + 8 * f[2]_奇$</p>
+<p>同样，由于在计算 $f[2]_奇$ 、$f[2]_偶$ 时，十位不能为0；而引入百位后，十位可以为 0，所以如果要输出的是三位数的结果，则在计算 $f[2]_奇$ 、$f[2]_偶$ 时，也需要考虑 0</p>
+<br>
+
+<p>现在我们 <strong>重新计算</strong> 求解 $f[3]_偶$ 、$f[3]_奇$ 情况下的 $f[2]_偶$ 、$f[2]_奇$ </p>
+<p>我们在上一步中计算的 $f[2]_偶 = f[1]_奇 + 8 * f[1]_偶=1+8*9=73$ </p>
+<p>其中 8 这个系数，是十位不为 3 ，取 1～2，4～9 得到的（当时十位不能为 0）。但是现在，由于十位可以为0 ，所以十位可以取 0～2，4～9 共 9 个数字，所以上面式子中的系数应该为 9，而不是 8。</p>
+<p>所以新的 $f[2]_偶 = f[1]_奇 + 9 * f[1]_偶=1+9*9=82$ </p>
+<p>同理，新的 $f[2]_奇 = f[1]_偶 + 9 * f[1]_奇=9+9*1=18$</p>
+<p>在得到了新的 $f[2]_偶$、$f[2]_奇$ 后，再带入 $f[3]_偶 = f[2]_奇 + 8 * f[2]_偶$，就能得到正确的 $f[3]_偶$</p>
+<p>🍉 PS：$f[3]_偶 = f[2]_奇 + 8 * f[2]_偶$，这里的系数 8 并不会变成 9，因为此时百位是最高位，不能为 0。</p>
+<p>但是同理，当 $N=4$ 时，由于有千位的存在，百位就可以为 0 ，那么计算$f[3]_偶$ 时，其数值就应该更新为 $f[3]_偶 = f[2]_奇 + 9 * f[2]_偶$</p>
+<blockquote>
+<p>上面推导过程中， $f[2]_偶$、$f[2]_奇$ 为什么要更新，并且 「公式系数从 8 改为 9」的原因，以及计算 $f[3]_偶$、$f[3]_奇$ 时，「公式系数仍为 8 」的原因，是本题的难点，也是本题的解题关键。⭐️</p>
+</blockquote>
+<br>
+
+<p>根据上面的推导，我们可以得到最终 <strong>n 位数的结果</strong>：</p>
+<ul>
+<li><p>$f[n]_偶 = f[n-1]_奇 + 8 * f[n-1]_偶$</p>
+</li>
+<li><p>$f[n]_奇 = f[n-1]_偶 + 8 * f[n-1]_奇$</p>
+</li>
+</ul>
+<p>而在计算 $f[n-1]_奇$、$f[n-1]_偶$ 时，由于此时最高位可以为 0，上面递推式中表示 1～2，4～9的系数「8」就变成了0～2，4～9的系数「9」，递推公式为：</p>
+<ul>
+<li><p>$f[n-1]_偶 = f[n-2]_奇 + 9 * f[n-2]_偶$</p>
+</li>
+<li><p>$f[n-1]_奇 = f[n-2]_偶 + 9 * f[n-2]_奇$</p>
+</li>
+</ul>
+<p>所以在书写代码时，也需要分为两个表达式来写。✅</p>
+<p>🍉 PS1：在实际编程中，我们可以用 $f[N][0]$ 来表示 $f[N]_偶$ ，用 $f[N][1]$ 来表示 $f[N]_奇$</p>
+<p>🍉 PS2：这种递推问题的答案可能很大，甚至超出 <code>long long</code> 的范围，所以不要忘记题干中的取模要求。</p>
 <hr>
-<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><p>标准版</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
-<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e3</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> K <span class="token operator">=</span> <span class="token number">12345</span><span class="token punctuation">;</span>
 <span class="token keyword">int</span> n<span class="token punctuation">;</span>
-ll f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> l<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> r<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> u<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">//f[n][0]表示 n位数 中包含偶数个3的情况</span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
     cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
-    <span class="token comment">//边界条件</span>
-    l<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> r<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> u<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> l<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> r<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> u<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>  <span class="token comment">//1~2,4~9 共 8 个</span>
+        f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment">//3，共1个</span>
+        cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>  <span class="token comment">//更高位上有数字，需要考虑0</span>
+        f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+      
+        <span class="token comment">//递推2～n-1位数</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//K = 12345</span>
+            f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">9</span> <span class="token operator">*</span> <span class="token punctuation">(</span>f<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">;</span>
+            f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">9</span> <span class="token operator">*</span> <span class="token punctuation">(</span>f<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
 
-    <span class="token comment">//递推</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        l<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> l<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> u<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        r<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> r<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> u<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        u<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> l<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> r<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> u<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        f<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> l<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> r<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> u<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">//单独计算n位数</span>
+        f<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">8</span> <span class="token operator">*</span> <span class="token punctuation">(</span>f<span class="token punctuation">[</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">%</span> K<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">)</span> <span class="token operator">%</span> K<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-    cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>优化版</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
-
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> n<span class="token punctuation">;</span>
-ll f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
-    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
-
-    <span class="token comment">//数学简化后的递推</span>
-    f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
-    f<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">//注意i从3开始</span>
-        f<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">*</span> f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<h3 id="😑-吐槽时间"><a href="#😑-吐槽时间" class="headerlink" title="😑 吐槽时间"></a>😑 吐槽时间</h3><p>摊主本人在阅读其他一些题解时，发现有的题解在分析时，认为 $f[1][0]=8$（ 1～2，4～9，因为 0 不算一位数），但是实际代码中，却出现 $f[1][0] = 9$ 的情况，并且没有交代原因。这样的前后矛盾，让不少看题解的小伙伴们感到困惑。</p>
+<p>摊主还发现，有的题解就直接认为 $f[1][0]$ 就应该等于 9，把 0 也算成了一位数，这从 <strong>数学定义的角度</strong> 来看是错误的。❌ （有疑惑的小伙伴可以查阅以下问题：0 算不算一位数 ? 一位数和个位数有什么区别？）</p>
+<p>从推导过程中，我们看到只有在 $N &gt; 1$ 时，<code>f[1][0]</code> 才因为进制的规则，变成了 9。</p>
+<p>说明写其他题解的作者可能没有仔细考虑这其中的关系，这也是摊主撰写此篇题解的原因，希望本题解能真正解答一些小伙伴们的困难。</p>
+<p>摊主也希望阅读此篇题解后，理解了本题的小伙伴，在未来自己写其他题目的题解时，多一份耐心与细致，不要让更多灌水、没有太多思考的题解，污染了这片土壤，浪费其他小伙伴搜索与阅读的时间。☘️</p>
 
                 
             </div>
@@ -808,7 +828,7 @@ ll f<span class="token punctuation">[</span>N<span class="token punctuation">]</
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/">https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/</a>
+                    <a href="https://ricky2333.github.io/2023/09/03/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/">https://ricky2333.github.io/2023/09/03/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1029,76 +1049,24 @@ ll f<span class="token punctuation">[</span>N<span class="token punctuation">]</
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/04/12/python-xue-xi-bi-ji-csv/">
+                <a href="/2023/09/08/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="Python学习笔记｜CSV">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="信息奥赛题解｜昆虫繁殖">
                         
-                        <span class="card-title">Python学习笔记｜CSV</span>
+                        <span class="card-title">信息奥赛题解｜昆虫繁殖</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Python学习笔记｜CSV
+                            信息奥赛题解｜昆虫繁殖
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-12
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-08
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">学习笔记</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/04/10/xin-xi-ao-sai-ti-jie-guo-he-zu/">
-                    <div class="card-image">
-                        
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="信息奥赛题解｜过河卒">
-                        
-                        <span class="card-title">信息奥赛题解｜过河卒</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            信息奥赛题解｜过河卒
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-10
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1124,6 +1092,58 @@ ll f<span class="token punctuation">[</span>N<span class="token punctuation">]</
                     
                     <a href="/tags/%E9%80%92%E6%8E%A8/">
                         <span class="chip bg-color">递推</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/09/01/xin-xi-ao-sai-shi-xun-bao-gao-stl/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="信息奥赛实训报告｜STL">
+                        
+                        <span class="card-title">信息奥赛实训报告｜STL</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            信息奥赛实训报告｜STL
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    信息奥赛题解
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                        <span class="chip bg-color">信息奥赛</span>
+                    </a>
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
                 </div>

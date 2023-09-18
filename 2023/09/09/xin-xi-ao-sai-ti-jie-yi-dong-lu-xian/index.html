@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="信息奥赛题解｜过河卒, Rickyの水果摊">
+    <meta name="keywords" content="信息奥赛题解｜移动路线, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信息奥赛题解｜过河卒 | Rickyの水果摊</title>
+    <title>信息奥赛题解｜移动路线 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -474,12 +474,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信息奥赛题解｜过河卒</h1>
+                    <h1 class="description center-align post-title">信息奥赛题解｜移动路线</h1>
                 </div>
             </div>
         </div>
@@ -633,7 +633,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-10
+                    2023-09-09
                 </div>
                 
 
@@ -642,7 +642,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    782
+                    902
                 </div>
                 
 
@@ -672,83 +672,61 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="信息奥赛题解｜过河卒"><a href="#信息奥赛题解｜过河卒" class="headerlink" title="信息奥赛题解｜过河卒"></a>信息奥赛题解｜过河卒</h1><hr>
-<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>棋盘上 $A$ 点有一个过河卒，需要走到目标 $B$ 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 $C$ 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。</p>
-<p>棋盘用坐标表示，$A$ 点 $(0, 0)$、$B$ 点 $(n, m)$，同样马的位置坐标是需要给出的。</p>
-<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/5b477a6bd7600427bbb9f3258ff0b14d.png"></p>
-<p>现在要求你计算出卒从 $A$ 点能够到达 $B$ 点的路径的条数，假设马的位置是固定不动的，并不是卒走一步马走一步。</p>
-<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>一行四个正整数，分别表示 $B$ 点坐标和马的坐标。</p>
-<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>一个整数，表示所有的路径条数。</p>
-<h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span> <span class="token number">6</span> <span class="token number">3</span> <span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="信息奥赛题解｜移动路线"><a href="#信息奥赛题解｜移动路线" class="headerlink" title="信息奥赛题解｜移动路线"></a>信息奥赛题解｜移动路线</h1><hr>
+<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>桌子上有一个 $m$ 行 $n$ 列的方格矩阵，将每个方格用坐标表示，行坐标从下到上依次递增，列坐标从左至右依次递增，左下角方格的坐标为 $(1,1)$，则右上角方格的坐标为 $(m,n)$。</p>
+<p>小明是个调皮的孩子，一天他捉来一只蚂蚁，不小心把蚂蚁的右脚弄伤了，于是蚂蚁只能向上或向右移动。小明把这只蚂蚁放在左下角的方格中，蚂蚁从左下角的方格中移动到右上角的方格中，每步移动一个方格。蚂蚁始终在方格矩阵内移动，请计算出不同的移动路线的数目。</p>
+<p>对于 $1$ 行 $1$ 列的方格矩阵，蚂蚁原地移动，移动路线数为 $1$；对于 $1$ 行 $2$ 列（或 $2$ 行 $1$ 列）的方格矩阵，蚂蚁只需一次向右（或向上）移动，移动路线数也为 $1$</p>
+<p>对于一个 $2$ 行 $3$ 列的方格矩阵，如下图所示：</p>
+<p>$(2,1),(2,2),(2,3)$</p>
+<p>$(1,1),(1,2),(1,3)$</p>
+<p>蚂蚁共有3种移动路线：</p>
+<p>路线1：$(1,1) → (1,2) → (1,3) → (2,3)$</p>
+<p>路线2：$(1,1) → (1,2) → (2,2) → (2,3)$</p>
+<p>路线3：$(1,1) → (2,1) → (2,2) → (2,3)$</p>
+<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>输入只有一行，包括两个整数 $m$ 和 $n(0 \lt m+n \le 20)$，代表方格矩阵的行数和列数，$m,n$ 之间用空格隔开。</p>
+<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>输出只有一行，为不同的移动路线的数目。</p>
+<h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span> <span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">7</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h3><p>$1 \le n, m \le 20$，$0 \le$ 马的坐标 $\le 20$。</p>
-<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1002">https://www.luogu.com.cn/problem/P1002</a></p>
+<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1194">http://ybt.ssoier.cn:8088/problem_show.php?pid=1194</a></p>
 <hr>
-<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>本题是「<strong>单点移动路线方案数</strong>」问题的经典题目之一，在上题「<strong>移动路线</strong>」的基础上，增加了障碍点的条件。（「移动路线」 题目链接：<a target="_blank" rel="noopener" href="https://rickyxcoder.top/2023/04/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/">信息奥赛题解｜移动路线</a> / 备用站点：<a target="_blank" rel="noopener" href="https://rickyxcoder.gitee.io/2023/04/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/">信息奥赛题解｜移动路线</a>）</p>
-<p>我们只需要额外设置一个状态数组 <code>vis</code>，存储某个点是否为障碍点即可，剩下的思路和上题一致。</p>
-<p>🍉 代码精简小提示 ：</p>
+<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>本题是求 <strong>到达某点路线方案数</strong> 中较为基础的题型，是典型的递推问题。</p>
+<p>可以构造一个二维矩阵 <code>a[N][N]</code> 表示总地图，其中 <code>a[i][j]</code> 表示从起点到点 $(i,j)$  的路线方案数。</p>
+<p>由于蚂蚁只能往上或者往右走，因此对于每一个点 <code>a[i][j]</code> 来说，只能从下面的点 <code>a[i-1][j]</code> 或者左边的点 <code>a[i][j-1]</code> 走到，所以到 <code>a[i][j]</code> 的方案数就是从 起点到 <code>a[i-1][j]</code> 和 起点<code>a[i][j-1]</code> 的方案数之和，即递推关系为 <code>a[i][j] = a[i-1][j] + a[i][j-1]</code></p>
+<p>本题数组 <code>a</code> 推荐使用全局变量（全局变量默认初始值为 0），这样在 <code>i = 1</code> 或者 <code>j = 1</code> 时（边界情况下），该方程仍然成立。</p>
 <ul>
-<li>本题可以用两个数组，存储马可能跳的点的横坐标/纵坐标变化值，这样只需要循环一次，就能把所有马能跳到的障碍点的 <code>vis</code> 值置为 1</li>
-<li>题目中起点是从 $(0,0)$ 开始，而传统的「<strong>移动路线</strong>」问题是从 $(1,1)$ 开始，所以可以在坐标读入的时候全部 <code>+1</code>。但是由于本题在计算马的坐标时，可能遇到 <code>-2</code> 越界的问题，所以干脆整体 <code>+2</code>，起点从 $(2,2)$ 开始，会精简不少代码。</li>
+<li>如起点为 $(1,1)$，想要到点 $(1,2)$ ，只有向右走一种方式，即 <code>a[1][2] = a[1][1] = 1</code> ，但是由于点 <code>a[0][2]</code> 在全局变量的情况下，默认值为 0，所以把方程写成 <code>a[1][2] = a[1][1] + a[0][2] = 1</code> 也是完全可以的。</li>
+<li>这样的写法会简化代码，因为不用单独判断最下面一行和最左边一列了。</li>
 </ul>
+<p>❗️ 但是在初始化时要注意给 <code>a[1][1]</code> 单独赋值为 1，否则在递推计算时，所有结果均为0。（请思考为什么会这样？）</p>
 <hr>
 <h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
-
-<span class="token comment">//马可能会跳的点</span>
-<span class="token keyword">int</span> horse_x<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> horse_y<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token comment">//vis数组存储过河状态</span>
-<span class="token keyword">int</span> vis<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token comment">//a数组存储路线方案数</span>
 <span class="token keyword">long</span> <span class="token keyword">long</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
 
-<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
-
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
-    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token comment">//由于题目起点从（0，0）开始，且马的坐标跳跃坐标有 -2，所以不妨所有坐标点均 +2，防止越界</span>
-    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m <span class="token operator">&gt;&gt;</span> x <span class="token operator">&gt;&gt;</span> y<span class="token punctuation">;</span>
-    n <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-    m <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-    x <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-    y <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-
-    <span class="token comment">//将马可能走到的点的状态置为1</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">8</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        vis<span class="token punctuation">[</span>x <span class="token operator">+</span> horse_x<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y <span class="token operator">+</span> horse_y<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
 
     <span class="token comment">//计算a数组</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> m<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token comment">//此时起点为（2，2）</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">2</span> <span class="token operator">&amp;&amp;</span> j <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//注意，a[1][1]的初始值需要单独赋值，否则a数组在该方程下全为0</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span> j <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
                 a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-
-            <span class="token comment">//遇到了障碍点</span>
-            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>vis<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
-                a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-
             <span class="token keyword">else</span>
                 a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
-    <span class="token comment">//输出结果</span>
+
+    <span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
     cout <span class="token operator">&lt;&lt;</span> a<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -776,7 +754,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-guo-he-zu/">https://ricky2333.github.io/2023/04/10/xin-xi-ao-sai-ti-jie-guo-he-zu/</a>
+                    <a href="https://ricky2333.github.io/2023/09/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/">https://ricky2333.github.io/2023/09/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -997,7 +975,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/04/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/">
+                <a href="/2023/09/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/">
                     <div class="card-image">
                         
                         <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="信息奥赛题解｜踩方格">
@@ -1013,7 +991,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-10
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-10
                         </span>
                         <span class="publish-author">
                             
@@ -1053,23 +1031,23 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/04/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/">
+                <a href="/2023/09/08/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="信息奥赛题解｜移动路线">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="信息奥赛题解｜昆虫繁殖">
                         
-                        <span class="card-title">信息奥赛题解｜移动路线</span>
+                        <span class="card-title">信息奥赛题解｜昆虫繁殖</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息奥赛题解｜移动路线
+                            信息奥赛题解｜昆虫繁殖
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-08
                             </span>
                         <span class="publish-author">
                             

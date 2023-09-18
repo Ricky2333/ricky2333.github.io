@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="信息奥赛题解｜昆虫繁殖, Rickyの水果摊">
+    <meta name="keywords" content="信息奥赛题解｜过河卒, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信息奥赛题解｜昆虫繁殖 | Rickyの水果摊</title>
+    <title>信息奥赛题解｜过河卒 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -474,12 +474,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信息奥赛题解｜昆虫繁殖</h1>
+                    <h1 class="description center-align post-title">信息奥赛题解｜过河卒</h1>
                 </div>
             </div>
         </div>
@@ -633,7 +633,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-04
+                    2023-09-12
                 </div>
                 
 
@@ -642,14 +642,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.8k
+                    782
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    3 分
                 </div>
                 
 
@@ -672,517 +672,83 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="信息奥赛题解｜昆虫繁殖"><a href="#信息奥赛题解｜昆虫繁殖" class="headerlink" title="信息奥赛题解｜昆虫繁殖"></a>信息奥赛题解｜昆虫繁殖</h1><hr>
-<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>科学家在热带森林中发现了一种特殊的昆虫，这种昆虫的繁殖能力很强。每对成虫过 $X$ 个月后开始产卵，每月产 $Y$ 对卵，每对卵要过两个月长成成虫。</p>
-<p>假设每个成虫不死，第一个月只有一对成虫，且卵长成成虫后的第一个月不产卵( 过 $X$ 个月产卵)，问过 $Z$ 个月以后，共有成虫多少对？</p>
-<p>$0 \le X \le 20,1 \le Y \le 20,X \le Z \le 50$</p>
-<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>$X,Y,Z$ 的数值。</p>
-<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>过 $Z$ 个月以后，共有成虫对数。</p>
-<h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">1</span> <span class="token number">2</span> <span class="token number">8</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="信息奥赛题解｜过河卒"><a href="#信息奥赛题解｜过河卒" class="headerlink" title="信息奥赛题解｜过河卒"></a>信息奥赛题解｜过河卒</h1><hr>
+<h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>棋盘上 $A$ 点有一个过河卒，需要走到目标 $B$ 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 $C$ 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。</p>
+<p>棋盘用坐标表示，$A$ 点 $(0, 0)$、$B$ 点 $(n, m)$，同样马的位置坐标是需要给出的。</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/5b477a6bd7600427bbb9f3258ff0b14d.png"></p>
+<p>现在要求你计算出卒从 $A$ 点能够到达 $B$ 点的路径的条数，假设马的位置是固定不动的，并不是卒走一步马走一步。</p>
+<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>一行四个正整数，分别表示 $B$ 点坐标和马的坐标。</p>
+<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>一个整数，表示所有的路径条数。</p>
+<h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span> <span class="token number">6</span> <span class="token number">3</span> <span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">37</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1204">http://ybt.ssoier.cn:8088/problem_show.php?pid=1204</a></p>
+<h3 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h3><p>$1 \le n, m \le 20$，$0 \le$ 马的坐标 $\le 20$。</p>
+<h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1002">https://www.luogu.com.cn/problem/P1002</a></p>
 <hr>
-<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p><strong>昆虫繁殖</strong> 问题是 算法初学者 在学习 <strong>递推专题</strong> 时，必定遇到的问题之一。此题对于初学者来说 <strong>难度较高</strong>，很容易出现题目推着推着，就把各种变量、下标搞混的情况。😵‍💫</p>
-<p>博主在阅读其他人写的题解时，要么解释的非常潦草，难以理解；要么干脆只有代码，没有解释。💦</p>
-<p>所以在对本题进行了一定的研究后，博主撰写了此篇题解，希望能在未来帮助更多的小伙伴弄懂本题的递推关系，最后能够手撕本题代码。🧑🏻‍💻</p>
-<p>在博主看来本题的难点主要有 3 个：</p>
+<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>本题是「<strong>单点移动路线方案数</strong>」问题的经典题目之一，在上题「<strong>移动路线</strong>」的基础上，增加了障碍点的条件。（「移动路线」 题目链接：<a target="_blank" rel="noopener" href="https://rickyxcoder.top/2023/04/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/">信息奥赛题解｜移动路线</a> / 备用站点：<a target="_blank" rel="noopener" href="https://rickyxcoder.gitee.io/2023/04/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/">信息奥赛题解｜移动路线</a>）</p>
+<p>我们只需要额外设置一个状态数组 <code>vis</code>，存储某个点是否为障碍点即可，剩下的思路和上题一致。</p>
+<p>🍉 代码精简小提示 ：</p>
 <ul>
-<li>第一，不知道如何表示「过了 z 个月」</li>
-<li>第二，不知道如何得到递推方程</li>
-<li>第三，推出来部分递推方程，却不知道如何设定边界条件，书写代码</li>
+<li>本题可以用两个数组，存储马可能跳的点的横坐标/纵坐标变化值，这样只需要循环一次，就能把所有马能跳到的障碍点的 <code>vis</code> 值置为 1</li>
+<li>题目中起点是从 $(0,0)$ 开始，而传统的「<strong>移动路线</strong>」问题是从 $(1,1)$ 开始，所以可以在坐标读入的时候全部 <code>+1</code>。但是由于本题在计算马的坐标时，可能遇到 <code>-2</code> 越界的问题，所以干脆整体 <code>+2</code>，起点从 $(2,2)$ 开始，会精简不少代码。</li>
 </ul>
-<p>首先解决 <strong>第一个问题</strong>，该如何表示「<strong>过了 z 个月</strong>」？能否用列表的方式，来清晰的表式每一个月的数据 ？</p>
-<p>该问题的关键在于，我们如何表示刚开始的第一个月？是从 0 开始，还是 1 开始 ? 实际上，两种方式都可以的，列表的方式如下：</p>
-<ul>
-<li>从 0 开始的月份下标，此时「过了 z 个月」，就对应 z 月（如过了 1 个月，就是从 0月 → 1 月）</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-<th align="center">…</th>
-<th align="center">z 月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="center">初始数据</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<ul>
-<li>从 1 开始的月份下标，此时「过了 z 个月」，对应的是 z + 1 月（如过了 1 个月，就是从 1月 → 2 月）</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-<th align="center">5月</th>
-<th align="center">…</th>
-<th align="center">z + 1月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="center">初始数据</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p>在本文中，博主选择从第一种方式，即月份下标从 0 开始（原因会在下文分析完问题二、三后阐述）</p>
-<br>
-
-<p>对于 <strong>第二个问题</strong>，我们需要通过 <strong>模拟</strong> 的方式来推出递推方程。</p>
-<p>首先，以 $x = 1, y = 2, z = 4$ 的情况进行模拟，此条件表示的是：</p>
-<ul>
-<li>过 $x = 1$ 个月，成虫开始产卵</li>
-<li>每对成虫每次产 $y = 2$ 对卵</li>
-<li>要求过 $z = 4$ 个月后，成虫的数量</li>
-</ul>
-<p>因为要求解成虫数量，所以比较容易想到的方式是 <strong>创建两个数组</strong>，一个存储每个月的成虫总数量（数组 <code>c</code> 表示），另一个存储每个月卵的总数量（数组 <code>r</code> 表示）。</p>
-<p><strong>在第 0 个月</strong> 时，有 1 对成虫，0 对卵，所以 $c[0] = 1，r[0] = 0$</p>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">每月卵总数量 r[i]</td>
-<td align="center">0</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p><strong>过了 1 个月后</strong>（1月），成虫开始产卵，所以在 1 月份时，卵的数量为 2，成虫数量仍为 1，$c[1] = 1，r[1] = 2$</p>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">每月卵总数量 r[i]</td>
-<td align="center">0</td>
-<td align="center">2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p><strong>过了 2 个月后</strong>（2月），此时 1 月产的卵没有长大为成虫，所以成虫数量仍为 1，并且在这个月，成虫又产生了 y = 2 对卵，则此时共有 4 对卵（2 对新产生的卵，2 对为 1 月份仅成长了 1 个月的卵），$c[2] = 1,r[2] = 4$</p>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">每月卵总数量 r[i]</td>
-<td align="center">0</td>
-<td align="center">2</td>
-<td align="center">4</td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p><strong>过了 3 个月后</strong>（3月），此时 1 月的卵成长为了成虫，<strong>成虫数量增加</strong>，所以 $c[3] = c[2] + r[3 - 2] = 3$；对于卵来说，此时有 2 只卵变成成虫，但是原先的 1 对成虫又产生了 2 只卵，所以 $r[3] = r[2] - 2 + 2 = 4$</p>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">3</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">每月卵总数量 r[i]</td>
-<td align="center">0</td>
-<td align="center">2</td>
-<td align="center">4</td>
-<td align="center">4</td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p>于是我们容易总结得到，成虫数量 $c[i] = c[i - 1] + r[i -2]$ （但是这其实是有问题的 ❌）</p>
-<p>我们继续来看 <strong>4 月份</strong>，如果按照上面这种方式，那么 $c[4] = c[3] + r[4-2] = 8$。</p>
-<p>但是仔细思考，2 月份的 4 对卵，已经有 2 对在 3 月份变成了成虫，实际上只有 2 对卵在 4 月份变成了成虫，正确的 $c[4] = c[3] + 2 = 6$ 才对。🤔</p>
-<p>经过思考，我们发现上面公式里的 <code>r[i-2]</code>，<strong>不应该设成 2 个月前卵的总数量</strong>，因为如果是总数量，那么这些卵中有一部分来自于上个月，这部分卵在下一个月就会变成成虫，而不是等 2 个月后才变成成虫。💡</p>
-<p>所以，更加合理的表示方式，应该是将「<strong>r 数组设置为每个月新增的卵的数量</strong>」。即每个月的成虫总数量 <code>c[i]</code>，应该等于 上个月成虫的总数量 <code>c[i-1]</code> + 上 2 个月新增的卵的数量 <code>r[i-2]</code>（其他时间产生的卵和 <code>c[i]</code> 的计算并没有关系）✅ </p>
-<p>这也是为什么很多题解中，选择设置 <strong>c为每月成虫总数量</strong>，但是 <strong>r 为每月<u><em>新增</em></u> 的卵的数量</strong>的原因。</p>
-<p>这样设定变量含义，就能够得到正确的递推方程：<br>$$<br>c[i] = c[i - 1] + r[i - 2] ; r[i] = c[i -x] * y<br>$$<br>递推方程含义为（在 x 个月之后）：</p>
-<p>每月成虫总数量 $c[i]$ = 上一个月成虫总数量 $c[i -1]$ + 上 2 个月新增的卵的数量 $r[i - 2]$</p>
-<p>每月新增的卵的数量 $r[i]$ = 上 x 个月的成虫总数量 $c[i-x] * y$</p>
-<p>在理解了这一步后，我们再重新来推一下这个表格：</p>
-<p>在 <code>0 - x-1</code> 月，第一对成虫不产卵，$c[i] \equiv  1,r[i] \equiv 0$，即：</p>
-<ul>
-<li>在第 0 月时，$c[0] = 1,r[0] = 0$</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">每月卵新增数量 r[i]</td>
-<td align="center">0</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p>在 <code>x</code> 月，第一对成虫开始产卵，且产了 y 对卵，$c[x] =  1,r[x] = y$，即：</p>
-<ul>
-<li>在第 1 月时，$c[1] = 1,r[1] = 2$</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">每月卵新增数量 r[i]</td>
-<td align="center">0</td>
-<td align="center">2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p>在 <code>x+1 - z</code> 月，递推关系满足上述递推方程，有：</p>
-<ul>
-<li>在第 2 月时，$c[2] = c[1] + r[0] = 1,r[2] = c[2 - 1] * 2 = 2$</li>
-<li>在第 3 月时，$c[3] = c[2] + r[1] = 3,r[3] = c[3 - 1] * 2 = 2$</li>
-<li>在第 4 月时，$c[4] = c[3] + r[2] = 5,r[4] = c[4 - 1] * 2 = 6$</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">3</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="center">每月卵新增数量 r[i]</td>
-<td align="center">0</td>
-<td align="center">2</td>
-<td align="center">2</td>
-<td align="center">2</td>
-<td align="center">6</td>
-</tr>
-</tbody></table>
-<p>按照样例中 $z=8$，我们也可以得到下表，样例答案 c[8] = 37 就是这样来的。</p>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-<th align="center">5月</th>
-<th align="center">6月</th>
-<th align="center">7月</th>
-<th align="center">8月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">3</td>
-<td align="center">5</td>
-<td align="center">7</td>
-<td align="center">13</td>
-<td align="center">23</td>
-<td align="center">37</td>
-</tr>
-<tr>
-<td align="center">每月卵新增数量 r[i]</td>
-<td align="center">0</td>
-<td align="center">2</td>
-<td align="center">2</td>
-<td align="center">2</td>
-<td align="center">6</td>
-<td align="center">10</td>
-<td align="center">14</td>
-<td align="center">26</td>
-<td align="center">46</td>
-</tr>
-</tbody></table>
-<p>下面，我们以 $x = 2,y=3,z = 4$ 为例，再次模拟。</p>
-<p>首先，在 <code>0 - x-1</code> 月，第一对成虫是不产卵的，所以 $c[i] \equiv  1,r[i] \equiv 0$，即：</p>
-<ul>
-<li>在第 0 月时，$c[0] = 1,r[0] = 0$</li>
-<li>在第 1 月时，$c[1] = 1,r[1] = 0$</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">每月卵新增数量 r[i]</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p>在 <code>x</code> 月，第一对成虫开始产卵，且产了 y 对卵，$c[x] =  1,r[x] = y$，即：</p>
-<ul>
-<li>在第 2 月时，$c[2] = 1,r[2] = 3$</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">每月卵新增数量 r[i]</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">3</td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p>在 <code>x+1 - z</code> 月，递推关系满足上述递推方程，有：</p>
-<ul>
-<li>在第 3 月时，$c[3] = c[2] + r[1] = 1,r[3] = c[3 - 2] * 3 = 3$</li>
-<li>在第 4 月时，$c[4] = c[3] + r[2] = 4,r[4] = c[4 - 2] * 3 = 3$</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">月份</th>
-<th align="center">0月</th>
-<th align="center">1月</th>
-<th align="center">2月</th>
-<th align="center">3月</th>
-<th align="center">4月</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">每月成虫总数量 c[i]</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="center">每月卵新增数量 r[i]</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">3</td>
-<td align="center">3</td>
-<td align="center">3</td>
-</tr>
-</tbody></table>
-<p>至此，整道题目的逻辑关系基本理清。✅ </p>
-<br>
-
-<p>在梳理完了递推关系后，我们尝试书写代码（这题对于初学者来说确实麻烦，但是 <strong>对逻辑思维是很好的锻炼</strong>）</p>
-<p>我们从上面的过程入手，<strong>边界条件</strong> 就比较容易确定。显然，总过程分为 3 段，分别是 <code>0-x-1</code>月, <code>x</code>月, <code>x+1-z</code> 月，所以我们的程序也可以分为 3 段来写：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//模拟 0 - x - 1 月</span>
-<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> x <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-	c<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-	r<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment">//模拟 x 月</span>
-c<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-r<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> y<span class="token punctuation">;</span>
-
-<span class="token comment">//模拟 x + 1 - z 月</span>
-<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> z<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-  c<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> c<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> r<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-  r<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> r<span class="token punctuation">[</span>i <span class="token operator">-</span> x<span class="token punctuation">]</span> <span class="token operator">*</span> y<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>这样，我们就完成了本题的核心代码（恭喜 🎉🎉🎉）</p>
-<p>其实，在对 $x$ 月的赋值时，也可以将其合并到第 3 段，但是这个合并操作要求 x &gt; 1（因为第 3 段的 递推方程中包含 <code>r[i - 2]</code>，所以需要保证 <code>i - 2 &gt; 0</code>）。为了代码逻辑更加清晰，博主采用了 3 段式。</p>
-<p>当然，博主也看到有代码是月份从 1 开始的，这样的话，「过了 z 个月」就是 z + 1 月，最终输出的答案是 c[z + 1]，这样从 1 开始的下标就可以保证 2、3 段合并时 $i - 2 &gt; 0$ 了，也是可以的。</p>
-<p>在本文中，博主选择月份下标从 0 开始，这样「过了 z 个月」就是 z 月，比较容易记忆，大伙可以根据喜好自行选择。</p>
-<p>🍉 PS：本题需要使用 <code>long long</code> 类型，<code>int</code> 类型不够用。</p>
 <hr>
 <h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e2</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
-ll c<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">//c数组存储每个月成虫的总数量</span>
-ll r<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">//r数组存储每个月新增的昆虫数量</span>
-ll x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+
+<span class="token comment">//马可能会跳的点</span>
+<span class="token keyword">int</span> horse_x<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> horse_y<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//vis数组存储过河状态</span>
+<span class="token keyword">int</span> vis<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//a数组存储路线方案数</span>
+<span class="token keyword">long</span> <span class="token keyword">long</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    cin <span class="token operator">&gt;&gt;</span> x <span class="token operator">&gt;&gt;</span> y <span class="token operator">&gt;&gt;</span> z<span class="token punctuation">;</span>
-  
-    <span class="token comment">//模拟 0 - x - 1 月</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> x <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        c<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        r<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token comment">//模拟 x 月</span>
-    c<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    r<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> y<span class="token punctuation">;</span>
-  
-    <span class="token comment">//模拟 x + 1 - z 月</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> z <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        r<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> c<span class="token punctuation">[</span>i <span class="token operator">-</span> x<span class="token punctuation">]</span> <span class="token operator">*</span> y<span class="token punctuation">;</span>
-        c<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> c<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> r<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">//由于题目起点从（0，0）开始，且马的坐标跳跃坐标有 -2，所以不妨所有坐标点均 +2，防止越界</span>
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m <span class="token operator">&gt;&gt;</span> x <span class="token operator">&gt;&gt;</span> y<span class="token punctuation">;</span>
+    n <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    m <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    x <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    y <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//将马可能走到的点的状态置为1</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">8</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        vis<span class="token punctuation">[</span>x <span class="token operator">+</span> horse_x<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y <span class="token operator">+</span> horse_y<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
-    cout <span class="token operator">&lt;&lt;</span> c<span class="token punctuation">[</span>z<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token comment">//计算a数组</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> m<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//此时起点为（2，2）</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">2</span> <span class="token operator">&amp;&amp;</span> j <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>
+                a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+            <span class="token comment">//遇到了障碍点</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>vis<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">else</span>
+                a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//输出结果</span>
+    cout <span class="token operator">&lt;&lt;</span> a<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
 
 
                 
@@ -1210,7 +776,7 @@ ll x<span class="token punctuation">,</span> y<span class="token punctuation">,<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/04/04/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/">https://ricky2333.github.io/2023/04/04/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/</a>
+                    <a href="https://ricky2333.github.io/2023/09/12/xin-xi-ao-sai-ti-jie-guo-he-zu/">https://ricky2333.github.io/2023/09/12/xin-xi-ao-sai-ti-jie-guo-he-zu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1427,53 +993,55 @@ ll x<span class="token punctuation">,</span> y<span class="token punctuation">,<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/04/05/qi-mo-zhi-bei-qian-ru-shi-xi-tong/">
+                <a href="/2023/09/12/xin-xi-ao-sai-ti-jie-guo-he-zu/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="嵌入式系统｜期末指北">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="信息奥赛题解｜过河卒">
                         
-                        <span class="card-title">嵌入式系统｜期末指北</span>
+                        <span class="card-title">信息奥赛题解｜过河卒</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            嵌入式系统常见选择题题解（feat.ChatGPT）
+                            信息奥赛题解｜过河卒
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/" class="post-category">
-                                    嵌入式系统
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    信息奥赛题解
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%9C%9F%E6%9C%AB%E6%8C%87%E5%8C%97/">
-                        <span class="chip bg-color">期末指北</span>
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                        <span class="chip bg-color">信息奥赛</span>
                     </a>
                     
-                    <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/">
-                        <span class="chip bg-color">嵌入式系统</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/ChatGPT/">
-                        <span class="chip bg-color">ChatGPT</span>
+                    <a href="/tags/%E9%80%92%E6%8E%A8/">
+                        <span class="chip bg-color">递推</span>
                     </a>
                     
                 </div>
@@ -1487,30 +1055,30 @@ ll x<span class="token punctuation">,</span> y<span class="token punctuation">,<
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/04/02/python-xue-xi-bi-ji-list/">
+                <a href="/2023/09/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Python学习笔记｜List">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="信息奥赛题解｜踩方格">
                         
-                        <span class="card-title">Python学习笔记｜List</span>
+                        <span class="card-title">信息奥赛题解｜踩方格</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Python学习笔记｜List
+                            信息奥赛题解｜踩方格
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-10
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python%E5%9F%BA%E7%A1%80/" class="post-category">
-                                    Python基础
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    信息奥赛题解
                                 </a>
                             
                             
@@ -1520,12 +1088,16 @@ ll x<span class="token punctuation">,</span> y<span class="token punctuation">,<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                        <span class="chip bg-color">信息奥赛</span>
                     </a>
                     
-                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">学习笔记</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%80%92%E6%8E%A8/">
+                        <span class="chip bg-color">递推</span>
                     </a>
                     
                 </div>
