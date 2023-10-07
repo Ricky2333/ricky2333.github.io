@@ -1,0 +1,1954 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Python VS C（上篇）, Rickyの水果摊">
+    <meta name="description" content="Rickyの个人博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Python VS C（上篇） | Rickyの水果摊</title>
+    <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
+</head>
+
+
+
+   <style>
+    body{
+       background-image: url(https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/598673.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+
+
+
+<body>
+    
+    <div id="loading-box">
+      <div class="loading-left-bg"></div>
+      <div class="loading-right-bg"></div>
+      <div class="spinner-box">
+        <div class="configure-border-1">
+          <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+          <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+      </div>
+    </div>
+    <!-- 页面加载动画 -->
+    <script>
+      $(document).ready(function () {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loading-box').classList.add("loaded")
+      })
+    </script>
+  
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Rickyの水果摊</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/about">
+          
+          <i class="fas fa-user-circle" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>个人主页</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/resume">
+          
+          <i class="fas fa-file" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>个人简历</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/linuxhome">
+          
+          <i class="fa fa-house-damage" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Linux空间</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>随笔</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-tv" style="zoom: 0.6;"></i>
+      
+      <span>二次元</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/bangumis">
+          
+          <i class="fas fa-tv" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>追番列表</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/">
+          
+          <i class="fas fa-comments" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>番剧评价</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Rickyの水果摊</div>
+        <div class="logo-desc">
+            
+            Rickyの个人博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/about " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-user-circle" style="position: absolute;left:50px" ></i>
+			      
+		          <span>个人主页</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/resume " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-file" style="position: absolute;left:50px" ></i>
+			      
+		          <span>个人简历</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/linuxhome " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-house-damage" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Linux空间</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-list"></i>
+			
+			随笔
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-tv"></i>
+			
+			二次元
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/bangumis " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-tv" style="position: absolute;left:50px" ></i>
+			      
+		          <span>追番列表</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/ " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-comments" style="position: absolute;left:50px" ></i>
+			      
+		          <span>番剧评价</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/Ricky2333" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/Ricky2333" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Python VS C（上篇）</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+        background-color: rgb(255, 255, 255,0.7);
+        border-radius: 10px;
+        box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        /* color: #42b983; */
+        color: #20BDFF;
+        font-weight: 700;
+        /* text-decoration: underline; */
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+        /* color: #20BDFF; */
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/CS50/">
+                                <span class="chip bg-color">CS50</span>
+                            </a>
+                        
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C</span>
+                            </a>
+                        
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Python%E5%9F%BA%E7%A1%80/" class="post-category">
+                                Python基础
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-08-26
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    10 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="写在最前-✍️"><a href="#写在最前-✍️" class="headerlink" title="写在最前 ✍️"></a>写在最前 ✍️</h2><p>相信不少科班的同学最先学习的编程语言是 <strong>C语言</strong>。</p>
+<p>之后因为各种各样的需求，就去学习了更多的语言，比如 <strong>Python</strong>，<strong>Java</strong> 等。</p>
+<p>如今 <strong>Python</strong> 的热度可以说是越来越高，依靠其强大的计算生态，Python 牢牢占据 <a target="_blank" rel="noopener" href="https://www.tiobe.com/tiobe-index/">TIOBE 热门编程语言排行榜</a> TOP3 的位置（写稿日：2023 年 4 月 14 日，Python 是 TOP1）。</p>
+<p>相比 C语言，<strong>Python</strong> 在人工智能、数据科学、自动化、网页开发等领域有更加广泛的应用。</p>
+<p>但是从 <strong>基本语法</strong> 的角度来看，Python 和 C语言 <strong>有不少共通之处</strong>。</p>
+<p>所以本文将从这个角度切入，列举 Python 和 C语言 在基础语法上的异同点，帮助已经掌握 C语言的同学更快上手 Python。</p>
+<blockquote>
+<p>本篇博客也是摊主的 <strong><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">CS50</a></strong> 课程学习笔记。</p>
+<p><strong><a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">CS50</a></strong> 是哈佛大学的计算机导论公开课，也是摊主截止目前认为最棒的计算机导论课程。</p>
+<p>授课的 <a target="_blank" rel="noopener" href="https://cs.harvard.edu/malan/">David J. Malan</a> 教授是摊主见过的对计算机教学最热情的老师，也是在计算机基础教学领域对摊主影响最大的一位老师。摊主也希望通过自己的努力，不断向 Malan 教授这样的大牛看齐。</p>
+<p>有兴趣的小伙伴可以点击下面的链接，查看 <strong>CS50</strong> 课程的相关信息。</p>
+<p><strong>CS50</strong> 官方课程网站：<a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">https://cs50.harvard.edu/x/2023/</a></p>
+</blockquote>
+<hr>
+<h2 id="正文（上篇）"><a href="#正文（上篇）" class="headerlink" title="正文（上篇）"></a>正文（上篇）</h2><h3 id="程序运行过程"><a href="#程序运行过程" class="headerlink" title="程序运行过程"></a>程序运行过程</h3><h4 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h4><p>在 <strong>C语言</strong> 中，源代码 <code>test.c</code> 通过 <strong>编译器</strong> 编译为可执行文件 <code>test</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">gcc <span class="token parameter variable">-o</span> <span class="token builtin class-name">test</span> test.c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>执行该文件</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./test<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><p>Python 是 <strong>解释型语言</strong>，不需要编译成可执行文件，源代码 <code>test.py</code> 可以直接被 <strong>解释器</strong> 读取和执行，解释器会逐行解释代码并执行相应的操作。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">python test.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h3 id="库-x2F-模块的导入"><a href="#库-x2F-模块的导入" class="headerlink" title="库/模块的导入"></a>库/模块的导入</h3><h4 id="C语言-1"><a href="#C语言-1" class="headerlink" title="C语言"></a>C语言</h4><p>基本语法</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;...&gt;</span>  <span class="token comment">// 基本语法</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>实例</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span>  <span class="token comment">// 实例</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;math.h&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Python-1"><a href="#Python-1" class="headerlink" title="Python"></a>Python</h4><p>基本语法</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span>            <span class="token comment"># 导入整个模块</span>
+<span class="token keyword">import</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> <span class="token keyword">as</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span>   <span class="token comment"># 导入整个模块并且给模块取别名</span>
+<span class="token keyword">from</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> <span class="token comment"># 导入模块中的某个方法或属性</span>
+<span class="token keyword">from</span> <span class="token operator">&lt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> <span class="token operator">*</span>     <span class="token comment"># 导入模块中的所有方法和属性</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>实例</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> csv
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">from</span> math <span class="token keyword">import</span> sqrt<span class="token punctuation">,</span> sin<span class="token punctuation">,</span> cos
+<span class="token keyword">from</span> datetime <span class="token keyword">import</span> <span class="token operator">*</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="主函数"><a href="#主函数" class="headerlink" title="主函数"></a>主函数</h3><h4 id="C语言-2"><a href="#C语言-2" class="headerlink" title="C语言"></a>C语言</h4><p>在C语言中，主函数 <code>main</code> 是程序执行的起点，它的函数原型如下：</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>其中，<code>argc</code> 表示命令行参数的数量，<code>argv</code> 是一个指向每个参数的指针数组。主函数可以通过命令行参数来接收外部传递进来的数据。</p>
+<p>一些特点</p>
+<ul>
+<li><p><code>main</code> 函数必须存在于程序中，否则编译器会报错。</p>
+</li>
+<li><p><code>main</code> 函数中的代码将按照从上到下的顺序依次执行。</p>
+</li>
+<li><p>程序执行结束后，<code>main</code> 函数可以返回一个整数值，表示程序的执行结果。一般来说，返回值为 0 表示程序执行成功，非零值表示程序执行失败或出错。</p>
+</li>
+</ul>
+<p>C语言 <code>main</code> 函数实例：</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Hello, World!\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="Python-2"><a href="#Python-2" class="headerlink" title="Python"></a>Python</h4><p>Python 中没有像 C 语言中的 <code>main</code> 函数那样的入口函数，整个 Python 脚本都是可执行的。</p>
+<p>但是，<strong>为了方便编写测试代码和模块化编程</strong>，Python 提供了一种 <strong>判断当前脚本是否作为主程序执行</strong> 的方式，即通过判断 <code>__name__</code> 变量的值是否为 <code>"__main__"</code>。</p>
+<ul>
+<li>当 Python 脚本作为主程序执行时，<code>__name__</code> 的值会被设置为 <code>"__main__"</code></li>
+<li>当 Python 脚本作为模块被导入时，<code>__name__</code> 的值会被设置为模块的名称。</li>
+</ul>
+<p>这个特性可以让我们在 Python 脚本中编写一些测试代码，但不会影响到被导入的代码。</p>
+<p>通常，在 Python 脚本的末尾会使用以下代码来判断当前脚本是否作为主程序执行：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+    <span class="token comment"># 在这里编写主程序</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>在这个代码块中，我们可以编写 Python 脚本的主要逻辑。当我们在命令行中执行这个脚本时，就会执行这个代码块中的代码。例如，下面是一个简单的 Python 脚本示例：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">say_hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+    say_hello<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>当我们在命令行中执行这个脚本时，将会输出 <code>"Hello, World!"</code>；而如果我们将这个脚本作为模块导入到其他脚本中时，<code>say_hello</code> 函数不会被执行。</p>
+<hr>
+<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="C-x2F-C"><a href="#C-x2F-C" class="headerlink" title="C/C++"></a>C/C++</h4><table>
+<thead>
+<tr>
+<th align="center">数据类型</th>
+<th align="center">实例</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">bool</td>
+<td align="center"><code>bool is_prime = true</code>、<code>bool is_odd = false</code></td>
+<td align="center">早期 C语言 并不支持 <code>bool</code> 类型，通常用0和1表示<br>而 C++ 支持 <code>bool</code> 类型</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="center"><code>char c = 'b'</code></td>
+<td align="center">表示单个字符</td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center"><code>int n = 10</code></td>
+<td align="center">整数</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center"><code>float a = 1.101</code></td>
+<td align="center">单精度浮点数</td>
+</tr>
+<tr>
+<td align="center">double</td>
+<td align="center"><code>double b = 1.10001</code></td>
+<td align="center">双精度浮点数</td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center"><code>long long n = 10000</code></td>
+<td align="center">长整形</td>
+</tr>
+<tr>
+<td align="center">string</td>
+<td align="center"><code>string s = "hello"</code></td>
+<td align="center">C语言 并没有 <code>string</code> 类型，通常用字符数组或字符指针表示<br>而 C++ 支持 <code>string</code> 类型</td>
+</tr>
+</tbody></table>
+<p>🍉 PS：更多语法细节由于篇幅所限，且本文重点是两个语言的语法对比，故暂不列出，有需要同学可以自行查阅相关细节。</p>
+<h4 id="Python-3"><a href="#Python-3" class="headerlink" title="Python"></a>Python</h4><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>实例</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bool</td>
+<td><code>is_prime = True</code> 、<code>is_odd = False</code></td>
+<td>首字母需大写</td>
+</tr>
+<tr>
+<td>int</td>
+<td><code>num = 10</code></td>
+<td>整数</td>
+</tr>
+<tr>
+<td>float</td>
+<td><code>avg = 33.333</code></td>
+<td>浮点数</td>
+</tr>
+<tr>
+<td>complex</td>
+<td><code>c = 1 + 2j</code></td>
+<td>复数</td>
+</tr>
+<tr>
+<td>str</td>
+<td><code>s = 'hello'</code>、<code>t = "world"</code></td>
+<td>单引号和双引号均可表示字符串</td>
+</tr>
+<tr>
+<td>NoneType</td>
+<td><code>n = None</code></td>
+<td>空类型，表示没有值，用于占位或表示不存在的情况。</td>
+</tr>
+</tbody></table>
+<p>🍉 PS：C 语言中的整数类型有固定的位数，例如 int 类型通常是 32 位或 64 位。而 Python 中的整数类型是动态的，可以表示任意大小的整数。</p>
+<blockquote>
+<p>Python中的列表（list）、集合（set）、字典（dictionary）等将在 Python VS C（下篇）中对比。</p>
+</blockquote>
+<hr>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><h4 id="C语言-3"><a href="#C语言-3" class="headerlink" title="C语言"></a>C语言</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token comment">// 需要指定变量的数据类型</span>
+counter<span class="token operator">++</span><span class="token punctuation">;</span>        <span class="token comment">// 支持++等自增运算符</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p> C 语言是一种 <strong>静态类型语言</strong>，需要 <strong>在使用变量之前明确定义变量的数据类型</strong>。</p>
+<h4 id="Python-4"><a href="#Python-4" class="headerlink" title="Python"></a>Python</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">counter <span class="token operator">=</span> <span class="token number">0</span>  <span class="token comment"># 无需指定变量的数据类型</span>
+counter <span class="token operator">+=</span> <span class="token number">1</span> <span class="token comment"># 不支持++等自增运算符</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>Python 是一种 <strong>动态类型语言</strong>，因此它的数据类型是动态推断的，<strong>不需要事先定义变量的数据类型</strong>。</p>
+<p>🍉PS：Python 中的数据类型通常是对象，具有更加丰富和灵活的操作和属性，例如字符串类型的方法和属性可以方便地进行字符串的处理和操作。而 C 语言中的数据类型则通常是基本数据类型，需要使用函数来进行操作和处理。</p>
+<hr>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>Python 和 C 语言都支持「与」、「或」、「非」等逻辑运算符，但是具体的语法略有不同。</p>
+<h4 id="C语言-4"><a href="#C语言-4" class="headerlink" title="C语言"></a>C语言</h4><ul>
+<li><code>&amp;&amp;</code> 运算符：当两个操作数都为真（非零）时，结果为真，否则为假。</li>
+<li><code>||</code> 运算符：当两个操作数中至少有一个为真（非零）时，结果为真，否则为假。</li>
+<li><code>!</code> 运算符：对操作数取反，即真变为假，假变为真。</li>
+</ul>
+<h4 id="Python-5"><a href="#Python-5" class="headerlink" title="Python"></a>Python</h4><ul>
+<li><p><code>and</code> 运算符：当两个操作数都为 True 时，结果为 True，否则为 False。</p>
+</li>
+<li><p><code>or</code> 运算符：当两个操作数中有至少一个为 True 时，结果为 True，否则为 False。</p>
+</li>
+<li><p><code>not</code> 运算符：对操作数取反，即 True 变为 False，False 变为 True。</p>
+</li>
+</ul>
+<p>🍉 PS：C 语言 中的逻辑运算符 <strong>不具有短路运算</strong> 的特性，总是会计算左右两侧的操作数；而 Python 中的逻辑运算符具有 <strong>短路运算</strong> 的特性，当左侧操作数已经可以确定结果时，右侧操作数不再进行计算。</p>
+<hr>
+<h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>C 示例</th>
+<th>Python 示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>加法</td>
+<td><code>a + b</code></td>
+<td><code>a + b</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>减法</td>
+<td><code>a - b</code></td>
+<td><code>a - b</code></td>
+</tr>
+<tr>
+<td>*</td>
+<td>乘法</td>
+<td><code>a * b</code></td>
+<td><code>a * b</code></td>
+</tr>
+<tr>
+<td>/</td>
+<td>浮点除法</td>
+<td><code>a / b</code></td>
+<td><code>a / b</code></td>
+</tr>
+<tr>
+<td>%</td>
+<td>取模</td>
+<td><code>a % b</code></td>
+<td><code>a % b</code></td>
+</tr>
+<tr>
+<td>/</td>
+<td>整除</td>
+<td><code>a / b</code></td>
+<td><code>a // b</code></td>
+</tr>
+<tr>
+<td>$a^b$</td>
+<td>幂运算</td>
+<td><code>pow()</code></td>
+<td><code>a ** b</code></td>
+</tr>
+</tbody></table>
+<p>🍉 PS1：在 C 语言中，没有幂运算符，需要使用库函数 <code>pow()</code> 来进行幂运算，且 <code>pow()</code> 函数返回的是一个浮点数值，需要进行类型转换才能得到整数类型的结果。</p>
+<p>例如：</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;math.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token function">pow</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// c 的值为 8，</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>🍉 PS2：需要注意的是，在 C 语言中进行整数除法时，如果两个操作数都是整数，则除法运算符 <code>/</code> 返回的是一个整数值，会向下取整；而在 Python 中，除法运算符 <code>/</code> 返回的是一个浮点数值。</p>
+<hr>
+<h3 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h3><p>Python 和 C 语言中的位运算符均包括按位与（&amp;）、按位或（|）、按位异或（^）、按位取反（~）、左移位（&lt;&lt;）和右移位（&gt;&gt;）等运算。</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>C 示例</th>
+<th>Python 示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>按位与</td>
+<td><code>a &amp; b</code></td>
+<td><code>a &amp; b</code></td>
+</tr>
+<tr>
+<td>|</td>
+<td>按位或</td>
+<td><code>a | b</code></td>
+<td><code>a | b</code></td>
+</tr>
+<tr>
+<td>^</td>
+<td>按位异或</td>
+<td><code>a ^ b</code></td>
+<td><code>a ^ b</code></td>
+</tr>
+<tr>
+<td>~</td>
+<td>按位取反</td>
+<td><code>~a</code></td>
+<td><code>~a</code></td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>左移位</td>
+<td><code>a &lt;&lt; b</code></td>
+<td><code>a &lt;&lt; b</code></td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>右移位</td>
+<td><code>a &gt;&gt; b</code></td>
+<td><code>a &gt;&gt; b</code></td>
+</tr>
+</tbody></table>
+<p>🍉 PS1：C 语言中的位运算符只能用于整数类型，包括有符号整数和无符号整数，而 Python 中的位运算符可以用于整数类型和布尔类型，布尔类型会被转换为整数类型（True 转换为 1，False 转换为 0）。</p>
+<p>🍉 PS2：Python 和 C 语言的右移运算符（&gt;&gt;）在处理有符号整数时表现不同。Python 对负数的右移是向零舍入（也称为算术右移），而 C 语言的行为是依赖于编译器实现的（可能是算术右移或逻辑右移）。</p>
+<hr>
+<h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><h4 id="C语言-5"><a href="#C语言-5" class="headerlink" title="C语言"></a>C语言</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&gt;</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"x &gt; y\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">==</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"x = y\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"x &lt; y\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Python-6"><a href="#Python-6" class="headerlink" title="Python"></a>Python</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">x <span class="token operator">=</span> <span class="token number">3</span>
+y <span class="token operator">=</span> <span class="token number">5</span>
+<span class="token keyword">if</span> x <span class="token operator">&gt;</span> y<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x &gt; y"</span><span class="token punctuation">)</span>
+<span class="token keyword">elif</span> x <span class="token operator">==</span> y<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x = y"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x &lt; y"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>不同点：</p>
+<ul>
+<li>C语言的条件表达式需要由括号<code>()</code> 括起来，而 Python 的条件表达式无需添加 <code>()</code> （但是加了也没错）</li>
+<li>C语言使用 <strong>花括号</strong> <code>{}</code> 来表示代码块，而 Python 使用 <strong>缩进</strong> 来表示代码块，且需要在条件表达式后添加 <code>:</code></li>
+<li>C语言使用 <code>else if</code>，而 Python 使用 <code>elif</code></li>
+</ul>
+<hr>
+<h2 id="写在最后-✍️"><a href="#写在最后-✍️" class="headerlink" title="写在最后 ✍️"></a>写在最后 ✍️</h2><p>由于篇幅有限，且为了读者更好的阅读体验，摊主把内容拆成了上篇和下篇，更多对比内容见 <a target="_blank" rel="noopener" href="https://rickyxcoder.top/2023/04/15/python-vs-c-xia-pian/">Python VS C（下篇）</a>☘️</p>
+<hr>
+<h2 id="参考资料-📚"><a href="#参考资料-📚" class="headerlink" title="参考资料 📚"></a>参考资料 📚</h2><p>Python官方教程：<a target="_blank" rel="noopener" href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a></p>
+<p>CS50：<a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2023/">https://cs50.harvard.edu/x/2023/</a></p>
+<p>ChatGPT：<a target="_blank" rel="noopener" href="https://openai.com/blog/chatgpt">https://openai.com/blog/chatgpt</a></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Rickyの水果摊</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://ricky2333.github.io/2023/08/26/python-vs-c-shang-pian/">https://ricky2333.github.io/2023/08/26/python-vs-c-shang-pian/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Rickyの水果摊</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/CS50/">
+                                    <span class="chip bg-color">CS50</span>
+                                </a>
+                            
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C</span>
+                                </a>
+                            
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/08/28/python-vs-c-xia-pian/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/30.jpg" class="responsive-img" alt="Python VS C（下篇）">
+                        
+                        <span class="card-title">Python VS C（下篇）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            CS50学习笔记｜Python VS C（下篇）
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-08-28
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Rickyの水果摊
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/CS50/">
+                        <span class="chip bg-color">CS50</span>
+                    </a>
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C</span>
+                    </a>
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/08/24/jiao-xue-fan-si-xiao-shi-fan-ji-neng-kao-he/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="教学反思｜校师范技能考核">
+                        
+                        <span class="card-title">教学反思｜校师范技能考核</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            教学反思｜校师范技能考核模拟上课环节
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B8%88%E8%8C%83%E6%8A%80%E8%83%BD/" class="post-category">
+                                    师范技能
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%B8%88%E8%8C%83%E6%8A%80%E8%83%BD/">
+                        <span class="chip bg-color">师范技能</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%A8%A1%E6%8B%9F%E4%B8%8A%E8%AF%BE/">
+                        <span class="chip bg-color">模拟上课</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%99%E5%AD%A6%E5%8F%8D%E6%80%9D/">
+                        <span class="chip bg-color">教学反思</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        // if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+        //     newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        // }
+        newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Rickyの水果摊<br />'
+            + '文章作者: Rickyの水果摊<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <!-- <div class="toc-widget card" style="background-color: white;"> -->
+        <div class="toc-widget card">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        // tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8891306868"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2023</span>
+            
+            <!-- <span id="year">2023</span> -->
+            <a href="/about" target="_blank">Rickyの水果摊</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            <!-- |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a> -->
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">164.1k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2023";
+                    var startMonth = "3";
+                    var startDate = "24";
+                    var startHour = "7";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Ricky2333" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:rickyxlearner@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=775641698" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 775641698" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 白天和黑夜主题 -->
+<div class="sum-moon-box">
+    <a class="btn-floating btn-large waves-effect waves-light" onclick="switchNightMode()" title="切换主题" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="width:48px; height:48px; font-size: 28px;"></i>
+    </a>
+  </div>
+  
+  <script>
+    function switchNightMode() {
+      sessionStorage.setItem('changeTheme', true)
+      $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+          $('#dark-mode').length > 0
+          ? (document.body.removeAttribute('id'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon'))
+          : (document.body.setAttribute('id', 'dark-mode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+  
+          setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+              $(this).remove()
+            })
+          }, 2e3)
+        })
+    }
+  </script>
+
+  <!-- <div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script> -->
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "🍉收摊回家啦<（@￣︶￣@）>", clearTimeout(st)) : (document.title = "🍉摊主回来了 (*￣▽￣*)ブ", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
+
+    <!-- Baidu Analytics -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fa6c571338ef69fd41a561901f549e84";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    <!-- 冒泡 -->
+    
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            document.write(
+                '<script type="text/javascript" src="/libs/others/buble.js"><\/script>'
+            );
+        </script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
