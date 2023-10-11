@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-10-07T13:30:25.996Z</updated>
+  <updated>2023-10-11T09:19:38.454Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,98 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>信息奥赛题单｜前缀和差分</title>
+    <link href="https://ricky2333.github.io/2023/10/11/xin-xi-ao-sai-ti-dan-qian-zhui-he-yu-chai-fen/"/>
+    <id>https://ricky2333.github.io/2023/10/11/xin-xi-ao-sai-ti-dan-qian-zhui-he-yu-chai-fen/</id>
+    <published>2023-10-11T08:52:13.000Z</published>
+    <updated>2023-10-11T09:19:38.454Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前缀和与差分&quot;&gt;&lt;a href=&quot;#前缀和与差分&quot; class=&quot;headerlink&quot; title=&quot;前缀和与差分&quot;&gt;&lt;/a&gt;前缀和与差分&lt;/h1&gt;&lt;h2 id=&quot;题单-🧑🏻‍💻&quot;&gt;&lt;a href=&quot;#题单-🧑🏻‍💻&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="前缀和" scheme="https://ricky2333.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+    <category term="差分" scheme="https://ricky2333.github.io/tags/%E5%B7%AE%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛｜前缀和与差分</title>
+    <link href="https://ricky2333.github.io/2023/10/11/xin-xi-ao-sai-qian-zhui-he-yu-chai-fen/"/>
+    <id>https://ricky2333.github.io/2023/10/11/xin-xi-ao-sai-qian-zhui-he-yu-chai-fen/</id>
+    <published>2023-10-11T04:12:34.000Z</published>
+    <updated>2023-10-11T09:27:05.575Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛｜前缀和与差分&quot;&gt;&lt;a href=&quot;#信息奥赛｜前缀和与差分&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛｜前缀和与差分&quot;&gt;&lt;/a&gt;信息奥赛｜前缀和与差分&lt;/h1&gt;&lt;h2 id=&quot;知识点概览-🚀&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛知识点" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="前缀和" scheme="https://ricky2333.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+    <category term="差分" scheme="https://ricky2333.github.io/tags/%E5%B7%AE%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>日本語入门｜Hiragana</title>
+    <link href="https://ricky2333.github.io/2023/10/10/ri-yu-ru-men-hiragana/"/>
+    <id>https://ricky2333.github.io/2023/10/10/ri-yu-ru-men-hiragana/</id>
+    <published>2023-10-10T09:48:32.000Z</published>
+    <updated>2023-10-10T16:00:28.993Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;ひらがな｜Hiragana｜平假名&quot;&gt;&lt;a href=&quot;#ひらがな｜Hiragana｜平假名&quot; class=&quot;headerlink&quot; title=&quot;ひらがな｜Hiragana｜平假名&quot;&gt;&lt;/a&gt;ひらがな｜Hiragana｜平假名&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="日本語" scheme="https://ricky2333.github.io/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+    
+    <category term="日本語" scheme="https://ricky2333.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+  </entry>
+  
+  <entry>
     <title>信息奥赛｜STL｜vector</title>
-    <link href="https://ricky2333.github.io/2023/10/07/stl-vector/"/>
-    <id>https://ricky2333.github.io/2023/10/07/stl-vector/</id>
+    <link href="https://ricky2333.github.io/2023/10/07/xin-xi-ao-sai-stl-vector/"/>
+    <id>https://ricky2333.github.io/2023/10/07/xin-xi-ao-sai-stl-vector/</id>
     <published>2023-10-07T11:48:07.000Z</published>
-    <updated>2023-10-07T13:30:25.996Z</updated>
+    <updated>2023-10-11T09:13:46.678Z</updated>
     
     
       
@@ -34,7 +121,7 @@
     
     
     
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    <category term="信息奥赛知识点" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
     
     <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
@@ -196,11 +283,11 @@
   </entry>
   
   <entry>
-    <title>信息奥赛实训报告｜STL</title>
+    <title>信息奥赛题单｜STL</title>
     <link href="https://ricky2333.github.io/2023/09/01/xin-xi-ao-sai-shi-xun-bao-gao-stl/"/>
     <id>https://ricky2333.github.io/2023/09/01/xin-xi-ao-sai-shi-xun-bao-gao-stl/</id>
     <published>2023-09-01T04:17:38.000Z</published>
-    <updated>2023-09-18T04:34:41.345Z</updated>
+    <updated>2023-10-11T08:57:24.852Z</updated>
     
     
       
@@ -213,7 +300,7 @@
     
     
     
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
     
     
     <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
@@ -505,93 +592,6 @@
     <category term="TPO Reading" scheme="https://ricky2333.github.io/tags/TPO-Reading/"/>
     
     <category term="English" scheme="https://ricky2333.github.io/tags/English/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TOEFL｜Vocab Hydrology</title>
-    <link href="https://ricky2333.github.io/2023/08/07/toefl-vocab-hydrology/"/>
-    <id>https://ricky2333.github.io/2023/08/07/toefl-vocab-hydrology/</id>
-    <published>2023-08-07T07:47:45.000Z</published>
-    <updated>2023-08-22T08:21:07.555Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;TOEFL-Vocabulary-feat-ChatGPT&quot;&gt;&lt;a href=&quot;#TOEFL-Vocabulary-feat-ChatGPT&quot; class=&quot;headerlink&quot; title=&quot;TOEFL Vocabulary</summary>
-        
-      
-    
-    
-    
-    <category term="TOEFL" scheme="https://ricky2333.github.io/categories/TOEFL/"/>
-    
-    
-    <category term="TOEFL" scheme="https://ricky2333.github.io/tags/TOEFL/"/>
-    
-    <category term="English" scheme="https://ricky2333.github.io/tags/English/"/>
-    
-    <category term="Vocabulary" scheme="https://ricky2333.github.io/tags/Vocabulary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TOEFL｜Vocab Linguistics</title>
-    <link href="https://ricky2333.github.io/2023/08/06/toefl-vocab-linguistics/"/>
-    <id>https://ricky2333.github.io/2023/08/06/toefl-vocab-linguistics/</id>
-    <published>2023-08-06T12:38:59.000Z</published>
-    <updated>2023-08-10T13:57:35.643Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;TOEFL-Vocabulary-feat-ChatGPT&quot;&gt;&lt;a href=&quot;#TOEFL-Vocabulary-feat-ChatGPT&quot; class=&quot;headerlink&quot; title=&quot;TOEFL Vocabulary</summary>
-        
-      
-    
-    
-    
-    <category term="TOEFL" scheme="https://ricky2333.github.io/categories/TOEFL/"/>
-    
-    
-    <category term="TOEFL" scheme="https://ricky2333.github.io/tags/TOEFL/"/>
-    
-    <category term="English" scheme="https://ricky2333.github.io/tags/English/"/>
-    
-    <category term="Vocabulary" scheme="https://ricky2333.github.io/tags/Vocabulary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TOEFL｜Vocab Mineralogy</title>
-    <link href="https://ricky2333.github.io/2023/08/06/toefl-vocab-mineralogy/"/>
-    <id>https://ricky2333.github.io/2023/08/06/toefl-vocab-mineralogy/</id>
-    <published>2023-08-06T09:55:50.000Z</published>
-    <updated>2023-08-20T10:26:48.511Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;TOEFL-Vocabulary-feat-ChatGPT&quot;&gt;&lt;a href=&quot;#TOEFL-Vocabulary-feat-ChatGPT&quot; class=&quot;headerlink&quot; title=&quot;TOEFL Vocabulary</summary>
-        
-      
-    
-    
-    
-    <category term="TOEFL" scheme="https://ricky2333.github.io/categories/TOEFL/"/>
-    
-    
-    <category term="TOEFL" scheme="https://ricky2333.github.io/tags/TOEFL/"/>
-    
-    <category term="English" scheme="https://ricky2333.github.io/tags/English/"/>
-    
-    <category term="Vocabulary" scheme="https://ricky2333.github.io/tags/Vocabulary/"/>
     
   </entry>
   
