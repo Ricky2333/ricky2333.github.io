@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="信息奥赛题单｜整数二分, Rickyの水果摊">
+    <meta name="keywords" content="信息奥赛题单｜浮点数二分, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信息奥赛题单｜整数二分 | Rickyの水果摊</title>
+    <title>信息奥赛题单｜浮点数二分 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -474,12 +474,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/32.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信息奥赛题单｜整数二分</h1>
+                    <h1 class="description center-align post-title">信息奥赛题单｜浮点数二分</h1>
                 </div>
             </div>
         </div>
@@ -612,8 +612,8 @@
                                 <span class="chip bg-color">二分</span>
                             </a>
                         
-                            <a href="/tags/%E6%95%B4%E6%95%B0%E4%BA%8C%E5%88%86/">
-                                <span class="chip bg-color">整数二分</span>
+                            <a href="/tags/%E6%B5%AE%E7%82%B9%E6%95%B0%E4%BA%8C%E5%88%86/">
+                                <span class="chip bg-color">浮点数二分</span>
                             </a>
                         
                     </div>
@@ -637,7 +637,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-10-14
+                    2023-10-13
                 </div>
                 
 
@@ -646,14 +646,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    5 分
                 </div>
                 
 
@@ -676,7 +676,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="整数二分"><a href="#整数二分" class="headerlink" title="整数二分"></a>整数二分</h1><h2 id="题单-🧑🏻‍💻"><a href="#题单-🧑🏻‍💻" class="headerlink" title="题单 🧑🏻‍💻"></a>题单 🧑🏻‍💻</h2><table>
+                <h1 id="浮点数二分"><a href="#浮点数二分" class="headerlink" title="浮点数二分"></a>浮点数二分</h1><h2 id="题单-🧑🏻‍💻"><a href="#题单-🧑🏻‍💻" class="headerlink" title="题单 🧑🏻‍💻"></a>题单 🧑🏻‍💻</h2><table>
 <thead>
 <tr>
 <th align="center">题目来源</th>
@@ -744,233 +744,144 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="题解-🚀"><a href="#题解-🚀" class="headerlink" title="题解 🚀"></a>题解 🚀</h2><h4 id="🧑🏻‍💻-整数二分-实"><a href="#🧑🏻‍💻-整数二分-实" class="headerlink" title="🧑🏻‍💻 整数二分 实"></a>🧑🏻‍💻 整数二分 实</h4><h5 id="【题目名称】查找"><a href="#【题目名称】查找" class="headerlink" title="【题目名称】查找"></a>【题目名称】查找</h5><h5 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>输入 $n$ 个不超过 $10^9$ 的单调不减的（就是后面的数字不小于前面的数字）非负整数 $a_1,a_2,\dots,a_{n}$，然后进行 $m$ 次询问。对于每次询问，给出一个整数 $q$，要求输出这个数字在序列中第一次出现的编号，如果没有找到的话输出 $-1$ 。</p>
-<h5 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行 $2$ 个整数 $n$ 和 $m$，表示数字个数和询问次数。</p>
-<p>第二行 $n$ 个整数，表示这些待查询的数字。</p>
-<p>第三行 $m$ 个整数，表示询问这些数字的编号，从 $1$ 开始编号。</p>
-<h5 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h5><p>输出一行，$m$ 个整数，以空格隔开，表示答案。</p>
-<h5 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>$1≤N≤300$</p>
-<h5 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">11</span> <span class="token number">3</span>
-<span class="token number">1</span> <span class="token number">3</span> <span class="token number">3</span> <span class="token number">3</span> <span class="token number">5</span> <span class="token number">7</span> <span class="token number">9</span> <span class="token number">11</span> <span class="token number">13</span> <span class="token number">15</span> <span class="token number">15</span>
-<span class="token number">1</span> <span class="token number">3</span> <span class="token number">6</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">1</span> <span class="token number">2</span> <span class="token operator">-</span><span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h5 id="【数据范围】-1"><a href="#【数据范围】-1" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>数据保证，$1 \leq n \leq 10^6$，$0 \leq a_i,q \leq 10^9$，$1 \leq m \leq 10^5$</p>
-<p>本题输入输出量较大，请使用较快的 IO 方式。</p>
-<h5 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P2249">https://www.luogu.com.cn/problem/P2249</a></p>
+<h2 id="题解-🚀"><a href="#题解-🚀" class="headerlink" title="题解 🚀"></a>题解 🚀</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h4 id="🧑🏻‍💻-浮点数二分-实例1"><a href="#🧑🏻‍💻-浮点数二分-实例1" class="headerlink" title="🧑🏻‍💻 浮点数二分 实例1"></a>🧑🏻‍💻 浮点数二分 实例1</h4><h5 id="【题目名称】查找"><a href="#【题目名称】查找" class="headerlink" title="【题目名称】查找"></a>【题目名称】查找</h5><h5 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>有函数：$f(x)=x^5−15x^4+85x^3−225x^2+274x−121$</p>
+<p>已知 $f(1.5) \gt 0,f(2.4) \lt 0$ 且方程 $f(x)=0$ 在区间 $[1.5,2.4]$ 有且只有一个根，请用二分法求出该根。</p>
+<h5 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h5><p>无</p>
+<h5 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h5><p>该方程在区间 $[1.5,2.4]$中的根。要求四舍五入到小数点后 $6$ 位。</p>
+<h5 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>无</p>
+<h5 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><p>无</p>
+<h5 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><p>无</p>
+<h5 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1241">http://ybt.ssoier.cn:8088/problem_show.php?pid=1241</a></p>
 <hr>
-<h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>本题是整数二分一个非常经典的问题，查找第一个 x 出现的下标，需要自己按照 y总 讲解的方法推导理解一下。</p>
-<p>当然，本题也可以使用 <code>STL</code> 中的 <code>lower_bound</code>。 它的返回值是第一个大于等于 x 的迭代器，若要转化成下标，需要减去 <code>v.begin()</code>；若要转化成 第几个，则还要在下标的基础上 + 1。</p>
-<p>比如对于 1 2 3 3 4 5</p>
-<ul>
-<li><code>lower_bound(v.begin(),v.end(),3)</code> 会返回第一个 3 的迭代器</li>
-<li><code>lower_bound(v.begin(),v.end(),3) - v.begin()</code> 会返回第一个 3 的下标</li>
-<li><code>lower_bound(v.begin(),v.end(),3) - v.begin() + 1</code> 会返回第一个 3 在数组中是第几个数</li>
-</ul>
-<h5 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><p>代码1：整数二分</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+<h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>求 <strong>函数零点</strong>、<strong>数的平方根</strong> 等问题是 <strong>浮点数二分</strong> 一些非常经典的问题，在 <strong>观看视频1</strong> 后，只需要在理解模版的基础上使用模版即可。</p>
+<p>🍉  PS：一般题目要求输出 6 位小数，则 <code>l</code> 与 <code>r</code> 的误差取 <code>const double eps=1e-8</code>，一般再往后两位。</p>
+<p>🍉  PS2：慎用 C/C++ 的 <code>pow</code> 函数，有时候会有坑，详见其他博客。</p>
+<h5 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e6</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> x<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">double</span> eps <span class="token operator">=</span> <span class="token number">1e-8</span><span class="token punctuation">;</span>  <span class="token comment">//定义误差</span>
+
+<span class="token keyword">double</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">double</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//定义函数</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">double</span> l <span class="token operator">=</span> <span class="token number">1.5</span><span class="token punctuation">,</span> r <span class="token operator">=</span> <span class="token number">2.4</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>r <span class="token operator">-</span> l <span class="token operator">&gt;</span> eps<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">double</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">f</span><span class="token punctuation">(</span>mid<span class="token punctuation">)</span> <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> r <span class="token operator">=</span> mid<span class="token punctuation">;</span>   <span class="token comment">//原函数在 [1.5,2.4] 递减</span>
+        <span class="token keyword">else</span> l <span class="token operator">=</span> mid<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    cout <span class="token operator">&lt;&lt;</span> fixed <span class="token operator">&lt;&lt;</span> <span class="token function">setprecision</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> l <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">double</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">double</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> x <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">-</span> <span class="token number">15</span> <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">+</span> <span class="token number">85</span> <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">-</span> <span class="token number">225</span> <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">+</span> <span class="token number">274</span> <span class="token operator">*</span> x <span class="token operator">-</span> <span class="token number">121</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<hr>
+<h4 id="🧑🏻‍💻-浮点数二分-实例2"><a href="#🧑🏻‍💻-浮点数二分-实例2" class="headerlink" title="🧑🏻‍💻 浮点数二分 实例2"></a>🧑🏻‍💻 浮点数二分 实例2</h4><h5 id="【题目名称】数的三次方根"><a href="#【题目名称】数的三次方根" class="headerlink" title="【题目名称】数的三次方根"></a>【题目名称】数的三次方根</h5><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>给定一个浮点数 $n$，求它的三次方根。</p>
+<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p>共一行，包含一个浮点数 $n$。</p>
+<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>共一行，包含一个浮点数，表示问题的解。</p>
+<p>注意，结果保留 $6$ 位小数。</p>
+<h5 id="【输入样例】-1"><a href="#【输入样例】-1" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">1000.00</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【输出样例】-1"><a href="#【输出样例】-1" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">10.000000</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【数据范围】-1"><a href="#【数据范围】-1" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>$−10000 \le n \le 10000$</p>
+<h5 id="【原题链接】-1"><a href="#【原题链接】-1" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/792/">https://www.acwing.com/problem/content/792/</a></p>
+<hr>
+<h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>求 <strong>函数零点</strong>、<strong>数的平方根</strong> 等问题是 <strong>浮点数二分</strong> 一些非常经典的问题，在 <strong>观看视频1</strong> 后，只需要在理解模版的基础上使用模版即可。</p>
+<p>🍉  PS：一般题目要求输出 6 位小数，则 <code>l</code> 与 <code>r</code> 的误差取 <code>const double eps=1e-8</code>，一般再往后两位。</p>
+<p>🍉  PS2：该题存在负数的情况，需要 <strong>重点考虑上下限的划分</strong>。</p>
+<h5 id="【C-代码】-1"><a href="#【C-代码】-1" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">double</span> eps <span class="token operator">=</span> <span class="token number">1e-8</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">double</span> MAX <span class="token operator">=</span> <span class="token number">1e5</span><span class="token punctuation">;</span>
+
+<span class="token keyword">double</span> n<span class="token punctuation">;</span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
     cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cin <span class="token operator">&gt;&gt;</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+    <span class="token comment">//根据题目范围确定上下限（有负数情况）</span>
+    <span class="token keyword">double</span> l <span class="token operator">=</span> <span class="token operator">-</span>MAX<span class="token punctuation">,</span> r <span class="token operator">=</span> MAX<span class="token punctuation">;</span>
+
+    <span class="token comment">//浮点数二分模版</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>r <span class="token operator">-</span> l <span class="token operator">&gt;</span> eps<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">double</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>mid <span class="token operator">*</span> mid <span class="token operator">*</span> mid <span class="token operator">&lt;=</span> n<span class="token punctuation">)</span>
+            l <span class="token operator">=</span> mid<span class="token punctuation">;</span>
+        <span class="token keyword">else</span>
+            r <span class="token operator">=</span> mid<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>m<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span>
-
-        <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n<span class="token punctuation">;</span> <span class="token comment">//确定边界</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>l <span class="token operator">&lt;</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> x<span class="token punctuation">)</span> r <span class="token operator">=</span> mid<span class="token punctuation">;</span>    <span class="token comment">//r = mid，模版1</span>
-            <span class="token keyword">else</span> l <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-
-        <span class="token comment">//退出循环，l=r</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"-1 "</span><span class="token punctuation">;</span>
-        <span class="token keyword">else</span> cout <span class="token operator">&lt;&lt;</span> l <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> fixed <span class="token operator">&lt;&lt;</span> <span class="token function">setprecision</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> l <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>代码2：STL 中的 <code>lower_bound</code></p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
-
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e6</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> x<span class="token punctuation">,</span> tmp<span class="token punctuation">;</span>
-vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> v<span class="token punctuation">;</span>
-vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token double-colon punctuation">::</span>iterator it<span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
-    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
-    <span class="token comment">//将数据读入 vector中</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cin <span class="token operator">&gt;&gt;</span> tmp<span class="token punctuation">;</span>
-        v<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>m<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span>
-
-        <span class="token comment">//lower_bound 返回指针，由于要求的下标是数值，故减去 v.begin()</span>
-        <span class="token comment">//只有vector支持这样的减法</span>
-        <span class="token keyword">int</span> idx <span class="token operator">=</span> <span class="token function">lower_bound</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> v<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> x<span class="token punctuation">)</span> <span class="token operator">-</span> v<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>v<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"-1 "</span><span class="token punctuation">;</span>
-        <span class="token keyword">else</span> cout <span class="token operator">&lt;&lt;</span> idx <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
-
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<h4 id="🧑🏻‍💻-整数二分-实例2"><a href="#🧑🏻‍💻-整数二分-实例2" class="headerlink" title="🧑🏻‍💻 整数二分 实例2"></a>🧑🏻‍💻 整数二分 实例2</h4><h5 id="【题目名称】数的范围"><a href="#【题目名称】数的范围" class="headerlink" title="【题目名称】数的范围"></a>【题目名称】数的范围</h5><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>给定一个按照升序排列的长度为 $n$ 的整数数组，以及 $q$ 个查询。</p>
-<p>对于每个查询，返回一个元素 $k$ 的起始位置和终止位置（位置从 $0$ 开始计数）。</p>
-<p>如果数组中不存在该元素，则返回 <code>-1 -1</code>。</p>
-<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行包含整数 $n$ 和 $q$，表示数组长度和询问个数。</p>
-<p>第二行包含 $n$ 个整数（均在 $1∼10000$ 范围内），表示完整数组。</p>
-<p>接下来 $q$ 行，每行包含一个整数 $k$，表示一个询问元素。</p>
-<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>共 $q$ 行，每行包含两个整数，表示所求元素的起始位置和终止位置。</p>
-<p>如果数组中不存在该元素，则返回 <code>-1 -1</code>。</p>
-<h5 id="【输入样例】-1"><a href="#【输入样例】-1" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span> <span class="token number">3</span>
-<span class="token number">1</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">3</span> <span class="token number">4</span>
-<span class="token number">3</span>
-<span class="token number">4</span>
-<span class="token number">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="【输出样例】-1"><a href="#【输出样例】-1" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span> <span class="token number">4</span>
-<span class="token number">5</span> <span class="token number">5</span>
-<span class="token operator">-</span><span class="token number">1</span> <span class="token operator">-</span><span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="【数据范围】-2"><a href="#【数据范围】-2" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>$1 \le n \le 100000$</p>
-<p>$1 \le q \le 10000$</p>
-<p>$1 \le k \le 10000$</p>
-<h5 id="【原题链接】-1"><a href="#【原题链接】-1" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/791/">https://www.acwing.com/problem/content/791/</a></p>
 <hr>
-<h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>本题是 <strong>整数二分</strong> 的模版题，在理解模版的基础上使用模版即可。</p>
-<p>当然，本题也可以使用 <code>STL</code> 中的 <code>lower_bound</code>。 它的返回值是第一个大于等于 x 的迭代器，若要转化成下标，需要减去 <code>v.begin()</code>；若要转化成 第几个，则还要在下标的基础上 + 1。</p>
-<p>比如对于 1 2 3 3 4 5</p>
-<ul>
-<li><code>lower_bound(v.begin(),v.end(),3)</code> 会返回第一个 3 的迭代器</li>
-<li><code>lower_bound(v.begin(),v.end(),3) - v.begin()</code> 会返回第一个 3 的下标</li>
-<li><code>lower_bound(v.begin(),v.end(),3) - v.begin() + 1</code> 会返回第一个 3 在数组中是第几个数</li>
-</ul>
-<h5 id="【C-代码】-1"><a href="#【C-代码】-1" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><p>代码1：整数二分</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+<h4 id="🧑🏻‍💻-浮点数二分-实例3"><a href="#🧑🏻‍💻-浮点数二分-实例3" class="headerlink" title="🧑🏻‍💻 浮点数二分 实例3"></a>🧑🏻‍💻 浮点数二分 实例3</h4><h5 id="【题目名称】杰哥的难题1"><a href="#【题目名称】杰哥的难题1" class="headerlink" title="【题目名称】杰哥的难题1"></a>【题目名称】杰哥的难题1</h5><h5 id="【题目描述】-2"><a href="#【题目描述】-2" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>有一天，杰哥在做高数的时候遇到下面这道难题，杰哥百思不得其解。于是他向聪明的程序员你来求助。你能帮助他解决这道题吗？</p>
+<p>对于给定的 $Y$，求 $8<em>x^4 + 7</em>x^3 + 2<em>x^2 + 3</em>x + 6 = Y$ 这个方程，在 $0&lt;=x&lt;=100$ 中的实数解。</p>
+<h5 id="【输入】-2"><a href="#【输入】-2" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行包含一个正整数 $T(1&lt;=T&lt;=100)$，代表有多少组测试样例。</p>
+<p>接下来T行，每行一个实数 $Y(fabs(Y)&lt;=1e10)$。</p>
+<h5 id="【输出】-2"><a href="#【输出】-2" class="headerlink" title="【输出】"></a>【输出】</h5><p>对于每一个测试样例，输出一个实数(小数点后保留 $4$ 位)，代表该方程的解。</p>
+<p>如果该方程在 $0$ ~ $100$ 没有解，则输出”No solution!”</p>
+<h5 id="【输入样例】-2"><a href="#【输入样例】-2" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span>
+<span class="token number">100</span>
+<span class="token operator">-</span><span class="token number">4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例】-2"><a href="#【输出样例】-2" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">1.6152</span>
+No solution<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<hr>
+<h5 id="【题目分析】-2"><a href="#【题目分析】-2" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">double</span> eps <span class="token operator">=</span> <span class="token number">1e-8</span><span class="token punctuation">;</span>
 
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> x<span class="token punctuation">;</span>
-<span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">double</span> y<span class="token punctuation">;</span>
 
-<span class="token comment">//整数二分</span>
-<span class="token keyword">void</span> <span class="token function">bs</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n<span class="token punctuation">;</span> <span class="token comment">//定义边界</span>
+<span class="token keyword">double</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">double</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">8</span> <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">+</span> <span class="token number">7</span> <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">+</span> <span class="token number">3</span> <span class="token operator">*</span> x <span class="token operator">+</span> <span class="token number">6</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-    <span class="token comment">//寻找第一个大于等于x的数</span>
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>l <span class="token operator">&lt;</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> mid <span class="token operator">=</span> l <span class="token operator">+</span> r <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> x<span class="token punctuation">)</span>    <span class="token comment">//需要寻找x，a[mid]要满足这一个性质，此时需要x在a[mid]左边，a[mid]要向左边的x靠近</span>
-            r <span class="token operator">=</span> mid<span class="token punctuation">;</span>    <span class="token comment">//模版1</span>
-        <span class="token keyword">else</span>
-            l <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">bool</span> <span class="token function">check</span><span class="token punctuation">(</span><span class="token keyword">double</span> k<span class="token punctuation">,</span> <span class="token keyword">double</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">f</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span> <span class="token operator">&lt;=</span> y<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">else</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 二分</span>
+<span class="token keyword">void</span> <span class="token function">solve</span><span class="token punctuation">(</span><span class="token keyword">double</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 左右边界</span>
+    <span class="token keyword">double</span> l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> r <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token comment">// 二分</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>r <span class="token operator">-</span> l <span class="token operator">&gt;</span> eps<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">double</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">check</span><span class="token punctuation">(</span>mid<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">)</span> l <span class="token operator">=</span> mid<span class="token punctuation">;</span>
+        <span class="token keyword">else</span> r <span class="token operator">=</span> mid<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span>
-        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"-1 "</span><span class="token punctuation">;</span>
-    <span class="token keyword">else</span>
-        cout <span class="token operator">&lt;&lt;</span> l <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>   <span class="token comment">//原题下标从0开始</span>
-
-    <span class="token comment">//寻找最后一个小于等于x的数</span>
-    l <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n<span class="token punctuation">;</span>
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>l <span class="token operator">&lt;</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> mid <span class="token operator">=</span> l <span class="token operator">+</span> r <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> x<span class="token punctuation">)</span>
-            l <span class="token operator">=</span> mid<span class="token punctuation">;</span>   <span class="token comment">//模版2，mid = l + r + 1 &gt;&gt; 1</span>
-        <span class="token keyword">else</span>
-            r <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span>
-        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"-1"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    <span class="token keyword">else</span>
-        cout <span class="token operator">&lt;&lt;</span> l <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>  <span class="token comment">//原题下标从0开始</span>
+    
+    cout <span class="token operator">&lt;&lt;</span> fixed <span class="token operator">&lt;&lt;</span> <span class="token function">setprecision</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> l <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
-    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cin <span class="token operator">&gt;&gt;</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> T<span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> T<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>T<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> y<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>y <span class="token operator">&gt;</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">||</span> y <span class="token operator">&lt;</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"No solution!"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token function">solve</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>m<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span>
-        <span class="token function">bs</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//二分</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>代码2：STL 中的 <code>lower_bound</code></p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
-
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> x<span class="token punctuation">,</span> tmp<span class="token punctuation">;</span>
-<span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
-    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> v<span class="token punctuation">;</span>
-    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token double-colon punctuation">::</span>iterator it<span class="token punctuation">;</span>
-
-    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cin <span class="token operator">&gt;&gt;</span> tmp<span class="token punctuation">;</span>
-        v<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>m<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span>
-        <span class="token comment">//lower_bound返回第一个不小于x的元素的迭代器</span>
-        it <span class="token operator">=</span> <span class="token function">lower_bound</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> v<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">*</span>it <span class="token operator">!=</span> x<span class="token punctuation">)</span>
-            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"-1 "</span><span class="token punctuation">;</span>
-        <span class="token keyword">else</span>
-            cout <span class="token operator">&lt;&lt;</span> it <span class="token operator">-</span> v<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
-
-        <span class="token comment">//upper_bound返回第一个大于x的元素的迭代器</span>
-        it <span class="token operator">=</span> <span class="token function">upper_bound</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> v<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">(</span><span class="token operator">--</span>it<span class="token punctuation">)</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span>
-            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"-1"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-        <span class="token keyword">else</span>
-            cout <span class="token operator">&lt;&lt;</span> it <span class="token operator">-</span> v<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
@@ -1000,7 +911,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/10/14/xin-xi-ao-sai-ti-dan-zheng-shu-er-fen/">https://ricky2333.github.io/2023/10/14/xin-xi-ao-sai-ti-dan-zheng-shu-er-fen/</a>
+                    <a href="https://ricky2333.github.io/2023/10/13/xin-xi-ao-sai-ti-dan-fu-dian-shu-er-fen/">https://ricky2333.github.io/2023/10/13/xin-xi-ao-sai-ti-dan-fu-dian-shu-er-fen/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1050,8 +961,8 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                                     <span class="chip bg-color">二分</span>
                                 </a>
                             
-                                <a href="/tags/%E6%95%B4%E6%95%B0%E4%BA%8C%E5%88%86/">
-                                    <span class="chip bg-color">整数二分</span>
+                                <a href="/tags/%E6%B5%AE%E7%82%B9%E6%95%B0%E4%BA%8C%E5%88%86/">
+                                    <span class="chip bg-color">浮点数二分</span>
                                 </a>
                             
                         </div>
@@ -1225,18 +1136,18 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/10/14/xin-xi-ao-sai-ti-dan-fu-dian-shu-er-fen/">
+                <a href="/2023/10/14/xin-xi-ao-sai-ti-dan-er-fen-da-an/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="信息奥赛题单｜浮点数二分">
+                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="信息奥赛题单｜二分答案">
                         
-                        <span class="card-title">信息奥赛题单｜浮点数二分</span>
+                        <span class="card-title">信息奥赛题单｜二分答案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息奥赛题单｜浮点数二分
+                            信息奥赛题单｜二分答案
                         
                     </div>
                     <div class="publish-info">
@@ -1270,8 +1181,8 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                         <span class="chip bg-color">二分</span>
                     </a>
                     
-                    <a href="/tags/%E6%B5%AE%E7%82%B9%E6%95%B0%E4%BA%8C%E5%88%86/">
-                        <span class="chip bg-color">浮点数二分</span>
+                    <a href="/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/">
+                        <span class="chip bg-color">二分答案</span>
                     </a>
                     
                 </div>
@@ -1285,18 +1196,18 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/10/13/xin-xi-ao-sai-ti-dan-er-fen-da-an/">
+                <a href="/2023/10/13/xin-xi-ao-sai-ti-dan-zheng-shu-er-fen/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="信息奥赛题单｜二分答案">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="信息奥赛题单｜整数二分">
                         
-                        <span class="card-title">信息奥赛题单｜二分答案</span>
+                        <span class="card-title">信息奥赛题单｜整数二分</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息奥赛题单｜二分答案
+                            信息奥赛题单｜整数二分
                         
                     </div>
                     <div class="publish-info">
@@ -1330,8 +1241,8 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                         <span class="chip bg-color">二分</span>
                     </a>
                     
-                    <a href="/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/">
-                        <span class="chip bg-color">二分答案</span>
+                    <a href="/tags/%E6%95%B4%E6%95%B0%E4%BA%8C%E5%88%86/">
+                        <span class="chip bg-color">整数二分</span>
                     </a>
                     
                 </div>
