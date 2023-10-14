@@ -646,14 +646,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    321
+                    569
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -683,7 +683,7 @@
 <li>二维差分</li>
 </ul>
 <hr>
-<h2 id="知识点详解-🎥"><a href="#知识点详解-🎥" class="headerlink" title="知识点详解 🎥"></a>知识点详解 🎥</h2><h4 id="学习素材-☘️"><a href="#学习素材-☘️" class="headerlink" title="学习素材 ☘️"></a>学习素材 ☘️</h4><table>
+<h2 id="知识点详解-🎥"><a href="#知识点详解-🎥" class="headerlink" title="知识点详解 🎥"></a>知识点详解 🎥</h2><h4 id="学习素材"><a href="#学习素材" class="headerlink" title="学习素材"></a>学习素材</h4><table>
 <thead>
 <tr>
 <th align="center">编号</th>
@@ -703,48 +703,76 @@
 <td align="center">🌟🌟🌟🌟🌟</td>
 </tr>
 </tbody></table>
-<h4 id="推荐学习路线-🚀"><a href="#推荐学习路线-🚀" class="headerlink" title="推荐学习路线 🚀"></a>推荐学习路线 🚀</h4><p>观看 y总の视频，了解 <strong>前缀和与差分</strong> 的算法思想。</p>
-<h4 id="代码模版-🧑🏻‍💻"><a href="#代码模版-🧑🏻‍💻" class="headerlink" title="代码模版 🧑🏻‍💻"></a>代码模版 🧑🏻‍💻</h4><blockquote>
-<p>Acwing：<a target="_blank" rel="noopener" href="https://www.acwing.com/blog/content/277/">https://www.acwing.com/blog/content/277/</a></p>
+<br>
+
+<h4 id="推荐学习路线"><a href="#推荐学习路线" class="headerlink" title="推荐学习路线"></a>推荐学习路线</h4><p>观看 y总の视频，了解 <strong>前缀和与差分</strong> 的算法思想。</p>
+<br>
+
+<h4 id="代码模版"><a href="#代码模版" class="headerlink" title="代码模版"></a>代码模版</h4><blockquote>
+<p>AcWing：<a target="_blank" rel="noopener" href="https://www.acwing.com/blog/content/277/">https://www.acwing.com/blog/content/277/</a></p>
 </blockquote>
 <ul>
 <li>一维前缀和</li>
 </ul>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//计算一维前缀和数组</span>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 计算一维前缀和数组</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> s<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token comment">//输出区间[l,r]的部分和</span>
+<span class="token comment">// 输出区间[l,r]的部分和</span>
 cout <span class="token operator">&lt;&lt;</span> s<span class="token punctuation">[</span>r<span class="token punctuation">]</span> <span class="token operator">-</span> s<span class="token punctuation">[</span>l <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <ul>
-<li>二维前缀和</li>
+<li>二维前缀和（推荐画图推导）</li>
 </ul>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//计算二维前缀和数组</span>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 计算二维前缀和数组</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> m<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> s<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> s<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
-<span class="token comment">//输出以(x1,y1)为左上顶点、(x2,y2)为右下顶点的部分和</span>
+<span class="token comment">// 输出以(x1,y1)为左上顶点、(x2,y2)为右下顶点的部分和</span>
 <span class="token keyword">int</span> psum <span class="token operator">=</span> s<span class="token punctuation">[</span>x_2<span class="token punctuation">]</span><span class="token punctuation">[</span>y_2<span class="token punctuation">]</span> <span class="token operator">-</span> s<span class="token punctuation">[</span>x_1 <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y_2<span class="token punctuation">]</span> <span class="token operator">-</span> s<span class="token punctuation">[</span>x_2<span class="token punctuation">]</span><span class="token punctuation">[</span>y_1 <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> s<span class="token punctuation">[</span>x_1 <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y_1 <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 cout <span class="token operator">&lt;&lt;</span> psum <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <ul>
 <li>一维差分</li>
 </ul>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 初始化差分数组b</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    cin <span class="token operator">&gt;&gt;</span> tmp<span class="token punctuation">;</span>
+    <span class="token comment">// 设读入1 4 8 3 2，则对应的差分数组b在此阶段被初始化为1 3 4 -5 -1</span>
+    b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> tmp<span class="token punctuation">,</span> b<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-=</span> tmp<span class="token punctuation">;</span>  <span class="token comment">// 核心操作</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 读入m次操作，每次操作使区间[l, r]中的每一个元素+c</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> m<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+  cin <span class="token operator">&gt;&gt;</span> c <span class="token operator">&gt;&gt;</span> l <span class="token operator">&gt;&gt;</span> r<span class="token punctuation">;</span>
+  b<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">+=</span> c<span class="token punctuation">,</span> b<span class="token punctuation">[</span>r <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-=</span> c<span class="token punctuation">;</span>  <span class="token comment">// 核心操作</span>
+
+<span class="token comment">// 对差分数组b求一次前缀和，还原数组</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> x<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token comment">// i从1开始</span>
+  b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> b<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <ul>
-<li>二维差分</li>
+<li>二维差分（推荐画图推导）</li>
 </ul>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 修改一次二维差分数组（左上 [x_1,y_1]，右下 [x_2,y_2] ) </span>
+<span class="token keyword">void</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token keyword">int</span> x_1<span class="token punctuation">,</span> <span class="token keyword">int</span> y_1<span class="token punctuation">,</span> <span class="token keyword">int</span> x_2<span class="token punctuation">,</span> <span class="token keyword">int</span> y_2<span class="token punctuation">,</span> <span class="token keyword">int</span> c<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    b<span class="token punctuation">[</span>x_1<span class="token punctuation">]</span><span class="token punctuation">[</span>y_1<span class="token punctuation">]</span> <span class="token operator">+=</span> c<span class="token punctuation">;</span>
+    b<span class="token punctuation">[</span>x_1<span class="token punctuation">]</span><span class="token punctuation">[</span>y_2 <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-=</span> c<span class="token punctuation">;</span>
+    b<span class="token punctuation">[</span>x_2 <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y_1<span class="token punctuation">]</span> <span class="token operator">-=</span> c<span class="token punctuation">;</span>
+    b<span class="token punctuation">[</span>x_2 <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y_2 <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+=</span> c<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<h2 id="刷题题单-🧑🏻‍💻"><a href="#刷题题单-🧑🏻‍💻" class="headerlink" title="刷题题单 🧑🏻‍💻"></a>刷题题单 🧑🏻‍💻</h2><p>刷题题单与相应题解请见博客：</p>
-<p>如链接失效，可以在文章末尾选择下一篇博客 或 在搜索界面搜索关键词「前缀和差分」即可。</p>
+<h2 id="刷题题单-🧑🏻‍💻"><a href="#刷题题单-🧑🏻‍💻" class="headerlink" title="刷题题单 🧑🏻‍💻"></a>刷题题单 🧑🏻‍💻</h2><p>刷题题单与相应题解请见博客：<a target="_blank" rel="noopener" href="https://rickyxcoder.top/2023/10/11/xin-xi-ao-sai-ti-dan-qian-zhui-he-yu-chai-fen/">信息奥赛题单｜前缀和差分🔗</a></p>
+<p>如链接失效，可以在文章末尾选择上一篇博客 或 在搜索界面搜索关键词「前缀和差分」即可。</p>
+<h2 id="参考资料-📚"><a href="#参考资料-📚" class="headerlink" title="参考资料 📚"></a>参考资料 📚</h2><ul>
+<li>AcWing算法基础课 - <a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/11/">https://www.acwing.com/activity/content/11/</a></li>
+<li>AcWing代码模版 - <a target="_blank" rel="noopener" href="https://www.acwing.com/blog/content/277/">https://www.acwing.com/blog/content/277/</a></li>
+</ul>
 
                 
             </div>
@@ -1340,7 +1368,7 @@ cout <span class="token operator">&lt;&lt;</span> psum <span class="token operat
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">169.7k</span>&nbsp;字
+                class="white-color">176.1k</span>&nbsp;字
             
             
             
