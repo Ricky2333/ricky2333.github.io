@@ -646,14 +646,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    295
+                    2.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    10 分
                 </div>
                 
 
@@ -687,9 +687,9 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">OpenJudge NOI 1.11.04</td>
-<td align="center">网线主管</td>
-<td align="center"><a target="_blank" rel="noopener" href="http://noi.openjudge.cn/ch0111/04/">链接🔗</a></td>
+<td align="center">CodeForces - 1873E</td>
+<td align="center">Building an Aquarium</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1873/E">链接🔗</a></td>
 <td align="center">二分答案</td>
 <td align="center">🟢</td>
 </tr>
@@ -697,58 +697,217 @@
 <td align="center">OpenJudge NOI 1.11.06</td>
 <td align="center">月度开销</td>
 <td align="center"><a target="_blank" rel="noopener" href="http://noi.openjudge.cn/ch0111/06/">链接🔗</a></td>
-<td align="center">二分答案</td>
+<td align="center">整数二分 + 二分答案</td>
 <td align="center">🟡</td>
 </tr>
 <tr>
-<td align="center">CodeForces - 1873E</td>
-<td align="center">Building an Aquarium</td>
-<td align="center"><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1873/E">链接🔗</a></td>
-<td align="center">二分答案</td>
-<td align="center">🟢</td>
+<td align="center">OpenJudge NOI 1.11.04</td>
+<td align="center">网线主管</td>
+<td align="center"><a target="_blank" rel="noopener" href="http://noi.openjudge.cn/ch0111/04/">链接🔗</a></td>
+<td align="center">浮点数二分 + 二分答案</td>
+<td align="center">🟡</td>
 </tr>
 </tbody></table>
 <hr>
-<h2 id="题解-🚀"><a href="#题解-🚀" class="headerlink" title="题解 🚀"></a>题解 🚀</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h4 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】AcWing-795-前缀和（模版题）"><a href="#【题目名称】AcWing-795-前缀和（模版题）" class="headerlink" title="【题目名称】AcWing 795 - 前缀和（模版题）"></a>【题目名称】AcWing 795 - 前缀和（模版题）</h5><h5 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><h5 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h5><h5 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h5><h5 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="题解-🚀"><a href="#题解-🚀" class="headerlink" title="题解 🚀"></a>题解 🚀</h2><h3 id="Building-an-Aquarium"><a href="#Building-an-Aquarium" class="headerlink" title="Building an Aquarium"></a>Building an Aquarium</h3><h4 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】CodeForces-1873E-Building-an-Aquarium"><a href="#【题目名称】CodeForces-1873E-Building-an-Aquarium" class="headerlink" title="【题目名称】CodeForces - 1873E - Building an Aquarium"></a>【题目名称】CodeForces - 1873E - Building an Aquarium</h5><h5 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>You love fish, that’s why you have decided to build an aquarium. You have a piece of coral made of $n$ columns, the $𝑖$-th of which is $a_i$ units tall. Afterwards, you will build a tank around the coral as follows:</p>
+<ul>
+<li>Pick an integer $h \ge 1$ — the <em>height</em> of the tank. Build walls of height $h$ on either side of the tank.</li>
+<li>Then, fill the tank up with water so that the height of each column is $h$, unless the coral is taller than $h$; then no water should be added to this column.</li>
+</ul>
+<p>For example, with $a=[3,1,2,4,6,2,5]$ and a height of $h=4$, you will end up using a total of $𝑤=8$ units of water, as shown.</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/40d03737d94a3906d4b717b2a9fd8c70-20231014174604091.png"></p>
+<p>You can use at most $𝑥$ units of water to fill up the tank, but you want to build the biggest tank possible. What is the largest value of ℎℎ you can select?</p>
+<h5 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h5><p>The first line contains a single integer $t(1 \le t \le 10^4)$ — the number of test cases.</p>
+<p>The first line of each test case contains two positive integers $n$ and $x$ $(1 \le n \le 2*10^5,1 \le 𝑥 \le 10^9)$— the number of columns of the coral and the maximum amount of water you can use.</p>
+<p>The second line of each test case contains $n$ space-separated integers $a_i$ $(1 \le a_i \le 10^9)$— the heights of the coral.</p>
+<p>The sum of $n$ over all test cases doesn’t exceed $2*10^5$.</p>
+<h5 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h5><p>For each test case, output a single positive integer $h(h \ge 1)$ — the maximum height the tank can have, so you need at most $x$ units of water to fill up the tank.</p>
+<p>We have a proof that under these constraints, such a value of $h$ always exists.</p>
+<h5 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span>
+<span class="token number">7</span> <span class="token number">9</span>
+<span class="token number">3</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">4</span> <span class="token number">6</span> <span class="token number">2</span> <span class="token number">5</span>
+<span class="token number">3</span> <span class="token number">10</span>
+<span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span>
+<span class="token number">4</span> <span class="token number">1</span>
+<span class="token number">1</span> <span class="token number">4</span> <span class="token number">3</span> <span class="token number">4</span>
+<span class="token number">6</span> <span class="token number">1984</span>
+<span class="token number">2</span> <span class="token number">6</span> <span class="token number">5</span> <span class="token number">9</span> <span class="token number">1</span> <span class="token number">8</span>
+<span class="token number">1</span> <span class="token number">1000000000</span>
+<span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span>
-<span class="token number">6</span>
-<span class="token number">10</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h5 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">4</span>
+<span class="token number">4</span>
+<span class="token number">2</span>
+<span class="token number">335</span>
+<span class="token number">1000000001</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>$1 \le l \le r  \le n$<br>$1 \le n,m \le 100000$<br>$−1000 \le 数列中元素的值 \le 1000$</p>
-<h5 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/797/">https://www.acwing.com/problem/content/797/</a></p>
+<h5 id="【提示】"><a href="#【提示】" class="headerlink" title="【提示】"></a>【提示】</h5><p>The first test case is pictured in the statement. With $h=4$ we need $8$ units of water, but if $ℎ$ is increased to $5$ we need $13$ units of water, which is more than $x=9$. So $h=4$ is optimal.</p>
+<p>In the second test case, we can pick $h=4$ and add $3$ units to each column, using a total of $9$ units of water. It can be shown that this is optimal.</p>
+<p>In the third test case, we can pick $h=2$ and use all of our water, so it is optimal.</p>
+<h5 id="【题目链接】"><a href="#【题目链接】" class="headerlink" title="【题目链接】"></a>【题目链接】</h5><p><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1873/E">https://codeforces.com/problemset/problem/1873/E</a></p>
 <hr>
-<h4 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>本题是 <strong>一维前缀和的模版题</strong>，只需在理解 <strong>前缀和思想</strong> 的基础上手撕代码即可。</p>
-<h5 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+<h4 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>二分答案</p>
+<h5 id="【-C-代码】"><a href="#【-C-代码】" class="headerlink" title="【 C++ 代码】"></a>【 C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h3 id="月度开销"><a href="#月度开销" class="headerlink" title="月度开销"></a>月度开销</h3><h4 id="题目信息-📚-1"><a href="#题目信息-📚-1" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】OpenJudge-NOI-1-11-04-月度开销"><a href="#【题目名称】OpenJudge-NOI-1-11-04-月度开销" class="headerlink" title="【题目名称】OpenJudge NOI 1.11.04 - 月度开销"></a>【题目名称】OpenJudge NOI 1.11.04 - 月度开销</h5><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>杰哥不仅是一名学霸还是一名农场主，大家都亲切的叫他 Farmer Jie，简称 FJ。经营农场是一个非常很花钱的事情。</p>
+<p>在将来的 $N$ 天($1 \le N \le 100000$) 中 FJ 每天需要花 $a_i$ 的钱($1 \le ai \le 10,000$)。现在他想把这些天分成M份（每份都是一天或连续的几天），每份的总花费为该份所有天的花费之和，要求如何划分使得 $M$ 份中最大总花费尽量小。</p>
+<p>FJ 很懒，所以他向聪明的程序员——你来求助。请帮他算出最优的划分方式，并将其中的最大花费输出。</p>
+<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p><em><strong>该题包含多组样例。</strong></em></p>
+<p>第 $1$ 行：两个用空格隔开的整数：$N$ 和 $M$</p>
+<p>第 $2$～$N+1$ 行：每行包含一个整数 $a_i$ 表示 FJ 在第 $i$ 天的花费。</p>
+<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>输出最小的最大花费。</p>
+<h5 id="【输入样例】-1"><a href="#【输入样例】-1" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">7 5
+100
+400
+300
+100
+500
+101
+400<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例】-1"><a href="#【输出样例】-1" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">500<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【题目链接】-1"><a href="#【题目链接】-1" class="headerlink" title="【题目链接】"></a>【题目链接】</h5><p><a target="_blank" rel="noopener" href="http://noi.openjudge.cn/ch0111/06/">http://noi.openjudge.cn/ch0111/06/</a></p>
+<hr>
+<h4 id="题目解析-🍉-1"><a href="#题目解析-🍉-1" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>二分答案 + check函数编写</p>
+<h5 id="【-C-代码】-1"><a href="#【-C-代码】-1" class="headerlink" title="【 C++ 代码】"></a>【 C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-
 <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> s<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> l<span class="token punctuation">,</span> r<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
+<span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 存储每个月的开销</span>
+
+<span class="token comment">// 核心思路：如果当前最大值为cost，按照顺序依次合并，合并后的数量是否 &lt;= m</span>
+<span class="token keyword">bool</span> <span class="token function">check</span><span class="token punctuation">(</span><span class="token keyword">int</span> cost<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token comment">// 函数内的cnt记得初始化</span>
+    <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token comment">// 记录当前合并块的开销和，每次都需要将其与cost比较</span>
+
+    <span class="token comment">// 从第一个月份开始，一个一个合并，统计&lt;=cost的块数</span>
+    <span class="token comment">// 且由于设定左边界时，l为a中单个的最大值，所以其他月份至少能单独成1块</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        sum <span class="token operator">=</span> sum <span class="token operator">+</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>sum <span class="token operator">&gt;</span> cost<span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// 说明当前的a[i]无法加入此块</span>
+            cnt<span class="token operator">++</span><span class="token punctuation">;</span>
+            sum <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        i<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>sum <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> cnt<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>cnt <span class="token operator">&lt;=</span> m<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token comment">//        cout &lt;&lt; "cost " &lt;&lt; cost &lt;&lt; " cnt " &lt;&lt; cnt &lt;&lt; endl;</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
     cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cin <span class="token operator">&gt;&gt;</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+    <span class="token comment">// 多组样例</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 读入每月开销和划分块数</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cin <span class="token operator">&gt;&gt;</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
 
-    <span class="token comment">//计算一维前缀和</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> s<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+        <span class="token comment">// 设定二分边界（如何设定二分边界，是理解此题重要的第一步）</span>
+        <span class="token keyword">int</span> maxV <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> sum <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            sum <span class="token operator">+=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;</span> maxV<span class="token punctuation">)</span> maxV <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 左边界为单独月份的最大值，右边界为所有月份最大值</span>
+        <span class="token keyword">int</span> l <span class="token operator">=</span> maxV<span class="token punctuation">,</span> r <span class="token operator">=</span> sum<span class="token punctuation">;</span>  <span class="token comment">// 这里为了逻辑清晰，牺牲了代码简洁性</span>
 
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>m<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        cin <span class="token operator">&gt;&gt;</span> l <span class="token operator">&gt;&gt;</span> r<span class="token punctuation">;</span>
-        <span class="token comment">//利用 前缀和数组 输出部分和</span>
-        cout <span class="token operator">&lt;&lt;</span> s<span class="token punctuation">[</span>r<span class="token punctuation">]</span> <span class="token operator">-</span> s<span class="token punctuation">[</span>l <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token comment">// 二分模版</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>l <span class="token operator">&lt;</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> mid <span class="token operator">=</span> l <span class="token operator">+</span> r <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token comment">// 书写check函数，判断当前设定答案mid，是否能够满足要求，是解出本题的关键，</span>
+            <span class="token comment">// 核心思路：如果当前最大值为cost，按照顺序依次合并，合并后的数量 &lt;= m，说明mid可以满足，否则不能满足</span>
+            <span class="token comment">// 上面的核心思路一开始不理解没关系，过程详见check函数</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">check</span><span class="token punctuation">(</span>mid<span class="token punctuation">)</span><span class="token punctuation">)</span> r <span class="token operator">=</span> mid<span class="token punctuation">;</span>  <span class="token comment">// 当前mid满足，令r=mid，寻找更小值，看看是否满足</span>
+            <span class="token keyword">else</span> l <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 输出二分结果</span>
+        cout <span class="token operator">&lt;&lt;</span> l <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="网线主管"><a href="#网线主管" class="headerlink" title="网线主管"></a>网线主管</h3><h4 id="题目信息-📚-2"><a href="#题目信息-📚-2" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】网线主管"><a href="#【题目名称】网线主管" class="headerlink" title="【题目名称】网线主管"></a>【题目名称】网线主管</h5><h5 id="【题目描述】-2"><a href="#【题目描述】-2" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>仙境的居民们决定举办一场程序设计区域赛。裁判委员会完全由自愿组成，他们承诺要组织一次史上最公正的比赛。他们决定将选手的电脑用星形拓扑结构连接在一起，即将它们全部连到一个单一的中心服务器。为了组织这个完全公正的比赛，裁判委员会主席提出要将所有选手的电脑等距离地围绕在服务器周围放置。</p>
+<p>为购买网线，裁判委员会联系了当地的一个网络解决方案提供商，要求能够提供一定数量的等长网线。裁判委员会希望网线越长越好，这样选手们之间的距离可以尽可能远一些。</p>
+<p>该公司的网线主管承接了这个任务。他知道库存中每条网线的长度（精确到厘米），并且只要告诉他所需的网线长度（精确到厘米），他都能够完成对网线的切割工作。但是，这次，所需的网线长度并不知道，这让网线主管不知所措。</p>
+<p>你需要编写一个程序，帮助网线主管确定一个最长的网线长度，并且按此长度对库存中的网线进行切割，能够得到指定数量的网线。</p>
+<h5 id="【输入】-2"><a href="#【输入】-2" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行包含两个整数 $N$ 和 $K$，以单个空格隔开。$N(1 \le N \le 10000)$是库存中的网线数，$K(1 \le K \le 10000)$ 是需要的网线数量。</p>
+<p>接下来 $N$ 行，每行一个数，为库存中每条网线的长度（单位：米）。</p>
+<p>所有网线的长度至少 $1$m，至多 $100$ km。输入中的所有长度都精确到厘米，即保留到小数点后两位。</p>
+<h5 id="【输出】-2"><a href="#【输出】-2" class="headerlink" title="【输出】"></a>【输出】</h5><p>网线主管能够从库存的网线中切出指定数量的网线的最长长度（单位：米）。必须精确到厘米，即保留到小数点后两位。</p>
+<p>若无法得到长度至少为 $1$ cm的指定数量的网线，则必须输出 “0.00”（不包含引号）。</p>
+<h5 id="【输入样例】-2"><a href="#【输入样例】-2" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">4</span> <span class="token number">11</span>
+<span class="token number">8.02</span>
+<span class="token number">7.43</span>
+<span class="token number">4.57</span>
+<span class="token number">5.39</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例】-2"><a href="#【输出样例】-2" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2.00</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【题目链接】-2"><a href="#【题目链接】-2" class="headerlink" title="【题目链接】"></a>【题目链接】</h5><p><a target="_blank" rel="noopener" href="http://noi.openjudge.cn/ch0111/04/">http://noi.openjudge.cn/ch0111/04/</a></p>
+<hr>
+<h4 id="题目解析-🍉-2"><a href="#题目解析-🍉-2" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-2"><a href="#【题目分析】-2" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>刚开始用浮点数二分，一直有测试点过不去。</p>
+<p>网上搜索后，发现这题浮点数二分时，精度不够，故转换成整数二分。</p>
+<p>转换成整数二分时，有两个点需要注意</p>
+<ul>
+<li><code>check</code> 函数中的 <code>cnt</code> 变量有可能爆 <code>int</code> ，需要改成 <code>long long</code> ，否则最后一个测试点无法通过</li>
+<li>在将「浮点数 → 整数」的过程中，需要使用 <code>round()</code> 函数，四舍五入提高精度</li>
+</ul>
+<h5 id="【-C-代码】-2"><a href="#【-C-代码】-2" class="headerlink" title="【 C++ 代码】"></a>【 C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">double</span> x<span class="token punctuation">;</span>
+
+<span class="token comment">// 判断对于当前长度x，库存电线切割后的数量是否 &gt;= m</span>
+<span class="token keyword">bool</span> <span class="token function">check</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    LL cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token comment">// 注意，这里cnt可能爆int，需要使用LL（否则最后一个测试点过不去）</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cnt <span class="token operator">+=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">/</span> x<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> cnt <span class="token operator">&gt;=</span> m<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 读入数据，并且将浮点数转换成整数</span>
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
+    <span class="token comment">// round函数作用是四舍五入</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">,</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">round</span><span class="token punctuation">(</span>x <span class="token operator">*</span> <span class="token number">100.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 判断该问题是否有解</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">check</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"0.00"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 确定二分左右边界</span>
+        <span class="token keyword">int</span> <span class="token operator">*</span>it <span class="token operator">=</span> <span class="token function">max_element</span><span class="token punctuation">(</span>a <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> a <span class="token operator">+</span> n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> r <span class="token operator">=</span> <span class="token operator">*</span>it<span class="token punctuation">;</span>
+
+        <span class="token comment">// 二分模版</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>l <span class="token operator">&lt;</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">check</span><span class="token punctuation">(</span>mid<span class="token punctuation">)</span><span class="token punctuation">)</span> l <span class="token operator">=</span> mid<span class="token punctuation">;</span>
+            <span class="token keyword">else</span> r <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        cout <span class="token operator">&lt;&lt;</span> fixed <span class="token operator">&lt;&lt;</span> <span class="token function">setprecision</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> l <span class="token operator">/</span> <span class="token number">100.0</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
 
@@ -1354,7 +1513,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">176.1k</span>&nbsp;字
+                class="white-color">177.8k</span>&nbsp;字
             
             
             
