@@ -642,7 +642,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    291
                 </div>
                 
 
@@ -672,7 +672,62 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h1><h2 id="题单-🧑🏻‍💻"><a href="#题单-🧑🏻‍💻" class="headerlink" title="题单 🧑🏻‍💻"></a>题单 🧑🏻‍💻</h2><table>
+<thead>
+<tr>
+<th align="center">题目来源</th>
+<th align="center">题目名称</th>
+<th align="center">题目链接</th>
+<th align="center">备注</th>
+<th align="center">难度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">洛谷 - P1226</td>
+<td align="center">【模板】快速幂</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1226">链接🔗</a></td>
+<td align="center">模版题</td>
+<td align="center">🟢</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="题解-🚀"><a href="#题解-🚀" class="headerlink" title="题解 🚀"></a>题解 🚀</h2><h3 id="快速幂-1"><a href="#快速幂-1" class="headerlink" title="快速幂"></a>快速幂</h3><h4 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】洛谷-P1226-【模板】快速幂"><a href="#【题目名称】洛谷-P1226-【模板】快速幂" class="headerlink" title="【题目名称】洛谷 P1226 - 【模板】快速幂"></a>【题目名称】洛谷 P1226 - 【模板】快速幂</h5><h5 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>给你三个整数 $a,b,p$，求 $a^b \bmod p$。</p>
+<h5 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h5><p>输入只有一行三个整数，分别代表 $a,b,p$。</p>
+<h5 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h5><p>输出一行一个字符串 <code>a^b mod p=s</code>，其中 $a,b,p$ 分别为题目给定的值， $s$ 为运算结果。</p>
+<h5 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span> <span class="token number">10</span> <span class="token number">9</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span><span class="token operator">^</span><span class="token number">10</span> mod <span class="token number">9</span><span class="token operator">=</span><span class="token number">7</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>对于 $100%$ 的数据，保证 $0\le a,b &lt; 2^{31}$，$a+b&gt;0$，$2 \leq p \lt 2^{31}$。</p>
+<h5 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1226">https://www.luogu.com.cn/problem/P1226</a></p>
+<hr>
+<h4 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>快速幂</p>
+<h5 id="【-C-代码】"><a href="#【-C-代码】" class="headerlink" title="【 C++ 代码】"></a>【 C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+
+<span class="token comment">// 快速幂模版</span>
+LL <span class="token function">fast_power</span><span class="token punctuation">(</span>LL a<span class="token punctuation">,</span> LL b<span class="token punctuation">,</span> LL p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    LL res <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>b <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> res <span class="token operator">=</span> res <span class="token operator">*</span> a <span class="token operator">%</span> p<span class="token punctuation">;</span>
+        b <span class="token operator">&gt;&gt;=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        a <span class="token operator">=</span> a <span class="token operator">*</span> a <span class="token operator">%</span> p<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    LL a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> p<span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> a <span class="token operator">&gt;&gt;</span> b <span class="token operator">&gt;&gt;</span> p<span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">"^"</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> <span class="token string">" mod "</span> <span class="token operator">&lt;&lt;</span> p <span class="token operator">&lt;&lt;</span> <span class="token string">"="</span> <span class="token operator">&lt;&lt;</span> <span class="token function">fast_power</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> p<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3>
                 
             </div>
             <hr/>
@@ -977,30 +1032,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/10/14/xin-xi-ao-sai-ti-dan-er-fen-da-an/">
+                <a href="/2023/10/15/xin-xi-ao-sai-kuai-su-mi/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="信息奥赛题单｜二分答案">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="信息奥赛｜快速幂">
                         
-                        <span class="card-title">信息奥赛题单｜二分答案</span>
+                        <span class="card-title">信息奥赛｜快速幂</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息奥赛题单｜二分答案
+                            信息奥赛｜快速幂
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/" class="post-category">
-                                    信息奥赛题单
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E7%9F%A5%E8%AF%86%E7%82%B9/" class="post-category">
+                                    信息奥赛知识点
                                 </a>
                             
                             
@@ -1018,12 +1073,8 @@
                         <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E4%BA%8C%E5%88%86/">
-                        <span class="chip bg-color">二分</span>
-                    </a>
-                    
-                    <a href="/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/">
-                        <span class="chip bg-color">二分答案</span>
+                    <a href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/">
+                        <span class="chip bg-color">快速幂</span>
                     </a>
                     
                 </div>
@@ -1273,7 +1324,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">178k</span>&nbsp;字
+                class="white-color">178.8k</span>&nbsp;字
             
             
             

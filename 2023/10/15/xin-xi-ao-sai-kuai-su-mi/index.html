@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux命令行大全｜读书笔记, Rickyの水果摊">
+    <meta name="keywords" content="信息奥赛｜快速幂, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Linux命令行大全｜读书笔记 | Rickyの水果摊</title>
+    <title>信息奥赛｜快速幂 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -474,12 +474,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Linux命令行大全｜读书笔记</h1>
+                    <h1 class="description center-align post-title">信息奥赛｜快速幂</h1>
                 </div>
             </div>
         </div>
@@ -600,12 +600,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                                <span class="chip bg-color">信息奥赛</span>
                             </a>
                         
-                            <a href="/tags/%E8%8B%B1%E6%96%87%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
-                                <span class="chip bg-color">英文读书笔记</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/">
+                                <span class="chip bg-color">快速幂</span>
                             </a>
                         
                     </div>
@@ -616,8 +620,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux%E5%9F%BA%E7%A1%80/" class="post-category">
-                                Linux基础
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E7%9F%A5%E8%AF%86%E7%82%B9/" class="post-category">
+                                信息奥赛知识点
                             </a>
                         
                     </div>
@@ -629,7 +633,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-08-23
+                    2023-10-15
                 </div>
                 
 
@@ -638,7 +642,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    338
+                    526
                 </div>
                 
 
@@ -668,130 +672,73 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Book-Notes-The-Linux-Command-Line-Chapter-5"><a href="#Book-Notes-The-Linux-Command-Line-Chapter-5" class="headerlink" title="Book Notes: The Linux Command Line - Chapter 5"></a>Book Notes: The Linux Command Line - Chapter 5</h1><hr>
-<h2 id="About-this-Book-📚"><a href="#About-this-Book-📚" class="headerlink" title="About this Book 📚"></a>About this Book 📚</h2><p><strong>Name</strong>: <em>The Linux Command Line</em></p>
-<p><strong>Author</strong>: William E. Shotts</p>
-<p><strong>Publisher</strong>: No Starch Press</p>
-<p><strong>Cover</strong>:</p>
-<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/51kjjarKXBL._SX376_BO1,204,203,200_.jpg" alt="The Linux Command Line"></p>
-<p><strong>Translation Version:</strong></p>
-<p><img src="https://img2.doubanio.com/view/subject/l/public/s27318531.jpg" alt="Linux命令行大全"></p>
+                <h1 id="信息奥赛｜快速幂"><a href="#信息奥赛｜快速幂" class="headerlink" title="信息奥赛｜快速幂"></a>信息奥赛｜快速幂</h1><h2 id="知识点概览-🚀"><a href="#知识点概览-🚀" class="headerlink" title="知识点概览 🚀"></a>知识点概览 🚀</h2><p><strong>快速幂算法</strong> 是分治算法的典型应用之一。</p>
+<p>合理运用 <strong>快速幂算法</strong>，可以使得幂运算的时间复杂度大大降低。</p>
 <hr>
-<h2 id="Notes-✍️"><a href="#Notes-✍️" class="headerlink" title="Notes ✍️"></a>Notes ✍️</h2><h3 id="4-Types-of-Commands"><a href="#4-Types-of-Commands" class="headerlink" title="4 Types of Commands"></a>4 Types of Commands</h3><ul>
-<li><strong>An executable program</strong><ul>
-<li>All files we saw in <code>/usr/bin</code> are executable programs. Within this category, programs can be <em><strong>compiled binaries</strong></em> such as programs written in C and C++, or programs written in scripting languages such as the shell, Perl, Python, Ruby, and so on.</li>
-</ul>
-</li>
-<li><strong>A built-in command</strong><ul>
-<li>A command <em><strong>built into the shell itself</strong></em>. <code>bash</code> supports a number of commands internally called <em>shell builtins</em>. The <code>cd</code> command, for example, is a shell builtin.</li>
-</ul>
-</li>
-<li><strong>A shell function</strong><ul>
-<li>Shell functions are miniature shell scripts incorporated into the environment.</li>
-</ul>
-</li>
-<li><strong>An alias</strong><ul>
-<li>Aliases are commands that we can <em><strong>define by ourselves</strong></em>, built from other commands.</li>
-</ul>
-</li>
-</ul>
-<h3 id="Commands-of-Chapter-5"><a href="#Commands-of-Chapter-5" class="headerlink" title="Commands of Chapter 5"></a>Commands of Chapter 5</h3><ul>
-<li><p><code>type</code></p>
-<ul>
-<li>Display information about command type</li>
-<li>Examples<ul>
-<li><code>type ls</code></li>
-<li><code>type cd</code></li>
-<li><code>type mv</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code>which</code></p>
-<ul>
-<li>Display an Executeable’s Location</li>
-<li>Examples<ul>
-<li><code>which ls</code></li>
-<li><code>which cp</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code>help</code></p>
-<ul>
-<li>Display information about built-in commands</li>
-<li>Examples<ul>
-<li><code>help cd</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code>--help</code></p>
-<ul>
-<li>Display a description of the command’s supported syntax and options</li>
-<li>Examples<ul>
-<li><code>mkdir --help</code></li>
-<li><code>mv --help</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code>man</code> </p>
-<ul>
-<li>Display a program’s mannual page</li>
-<li>Examples<ul>
-<li><code>man mv</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code>whatis</code></p>
-<ul>
-<li>Display one-line manual page descriptions<ul>
-<li><code>whatis mv</code></li>
-<li><code>whatis cp</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code>alias</code></p>
-<ul>
-<li>Create an alias for a command</li>
-<li>🍉 PS: The <code>alias</code> commands disappear when shell session ends, but we will learn how to store them for future use in later chapters.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Lab-🧑🏻‍💻"><a href="#Lab-🧑🏻‍💻" class="headerlink" title="Lab 🧑🏻‍💻"></a>Lab 🧑🏻‍💻</h2><h3 id="Why-Labs"><a href="#Why-Labs" class="headerlink" title="Why Labs ?"></a>Why Labs ?</h3><p>Lab provides <strong>a hands-on learning experience</strong> that allows us <strong>to apply theoretical knowledge to practical situations</strong>. This helps us to better understand concepts and retain information more effectively.</p>
-<h3 id="Lab1"><a href="#Lab1" class="headerlink" title="Lab1"></a>Lab1</h3><blockquote>
-<p>use <code>type</code> , <code>which</code>, <code>help</code>, <code>whatis</code>, <code>man</code> to check fundamental commands</p>
-</blockquote>
-<ul>
-<li><code>pwd</code></li>
-<li><code>cd</code></li>
-<li><code>ls</code></li>
-<li><code>mkdir</code></li>
-<li><code>cp</code></li>
-<li><code>mv</code></li>
-<li><code>rm</code></li>
-<li><code>less</code></li>
-<li><code>file</code></li>
-</ul>
-<hr>
-<h3 id="Lab2"><a href="#Lab2" class="headerlink" title="Lab2"></a>Lab2</h3><p><strong>Prerequisites</strong></p>
-<blockquote>
-<p> Try using <code>;</code> to write commands in 1 line</p>
-</blockquote>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span><span class="token punctuation">;</span> <span class="token builtin class-name">cd</span> Desktop<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="知识点详解-🎥"><a href="#知识点详解-🎥" class="headerlink" title="知识点详解 🎥"></a>知识点详解 🎥</h2><h4 id="学习素材"><a href="#学习素材" class="headerlink" title="学习素材"></a>学习素材</h4><table>
+<thead>
+<tr>
+<th align="center">编号</th>
+<th align="center">内容</th>
+<th align="center">链接</th>
+<th align="center">平台</th>
+<th align="center">创作者</th>
+<th align="center">推荐指数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">快速幂算法介绍（CSDN）</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_19782019/article/details/85621386?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522167280297616800182788122%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=167280297616800182788122&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-85621386-null-null.142%5Ev68%5Econtrol,201%5Ev4%5Eadd_ask,213%5Ev2%5Et3_esquery_v2&amp;utm_term=%E5%BF%AB%E9%80%9F%E5%B9%82&amp;spm=1018.2226.3001.4187">链接1</a></td>
+<td align="center">CSDN</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://liuyangjun.blog.csdn.net/">刘扬俊</a></td>
+<td align="center">🌟🌟🌟🌟🌟</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">快速幂讲解</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pe411u77y/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249">链接2</a></td>
+<td align="center">B站</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://space.bilibili.com/517494241">董晓算法</a></td>
+<td align="center">🌟🌟🌟🌟</td>
+</tr>
+</tbody></table>
+<h4 id="推荐学习路线"><a href="#推荐学习路线" class="headerlink" title="推荐学习路线"></a>推荐学习路线</h4><p>首先学习「学习素材」中的材料，在理解了「快速幂」的原理后，按照文末の刷题题单，多手撕几遍代码即可。</p>
+<h4 id="代码模版"><a href="#代码模版" class="headerlink" title="代码模版"></a>代码模版</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">fast_power</span><span class="token punctuation">(</span>ll base<span class="token punctuation">,</span> ll power<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ll res <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>power <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>power <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>   <span class="token comment">//等同于 power % 2 == 1，但位运算速度更快</span>
+            res <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>res <span class="token operator">%</span> M<span class="token punctuation">)</span> <span class="token operator">*</span> base <span class="token operator">%</span> M<span class="token punctuation">)</span> <span class="token operator">%</span> M<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        power <span class="token operator">&gt;&gt;=</span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment">//等同于 power = power / 2，但位运算速度更快</span>
+        base <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>base <span class="token operator">%</span> M<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>base <span class="token operator">%</span> M<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> M<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> res <span class="token operator">%</span> M <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-<p><strong>Task</strong></p>
+<h4 id="边界条件"><a href="#边界条件" class="headerlink" title="边界条件"></a>边界条件</h4><p>接下来让我们考虑一下 <strong>快速幂算法的边界条件</strong>。</p>
+<p>当 幂指数 <code> power==0</code> 时，结果应该为 $1$。由于 <code>res</code> 的初始值就是 $1$，故结果正确。✅</p>
+<p>当 底数 <code>base==0</code> 时，结果应该为 $0$。此时循环中的 <code>res * base</code> 后，<code>res</code> 也会变为 0，结果正确。✅</p>
 <blockquote>
-<p>Use <code>alias</code> to change current directory to <code>Desktop</code></p>
+<p>🍉 PS：$0^n=0(n&gt;0)$，$0^0$ 没有意义。</p>
 </blockquote>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">type</span> cdd <span class="token comment"># check if 'cdd' is used</span>
-<span class="token builtin class-name">alias</span> <span class="token assign-left variable">cdd</span><span class="token operator">=</span><span class="token string">'cd; cd Desktop;'</span> <span class="token comment"># if not, assgin these command lines to 'cdd'</span>
-cdd <span class="token comment"># use this command</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h4 id="取模运算推导"><a href="#取模运算推导" class="headerlink" title="取模运算推导"></a>取模运算推导</h4><p>不少快速幂算法的题目中，会使用这条数学性质：<code>(a * b) % m = ((a % m) * (b % m))% m</code></p>
+<p>这个性质也非常好证明：</p>
+<p>假设 <code>a = t1 * m + r1, b = t2 * m + r2</code></p>
+<ul>
+<li>左边 ：<code>(a * b) = (t1*t2 + r1*t2 + t1*r2) * m + r1*r2</code> → <code>(a * b) % m = (r1 * r2) % m</code></li>
+<li>右边：<code>a % m =(t1 * m + r1) % m  = r1</code> 、 <code>b % m =(t2 * m + r2) % m  = r2</code> → <code>(a % m) * (b % m) = r1 * r2</code> → <code>((a % m) * (b % m))% m = (r1 * r2) % m</code></li>
+</ul>
+<p>故 左边 = 右边，该性质成立。</p>
+<hr>
+<h2 id="刷题题单-🧑🏻‍💻"><a href="#刷题题单-🧑🏻‍💻" class="headerlink" title="刷题题单 🧑🏻‍💻"></a>刷题题单 🧑🏻‍💻</h2><p>刷题题单与相应题解请见博客：<a href="">信息奥赛题单｜快速幂算法🔗</a></p>
+<p>如链接失效，可以在文章末尾选择上一篇博客 或 在搜索界面搜索关键词「快速幂」即可。</p>
+<h2 id="参考资料-📚"><a href="#参考资料-📚" class="headerlink" title="参考资料 📚"></a>参考资料 📚</h2><ul>
+<li><p>快速幂算法介绍（CSDN）——刘扬俊</p>
+</li>
+<li><p>董晓算法：<a target="_blank" rel="noopener" href="https://space.bilibili.com/517494241">https://space.bilibili.com/517494241</a></p>
+</li>
+</ul>
 
                 
             </div>
@@ -818,7 +765,7 @@ cdd <span class="token comment"># use this command</span><span aria-hidden="true
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/08/23/linux-ming-ling-xing-da-quan-du-shu-bi-ji/">https://ricky2333.github.io/2023/08/23/linux-ming-ling-xing-da-quan-du-shu-bi-ji/</a>
+                    <a href="https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-kuai-su-mi/">https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-kuai-su-mi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -856,12 +803,16 @@ cdd <span class="token comment"># use this command</span><span aria-hidden="true
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
+                                <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                                    <span class="chip bg-color">信息奥赛</span>
                                 </a>
                             
-                                <a href="/tags/%E8%8B%B1%E6%96%87%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
-                                    <span class="chip bg-color">英文读书笔记</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/">
+                                    <span class="chip bg-color">快速幂</span>
                                 </a>
                             
                         </div>
@@ -1035,30 +986,30 @@ cdd <span class="token comment"># use this command</span><span aria-hidden="true
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/08/24/jiao-xue-fan-si-xiao-shi-fan-ji-neng-kao-he/">
+                <a href="/2023/10/15/xin-xi-ao-sai-ti-dan-kuai-su-mi/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="教学反思｜校师范技能考核">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="信息奥赛题单｜快速幂">
                         
-                        <span class="card-title">教学反思｜校师范技能考核</span>
+                        <span class="card-title">信息奥赛题单｜快速幂</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            教学反思｜校师范技能考核模拟上课环节
+                            信息奥赛题单｜快速幂
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-08-24
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-10-15
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%B8%88%E8%8C%83%E6%8A%80%E8%83%BD/" class="post-category">
-                                    师范技能
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/" class="post-category">
+                                    信息奥赛题单
                                 </a>
                             
                             
@@ -1068,16 +1019,16 @@ cdd <span class="token comment"># use this command</span><span aria-hidden="true
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B8%88%E8%8C%83%E6%8A%80%E8%83%BD/">
-                        <span class="chip bg-color">师范技能</span>
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                        <span class="chip bg-color">信息奥赛</span>
                     </a>
                     
-                    <a href="/tags/%E6%A8%A1%E6%8B%9F%E4%B8%8A%E8%AF%BE/">
-                        <span class="chip bg-color">模拟上课</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E6%95%99%E5%AD%A6%E5%8F%8D%E6%80%9D/">
-                        <span class="chip bg-color">教学反思</span>
+                    <a href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/">
+                        <span class="chip bg-color">快速幂</span>
                     </a>
                     
                 </div>
@@ -1091,30 +1042,30 @@ cdd <span class="token comment"># use this command</span><span aria-hidden="true
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/08/23/yang-wang-da-lao/">
+                <a href="/2023/10/14/xin-xi-ao-sai-ti-dan-er-fen-da-an/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/30.jpg" class="responsive-img" alt="信静大佬の求学之路">
+                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="信息奥赛题单｜二分答案">
                         
-                        <span class="card-title">信静大佬の求学之路</span>
+                        <span class="card-title">信息奥赛题单｜二分答案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信静大佬の求学之路
+                            信息奥赛题单｜二分答案
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-23
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%AC%E8%BD%BD/" class="post-category">
-                                    转载
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/" class="post-category">
+                                    信息奥赛题单
                                 </a>
                             
                             
@@ -1124,12 +1075,20 @@ cdd <span class="token comment"># use this command</span><span aria-hidden="true
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%A4%A7%E4%BD%AC%E6%B1%82%E5%AD%A6/">
-                        <span class="chip bg-color">大佬求学</span>
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                        <span class="chip bg-color">信息奥赛</span>
                     </a>
                     
-                    <a href="/tags/%E8%BD%AC%E8%BD%BD/">
-                        <span class="chip bg-color">转载</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%8C%E5%88%86/">
+                        <span class="chip bg-color">二分</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/">
+                        <span class="chip bg-color">二分答案</span>
                     </a>
                     
                 </div>
@@ -1299,6 +1258,14 @@ cdd <span class="token comment"># use this command</span><span aria-hidden="true
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        // tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
 
 
 
