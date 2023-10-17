@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-10-15T08:01:56.961Z</updated>
+  <updated>2023-10-17T02:54:43.888Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,97 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>信息奥赛题单｜DFS</title>
+    <link href="https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-dfs/"/>
+    <id>https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-dfs/</id>
+    <published>2023-10-15T13:35:54.000Z</published>
+    <updated>2023-10-17T02:54:43.888Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;DFS&quot;&gt;&lt;a href=&quot;#DFS&quot; class=&quot;headerlink&quot; title=&quot;DFS&quot;&gt;&lt;/a&gt;DFS&lt;/h1&gt;&lt;h2 id=&quot;题单-🧑🏻‍💻&quot;&gt;&lt;a href=&quot;#题单-🧑🏻‍💻&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="搜索" scheme="https://ricky2333.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="DFS" scheme="https://ricky2333.github.io/tags/DFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛题单｜BFS</title>
+    <link href="https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-bfs/"/>
+    <id>https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-bfs/</id>
+    <published>2023-10-15T13:35:50.000Z</published>
+    <updated>2023-10-17T02:54:36.234Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;BFS&quot;&gt;&lt;a href=&quot;#BFS&quot; class=&quot;headerlink&quot; title=&quot;BFS&quot;&gt;&lt;/a&gt;BFS&lt;/h1&gt;&lt;h2 id=&quot;题单-🧑🏻‍💻&quot;&gt;&lt;a href=&quot;#题单-🧑🏻‍💻&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="搜索" scheme="https://ricky2333.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="BFS" scheme="https://ricky2333.github.io/tags/BFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛｜图论基础与搜索</title>
+    <link href="https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-tu-lun-ji-chu/"/>
+    <id>https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-tu-lun-ji-chu/</id>
+    <published>2023-10-15T12:49:15.000Z</published>
+    <updated>2023-10-15T13:36:03.674Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛｜图论基础与搜索&quot;&gt;&lt;a href=&quot;#信息奥赛｜图论基础与搜索&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛｜图论基础与搜索&quot;&gt;&lt;/a&gt;信息奥赛｜图论基础与搜索&lt;/h1&gt;&lt;h2 id=&quot;图论基础-简介-🚀&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛知识点" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="图论基础" scheme="https://ricky2333.github.io/tags/%E5%9B%BE%E8%AE%BA%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>信息奥赛题单｜快速幂</title>
@@ -79,7 +170,7 @@
     <link href="https://ricky2333.github.io/2023/10/14/xin-xi-ao-sai-ti-dan-er-fen-da-an/"/>
     <id>https://ricky2333.github.io/2023/10/14/xin-xi-ao-sai-ti-dan-er-fen-da-an/</id>
     <published>2023-10-14T11:30:15.000Z</published>
-    <updated>2023-10-14T10:45:46.300Z</updated>
+    <updated>2023-10-16T12:13:42.560Z</updated>
     
     
       
@@ -201,7 +292,7 @@
     <link href="https://ricky2333.github.io/2023/10/11/xin-xi-ao-sai-ti-dan-qian-zhui-he-yu-chai-fen/"/>
     <id>https://ricky2333.github.io/2023/10/11/xin-xi-ao-sai-ti-dan-qian-zhui-he-yu-chai-fen/</id>
     <published>2023-10-11T08:52:13.000Z</published>
-    <updated>2023-10-13T07:28:13.605Z</updated>
+    <updated>2023-10-16T12:14:24.615Z</updated>
     
     
       
@@ -288,7 +379,7 @@
     <link href="https://ricky2333.github.io/2023/10/07/xin-xi-ao-sai-stl-vector/"/>
     <id>https://ricky2333.github.io/2023/10/07/xin-xi-ao-sai-stl-vector/</id>
     <published>2023-10-07T11:48:07.000Z</published>
-    <updated>2023-10-11T09:13:46.678Z</updated>
+    <updated>2023-10-15T12:47:18.509Z</updated>
     
     
       
@@ -467,7 +558,7 @@
     <link href="https://ricky2333.github.io/2023/09/01/xin-xi-ao-sai-shi-xun-bao-gao-stl/"/>
     <id>https://ricky2333.github.io/2023/09/01/xin-xi-ao-sai-shi-xun-bao-gao-stl/</id>
     <published>2023-09-01T04:17:38.000Z</published>
-    <updated>2023-10-15T08:05:47.964Z</updated>
+    <updated>2023-10-15T08:07:27.845Z</updated>
     
     
       
@@ -513,92 +604,6 @@
     <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python VS C（上篇）</title>
-    <link href="https://ricky2333.github.io/2023/08/26/python-vs-c-shang-pian/"/>
-    <id>https://ricky2333.github.io/2023/08/26/python-vs-c-shang-pian/</id>
-    <published>2023-08-26T02:20:06.000Z</published>
-    <updated>2023-09-18T04:52:45.292Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;写在最前-✍️&quot;&gt;&lt;a href=&quot;#写在最前-✍️&quot; class=&quot;headerlink&quot; title=&quot;写在最前 ✍️&quot;&gt;&lt;/a&gt;写在最前 ✍️&lt;/h2&gt;&lt;p&gt;相信不少科班的同学最先学习的编程语言是</summary>
-        
-      
-    
-    
-    
-    <category term="Python基础" scheme="https://ricky2333.github.io/categories/Python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
-    
-    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>教学反思｜校师范技能考核</title>
-    <link href="https://ricky2333.github.io/2023/08/24/jiao-xue-fan-si-xiao-shi-fan-ji-neng-kao-he/"/>
-    <id>https://ricky2333.github.io/2023/08/24/jiao-xue-fan-si-xiao-shi-fan-ji-neng-kao-he/</id>
-    <published>2023-08-24T12:28:13.000Z</published>
-    <updated>2023-09-18T04:57:44.606Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;2023 年 5 月 29 日下午，摊主参加了学校的师范技能考核。&lt;/p&gt;
-&lt;p&gt;这次考核的内容是在 &lt;strong&gt;两个小时内&lt;/strong&gt; 制作一份 &lt;strong&gt;教学设计&lt;/strong&gt;，一份</summary>
-        
-      
-    
-    
-    
-    <category term="师范技能" scheme="https://ricky2333.github.io/categories/%E5%B8%88%E8%8C%83%E6%8A%80%E8%83%BD/"/>
-    
-    
-    <category term="师范技能" scheme="https://ricky2333.github.io/tags/%E5%B8%88%E8%8C%83%E6%8A%80%E8%83%BD/"/>
-    
-    <category term="模拟上课" scheme="https://ricky2333.github.io/tags/%E6%A8%A1%E6%8B%9F%E4%B8%8A%E8%AF%BE/"/>
-    
-    <category term="教学反思" scheme="https://ricky2333.github.io/tags/%E6%95%99%E5%AD%A6%E5%8F%8D%E6%80%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux命令行大全｜读书笔记</title>
-    <link href="https://ricky2333.github.io/2023/08/23/linux-ming-ling-xing-da-quan-du-shu-bi-ji/"/>
-    <id>https://ricky2333.github.io/2023/08/23/linux-ming-ling-xing-da-quan-du-shu-bi-ji/</id>
-    <published>2023-08-23T13:17:20.000Z</published>
-    <updated>2023-09-18T04:57:12.025Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Book-Notes-The-Linux-Command-Line-Chapter-5&quot;&gt;&lt;a href=&quot;#Book-Notes-The-Linux-Command-Line-Chapter-5&quot; class=&quot;headerlink&quot; title=&quot;Book</summary>
-        
-      
-    
-    
-    
-    <category term="Linux基础" scheme="https://ricky2333.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="Linux" scheme="https://ricky2333.github.io/tags/Linux/"/>
-    
-    <category term="英文读书笔记" scheme="https://ricky2333.github.io/tags/%E8%8B%B1%E6%96%87%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
