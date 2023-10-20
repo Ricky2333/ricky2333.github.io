@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-10-17T02:54:43.888Z</updated>
+  <updated>2023-10-20T04:53:57.414Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,211 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>信息奥赛题单｜区间合并</title>
+    <link href="https://ricky2333.github.io/2023/10/20/xin-xi-ao-sai-ti-dan-qu-jian-he-bing/"/>
+    <id>https://ricky2333.github.io/2023/10/20/xin-xi-ao-sai-ti-dan-qu-jian-he-bing/</id>
+    <published>2023-10-20T04:44:55.000Z</published>
+    <updated>2023-10-20T04:53:57.414Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;当前博客仍在更新完善中，敬请期待～&lt;/p&gt;
+&lt;h1 id=&quot;区间合并&quot;&gt;&lt;a href=&quot;#区间合并&quot; class=&quot;headerlink&quot; title=&quot;区间合并&quot;&gt;&lt;/a&gt;区间合并&lt;/h1&gt;&lt;h2 id=&quot;题单-🧑🏻‍💻&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="区间合并" scheme="https://ricky2333.github.io/tags/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛题单｜双指针</title>
+    <link href="https://ricky2333.github.io/2023/10/20/xin-xi-ao-sai-ti-dan-shuang-zhi-zhen/"/>
+    <id>https://ricky2333.github.io/2023/10/20/xin-xi-ao-sai-ti-dan-shuang-zhi-zhen/</id>
+    <published>2023-10-20T04:44:31.000Z</published>
+    <updated>2023-10-20T04:53:29.456Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;当前博客仍在更新完善中，敬请期待～&lt;/p&gt;
+&lt;h1 id=&quot;双指针&quot;&gt;&lt;a href=&quot;#双指针&quot; class=&quot;headerlink&quot; title=&quot;双指针&quot;&gt;&lt;/a&gt;双指针&lt;/h1&gt;&lt;h2 id=&quot;题单-🧑🏻‍💻&quot;&gt;&lt;a href=&quot;#题单-🧑🏻‍💻&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="双指针" scheme="https://ricky2333.github.io/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛题单｜位运算</title>
+    <link href="https://ricky2333.github.io/2023/10/20/xin-xi-ao-sai-ti-dan-wei-yun-suan/"/>
+    <id>https://ricky2333.github.io/2023/10/20/xin-xi-ao-sai-ti-dan-wei-yun-suan/</id>
+    <published>2023-10-20T04:44:06.000Z</published>
+    <updated>2023-10-20T04:53:14.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;当前博客仍在更新完善中，敬请期待～&lt;/p&gt;
+&lt;h1 id=&quot;位运算&quot;&gt;&lt;a href=&quot;#位运算&quot; class=&quot;headerlink&quot; title=&quot;位运算&quot;&gt;&lt;/a&gt;位运算&lt;/h1&gt;&lt;h2 id=&quot;题单-🧑🏻‍💻&quot;&gt;&lt;a href=&quot;#题单-🧑🏻‍💻&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="位运算" scheme="https://ricky2333.github.io/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛题单｜快速排序</title>
+    <link href="https://ricky2333.github.io/2023/10/19/xin-xi-ao-sai-ti-dan-kuai-su-pai-xu/"/>
+    <id>https://ricky2333.github.io/2023/10/19/xin-xi-ao-sai-ti-dan-kuai-su-pai-xu/</id>
+    <published>2023-10-19T04:43:50.000Z</published>
+    <updated>2023-10-20T07:40:02.851Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;当前博客仍在更新完善中，敬请期待～&lt;/p&gt;
+&lt;h1 id=&quot;快速排序&quot;&gt;&lt;a href=&quot;#快速排序&quot; class=&quot;headerlink&quot; title=&quot;快速排序&quot;&gt;&lt;/a&gt;快速排序&lt;/h1&gt;&lt;h2 id=&quot;题单-🧑🏻‍💻&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="排序" scheme="https://ricky2333.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+    <category term="快速排序" scheme="https://ricky2333.github.io/tags/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛｜快速排序</title>
+    <link href="https://ricky2333.github.io/2023/10/18/xin-xi-ao-sai-kuai-su-pai-xu/"/>
+    <id>https://ricky2333.github.io/2023/10/18/xin-xi-ao-sai-kuai-su-pai-xu/</id>
+    <published>2023-10-18T07:13:15.000Z</published>
+    <updated>2023-10-20T07:47:29.167Z</updated>
+    
+    
+    
+    
+    <category term="信息奥赛知识点" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="排序" scheme="https://ricky2333.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+    <category term="快速排序" scheme="https://ricky2333.github.io/tags/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛题单｜归并排序</title>
+    <link href="https://ricky2333.github.io/2023/10/17/xin-xi-ao-sai-ti-dan-gui-bing-pai-xu/"/>
+    <id>https://ricky2333.github.io/2023/10/17/xin-xi-ao-sai-ti-dan-gui-bing-pai-xu/</id>
+    <published>2023-10-17T04:43:43.000Z</published>
+    <updated>2023-10-20T07:38:22.418Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;归并排序&quot;&gt;&lt;a href=&quot;#归并排序&quot; class=&quot;headerlink&quot; title=&quot;归并排序&quot;&gt;&lt;/a&gt;归并排序&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;归并排序相关知识点请见博客：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="排序" scheme="https://ricky2333.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+    <category term="归并排序" scheme="https://ricky2333.github.io/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛｜归并排序</title>
+    <link href="https://ricky2333.github.io/2023/10/16/xin-xi-ao-sai-gui-bing-pai-xu/"/>
+    <id>https://ricky2333.github.io/2023/10/16/xin-xi-ao-sai-gui-bing-pai-xu/</id>
+    <published>2023-10-16T07:13:09.000Z</published>
+    <updated>2023-10-20T07:47:39.853Z</updated>
+    
+    
+    
+    
+    <category term="信息奥赛知识点" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="排序" scheme="https://ricky2333.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+    <category term="归并排序" scheme="https://ricky2333.github.io/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>信息奥赛题单｜DFS</title>
     <link href="https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-dfs/"/>
     <id>https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-dfs/</id>
     <published>2023-10-15T13:35:54.000Z</published>
-    <updated>2023-10-17T02:54:43.888Z</updated>
+    <updated>2023-10-20T04:37:53.215Z</updated>
     
     
       
@@ -52,7 +252,7 @@
     <link href="https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-bfs/"/>
     <id>https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-bfs/</id>
     <published>2023-10-15T13:35:50.000Z</published>
-    <updated>2023-10-17T02:54:36.234Z</updated>
+    <updated>2023-10-19T08:55:55.784Z</updated>
     
     
       
@@ -83,7 +283,7 @@
     <link href="https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-tu-lun-ji-chu/"/>
     <id>https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-tu-lun-ji-chu/</id>
     <published>2023-10-15T12:49:15.000Z</published>
-    <updated>2023-10-15T13:36:03.674Z</updated>
+    <updated>2023-10-19T12:59:34.349Z</updated>
     
     
       
@@ -400,210 +600,6 @@
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="STL" scheme="https://ricky2333.github.io/tags/STL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜过河卒</title>
-    <link href="https://ricky2333.github.io/2023/09/12/xin-xi-ao-sai-ti-jie-guo-he-zu/"/>
-    <id>https://ricky2333.github.io/2023/09/12/xin-xi-ao-sai-ti-jie-guo-he-zu/</id>
-    <published>2023-09-12T03:40:27.000Z</published>
-    <updated>2023-09-18T04:35:08.489Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜过河卒&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜过河卒&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜过河卒&quot;&gt;&lt;/a&gt;信息奥赛题解｜过河卒&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a href=&quot;#🚀-题目浏览&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜踩方格</title>
-    <link href="https://ricky2333.github.io/2023/09/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/"/>
-    <id>https://ricky2333.github.io/2023/09/10/xin-xi-ao-sai-ti-jie-cai-fang-ge/</id>
-    <published>2023-09-10T03:41:21.000Z</published>
-    <updated>2023-09-18T04:34:58.602Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜踩方格&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜踩方格&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜踩方格&quot;&gt;&lt;/a&gt;信息奥赛题解｜踩方格&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a href=&quot;#🚀-题目浏览&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜移动路线</title>
-    <link href="https://ricky2333.github.io/2023/09/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/"/>
-    <id>https://ricky2333.github.io/2023/09/09/xin-xi-ao-sai-ti-jie-yi-dong-lu-xian/</id>
-    <published>2023-09-09T15:30:53.000Z</published>
-    <updated>2023-09-18T04:35:03.920Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜移动路线&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜移动路线&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜移动路线&quot;&gt;&lt;/a&gt;信息奥赛题解｜移动路线&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜昆虫繁殖</title>
-    <link href="https://ricky2333.github.io/2023/09/08/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/"/>
-    <id>https://ricky2333.github.io/2023/09/08/xin-xi-ao-sai-ti-jie-kun-chong-fan-zhi/</id>
-    <published>2023-09-08T15:24:33.000Z</published>
-    <updated>2023-09-18T04:34:53.038Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜昆虫繁殖&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜昆虫繁殖&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜昆虫繁殖&quot;&gt;&lt;/a&gt;信息奥赛题解｜昆虫繁殖&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜位数问题</title>
-    <link href="https://ricky2333.github.io/2023/09/03/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/"/>
-    <id>https://ricky2333.github.io/2023/09/03/xin-xi-ao-sai-ti-jie-wei-shu-wen-ti/</id>
-    <published>2023-09-03T11:43:52.000Z</published>
-    <updated>2023-09-18T04:34:47.277Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜位数问题&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜位数问题&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜位数问题&quot;&gt;&lt;/a&gt;信息奥赛题解｜位数问题&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题单｜STL</title>
-    <link href="https://ricky2333.github.io/2023/09/01/xin-xi-ao-sai-shi-xun-bao-gao-stl/"/>
-    <id>https://ricky2333.github.io/2023/09/01/xin-xi-ao-sai-shi-xun-bao-gao-stl/</id>
-    <published>2023-09-01T04:17:38.000Z</published>
-    <updated>2023-10-15T08:07:27.845Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;【信息奥赛实训报告】STL&quot;&gt;&lt;a href=&quot;#【信息奥赛实训报告】STL&quot; class=&quot;headerlink&quot; title=&quot;【信息奥赛实训报告】STL&quot;&gt;&lt;/a&gt;【信息奥赛实训报告】STL&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python VS C（下篇）</title>
-    <link href="https://ricky2333.github.io/2023/08/28/python-vs-c-xia-pian/"/>
-    <id>https://ricky2333.github.io/2023/08/28/python-vs-c-xia-pian/</id>
-    <published>2023-08-28T11:16:29.000Z</published>
-    <updated>2023-09-18T04:52:50.461Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;写在最前-✍️&quot;&gt;&lt;a href=&quot;#写在最前-✍️&quot; class=&quot;headerlink&quot; title=&quot;写在最前 ✍️&quot;&gt;&lt;/a&gt;写在最前 ✍️&lt;/h2&gt;&lt;p&gt;在上一篇博客 &lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
-    
-    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
     
   </entry>
   
