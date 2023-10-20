@@ -646,14 +646,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    86
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -704,7 +704,143 @@
 <h4 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <hr>
+<h4 id="OI-案例1"><a href="#OI-案例1" class="headerlink" title="OI 案例1"></a>OI 案例1</h4><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>利用快速排序算法将读入的 $N$ 个数从小到大排序后输出。</p>
+<p>快速排序是信息学竞赛的必备算法之一。对于快速排序不是很了解的同学可以自行上网查询相关资料，掌握后独立完成。（C++ 选手请不要试图使用 <code>STL</code>，虽然你可以使用 <code>sort</code> 一遍过，但是你并没有掌握快速排序算法的精髓。）</p>
+<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p>第 $1$ 行为一个正整数 $N$，第 $2$ 行包含 $N$ 个空格隔开的正整数 $a_i$，为你需要进行排序的数，数据保证了 $A_i$ 不超过 $10^9$。</p>
+<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>将给定的 $N$ 个数从小到大输出，数之间空格隔开，行末换行且无空格。</p>
+<h5 id="【输入样例】-1"><a href="#【输入样例】-1" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-none"><code class="language-none">5
+4 2 4 5 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
+<h5 id="【输出样例】-1"><a href="#【输出样例】-1" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-none"><code class="language-none">1 2 4 4 5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【数据范围】-1"><a href="#【数据范围】-1" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>对于 $20%$ 的数据，有 $N\leq 10^3$；</p>
+<p>对于 $100%$ 的数据，有 $N\leq 10^5$。</p>
+<h5 id="【原题链接】-1"><a href="#【原题链接】-1" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1177">https://www.luogu.com.cn/problem/P1177</a></p>
+<hr>
+<h5 id="【题目解析】"><a href="#【题目解析】" class="headerlink" title="【题目解析】"></a>【题目解析】</h5><p>本题如果直接提交 <strong>模版1</strong> 程序，会有 3 个超时点 ❌ </p>
+<p>因此需要优化。</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-170435-20231020174547234.jpg" alt="image-20221002111905046"></p>
+<br>
+
+<p>先来看一些不需要对代码算法做改进的优化。</p>
+<ul>
+<li><p><strong>优化方案1</strong>：将 输入输出流 改为 <code>scanf/printf</code>，实测该方法 <strong>失败</strong>，仍有 3 个超时点。❌ </p>
+</li>
+<li><p><strong>优化方案2</strong>：添加优化语句，实测该方法 <strong>失败</strong>，仍有 3 个超时点（关于该优化的 <a target="_blank" rel="noopener" href="http://t.csdn.cn/qFips">相关技术博客</a>）❌</p>
+</li>
+</ul>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">int main(){
+  ios::sync_with_stdio(false);
+	cin.tie(nullptr);
+  ...
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><strong>优化方案3</strong>：手动开启O2优化，实测该方法 <strong>失败</strong>，编译错误。（洛谷不支持手动开启 O2优化）❌</li>
+</ul>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#pragma GCC optimize(2)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-170436-20231020174547251.jpg" alt="image-20221002155829361"></p>
+<ul>
+<li><strong>优化方法4</strong>：在洛谷 OJ 上，勾选 <strong>开启O2优化</strong>，实测<strong>该方法生效</strong>，通过所有测试点。✅</li>
+</ul>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-170438-20231020174547301.jpg" alt="image-20221002160201555"></p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-170439-20231020174547326.jpg" alt="image-20221002160544907"></p>
+<br>
+
+<p>再来看一些 <strong>基于快速排序本身算法思想的优化</strong>：</p>
+<p>首先分析 <strong>快速排序的时间复杂度</strong>：</p>
+<p>简单来说，快速排序是一种基于二分思想的算法，时间复杂度为 $O( nlogn )$</p>
+<p>但是，当需要排序的数组，本身就有序，或者趋近于有序时，快速排序的时间复杂度会退化成 $O(n^2)$</p>
+<p>具体数学推导可以看下面这一篇 技术博客的分析：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://t.csdn.cn/WRHzA">快速排序时间复杂度分析（最坏情况，最佳情况，平均情况）</a></p>
+</blockquote>
+<br>
+
+<p>基于以上对时间复杂度的分析，最终<strong>优化方案</strong> 如下：</p>
+<ul>
+<li><strong>优化方案1</strong>：使用 <code>random_shuffle(a+1,a+n+1)</code> 将原数组打乱，该方案 <strong>部分奏效</strong>，但是仍有 1 个超时点。（PS：调用 1 次和调用 n 次 该代码进行打乱，最后 1 个超时点均存在）❌</li>
+</ul>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-170442-20231020174547362.jpg" alt="image-20221002164504743"></p>
+<ul>
+<li><strong>优化方案2</strong>：使用 <code>sort(a+1,a+n+1)</code> ，直接 AC（不得不说，STL 真香）✅</li>
+</ul>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int a[1000005];
+int n;
+
+int main() {
+    cin &gt;&gt; n;
+    for (int i = 1; i &lt;= n; ++i)	cin &gt;&gt; a[i];
+
+    sort(a+1,a+n+1);  //STL大法真香
+  
+    for (int i = 1; i &lt;= n; ++i)	cout &lt;&lt; a[i] &lt;&lt; " ";
+    cout &lt;&lt; endl;
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/2023-02-21-170443-20231020174547384.jpg" alt="image-20221002165815983"></p>
+<ul>
+<li><strong>优化方案3</strong>：在传统快速排序中，我们的基准点总是选择左边界，这使得像 <code>6 5 4 3 2 1</code> 这类数据，在递归时，<code>quicksort(p1+1,r)</code> 失效，程序并没有「二分」，速度大大降低。</li>
+</ul>
+<p>所以我们 <strong>修改基准点的选择</strong>，改为 <code>tmp = a[(l + r) / 2]</code> （即 <strong>模版2</strong>），成功 AC ✅</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;bits/stdc++.h&gt;
+
+using namespace std;
+
+const int N = 1e6 + 10;
+int n;
+int a[N];
+
+
+//快速排序
+void qsort(int l, int r) {
+    //返回条件
+    if (l &gt;= r) return;
+
+    //选定基准数，定义双指针
+    int temp = a[(l + r) &gt;&gt; 1];
+    int i = l - 1, j = r + 1;
+
+    //基本流程
+    while (i &lt; j) {
+        do i++; while (a[i] &lt; temp);
+        do j--; while (a[j] &gt; temp);
+        if (i &lt; j) swap(a[i], a[j]);
+    }
+
+    //递归
+    qsort(l, j);
+    qsort(j + 1, r);
+}
+
+int main() {
+    ios::sync_with_stdio(false);  //cin读入优化
+    cin.tie(0);
+
+    //读入数据
+    cin &gt;&gt; n;
+    for (int i = 1; i &lt;= n; i++) {
+        cin &gt;&gt; a[i];
+    }
+
+    //快速排序
+    qsort(1, n);
+
+    //输出结果
+    for (int i = 1; i &lt;= n; i++) {
+        cout &lt;&lt; a[i] &lt;&lt; " ";
+    }
+    cout &lt;&lt; endl;
+
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/008vxvgGly1h8p809qcifj311008y75d-20231020174547402.jpg" alt="image-20221202094324541"></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
                 
             </div>
             <hr/>
@@ -1308,7 +1444,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">188.2k</span>&nbsp;字
+                class="white-color">195.7k</span>&nbsp;字
             
             
             
