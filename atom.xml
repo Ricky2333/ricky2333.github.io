@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-10-20T04:53:57.414Z</updated>
+  <updated>2023-10-22T09:50:50.072Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>复盘｜2023多校新生周赛一</title>
+    <link href="https://ricky2333.github.io/2023/10/22/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai/"/>
+    <id>https://ricky2333.github.io/2023/10/22/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai/</id>
+    <published>2023-10-22T01:08:34.000Z</published>
+    <updated>2023-10-22T09:50:50.072Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛复盘｜2023多校新生周赛一（2023-10-21）&quot;&gt;&lt;a href=&quot;#信息奥赛复盘｜2023多校新生周赛一（2023-10-21）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛复盘" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>信息奥赛题单｜区间合并</title>
@@ -81,7 +108,7 @@
     <link href="https://ricky2333.github.io/2023/10/20/xin-xi-ao-sai-ti-dan-wei-yun-suan/"/>
     <id>https://ricky2333.github.io/2023/10/20/xin-xi-ao-sai-ti-dan-wei-yun-suan/</id>
     <published>2023-10-20T04:44:06.000Z</published>
-    <updated>2023-10-20T04:53:14.134Z</updated>
+    <updated>2023-10-22T09:51:49.057Z</updated>
     
     
       
@@ -206,7 +233,7 @@
     <link href="https://ricky2333.github.io/2023/10/16/xin-xi-ao-sai-gui-bing-pai-xu/"/>
     <id>https://ricky2333.github.io/2023/10/16/xin-xi-ao-sai-gui-bing-pai-xu/</id>
     <published>2023-10-16T07:13:09.000Z</published>
-    <updated>2023-10-20T09:36:44.273Z</updated>
+    <updated>2023-10-22T09:57:52.072Z</updated>
     
     
       
@@ -237,7 +264,7 @@
     <link href="https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-dfs/"/>
     <id>https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-dfs/</id>
     <published>2023-10-15T13:35:54.000Z</published>
-    <updated>2023-10-20T04:37:53.215Z</updated>
+    <updated>2023-10-22T09:55:15.827Z</updated>
     
     
       
@@ -268,7 +295,7 @@
     <link href="https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-bfs/"/>
     <id>https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-bfs/</id>
     <published>2023-10-15T13:35:50.000Z</published>
-    <updated>2023-10-19T08:55:55.784Z</updated>
+    <updated>2023-10-22T09:51:31.337Z</updated>
     
     
       
@@ -570,7 +597,7 @@
     <link href="https://ricky2333.github.io/2023/10/09/ri-yu-ru-men-hiragana/"/>
     <id>https://ricky2333.github.io/2023/10/09/ri-yu-ru-men-hiragana/</id>
     <published>2023-10-09T09:48:32.000Z</published>
-    <updated>2023-10-11T12:23:16.946Z</updated>
+    <updated>2023-10-22T09:56:20.824Z</updated>
     
     
       
@@ -587,35 +614,6 @@
     
     
     <category term="日本語" scheme="https://ricky2333.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛｜STL｜vector</title>
-    <link href="https://ricky2333.github.io/2023/10/07/xin-xi-ao-sai-stl-vector/"/>
-    <id>https://ricky2333.github.io/2023/10/07/xin-xi-ao-sai-stl-vector/</id>
-    <published>2023-10-07T11:48:07.000Z</published>
-    <updated>2023-10-15T12:47:18.509Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛｜STL｜vector&quot;&gt;&lt;a href=&quot;#信息奥赛｜STL｜vector&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛｜STL｜vector&quot;&gt;&lt;/a&gt;信息奥赛｜STL｜vector&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛知识点" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="STL" scheme="https://ricky2333.github.io/tags/STL/"/>
     
   </entry>
   
