@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-10-22T09:50:50.072Z</updated>
+  <updated>2023-10-23T12:28:07.737Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>复盘｜2023多校新生周赛二</title>
+    <link href="https://ricky2333.github.io/2023/10/23/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai-er/"/>
+    <id>https://ricky2333.github.io/2023/10/23/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai-er/</id>
+    <published>2023-10-23T08:14:09.000Z</published>
+    <updated>2023-10-23T12:28:07.737Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛复盘｜2023多校新生周赛二（2023-10-22）&quot;&gt;&lt;a href=&quot;#信息奥赛复盘｜2023多校新生周赛二（2023-10-22）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛复盘" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>复盘｜2023多校新生周赛一</title>
     <link href="https://ricky2333.github.io/2023/10/22/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai/"/>
     <id>https://ricky2333.github.io/2023/10/22/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai/</id>
     <published>2023-10-22T01:08:34.000Z</published>
-    <updated>2023-10-22T09:50:50.072Z</updated>
+    <updated>2023-10-23T07:53:31.224Z</updated>
     
     
       
@@ -589,31 +616,6 @@
     <category term="前缀和" scheme="https://ricky2333.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
     <category term="差分" scheme="https://ricky2333.github.io/tags/%E5%B7%AE%E5%88%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>日本語入门｜Hiragana</title>
-    <link href="https://ricky2333.github.io/2023/10/09/ri-yu-ru-men-hiragana/"/>
-    <id>https://ricky2333.github.io/2023/10/09/ri-yu-ru-men-hiragana/</id>
-    <published>2023-10-09T09:48:32.000Z</published>
-    <updated>2023-10-22T09:56:20.824Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;ひらがな｜Hiragana｜平假名&quot;&gt;&lt;a href=&quot;#ひらがな｜Hiragana｜平假名&quot; class=&quot;headerlink&quot; title=&quot;ひらがな｜Hiragana｜平假名&quot;&gt;&lt;/a&gt;ひらがな｜Hiragana｜平假名&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="日本語" scheme="https://ricky2333.github.io/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
-    
-    
-    <category term="日本語" scheme="https://ricky2333.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
     
   </entry>
   
