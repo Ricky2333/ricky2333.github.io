@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-11-14T07:55:41.968Z</updated>
+  <updated>2023-11-20T16:13:24.104Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>复盘｜2023多校新生周赛九</title>
+    <link href="https://ricky2333.github.io/2023/11/20/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai-jiu/"/>
+    <id>https://ricky2333.github.io/2023/11/20/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai-jiu/</id>
+    <published>2023-11-20T15:24:36.000Z</published>
+    <updated>2023-11-20T16:13:24.104Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛复盘｜2023多校新生周赛九（2023-11-19）&quot;&gt;&lt;a href=&quot;#信息奥赛复盘｜2023多校新生周赛九（2023-11-19）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛复盘" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>教师招聘会｜心得感悟</title>
+    <link href="https://ricky2333.github.io/2023/11/18/jiao-shi-zhao-pin-xin-de-gan-wu/"/>
+    <id>https://ricky2333.github.io/2023/11/18/jiao-shi-zhao-pin-xin-de-gan-wu/</id>
+    <published>2023-11-18T14:40:01.000Z</published>
+    <updated>2023-11-19T04:20:21.350Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;2023 年 11 月 18 日上午，摊主参加了浙师大的教师招聘会。&lt;/p&gt;
+&lt;p&gt;通过线下参与招聘会以及线上搜集相关帖子，以下是摊主的一些思考与心得。&lt;/p&gt;
+&lt;h2 id=&quot;教师招聘の简历&quot;&gt;&lt;a href=&quot;#教师招聘の简历&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="教师招聘" scheme="https://ricky2333.github.io/categories/%E6%95%99%E5%B8%88%E6%8B%9B%E8%81%98/"/>
+    
+    
+    <category term="教师招聘" scheme="https://ricky2333.github.io/tags/%E6%95%99%E5%B8%88%E6%8B%9B%E8%81%98/"/>
+    
+  </entry>
   
   <entry>
     <title>信息奥赛题单｜线段树</title>
@@ -87,7 +141,7 @@
     <link href="https://ricky2333.github.io/2023/11/14/xin-xi-ao-sai-ti-dan-shu-zhuang-shu-zu/"/>
     <id>https://ricky2333.github.io/2023/11/14/xin-xi-ao-sai-ti-dan-shu-zhuang-shu-zu/</id>
     <published>2023-11-14T07:47:14.000Z</published>
-    <updated>2023-11-15T06:30:51.814Z</updated>
+    <updated>2023-11-15T15:24:19.858Z</updated>
     
     
       
@@ -296,7 +350,7 @@
     <link href="https://ricky2333.github.io/2023/11/07/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai-liu/"/>
     <id>https://ricky2333.github.io/2023/11/07/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai-liu/</id>
     <published>2023-11-06T16:05:28.000Z</published>
-    <updated>2023-11-07T15:50:49.055Z</updated>
+    <updated>2023-11-20T15:39:32.054Z</updated>
     
     
       
@@ -554,68 +608,6 @@
     <category term="排序" scheme="https://ricky2333.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
     <category term="归并排序" scheme="https://ricky2333.github.io/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛｜归并排序</title>
-    <link href="https://ricky2333.github.io/2023/10/16/xin-xi-ao-sai-gui-bing-pai-xu/"/>
-    <id>https://ricky2333.github.io/2023/10/16/xin-xi-ao-sai-gui-bing-pai-xu/</id>
-    <published>2023-10-16T07:13:09.000Z</published>
-    <updated>2023-10-22T09:57:52.072Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛｜归并排序&quot;&gt;&lt;a href=&quot;#信息奥赛｜归并排序&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛｜归并排序&quot;&gt;&lt;/a&gt;信息奥赛｜归并排序&lt;/h1&gt;&lt;h2 id=&quot;知识点概览-🚀&quot;&gt;&lt;a href=&quot;#知识点概览-🚀&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛知识点" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="排序" scheme="https://ricky2333.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
-    
-    <category term="归并排序" scheme="https://ricky2333.github.io/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题单｜DFS</title>
-    <link href="https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-dfs/"/>
-    <id>https://ricky2333.github.io/2023/10/15/xin-xi-ao-sai-ti-dan-dfs/</id>
-    <published>2023-10-15T13:35:54.000Z</published>
-    <updated>2023-10-22T09:55:15.827Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;DFS&quot;&gt;&lt;a href=&quot;#DFS&quot; class=&quot;headerlink&quot; title=&quot;DFS&quot;&gt;&lt;/a&gt;DFS&lt;/h1&gt;&lt;h2 id=&quot;题单-🧑🏻‍💻&quot;&gt;&lt;a href=&quot;#题单-🧑🏻‍💻&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="搜索" scheme="https://ricky2333.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-    <category term="DFS" scheme="https://ricky2333.github.io/tags/DFS/"/>
     
   </entry>
   
