@@ -898,7 +898,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1037,6 +1037,15 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E5%A4%8D%E7%9B%98/" class="post-category">
+                                信息奥赛复盘
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -1053,14 +1062,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    2.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    13 分
                 </div>
                 
 
@@ -1083,7 +1092,267 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="信息奥赛复盘｜2023多校新生周赛十（2023-11-25）"><a href="#信息奥赛复盘｜2023多校新生周赛十（2023-11-25）" class="headerlink" title="信息奥赛复盘｜2023多校新生周赛十（2023.11.25）"></a>信息奥赛复盘｜2023多校新生周赛十（2023.11.25）</h1><h2 id="比赛信息-📚"><a href="#比赛信息-📚" class="headerlink" title="比赛信息 📚"></a>比赛信息 📚</h2><p><strong>时间</strong>：2023 年 11 月 25 日 18:00 - 21:00</p>
+<p><strong>竞赛链接</strong>：<a target="_blank" rel="noopener" href="http://10.7.95.2/contest/1310/problems">（仅ZJNU内网登录）</a></p>
+<p><strong>ACM集训队讲解视频</strong>：<a href="/">/</a></p>
+<h2 id="个人情况-✍️"><a href="#个人情况-✍️" class="headerlink" title="个人情况 ✍️"></a>个人情况 ✍️</h2><blockquote>
+<p><strong>本周个人排名</strong>：12/13</p>
+<p><strong>AC情况</strong>：1/6</p>
+<p>比赛时间：2023.11.25（18：00 - 21:00）</p>
+<p>忘记周赛时间了，进场的时候已经只剩下25min了，只AC了B题，接近做出A题。</p>
+</blockquote>
+<h2 id="题目列表-🧑🏻‍💻"><a href="#题目列表-🧑🏻‍💻" class="headerlink" title="题目列表 🧑🏻‍💻"></a>题目列表 🧑🏻‍💻</h2><table>
+<thead>
+<tr>
+<th align="center">题目名称</th>
+<th align="center">难度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">T1 - Divide it!</td>
+<td align="center">🟡</td>
+</tr>
+<tr>
+<td align="center">T2 - Merge it!</td>
+<td align="center">🟢</td>
+</tr>
+<tr>
+<td align="center">T3 - Lose it!</td>
+<td align="center">🟡</td>
+</tr>
+<tr>
+<td align="center">T4 - Recover it!</td>
+<td align="center">🟡</td>
+</tr>
+<tr>
+<td align="center">T5 - Cover it!</td>
+<td align="center">🟡</td>
+</tr>
+<tr>
+<td align="center">T6 - Destroy it!</td>
+<td align="center">🟡</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="题解-🚀"><a href="#题解-🚀" class="headerlink" title="题解 🚀"></a>题解 🚀</h2><h3 id="A-Divide-it"><a href="#A-Divide-it" class="headerlink" title="A - Divide it!"></a>A - Divide it!</h3><h4 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>You are given an integer $n$.</p>
+<p>You can perform any of the following operations with this number an arbitrary (possibly, zero) number of times:</p>
+<ol>
+<li>Replace $n$ with $\frac{n}{2}$ if $n$ is divisible by $2$;</li>
+<li>Replace $n$ with $\frac{2n}{3}$ if $n$ is divisible by $3$;</li>
+<li>Replace $n$ with $\frac{4n}{5}$ if $n$ is divisible by $5$.</li>
+</ol>
+<p>For example, you can replace $30$ with $15$ using the first operation, with $20$ using the second operation or with $24$ using the third operation.</p>
+<p>Your task is to find the minimum number of moves required to obtain $1$ from $n$ or say that it is impossible to do it.</p>
+<p>You have to answer $q$ independent queries.</p>
+<h5 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h5><p>The first line of the input contains one integer $q$ ($1 \le q \le 1000$) — the number of queries.</p>
+<p>The next $q$ lines contain the queries. For each query you are given the integer number $n$ ($1 \le n \le 10^{18}$).</p>
+<h5 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h5><p>Print the answer for each query on a new line. If it is impossible to obtain $1$ from $n$, print -1. Otherwise, print the minimum number of moves required to do it.</p>
+<h5 id="【输入样例1】"><a href="#【输入样例1】" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">7</span>
+<span class="token number">1</span>
+<span class="token number">10</span>
+<span class="token number">25</span>
+<span class="token number">30</span>
+<span class="token number">14</span>
+<span class="token number">27</span>
+<span class="token number">1000000000000000000</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例1】"><a href="#【输出样例1】" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">0</span>
+<span class="token number">4</span>
+<span class="token number">6</span>
+<span class="token number">6</span>
+<span class="token operator">-</span><span class="token number">1</span>
+<span class="token number">6</span>
+<span class="token number">72</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【题目来源】"><a href="#【题目来源】" class="headerlink" title="【题目来源】"></a>【题目来源】</h5><hr>
+<h4 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】✅"><a href="#【C-代码】✅" class="headerlink" title="【C++代码】✅"></a>【C++代码】✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h3 id="B-Merge-it"><a href="#B-Merge-it" class="headerlink" title="B - Merge it!"></a>B - Merge it!</h3><h4 id="题目信息-📚-1"><a href="#题目信息-📚-1" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>You are given an array $a$ consisting of $n$ integers $a_1, a_2, \dots , a_n$.</p>
+<p>In one operation you can choose two elements of the array and replace them with the element equal to their sum (it does not matter where you insert the new element). For example, from the array $[2, 1, 4]$ you can obtain the following arrays: $[3, 4]$, $[1, 6]$ and $[2, 5]$.</p>
+<p>Your task is to find the maximum possible number of elements divisible by $3$ that are in the array after performing this operation an arbitrary (possibly, zero) number of times.</p>
+<p>You have to answer $t$ independent queries.</p>
+<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p>The first line contains one integer $t$ ($1 \le t \le 1000$) — the number of queries.</p>
+<p>The first line of each query contains one integer $n$ ($1 \le n \le 100$).</p>
+<p>The second line of each query contains $n$ integers $a_1, a_2, \dots , a_n$ ($1 \le a_i \le 10^9$).</p>
+<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>For each query print one integer in a single line — the maximum possible number of elements divisible by $3$ that are in the array after performing described operation an arbitrary (possibly, zero) number of times.</p>
+<h5 id="【输入样例1】-1"><a href="#【输入样例1】-1" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span>
+<span class="token number">5</span>
+<span class="token number">3</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">1</span>
+<span class="token number">7</span>
+<span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例1】-1"><a href="#【输出样例1】-1" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span>
+<span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【提示】"><a href="#【提示】" class="headerlink" title="【提示】"></a>【提示】</h5><p>In the first query of the example you can apply the following sequence of operations to obtain $3$ elements divisible by $3$: $[3, 1, 2, 3, 1] \rightarrow [3, 3, 3, 1]$.</p>
+<p>In the second query you can obtain $3$ elements divisible by $3$ with the following sequence of operations: $[1, 1, 1, 1, 1, 2, 2] \rightarrow [1, 1, 1, 1, 2, 3] \rightarrow [1, 1, 1, 3, 3] \rightarrow [2, 1, 3, 3] \rightarrow [3, 3, 3]$.</p>
+<h5 id="【题目来源】-1"><a href="#【题目来源】-1" class="headerlink" title="【题目来源】"></a>【题目来源】</h5><hr>
+<h4 id="题目解析-🍉-1"><a href="#题目解析-🍉-1" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】✅-1"><a href="#【C-代码】✅-1" class="headerlink" title="【C++代码】✅"></a>【C++代码】✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h3 id="C-Lose-it"><a href="#C-Lose-it" class="headerlink" title="C - Lose it!"></a>C - Lose it!</h3><h4 id="题目信息-📚-2"><a href="#题目信息-📚-2" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目描述】-2"><a href="#【题目描述】-2" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>You are given an array $a$ consisting of $n$ integers. Each $a_i$ is one of the six following numbers: $4, 8, 15, 16, 23, 42$.</p>
+<p>Your task is to remove the minimum number of elements to make this array <strong>good</strong>.</p>
+<p>An array of length $k$ is called <strong>good</strong> if $k$ is divisible by $6$ and it is possible to split it into $\frac{k}{6}$ <strong>subsequences</strong> $4, 8, 15, 16, 23, 42$.</p>
+<p>Examples of good arrays:</p>
+<ul>
+<li>$[4, 8, 15, 16, 23, 42]$ (the whole array is a required sequence);</li>
+<li>$[4, 8, 4, 15, 16, 8, 23, 15, 16, 42, 23, 42]$ (the first sequence is formed from first, second, fourth, fifth, seventh and tenth elements and the second one is formed from remaining elements);</li>
+<li>$[]$ (<strong>the empty array is good</strong>).</li>
+</ul>
+<p>Examples of bad arrays:</p>
+<ul>
+<li>$[4, 8, 15, 16, 42, 23]$ (the order of elements should be exactly $4, 8, 15, 16, 23, 42$);</li>
+<li>$[4, 8, 15, 16, 23, 42, 4]$ (the length of the array is not divisible by $6$);</li>
+<li>$[4, 8, 15, 16, 23, 42, 4, 8, 15, 16, 23, 23]$ (the first sequence can be formed from first six elements but the remaining array cannot form the required sequence).</li>
+</ul>
+<h5 id="【输入】-2"><a href="#【输入】-2" class="headerlink" title="【输入】"></a>【输入】</h5><p>The first line of the input contains one integer $n$ ($1 \le n \le 5 \cdot 10^5$) — the number of elements in $a$.</p>
+<p>The second line of the input contains $n$ integers $a_1, a_2, \dots, a_n$ (each $a_i$ is one of the following numbers: $4, 8, 15, 16, 23, 42$), where $a_i$ is the $i$-th element of $a$.</p>
+<h5 id="【输出】-2"><a href="#【输出】-2" class="headerlink" title="【输出】"></a>【输出】</h5><p>Print one integer — the minimum number of elements you have to remove to obtain a <strong>good</strong> array.</p>
+<h5 id="【输入样例1】-2"><a href="#【输入样例1】-2" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span>
+<span class="token number">4</span> <span class="token number">8</span> <span class="token number">15</span> <span class="token number">16</span> <span class="token number">23</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例1】-2"><a href="#【输出样例1】-2" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【输入样例2】"><a href="#【输入样例2】" class="headerlink" title="【输入样例2】"></a>【输入样例2】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">12</span>
+<span class="token number">4</span> <span class="token number">8</span> <span class="token number">4</span> <span class="token number">15</span> <span class="token number">16</span> <span class="token number">8</span> <span class="token number">23</span> <span class="token number">15</span> <span class="token number">16</span> <span class="token number">42</span> <span class="token number">23</span> <span class="token number">42</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例2】"><a href="#【输出样例2】" class="headerlink" title="【输出样例2】"></a>【输出样例2】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【输入样例3】"><a href="#【输入样例3】" class="headerlink" title="【输入样例3】"></a>【输入样例3】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">15</span>
+<span class="token number">4</span> <span class="token number">8</span> <span class="token number">4</span> <span class="token number">8</span> <span class="token number">15</span> <span class="token number">16</span> <span class="token number">8</span> <span class="token number">16</span> <span class="token number">23</span> <span class="token number">15</span> <span class="token number">16</span> <span class="token number">4</span> <span class="token number">42</span> <span class="token number">23</span> <span class="token number">42</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例3】"><a href="#【输出样例3】" class="headerlink" title="【输出样例3】"></a>【输出样例3】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【题目来源】-2"><a href="#【题目来源】-2" class="headerlink" title="【题目来源】"></a>【题目来源】</h5><hr>
+<h4 id="题目解析-🍉-2"><a href="#题目解析-🍉-2" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-2"><a href="#【题目分析】-2" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】✅-2"><a href="#【C-代码】✅-2" class="headerlink" title="【C++代码】✅"></a>【C++代码】✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h3 id="D-Recover-it"><a href="#D-Recover-it" class="headerlink" title="D - Recover it!"></a>D - Recover it!</h3><h4 id="题目信息-📚-3"><a href="#题目信息-📚-3" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目描述】-3"><a href="#【题目描述】-3" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>Authors guessed an array $a$ consisting of $n$ integers; each integer is not less than $2$ and not greater than $2 \cdot 10^5$. You don’t know the array $a$, but you know the array $b$ which is formed from it with the following sequence of operations:</p>
+<ol>
+<li>Firstly, let the array $b$ be equal to the array $a$;</li>
+<li>Secondly, for each $i$ from $1$ to $n$:<ul>
+<li>if $a_i$ is a <strong>prime</strong> number, then one integer $p_{a_i}$ is appended to array $b$, where $p$ is an infinite sequence of prime numbers ($2, 3, 5, \dots$);</li>
+<li>otherwise (if $a_i$ is not a <strong>prime</strong> number), the greatest divisor of $a_i$ which is not equal to $a_i$ is appended to $b$;</li>
+</ul>
+</li>
+<li>Then the obtained array of length $2n$ is shuffled and given to you in the input.</li>
+</ol>
+<p>Here $p_{a_i}$ means the $a_i$-th prime number. The first prime $p_1 = 2$, the second one is $p_2 = 3$, and so on.</p>
+<p>Your task is to recover <strong>any</strong> suitable array $a$ that forms the given array $b$. It is guaranteed that the answer exists (so the array $b$ is obtained from some suitable array $a$). If there are multiple answers, you can print any.</p>
+<h5 id="【输入】-3"><a href="#【输入】-3" class="headerlink" title="【输入】"></a>【输入】</h5><p>The first line of the input contains one integer $n$ ($1 \le n \le 2 \cdot 10^5$) — the number of elements in $a$.</p>
+<p>The second line of the input contains $2n$ integers $b_1, b_2, \dots, b_{2n}$ ($2 \le b_i \le 2750131$), where $b_i$ is the $i$-th element of $b$. $2750131$ is the $199999$-th prime number.</p>
+<h5 id="【输出】-3"><a href="#【输出】-3" class="headerlink" title="【输出】"></a>【输出】</h5><p>In the only line of the output print $n$ integers $a_1, a_2, \dots, a_n$ ($2 \le a_i \le 2 \cdot 10^5$) in <strong>any</strong> order — the array $a$ from which the array $b$ can be obtained using the sequence of moves given in the problem statement. If there are multiple answers, you can print any.</p>
+<h5 id=""><a href="#" class="headerlink" title=""></a></h5><h5 id="【输入样例1】-3"><a href="#【输入样例1】-3" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span>
+<span class="token number">3</span> <span class="token number">5</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例1】-3"><a href="#【输出样例1】-3" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span> <span class="token number">4</span> <span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【输入样例2】-1"><a href="#【输入样例2】-1" class="headerlink" title="【输入样例2】"></a>【输入样例2】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">1</span>
+<span class="token number">2750131</span> <span class="token number">199999</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例2】-1"><a href="#【输出样例2】-1" class="headerlink" title="【输出样例2】"></a>【输出样例2】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">199999</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【输入样例3】-1"><a href="#【输入样例3】-1" class="headerlink" title="【输入样例3】"></a>【输入样例3】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">1</span>
+<span class="token number">3</span> <span class="token number">6</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例3】-1"><a href="#【输出样例3】-1" class="headerlink" title="【输出样例3】"></a>【输出样例3】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【题目来源】-3"><a href="#【题目来源】-3" class="headerlink" title="【题目来源】"></a>【题目来源】</h5><hr>
+<h4 id="题目解析-🍉-3"><a href="#题目解析-🍉-3" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-3"><a href="#【题目分析】-3" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h3 id="E-Cover-it"><a href="#E-Cover-it" class="headerlink" title="E - Cover it!"></a>E - Cover it!</h3><h4 id="题目信息-📚-4"><a href="#题目信息-📚-4" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目描述】-4"><a href="#【题目描述】-4" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>You are given an undirected unweighted connected graph consisting of $n$ vertices and $m$ edges. It is guaranteed that there are no self-loops or multiple edges in the given graph.</p>
+<p>Your task is to choose <strong>at most</strong> $\lfloor\frac{n}{2}\rfloor$ vertices in this graph so <strong>each</strong> unchosen vertex is adjacent (in other words, connected by an edge) to at least one of chosen vertices.</p>
+<p>It is guaranteed that the answer exists. If there are multiple answers, you can print any.</p>
+<p>You will be given multiple independent queries to answer.</p>
+<h5 id="【输入】-4"><a href="#【输入】-4" class="headerlink" title="【输入】"></a>【输入】</h5><p>The first line contains a single integer $t$ ($1 \le t \le 2 \cdot 10^5$) — the number of queries.</p>
+<p>Then $t$ queries follow.</p>
+<p>The first line of each query contains two integers $n$ and $m$ ($2 \le n \le 2 \cdot 10^5$, $n - 1 \le m \le min(2 \cdot 10^5, \frac{n(n-1)}{2})$) — the number of vertices and the number of edges, respectively.</p>
+<p>The following $m$ lines denote edges: edge $i$ is represented by a pair of integers $v_i$, $u_i$ ($1 \le v_i, u_i \le n$, $u_i \ne v_i$), which are the indices of vertices connected by the edge.</p>
+<p>There are no self-loops or multiple edges in the given graph, i. e. for each pair ($v_i, u_i$) there are no other pairs ($v_i, u_i$) or ($u_i, v_i$) in the list of edges, and for each pair ($v_i, u_i$) the condition $v_i \ne u_i$ is satisfied. It is guaranteed that the given graph is <strong>connected</strong>.</p>
+<p>It is guaranteed that $\sum m \le 2 \cdot 10^5$ over all queries.</p>
+<h5 id="【输出】-4"><a href="#【输出】-4" class="headerlink" title="【输出】"></a>【输出】</h5><p>For each query print two lines.</p>
+<p>In the first line print $k$ ($1 \le \lfloor\frac{n}{2}\rfloor$) — the number of chosen vertices.</p>
+<p>In the second line print $k$ <strong>distinct</strong> integers $c_1, c_2, \dots, c_k$ in any order, where $c_i$ is the index of the $i$-th chosen vertex.</p>
+<p>It is guaranteed that the answer exists. If there are multiple answers, you can print any.</p>
+<h5 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><ul>
+<li>All values in input are integers.</li>
+<li>$1 \leq N \leq 200000$</li>
+<li>$1 \leq a_i \leq N$</li>
+</ul>
+<h5 id="【输入样例1】-4"><a href="#【输入样例1】-4" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span>
+<span class="token number">4</span> <span class="token number">6</span>
+<span class="token number">1</span> <span class="token number">2</span>
+<span class="token number">1</span> <span class="token number">3</span>
+<span class="token number">1</span> <span class="token number">4</span>
+<span class="token number">2</span> <span class="token number">3</span>
+<span class="token number">2</span> <span class="token number">4</span>
+<span class="token number">3</span> <span class="token number">4</span>
+<span class="token number">6</span> <span class="token number">8</span>
+<span class="token number">2</span> <span class="token number">5</span>
+<span class="token number">5</span> <span class="token number">4</span>
+<span class="token number">4</span> <span class="token number">3</span>
+<span class="token number">4</span> <span class="token number">1</span>
+<span class="token number">1</span> <span class="token number">3</span>
+<span class="token number">2</span> <span class="token number">3</span>
+<span class="token number">2</span> <span class="token number">6</span>
+<span class="token number">5</span> <span class="token number">6</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例1】-4"><a href="#【输出样例1】-4" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span>
+<span class="token number">1</span> <span class="token number">3</span>
+<span class="token number">3</span>
+<span class="token number">4</span> <span class="token number">3</span> <span class="token number">6</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【提示】-1"><a href="#【提示】-1" class="headerlink" title="【提示】"></a>【提示】</h5><p>In the first query any vertex or any pair of vertices will suffice.</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/a26e97278a281f0e358996f1375267f9b2f8f278-20231125224050151.png"></p>
+<p>Note that you don’t have to minimize the number of chosen vertices. In the second query two vertices can be enough (vertices $2$ and $4$) but three is also ok.</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/cc456ae6edb07a5afe99c9d667e1b6eae686557f.png"></p>
+<h5 id="【题目来源】-4"><a href="#【题目来源】-4" class="headerlink" title="【题目来源】"></a>【题目来源】</h5><hr>
+<h4 id="题目解析-🍉-4"><a href="#题目解析-🍉-4" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【C-代码】✅-3"><a href="#【C-代码】✅-3" class="headerlink" title="【C++代码】✅"></a>【C++代码】✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h3 id="F-Destroy-it"><a href="#F-Destroy-it" class="headerlink" title="F - Destroy it!"></a>F - Destroy it!</h3><h4 id="题目信息-📚-5"><a href="#题目信息-📚-5" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目描述】-5"><a href="#【题目描述】-5" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>You are playing a computer card game called Splay the Sire. Currently you are struggling to defeat the final boss of the game.</p>
+<p>The boss battle consists of $n$ turns. During each turn, you will get several cards. Each card has two parameters: its cost $c_i$ and damage $d_i$. You may play some of your cards during each turn in some sequence (you choose the cards and the exact order they are played), as long as <strong>the total cost of the cards you play during the turn does not exceed $3$</strong>. After playing some (possibly zero) cards, you end your turn, and <strong>all cards you didn’t play are discarded</strong>. Note that you can use each card <strong>at most once</strong>.</p>
+<p>Your character has also found an artifact that boosts the damage of some of your actions: every $10$-th card you play deals double damage.</p>
+<p>What is the maximum possible damage you can deal during $n$ turns?</p>
+<h5 id="【输入】-5"><a href="#【输入】-5" class="headerlink" title="【输入】"></a>【输入】</h5><p>The first line contains one integer $n$ ($1 \le n \le 2 \cdot 10^5$) — the number of turns.</p>
+<p>Then $n$ blocks of input follow, the $i$-th block representing the cards you get during the $i$-th turn.</p>
+<p>Each block begins with a line containing one integer $k_i$ ($1 \le k_i \le 2 \cdot 10^5$) — the number of cards you get during $i$-th turn. Then $k_i$ lines follow, each containing two integers $c_j$ and $d_j$ ($1 \le c_j \le 3$, $1 \le d_j \le 10^9$) — the parameters of the corresponding card.</p>
+<p>It is guaranteed that $\sum \limits_{i = 1}^{n} k_i \le 2 \cdot 10^5$.</p>
+<h5 id="【输出】-5"><a href="#【输出】-5" class="headerlink" title="【输出】"></a>【输出】</h5><p>Print one integer — the maximum damage you may deal.</p>
+<h5 id="【输入样例1】-5"><a href="#【输入样例1】-5" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span>
+<span class="token number">3</span>
+<span class="token number">1</span> <span class="token number">6</span>
+<span class="token number">1</span> <span class="token number">7</span>
+<span class="token number">1</span> <span class="token number">5</span>
+<span class="token number">2</span>
+<span class="token number">1</span> <span class="token number">4</span>
+<span class="token number">1</span> <span class="token number">3</span>
+<span class="token number">3</span>
+<span class="token number">1</span> <span class="token number">10</span>
+<span class="token number">3</span> <span class="token number">5</span>
+<span class="token number">2</span> <span class="token number">3</span>
+<span class="token number">3</span>
+<span class="token number">1</span> <span class="token number">15</span>
+<span class="token number">2</span> <span class="token number">4</span>
+<span class="token number">1</span> <span class="token number">10</span>
+<span class="token number">1</span>
+<span class="token number">1</span> <span class="token number">100</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例1】-5"><a href="#【输出样例1】-5" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">263</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【提示】-2"><a href="#【提示】-2" class="headerlink" title="【提示】"></a>【提示】</h5><p>In the example test the best course of action is as follows:</p>
+<p>During the first turn, play all three cards in any order and deal $18$ damage.</p>
+<p>During the second turn, play both cards and deal $7$ damage.</p>
+<p>During the third turn, play the first and the third card and deal $13$ damage.</p>
+<p>During the fourth turn, play the first and the third card and deal $25$ damage.</p>
+<p>During the fifth turn, play the only card, which will deal double damage ($200$).</p>
+<h5 id="【题目来源】-5"><a href="#【题目来源】-5" class="headerlink" title="【题目来源】"></a>【题目来源】</h5><hr>
+<h4 id="题目解析-🍉-5"><a href="#题目解析-🍉-5" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-4"><a href="#【题目分析】-4" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】-1"><a href="#【C-代码】-1" class="headerlink" title="【C++代码】"></a>【C++代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+
                 
             </div>
             <hr/>
@@ -1330,8 +1599,7 @@
                 <a href="/2023/11/25/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai-shi/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="复盘｜2023多校新生周赛十">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="复盘｜2023多校新生周赛十">
                         
                         <span class="card-title">复盘｜2023多校新生周赛十</span>
                     </div>
@@ -1348,8 +1616,12 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Rickyの水果摊
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E5%A4%8D%E7%9B%98/" class="post-category">
+                                    信息奥赛复盘
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1665,7 +1937,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">221.4k</span>&nbsp;字
+                class="white-color">223.8k</span>&nbsp;字
             
             
             
