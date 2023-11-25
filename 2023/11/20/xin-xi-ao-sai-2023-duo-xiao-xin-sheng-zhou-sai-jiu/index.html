@@ -1062,14 +1062,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.7k
+                    3.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    14 分
+                    17 分
                 </div>
                 
 
@@ -1106,7 +1106,7 @@
 <p>T5 简单思维 + 模拟 ✅</p>
 <p>T6 树的涂色问题 ❌ </p>
 <p>T7 本场耗时最长的题目，赛时陷入了思维误区，未能AC ❌（补题时发现思维漏洞）</p>
-<p>T8 该题属于经典的「感觉平常做过类似的题，但赛场上就是做不出的题」 ❌（赛后通过暴力法理清思路，寻找优化时间复杂度，发现需要补充「同余」相关的知识）</p>
+<p>T8 该题属于经典的「感觉平常做过类似的题，但赛场上就是做不出的题」 ❌（赛后通过暴力法理清思路，寻找优化方法，发现需要补充「同余」相关数学知识）</p>
 <p>总体来看，这次周赛难度相对较低，有不少简单题。若是能在赛时做出T7会更圆满，继续加油 😀</p>
 </blockquote>
 <h2 id="题目列表-🧑🏻‍💻"><a href="#题目列表-🧑🏻‍💻" class="headerlink" title="题目列表 🧑🏻‍💻"></a>题目列表 🧑🏻‍💻</h2><table>
@@ -1529,7 +1529,36 @@ LL <span class="token function">d</span><span class="token punctuation">(</span>
 <p>$f(5) = 5 × 3 × 1 = 15$, which has no trailing zeros.</p>
 <h5 id="【题目来源】-5"><a href="#【题目来源】-5" class="headerlink" title="【题目来源】"></a>【题目来源】</h5><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc148/tasks/abc148_e">AtCoder ABC148E</a></p>
 <hr>
-<h4 id="题目解析-🍉-6"><a href="#题目解析-🍉-6" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-5"><a href="#【题目分析】-5" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】✅-4"><a href="#【C-代码】✅-4" class="headerlink" title="【C++代码】✅"></a>【C++代码】✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="题目解析-🍉-6"><a href="#题目解析-🍉-6" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-5"><a href="#【题目分析】-5" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p><a target="_blank" rel="noopener" href="https://img.atcoder.jp/abc148/editorial.pdf">官方英文题解 (PDF P13)</a></p>
+<p>末尾0只可能由因子 5 和 2 构成，又 2 的数量远大于 5，因此只需要查询 $f(n)$ 有多少个因子 5 存在即可。</p>
+<ul>
+<li>包含1个因子5的个数：$floor(f(n) / (5*2))$</li>
+<li>包含2个因子5的个数：$floor(f(n) / {(5 * 5 * 2)})$</li>
+<li>包含3个因子5的个数：$floor(f(n) / {(5 * 5 * 5 * 2)})$</li>
+<li>…</li>
+</ul>
+<h5 id="【C-代码】✅-4"><a href="#【C-代码】✅-4" class="headerlink" title="【C++代码】✅"></a>【C++代码】✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+LL n<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token number">0</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>  <span class="token comment">// n为奇数，无因子5和2</span>
+    <span class="token keyword">else</span> <span class="token punctuation">{</span>  <span class="token comment">// n为偶数，计算因子5的个数</span>
+        <span class="token comment">// p=10、50、250、1250...</span>
+        LL p <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>n <span class="token operator">&gt;=</span> p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            cnt <span class="token operator">=</span> cnt <span class="token operator">+</span> n <span class="token operator">/</span> p<span class="token punctuation">;</span>
+            p <span class="token operator">*=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        cout <span class="token operator">&lt;&lt;</span> cnt <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
 <h3 id="H-Rem-of-Sum-is-Num"><a href="#H-Rem-of-Sum-is-Num" class="headerlink" title="H - Rem of Sum is Num"></a>H - Rem of Sum is Num</h3><h4 id="题目信息-📚-7"><a href="#题目信息-📚-7" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目描述】-7"><a href="#【题目描述】-7" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>Given are a sequence of $N$ positive integers $A_1, A_2, \ldots, A_N$, and a positive integer $K$</p>
@@ -1566,9 +1595,79 @@ LL <span class="token function">d</span><span class="token punctuation">(</span>
 <p>$(4,2)$ is counted four times, and $(2,4)$ is counted three times.</p>
 <h5 id="【题目来源】-6"><a href="#【题目来源】-6" class="headerlink" title="【题目来源】"></a>【题目来源】</h5><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc146/tasks/abc146_e">AtCoder ABC146E</a></p>
 <hr>
-<h4 id="题目解析-🍉-7"><a href="#题目解析-🍉-7" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-6"><a href="#【题目分析】-6" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】DFS-贪心-✅"><a href="#【C-代码】DFS-贪心-✅" class="headerlink" title="【C++代码】DFS + 贪心 ✅"></a>【C++代码】DFS + 贪心 ✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="题目解析-🍉-7"><a href="#题目解析-🍉-7" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-6"><a href="#【题目分析】-6" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>官方题解：<a target="_blank" rel="noopener" href="https://img.atcoder.jp/abc146/editorial.pdf">https://img.atcoder.jp/abc146/editorial.pdf</a></p>
+<p>通过暴力法理清思路，需要优化的公式为（<code>s</code> 为<code>a</code> 的前缀和数组）：<br>$$<br>(s[i] - s[j]) \bmod k= i - j<br>$$<br>然后用同余公式，修改方程：<br>$$<br>s[i] - s[j] = k*t + i - j<br>$$</p>
+<p>$$<br>(s[i] - i) - (s[j] - j)= k*t<br>$$</p>
+<p>$$<br>(s[i] - i) \bmod k = (s[j] - j) \bmod k<br>$$</p>
+<p>在预处理时，可以令 <code>a[i]--</code>，这样就可以把公式优化为：<br>$$<br>s[i] \bmod k = s[j] \bmod k<br>$$</p>
+<blockquote>
+<p>PS：本题有区间长度限制，$i - j &lt;= k-1$</p>
+</blockquote>
+<h5 id="【C-代码】暴力法（TLE）-❌"><a href="#【C-代码】暴力法（TLE）-❌" class="headerlink" title="【C++代码】暴力法（TLE） ❌"></a>【C++代码】暴力法（TLE） ❌</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
-<h5 id="【C-代码】全排列法-✅"><a href="#【C-代码】全排列法-✅" class="headerlink" title="【C++代码】全排列法 ✅"></a>【C++代码】全排列法 ✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">2e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+LL n<span class="token punctuation">,</span> k<span class="token punctuation">,</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> s<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> k<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> s<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">// 求前缀和数组</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 暴力法</span>
+    LL cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> i<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> s<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">%</span> k <span class="token operator">==</span> i <span class="token operator">-</span> j<span class="token punctuation">)</span> cnt<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> cnt <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【C-代码】前缀和-同余-map-队列-✅"><a href="#【C-代码】前缀和-同余-map-队列-✅" class="headerlink" title="【C++代码】前缀和 + 同余 + map + 队列 ✅"></a>【C++代码】前缀和 + 同余 + map + 队列 ✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">2e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+LL n<span class="token punctuation">,</span> k<span class="token punctuation">,</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> s<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> k<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">// 预处理，求前缀和数组</span>
+        a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">--</span><span class="token punctuation">;</span>
+        s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>s<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">%</span> k<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    LL cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    map<span class="token operator">&lt;</span>LL<span class="token punctuation">,</span> LL<span class="token operator">&gt;</span> mp<span class="token punctuation">;</span>  <span class="token comment">// 构建一个map</span>
+    queue<span class="token operator">&lt;</span>LL<span class="token operator">&gt;</span> q<span class="token punctuation">;</span>  <span class="token comment">// 维护一个长度为k的队列</span>
+    q<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        q<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">%</span> k<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>q<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            LL tmp <span class="token operator">=</span> q<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            mp<span class="token punctuation">[</span>tmp<span class="token punctuation">]</span><span class="token operator">--</span><span class="token punctuation">;</span>
+            q<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        cnt <span class="token operator">+=</span> mp<span class="token punctuation">[</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">%</span> k<span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> cnt <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
 
@@ -2152,7 +2251,7 @@ LL <span class="token function">d</span><span class="token punctuation">(</span>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">220.9k</span>&nbsp;字
+                class="white-color">221.4k</span>&nbsp;字
             
             
             
