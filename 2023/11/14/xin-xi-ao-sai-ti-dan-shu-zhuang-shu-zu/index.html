@@ -898,7 +898,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/30.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1070,14 +1070,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.2k
+                    5.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    19 分
+                    24 分
                 </div>
                 
 
@@ -1100,9 +1100,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>本篇博客还在修改润色中～</p>
-<p>敬请期待～</p>
-<h1 id="树状数组"><a href="#树状数组" class="headerlink" title="树状数组"></a>树状数组</h1><h2 id="题单-🧑🏻‍💻"><a href="#题单-🧑🏻‍💻" class="headerlink" title="题单 🧑🏻‍💻"></a>题单 🧑🏻‍💻</h2><table>
+                <h1 id="树状数组"><a href="#树状数组" class="headerlink" title="树状数组"></a>树状数组</h1><h2 id="题单-🧑🏻‍💻"><a href="#题单-🧑🏻‍💻" class="headerlink" title="题单 🧑🏻‍💻"></a>题单 🧑🏻‍💻</h2><table>
 <thead>
 <tr>
 <th align="center">题目来源</th>
@@ -1116,7 +1114,14 @@
 <td align="center">洛谷 - P3374</td>
 <td align="center">【模板】树状数组 1</td>
 <td align="center"><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3374">链接🔗</a></td>
-<td align="center">树状数组模版题</td>
+<td align="center">树状数组 + 区间和</td>
+<td align="center">🟢</td>
+</tr>
+<tr>
+<td align="center">HDU - 1166</td>
+<td align="center">敌兵布阵</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://vjudge.net/problem/HDU-1166">链接🔗</a></td>
+<td align="center">树状数组 + 区间和</td>
 <td align="center">🟢</td>
 </tr>
 <tr>
@@ -1144,7 +1149,7 @@
 <td align="center">AtCoder ABC221E</td>
 <td align="center">LEQ</td>
 <td align="center"><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc221/tasks/abc221_e">链接🔗</a></td>
-<td align="center">树状数组 + 离散化</td>
+<td align="center">树状数组 + 逆元</td>
 <td align="center">🟡</td>
 </tr>
 </tbody></table>
@@ -1232,23 +1237,120 @@
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<h3 id="【模板】树状数组-2"><a href="#【模板】树状数组-2" class="headerlink" title="【模板】树状数组 2"></a>【模板】树状数组 2</h3><h4 id="题目信息-📚-1"><a href="#题目信息-📚-1" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】洛谷-P3368-【模板】树状数组-2"><a href="#【题目名称】洛谷-P3368-【模板】树状数组-2" class="headerlink" title="【题目名称】洛谷 P3368 - 【模板】树状数组 2"></a>【题目名称】洛谷 P3368 - 【模板】树状数组 2</h5><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>如题，已知一个数列，你需要进行下面两种操作：</p>
+<h3 id="敌兵布阵"><a href="#敌兵布阵" class="headerlink" title="敌兵布阵"></a>敌兵布阵</h3><h4 id="题目信息-📚-1"><a href="#题目信息-📚-1" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】HDU-1166-敌兵布阵"><a href="#【题目名称】HDU-1166-敌兵布阵" class="headerlink" title="【题目名称】HDU 1166 - 敌兵布阵"></a>【题目名称】HDU 1166 - 敌兵布阵</h5><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>C 国的死对头A国这段时间正在进行军事演习，所以 C国间谍头子 Derek 和他手下 Tidy 又开始忙乎了。A国 在海岸线沿直线布置了 $N$ 个工兵营地，Derek 和 Tidy 的任务就是要监视这些工兵营地的活动情况。由于采取了某种先进的监测手段，所以每个工兵营地的人数 C国都掌握的一清二楚，每个工兵营地的人数都有可能发生变动，可能增加或减少若干人手，但这些都逃不过C国的监视。</p>
+<p>中央情报局要研究敌人究竟演习什么战术，所以 Tidy 要随时向 Derek 汇报某一段连续的工兵营地一共有多少人，例如 Derek 问：“Tidy, 马上汇报第 $3$ 个营地到第 $10$ 个营地共有多少人！” Tidy 就要马上开始计算这一段的总人数并汇报。</p>
+<p>但敌兵营地的人数经常变动，而 Derek 每次询问的段都不一样，所以 Tidy 不得不每次都一个一个营地的去数，很快就精疲力尽了，Derek 对 Tidy 的计算速度越来越不满:”你个死肥仔，算得这么慢，我炒你鱿鱼！” Tidy 想：“你自己来算算看，这可真是一项累人的工作!我恨不得你炒我鱿鱼呢！”无奈之下，Tidy 只好打电话向计算机专家 Windbreaker 求救, Windbreaker 说：“死肥仔，叫你平时做多点acm题和看多点算法书，现在尝到苦果了吧！”Tidy 说：”我知错了。。。”但 Windbreaker 已经挂掉电话了。Tidy 很苦恼，这么算他真的会崩溃的，聪明的读者，你能写个程序帮他完成这项工作吗？不过如果你的程序效率不够高的话，Tidy 还是会受到 Derek 的责骂的。</p>
+<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行一个整数 $T$，表示有 $T$ 组数据。 </p>
+<p>每组数据第一行一个正整数 $N$（$N \leq 50000$），表示敌人有 $N$ 个工兵营地，接下来有 $N$ 个正整数, 第 $i$ 个正整数 $a_i$ 代表第 $i$ 个工兵营地里开始时有 $a_i$ 个人（$1 \leq a_i \leq 50$）。 接下来每行有一条命令，命令有4种形式：</p>
+<ol>
+<li><code>Add i j</code>, $i$ 和 $j$ 为正整数, 表示第 $i$ 个营地增加 $j$ 个人（$j$ 不超过 $30$）</li>
+<li><code>Sub i j</code>, $i$ 和 $j$ 为正整数, 表示第 $i$ 个营地减少 $j$ 个人（$j$ 不超过 $30$）</li>
+<li><code>Query i j</code>, $i$ 和 $j$ 为正整数, $i \leq j$，表示询问第 $i$ 到第 $j$ 个营地的总人数</li>
+<li><code>End</code> 表示结束，这条命令在每组数据最后出现</li>
+</ol>
+<p>每组数据最多有 $40000$ 条命令</p>
+<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>对第 $i$ 组数据,首先输出 <code>Case i:</code> 和回车</p>
+<p>对于每个 <code>Query</code> 询问，输出一个整数并回车,表示询问的段中的总人数,这个数保持在 <code>int</code> 以内。</p>
+<h5 id="【输入样例】-1"><a href="#【输入样例】-1" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">1</span>
+<span class="token number">10</span>
+<span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span> <span class="token number">6</span> <span class="token number">7</span> <span class="token number">8</span> <span class="token number">9</span> <span class="token number">10</span>
+Query <span class="token number">1</span> <span class="token number">3</span>
+Add <span class="token number">3</span> <span class="token number">6</span>
+Query <span class="token number">2</span> <span class="token number">7</span>
+Sub <span class="token number">10</span> <span class="token number">2</span>
+Add <span class="token number">6</span> <span class="token number">3</span>
+Query <span class="token number">3</span> <span class="token number">10</span>
+End <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例】-1"><a href="#【输出样例】-1" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">Case <span class="token number">1</span><span class="token operator">:</span>
+<span class="token number">6</span>
+<span class="token number">33</span>
+<span class="token number">59</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【原题链接】-1"><a href="#【原题链接】-1" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://vjudge.net/problem/HDU-1166">https://vjudge.net/problem/HDU-1166</a></p>
+<hr>
+<h4 id="题目解析-🍉-1"><a href="#题目解析-🍉-1" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>树状数组模版题（单点更新 + 区间查询）</p>
+<h5 id="【C-代码】-1"><a href="#【C-代码】-1" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">5e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> tmp<span class="token punctuation">,</span> cnt<span class="token punctuation">,</span> tr<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 树状数组模版</span>
+<span class="token keyword">int</span> <span class="token function">lowbit</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> x <span class="token operator">&amp;</span> <span class="token operator">-</span>x<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// 求区间和</span>
+<span class="token keyword">int</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> x<span class="token punctuation">;</span> i<span class="token punctuation">;</span> i <span class="token operator">-=</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span> res <span class="token operator">+=</span> tr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 单点更新</span>
+<span class="token keyword">void</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> c<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> x<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">+=</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span> tr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> c<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">solve</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 多组测试样例，需要清空树状数组</span>
+    <span class="token function">memset</span><span class="token punctuation">(</span>tr<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> tr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Case "</span> <span class="token operator">&lt;&lt;</span> <span class="token operator">++</span>cnt <span class="token operator">&lt;&lt;</span> <span class="token string">":"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token comment">// 读入初始数据，并用树状数组维护</span>
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> tmp<span class="token punctuation">;</span>
+        <span class="token function">update</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 查询与更新</span>
+    string op<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> op <span class="token operator">&amp;&amp;</span> op <span class="token operator">!=</span> <span class="token string">"End"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">==</span> <span class="token string">"Query"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            cin <span class="token operator">&gt;&gt;</span> a <span class="token operator">&gt;&gt;</span> b<span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token function">sum</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token function">sum</span><span class="token punctuation">(</span>a <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">==</span> <span class="token string">"Add"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            cin <span class="token operator">&gt;&gt;</span> a <span class="token operator">&gt;&gt;</span> b<span class="token punctuation">;</span>
+            <span class="token function">update</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">==</span> <span class="token string">"Sub"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            cin <span class="token operator">&gt;&gt;</span> a <span class="token operator">&gt;&gt;</span> b<span class="token punctuation">;</span>
+            <span class="token function">update</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token operator">-</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> _ <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> _<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>_<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">solve</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="【模板】树状数组-2"><a href="#【模板】树状数组-2" class="headerlink" title="【模板】树状数组 2"></a>【模板】树状数组 2</h3><h4 id="题目信息-📚-2"><a href="#题目信息-📚-2" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】洛谷-P3368-【模板】树状数组-2"><a href="#【题目名称】洛谷-P3368-【模板】树状数组-2" class="headerlink" title="【题目名称】洛谷 P3368 - 【模板】树状数组 2"></a>【题目名称】洛谷 P3368 - 【模板】树状数组 2</h5><h5 id="【题目描述】-2"><a href="#【题目描述】-2" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>如题，已知一个数列，你需要进行下面两种操作：</p>
 <ol>
 <li><p>将某区间每一个数加上 $x$；</p>
 </li>
 <li><p>求出某一个数的值。</p>
 </li>
 </ol>
-<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行包含两个整数 $N$、$M$，分别表示该数列数字的个数和操作的总个数。</p>
+<h5 id="【输入】-2"><a href="#【输入】-2" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行包含两个整数 $N$、$M$，分别表示该数列数字的个数和操作的总个数。</p>
 <p>第二行包含 $N$ 个用空格分隔的整数，其中第 $i$ 个数字表示数列第 $i $ 项的初始值。</p>
 <p>接下来 $M$ 行每行包含 $2$ 或 $4$个整数，表示一个操作，具体如下：</p>
 <p>操作 $1$： 格式：<code>1 x y k</code> 含义：将区间 $[x,y]$ 内每个数加上 $k$；</p>
 <p>操作 $2$： 格式：<code>2 x</code> 含义：输出第 $x$ 个数的值。</p>
-<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>输出包含若干行整数，即为所有操作 $2$ 的结果。</p>
+<h5 id="【输出】-2"><a href="#【输出】-2" class="headerlink" title="【输出】"></a>【输出】</h5><p>输出包含若干行整数，即为所有操作 $2$ 的结果。</p>
 <h5 id="【数据范围】-1"><a href="#【数据范围】-1" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>对于 $30%$ 的数据：$N\le8$，$M\le10$；</p>
 <p>对于 $70%$ 的数据：$N\le 10000$，$M\le10000$；</p>
 <p>对于 $100%$ 的数据：$1 \leq N, M\le 500000$，$1 \leq x, y \leq n$，保证任意时刻序列中任意元素的绝对值都不大于 $2^{30}$。</p>
-<h5 id="【输入样例】-1"><a href="#【输入样例】-1" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span> <span class="token number">5</span>
+<h5 id="【输入样例】-2"><a href="#【输入样例】-2" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span> <span class="token number">5</span>
 <span class="token number">1</span> <span class="token number">5</span> <span class="token number">4</span> <span class="token number">2</span> <span class="token number">3</span>
 <span class="token number">1</span> <span class="token number">2</span> <span class="token number">4</span> <span class="token number">2</span>
 <span class="token number">2</span> <span class="token number">3</span>
@@ -1256,13 +1358,13 @@
 <span class="token number">1</span> <span class="token number">3</span> <span class="token number">5</span> <span class="token number">7</span>
 <span class="token number">2</span> <span class="token number">4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="【输出样例】-1"><a href="#【输出样例】-1" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span>
+<h5 id="【输出样例】-2"><a href="#【输出样例】-2" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span>
 <span class="token number">10</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h5 id="【原题链接】-1"><a href="#【原题链接】-1" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3368">https://www.luogu.com.cn/problem/P3368</a></p>
+<h5 id="【原题链接】-2"><a href="#【原题链接】-2" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3368">https://www.luogu.com.cn/problem/P3368</a></p>
 <hr>
-<h4 id="题目解析-🍉-1"><a href="#题目解析-🍉-1" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>树状数组实现差分（区间修改 + 单点查询）</p>
-<h5 id="【C-代码】-1"><a href="#【C-代码】-1" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+<h4 id="题目解析-🍉-2"><a href="#题目解析-🍉-2" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-2"><a href="#【题目分析】-2" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>树状数组实现差分（区间修改 + 单点查询）</p>
+<h5 id="【C-代码】-2"><a href="#【C-代码】-2" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 <span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
@@ -1317,7 +1419,7 @@
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<h3 id="楼兰图腾"><a href="#楼兰图腾" class="headerlink" title="楼兰图腾"></a>楼兰图腾</h3><h4 id="题目信息-📚-2"><a href="#题目信息-📚-2" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】AcWing-243-楼兰图腾"><a href="#【题目名称】AcWing-243-楼兰图腾" class="headerlink" title="【题目名称】AcWing 243 - 楼兰图腾"></a>【题目名称】AcWing 243 - 楼兰图腾</h5><h5 id="【题目描述】-2"><a href="#【题目描述】-2" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>在完成了分配任务之后，西部 314 来到了楼兰古城的西部。</p>
+<h3 id="楼兰图腾"><a href="#楼兰图腾" class="headerlink" title="楼兰图腾"></a>楼兰图腾</h3><h4 id="题目信息-📚-3"><a href="#题目信息-📚-3" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】AcWing-243-楼兰图腾"><a href="#【题目名称】AcWing-243-楼兰图腾" class="headerlink" title="【题目名称】AcWing 243 - 楼兰图腾"></a>【题目名称】AcWing 243 - 楼兰图腾</h5><h5 id="【题目描述】-3"><a href="#【题目描述】-3" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>在完成了分配任务之后，西部 314 来到了楼兰古城的西部。</p>
 <p>相传很久以前这片土地上(比楼兰古城还早)生活着两个部落，一个部落崇拜尖刀(<code>V</code>)，一个部落崇拜铁锹(<code>∧</code>)，他们分别用 <code>V</code> 和 <code>∧</code> 的形状来代表各自部落的图腾。</p>
 <p>西部 314 在楼兰古城的下面发现了一幅巨大的壁画，壁画上被标记出了 $n$ 个点，经测量发现这 $n$ 个点的水平位置和竖直位置是两两不同的。</p>
 <p>西部 314 认为这幅壁画所包含的信息与这 $n$ 个点的相对位置有关，因此不妨设坐标分别为 $(1,y_1),(2,y_2),…,(n,y_n)$，其中 $y_1∼y_n$ 是 $1$ 到 $n$ 的一个排列。</p>
@@ -1326,19 +1428,19 @@
 <p>如果三个点 $(i,y_i),(j,y_j),(k,y_k)$ 满足 $1 \le i&lt;j&lt;k \le n$ 且 $y_i&lt;y_j,y_j&gt;y_k$，则称这三个点构成 <code>∧</code> 图腾;</p>
 <p>西部 314 想知道，这 $n$ 个点中两个部落图腾的数目。</p>
 <p>因此，你需要编写一个程序来求出 <code>V</code> 的个数和 <code>∧</code> 的个数。</p>
-<h5 id="【输入】-2"><a href="#【输入】-2" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行一个数 $n$。</p>
+<h5 id="【输入】-3"><a href="#【输入】-3" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行一个数 $n$。</p>
 <p>第二行是 $n$ 个数，分别代表 $y_1，y_2,…,y_n$。</p>
-<h5 id="【输出】-2"><a href="#【输出】-2" class="headerlink" title="【输出】"></a>【输出】</h5><p>两个数，中间用空格隔开，依次为 <code>V</code> 的个数和 <code>∧</code> 的个数。</p>
-<h5 id="【输入样例】-2"><a href="#【输入样例】-2" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span>
+<h5 id="【输出】-3"><a href="#【输出】-3" class="headerlink" title="【输出】"></a>【输出】</h5><p>两个数，中间用空格隔开，依次为 <code>V</code> 的个数和 <code>∧</code> 的个数。</p>
+<h5 id="【输入样例】-3"><a href="#【输入样例】-3" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span>
 <span class="token number">1</span> <span class="token number">5</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h5 id="【输出样例】-2"><a href="#【输出样例】-2" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span> <span class="token number">4</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="【输出样例】-3"><a href="#【输出样例】-3" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span> <span class="token number">4</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h5 id="【数据范围】-2"><a href="#【数据范围】-2" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>对于所有数据，$n \le 200000$，且输出答案不会超过 <code>int64</code>。</p>
 <p>$y_1∼y_n$ 是 $1$ 到 $n$ 的一个排列。</p>
-<h5 id="【原题链接】-2"><a href="#【原题链接】-2" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/243/">https://www.acwing.com/problem/content/243/</a></p>
+<h5 id="【原题链接】-3"><a href="#【原题链接】-3" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/243/">https://www.acwing.com/problem/content/243/</a></p>
 <hr>
-<h4 id="题目解析-🍉-2"><a href="#题目解析-🍉-2" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-2"><a href="#【题目分析】-2" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><ul>
+<h4 id="题目解析-🍉-3"><a href="#题目解析-🍉-3" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-3"><a href="#【题目分析】-3" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><ul>
 <li>本题由暴力法很容易想出思路：枚举所有中间点，统计每个中间点左右两边比它大/小的点数量，利用乘法原理累加即可得到答案。<ul>
 <li>时间复杂度为：$O(n^2)$ ，显然 <code>TLE</code> ❌</li>
 </ul>
@@ -1450,23 +1552,23 @@ LL n<span class="token punctuation">,</span> ans1<span class="token punctuation"
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<h3 id="逆序对"><a href="#逆序对" class="headerlink" title="逆序对"></a>逆序对</h3><h4 id="题目信息-📚-3"><a href="#题目信息-📚-3" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】洛谷-P1908-逆序对"><a href="#【题目名称】洛谷-P1908-逆序对" class="headerlink" title="【题目名称】洛谷 P1908 - 逆序对"></a>【题目名称】洛谷 P1908 - 逆序对</h5><h5 id="【题目描述】-3"><a href="#【题目描述】-3" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>猫猫 TOM 和小老鼠 JERRY 最近又较量上了，但是毕竟都是成年人，他们已经不喜欢再玩那种你追我赶的游戏，现在他们喜欢玩统计。</p>
+<h3 id="逆序对"><a href="#逆序对" class="headerlink" title="逆序对"></a>逆序对</h3><h4 id="题目信息-📚-4"><a href="#题目信息-📚-4" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】洛谷-P1908-逆序对"><a href="#【题目名称】洛谷-P1908-逆序对" class="headerlink" title="【题目名称】洛谷 P1908 - 逆序对"></a>【题目名称】洛谷 P1908 - 逆序对</h5><h5 id="【题目描述】-4"><a href="#【题目描述】-4" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>猫猫 TOM 和小老鼠 JERRY 最近又较量上了，但是毕竟都是成年人，他们已经不喜欢再玩那种你追我赶的游戏，现在他们喜欢玩统计。</p>
 <p>最近，TOM 老猫查阅到一个人类称之为“逆序对”的东西，这东西是这样定义的：对于给定的一段正整数序列，逆序对就是序列中 $a_i&gt;a_j$ 且 $i&lt;j$ 的有序对。知道这概念后，他们就比赛谁先算出给定的一段正整数序列中逆序对的数目。注意序列中可能有重复数字。</p>
-<h5 id="【输入】-3"><a href="#【输入】-3" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行，一个数 $n$，表示序列中有 $n$个数。</p>
+<h5 id="【输入】-4"><a href="#【输入】-4" class="headerlink" title="【输入】"></a>【输入】</h5><p>第一行，一个数 $n$，表示序列中有 $n$个数。</p>
 <p>第二行 $n$ 个数，表示给定的序列。序列中每个数字不超过 $10^9$。</p>
-<h5 id="【输出】-3"><a href="#【输出】-3" class="headerlink" title="【输出】"></a>【输出】</h5><p>输出序列中逆序对的数目。</p>
-<h5 id="【输入样例】-3"><a href="#【输入样例】-3" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span>
+<h5 id="【输出】-4"><a href="#【输出】-4" class="headerlink" title="【输出】"></a>【输出】</h5><p>输出序列中逆序对的数目。</p>
+<h5 id="【输入样例】-4"><a href="#【输入样例】-4" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span>
 <span class="token number">5</span> <span class="token number">4</span> <span class="token number">2</span> <span class="token number">6</span> <span class="token number">3</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h5 id="【输出样例】-3"><a href="#【输出样例】-3" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">11</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="【输出样例】-4"><a href="#【输出样例】-4" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">11</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h5 id="【数据范围】-3"><a href="#【数据范围】-3" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>对于 $25%$ 的数据，$n \leq 2500$</p>
 <p>对于 $50%$ 的数据，$n \leq 4 \times 10^4$。</p>
 <p>对于所有数据，$n \leq 5 \times 10^5$</p>
 <p>请使用较快的输入输出</p>
-<h5 id="【原题链接】-3"><a href="#【原题链接】-3" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1908">https://www.luogu.com.cn/problem/P1908</a></p>
+<h5 id="【原题链接】-4"><a href="#【原题链接】-4" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1908">https://www.luogu.com.cn/problem/P1908</a></p>
 <hr>
-<h4 id="题目解析-🍉-3"><a href="#题目解析-🍉-3" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-3"><a href="#【题目分析】-3" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>归并排序の经典应用（具体分析见「归并排序」知识点介绍博客：<a target="_blank" rel="noopener" href="https://rickyxcoder.top/2023/10/16/xin-xi-ao-sai-gui-bing-pai-xu/">信息奥赛｜归并排序🔗</a> / <a target="_blank" rel="noopener" href="https://rickyxcoder.gitee.io/2023/10/16/xin-xi-ao-sai-gui-bing-pai-xu/">（备用）信息奥赛｜归并排序🔗</a>）</p>
+<h4 id="题目解析-🍉-4"><a href="#题目解析-🍉-4" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-4"><a href="#【题目分析】-4" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>归并排序の经典应用（具体分析见「归并排序」知识点介绍博客：<a target="_blank" rel="noopener" href="https://rickyxcoder.top/2023/10/16/xin-xi-ao-sai-gui-bing-pai-xu/">信息奥赛｜归并排序🔗</a> / <a target="_blank" rel="noopener" href="https://rickyxcoder.gitee.io/2023/10/16/xin-xi-ao-sai-gui-bing-pai-xu/">（备用）信息奥赛｜归并排序🔗</a>）</p>
 <p>此外，逆序对也可以像上题「楼兰图腾」那样，由 <strong>树状数组</strong> 维护。</p>
 <p>由于此题中的 <code>a[i]</code> 的最大值到了 $10^9$，因此需要 <strong>离散化</strong> 后，用树状数组 <code>tr</code> 维护桶数组<code>b</code>。</p>
 <h5 id="【C-代码】归并排序-✅"><a href="#【C-代码】归并排序-✅" class="headerlink" title="【C++ 代码】归并排序 ✅"></a>【C++ 代码】归并排序 ✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
@@ -1575,18 +1677,18 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<h3 id="LEQ"><a href="#LEQ" class="headerlink" title="LEQ"></a>LEQ</h3><h4 id="题目信息-📚-4"><a href="#题目信息-📚-4" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】AtCoder-ABC221E-LEQ"><a href="#【题目名称】AtCoder-ABC221E-LEQ" class="headerlink" title="【题目名称】AtCoder ABC221E - LEQ"></a>【题目名称】AtCoder ABC221E - LEQ</h5><h5 id="【题目描述】-4"><a href="#【题目描述】-4" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>Given is a sequence of $N$ integers: $A = (A_1, A_2, \dots, A_N)$.</p>
+<h3 id="LEQ"><a href="#LEQ" class="headerlink" title="LEQ"></a>LEQ</h3><h4 id="题目信息-📚-5"><a href="#题目信息-📚-5" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】AtCoder-ABC221E-LEQ"><a href="#【题目名称】AtCoder-ABC221E-LEQ" class="headerlink" title="【题目名称】AtCoder ABC221E - LEQ"></a>【题目名称】AtCoder ABC221E - LEQ</h5><h5 id="【题目描述】-5"><a href="#【题目描述】-5" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>Given is a sequence of $N$ integers: $A = (A_1, A_2, \dots, A_N)$.</p>
 <p>Find the number of (not necessarily contiguous) subsequences $A’=(A’_1,A’_2,\ldots,A’_k)$ of length at least $2$ that satisfy the following condition:</p>
 <ul>
 <li>$A’_1 \leq A’_k$.</li>
 </ul>
 <p>Since the count can be enormous, print it modulo $998244353$.</p>
 <p>Here, two subsequences are distinguished when they originate from different sets of indices, even if they are the same as sequences.</p>
-<h5 id="【输入】-4"><a href="#【输入】-4" class="headerlink" title="【输入】"></a>【输入】</h5><p>Input is given from Standard Input in the following format:</p>
+<h5 id="【输入】-5"><a href="#【输入】-5" class="headerlink" title="【输入】"></a>【输入】</h5><p>Input is given from Standard Input in the following format:</p>
 <blockquote>
 <p>$N$<br>$A_1$ $A_2$ $\ldots$ $A_N$</p>
 </blockquote>
-<h5 id="【输出】-4"><a href="#【输出】-4" class="headerlink" title="【输出】"></a>【输出】</h5><p>Print the number of (not necessarily contiguous) subsequences $A’=(A’_1,A’_2,\ldots,A’_k)$ of length at least $2$ that satisfy the condition in Problem Statement.</p>
+<h5 id="【输出】-5"><a href="#【输出】-5" class="headerlink" title="【输出】"></a>【输出】</h5><p>Print the number of (not necessarily contiguous) subsequences $A’=(A’_1,A’_2,\ldots,A’_k)$ of length at least $2$ that satisfy the condition in Problem Statement.</p>
 <h5 id="【数据范围】-4"><a href="#【数据范围】-4" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>$2 \leq N \leq 3 \times 10^5$</p>
 <p>$1 \leq A_i \leq 10^9$</p>
 <p>All values in input are integers.</p>
@@ -1612,7 +1714,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 
 <h5 id="【题目来源】"><a href="#【题目来源】" class="headerlink" title="【题目来源】"></a>【题目来源】</h5><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc221/tasks/abc221_e">AtCoder ABC221E</a></p>
 <hr>
-<h4 id="题目解析-🍉-4"><a href="#题目解析-🍉-4" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-4"><a href="#【题目分析】-4" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc221/tasks/abc221_e/editorial">官方题解传送门：https://atcoder.jp/contests/abc221/tasks/abc221_e/editorial</a></p>
+<h4 id="题目解析-🍉-5"><a href="#题目解析-🍉-5" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-5"><a href="#【题目分析】-5" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc221/tasks/abc221_e/editorial">官方题解传送门：https://atcoder.jp/contests/abc221/tasks/abc221_e/editorial</a></p>
 <p>本题需要的知识点：子序列 + 离散化 + 树状数组 + 快速幂 + 求逆元</p>
 <ul>
 <li><strong>子序列</strong> <ul>
@@ -2314,7 +2416,7 @@ LL <span class="token function">query</span><span class="token punctuation">(</s
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">228.9k</span>&nbsp;字
+                class="white-color">231.8k</span>&nbsp;字
             
             
             
