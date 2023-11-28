@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-11-27T03:09:13.815Z</updated>
+  <updated>2023-11-28T05:03:05.709Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>信息奥赛题解｜夹角有多大</title>
+    <link href="https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-jia-jiao-you-duo-da/"/>
+    <id>https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-jia-jiao-you-duo-da/</id>
+    <published>2023-11-28T03:54:42.000Z</published>
+    <updated>2023-11-28T05:03:05.709Z</updated>
+    
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="数学" scheme="https://ricky2333.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OI题解｜LELE的RPG难题</title>
+    <link href="https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/"/>
+    <id>https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/</id>
+    <published>2023-11-28T03:54:22.000Z</published>
+    <updated>2023-11-28T05:17:10.597Z</updated>
+    
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息奥赛题解｜Bits</title>
+    <link href="https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-bits/"/>
+    <id>https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-bits/</id>
+    <published>2023-11-28T03:54:03.000Z</published>
+    <updated>2023-11-28T05:02:24.375Z</updated>
+    
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="位运算" scheme="https://ricky2333.github.io/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>信息奥赛题解｜渚千夏的串</title>
@@ -339,9 +402,9 @@
     
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
-    <category term="树状数组" scheme="https://ricky2333.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
-    
     <category term="高级数据结构" scheme="https://ricky2333.github.io/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="树状数组" scheme="https://ricky2333.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
@@ -372,9 +435,9 @@
     
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
-    <category term="树状数组" scheme="https://ricky2333.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
-    
     <category term="高级数据结构" scheme="https://ricky2333.github.io/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="树状数组" scheme="https://ricky2333.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
@@ -395,9 +458,9 @@
     
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
-    <category term="高级数据结构" scheme="https://ricky2333.github.io/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
     <category term="并查集" scheme="https://ricky2333.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+    <category term="高级数据结构" scheme="https://ricky2333.github.io/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
@@ -428,9 +491,9 @@
     
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
-    <category term="高级数据结构" scheme="https://ricky2333.github.io/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
     <category term="并查集" scheme="https://ricky2333.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+    <category term="高级数据结构" scheme="https://ricky2333.github.io/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
@@ -518,93 +581,6 @@
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="离散化" scheme="https://ricky2333.github.io/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>复盘｜2023多校新生周赛六</title>
-    <link href="https://ricky2333.github.io/2023/11/07/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai-liu/"/>
-    <id>https://ricky2333.github.io/2023/11/07/xin-xi-ao-sai-2023-duo-xiao-xin-sheng-zhou-sai-liu/</id>
-    <published>2023-11-06T16:05:28.000Z</published>
-    <updated>2023-11-20T15:39:32.054Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛复盘｜2023多校新生周赛二（2023-11-5）&quot;&gt;&lt;a href=&quot;#信息奥赛复盘｜2023多校新生周赛二（2023-11-5）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛复盘" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OI题解｜阿牛的EOF牛肉串</title>
-    <link href="https://ricky2333.github.io/2023/11/03/xin-xi-ao-sai-ti-jie-a-niu-de-eof-niu-rou-chuan/"/>
-    <id>https://ricky2333.github.io/2023/11/03/xin-xi-ao-sai-ti-jie-a-niu-de-eof-niu-rou-chuan/</id>
-    <published>2023-11-03T03:28:06.000Z</published>
-    <updated>2023-11-27T16:01:05.525Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜阿牛的EOF牛肉串&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜阿牛的EOF牛肉串&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜阿牛的EOF牛肉串&quot;&gt;&lt;/a&gt;信息奥赛题解｜阿牛的EOF牛肉串&lt;/h1&gt;&lt;hr&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜汉诺塔III</title>
-    <link href="https://ricky2333.github.io/2023/11/02/xin-xi-ao-sai-ti-jie-han-nuo-ta-iii/"/>
-    <id>https://ricky2333.github.io/2023/11/02/xin-xi-ao-sai-ti-jie-han-nuo-ta-iii/</id>
-    <published>2023-11-02T05:39:56.000Z</published>
-    <updated>2023-11-27T16:00:15.674Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜汉诺塔III&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜汉诺塔III&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜汉诺塔III&quot;&gt;&lt;/a&gt;信息奥赛题解｜汉诺塔III&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
     
   </entry>
   

@@ -4,6 +4,93 @@
   
     
     <entry>
+      <title>信息奥赛题解｜夹角有多大</title>
+      <link href="/2023/11/28/xin-xi-ao-sai-ti-jie-jia-jiao-you-duo-da/"/>
+      <url>/2023/11/28/xin-xi-ao-sai-ti-jie-jia-jiao-you-duo-da/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信息奥赛题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 信息奥赛 </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> 数学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OI题解｜LELE的RPG难题</title>
+      <link href="/2023/11/28/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/"/>
+      <url>/2023/11/28/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信息奥赛题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 信息奥赛 </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> 递推 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>信息奥赛题解｜Bits</title>
+      <link href="/2023/11/28/xin-xi-ao-sai-ti-jie-bits/"/>
+      <url>/2023/11/28/xin-xi-ao-sai-ti-jie-bits/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 信息奥赛题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 信息奥赛 </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> 位运算 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>信息奥赛题解｜渚千夏的串</title>
       <link href="/2023/11/27/xin-xi-ao-sai-ti-jie-zhu-qian-xia-de-chuan/"/>
       <url>/2023/11/27/xin-xi-ao-sai-ti-jie-zhu-qian-xia-de-chuan/</url>
@@ -310,9 +397,9 @@
             
             <tag> C++ </tag>
             
-            <tag> 树状数组 </tag>
-            
             <tag> 高级数据结构 </tag>
+            
+            <tag> 树状数组 </tag>
             
         </tags>
       
@@ -341,9 +428,9 @@
             
             <tag> C++ </tag>
             
-            <tag> 树状数组 </tag>
-            
             <tag> 高级数据结构 </tag>
+            
+            <tag> 树状数组 </tag>
             
         </tags>
       
@@ -372,9 +459,9 @@
             
             <tag> C++ </tag>
             
-            <tag> 高级数据结构 </tag>
-            
             <tag> 并查集 </tag>
+            
+            <tag> 高级数据结构 </tag>
             
         </tags>
       
@@ -403,9 +490,9 @@
             
             <tag> C++ </tag>
             
-            <tag> 高级数据结构 </tag>
-            
             <tag> 并查集 </tag>
+            
+            <tag> 高级数据结构 </tag>
             
         </tags>
       
@@ -518,6 +605,70 @@
             <tag> 信息奥赛 </tag>
             
             <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OI题解｜顺序表的删除</title>
+      <link href="/2023/11/06/xin-xi-ao-sai-ti-jie-shun-xu-biao-de-shan-chu/"/>
+      <url>/2023/11/06/xin-xi-ao-sai-ti-jie-shun-xu-biao-de-shan-chu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="信息奥赛题解｜顺序表的删除"><a href="#信息奥赛题解｜顺序表的删除" class="headerlink" title="信息奥赛题解｜顺序表的删除"></a>信息奥赛题解｜顺序表的删除</h1><hr><h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>对一个线性表进行删除操作。</p><h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p><strong>输入存在多组数据，以 EOF 结束。数据组数不超过 $10$ 组。</strong></p><p>第一行有一个整数 $n\ (1\le n\le 9000)$，表示线性表的大小；</p><p>第二行有 $n$ 个整数，分别是 $list_1,list_2,\cdots,list_n$。</p><p>第三行有一个整数 $q$，表示 $q$ 次删除操作，接下来 $q$ 行，每行有一个整数 $k$，表示删除线性表中第 $k$ 个元素。</p><h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>对于每次删除操作输出一行，如果 $k$ 不合法，输出 $-1$, 否则输出删除的元素。</p><h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-none"><code class="language-none">53 2 1 5 43552<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-none"><code class="language-none">4-12<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><hr><h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>STL容器 <code>vector</code> 的使用。</p><hr><h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> tmp<span class="token punctuation">,</span> q<span class="token punctuation">,</span> k<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token comment">// 用vector存储线性表</span>        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> v<span class="token punctuation">;</span>        <span class="token comment">// 存入元素</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            cin <span class="token operator">&gt;&gt;</span> tmp<span class="token punctuation">;</span>            v<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token comment">// q次删除</span>        cin <span class="token operator">&gt;&gt;</span> q<span class="token punctuation">;</span>        <span class="token keyword">while</span> <span class="token punctuation">(</span>q<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            cin <span class="token operator">&gt;&gt;</span> k<span class="token punctuation">;</span>            <span class="token comment">// k不合法</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>k <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">||</span> k <span class="token operator">&gt;</span> v<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>            <span class="token keyword">else</span> <span class="token punctuation">{</span>                <span class="token comment">// k合法，输出并删除第k个元素</span>                cout <span class="token operator">&lt;&lt;</span> v<span class="token punctuation">[</span>k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>                v<span class="token punctuation">.</span><span class="token function">erase</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 信息奥赛题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 信息奥赛 </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> STL </tag>
+            
+            <tag> vector </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>信息奥赛题解｜产生冠军</title>
+      <link href="/2023/11/04/xin-xi-ao-sai-ti-jie-chan-sheng-guan-jun/"/>
+      <url>/2023/11/04/xin-xi-ao-sai-ti-jie-chan-sheng-guan-jun/</url>
+      
+        <content type="html"><![CDATA[<h1 id="信息奥赛题解｜产生冠军"><a href="#信息奥赛题解｜产生冠军" class="headerlink" title="信息奥赛题解｜产生冠军"></a>信息奥赛题解｜产生冠军</h1><hr><h2 id="🚀-题目浏览"><a href="#🚀-题目浏览" class="headerlink" title="🚀 题目浏览"></a>🚀 题目浏览</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>有一群人，打乒乓球比赛，两两捉对撕杀，每两个人之间最多打一场比赛。</p><p>球赛的规则如下：</p><ul><li>如果 <code>A</code> 打败了 <code>B</code>，<code>B</code> 又打败了 <code>C</code>，而 <code>A</code> 与 <code>C</code> 之间没有进行过比赛，那么就认定，<code>A</code> 一定能打败 <code>C</code>。</li><li>如果 <code>A</code> 打败了 <code>B</code>，<code>B</code> 又打败了 <code>C</code>，而且 <code>C</code> 又打败了 <code>A</code>，那么 <code>A</code>、<code>B</code>、<code>C</code> 三者都不可能成为冠军。</li></ul><p>根据这个规则，无需循环较量，或许就能确定冠军。你的任务就是面对一群比赛选手，在经过了若干场撕杀之后，确定是否已经实际上产生了冠军。</p><h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>多组数据，请处理到 $n=0$ 为止。</p><p>每组数据以一个整数 $n\ (n\lt 1000)$ 开头，后跟 $n$ 对选手的比赛结果，比赛结果以一对选手名字（中间隔一空格）表示前者战胜后者。</p><h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>对于每组数据，若你判断出产生了冠军，则在一行中输出 <code>Yes</code>，否则在一行中输出 <code>No</code>。</p><h3 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h3><pre class="line-numbers language-none"><code class="language-none">3Alice BobSmith JohnAlice Smith5a cc dd eb ea d0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h3><pre class="line-numbers language-none"><code class="language-none">YesNo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="【题目来源】"><a href="#【题目来源】" class="headerlink" title="【题目来源】"></a>【题目来源】</h3><p><a href="https://vjudge.net/problem/HDU-2094">https://vjudge.net/problem/HDU-2094</a></p><hr><h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>思维题。</p><p>结合 STL 中的 <code>set</code> 使用，效果巨佳。</p><hr><h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span><span class="token keyword">int</span> n<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    string win<span class="token punctuation">,</span> lose<span class="token punctuation">;</span>    <span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&amp;&amp;</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token comment">// 设定两个集合，存储胜者和败者</span>        set<span class="token operator">&lt;</span>string<span class="token operator">&gt;</span> winners<span class="token punctuation">,</span> losers<span class="token punctuation">;</span>        <span class="token comment">// 根据n轮结果，往集合中加入玩家</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            cin <span class="token operator">&gt;&gt;</span> win <span class="token operator">&gt;&gt;</span> lose<span class="token punctuation">;</span>            <span class="token comment">// 当前赢家未出现在败者名单中，将其加入胜者名单</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>losers<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>win<span class="token punctuation">)</span> <span class="token operator">==</span> losers<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> winners<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>win<span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment">// 当前败者出现在胜者名单中，将其从胜者名单中抹去</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>winners<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>lose<span class="token punctuation">)</span> <span class="token operator">!=</span> winners<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> winners<span class="token punctuation">.</span><span class="token function">erase</span><span class="token punctuation">(</span>lose<span class="token punctuation">)</span><span class="token punctuation">;</span>            losers<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>lose<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token comment">// 判断是否有胜者</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span>winners<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Yes"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>        <span class="token keyword">else</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"No"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 信息奥赛题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 信息奥赛 </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> STL </tag>
+            
+            <tag> set </tag>
+            
+            <tag> 思维 </tag>
             
         </tags>
       
