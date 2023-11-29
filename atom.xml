@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-11-28T09:10:45.069Z</updated>
+  <updated>2023-11-29T03:40:51.197Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>信息奥赛题解｜放苹果</title>
+    <link href="https://ricky2333.github.io/2023/11/29/xin-xi-ao-sai-ti-jie-fang-ping-guo/"/>
+    <id>https://ricky2333.github.io/2023/11/29/xin-xi-ao-sai-ti-jie-fang-ping-guo/</id>
+    <published>2023-11-29T03:31:20.000Z</published>
+    <updated>2023-11-29T03:40:51.197Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜放苹果&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜放苹果&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜放苹果&quot;&gt;&lt;/a&gt;信息奥赛题解｜放苹果&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a href=&quot;#🚀-题目浏览&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>信息奥赛题解｜敌兵布阵</title>
@@ -51,7 +75,7 @@
     <link href="https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-jia-jiao-you-duo-da/"/>
     <id>https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-jia-jiao-you-duo-da/</id>
     <published>2023-11-28T03:54:42.000Z</published>
-    <updated>2023-11-28T16:03:38.546Z</updated>
+    <updated>2023-11-28T16:03:47.687Z</updated>
     
     
       
@@ -81,7 +105,7 @@
     <link href="https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/"/>
     <id>https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/</id>
     <published>2023-11-28T03:54:22.000Z</published>
-    <updated>2023-11-28T16:01:55.897Z</updated>
+    <updated>2023-11-29T03:32:09.154Z</updated>
     
     
       
@@ -111,7 +135,7 @@
     <link href="https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-bits/"/>
     <id>https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-bits/</id>
     <published>2023-11-28T03:54:03.000Z</published>
-    <updated>2023-11-28T16:02:42.070Z</updated>
+    <updated>2023-11-29T03:18:50.289Z</updated>
     
     
       
@@ -367,6 +391,38 @@
   </entry>
   
   <entry>
+    <title>信息奥赛题解｜Shopping</title>
+    <link href="https://ricky2333.github.io/2023/11/15/xin-xi-ao-sai-ti-jie-shopping/"/>
+    <id>https://ricky2333.github.io/2023/11/15/xin-xi-ao-sai-ti-jie-shopping/</id>
+    <published>2023-11-15T03:29:36.000Z</published>
+    <updated>2023-11-29T03:37:57.707Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜Shopping&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜Shopping&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜Shopping&quot;&gt;&lt;/a&gt;信息奥赛题解｜Shopping&lt;/h1&gt;&lt;hr&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="STL" scheme="https://ricky2333.github.io/tags/STL/"/>
+    
+    <category term="map" scheme="https://ricky2333.github.io/tags/map/"/>
+    
+  </entry>
+  
+  <entry>
     <title>信息奥赛题单｜线段树</title>
     <link href="https://ricky2333.github.io/2023/11/14/xin-xi-ao-sai-ti-dan-xian-duan-shu/"/>
     <id>https://ricky2333.github.io/2023/11/14/xin-xi-ao-sai-ti-dan-xian-duan-shu/</id>
@@ -549,64 +605,6 @@
     <category term="并查集" scheme="https://ricky2333.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
     
     <category term="高级数据结构" scheme="https://ricky2333.github.io/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛｜术语中英文对照</title>
-    <link href="https://ricky2333.github.io/2023/11/14/xin-xi-ao-sai-zhu-yu-zhong-ying-wen-dui-zhao/"/>
-    <id>https://ricky2333.github.io/2023/11/14/xin-xi-ao-sai-zhu-yu-zhong-ying-wen-dui-zhao/</id>
-    <published>2023-11-14T07:46:31.000Z</published>
-    <updated>2023-11-14T08:43:43.963Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本篇博客还在修改润色中～&lt;/p&gt;
-&lt;p&gt;敬请期待～&lt;/p&gt;
-&lt;h1 id=&quot;信息奥赛｜常见术语の中英文对照&quot;&gt;&lt;a href=&quot;#信息奥赛｜常见术语の中英文对照&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="术语" scheme="https://ricky2333.github.io/tags/%E6%9C%AF%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题单｜离散化</title>
-    <link href="https://ricky2333.github.io/2023/11/13/xin-xi-ao-sai-ti-dan-chi-san-hua/"/>
-    <id>https://ricky2333.github.io/2023/11/13/xin-xi-ao-sai-ti-dan-chi-san-hua/</id>
-    <published>2023-11-13T03:22:28.000Z</published>
-    <updated>2023-11-13T06:55:30.648Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;离散化&quot;&gt;&lt;a href=&quot;#离散化&quot; class=&quot;headerlink&quot; title=&quot;离散化&quot;&gt;&lt;/a&gt;离散化&lt;/h1&gt;&lt;h2 id=&quot;题单-🧑🏻‍💻&quot;&gt;&lt;a href=&quot;#题单-🧑🏻‍💻&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="离散化" scheme="https://ricky2333.github.io/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/"/>
     
   </entry>
   

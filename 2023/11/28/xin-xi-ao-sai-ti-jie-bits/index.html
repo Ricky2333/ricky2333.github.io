@@ -1066,7 +1066,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    171
+                    324
                 </div>
                 
 
@@ -1113,8 +1113,33 @@
 
 <h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/484/A">https://codeforces.com/problemset/problem/484/A</a></p>
 <hr>
-<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><hr>
-<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p><strong>或运算</strong> の 经典使用。</p>
+<p>令 $l$ 的二进制从右往左不断添1（通过或运算实现），只要保证当前数始终小于等于 <code>r</code>，就可以得到该区间内二进制 <code>1</code> 最多的值。</p>
+<hr>
+<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+LL n<span class="token punctuation">,</span> l<span class="token punctuation">,</span> r<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> l <span class="token operator">&gt;&gt;</span> r<span class="token punctuation">;</span>
+
+        LL t <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment">// t的值取二进制1、10、100、1000...，不断与l或运算</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>l <span class="token operator">|</span> t<span class="token punctuation">)</span> <span class="token operator">&lt;=</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+            l <span class="token operator">=</span> l <span class="token operator">|</span> t<span class="token punctuation">;</span>  <span class="token comment">// 或运算</span>
+            t <span class="token operator">&lt;&lt;=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        cout <span class="token operator">&lt;&lt;</span> l <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -1710,7 +1735,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">231.8k</span>&nbsp;字
+                class="white-color">232.5k</span>&nbsp;字
             
             
             
