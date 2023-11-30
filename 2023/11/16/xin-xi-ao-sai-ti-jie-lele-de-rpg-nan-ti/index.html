@@ -1057,7 +1057,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-11-28
+                    2023-11-16
                 </div>
                 
 
@@ -1066,7 +1066,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    309
+                    395
                 </div>
                 
 
@@ -1114,8 +1114,26 @@
 
 <h3 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h3><p><a target="_blank" rel="noopener" href="https://vjudge.net/problem/HDU-2045">https://vjudge.net/problem/HDU-2045</a></p>
 <hr>
-<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><hr>
-<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="☘️-题解分析"><a href="#☘️-题解分析" class="headerlink" title="☘️ 题解分析"></a>☘️ 题解分析</h2><p>经典题解传送门：<a target="_blank" rel="noopener" href="https://blog.nowcoder.net/n/73a49326c790492c892f6d22474510ac?from=nowcoder_improve">牛客题解</a></p>
+<hr>
+<h2 id="🧑🏻‍💻-C-代码"><a href="#🧑🏻‍💻-C-代码" class="headerlink" title="🧑🏻‍💻 C++ 代码"></a>🧑🏻‍💻 C++ 代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">55</span><span class="token punctuation">;</span>
+LL f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> n<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> f<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">,</span> f<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">50</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> f<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> f<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">*</span> f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -1143,7 +1161,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/">https://ricky2333.github.io/2023/11/28/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/</a>
+                    <a href="https://ricky2333.github.io/2023/11/16/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/">https://ricky2333.github.io/2023/11/16/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1364,30 +1382,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/11/28/xin-xi-ao-sai-ti-jie-jia-jiao-you-duo-da/">
+                <a href="/2023/11/18/jiao-shi-zhao-pin-xin-de-gan-wu/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="信息奥赛题解｜夹角有多大">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="教师招聘会｜心得感悟">
                         
-                        <span class="card-title">信息奥赛题解｜夹角有多大</span>
+                        <span class="card-title">教师招聘会｜心得感悟</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息奥赛题解｜夹角有多大
+                            2023年11月浙师大教师招聘会｜心得感悟
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-11-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-11-18
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    信息奥赛题解
+                            <a href="/categories/%E6%95%99%E5%B8%88%E6%8B%9B%E8%81%98/" class="post-category">
+                                    教师招聘
                                 </a>
                             
                             
@@ -1397,16 +1415,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
-                        <span class="chip bg-color">信息奥赛</span>
-                    </a>
-                    
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%95%B0%E5%AD%A6/">
-                        <span class="chip bg-color">数学</span>
+                    <a href="/tags/%E6%95%99%E5%B8%88%E6%8B%9B%E8%81%98/">
+                        <span class="chip bg-color">教师招聘</span>
                     </a>
                     
                 </div>
@@ -1420,23 +1430,23 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/11/28/xin-xi-ao-sai-ti-jie-bits/">
+                <a href="/2023/11/15/xin-xi-ao-sai-ti-jie-shopping/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="信息奥赛题解｜Bits">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="信息奥赛题解｜Shopping">
                         
-                        <span class="card-title">信息奥赛题解｜Bits</span>
+                        <span class="card-title">信息奥赛题解｜Shopping</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息奥赛题解｜Bits
+                            信息奥赛题解｜Shopping
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-15
                             </span>
                         <span class="publish-author">
                             
@@ -1461,8 +1471,12 @@
                         <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/">
-                        <span class="chip bg-color">位运算</span>
+                    <a href="/tags/STL/">
+                        <span class="chip bg-color">STL</span>
+                    </a>
+                    
+                    <a href="/tags/map/">
+                        <span class="chip bg-color">map</span>
                     </a>
                     
                 </div>
@@ -1712,7 +1726,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">232.5k</span>&nbsp;字
+                class="white-color">241.3k</span>&nbsp;字
             
             
             

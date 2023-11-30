@@ -1070,14 +1070,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    15
+                    784
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -1100,8 +1100,167 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>本篇博客还在修改润色中～</p>
-<p>敬请期待～</p>
+                <h1 id="信息奥赛｜并查集"><a href="#信息奥赛｜并查集" class="headerlink" title="信息奥赛｜并查集"></a>信息奥赛｜并查集</h1><h2 id="知识点概览-🚀"><a href="#知识点概览-🚀" class="headerlink" title="知识点概览 🚀"></a>知识点概览 🚀</h2><ul>
+<li>并查集的概念</li>
+<li><code>pre[]</code> 数组的初始化</li>
+<li><code>find()</code> 函数的实现</li>
+<li><code>union()/join()</code> 函数的实现</li>
+<li><code>find()</code> 函数优化——路径压缩</li>
+<li>并查集代码模版</li>
+</ul>
+<hr>
+<h2 id="知识点详解-🎥"><a href="#知识点详解-🎥" class="headerlink" title="知识点详解 🎥"></a>知识点详解 🎥</h2><h3 id="学习素材"><a href="#学习素材" class="headerlink" title="学习素材"></a>学习素材</h3><table>
+<thead>
+<tr>
+<th align="center">编号</th>
+<th align="center">内容</th>
+<th align="center">链接</th>
+<th align="center">平台</th>
+<th align="center">创作者</th>
+<th align="center">推荐指数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">【算法与数据结构】—— 并查集</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/the_ZED/article/details/105126583?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170124739716800182152885%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=170124739716800182152885&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-105126583-null-null.142%5Ev96%5Epc_search_result_base5&amp;utm_term=%E5%B9%B6%E6%9F%A5%E9%9B%86&amp;spm=1018.2226.3001.4187">链接1</a></td>
+<td align="center">CSDN</td>
+<td align="center">theSerein</td>
+<td align="center">必看</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">算法基础课——并查集</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://www.acwing.com/file_system/file/content/whole/index/content/4796/">链接2</a></td>
+<td align="center">Acwing</td>
+<td align="center">大雪菜</td>
+<td align="center">（可选）</td>
+</tr>
+</tbody></table>
+<h4 id="推荐学习路线"><a href="#推荐学习路线" class="headerlink" title="推荐学习路线"></a>推荐学习路线</h4><p>首先阅读学习素材1，<a target="_blank" rel="noopener" href="https://blog.csdn.net/the_ZED/article/details/105126583?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170124739716800182152885%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=170124739716800182152885&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-105126583-null-null.142%5Ev96%5Epc_search_result_base5&amp;utm_term=%E5%B9%B6%E6%9F%A5%E9%9B%86&amp;spm=1018.2226.3001.4187">【算法与数据结构】—— 并查集 </a>，这篇博客是摊主见过对并查集介绍最好的博客了。</p>
+<p>后续可以观看 y总の视频 进行补充，或者直接上手刷题（题单见本文「刷题题单」板块）。</p>
+<h4 id="代码模版"><a href="#代码模版" class="headerlink" title="代码模版"></a>代码模版</h4><ul>
+<li>初始化 <code>pre[]</code></li>
+</ul>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>
+<span class="token keyword">char</span> op<span class="token punctuation">;</span>
+<span class="token keyword">int</span> pre<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 并查集初始化，每个元素都是一个集合</span>
+<span class="token keyword">void</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        pre<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>查找 <code>find()</code></li>
+</ul>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 查找 + 路径压缩</span>
+<span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 路经压缩是if，不是while</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 下面这行while是错误写法</span>
+<span class="token comment">//    while (pre[x] != x) pre[x] = find(pre[x]);</span>
+    <span class="token comment">// 下面这个写法是无路径压缩的查找，也是正确的</span>
+<span class="token comment">//    while (pre[x] != x) x = pre[x];</span>
+    <span class="token keyword">return</span> pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 这里必须返回pre[x]，而不是x，因为上面的条件不是while</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>合并 <code>union() / join()</code></li>
+</ul>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 合并两个集合</span>
+<span class="token keyword">void</span> <span class="token function">join</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> y <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">!=</span> y<span class="token punctuation">)</span> pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>查询 <code>query()</code></li>
+</ul>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 查询</span>
+<span class="token keyword">void</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"YES"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">else</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"NO"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>完整代码</li>
+</ul>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>
+<span class="token keyword">char</span> op<span class="token punctuation">;</span>
+<span class="token keyword">int</span> pre<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 并查集初始化，每个元素都是一个集合</span>
+<span class="token keyword">void</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        pre<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 查找 + 路径压缩</span>
+<span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 路经压缩是if，不是while</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span> pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 下面这行while是错误写法</span>
+<span class="token comment">//    while (pre[x] != x) pre[x] = find(pre[x]);</span>
+    <span class="token comment">// 下面这个写法是无路径压缩的查找，也是正确的</span>
+<span class="token comment">//    while (pre[x] != x) x = pre[x];</span>
+    <span class="token keyword">return</span> pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 这里必须返回pre[x]，而不是x，因为上面的条件不是while</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 合并两个集合</span>
+<span class="token keyword">void</span> <span class="token function">join</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> y <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">!=</span> y<span class="token punctuation">)</span> pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 查询</span>
+<span class="token keyword">void</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"YES"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">else</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"NO"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
+    <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 初始化并查集</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> m<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> op <span class="token operator">&gt;&gt;</span> a <span class="token operator">&gt;&gt;</span> b<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">==</span> <span class="token char">'M'</span><span class="token punctuation">)</span> <span class="token function">join</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token function">query</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="刷题题单-🧑🏻‍💻"><a href="#刷题题单-🧑🏻‍💻" class="headerlink" title="刷题题单 🧑🏻‍💻"></a>刷题题单 🧑🏻‍💻</h2><p>刷题题单与相应题解请见博客：<a href="/2023/11/14/xin-xi-ao-sai-ti-dan-bing-cha-ji/">信息奥赛题单｜并查集🔗</a></p>
+<p>如链接失效，可以在文章末尾选择上一篇博客 或 在搜索界面搜索关键词「并查集」即可。</p>
+<h2 id="参考资料-📚"><a href="#参考资料-📚" class="headerlink" title="参考资料 📚"></a>参考资料 📚</h2><ul>
+<li>CSDN 博客 - <a target="_blank" rel="noopener" href="https://blog.csdn.net/the_ZED/article/details/105126583?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170124739716800182152885%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=170124739716800182152885&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-105126583-null-null.142%5Ev96%5Epc_search_result_base5&amp;utm_term=%E5%B9%B6%E6%9F%A5%E9%9B%86&amp;spm=1018.2226.3001.4187">【算法与数据结构】—— 并查集 </a></li>
+<li>AcWing算法基础课 - <a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/11/">https://www.acwing.com/activity/content/11/</a></li>
+<li>OI wiki - <a target="_blank" rel="noopener" href="https://oi-wiki.org/ds/dsu/">https://oi-wiki.org/ds/dsu/</a></li>
+</ul>
 
                 
             </div>
@@ -1701,7 +1860,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">232.5k</span>&nbsp;字
+                class="white-color">241.3k</span>&nbsp;字
             
             
             
