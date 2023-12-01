@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-11-30T16:17:11.901Z</updated>
+  <updated>2023-12-01T07:49:53.744Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,18 +17,79 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>OI题解｜More is better</title>
+    <link href="https://ricky2333.github.io/2023/12/01/xin-xi-ao-sai-ti-jie-more-is-better/"/>
+    <id>https://ricky2333.github.io/2023/12/01/xin-xi-ao-sai-ti-jie-more-is-better/</id>
+    <published>2023-12-01T07:41:56.000Z</published>
+    <updated>2023-12-01T07:49:53.744Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜More-is-better&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜More-is-better&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜More is better&quot;&gt;&lt;/a&gt;信息奥赛题解｜More is</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="并查集" scheme="https://ricky2333.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OI题解｜最大上升子序列和</title>
+    <link href="https://ricky2333.github.io/2023/12/01/xin-xi-ao-sai-ti-jie-zui-da-shang-sheng-zi-xu-lie-he/"/>
+    <id>https://ricky2333.github.io/2023/12/01/xin-xi-ao-sai-ti-jie-zui-da-shang-sheng-zi-xu-lie-he/</id>
+    <published>2023-12-01T07:05:48.000Z</published>
+    <updated>2023-12-01T07:22:02.792Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜最大上升子序列和&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜最大上升子序列和&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜最大上升子序列和&quot;&gt;&lt;/a&gt;信息奥赛题解｜最大上升子序列和&lt;/h1&gt;&lt;hr&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="动态规划" scheme="https://ricky2333.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="线性DP" scheme="https://ricky2333.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>键盘侠修炼手册｜Typing</title>
     <link href="https://ricky2333.github.io/2023/11/30/jian-pan-xia-xiu-lian-shou-ce-typing/"/>
     <id>https://ricky2333.github.io/2023/11/30/jian-pan-xia-xiu-lian-shou-ce-typing/</id>
     <published>2023-11-30T14:10:40.000Z</published>
-    <updated>2023-11-30T16:17:11.901Z</updated>
+    <updated>2023-12-01T08:22:34.339Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Typing-Speed&quot;&gt;&lt;a href=&quot;#Typing-Speed&quot; class=&quot;headerlink&quot; title=&quot;Typing Speed&quot;&gt;&lt;/a&gt;Typing Speed&lt;/h1&gt;&lt;h2 id=&quot;打字练习の部分教程-🎥&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h1 id=&quot;键盘侠修炼手册｜Typing&quot;&gt;&lt;a href=&quot;#键盘侠修炼手册｜Typing&quot; class=&quot;headerlink&quot; title=&quot;键盘侠修炼手册｜Typing&quot;&gt;&lt;/a&gt;键盘侠修炼手册｜Typing&lt;/h1&gt;&lt;h2 id=&quot;打字练习の部分教程-🎥&quot;&gt;&lt;a</summary>
         
       
     
@@ -547,66 +608,6 @@
     
     
     <category term="教师招聘" scheme="https://ricky2333.github.io/tags/%E6%95%99%E5%B8%88%E6%8B%9B%E8%81%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜LETTERS</title>
-    <link href="https://ricky2333.github.io/2023/11/17/xin-xi-ao-sai-ti-jie-letters/"/>
-    <id>https://ricky2333.github.io/2023/11/17/xin-xi-ao-sai-ti-jie-letters/</id>
-    <published>2023-11-17T07:05:43.000Z</published>
-    <updated>2023-11-30T08:40:30.349Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜LETTERS&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜LETTERS&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜LETTERS&quot;&gt;&lt;/a&gt;信息奥赛题解｜LETTERS&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;🚀-题目浏览&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="DFS" scheme="https://ricky2333.github.io/tags/DFS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OI题解｜LELE的RPG难题</title>
-    <link href="https://ricky2333.github.io/2023/11/16/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/"/>
-    <id>https://ricky2333.github.io/2023/11/16/xin-xi-ao-sai-ti-jie-lele-de-rpg-nan-ti/</id>
-    <published>2023-11-16T03:54:22.000Z</published>
-    <updated>2023-11-29T10:56:27.944Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜LELE的RPG难题&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜LELE的RPG难题&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜LELE的RPG难题&quot;&gt;&lt;/a&gt;信息奥赛题解｜LELE的RPG难题&lt;/h1&gt;&lt;hr&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="递推" scheme="https://ricky2333.github.io/tags/%E9%80%92%E6%8E%A8/"/>
     
   </entry>
   
