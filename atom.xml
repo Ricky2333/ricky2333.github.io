@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-12-02T05:05:44.409Z</updated>
+  <updated>2023-12-02T15:57:23.275Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,102 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AtCoder｜Bus Stops</title>
+    <link href="https://ricky2333.github.io/2023/12/02/atcoder-ti-jie-bus-stops/"/>
+    <id>https://ricky2333.github.io/2023/12/02/atcoder-ti-jie-bus-stops/</id>
+    <published>2023-12-02T11:54:11.000Z</published>
+    <updated>2023-12-02T15:57:23.275Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-319-E-Bus-Stops&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-319-E-Bus-Stops&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 319 E - Bus</summary>
+        
+      
+    
+    
+    
+    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AtCoder｜Minimum Width</title>
+    <link href="https://ricky2333.github.io/2023/12/02/atcoder-ti-jie-minimum-width/"/>
+    <id>https://ricky2333.github.io/2023/12/02/atcoder-ti-jie-minimum-width/</id>
+    <published>2023-12-02T11:54:02.000Z</published>
+    <updated>2023-12-02T15:45:48.361Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-319-D-Minimum-Width&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-319-D-Minimum-Width&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 319 D -</summary>
+        
+      
+    
+    
+    
+    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
+    
+    <category term="二分" scheme="https://ricky2333.github.io/tags/%E4%BA%8C%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AtCoder｜False Hope</title>
+    <link href="https://ricky2333.github.io/2023/12/02/atcoder-ti-jie-false-hope/"/>
+    <id>https://ricky2333.github.io/2023/12/02/atcoder-ti-jie-false-hope/</id>
+    <published>2023-12-02T11:53:24.000Z</published>
+    <updated>2023-12-02T15:34:09.207Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-319-C-False-Hope&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-319-C-False-Hope&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 319 C - False</summary>
+        
+      
+    
+    
+    
+    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
+    
+    <category term="排列" scheme="https://ricky2333.github.io/tags/%E6%8E%92%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>复盘｜AtCoder ABC 322</title>
     <link href="https://ricky2333.github.io/2023/12/01/fu-pan-atcoder-abc-322/"/>
     <id>https://ricky2333.github.io/2023/12/01/fu-pan-atcoder-abc-322/</id>
     <published>2023-12-01T13:35:13.000Z</published>
-    <updated>2023-12-02T05:05:44.409Z</updated>
+    <updated>2023-12-02T11:55:39.196Z</updated>
     
     
       
@@ -526,90 +617,6 @@
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="思维题" scheme="https://ricky2333.github.io/tags/%E6%80%9D%E7%BB%B4%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题解｜A + B Again</title>
-    <link href="https://ricky2333.github.io/2023/11/26/xin-xi-ao-sai-ti-jie-a-b-again/"/>
-    <id>https://ricky2333.github.io/2023/11/26/xin-xi-ao-sai-ti-jie-a-b-again/</id>
-    <published>2023-11-26T03:04:17.000Z</published>
-    <updated>2023-11-26T03:27:12.108Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜A-B-Again&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜A-B-Again&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜A + B Again&quot;&gt;&lt;/a&gt;信息奥赛题解｜A + B Again&lt;/h1&gt;&lt;hr&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="进制转换" scheme="https://ricky2333.github.io/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>复盘｜2023多校新生周赛十</title>
-    <link href="https://ricky2333.github.io/2023/11/25/fu-pan-2023-duo-xiao-xin-sheng-zhou-sai-shi/"/>
-    <id>https://ricky2333.github.io/2023/11/25/fu-pan-2023-duo-xiao-xin-sheng-zhou-sai-shi/</id>
-    <published>2023-11-25T14:27:39.000Z</published>
-    <updated>2023-12-01T13:36:56.041Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛复盘｜2023多校新生周赛十（2023-11-25）&quot;&gt;&lt;a href=&quot;#信息奥赛复盘｜2023多校新生周赛十（2023-11-25）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛复盘" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>复盘｜2023多校新生周赛九</title>
-    <link href="https://ricky2333.github.io/2023/11/20/fu-pan-2023-duo-xiao-xin-sheng-zhou-sai-jiu/"/>
-    <id>https://ricky2333.github.io/2023/11/20/fu-pan-2023-duo-xiao-xin-sheng-zhou-sai-jiu/</id>
-    <published>2023-11-20T15:24:36.000Z</published>
-    <updated>2023-12-01T13:36:21.127Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛复盘｜2023多校新生周赛九（2023-11-19）&quot;&gt;&lt;a href=&quot;#信息奥赛复盘｜2023多校新生周赛九（2023-11-19）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛复盘" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E5%A4%8D%E7%9B%98/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
   </entry>
   
