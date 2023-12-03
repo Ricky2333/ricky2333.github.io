@@ -30,9 +30,9 @@
 
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
 </head>
 
 
@@ -1073,14 +1073,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    920
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
 
@@ -1181,11 +1181,10 @@
 <h3 id="【题目来源】"><a href="#【题目来源】" class="headerlink" title="【题目来源】"></a>【题目来源】</h3><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc319/tasks/abc319_e">https://atcoder.jp/contests/abc319/tasks/abc319_e</a></p>
 <hr>
 <h2 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h2><h3 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h3><p>模拟 + 暴力做法很容易想到，但是如何优化是个比较大的难题。</p>
-<p>Consider the value $L = \text{lcm}(1, 2, 3, \ldots, 8) = 2^3 \times 3 \times 5 \times 7 = 840$. First, solve the problem naively for $q \in {0, 1, 2, \ldots, L-1}$, let $r(q)$ denote the answer for $q$.</p>
-<p>Note that $r(q + L) = r(q) + L$ for all integers $q$. This is because the time “wasted” at each bus stop only depends on $s \mod P_i$, where $s$ is the time of arrival at the bus stop, which depends only on the time used on all previous bus stops, and congruence $\mod L$ implies congruence $\mod P_i$ for all $i$.</p>
-<p>Therefore, we can solve the given queries via $r(q) = r(q \mod L) + \left\lfloor \frac{q}{L} \right\rfloor \times L$, with the first term being one of the values we had precomputed.</p>
-<p>The problem has been solved in time $O(LN + Q)$ and space $O(N + L)$.</p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/657583832">https://zhuanlan.zhihu.com/p/657583832</a></p>
+<p>需要运用 数学 + 思维 的方法。（具体过程见下面代码）</p>
+<p>官方题解传送门</p>
+<p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc319/editorial/7141">https://atcoder.jp/contests/abc319/editorial/7141</a>  </p>
+<p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc319/editorial/7122">https://atcoder.jp/contests/abc319/editorial/7122</a></p>
 <h3 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h3><h4 id="模拟-暴力（TLE）-❌"><a href="#模拟-暴力（TLE）-❌" class="headerlink" title="模拟 + 暴力（TLE） ❌"></a>模拟 + 暴力（TLE） ❌</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
@@ -1224,7 +1223,51 @@ LL n<span class="token punctuation">,</span> x<span class="token punctuation">,<
 
 
 
-<h4 id="优化法-✅"><a href="#优化法-✅" class="headerlink" title="优化法 ✅"></a>优化法 ✅</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="优化法-✅"><a href="#优化法-✅" class="headerlink" title="优化法 ✅"></a>优化法 ✅</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+LL n<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> q<span class="token punctuation">,</span> p<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> s<span class="token punctuation">,</span> e<span class="token punctuation">;</span>
+LL ans<span class="token punctuation">[</span><span class="token number">1000</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 读入相关数据</span>
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> x <span class="token operator">&gt;&gt;</span> y<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;&gt;</span> t<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 预处理一个大循环（lcm(1, 2, 3,...8) = 840）</span>
+    <span class="token comment">// 840为最极端的情况，即pi取遍了1～8</span>
+    <span class="token comment">// 在一般测试样例中，lcm(p1, p2...pn-1)一般到不了840</span>
+    <span class="token comment">// 但是大循环840一定是小循环的倍数，所以直接处理大循环即可</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">840</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        LL cur <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>cur <span class="token operator">%</span> p<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                cur <span class="token operator">=</span> cur <span class="token operator">+</span> p<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">-</span> cur <span class="token operator">%</span> p<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            cur <span class="token operator">+=</span> t<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        ans<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> cur <span class="token operator">-</span> i<span class="token punctuation">;</span>   <span class="token comment">// ans[i]表示时刻i到达第一个站点，后续到达第n个公交站点需要的时间</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// q次查询，每次查询只需要获得到达第一个站点的时间s+x</span>
+    <span class="token comment">// 就可以通过预处理的ans数组，算出在(s+x)在大循环840中的位置</span>
+    <span class="token comment">// ans[(s+x)%840]即为公交上花费的总时间</span>
+    <span class="token comment">// 最后再加上y即可</span>
+    cin <span class="token operator">&gt;&gt;</span> q<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> q<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> s<span class="token punctuation">;</span>
+        s <span class="token operator">+=</span> x<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> s <span class="token operator">+</span> ans<span class="token punctuation">[</span>s <span class="token operator">%</span> <span class="token number">840</span><span class="token punctuation">]</span> <span class="token operator">+</span> y <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -1473,42 +1516,40 @@ LL n<span class="token punctuation">,</span> x<span class="token punctuation">,<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/12/02/atcoder-ti-jie-bus-stops/">
+                <a href="/2023/12/03/fu-pan-atcoder-abc-322/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="AtCoder｜Bus Stops">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="复盘｜AtCoder ABC 322">
                         
-                        <span class="card-title">AtCoder｜Bus Stops</span>
+                        <span class="card-title">复盘｜AtCoder ABC 322</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            AtCoder题解｜ABC 319 E - Bus Stops
+                            信息奥赛复盘｜AtCoder ABC 322
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-02
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-12-03
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/AtCoder%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    AtCoder题解
+                            <a href="/categories/AtCoder%E5%A4%8D%E7%9B%98/" class="post-category">
+                                    AtCoder复盘
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1831,7 +1872,7 @@ LL n<span class="token punctuation">,</span> x<span class="token punctuation">,<
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">248.4k</span>&nbsp;字
+                class="white-color">252.2k</span>&nbsp;字
             
             
             
