@@ -30,9 +30,9 @@
 
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
 
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
 </head>
 
 
@@ -921,7 +921,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1045,12 +1045,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                                <span class="chip bg-color">信息奥赛</span>
+                            </a>
+                        
+                            <a href="/tags/Codeforces/">
+                                <span class="chip bg-color">Codeforces</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                                <span class="chip bg-color">贪心</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Codeforces%E9%A2%98%E8%A7%A3/" class="post-category">
+                                Codeforces题解
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -1068,14 +1089,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    467
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -1098,7 +1119,33 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="Codeforces题解｜1355B-Young-Explorers"><a href="#Codeforces题解｜1355B-Young-Explorers" class="headerlink" title="Codeforces题解｜1355B - Young Explorers"></a>Codeforces题解｜1355B - Young Explorers</h1><hr>
+<h2 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>Young wilderness explorers set off to their first expedition led by senior explorer Russell. Explorers went into a forest, set up a camp, and decided to split into groups to explore as many interesting locations as possible. Russell was trying to form groups, but ran into some difficulties…</p>
+<p>Most of the young explorers are inexperienced, and sending them alone would be a mistake. Even Russell himself became a senior explorer not long ago. Each of the young explorers has a positive integer parameter $e_i$ — his inexperience. Russell decided that an explorer with inexperience $e_i$ can only join the group of $e_i$ or more people.</p>
+<p>Now Russell needs to figure out how many groups he can organize. It’s not necessary to include every explorer in one of the groups: some can stay in the camp. Russell is worried about this expedition, so he asked you to help him.</p>
+<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>The first line contains the number of independent test cases $T$ $(1 \leq T \leq 2 \times 10^5)$. The next $2T$ lines contain a description of the test cases.</p>
+<p>The first line of the description of each test case contains the number of young explorers $N$ $(1 \leq N \leq 2 \times 10^5)$.</p>
+<p>The second line contains $N$ integers $e_1, e_2, \ldots, e_N$ $(1 \leq e_i \leq N)$, where $e_i$ is the inexperience of the $i$-th explorer.</p>
+<p>It’s guaranteed that the sum of all $N$ doesn’t exceed $3 \times 10^5$.</p>
+<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>Print $T$ numbers, each number on a separate line.</p>
+<p>In the $i$-th line, print the maximum number of groups Russell can form in the $i$-th test case.</p>
+<h3 id="【输入样例1】"><a href="#【输入样例1】" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span>
+<span class="token number">3</span>
+<span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span>
+<span class="token number">5</span>
+<span class="token number">2</span> <span class="token number">3</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="【输出样例1】"><a href="#【输出样例1】" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span>
+<span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="【提示】"><a href="#【提示】" class="headerlink" title="【提示】"></a>【提示】</h3><p>In the first example, we can organize three groups. There will be only one explorer in each group. It’s correct because the inexperience of each explorer equals 1, so it’s not less than the size of his group.</p>
+<p>In the second example, we can organize two groups. Explorers with inexperience 1, 2, and 3 will form the first group, and the other two explorers with inexperience equal to 2 will form the second group.</p>
+<p>This solution is not unique. For example, we can form the first group using the three explorers with inexperience equal to 2, and the second group using only one explorer with inexperience equal to 1. In this case, the young explorer with inexperience equal to 3 will not be included in any group.</p>
+<h3 id="【题目来源】"><a href="#【题目来源】" class="headerlink" title="【题目来源】"></a>【题目来源】</h3><p><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1355/B">https://codeforces.com/problemset/problem/1355/B</a></p>
+<hr>
+<h2 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h2><h3 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h3><h3 id="【C-代码】✅"><a href="#【C-代码】✅" class="headerlink" title="【C++代码】✅"></a>【C++代码】✅</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
                 
             </div>
             <hr/>
@@ -1161,7 +1208,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                                    <span class="chip bg-color">信息奥赛</span>
+                                </a>
+                            
+                                <a href="/tags/Codeforces/">
+                                    <span class="chip bg-color">Codeforces</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                                    <span class="chip bg-color">贪心</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1337,8 +1396,7 @@
                 <a href="/2023/12/05/cf-ti-jie-young-explorers/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="CF题解｜Young Explorers">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="CF题解｜Young Explorers">
                         
                         <span class="card-title">CF题解｜Young Explorers</span>
                     </div>
@@ -1346,7 +1404,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            CF题解｜Young Explorers
                         
                     </div>
                     <div class="publish-info">
@@ -1355,13 +1413,33 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Rickyの水果摊
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Codeforces%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    Codeforces题解
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                        <span class="chip bg-color">信息奥赛</span>
+                    </a>
+                    
+                    <a href="/tags/Codeforces/">
+                        <span class="chip bg-color">Codeforces</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                        <span class="chip bg-color">贪心</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1664,7 +1742,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">257.4k</span>&nbsp;字
+                class="white-color">257.9k</span>&nbsp;字
             
             
             
