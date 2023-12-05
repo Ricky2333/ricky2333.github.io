@@ -30,9 +30,9 @@
 
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Rickyの水果摊" type="application/atom+xml">
 </head>
 
 
@@ -385,6 +385,13 @@
         <a target="_blank" rel="noopener" href="https://atcoder.jp/">
           
           <span>AtCoder</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="https://kenkoooo.com/atcoder/#/table/">
+          
+          <span>AtCoder Pset</span>
         </a>
       </li>
       
@@ -771,6 +778,14 @@
               
                 <li>
 
+                  <a target="_blank" rel="noopener" href="https://kenkoooo.com/atcoder/#/table/ " style="margin-left:75px">
+				  
+		          <span>AtCoder Pset</span>
+                  </a>
+                </li>
+              
+                <li>
+
                   <a target="_blank" rel="noopener" href="https://vjudge.net/ " style="margin-left:75px">
 				  
 		          <span>Virtual Judge</span>
@@ -1078,14 +1093,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    725
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    7 分
                 </div>
                 
 
@@ -1120,6 +1135,13 @@
 </tr>
 </thead>
 <tbody><tr>
+<td align="center">Codeforces 1537C</td>
+<td align="center">Challenging Cliffs</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1537/C">链接🔗</a></td>
+<td align="center">思维</td>
+<td align="center">🟡</td>
+</tr>
+<tr>
 <td align="center">UVa - 101</td>
 <td align="center">The Blocks Problem</td>
 <td align="center"><a target="_blank" rel="noopener" href="https://vjudge.net/problem/UVA-101">链接🔗</a></td>
@@ -1128,7 +1150,83 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="题解-🚀"><a href="#题解-🚀" class="headerlink" title="题解 🚀"></a>题解 🚀</h2><h3 id="The-Blocks-Problem"><a href="#The-Blocks-Problem" class="headerlink" title="The Blocks Problem"></a>The Blocks Problem</h3><h4 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】UVa-101-The-Blocks-Problem"><a href="#【题目名称】UVa-101-The-Blocks-Problem" class="headerlink" title="【题目名称】UVa - 101 The Blocks Problem"></a>【题目名称】UVa - 101 The Blocks Problem</h5><h5 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>Many areas of Computer Science use simple, abstract domains for both analytical and empirical studies. For example, an early AI study of planning and robotics (STRIPS) used a block world in which a robot arm performed tasks involving the manipulation of blocks. </p>
+<h2 id="题解-🚀"><a href="#题解-🚀" class="headerlink" title="题解 🚀"></a>题解 🚀</h2><h3 id="Challenging-Cliffs"><a href="#Challenging-Cliffs" class="headerlink" title="Challenging Cliffs"></a>Challenging Cliffs</h3><h4 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】Codeforces-1537C-Challenging-Cliffs"><a href="#【题目名称】Codeforces-1537C-Challenging-Cliffs" class="headerlink" title="【题目名称】Codeforces 1537C - Challenging Cliffs"></a>【题目名称】Codeforces 1537C - Challenging Cliffs</h5><h5 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>You are a game designer and want to make an obstacle course. The player will walk from left to right. You have $n$ heights of mountains already selected and want to arrange them so that the absolute difference of the heights of the first and last mountains is as small as possible.</p>
+<p>In addition, you want to make the game difficult, and since walking uphill or flat is harder than walking downhill, the difficulty of the level will be the number of mountains $i$ $(1 \leq i &lt; n)$ such that $h_i \leq h_{i+1}$ where $h_i$ is the height of the $i$-th mountain. You don’t want to waste any of the mountains you modeled, so you have to use all of them.</p>
+<p>From all the arrangements that minimize $|h_1 - h_n|$, find one that is the most difficult. If there are multiple orders that satisfy these requirements, you may find any.</p>
+<h5 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h5><p>The first line will contain a single integer $t$ $(1 \leq t \leq 100)$ — the number of test cases. Then $t$ test cases follow.</p>
+<p>The first line of each test case contains a single integer $n$ $(2 \leq n \leq 2 \times 10^5)$ — the number of mountains.</p>
+<p>The second line of each test case contains $n$ integers $h_1, \ldots, h_n$ $(1 \leq h_i \leq 10^9)$, where $h_i$ is the height of the $i$-th mountain.</p>
+<p>It is guaranteed that the sum of $n$ over all test cases does not exceed $2 \times 10^5$.</p>
+<h5 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h5><p>For each test case, output $n$ integers — the given heights in an order that maximizes the difficulty score among all orders that minimize $|h_1 - h_n|$.</p>
+<p>If there are multiple orders that satisfy these requirements, you may output any.</p>
+<h5 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span>
+<span class="token number">4</span>
+<span class="token number">4</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">2</span>
+<span class="token number">2</span>
+<span class="token number">3</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span> <span class="token number">4</span> <span class="token number">1</span> <span class="token number">2</span> 
+<span class="token number">1</span> <span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1537/C">https://codeforces.com/problemset/problem/1537/C</a></p>
+<hr>
+<h4 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>思维题。</p>
+<p>首先对所有高度从小到大排序，绝对值相差最小的两个数在排序后会处于相邻位置。</p>
+<p>假设高度为 a &lt; b &lt; <strong>c</strong> &lt; <strong>d</strong> &lt; e &lt; f &lt; g（且 <strong>c</strong> 和 <strong>d</strong> 的绝对值差值最小），则最佳的排列顺序为：<strong>d</strong> e f g / a b <strong>c</strong></p>
+<p>PS：当 <code>n = 2</code> 时，排序顺序应当为：c d</p>
+<h5 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">2e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> tmp<span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">solve</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 读入高度并且排序</span>
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> a<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> tmp<span class="token punctuation">;</span>
+        a<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">sort</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> a<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 输出符合要求的排列</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 寻找绝对值相差最小的下标</span>
+        <span class="token keyword">int</span> res <span class="token operator">=</span> INT_MAX<span class="token punctuation">,</span> id <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> a<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> dis <span class="token operator">=</span> <span class="token function">abs</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>dis <span class="token operator">&lt;</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                res <span class="token operator">=</span> dis<span class="token punctuation">,</span> id <span class="token operator">=</span> i<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 输出最佳排列</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> id <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> a<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+            cout <span class="token operator">&lt;&lt;</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> id<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+            cout <span class="token operator">&lt;&lt;</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> _ <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> _<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>_<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">solve</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="The-Blocks-Problem"><a href="#The-Blocks-Problem" class="headerlink" title="The Blocks Problem"></a>The Blocks Problem</h3><h4 id="题目信息-📚-1"><a href="#题目信息-📚-1" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】UVa-101-The-Blocks-Problem"><a href="#【题目名称】UVa-101-The-Blocks-Problem" class="headerlink" title="【题目名称】UVa - 101 The Blocks Problem"></a>【题目名称】UVa - 101 The Blocks Problem</h5><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>Many areas of Computer Science use simple, abstract domains for both analytical and empirical studies. For example, an early AI study of planning and robotics (STRIPS) used a block world in which a robot arm performed tasks involving the manipulation of blocks. </p>
 <p>In this problem you will model a simple block world under certain rules and constraints. Rather than determine how to achieve a specified state, you will “program” a robotic arm to respond to a limited set of commands. </p>
 <p>The problem is to parse a series of commands that instruct a robot arm in how to manipulate blocks that lie on a flat table. Initially there are n blocks on the table (numbered from $0$ to $n − 1$) with block bi adjacent to block $b_{i+1}$ for all $0 \le i \lt  n − 1$ as shown in the diagram below:</p>
 <p>The valid commands for the robot arm that manipulates blocks are: </p>
@@ -1140,12 +1238,12 @@
 <li>quit<br>terminates manipulations in the block world.</li>
 </ul>
 <p>Any command in which $a = b$ or in which a and b are in the same stack of blocks is an illegal command. All illegal commands should be ignored and should have no affect on the configuration of blocks.</p>
-<h5 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h5><p>The input begins with an integer $n$ on a line by itself representing the number of blocks in the block world. You may assume that $0 &lt; n &lt; 25$. </p>
+<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p>The input begins with an integer $n$ on a line by itself representing the number of blocks in the block world. You may assume that $0 &lt; n &lt; 25$. </p>
 <p>The number of blocks is followed by a sequence of block commands, one command per line. Your program should process all commands until the <code>quit</code> command is encountered. </p>
 <p>You may assume that all commands will be of the form specified above. There will be no syntactically incorrect commands.</p>
-<h5 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h5><p>The output should consist of the final state of the blocks world. Each original block position numbered $i$ $(0 \le i \lt n$ where n is the number of blocks) should appear followed immediately by a colon. If there is at least a block on it, the colon must be followed by one space, followed by a list of blocks that appear stacked in that position with each block number separated from other block numbers by a space. Don’t put any trailing spaces on a line. </p>
+<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>The output should consist of the final state of the blocks world. Each original block position numbered $i$ $(0 \le i \lt n$ where n is the number of blocks) should appear followed immediately by a colon. If there is at least a block on it, the colon must be followed by one space, followed by a list of blocks that appear stacked in that position with each block number separated from other block numbers by a space. Don’t put any trailing spaces on a line. </p>
 <p>There should be one line of output for each block position (i.e., n lines of output where n is the integer on the first line of input).</p>
-<h5 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">10</span>
+<h5 id="【输入样例】-1"><a href="#【输入样例】-1" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">10</span>
 move <span class="token number">9</span> onto <span class="token number">1</span>
 move <span class="token number">8</span> over <span class="token number">1</span>
 move <span class="token number">7</span> over <span class="token number">1</span>
@@ -1156,7 +1254,7 @@ move <span class="token number">2</span> over <span class="token number">1</span
 move <span class="token number">4</span> over <span class="token number">9</span>
 quit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">0</span><span class="token operator">:</span> <span class="token number">0</span>
+<h5 id="【输出样例】-1"><a href="#【输出样例】-1" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">0</span><span class="token operator">:</span> <span class="token number">0</span>
 <span class="token number">1</span><span class="token operator">:</span> <span class="token number">1</span> <span class="token number">9</span> <span class="token number">2</span> <span class="token number">4</span>
 <span class="token number">2</span><span class="token operator">:</span>
 <span class="token number">3</span><span class="token operator">:</span> <span class="token number">3</span>
@@ -1167,9 +1265,9 @@ quit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
 <span class="token number">8</span><span class="token operator">:</span>
 <span class="token number">9</span><span class="token operator">:</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://vjudge.net/problem/UVA-101">https://vjudge.net/problem/UVA-101</a></p>
+<h5 id="【原题链接】-1"><a href="#【原题链接】-1" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://vjudge.net/problem/UVA-101">https://vjudge.net/problem/UVA-101</a></p>
 <hr>
-<h4 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="题目解析-🍉-1"><a href="#题目解析-🍉-1" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】-1"><a href="#【C-代码】-1" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <hr>
 
@@ -1779,7 +1877,7 @@ quit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">250.7k</span>&nbsp;字
+                class="white-color">257.4k</span>&nbsp;字
             
             
             
