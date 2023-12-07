@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-12-05T16:00:52.234Z</updated>
+  <updated>2023-12-06T05:36:02.230Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,100 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CF｜Building Permutation</title>
+    <link href="https://ricky2333.github.io/2023/12/06/cf-ti-jie-building-permutation/"/>
+    <id>https://ricky2333.github.io/2023/12/06/cf-ti-jie-building-permutation/</id>
+    <published>2023-12-06T05:19:38.000Z</published>
+    <updated>2023-12-06T05:36:02.230Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Codeforces题解｜285C-Building-Permutation&quot;&gt;&lt;a href=&quot;#Codeforces题解｜285C-Building-Permutation&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Codeforces题解" scheme="https://ricky2333.github.io/categories/Codeforces%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
+    
+    <category term="思维" scheme="https://ricky2333.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+    <category term="贪心" scheme="https://ricky2333.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF题解｜Before an Exam</title>
+    <link href="https://ricky2333.github.io/2023/12/06/cf-ti-jie-before-an-exam/"/>
+    <id>https://ricky2333.github.io/2023/12/06/cf-ti-jie-before-an-exam/</id>
+    <published>2023-12-06T04:52:17.000Z</published>
+    <updated>2023-12-06T05:19:44.711Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Codeforces题解｜4B-Before-an-Exam&quot;&gt;&lt;a href=&quot;#Codeforces题解｜4B-Before-an-Exam&quot; class=&quot;headerlink&quot; title=&quot;Codeforces题解｜4B - Before an</summary>
+        
+      
+    
+    
+    
+    <category term="Codeforces题解" scheme="https://ricky2333.github.io/categories/Codeforces%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
+    
+    <category term="思维" scheme="https://ricky2333.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+    <category term="构造" scheme="https://ricky2333.github.io/tags/%E6%9E%84%E9%80%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF题解｜AccurateLee</title>
+    <link href="https://ricky2333.github.io/2023/12/06/cf-ti-jie-accuratelee/"/>
+    <id>https://ricky2333.github.io/2023/12/06/cf-ti-jie-accuratelee/</id>
+    <published>2023-12-06T04:10:47.000Z</published>
+    <updated>2023-12-06T04:22:31.601Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Codeforces题解｜1369B-AccurateLee&quot;&gt;&lt;a href=&quot;#Codeforces题解｜1369B-AccurateLee&quot; class=&quot;headerlink&quot; title=&quot;Codeforces题解｜1369B -</summary>
+        
+      
+    
+    
+    
+    <category term="Codeforces题解" scheme="https://ricky2333.github.io/categories/Codeforces%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
+    
+    <category term="思维" scheme="https://ricky2333.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CF题解｜Young Explorers</title>
-    <link href="https://ricky2333.github.io/2023/12/05/cf-ti-jie-young-explorers/"/>
-    <id>https://ricky2333.github.io/2023/12/05/cf-ti-jie-young-explorers/</id>
-    <published>2023-12-05T15:09:18.000Z</published>
-    <updated>2023-12-05T16:00:52.234Z</updated>
+    <link href="https://ricky2333.github.io/2023/12/06/cf-ti-jie-young-explorers/"/>
+    <id>https://ricky2333.github.io/2023/12/06/cf-ti-jie-young-explorers/</id>
+    <published>2023-12-05T23:09:18.000Z</published>
+    <updated>2023-12-06T04:52:59.446Z</updated>
     
     
       
@@ -50,7 +139,7 @@
     <link href="https://ricky2333.github.io/2023/12/05/xin-xi-ao-sai-ti-dan-tan-xin/"/>
     <id>https://ricky2333.github.io/2023/12/05/xin-xi-ao-sai-ti-dan-tan-xin/</id>
     <published>2023-12-05T14:58:38.000Z</published>
-    <updated>2023-12-05T15:59:42.455Z</updated>
+    <updated>2023-12-06T05:38:00.099Z</updated>
     
     
       
@@ -102,9 +191,9 @@
     
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
-    <category term="gcd" scheme="https://ricky2333.github.io/tags/gcd/"/>
-    
     <category term="构造" scheme="https://ricky2333.github.io/tags/%E6%9E%84%E9%80%A0/"/>
+    
+    <category term="gcd" scheme="https://ricky2333.github.io/tags/gcd/"/>
     
   </entry>
   
@@ -172,8 +261,18 @@
     <link href="https://ricky2333.github.io/2023/12/05/cf-ti-jie-alternating-subsequence/"/>
     <id>https://ricky2333.github.io/2023/12/05/cf-ti-jie-alternating-subsequence/</id>
     <published>2023-12-05T08:08:19.000Z</published>
-    <updated>2023-12-05T08:25:04.139Z</updated>
+    <updated>2023-12-06T05:39:15.140Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本篇博客还在持续修改润色中～&lt;/p&gt;
+&lt;p&gt;敬请期待～&lt;/p&gt;
+</summary>
+        
+      
     
     
     
@@ -193,8 +292,18 @@
     <link href="https://ricky2333.github.io/2023/12/05/cf-ti-jie-ternary-xor/"/>
     <id>https://ricky2333.github.io/2023/12/05/cf-ti-jie-ternary-xor/</id>
     <published>2023-12-05T08:08:04.000Z</published>
-    <updated>2023-12-05T08:23:49.693Z</updated>
+    <updated>2023-12-06T05:39:08.642Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本篇博客还在持续修改润色中～&lt;/p&gt;
+&lt;p&gt;敬请期待～&lt;/p&gt;
+</summary>
+        
+      
     
     
     
@@ -216,8 +325,18 @@
     <link href="https://ricky2333.github.io/2023/12/04/cf-ti-jie-bersu-ball/"/>
     <id>https://ricky2333.github.io/2023/12/04/cf-ti-jie-bersu-ball/</id>
     <published>2023-12-04T08:07:43.000Z</published>
-    <updated>2023-12-05T08:28:17.864Z</updated>
+    <updated>2023-12-06T05:39:03.322Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本篇博客还在持续修改润色中～&lt;/p&gt;
+&lt;p&gt;敬请期待～&lt;/p&gt;
+</summary>
+        
+      
     
     
     
@@ -500,97 +619,6 @@
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="并查集" scheme="https://ricky2333.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OI题解｜最大上升子序列和</title>
-    <link href="https://ricky2333.github.io/2023/12/01/xin-xi-ao-sai-ti-jie-zui-da-shang-sheng-zi-xu-lie-he/"/>
-    <id>https://ricky2333.github.io/2023/12/01/xin-xi-ao-sai-ti-jie-zui-da-shang-sheng-zi-xu-lie-he/</id>
-    <published>2023-12-01T07:05:48.000Z</published>
-    <updated>2023-12-01T07:22:02.792Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜最大上升子序列和&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜最大上升子序列和&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜最大上升子序列和&quot;&gt;&lt;/a&gt;信息奥赛题解｜最大上升子序列和&lt;/h1&gt;&lt;hr&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="动态规划" scheme="https://ricky2333.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-    <category term="线性DP" scheme="https://ricky2333.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>键盘侠修炼手册｜Typing</title>
-    <link href="https://ricky2333.github.io/2023/11/30/jian-pan-xia-xiu-lian-shou-ce-typing/"/>
-    <id>https://ricky2333.github.io/2023/11/30/jian-pan-xia-xiu-lian-shou-ce-typing/</id>
-    <published>2023-11-30T14:10:40.000Z</published>
-    <updated>2023-12-05T02:19:39.205Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;键盘侠修炼手册｜Typing&quot;&gt;&lt;a href=&quot;#键盘侠修炼手册｜Typing&quot; class=&quot;headerlink&quot; title=&quot;键盘侠修炼手册｜Typing&quot;&gt;&lt;/a&gt;键盘侠修炼手册｜Typing&lt;/h1&gt;&lt;h2 id=&quot;打字练习の部分教程-🎥&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="键盘侠修炼手册" scheme="https://ricky2333.github.io/categories/%E9%94%AE%E7%9B%98%E4%BE%A0%E4%BF%AE%E7%82%BC%E6%89%8B%E5%86%8C/"/>
-    
-    
-    <category term="实用技能" scheme="https://ricky2333.github.io/tags/%E5%AE%9E%E7%94%A8%E6%8A%80%E8%83%BD/"/>
-    
-    <category term="Typing" scheme="https://ricky2333.github.io/tags/Typing/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息奥赛题单｜map</title>
-    <link href="https://ricky2333.github.io/2023/11/30/xin-xi-ao-sai-ti-dan-map/"/>
-    <id>https://ricky2333.github.io/2023/11/30/xin-xi-ao-sai-ti-dan-map/</id>
-    <published>2023-11-30T08:43:07.000Z</published>
-    <updated>2023-12-05T10:03:47.989Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本篇博客还在持续更新润色中～&lt;/p&gt;
-&lt;h1 id=&quot;STL-map&quot;&gt;&lt;a href=&quot;#STL-map&quot; class=&quot;headerlink&quot; title=&quot;STL - map&quot;&gt;&lt;/a&gt;STL - map&lt;/h1&gt;&lt;h2 id=&quot;题单-🧑🏻‍💻&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题单" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E5%8D%95/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="map" scheme="https://ricky2333.github.io/tags/map/"/>
-    
-    <category term="STL" scheme="https://ricky2333.github.io/tags/STL/"/>
     
   </entry>
   
