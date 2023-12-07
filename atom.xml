@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-12-06T05:36:02.230Z</updated>
+  <updated>2023-12-07T06:03:58.540Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,155 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sequence Transformation</title>
+    <link href="https://ricky2333.github.io/2023/12/07/cf-ti-jie-sequence-transformation/"/>
+    <id>https://ricky2333.github.io/2023/12/07/cf-ti-jie-sequence-transformation/</id>
+    <published>2023-12-07T04:30:12.000Z</published>
+    <updated>2023-12-07T06:03:58.540Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Codeforces题解｜1454C-Sequence-Transformation&quot;&gt;&lt;a href=&quot;#Codeforces题解｜1454C-Sequence-Transformation&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Codeforces题解" scheme="https://ricky2333.github.io/categories/Codeforces%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
+    
+    <category term="思维" scheme="https://ricky2333.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF题解｜Corrupted Array</title>
+    <link href="https://ricky2333.github.io/2023/12/07/cf-ti-jie-corrupted-array/"/>
+    <id>https://ricky2333.github.io/2023/12/07/cf-ti-jie-corrupted-array/</id>
+    <published>2023-12-07T04:30:00.000Z</published>
+    <updated>2023-12-07T05:49:46.599Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Codeforces题解｜1512D-Corrupted-Array&quot;&gt;&lt;a href=&quot;#Codeforces题解｜1512D-Corrupted-Array&quot; class=&quot;headerlink&quot; title=&quot;Codeforces题解｜1512D</summary>
+        
+      
+    
+    
+    
+    <category term="CF题解" scheme="https://ricky2333.github.io/categories/CF%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
+    
+    <category term="思维" scheme="https://ricky2333.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+    <category term="构造" scheme="https://ricky2333.github.io/tags/%E6%9E%84%E9%80%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ultra-Fast Mathematician</title>
+    <link href="https://ricky2333.github.io/2023/12/07/cf-ti-jie-ultra-fast-mathematician/"/>
+    <id>https://ricky2333.github.io/2023/12/07/cf-ti-jie-ultra-fast-mathematician/</id>
+    <published>2023-12-07T04:29:35.000Z</published>
+    <updated>2023-12-07T04:38:55.187Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Codeforces题解｜61A-Ultra-Fast-Mathematician&quot;&gt;&lt;a href=&quot;#Codeforces题解｜61A-Ultra-Fast-Mathematician&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Codeforces题解" scheme="https://ricky2333.github.io/categories/Codeforces%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
+    
+    <category term="异或" scheme="https://ricky2333.github.io/tags/%E5%BC%82%E6%88%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF题解｜Ternary XOR</title>
+    <link href="https://ricky2333.github.io/2023/12/07/cf-ti-jie-ternary-xor/"/>
+    <id>https://ricky2333.github.io/2023/12/07/cf-ti-jie-ternary-xor/</id>
+    <published>2023-12-07T03:11:04.000Z</published>
+    <updated>2023-12-07T04:46:21.159Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本篇博客还在持续修改润色中～&lt;/p&gt;
+&lt;p&gt;敬请期待～&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="Codeforces题解" scheme="https://ricky2333.github.io/categories/Codeforces%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
+    
+    <category term="思维" scheme="https://ricky2333.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF题解｜Maximum Product</title>
+    <link href="https://ricky2333.github.io/2023/12/07/cf-ti-jie-maximum-product/"/>
+    <id>https://ricky2333.github.io/2023/12/07/cf-ti-jie-maximum-product/</id>
+    <published>2023-12-07T02:52:59.000Z</published>
+    <updated>2023-12-07T03:11:18.382Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Codeforces题解｜1385C-Make-It-Good&quot;&gt;&lt;a href=&quot;#Codeforces题解｜1385C-Make-It-Good&quot; class=&quot;headerlink&quot; title=&quot;Codeforces题解｜1385C - Make It</summary>
+        
+      
+    
+    
+    
+    <category term="Codeforces题解" scheme="https://ricky2333.github.io/categories/Codeforces%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
+    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
+    
+    <category term="枚举" scheme="https://ricky2333.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>CF｜Building Permutation</title>
@@ -288,39 +437,6 @@
   </entry>
   
   <entry>
-    <title>CF题解｜Ternary XOR</title>
-    <link href="https://ricky2333.github.io/2023/12/05/cf-ti-jie-ternary-xor/"/>
-    <id>https://ricky2333.github.io/2023/12/05/cf-ti-jie-ternary-xor/</id>
-    <published>2023-12-05T08:08:04.000Z</published>
-    <updated>2023-12-06T05:39:08.642Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本篇博客还在持续修改润色中～&lt;/p&gt;
-&lt;p&gt;敬请期待～&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="Codeforces题解" scheme="https://ricky2333.github.io/categories/Codeforces%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
-    
-    <category term="思维" scheme="https://ricky2333.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
-    
-  </entry>
-  
-  <entry>
     <title>CF题解｜BerSU Ball</title>
     <link href="https://ricky2333.github.io/2023/12/04/cf-ti-jie-bersu-ball/"/>
     <id>https://ricky2333.github.io/2023/12/04/cf-ti-jie-bersu-ball/</id>
@@ -499,126 +615,6 @@
     <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
     
     <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AtCoder｜Minimum Width</title>
-    <link href="https://ricky2333.github.io/2023/12/02/atcoder-ti-jie-minimum-width/"/>
-    <id>https://ricky2333.github.io/2023/12/02/atcoder-ti-jie-minimum-width/</id>
-    <published>2023-12-02T11:54:02.000Z</published>
-    <updated>2023-12-02T16:09:59.001Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-319-D-Minimum-Width&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-319-D-Minimum-Width&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 319 D -</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-    <category term="二分" scheme="https://ricky2333.github.io/tags/%E4%BA%8C%E5%88%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AtCoder｜False Hope</title>
-    <link href="https://ricky2333.github.io/2023/12/02/atcoder-ti-jie-false-hope/"/>
-    <id>https://ricky2333.github.io/2023/12/02/atcoder-ti-jie-false-hope/</id>
-    <published>2023-12-02T11:53:24.000Z</published>
-    <updated>2023-12-02T16:07:36.397Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-319-C-False-Hope&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-319-C-False-Hope&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 319 C - False</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-    <category term="排列" scheme="https://ricky2333.github.io/tags/%E6%8E%92%E5%88%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>复盘｜AtCoder ABC 319</title>
-    <link href="https://ricky2333.github.io/2023/12/01/fu-pan-atcoder-abc-319/"/>
-    <id>https://ricky2333.github.io/2023/12/01/fu-pan-atcoder-abc-319/</id>
-    <published>2023-12-01T13:35:13.000Z</published>
-    <updated>2023-12-03T05:22:34.412Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛复盘｜AtCoder-ABC-319（2023-12-1）&quot;&gt;&lt;a href=&quot;#信息奥赛复盘｜AtCoder-ABC-319（2023-12-1）&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛复盘｜AtCoder ABC</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder复盘" scheme="https://ricky2333.github.io/categories/AtCoder%E5%A4%8D%E7%9B%98/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OI题解｜More is better</title>
-    <link href="https://ricky2333.github.io/2023/12/01/xin-xi-ao-sai-ti-jie-more-is-better/"/>
-    <id>https://ricky2333.github.io/2023/12/01/xin-xi-ao-sai-ti-jie-more-is-better/</id>
-    <published>2023-12-01T07:41:56.000Z</published>
-    <updated>2023-12-01T07:49:53.744Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;信息奥赛题解｜More-is-better&quot;&gt;&lt;a href=&quot;#信息奥赛题解｜More-is-better&quot; class=&quot;headerlink&quot; title=&quot;信息奥赛题解｜More is better&quot;&gt;&lt;/a&gt;信息奥赛题解｜More is</summary>
-        
-      
-    
-    
-    
-    <category term="信息奥赛题解" scheme="https://ricky2333.github.io/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="C++" scheme="https://ricky2333.github.io/tags/C/"/>
-    
-    <category term="并查集" scheme="https://ricky2333.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
     
   </entry>
   
