@@ -277,6 +277,13 @@
       </li>
       
       <li>
+        <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E8%AE%AD%E7%BB%83%E6%96%B9%E5%BC%8F">
+          
+          <span>信息奥赛｜训练</span>
+        </a>
+      </li>
+      
+      <li>
         <a href="/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E7%BB%8F%E9%AA%8C%E5%B8%96">
           
           <span>信息奥赛｜经验帖</span>
@@ -674,6 +681,14 @@
                   <a href="/tags/%E6%9C%AF%E8%AF%AD/ " style="margin-left:75px">
 				  
 		          <span>信息奥赛｜术语</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E8%AE%AD%E7%BB%83%E6%96%B9%E5%BC%8F " style="margin-left:75px">
+				  
+		          <span>信息奥赛｜训练</span>
                   </a>
                 </li>
               
@@ -1138,14 +1153,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    11 分
                 </div>
                 
 
@@ -1183,6 +1198,13 @@
 <td align="center">HDU - 2648</td>
 <td align="center">Shopping</td>
 <td align="center"><a target="_blank" rel="noopener" href="https://vjudge.net/problem/HDU-2648">链接🔗</a></td>
+<td align="center">map模版题</td>
+<td align="center">🟢</td>
+</tr>
+<tr>
+<td align="center">AtCoder - ABC 118B</td>
+<td align="center">Foods Loved by Everyone</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc118/tasks/abc118_b">链接🔗</a></td>
 <td align="center">map模版题</td>
 <td align="center">🟢</td>
 </tr>
@@ -1267,13 +1289,88 @@ string s<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<h3 id="Boats-Competition"><a href="#Boats-Competition" class="headerlink" title="Boats Competition"></a>Boats Competition</h3><h4 id="题目信息-📚-1"><a href="#题目信息-📚-1" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】Codeforces-1399C-Boats-Competition"><a href="#【题目名称】Codeforces-1399C-Boats-Competition" class="headerlink" title="【题目名称】Codeforces 1399C - Boats Competition"></a>【题目名称】Codeforces 1399C - Boats Competition</h5><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>There are $n$ people who want to participate in a boat competition. The weight of the $i$-th participant is $w_i$. Only teams consisting of two people can participate in this competition. As an organizer, you think that it’s fair to allow only teams with the same total weight.</p>
+<h3 id="Foods-Loved-by-Everyone"><a href="#Foods-Loved-by-Everyone" class="headerlink" title="Foods Loved by Everyone"></a>Foods Loved by Everyone</h3><h4 id="题目信息-📚-1"><a href="#题目信息-📚-1" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】AtCoder-ABC-118B-Foods-Loved-by-Everyone"><a href="#【题目名称】AtCoder-ABC-118B-Foods-Loved-by-Everyone" class="headerlink" title="【题目名称】AtCoder ABC 118B - Foods Loved by Everyone"></a>【题目名称】AtCoder ABC 118B - Foods Loved by Everyone</h5><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>Katsusando loves omelette rice. Besides, he loves crème brûlée, tenderloin steak, and so on, and believes that these foods are all loved by everyone.</p>
+<p>To prove this hypothesis, he conducted a survey on $M$ kinds of foods and asked $N$ people whether they like these foods or not.</p>
+<p>The $i$-th person answered that he/she only likes the $A_{i1}$-th, $A_{i2}$-th, …, $A_{iK_i}$-th food.</p>
+<p>Find the number of foods liked by all the $N$ people.</p>
+<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p>Input is given from Standard Input in the following format:</p>
+<blockquote>
+<p>$N$ $M$</p>
+<p>$K_1$ $A_{11}$ $A_{12}$ … $A_{1K_1}$</p>
+<p>$K_2$ $A_{21}$ $A_{22}$ … $A_{2K_2}$</p>
+<p>$\vdots$</p>
+<p>$K_N$ $A_{N1}$ $A_{N2}$ … $A_{NK_N}$</p>
+</blockquote>
+<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>Print the number of the foods liked by all the $N$ people.</p>
+<h5 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h5><p>All values in the input are integers.</p>
+<ul>
+<li>$1 \leq N, M \leq 30$</li>
+<li>$1 \leq K_i \leq M$</li>
+<li>$1 \leq A_{ij} \leq M$</li>
+</ul>
+<p>For each $i$ $(1 \leq i \leq N)$, $A_{i1}, A_{i2}, …, A_{iK_i}$ are distinct.</p>
+<h5 id="【输入样例1】"><a href="#【输入样例1】" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span> <span class="token number">4</span>
+<span class="token number">2</span> <span class="token number">1</span> <span class="token number">3</span>
+<span class="token number">3</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span>
+<span class="token number">2</span> <span class="token number">3</span> <span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例1】"><a href="#【输出样例1】" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【输入样例2】"><a href="#【输入样例2】" class="headerlink" title="【输入样例2】"></a>【输入样例2】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span> <span class="token number">5</span>
+<span class="token number">4</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span>
+<span class="token number">4</span> <span class="token number">1</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span>
+<span class="token number">4</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">4</span> <span class="token number">5</span>
+<span class="token number">4</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">5</span>
+<span class="token number">4</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例2】"><a href="#【输出样例2】" class="headerlink" title="【输出样例2】"></a>【输出样例2】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【输入样例3】"><a href="#【输入样例3】" class="headerlink" title="【输入样例3】"></a>【输入样例3】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">1</span> <span class="token number">30</span>
+<span class="token number">3</span> <span class="token number">5</span> <span class="token number">10</span> <span class="token number">30</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例3】"><a href="#【输出样例3】" class="headerlink" title="【输出样例3】"></a>【输出样例3】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【原题链接】-1"><a href="#【原题链接】-1" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc118/tasks/abc118_b">https://atcoder.jp/contests/abc118/tasks/abc118_b</a></p>
+<hr>
+<h4 id="题目解析-🍉-1"><a href="#题目解析-🍉-1" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>利用 <code>map</code> 统计每种食物有多少人喜欢即可。</p>
+<h5 id="【C-代码】-1"><a href="#【C-代码】-1" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> k<span class="token punctuation">,</span> t<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
+    map<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">&gt;</span> mp<span class="token punctuation">;</span>  <span class="token comment">// mp[i]=t 表示第i种食物有t个人喜欢</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> k<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> k<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            cin <span class="token operator">&gt;&gt;</span> t<span class="token punctuation">;</span>
+            mp<span class="token punctuation">[</span>t<span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 遍历map，查看每种食物是否被所有人喜欢</span>
+    <span class="token keyword">int</span> cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">auto</span> t<span class="token operator">:</span> mp<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>t<span class="token punctuation">.</span>second <span class="token operator">==</span> n<span class="token punctuation">)</span> cnt<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> cnt <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="Boats-Competition"><a href="#Boats-Competition" class="headerlink" title="Boats Competition"></a>Boats Competition</h3><h4 id="题目信息-📚-2"><a href="#题目信息-📚-2" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】Codeforces-1399C-Boats-Competition"><a href="#【题目名称】Codeforces-1399C-Boats-Competition" class="headerlink" title="【题目名称】Codeforces 1399C - Boats Competition"></a>【题目名称】Codeforces 1399C - Boats Competition</h5><h5 id="【题目描述】-2"><a href="#【题目描述】-2" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>There are $n$ people who want to participate in a boat competition. The weight of the $i$-th participant is $w_i$. Only teams consisting of two people can participate in this competition. As an organizer, you think that it’s fair to allow only teams with the same total weight.</p>
 <p>So, if there are $k$ teams $(a_1,b_1), (a_2,b_2), \ldots, (a_k,b_k)$, where $a_i$ is the weight of the first participant of the $i$-th team and $b_i$ is the weight of the second participant of the $i$-th team, then the condition $a_1+b_1 = a_2+b_2 = \cdots = a_k+b_k = s$, where $s$ is the total weight of each team, should be satisfied.</p>
 <p>Your task is to choose such $s$ that the number of teams people can create is the maximum possible. Note that each participant can be in no more than one team.</p>
 <p>You have to answer $t$ independent test cases.</p>
-<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p>The first line of the input contains one integer $t$ $(1 \leq t \leq 1000)$ — the number of test cases. Then $t$ test cases follow.</p>
+<h5 id="【输入】-2"><a href="#【输入】-2" class="headerlink" title="【输入】"></a>【输入】</h5><p>The first line of the input contains one integer $t$ $(1 \leq t \leq 1000)$ — the number of test cases. Then $t$ test cases follow.</p>
 <p>The first line of each test case contains one integer $n$ $(1 \leq n \leq 50)$ — the number of participants. The second line of the test case contains $n$ integers $w_1, w_2, \ldots, w_n$ $(1 \leq w_i \leq n)$, where $w_i$ is the weight of the $i$-th participant.</p>
-<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>For each test case, print one integer $k$: the maximum number of teams people can compose with the total weight $s$, if you choose $s$ optimally.</p>
+<h5 id="【输出】-2"><a href="#【输出】-2" class="headerlink" title="【输出】"></a>【输出】</h5><p>For each test case, print one integer $k$: the maximum number of teams people can compose with the total weight $s$, if you choose $s$ optimally.</p>
 <h5 id="【输入样例】-1"><a href="#【输入样例】-1" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span>
 <span class="token number">5</span>
 <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span>
@@ -1297,9 +1394,9 @@ string s<span class="token punctuation">;</span>
 <p>In the third test case of the example, we can reach the optimal answer for $s=3$. The answer is 4 because we have 4 participants with weight 1 and 4 participants with weight 2.</p>
 <p>In the fourth test case of the example, we can reach the optimal answer for $s=4$ or $s=6$.</p>
 <p>In the fifth test case of the example, we can reach the optimal answer for $s=3$. Note that the participant with weight 3 can’t use the boat because there is no suitable pair for him in the list.</p>
-<h5 id="【原题链接】-1"><a href="#【原题链接】-1" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1399/C">https://codeforces.com/problemset/problem/1399/C</a></p>
+<h5 id="【原题链接】-2"><a href="#【原题链接】-2" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1399/C">https://codeforces.com/problemset/problem/1399/C</a></p>
 <hr>
-<h4 id="题目解析-🍉-1"><a href="#题目解析-🍉-1" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>题目的数据范围非常小，因此可以采用「枚举」总重量 <code>s</code> 的方式，判断每一个合法的 <code>s</code> 能够组成多少队伍，取答案最大值即可。</p>
+<h4 id="题目解析-🍉-2"><a href="#题目解析-🍉-2" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-2"><a href="#【题目分析】-2" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>题目的数据范围非常小，因此可以采用「枚举」总重量 <code>s</code> 的方式，判断每一个合法的 <code>s</code> 能够组成多少队伍，取答案最大值即可。</p>
 <p>判断过程可以使用 <code>map</code> 桶思想计数，也可以采用「贪心 + 双指针」算法。</p>
 <h5 id="【C-代码】枚举-map-✅"><a href="#【C-代码】枚举-map-✅" class="headerlink" title="【C++ 代码】枚举 + map ✅"></a>【C++ 代码】枚举 + map ✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
@@ -1400,12 +1497,12 @@ string s<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<h3 id=""><a href="#" class="headerlink" title="***"></a>***</h3><h4 id="题目信息-📚-2"><a href="#题目信息-📚-2" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】"><a href="#【题目名称】" class="headerlink" title="【题目名称】 -"></a>【题目名称】 -</h5><h5 id="【题目描述】-2"><a href="#【题目描述】-2" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><h5 id="【输入】-2"><a href="#【输入】-2" class="headerlink" title="【输入】"></a>【输入】</h5><h5 id="【输出】-2"><a href="#【输出】-2" class="headerlink" title="【输出】"></a>【输出】</h5><h5 id="【输入样例】-2"><a href="#【输入样例】-2" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id=""><a href="#" class="headerlink" title="***"></a>***</h3><h4 id="题目信息-📚-3"><a href="#题目信息-📚-3" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】"><a href="#【题目名称】" class="headerlink" title="【题目名称】 -"></a>【题目名称】 -</h5><h5 id="【题目描述】-3"><a href="#【题目描述】-3" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><h5 id="【输入】-3"><a href="#【输入】-3" class="headerlink" title="【输入】"></a>【输入】</h5><h5 id="【输出】-3"><a href="#【输出】-3" class="headerlink" title="【输出】"></a>【输出】</h5><h5 id="【输入样例】-2"><a href="#【输入样例】-2" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h5 id="【输出样例】-2"><a href="#【输出样例】-2" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h5 id="【原题链接】-2"><a href="#【原题链接】-2" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><hr>
-<h4 id="题目解析-🍉-2"><a href="#题目解析-🍉-2" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-2"><a href="#【题目分析】-2" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】-1"><a href="#【C-代码】-1" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="【原题链接】-3"><a href="#【原题链接】-3" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><hr>
+<h4 id="题目解析-🍉-3"><a href="#题目解析-🍉-3" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-3"><a href="#【题目分析】-3" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><h5 id="【C-代码】-2"><a href="#【C-代码】-2" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <hr>
 
@@ -2007,7 +2104,7 @@ string s<span class="token punctuation">;</span>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">268.2k</span>&nbsp;字
+                class="white-color">271.9k</span>&nbsp;字
             
             
             
