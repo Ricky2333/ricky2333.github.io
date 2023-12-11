@@ -1115,12 +1115,12 @@
                                 <span class="chip bg-color">C++</span>
                             </a>
                         
-                            <a href="/tags/STL/">
-                                <span class="chip bg-color">STL</span>
-                            </a>
-                        
                             <a href="/tags/set/">
                                 <span class="chip bg-color">set</span>
+                            </a>
+                        
+                            <a href="/tags/STL/">
+                                <span class="chip bg-color">STL</span>
                             </a>
                         
                     </div>
@@ -1153,14 +1153,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    7 分
                 </div>
                 
 
@@ -1195,13 +1195,6 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">HDU - 2094</td>
-<td align="center">产生冠军</td>
-<td align="center"><a target="_blank" rel="noopener" href="https://vjudge.net/problem/HDU-2094">链接🔗</a></td>
-<td align="center">思维 + set</td>
-<td align="center">🟡</td>
-</tr>
-<tr>
 <td align="center">HDU - 2095</td>
 <td align="center">find your present(2)</td>
 <td align="center"><a href="">链接🔗</a></td>
@@ -1209,95 +1202,40 @@
 <td align="center">🟢</td>
 </tr>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">AtCoder - ABC 118C</td>
+<td align="center">Monsters Battle Royale</td>
 <td align="center"><a href="">链接🔗</a></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">set + stack</td>
+<td align="center">🟢</td>
+</tr>
+<tr>
+<td align="center">HDU - 2094</td>
+<td align="center">产生冠军</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://vjudge.net/problem/HDU-2094">链接🔗</a></td>
+<td align="center">思维 + set</td>
+<td align="center">🟡</td>
 </tr>
 </tbody></table>
 <hr>
-<h2 id="题解-🚀"><a href="#题解-🚀" class="headerlink" title="题解 🚀"></a>题解 🚀</h2><h3 id="产生冠军"><a href="#产生冠军" class="headerlink" title="产生冠军"></a>产生冠军</h3><h4 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】HDU-2094-产生冠军"><a href="#【题目名称】HDU-2094-产生冠军" class="headerlink" title="【题目名称】HDU 2094 - 产生冠军"></a>【题目名称】HDU 2094 - 产生冠军</h5><h5 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>有一群人，打乒乓球比赛，两两捉对撕杀，每两个人之间最多打一场比赛。</p>
-<p>球赛的规则如下：</p>
-<ul>
-<li>如果 <code>A</code> 打败了 <code>B</code>，<code>B</code> 又打败了 <code>C</code>，而 <code>A</code> 与 <code>C</code> 之间没有进行过比赛，那么就认定，<code>A</code> 一定能打败 <code>C</code>。</li>
-<li>如果 <code>A</code> 打败了 <code>B</code>，<code>B</code> 又打败了 <code>C</code>，而且 <code>C</code> 又打败了 <code>A</code>，那么 <code>A</code>、<code>B</code>、<code>C</code> 三者都不可能成为冠军。</li>
-</ul>
-<p>根据这个规则，无需循环较量，或许就能确定冠军。你的任务就是面对一群比赛选手，在经过了若干场撕杀之后，确定是否已经实际上产生了冠军。</p>
-<h5 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h5><p>多组数据，请处理到 $n=0$ 为止。</p>
-<p>每组数据以一个整数 $n\ (n\lt 1000)$ 开头，后跟 $n$ 对选手的比赛结果，比赛结果以一对选手名字（中间隔一空格）表示前者战胜后者。</p>
-<h5 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h5><p>对于每组数据，若你判断出产生了冠军，则在一行中输出 <code>Yes</code>，否则在一行中输出 <code>No</code>。</p>
-<h5 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span>
-Alice Bob
-Smith John
-Alice Smith
-<span class="token number">5</span>
-a c
-c d
-d e
-b e
-a d
-<span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">Yes
-No<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h5 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://vjudge.net/problem/HDU-2094">https://vjudge.net/problem/HDU-2094</a></p>
-<hr>
-<h4 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>思维题。</p>
-<p>结合 STL 中的 <code>set</code> 使用，效果巨佳。</p>
-<h5 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
-
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
-<span class="token keyword">int</span> n<span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
-    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    string win<span class="token punctuation">,</span> lose<span class="token punctuation">;</span>
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&amp;&amp;</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token comment">// 设定两个集合，存储胜者和败者</span>
-        set<span class="token operator">&lt;</span>string<span class="token operator">&gt;</span> winners<span class="token punctuation">,</span> losers<span class="token punctuation">;</span>
-
-        <span class="token comment">// 根据n轮结果，往集合中加入玩家</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            cin <span class="token operator">&gt;&gt;</span> win <span class="token operator">&gt;&gt;</span> lose<span class="token punctuation">;</span>
-            <span class="token comment">// 当前赢家未出现在败者名单中，将其加入胜者名单</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>losers<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>win<span class="token punctuation">)</span> <span class="token operator">==</span> losers<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> winners<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>win<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token comment">// 当前败者出现在胜者名单中，将其从胜者名单中抹去</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>winners<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>lose<span class="token punctuation">)</span> <span class="token operator">!=</span> winners<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> winners<span class="token punctuation">.</span><span class="token function">erase</span><span class="token punctuation">(</span>lose<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            losers<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>lose<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token comment">// 判断是否有胜者</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>winners<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Yes"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-        <span class="token keyword">else</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"No"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<hr>
-<h3 id="find-your-present-2"><a href="#find-your-present-2" class="headerlink" title="find your present(2)"></a>find your present(2)</h3><h4 id="题目信息-📚-1"><a href="#题目信息-📚-1" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】HDU-2094-find-your-present-2"><a href="#【题目名称】HDU-2094-find-your-present-2" class="headerlink" title="【题目名称】HDU 2094 - find your present(2)"></a>【题目名称】HDU 2094 - find your present(2)</h5><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>In the new year party, everybody will get a “special present”. Now it’s your turn to get your special present, a lot of presents now putting on the desk, and only one of them will be yours. </p>
+<h2 id="题解-🚀"><a href="#题解-🚀" class="headerlink" title="题解 🚀"></a>题解 🚀</h2><h3 id="find-your-present-2"><a href="#find-your-present-2" class="headerlink" title="find your present(2)"></a>find your present(2)</h3><h4 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】HDU-2094-find-your-present-2"><a href="#【题目名称】HDU-2094-find-your-present-2" class="headerlink" title="【题目名称】HDU 2094 - find your present(2)"></a>【题目名称】HDU 2094 - find your present(2)</h5><h5 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>In the new year party, everybody will get a “special present”. Now it’s your turn to get your special present, a lot of presents now putting on the desk, and only one of them will be yours. </p>
 <p>Each present has a card number on it, and your present’s card number will be the one that different from all the others, and you can assume that only one number appear odd times.</p>
 <p>For example, there are $5$ present, and their card numbers are $1, 2, 3, 2, 1$. so your present will be the one with the card number of $3$, because $3$ is the number that different from all the others.</p>
-<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p><strong>The input file will consist of several cases, you need to terminate your program when $n=0$.</strong></p>
+<h5 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h5><p><strong>The input file will consist of several cases, you need to terminate your program when $n=0$.</strong></p>
 <p>Each case will be presented by an integer $n\ (1\le n\lt 1000000\text{, and }n\text{ is odd})$ at first. </p>
 <p>Following that, n positive integers will be given in a line, all integers will smaller than $2^{31}$. These numbers indicate the card numbers of the presents.</p>
-<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>For each case, output an integer in a line, which is the card number of your present. </p>
-<h5 id="【输入样例】-1"><a href="#【输入样例】-1" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span>
+<h5 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h5><p>For each case, output an integer in a line, which is the card number of your present. </p>
+<h5 id="【输入样例】"><a href="#【输入样例】" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span>
 <span class="token number">1</span> <span class="token number">1</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">2</span>
 <span class="token number">3</span>
 <span class="token number">1</span> <span class="token number">2</span> <span class="token number">1</span>
 <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="【输出样例】-1"><a href="#【输出样例】-1" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span>
+<h5 id="【输出样例】"><a href="#【输出样例】" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span>
 <span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h5 id="【原题链接】-1"><a href="#【原题链接】-1" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://vjudge.net/problem/HDU-2095">https://vjudge.net/problem/HDU-2095</a></p>
+<h5 id="【原题链接】"><a href="#【原题链接】" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://vjudge.net/problem/HDU-2095">https://vjudge.net/problem/HDU-2095</a></p>
 <hr>
-<h4 id="题目解析-🍉-1"><a href="#题目解析-🍉-1" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>法一：利用 <code>set.find</code> 和 <code>set.erase</code>，在 <code>log(n)</code> 的复杂度内完成查找和删除</p>
+<h4 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>法一：利用 <code>set.find</code> 和 <code>set.erase</code>，在 <code>log(n)</code> 的复杂度内完成查找和删除</p>
 <p>法二：利用 「<strong>异或</strong>」运算（本质是不进位加法），消除所有偶数个相同的数，留下唯一出现1次的数字。</p>
 <h5 id="【C-代码】set-✅"><a href="#【C-代码】set-✅" class="headerlink" title="【C++ 代码】set ✅"></a>【C++ 代码】set ✅</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 
@@ -1344,6 +1282,141 @@ No<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="Monsters-Battle-Royale"><a href="#Monsters-Battle-Royale" class="headerlink" title="Monsters Battle Royale"></a>Monsters Battle Royale</h3><h4 id="题目信息-📚-1"><a href="#题目信息-📚-1" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】AtCoder-ABC-118C-Monsters-Battle-Royale"><a href="#【题目名称】AtCoder-ABC-118C-Monsters-Battle-Royale" class="headerlink" title="【题目名称】AtCoder ABC 118C - Monsters Battle Royale"></a>【题目名称】AtCoder ABC 118C - Monsters Battle Royale</h5><h5 id="【题目描述】-1"><a href="#【题目描述】-1" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>There are $N$ monsters, numbered $1, 2, …, N$.</p>
+<p>Initially, the health of Monster $i$ is $A_i$.</p>
+<p>Below, a monster with at least $1$ health is called alive.</p>
+<p>Until there is only one alive monster, the following is repeated:</p>
+<ul>
+<li>A random alive monster attacks another random alive monster.</li>
+<li>As a result, the health of the monster attacked is reduced by the amount equal to the current health of the monster attacking.</li>
+</ul>
+<p>Find the minimum possible final health of the last monster alive.</p>
+<h5 id="【输入】-1"><a href="#【输入】-1" class="headerlink" title="【输入】"></a>【输入】</h5><p>The input is given from Standard Input in the following format:</p>
+<blockquote>
+<p>$N$</p>
+<p>$A_1$  $A_2$ $\ldots$  $A_n$</p>
+</blockquote>
+<h5 id="【输出】-1"><a href="#【输出】-1" class="headerlink" title="【输出】"></a>【输出】</h5><p>Print the minimum possible final health of the last monster alive.</p>
+<h5 id="【输入样例】-1"><a href="#【输入样例】-1" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">4</span>
+<span class="token number">2</span> <span class="token number">10</span> <span class="token number">8</span> <span class="token number">40</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例】-1"><a href="#【输出样例】-1" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">2</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="【原题链接】-1"><a href="#【原题链接】-1" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc118/tasks/abc118_c">https://atcoder.jp/contests/abc118/tasks/abc118_c</a></p>
+<hr>
+<h4 id="题目解析-🍉-1"><a href="#题目解析-🍉-1" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-1"><a href="#【题目分析】-1" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>法一：利用 <code>set</code> 的自动升序、$O(logn)$ 插入和 <code>stack</code> 模拟该过程。</p>
+<p>法二：对于两个怪兽来说，互相攻击存活的最小血量，其实是他们的 $gcd$（更相减损法）</p>
+<h5 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> tmp<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> s<span class="token punctuation">;</span>
+    set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token double-colon punctuation">::</span>iterator it<span class="token punctuation">;</span>
+    <span class="token comment">// 读入数据，并且将数据存入set中（自动升序）</span>
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> tmp<span class="token punctuation">;</span>
+        s<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 用stack存储当前最小值</span>
+    stack<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> st<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>s<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 取出set中最小的元素，并且在set中"弹出"（利用set.erase）</span>
+        it <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        s<span class="token punctuation">.</span><span class="token function">erase</span><span class="token punctuation">(</span><span class="token operator">*</span>it<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 若当前栈为空，将该元素直接存入栈中</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>st<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            st<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token operator">*</span>it<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 当前栈非空，则将栈顶元素与该元素的取模值进行比较</span>
+            <span class="token comment">// 若取模值为0，说明该元素可以被栈顶元素一直攻击，直至消去</span>
+            <span class="token keyword">int</span> m <span class="token operator">=</span> <span class="token operator">*</span>it <span class="token operator">%</span> st<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>m<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 若取模值不为0，说明该元素可以被攻击到小于栈顶元素，且无法消去</span>
+                <span class="token comment">// 此时弹出栈顶元素，并将栈顶元素重新加入set</span>
+                <span class="token comment">// 往栈中推入更小的取模值</span>
+                s<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>st<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                st<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                st<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 最后的栈顶元素即为答案</span>
+    cout <span class="token operator">&lt;&lt;</span> st<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<hr>
+<h3 id="产生冠军"><a href="#产生冠军" class="headerlink" title="产生冠军"></a>产生冠军</h3><h4 id="题目信息-📚-2"><a href="#题目信息-📚-2" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h4><h5 id="【题目名称】HDU-2094-产生冠军"><a href="#【题目名称】HDU-2094-产生冠军" class="headerlink" title="【题目名称】HDU 2094 - 产生冠军"></a>【题目名称】HDU 2094 - 产生冠军</h5><h5 id="【题目描述】-2"><a href="#【题目描述】-2" class="headerlink" title="【题目描述】"></a>【题目描述】</h5><p>有一群人，打乒乓球比赛，两两捉对撕杀，每两个人之间最多打一场比赛。</p>
+<p>球赛的规则如下：</p>
+<ul>
+<li>如果 <code>A</code> 打败了 <code>B</code>，<code>B</code> 又打败了 <code>C</code>，而 <code>A</code> 与 <code>C</code> 之间没有进行过比赛，那么就认定，<code>A</code> 一定能打败 <code>C</code>。</li>
+<li>如果 <code>A</code> 打败了 <code>B</code>，<code>B</code> 又打败了 <code>C</code>，而且 <code>C</code> 又打败了 <code>A</code>，那么 <code>A</code>、<code>B</code>、<code>C</code> 三者都不可能成为冠军。</li>
+</ul>
+<p>根据这个规则，无需循环较量，或许就能确定冠军。你的任务就是面对一群比赛选手，在经过了若干场撕杀之后，确定是否已经实际上产生了冠军。</p>
+<h5 id="【输入】-2"><a href="#【输入】-2" class="headerlink" title="【输入】"></a>【输入】</h5><p>多组数据，请处理到 $n=0$ 为止。</p>
+<p>每组数据以一个整数 $n\ (n\lt 1000)$ 开头，后跟 $n$ 对选手的比赛结果，比赛结果以一对选手名字（中间隔一空格）表示前者战胜后者。</p>
+<h5 id="【输出】-2"><a href="#【输出】-2" class="headerlink" title="【输出】"></a>【输出】</h5><p>对于每组数据，若你判断出产生了冠军，则在一行中输出 <code>Yes</code>，否则在一行中输出 <code>No</code>。</p>
+<h5 id="【输入样例】-2"><a href="#【输入样例】-2" class="headerlink" title="【输入样例】"></a>【输入样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span>
+Alice Bob
+Smith John
+Alice Smith
+<span class="token number">5</span>
+a c
+c d
+d e
+b e
+a d
+<span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="【输出样例】-2"><a href="#【输出样例】-2" class="headerlink" title="【输出样例】"></a>【输出样例】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">Yes
+No<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h5 id="【原题链接】-2"><a href="#【原题链接】-2" class="headerlink" title="【原题链接】"></a>【原题链接】</h5><p><a target="_blank" rel="noopener" href="https://vjudge.net/problem/HDU-2094">https://vjudge.net/problem/HDU-2094</a></p>
+<hr>
+<h4 id="题目解析-🍉-2"><a href="#题目解析-🍉-2" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h4><h5 id="【题目分析】-2"><a href="#【题目分析】-2" class="headerlink" title="【题目分析】"></a>【题目分析】</h5><p>思维题。</p>
+<p>结合 STL 中的 <code>set</code> 使用，效果巨佳。</p>
+<h5 id="【C-代码】-1"><a href="#【C-代码】-1" class="headerlink" title="【C++ 代码】"></a>【C++ 代码】</h5><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    string win<span class="token punctuation">,</span> lose<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&amp;&amp;</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 设定两个集合，存储胜者和败者</span>
+        set<span class="token operator">&lt;</span>string<span class="token operator">&gt;</span> winners<span class="token punctuation">,</span> losers<span class="token punctuation">;</span>
+
+        <span class="token comment">// 根据n轮结果，往集合中加入玩家</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            cin <span class="token operator">&gt;&gt;</span> win <span class="token operator">&gt;&gt;</span> lose<span class="token punctuation">;</span>
+            <span class="token comment">// 当前赢家未出现在败者名单中，将其加入胜者名单</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>losers<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>win<span class="token punctuation">)</span> <span class="token operator">==</span> losers<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> winners<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>win<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 当前败者出现在胜者名单中，将其从胜者名单中抹去</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>winners<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>lose<span class="token punctuation">)</span> <span class="token operator">!=</span> winners<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> winners<span class="token punctuation">.</span><span class="token function">erase</span><span class="token punctuation">(</span>lose<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            losers<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>lose<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 判断是否有胜者</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>winners<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Yes"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">else</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"No"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
 
@@ -1418,12 +1491,12 @@ No<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><
                                     <span class="chip bg-color">C++</span>
                                 </a>
                             
-                                <a href="/tags/STL/">
-                                    <span class="chip bg-color">STL</span>
-                                </a>
-                            
                                 <a href="/tags/set/">
                                     <span class="chip bg-color">set</span>
+                                </a>
+                            
+                                <a href="/tags/STL/">
+                                    <span class="chip bg-color">STL</span>
                                 </a>
                             
                         </div>
@@ -1953,7 +2026,7 @@ No<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">271.9k</span>&nbsp;字
+                class="white-color">275.3k</span>&nbsp;字
             
             
             
