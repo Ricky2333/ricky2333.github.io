@@ -1149,14 +1149,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    654
+                    842
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -1227,20 +1227,58 @@
 <hr>
 <h2 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h2><h3 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h3><p>思维 + 贪心。</p>
 <p>首先对所有坐标点，从小到大排序。（这步很容易想到）</p>
-<p>首先可以分类讨论：</p>
-<p>$n &gt;= m$ 时，所有坐标点上均有 piece，无需移动，答案为 $0$。</p>
-<p>关键问题是如何在 $n &lt; m$ 时分配 pieces。</p>
+<p>分类讨论：</p>
+<p>$n &gt;= m$ 时，所有坐标点上均有 piece（棋子），无需移动，答案为 $0$。</p>
+<p>问题关键在于 $n &lt; m$ 时分配如何 pieces。</p>
 <ul>
-<li>容易知道，当只有一个 piece 时，我们只需要将这个 piece 放在整个区间的左端点，然后不断移动 piece 至区间右端点，就可以得到最优答案（这样操作避免了来回移动造成的重复）。</li>
+<li>当只有一个 piece 时，我们只需要将这个 piece 放在整个区间的左端点，然后不断移动 piece 至区间右端点，就可以得到最优答案（这样操作避免了来回移动造成的重复）。</li>
 <li>当有多个 pieces 时<ul>
-<li>先以 2个 pieces 为例，我们容易想到把这两个 pieces 放到最大的 interval 的两个端点 $[a, b]$，然后一个向左移动，一个向右移动，这样就可以跳过最大的interval。（但实际上，我们完全可以把左边的 piece 放到左端点，再移动到端点 $a$，也能实现同样的效果）</li>
-<li>假设有 3个 pieces 时，我们只需要找到次大的 interval 的两个端点 $[c, d]$，在之前的基础上，把第 3个 piece 放到 $d$ 上即可。</li>
+<li>先以 2个 pieces 为例，我们容易想到把这两个 pieces 放到距离最大的 interval 的两个端点 $[a, b]$，然后一个向左移动，一个向右移动，这样就可以跳过最大的interval。（但实际上，我们完全可以把左边的 piece 放到左端点，再移动到端点 $a$，也能实现同样的效果）</li>
+<li>假设有 3个 pieces 时，我们只需要找到距离次大的 interval 的两个端点 $[c, d]$，在之前的基础上，把第 3个 piece 放到 $d$ 上即可。</li>
 <li>…</li>
-<li>当有 $n$个 pieces 时，我们将所有 intervals 排序从大到小排序（共有 $m-1$ 个），跳过前 $n-1$ 个 intervals，剩下 $(m-1) - (n-1) = m - n$ 个 intervals 的和即为答案。</li>
+<li>当有 $n$个 pieces 时，我们将所有 intervals 排序从大到小排序（共有 $m-1$ 个），跳过前 $n-1$ 个距离大的 intervals，剩下 $(m-1) - (n-1) = m - n$ 个 intervals 的和即为答案。</li>
 </ul>
 </li>
 </ul>
-<h3 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> x<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 读入数据，并且对坐标点排序</span>
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> m<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token function">sort</span><span class="token punctuation">(</span>x <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> x <span class="token operator">+</span> m <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// n &gt;= m时，所有坐标点上都可以至少有一个piece，无需移动</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&gt;=</span> m<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token number">0</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 由m个坐标点，读入m-1个intervals</span>
+    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> intervals<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        intervals<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>x<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> x<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// intervals从大到小排序</span>
+    <span class="token function">sort</span><span class="token punctuation">(</span>intervals<span class="token punctuation">.</span><span class="token function">rbegin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> intervals<span class="token punctuation">.</span><span class="token function">rend</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 计算剩余 intervals 总和</span>
+    <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> intervals<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        sum <span class="token operator">+=</span> intervals<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> sum <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -1847,7 +1885,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">275.3k</span>&nbsp;字
+                class="white-color">275.9k</span>&nbsp;字
             
             
             
