@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Five Transportations, Rickyの水果摊">
+    <meta name="keywords" content="ABC｜Five Transportations, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Five Transportations | Rickyの水果摊</title>
+    <title>ABC｜Five Transportations | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -986,7 +986,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Five Transportations</h1>
+                    <h1 class="description center-align post-title">ABC｜Five Transportations</h1>
                 </div>
             </div>
         </div>
@@ -1149,7 +1149,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    393
+                    472
                 </div>
                 
 
@@ -1181,7 +1181,7 @@
             <div id="articleContent">
                 <p>本篇博客还在持续修改润色中～</p>
 <p>敬请期待～</p>
-<h1 id="AtCoder题解｜ABC-124C-Coloring-Colorfully"><a href="#AtCoder题解｜ABC-124C-Coloring-Colorfully" class="headerlink" title="AtCoder题解｜ABC 124C Coloring Colorfully"></a>AtCoder题解｜ABC 124C Coloring Colorfully</h1><hr>
+<h1 id="AtCoder题解｜ABC-123C-Five-Transportations"><a href="#AtCoder题解｜ABC-123C-Five-Transportations" class="headerlink" title="AtCoder题解｜ABC 123C Five Transportations"></a>AtCoder题解｜ABC 123C Five Transportations</h1><hr>
 <h2 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>In 2028, after continuous growth, AtCoder Inc. has finally built an empire with six cities (City 1, 2, 3, 4, 5, 6)!</p>
 <p>There are five means of transport in this empire:</p>
 <ol>
@@ -1234,7 +1234,25 @@
 <p>Note that the input or output may not fit into a $32$-bit integer type.</p>
 <h3 id="【题目来源】"><a href="#【题目来源】" class="headerlink" title="【题目来源】"></a>【题目来源】</h3><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc123/tasks/abc123_c">https://atcoder.jp/contests/abc123/tasks/abc123_c</a></p>
 <hr>
-<h2 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h2><h3 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h3><h3 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h2><h3 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h3><h3 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+LL n<span class="token punctuation">,</span> cap<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 读入数据</span>
+    cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cin <span class="token operator">&gt;&gt;</span> cap<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// mini为最小载人数量</span>
+    LL mini <span class="token operator">=</span> <span class="token operator">*</span><span class="token function">min_element</span><span class="token punctuation">(</span>cap <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> cap <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 每次都流通mini个人即可</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token number">4</span> <span class="token operator">+</span> <span class="token punctuation">(</span>n <span class="token operator">+</span> <span class="token punctuation">(</span>mini <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> mini <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -1545,18 +1563,18 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/12/10/practice-skills-from-rating-1000-to-1400/">
+                <a href="/2023/12/10/atcoder-ti-jie-five-dishes/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="CF｜From Rating 1k to 1.4k">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="AtCoder题解｜Five Dishes">
                         
-                        <span class="card-title">CF｜From Rating 1k to 1.4k</span>
+                        <span class="card-title">AtCoder题解｜Five Dishes</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Practice Skills – From Rating 1000 to 1400
+                            AtCoder题解｜ABC 123B Five Dishes
                         
                     </div>
                     <div class="publish-info">
@@ -1567,8 +1585,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E8%AE%AD%E7%BB%83%E6%96%B9%E5%BC%8F/" class="post-category">
-                                    信息奥赛训练方式
+                            <a href="/categories/AtCoder%E9%A2%98%E8%A7%A3%EF%BD%9CFive-Dishes/" class="post-category">
+                                    AtCoder题解｜Five Dishes
                                 </a>
                             
                             
@@ -1578,16 +1596,20 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Codeforces/">
-                        <span class="chip bg-color">Codeforces</span>
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                        <span class="chip bg-color">信息奥赛</span>
                     </a>
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B%E8%AE%AD%E7%BB%83%E6%96%B9%E5%BC%8F/">
-                        <span class="chip bg-color">信息奥赛训练方式</span>
+                    <a href="/tags/AtCoder/">
+                        <span class="chip bg-color">AtCoder</span>
                     </a>
                     
-                    <a href="/tags/%E8%BD%AC%E8%BD%BD/">
-                        <span class="chip bg-color">转载</span>
+                    <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                        <span class="chip bg-color">贪心</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%8E%92%E5%88%97/">
+                        <span class="chip bg-color">排列</span>
                     </a>
                     
                 </div>
@@ -1837,7 +1859,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">278k</span>&nbsp;字
+                class="white-color">284k</span>&nbsp;字
             
             
             

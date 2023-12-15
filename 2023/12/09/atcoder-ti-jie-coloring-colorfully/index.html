@@ -1149,14 +1149,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    236
+                    377
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -1179,9 +1179,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>本篇博客还在持续修改润色中～</p>
-<p>敬请期待～</p>
-<h1 id="AtCoder题解｜ABC-124C-Coloring-Colorfully"><a href="#AtCoder题解｜ABC-124C-Coloring-Colorfully" class="headerlink" title="AtCoder题解｜ABC 124C Coloring Colorfully"></a>AtCoder题解｜ABC 124C Coloring Colorfully</h1><hr>
+                <h1 id="AtCoder题解｜ABC-124C-Coloring-Colorfully"><a href="#AtCoder题解｜ABC-124C-Coloring-Colorfully" class="headerlink" title="AtCoder题解｜ABC 124C Coloring Colorfully"></a>AtCoder题解｜ABC 124C Coloring Colorfully</h1><hr>
 <h2 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>$N$ tiles are arranged in a row from left to right. The initial color of each tile is represented by a string $S$ of length $N$.</p>
 <p>The $i$-th tile from the left is painted black if the $i$-th character of $S$ is <code>0</code>, and painted white if that character is <code>1</code>.</p>
 <p>You want to repaint some of the tiles black or white, so that any two adjacent tiles have different colors.</p>
@@ -1210,7 +1208,38 @@
 
 <h3 id="【题目来源】"><a href="#【题目来源】" class="headerlink" title="【题目来源】"></a>【题目来源】</h3><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc124/tasks/abc124_c">https://atcoder.jp/contests/abc124/tasks/abc124_c</a></p>
 <hr>
-<h2 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h2><h3 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h3><h3 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h2><h3 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h3><p>从结果形式的角度出发，进行枚举。</p>
+<p>$S$ 最后的形式一定为：<code>01010101...</code> 或者 <code>10101010...</code> </p>
+<p>所以只要计算 $S$ 变成这两种结果需要多少步，取最小值即可。</p>
+<h3 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    string s<span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> s<span class="token punctuation">;</span>
+
+    <span class="token comment">// S -&gt; 010101... 所需要的次数</span>
+    <span class="token keyword">int</span> ans1 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> num <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token char">'0'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        num <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">-</span> num<span class="token punctuation">;</span>
+        ans1 <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>c <span class="token operator">==</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token number">0</span> <span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// S -&gt; 101010... 所需要的次数</span>
+    <span class="token keyword">int</span> ans2 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    num <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token char">'0'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        num <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">-</span> num<span class="token punctuation">;</span>
+        ans2 <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>c <span class="token operator">==</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token number">0</span> <span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token function">min</span><span class="token punctuation">(</span>ans1<span class="token punctuation">,</span> ans2<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -1809,7 +1838,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">278k</span>&nbsp;字
+                class="white-color">284k</span>&nbsp;字
             
             
             
