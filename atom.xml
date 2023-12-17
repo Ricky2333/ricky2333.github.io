@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2023-12-16T16:21:14.424Z</updated>
+  <updated>2023-12-17T04:18:00.731Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>教学设计｜模版</title>
+    <link href="https://ricky2333.github.io/2023/12/17/jiao-xue-she-ji-mo-ban/"/>
+    <id>https://ricky2333.github.io/2023/12/17/jiao-xue-she-ji-mo-ban/</id>
+    <published>2023-12-17T04:04:47.000Z</published>
+    <updated>2023-12-17T04:18:00.731Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;高中信息技术｜教学设计模版&quot;&gt;&lt;a href=&quot;#高中信息技术｜教学设计模版&quot; class=&quot;headerlink&quot; title=&quot;高中信息技术｜教学设计模版&quot;&gt;&lt;/a&gt;高中信息技术｜教学设计模版&lt;/h1&gt;&lt;h2 id=&quot;学科核心素养&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="高中信息技术" scheme="https://ricky2333.github.io/categories/%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="高中信息技术" scheme="https://ricky2333.github.io/tags/%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="教学设计" scheme="https://ricky2333.github.io/tags/%E6%95%99%E5%AD%A6%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>AtCoder｜AtCoder Express 2</title>
@@ -565,37 +592,6 @@
     <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
     
     <category term="贪心" scheme="https://ricky2333.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Monsters Battle Royale</title>
-    <link href="https://ricky2333.github.io/2023/12/11/atcoder-ti-jie-monsters-battle-royale/"/>
-    <id>https://ricky2333.github.io/2023/12/11/atcoder-ti-jie-monsters-battle-royale/</id>
-    <published>2023-12-11T03:00:17.000Z</published>
-    <updated>2023-12-11T03:24:44.128Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-118C-Monsters-Battle-Royale&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-118C-Monsters-Battle-Royale&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="gcd" scheme="https://ricky2333.github.io/tags/gcd/"/>
-    
-    <category term="stack" scheme="https://ricky2333.github.io/tags/stack/"/>
-    
-    <category term="set" scheme="https://ricky2333.github.io/tags/set/"/>
     
   </entry>
   
