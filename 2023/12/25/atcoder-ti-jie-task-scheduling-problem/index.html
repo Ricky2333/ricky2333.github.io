@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="AtCoder题解｜Candles, Rickyの水果摊">
+    <meta name="keywords" content="Task Scheduling Problem, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>AtCoder题解｜Candles | Rickyの水果摊</title>
+    <title>Task Scheduling Problem | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -369,6 +369,15 @@
           <i class="fas fa-play" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>Anime</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/anilist">
+          
+          <i class="fas tv" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>追番列表</span>
         </a>
       </li>
       
@@ -789,6 +798,16 @@
                   </a>
                 </li>
               
+                <li>
+
+                  <a href="/anilist " style="margin-left:75px">
+				  
+				   <i class="fa fas tv" style="position: absolute;left:50px" ></i>
+			      
+		          <span>追番列表</span>
+                  </a>
+                </li>
+              
             </ul>
           
         </li>
@@ -981,12 +1000,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/26.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/31.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">AtCoder题解｜Candles</h1>
+                    <h1 class="description center-align post-title">Task Scheduling Problem</h1>
                 </div>
             </div>
         </div>
@@ -1115,8 +1134,8 @@
                                 <span class="chip bg-color">AtCoder</span>
                             </a>
                         
-                            <a href="/tags/%E8%B4%AA%E5%BF%83/">
-                                <span class="chip bg-color">贪心</span>
+                            <a href="/tags/%E8%B7%9D%E7%A6%BB%E8%B4%AA%E5%BF%83/">
+                                <span class="chip bg-color">距离贪心</span>
                             </a>
                         
                     </div>
@@ -1140,7 +1159,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-12-16
+                    2023-12-25
                 </div>
                 
 
@@ -1149,7 +1168,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    245
                 </div>
                 
 
@@ -1179,7 +1198,50 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>本篇博客还在持续修改润色中～</p>
+<p>敬请期待～</p>
+<h1 id="AtCoder题解｜ABC-103A-Task-Scheduling-Problem"><a href="#AtCoder题解｜ABC-103A-Task-Scheduling-Problem" class="headerlink" title="AtCoder题解｜ABC 103A Task Scheduling Problem"></a>AtCoder题解｜ABC 103A Task Scheduling Problem</h1><hr>
+<h2 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>You have three tasks, all of which need to be completed.</p>
+<p>First, you can complete any one task at cost $0$.</p>
+<p>Then, just after completing the $i$-th task, you can complete the $j$-th task at cost $|A_j - A_i|$.</p>
+<p>Here, $|x|$ denotes the absolute value of $x$.</p>
+<p>Find the minimum total cost required to complete all the tasks.</p>
+<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>The input is given from Standard Input in the following format:</p>
+<blockquote>
+<p>$A_{1}$ $A_{2}$ $A_{3}$</p>
+</blockquote>
+<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>Print the minimum total cost required to complete all the task.</p>
+<h4 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h4><ul>
+<li>All values in input are integers.</li>
+<li>$1 \leq A_1, A_2, A_3 \leq 100$</li>
+</ul>
+<h3 id="【输入样例1】"><a href="#【输入样例1】" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">1</span> <span class="token number">6</span> <span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【输出样例1】"><a href="#【输出样例1】" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>When the tasks are completed in the following order, the total cost will be $5$, which is the minimum:</p>
+<ul>
+<li>Complete the first task at cost $0$.</li>
+<li>Complete the third task at cost $2$.</li>
+<li>Complete the second task at cost $3$.</li>
+</ul>
+<h3 id="【输入样例2】"><a href="#【输入样例2】" class="headerlink" title="【输入样例2】"></a>【输入样例2】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">11</span> <span class="token number">5</span> <span class="token number">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【输出样例2】"><a href="#【输出样例2】" class="headerlink" title="【输出样例2】"></a>【输出样例2】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">6</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【输入样例3】"><a href="#【输入样例3】" class="headerlink" title="【输入样例3】"></a>【输入样例3】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">100</span> <span class="token number">100</span> <span class="token number">100</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【输出样例3】"><a href="#【输出样例3】" class="headerlink" title="【输出样例3】"></a>【输出样例3】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【题目来源】"><a href="#【题目来源】" class="headerlink" title="【题目来源】"></a>【题目来源】</h3><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc103/tasks/abc103_a">https://atcoder.jp/contests/abc103/tasks/abc103_a</a></p>
+<hr>
+<h2 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h2><h3 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h3><h3 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+
+
+
                 
             </div>
             <hr/>
@@ -1205,7 +1267,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ricky2333.github.io/2023/12/16/atcoder-candles/">https://ricky2333.github.io/2023/12/16/atcoder-candles/</a>
+                    <a href="https://ricky2333.github.io/2023/12/25/atcoder-ti-jie-task-scheduling-problem/">https://ricky2333.github.io/2023/12/25/atcoder-ti-jie-task-scheduling-problem/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1251,8 +1313,8 @@
                                     <span class="chip bg-color">AtCoder</span>
                                 </a>
                             
-                                <a href="/tags/%E8%B4%AA%E5%BF%83/">
-                                    <span class="chip bg-color">贪心</span>
+                                <a href="/tags/%E8%B7%9D%E7%A6%BB%E8%B4%AA%E5%BF%83/">
+                                    <span class="chip bg-color">距离贪心</span>
                                 </a>
                             
                         </div>
@@ -1426,80 +1488,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/12/16/atcoder-atcoder-express-2/">
+                <a href="/2023/12/26/atcoder-ti-jie-modulo-summation/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="AtCoder｜AtCoder Express 2">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="ABC｜Modulo Summation">
                         
-                        <span class="card-title">AtCoder｜AtCoder Express 2</span>
+                        <span class="card-title">ABC｜Modulo Summation</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            AtCoder｜ABC 106D AtCoder Express 2
+                            AtCoder题解｜ABC 103C Modulo Summation
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-12-16
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-12-26
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/AtCoder%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    AtCoder题解
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/AtCoder/">
-                        <span class="chip bg-color">AtCoder</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
-                        <span class="chip bg-color">前缀和</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8C%BA%E9%97%B4DP/">
-                        <span class="chip bg-color">区间DP</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/12/16/atcoder-grid-compression/">
-                    <div class="card-image">
-                        
-                        <img src="/medias/featureimages/30.jpg" class="responsive-img" alt="AtCoder｜Grid Compression">
-                        
-                        <span class="card-title">AtCoder｜Grid Compression</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            AtCoder题解｜ABC 107B Grid Compression
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-16
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1523,8 +1529,60 @@
                         <span class="chip bg-color">AtCoder</span>
                     </a>
                     
-                    <a href="/tags/%E6%A8%A1%E6%8B%9F/">
-                        <span class="chip bg-color">模拟</span>
+                    <a href="/tags/%E5%8F%96%E6%A8%A1/">
+                        <span class="chip bg-color">取模</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/12/18/atcoder-ti-jie-all-green/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="AtCoder题解｜All Green">
+                        
+                        <span class="card-title">AtCoder题解｜All Green</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            AtCoder题解｜ABC 104C All Green
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-18
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/AtCoder%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    AtCoder题解
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/">
+                        <span class="chip bg-color">信息奥赛</span>
+                    </a>
+                    
+                    <a href="/tags/AtCoder/">
+                        <span class="chip bg-color">AtCoder</span>
                     </a>
                     
                 </div>
@@ -1774,7 +1832,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">286.5k</span>&nbsp;字
+                class="white-color">288.5k</span>&nbsp;字
             
             
             
