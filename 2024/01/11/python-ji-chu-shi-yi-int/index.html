@@ -427,6 +427,13 @@
         </a>
       </li>
       
+      <li>
+        <a href="/music-live">
+          
+          <span>神级现场</span>
+        </a>
+      </li>
+      
     </ul>
     
   </li>
@@ -906,6 +913,14 @@
                   </a>
                 </li>
               
+                <li>
+
+                  <a href="/music-live " style="margin-left:75px">
+				  
+		          <span>神级现场</span>
+                  </a>
+                </li>
+              
             </ul>
           
         </li>
@@ -1262,14 +1277,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    2.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    9 分
                 </div>
                 
 
@@ -1417,17 +1432,73 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="int-x-函数"><a href="#int-x-函数" class="headerlink" title="int(x) 函数"></a>int(x) 函数</h2><h3 id="基础知识-1"><a href="#基础知识-1" class="headerlink" title="基础知识"></a>基础知识</h3><p>在Python中，<code>int(x)</code> 函数的功能是返回整数部分。</p>
+<h2 id="int-x-函数"><a href="#int-x-函数" class="headerlink" title="int(x) 函数"></a>int(x) 函数</h2><h3 id="基础知识-1"><a href="#基础知识-1" class="headerlink" title="基础知识"></a>基础知识</h3><p>在Python中，<code>int(x)</code> 函数的功能是将一个值转换成十进制整数。</p>
 <ul>
-<li><p>若 <code>x</code> 为实型，丢掉 <code>x</code> 的小数部分，直接返回 <code>x</code> 的整数部分</p>
+<li>若 <code>x</code> 为整型，则返回 <code>x</code> 的十进制整数。</li>
+<li>若 <code>x</code> 为实型，则丢掉 <code>x</code> 的小数部分，返回 <code>x</code> 的整数部分。</li>
+<li>若 <code>x</code> 为字符串型，<code>int()</code> 表现为 <code>int(x, base=10)</code>。（字符串 <code>x</code> 中的内容是 <code>base进制整数</code> ）<ul>
+<li>当 <code>x</code> 为正确的 <code>base进制整数</code> 时，则返回其对应的十进制整数。<ul>
+<li>对于字符串 <code>x</code> 的细节要求，详见 <a target="_blank" rel="noopener" href="https://docs.python.org/3/library/functions.html#int">官方文档</a></li>
+</ul>
 </li>
-<li><p>若 <code>x</code> 为字符串型，该字符串为十进制整数时，返回该十进制整数；否则，产生 <code>ValueError</code> 的错误。</p>
+<li>否则，产生报错。</li>
+</ul>
 </li>
 </ul>
 <blockquote>
-<p>🚀 特别注意：若 <code>x</code> 为字符串型，但是字符串的内容是合法的实型（如 “123.0”、”0.00”），则 <code>int(x)</code> 会产生 <code>ValueError</code> 的报错信息（具体报错内容见下面的「常见报错信息」表格）。</p>
+<p>Python官方文档 - int()：<a target="_blank" rel="noopener" href="https://docs.python.org/3/library/functions.html#int">https://docs.python.org/3/library/functions.html#int</a></p>
 </blockquote>
-<h3 id="一、x为实型"><a href="#一、x为实型" class="headerlink" title="一、x为实型"></a>一、x为实型</h3><table>
+<h3 id="一、x为整型"><a href="#一、x为整型" class="headerlink" title="一、x为整型"></a>一、x为整型</h3><p>若 <code>x</code> 为整型，则返回 <code>x</code> 的十进制整数。</p>
+<table>
+<thead>
+<tr>
+<th align="center">案例</th>
+<th align="center">返回值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">int(5)</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">int(-5)</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">int(0b111)</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">int(-0b1000)</td>
+<td align="center">-8</td>
+</tr>
+<tr>
+<td align="center">int(0o10)</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">int(-0o11)</td>
+<td align="center">-9</td>
+</tr>
+<tr>
+<td align="center">int(0xa)</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">int(-0xA)</td>
+<td align="center">-10</td>
+</tr>
+<tr>
+<td align="center">int(0)</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">int(-0)</td>
+<td align="center">0</td>
+</tr>
+</tbody></table>
+<h3 id="二、x为实型"><a href="#二、x为实型" class="headerlink" title="二、x为实型"></a>二、x为实型</h3><p>若 <code>x</code> 为实型，则丢掉 <code>x</code> 的小数部分，返回 <code>x</code> 的整数部分。</p>
+<table>
 <thead>
 <tr>
 <th align="center">案例</th>
@@ -1451,19 +1522,23 @@
 <td align="center">-5</td>
 </tr>
 <tr>
-<td align="center">int(0)</td>
+<td align="center">int(0.0)</td>
 <td align="center">0</td>
 </tr>
 <tr>
-<td align="center">int(0000)</td>
+<td align="center">int(-0.00)</td>
 <td align="center">0</td>
-</tr>
-<tr>
-<td align="center">int(00123)</td>
-<td align="center">SyntaxError</td>
 </tr>
 </tbody></table>
-<h3 id="二、x为字符串型"><a href="#二、x为字符串型" class="headerlink" title="二、x为字符串型"></a>二、x为字符串型</h3><table>
+<h3 id="三、x为字符串型"><a href="#三、x为字符串型" class="headerlink" title="三、x为字符串型"></a>三、x为字符串型</h3><p>若 <code>x</code> 为字符串型，<code>int()</code> 表现为 <code>int(x, base=10)</code>。（字符串 <code>x</code> 中的内容是 <code>base进制整数</code> ）</p>
+<ul>
+<li>当 <code>x</code> 为正确的 <code>base进制整数</code> 时，返回其对应的十进制整数。<ul>
+<li>对于字符串 <code>x</code> 的细节要求，详见 <a target="_blank" rel="noopener" href="https://docs.python.org/3/library/functions.html#int">官方文档</a></li>
+</ul>
+</li>
+<li>否则，产生报错。</li>
+</ul>
+<table>
 <thead>
 <tr>
 <th align="center">案例</th>
@@ -1510,11 +1585,44 @@
 <td align="center">int(“-12300”)</td>
 <td align="center">-12300</td>
 </tr>
+<tr>
+<td align="center">int(“111”, 2)</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">int(“1000”, 2)</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">int(“10”, 8)</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">int(“A”, 16)</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">int(“f”, 16)</td>
+<td align="center">15</td>
+</tr>
 </tbody></table>
 <blockquote>
-<p>两个对比 🚀</p>
-<p>int(00123) 是不合法的，但是 int(“00123”) 是合法的。</p>
-<p>int(123.3) 是不合法的，但是 int(“123.3”) 是不合法的。</p>
+<p>🚀 特别注意</p>
+<ul>
+<li>若 <code>x</code> 为字符串型，但是字符串的内容是合法的实型（如 “123.0”、”0.00”），则 <code>int(x)</code> 会产生 <code>ValueError</code> 的报错信息<ul>
+<li>int(123.3) 是合法的，但是 int(“123.3”) 是不合法的。</li>
+</ul>
+</li>
+<li>只有当 <code>x</code> 为字符串类型时，才能添加参数 <code>base</code>。（即当 <code>x</code> 为整型/实型时，不能指定参数 <code>base</code>）<ul>
+<li>int(“111”, 2) 是合法的，但是 int(111, 2) 是不合法的。</li>
+<li>int(“0b111”)是不合法的，但是 int(0b111) 是合法的。</li>
+</ul>
+</li>
+<li>关于「<strong>前缀零</strong>」<ul>
+<li>int(00123) 是不合法的，但是 int(“00123”) 是合法的。</li>
+</ul>
+</li>
+</ul>
 </blockquote>
 <h3 id="三、常见报错信息"><a href="#三、常见报错信息" class="headerlink" title="三、常见报错信息"></a>三、常见报错信息</h3><table>
 <thead>
@@ -1543,13 +1651,102 @@
 <td align="center">int(00123)</td>
 <td align="center"><strong>SyntaxError</strong>: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers</td>
 </tr>
+<tr>
+<td align="center">int(“0b111”)</td>
+<td align="center"><strong>ValueError</strong>: invalid literal for int() with base 10: ‘0b111’</td>
+</tr>
+<tr>
+<td align="center">int(111, 2)</td>
+<td align="center"><strong>TypeError</strong>: int() can’t convert non-string with explicit base</td>
+</tr>
 </tbody></table>
 <hr>
-<h2 id="round-x-函数"><a href="#round-x-函数" class="headerlink" title="round(x) 函数"></a>round(x) 函数</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<h2 id="round-x-函数"><a href="#round-x-函数" class="headerlink" title="round(x) 函数"></a>round(x) 函数</h2><h3 id="round-half-to-even策略"><a href="#round-half-to-even策略" class="headerlink" title="round half to even策略"></a>round half to even策略</h3><p><code>round(x)</code> 函数的功能在《必修一》课本P80的表格中，被定义为「对 <code>x</code> 进行四舍五入」。但是在实际的Python语法中，这样的定义是 <strong>有争议的</strong>。</p>
+<ul>
+<li><p>对于非 形如*.5 的数字，这样的定义没有争议。</p>
+<ul>
+<li>即 round(1.499999) → 1、round(1.5001) = 2、round(2.5000001) → 3</li>
+</ul>
+</li>
+<li><p>但是对于 形如*.5 的数字，这样的定义是有争议的。</p>
+<ul>
+<li>在我们的理解中，形如 *.5 的浮点数，应当被取到 *+1 。</li>
+<li>但是在Python中，round(2.5) →  2、round(3.5) = 4、round(4.5) → 4</li>
+</ul>
+</li>
+</ul>
+<p>实际上，Python采用了一种叫「<strong>round half to even</strong>」的策略（该策略也被称为「banker’s rounding」），将形如 *.5 的浮点数舍取到最近的偶数。（中文翻译有「四舍六入五留双」）</p>
+<blockquote>
+<p>Python为什么采用「round half to even」的策略❓</p>
+<p>试想有一组数字：1.5、2.5、3.5、4.5</p>
+<p>有以下三种策略，round up、round down、round half to even：</p>
+<p>round up：1.5 → 2、2.5 → 3、3.5 → 4、4.5 → 5</p>
+<p>round down：1.5 → 1、2.5 → 2、3.5 → 3、4.5 → 4</p>
+<p>round half to even：1.5 → 2、2.5 → 2、3.5 → 4、4.5 → 4</p>
+<p>现在要求对该组数字进行 round 操作，并进行求和</p>
+<ul>
+<li>采用「round up」 或者 「round down」策略时，会使得 sum 的结果 偏大/偏小。</li>
+<li>采用「round up to half」的策略时，sum 的结果相对来说误差最小（在这个案例中甚至没有误差）</li>
+</ul>
+<p>所以，Python中采取了「round up to half」策略来定义 round() 函数，来减小舍入误差。</p>
+<p>参考资料：<a target="_blank" rel="noopener" href="https://youtu.be/wSEBoZ4CcDw?si=D_YiXdyYIPbcMLNI">https://youtu.be/wSEBoZ4CcDw?si=D_YiXdyYIPbcMLNI</a></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">案例</th>
+<th align="center">返回值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">round(1)</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">round(-1)</td>
+<td align="center">-1</td>
+</tr>
+<tr>
+<td align="center">round(1.5)</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">round(2.5)</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">round(-1.5)</td>
+<td align="center">-2</td>
+</tr>
+<tr>
+<td align="center">round(-2.5)</td>
+<td align="center">-2</td>
+</tr>
+<tr>
+<td align="center">round(0)</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">round(0.0)</td>
+<td align="center">0</td>
+</tr>
+</tbody></table>
+<h3 id="浮点数表示的精度差异"><a href="#浮点数表示的精度差异" class="headerlink" title="浮点数表示的精度差异"></a>浮点数表示的精度差异</h3><p><a target="_blank" rel="noopener" href="https://docs.python.org/3/tutorial/floatingpoint.html#tut-fp-issues">https://docs.python.org/3/tutorial/floatingpoint.html#tut-fp-issues</a></p>
+<h3 id="round-返回值类型"><a href="#round-返回值类型" class="headerlink" title="round()返回值类型"></a>round()返回值类型</h3><h3 id="Python-官方文档-round"><a href="#Python-官方文档-round" class="headerlink" title="Python 官方文档 - round()"></a>Python 官方文档 - round()</h3><p>Python官方文档 - round()：<a target="_blank" rel="noopener" href="https://docs.python.org/3/library/functions.html#round">https://docs.python.org/3/library/functions.html#round</a></p>
+<blockquote>
+<p><strong>round</strong>(<em>number</em>, <em>ndigits=None</em>)</p>
+<p>Return <em>number</em> rounded to <em>ndigits</em> precision after the decimal point. If <em>ndigits</em> is omitted or is <code>None</code>, it returns the nearest integer to its input.</p>
+<p>For the built-in types supporting <a target="_blank" rel="noopener" href="https://docs.python.org/3/library/functions.html#round"><code>round()</code></a>, values are rounded to the closest multiple of 10 to the power minus <em>ndigits</em>; if two multiples are equally close, rounding is done toward the even choice (so, for example, both <code>round(0.5)</code> and <code>round(-0.5)</code> are <code>0</code>, and <code>round(1.5)</code> is <code>2</code>). Any integer value is valid for <em>ndigits</em> (positive, zero, or negative). The return value is an integer if <em>ndigits</em> is omitted or <code>None</code>. Otherwise, the return value has the same type as <em>number</em>.</p>
+<p>For a general Python object <code>number</code>, <code>round</code> delegates to <code>number.__round__</code>.</p>
+<blockquote>
+<p>The behavior of <a target="_blank" rel="noopener" href="https://docs.python.org/3/library/functions.html#round"><code>round()</code></a> for floats can be surprising: for example, <code>round(2.675, 2)</code> gives <code>2.67</code> instead of the expected <code>2.68</code>. This is not a bug: it’s a result of the fact that most decimal fractions can’t be represented exactly as a float. See <a target="_blank" rel="noopener" href="https://docs.python.org/3/tutorial/floatingpoint.html#tut-fp-issues">Floating Point Arithmetic: Issues and Limitations</a> for more information.</p>
+</blockquote>
+</blockquote>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
 <li>Python int() Function：<a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/python-int-function/">https://www.geeksforgeeks.org/python-int-function/</a></li>
 <li>How is int() implemented in Python?：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/38542263/how-is-int-implemented-in-python">https://stackoverflow.com/questions/38542263/how-is-int-implemented-in-python</a></li>
 <li>why does (00123 + 34351) return 34434 in javascript, java and python ? The correct answer is 34474：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/63254469/why-does-00123-34351-return-34434-in-javascript-java-and-python-the-corre">https://stackoverflow.com/questions/63254469/why-does-00123-34351-return-34434-in-javascript-java-and-python-the-corre</a></li>
-<li></li>
+<li><a target="_blank" rel="noopener" href="https://docs.python.org/3/library/functions.html#int">https://docs.python.org/3/library/functions.html#int</a></li>
 </ul>
 
                 
@@ -2130,7 +2327,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">298k</span>&nbsp;字
+                class="white-color">301.2k</span>&nbsp;字
             
             
             
