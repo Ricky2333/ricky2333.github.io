@@ -1113,7 +1113,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1237,12 +1237,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/AtCoder/">
+                                <span class="chip bg-color">AtCoder</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/AtCoder%E9%A2%98%E8%A7%A3/" class="post-category">
+                                AtCoder题解
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -1260,14 +1273,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    6 分
                 </div>
                 
 
@@ -1290,7 +1303,177 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="AtCoder题解｜ABC-98C-Attention"><a href="#AtCoder题解｜ABC-98C-Attention" class="headerlink" title="AtCoder题解｜ABC 98C - Attention"></a>AtCoder题解｜ABC 98C - Attention</h1><hr>
+<h2 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>Takahashi is initially at his house and is about to visit Aoki’s house.</p>
+<p>There are $N$ bus stops numbered $1$ to $N$ between the two houses, and Takahashi can move between them in the following ways:</p>
+<ul>
+<li>He can walk from his house to bus stop $1$ in $X$ units of time.</li>
+<li>For each $i=1,2,\ldots,N-1$, a bus departs from bus stop $i$ at each time that is a multiple of $P_i$, and by taking this bus, he can get to bus stop $(i+1)$ in $T_i$ units of time. <strong>Here, the constraints guarantee that</strong> $1 \leq P_i \leq 8$.</li>
+<li>Takahashi can walk from bus stop $N$ to Aoki’s house in $Y$ units of time.</li>
+</ul>
+<p>For each $i=1,2,\ldots,Q$, process the following query:</p>
+<blockquote>
+<p>Find the earliest time that Takahashi can arrive at Aoki’s house when he leaves his house at time $q_i$.</p>
+</blockquote>
+<p>Note that if he arrives at a bus stop exactly at the departure time of a bus, he can take that bus.</p>
+<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>The input is given from Standard Input in the following format:</p>
+<blockquote>
+<p>$N$ $X$ $Y$</p>
+<p>$P_1$, $T_1$</p>
+<p>$P_2$, $T_2$</p>
+<p>$\vdots$</p>
+<p>$P_{N-1}$, $T_{N-1}$</p>
+<p>$Q$</p>
+<p>$q_1$</p>
+<p>$q_2$</p>
+<p>$\vdots$</p>
+<p>$q_Q$</p>
+</blockquote>
+<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>Print $Q$ lines. For each $i=1,2,\ldots,Q$, the $i$-th line should contain the answer to the $i$-th query.</p>
+<h4 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h4><ul>
+<li>$2 \leq N \leq 10^5$</li>
+<li>$1 \leq X, Y \leq 10^9$</li>
+<li>$1 \leq P_i \leq 8$</li>
+<li>$1 \leq T_i \leq 10^9$</li>
+<li>$1 \leq Q \leq 2 \times 10^5$</li>
+<li>$0 \leq q_i \leq 10^9$</li>
+</ul>
+<p>All input values are integers.</p>
+<h3 id="【输入样例1】"><a href="#【输入样例1】" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">4</span> <span class="token number">2</span> <span class="token number">3</span>
+<span class="token number">5</span> <span class="token number">4</span>
+<span class="token number">6</span> <span class="token number">6</span>
+<span class="token number">3</span> <span class="token number">1</span>
+<span class="token number">7</span>
+<span class="token number">13</span>
+<span class="token number">0</span>
+<span class="token number">710511029</span>
+<span class="token number">136397527</span>
+<span class="token number">763027379</span>
+<span class="token number">644706927</span>
+<span class="token number">447672230</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="【输出样例1】"><a href="#【输出样例1】" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">34</span>
+<span class="token number">22</span>
+<span class="token number">710511052</span>
+<span class="token number">136397548</span>
+<span class="token number">763027402</span>
+<span class="token number">644706946</span>
+<span class="token number">447672250</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>For the first query, Takahashi can move as follows to arrive at Aoki’s house at time $34$.</p>
+<ul>
+<li>Leave his house at time $13$.</li>
+<li>Walk from his house and arrive at bus stop $1$ at time $15$.</li>
+<li>Take the bus departing from bus stop $1$ at time $15$ and arrive at bus stop $2$ at time $19$.</li>
+<li>Take the bus departing from bus stop $2$ at time $24$ and arrive at bus stop $3$ at time $30$.</li>
+<li>Take the bus departing from bus stop $3$ at time $30$ and arrive at bus stop $4$ at time $31$.</li>
+<li>Walk from bus stop $4$ and arrive at Aoki’s house at time $34$.</li>
+</ul>
+<p>For the second query, Takahashi can move as follows and arrive at Aoki’s house at time $22$.</p>
+<ul>
+<li>Leave his house at time $0$.</li>
+<li>Walk from his house and arrive at bus stop $1$ at time $2$.</li>
+<li>Take the bus departing from bus stop $1$ at time $5$ and arrive at bus stop $2$ at time $9$.</li>
+<li>Take the bus departing from bus stop $2$ at time $12$ and arrive at bus stop $3$ at time $18$.</li>
+<li>Take the bus departing from bus stop $3$ at time $18$ and arrive at bus stop $4$ at time $19$.</li>
+<li>Walk from bus stop $4$ and arrive at Aoki’s house at time $22$.</li>
+</ul>
+<h3 id="【题目来源】"><a href="#【题目来源】" class="headerlink" title="【题目来源】"></a>【题目来源】</h3><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc098/tasks/arc098_a">https://atcoder.jp/contests/abc098/tasks/arc098_a</a></p>
+<hr>
+<h2 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h2><h3 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h3><p>模拟 + 暴力做法很容易想到，但是如何优化是个比较大的难题。</p>
+<p>需要运用 数学 + 思维 的方法。（具体过程见下面代码）</p>
+<p>官方题解传送门</p>
+<p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc319/editorial/7141">https://atcoder.jp/contests/abc319/editorial/7141</a>  </p>
+<p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc319/editorial/7122">https://atcoder.jp/contests/abc319/editorial/7122</a></p>
+<h3 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h3><h4 id="模拟-暴力（TLE）-❌"><a href="#模拟-暴力（TLE）-❌" class="headerlink" title="模拟 + 暴力（TLE） ❌"></a>模拟 + 暴力（TLE） ❌</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+LL n<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> q<span class="token punctuation">,</span> p<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> s<span class="token punctuation">,</span> e<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 读入公交信息</span>
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> x <span class="token operator">&gt;&gt;</span> y<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;&gt;</span> t<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// q次查询</span>
+    cin <span class="token operator">&gt;&gt;</span> q<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> q<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 模拟出发过程</span>
+        cin <span class="token operator">&gt;&gt;</span> s<span class="token punctuation">;</span>
+        s <span class="token operator">+=</span> x<span class="token punctuation">;</span> <span class="token comment">// 家到公交站1</span>
+        <span class="token comment">// 各个公交站点</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>s <span class="token operator">%</span> p<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                s <span class="token operator">=</span> s <span class="token operator">+</span> p<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">-</span> s <span class="token operator">%</span> p<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            s <span class="token operator">+=</span> t<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        s <span class="token operator">+=</span> y<span class="token punctuation">;</span>  <span class="token comment">// 公交站n到家</span>
+        cout <span class="token operator">&lt;&lt;</span> s <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="优化法-✅"><a href="#优化法-✅" class="headerlink" title="优化法 ✅"></a>优化法 ✅</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+LL n<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> q<span class="token punctuation">,</span> p<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> s<span class="token punctuation">,</span> e<span class="token punctuation">;</span>
+LL ans<span class="token punctuation">[</span><span class="token number">1000</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ios<span class="token double-colon punctuation">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//cin读入优化</span>
+    cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 读入相关数据</span>
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> x <span class="token operator">&gt;&gt;</span> y<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;&gt;</span> t<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 预处理一个大循环（lcm(1, 2, 3,...8) = 840）</span>
+    <span class="token comment">// 840为最极端的情况，即pi取遍了1～8</span>
+    <span class="token comment">// 在一般测试样例中，lcm(p1, p2...pn-1)一般到不了840</span>
+    <span class="token comment">// 但是大循环840一定是小循环的倍数，所以直接处理大循环即可</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">840</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        LL cur <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>cur <span class="token operator">%</span> p<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                cur <span class="token operator">=</span> cur <span class="token operator">+</span> p<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">-</span> cur <span class="token operator">%</span> p<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            cur <span class="token operator">+=</span> t<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        ans<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> cur <span class="token operator">-</span> i<span class="token punctuation">;</span>   <span class="token comment">// ans[i]表示时刻i到达第一个站点，后续到达第n个公交站点需要的时间</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// q次查询，每次查询只需要获得到达第一个站点的时间s+x</span>
+    <span class="token comment">// 就可以通过预处理的ans数组，算出在(s+x)在大循环840中的位置</span>
+    <span class="token comment">// ans[(s+x)%840]即为公交上花费的总时间</span>
+    <span class="token comment">// 最后再加上y即可</span>
+    cin <span class="token operator">&gt;&gt;</span> q<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> q<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cin <span class="token operator">&gt;&gt;</span> s<span class="token punctuation">;</span>
+        s <span class="token operator">+=</span> x<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> s <span class="token operator">+</span> ans<span class="token punctuation">[</span>s <span class="token operator">%</span> <span class="token number">840</span><span class="token punctuation">]</span> <span class="token operator">+</span> y <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
                 
             </div>
             <hr/>
@@ -1353,7 +1536,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/AtCoder/">
+                                    <span class="chip bg-color">AtCoder</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1850,7 +2037,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">301.2k</span>&nbsp;字
+                class="white-color">304.9k</span>&nbsp;字
             
             
             
