@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2024-03-05T15:46:36.611Z</updated>
+  <updated>2024-03-07T10:59:51.300Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ricky2333.github.io/2024/03/05/2023-nian-6-yue-xuan-kao-juan-da-ti-fen-xi/"/>
     <id>https://ricky2333.github.io/2024/03/05/2023-nian-6-yue-xuan-kao-juan-da-ti-fen-xi/</id>
     <published>2024-03-05T01:50:47.000Z</published>
-    <updated>2024-03-05T15:46:36.611Z</updated>
+    <updated>2024-03-07T10:59:51.300Z</updated>
     
     
       
@@ -365,10 +365,10 @@
   
   <entry>
     <title>AtCoder题解｜Attention</title>
-    <link href="https://ricky2333.github.io/2023/12/28/atcoder-ti-jie-attention/"/>
-    <id>https://ricky2333.github.io/2023/12/28/atcoder-ti-jie-attention/</id>
-    <published>2023-12-28T03:12:33.000Z</published>
-    <updated>2024-03-02T13:36:25.754Z</updated>
+    <link href="https://ricky2333.github.io/2023/12/31/atcoder-ti-jie-attention/"/>
+    <id>https://ricky2333.github.io/2023/12/31/atcoder-ti-jie-attention/</id>
+    <published>2023-12-31T03:12:33.000Z</published>
+    <updated>2024-03-10T12:32:34.456Z</updated>
     
     
       
@@ -384,20 +384,36 @@
     <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
     
     
+    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
+    
     <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
+    
+    <category term="前缀和" scheme="https://ricky2333.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
   </entry>
   
   <entry>
-    <title>AtCoder题解｜Cut and Count‘</title>
-    <link href="https://ricky2333.github.io/2023/12/28/atcoder-ti-jie-cut-and-count/"/>
-    <id>https://ricky2333.github.io/2023/12/28/atcoder-ti-jie-cut-and-count/</id>
-    <published>2023-12-28T03:12:21.000Z</published>
-    <updated>2023-12-28T03:12:22.616Z</updated>
+    <title>AtCoder｜Cut and Count</title>
+    <link href="https://ricky2333.github.io/2023/12/30/atcoder-ti-jie-cut-and-count/"/>
+    <id>https://ricky2333.github.io/2023/12/30/atcoder-ti-jie-cut-and-count/</id>
+    <published>2023-12-30T03:12:21.000Z</published>
+    <updated>2024-03-11T01:02:14.894Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-98B-Cut-and-Count&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-98B-Cut-and-Count&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 98B Cut and</summary>
+        
+      
     
     
     
+    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
     
+    
+    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
     
   </entry>
   
