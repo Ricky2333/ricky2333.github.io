@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2024-03-07T10:59:51.300Z</updated>
+  <updated>2024-03-13T04:57:16.152Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python｜txt文件读写</title>
+    <link href="https://ricky2333.github.io/2024/03/12/python-xue-xi-bi-ji-txt-wen-jian-du-xie/"/>
+    <id>https://ricky2333.github.io/2024/03/12/python-xue-xi-bi-ji-txt-wen-jian-du-xie/</id>
+    <published>2024-03-12T12:09:56.000Z</published>
+    <updated>2024-03-13T04:57:16.152Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python学习笔记｜txt文件读写&quot;&gt;&lt;a href=&quot;#Python学习笔记｜txt文件读写&quot; class=&quot;headerlink&quot; title=&quot;Python学习笔记｜txt文件读写&quot;&gt;&lt;/a&gt;Python学习笔记｜txt文件读写&lt;/h1&gt;&lt;p&gt;在</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://ricky2333.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    
+    <category term="学习笔记" scheme="https://ricky2333.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>选考卷分析｜综合题部分</title>
@@ -157,14 +184,14 @@
     <link href="https://ricky2333.github.io/2024/01/11/jiao-yu-shi-xi-di-er-ci-zu-nei-shi-jiang/"/>
     <id>https://ricky2333.github.io/2024/01/11/jiao-yu-shi-xi-di-er-ci-zu-nei-shi-jiang/</id>
     <published>2024-01-11T15:21:33.000Z</published>
-    <updated>2024-01-17T12:00:09.344Z</updated>
+    <updated>2024-03-15T08:31:35.390Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;基本信息-☘️&quot;&gt;&lt;a href=&quot;#基本信息-☘️&quot; class=&quot;headerlink&quot; title=&quot;基本信息 ☘️&quot;&gt;&lt;/a&gt;基本信息</summary>
+    <summary type="html">&lt;h1 id=&quot;教育实习｜第二次组内试讲&quot;&gt;&lt;a href=&quot;#教育实习｜第二次组内试讲&quot; class=&quot;headerlink&quot; title=&quot;教育实习｜第二次组内试讲&quot;&gt;&lt;/a&gt;教育实习｜第二次组内试讲&lt;/h1&gt;&lt;h2 id=&quot;基本信息-☘️&quot;&gt;&lt;a</summary>
         
       
     
@@ -236,14 +263,14 @@
     <link href="https://ricky2333.github.io/2024/01/09/jiao-yu-shi-xi-di-yi-ci-zu-nei-shi-jiang/"/>
     <id>https://ricky2333.github.io/2024/01/09/jiao-yu-shi-xi-di-yi-ci-zu-nei-shi-jiang/</id>
     <published>2024-01-09T14:31:49.000Z</published>
-    <updated>2024-01-17T12:33:22.681Z</updated>
+    <updated>2024-03-15T08:30:42.268Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;基本信息-☘️&quot;&gt;&lt;a href=&quot;#基本信息-☘️&quot; class=&quot;headerlink&quot; title=&quot;基本信息 ☘️&quot;&gt;&lt;/a&gt;基本信息</summary>
+    <summary type="html">&lt;h1 id=&quot;教育实习｜第一次组内试讲&quot;&gt;&lt;a href=&quot;#教育实习｜第一次组内试讲&quot; class=&quot;headerlink&quot; title=&quot;教育实习｜第一次组内试讲&quot;&gt;&lt;/a&gt;教育实习｜第一次组内试讲&lt;/h1&gt;&lt;h2 id=&quot;基本信息-☘️&quot;&gt;&lt;a</summary>
         
       
     
@@ -368,7 +395,7 @@
     <link href="https://ricky2333.github.io/2023/12/31/atcoder-ti-jie-attention/"/>
     <id>https://ricky2333.github.io/2023/12/31/atcoder-ti-jie-attention/</id>
     <published>2023-12-31T03:12:33.000Z</published>
-    <updated>2024-03-10T12:32:34.456Z</updated>
+    <updated>2024-03-11T01:23:37.391Z</updated>
     
     
       
@@ -397,7 +424,7 @@
     <link href="https://ricky2333.github.io/2023/12/30/atcoder-ti-jie-cut-and-count/"/>
     <id>https://ricky2333.github.io/2023/12/30/atcoder-ti-jie-cut-and-count/</id>
     <published>2023-12-30T03:12:21.000Z</published>
-    <updated>2024-03-11T01:02:14.894Z</updated>
+    <updated>2024-03-11T01:18:23.948Z</updated>
     
     
       
@@ -415,6 +442,8 @@
     
     <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
     
+    <category term="set" scheme="https://ricky2333.github.io/tags/set/"/>
+    
   </entry>
   
   <entry>
@@ -422,8 +451,16 @@
     <link href="https://ricky2333.github.io/2023/12/26/atcoder-ti-jie-strange-bank/"/>
     <id>https://ricky2333.github.io/2023/12/26/atcoder-ti-jie-strange-bank/</id>
     <published>2023-12-26T12:21:55.000Z</published>
-    <updated>2023-12-26T12:28:51.924Z</updated>
+    <updated>2024-03-11T06:48:19.315Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-99B-Strange-Bank&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-99B-Strange-Bank&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 99B Strange</summary>
+        
+      
     
     
     
@@ -508,37 +545,6 @@
     <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
     
     <category term="距离贪心" scheme="https://ricky2333.github.io/tags/%E8%B7%9D%E7%A6%BB%E8%B4%AA%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ABC｜Modulo Summation</title>
-    <link href="https://ricky2333.github.io/2023/12/26/atcoder-ti-jie-modulo-summation/"/>
-    <id>https://ricky2333.github.io/2023/12/26/atcoder-ti-jie-modulo-summation/</id>
-    <published>2023-12-25T16:06:20.000Z</published>
-    <updated>2023-12-25T16:59:05.149Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本篇博客还在持续修改润色中～&lt;/p&gt;
-&lt;p&gt;敬请期待～&lt;/p&gt;
-&lt;h1 id=&quot;AtCoder题解｜ABC-103C-Modulo-Summation&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-103C-Modulo-Summation&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-    <category term="取模" scheme="https://ricky2333.github.io/tags/%E5%8F%96%E6%A8%A1/"/>
     
   </entry>
   

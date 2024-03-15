@@ -196,6 +196,13 @@
       </li>
       
       <li>
+        <a href="/%E5%8F%AF%E7%90%86%E8%A7%A3%E8%BE%93%E5%85%A5">
+          
+          <span>可理解输入</span>
+        </a>
+      </li>
+      
+      <li>
         <a href="/categories/%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87">
           
           <span>科研词汇</span>
@@ -657,6 +664,14 @@
                   <a href="/TOEFL " style="margin-left:75px">
 				  
 		          <span>TOEFL</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/%E5%8F%AF%E7%90%86%E8%A7%A3%E8%BE%93%E5%85%A5 " style="margin-left:75px">
+				  
+		          <span>可理解输入</span>
                   </a>
                 </li>
               
@@ -1281,7 +1296,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    616
+                    686
                 </div>
                 
 
@@ -1382,7 +1397,8 @@ string s<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<h3 id="【Pythoon代码】"><a href="#【Pythoon代码】" class="headerlink" title="【Pythoon代码】"></a>【Pythoon代码】</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> sys <span class="token keyword">import</span> stdin
+<h3 id="【Pythoon代码】"><a href="#【Pythoon代码】" class="headerlink" title="【Pythoon代码】"></a>【Pythoon代码】</h3><p>左、右前缀</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> sys <span class="token keyword">import</span> stdin
 
 <span class="token builtin">input</span> <span class="token operator">=</span> <span class="token keyword">lambda</span><span class="token punctuation">:</span> stdin<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
 
@@ -1404,7 +1420,25 @@ r <span class="token operator">=</span> <span class="token punctuation">[</span>
 res <span class="token operator">=</span> <span class="token builtin">min</span><span class="token punctuation">(</span>l<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> r<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<p>另一种思路</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Python快读</span>
+<span class="token keyword">from</span> sys <span class="token keyword">import</span> stdin
+<span class="token builtin">input</span> <span class="token operator">=</span> <span class="token keyword">lambda</span><span class="token punctuation">:</span> stdin<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
 
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    n <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    s <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    tmp <span class="token operator">=</span> s<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">'E'</span><span class="token punctuation">)</span>
+    res <span class="token operator">=</span> tmp
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        tmp <span class="token operator">=</span> tmp <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token keyword">if</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'E'</span> <span class="token keyword">else</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        tmp <span class="token operator">=</span> tmp <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token keyword">if</span> s<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'W'</span> <span class="token keyword">else</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        res <span class="token operator">=</span> <span class="token builtin">min</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> tmp<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -1744,6 +1778,10 @@ res <span class="token operator">=</span> <span class="token builtin">min</span>
                         <span class="chip bg-color">AtCoder</span>
                     </a>
                     
+                    <a href="/tags/set/">
+                        <span class="chip bg-color">set</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1991,7 +2029,7 @@ res <span class="token operator">=</span> <span class="token builtin">min</span>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">306.4k</span>&nbsp;字
+                class="white-color">307.5k</span>&nbsp;字
             
             
             

@@ -196,6 +196,13 @@
       </li>
       
       <li>
+        <a href="/%E5%8F%AF%E7%90%86%E8%A7%A3%E8%BE%93%E5%85%A5">
+          
+          <span>可理解输入</span>
+        </a>
+      </li>
+      
+      <li>
         <a href="/categories/%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87">
           
           <span>科研词汇</span>
@@ -657,6 +664,14 @@
                   <a href="/TOEFL " style="margin-left:75px">
 				  
 		          <span>TOEFL</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/%E5%8F%AF%E7%90%86%E8%A7%A3%E8%BE%93%E5%85%A5 " style="margin-left:75px">
+				  
+		          <span>可理解输入</span>
                   </a>
                 </li>
               
@@ -1281,7 +1296,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    233
                 </div>
                 
 
@@ -1311,7 +1326,49 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="AtCoder题解｜ABC-99B-Strange-Bank"><a href="#AtCoder题解｜ABC-99B-Strange-Bank" class="headerlink" title="AtCoder题解｜ABC 99B Strange Bank"></a>AtCoder题解｜ABC 99B Strange Bank</h1><hr>
+<h2 id="题目信息-📚"><a href="#题目信息-📚" class="headerlink" title="题目信息 📚"></a>题目信息 📚</h2><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>To make it difficult to withdraw money, a certain bank allows its customers to withdraw only one of the following amounts in one operation:</p>
+<ul>
+<li>$1$ yen (the currency of Japan)</li>
+<li>$6$ yen, $6^2$ (=36) yen, $6^3$ (=216) yen, …</li>
+<li>$9$ yen, $9^2$ (=81) yen, $9^3$ (=729) yen, …</li>
+</ul>
+<p>At least how many operations are required to withdraw exactly $N$ yen in total?</p>
+<p>It is not allowed to re-deposit the money you withdrew.</p>
+<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>The input is given from Standard Input in the following format:</p>
+<blockquote>
+<p>$N$</p>
+</blockquote>
+<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>If at least $x$ operations are required to withdraw exactly $N$ yen in total, print $x$.</p>
+<h4 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h4><ul>
+<li>$1 \leq N \leq 100000$</li>
+<li>$N$ is an integer.</li>
+</ul>
+<h3 id="【输入样例1】"><a href="#【输入样例1】" class="headerlink" title="【输入样例1】"></a>【输入样例1】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">127</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【输出样例1】"><a href="#【输出样例1】" class="headerlink" title="【输出样例1】"></a>【输出样例1】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">4</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>By withdrawing $1$ yen, $9$ yen, $36$ (= $6^2$) yen, and $81$ (= $9^2$) yen, we can withdraw $127$ yen in four operations.</p>
+<h3 id="【输入样例2】"><a href="#【输入样例2】" class="headerlink" title="【输入样例2】"></a>【输入样例2】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【输出样例2】"><a href="#【输出样例2】" class="headerlink" title="【输出样例2】"></a>【输出样例2】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>By withdrawing 1 yen three times, we can withdraw 3 yen in three operations.</p>
+<h3 id="【输入样例3】"><a href="#【输入样例3】" class="headerlink" title="【输入样例3】"></a>【输入样例3】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">44852</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【输出样例3】"><a href="#【输出样例3】" class="headerlink" title="【输出样例3】"></a>【输出样例3】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">16</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="【题目来源】"><a href="#【题目来源】" class="headerlink" title="【题目来源】"></a>【题目来源】</h3><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc099/tasks/abc099_c">https://atcoder.jp/contests/abc099/tasks/abc099_c</a></p>
+<hr>
+<h2 id="题目解析-🍉"><a href="#题目解析-🍉" class="headerlink" title="题目解析 🍉"></a>题目解析 🍉</h2><h3 id="【题目分析】"><a href="#【题目分析】" class="headerlink" title="【题目分析】"></a>【题目分析】</h3><h3 id="【C-代码】"><a href="#【C-代码】" class="headerlink" title="【C++代码】"></a>【C++代码】</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="【Python代码】"><a href="#【Python代码】" class="headerlink" title="【Python代码】"></a>【Python代码】</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+
                 
             </div>
             <hr/>
@@ -1593,6 +1650,10 @@
                     
                     <a href="/tags/AtCoder/">
                         <span class="chip bg-color">AtCoder</span>
+                    </a>
+                    
+                    <a href="/tags/set/">
+                        <span class="chip bg-color">set</span>
                     </a>
                     
                 </div>
@@ -1898,7 +1959,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">306.4k</span>&nbsp;字
+                class="white-color">307.5k</span>&nbsp;字
             
             
             
