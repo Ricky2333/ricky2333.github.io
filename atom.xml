@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2024-03-22T12:27:04.317Z</updated>
+  <updated>2024-03-24T08:15:39.009Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>故障记录｜技术博客</title>
+    <link href="https://ricky2333.github.io/2024/03/23/gu-zhang-ji-lu-ji-zhu-bo-ke/"/>
+    <id>https://ricky2333.github.io/2024/03/23/gu-zhang-ji-lu-ji-zhu-bo-ke/</id>
+    <published>2024-03-23T05:32:27.000Z</published>
+    <updated>2024-03-24T08:15:39.009Z</updated>
+    
+    
+    
+    
+    <category term="博客故障" scheme="https://ricky2333.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%95%85%E9%9A%9C/"/>
+    
+    
+    <category term="博客故障" scheme="https://ricky2333.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%95%85%E9%9A%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>Python｜List生成</title>
@@ -69,7 +86,7 @@
     <link href="https://ricky2333.github.io/2024/03/12/python-xue-xi-bi-ji-txt-wen-jian-du-xie/"/>
     <id>https://ricky2333.github.io/2024/03/12/python-xue-xi-bi-ji-txt-wen-jian-du-xie/</id>
     <published>2024-03-12T12:09:56.000Z</published>
-    <updated>2024-03-13T04:57:16.152Z</updated>
+    <updated>2024-03-24T08:14:48.456Z</updated>
     
     
       
@@ -516,32 +533,6 @@
     
     
     <category term="2023" scheme="https://ricky2333.github.io/tags/2023/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>日本語学习｜常见发音疑问</title>
-    <link href="https://ricky2333.github.io/2024/01/04/ri-ben-yu-xue-xi-chang-jian-fa-yin-yi-wen/"/>
-    <id>https://ricky2333.github.io/2024/01/04/ri-ben-yu-xue-xi-chang-jian-fa-yin-yi-wen/</id>
-    <published>2024-01-04T11:41:25.000Z</published>
-    <updated>2024-01-05T04:45:51.059Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;日本語学习｜常见发音疑问&quot;&gt;&lt;a href=&quot;#日本語学习｜常见发音疑问&quot; class=&quot;headerlink&quot; title=&quot;日本語学习｜常见发音疑问&quot;&gt;&lt;/a&gt;日本語学习｜常见发音疑问&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;こんにちわ → {ko} or {kong}</summary>
-        
-      
-    
-    
-    
-    <category term="日本語" scheme="https://ricky2333.github.io/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
-    
-    
-    <category term="日本語" scheme="https://ricky2333.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
     
   </entry>
   
