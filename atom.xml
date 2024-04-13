@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Rickyの水果摊</title>
+  <title>Ricky的博客</title>
   
   <subtitle>Rickyの水果摊</subtitle>
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://ricky2333.github.io/</id>
   
   <author>
-    <name>Rickyの水果摊</name>
+    <name>Ricky的博客</name>
     
   </author>
   
