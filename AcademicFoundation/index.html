@@ -1082,14 +1082,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    946
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    8 分
                 </div>
                 
 
@@ -1112,7 +1112,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="科研基础"><a href="#科研基础" class="headerlink" title="科研基础"></a>科研基础</h1><h2 id="实验室服务器-配置深度学习环境"><a href="#实验室服务器-配置深度学习环境" class="headerlink" title="实验室服务器 - 配置深度学习环境"></a>实验室服务器 - 配置深度学习环境</h2><h3 id="📚-参考资料"><a href="#📚-参考资料" class="headerlink" title="📚 参考资料"></a>📚 参考资料</h3><h4 id="深度学习环境配置"><a href="#深度学习环境配置" class="headerlink" title="深度学习环境配置"></a>深度学习环境配置</h4><table>
+                <h1 id="科研基础"><a href="#科研基础" class="headerlink" title="科研基础"></a>科研基础</h1><h2 id="🛠-实验室服务器-配置深度学习环境"><a href="#🛠-实验室服务器-配置深度学习环境" class="headerlink" title="🛠 实验室服务器 - 配置深度学习环境"></a>🛠 实验室服务器 - 配置深度学习环境</h2><h3 id="📚-参考资料"><a href="#📚-参考资料" class="headerlink" title="📚 参考资料"></a>📚 参考资料</h3><h4 id="深度学习环境配置"><a href="#深度学习环境配置" class="headerlink" title="深度学习环境配置"></a>深度学习环境配置</h4><table>
 <thead>
 <tr>
 <th align="center">内容</th>
@@ -1240,7 +1240,25 @@ export all_proxy=socks5h://***<span aria-hidden="true" class="line-numbers-rows"
 
 
 
-<h3 id="🧑🏻‍💻-常用命令"><a href="#🧑🏻‍💻-常用命令" class="headerlink" title="🧑🏻‍💻 常用命令"></a>🧑🏻‍💻 常用命令</h3><h4 id="Linux-常用命令"><a href="#Linux-常用命令" class="headerlink" title="Linux 常用命令"></a>Linux 常用命令</h4><table>
+
+
+<h5 id="matplotlib-显示中文字体"><a href="#matplotlib-显示中文字体" class="headerlink" title="matplotlib 显示中文字体"></a>matplotlib 显示中文字体</h5><p>Linux服务器下的解决方案</p>
+<ol>
+<li>使用命令 <code>pip install -U mplfonts</code> 安装 <code>mplfonts</code> 库。</li>
+<li>使用命令 <code>mplfonts init</code> 进行初始化配置。</li>
+<li>返回原 python 文件，添加如下代码，再次生成图片查看即可。</li>
+</ol>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> matplotlib
+
+<span class="token comment"># 配置 matplotlib 使用中文字体，避免中文显示问题</span>
+matplotlib<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span>  <span class="token comment"># 使用黑体</span>
+matplotlib<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'axes.unicode_minus'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>  <span class="token comment"># 解决负号显示问题</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>参考链接：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/AlwaysSui/p/18195334">https://www.cnblogs.com/AlwaysSui/p/18195334</a></p>
+</blockquote>
+<hr>
+<h2 id="🧑🏻‍💻-常用命令与代码"><a href="#🧑🏻‍💻-常用命令与代码" class="headerlink" title="🧑🏻‍💻 常用命令与代码"></a>🧑🏻‍💻 常用命令与代码</h2><h3 id="Linux-常用命令"><a href="#Linux-常用命令" class="headerlink" title="Linux 常用命令"></a>Linux 常用命令</h3><table>
 <thead>
 <tr>
 <th>命令</th>
@@ -1324,7 +1342,7 @@ export all_proxy=socks5h://***<span aria-hidden="true" class="line-numbers-rows"
 <td><code>alias ll='ls -l'</code></td>
 </tr>
 </tbody></table>
-<h4 id="Conda-常用命令"><a href="#Conda-常用命令" class="headerlink" title="Conda 常用命令"></a>Conda 常用命令</h4><table>
+<h3 id="Conda-常用命令"><a href="#Conda-常用命令" class="headerlink" title="Conda 常用命令"></a>Conda 常用命令</h3><table>
 <thead>
 <tr>
 <th>指令</th>
@@ -1360,7 +1378,279 @@ export all_proxy=socks5h://***<span aria-hidden="true" class="line-numbers-rows"
 <td>删除指定的包</td>
 </tr>
 </tbody></table>
-
+<h3 id="PyTorch-常用代码"><a href="#PyTorch-常用代码" class="headerlink" title="PyTorch 常用代码"></a>PyTorch 常用代码</h3><h4 id="硬件相关"><a href="#硬件相关" class="headerlink" title="硬件相关"></a>硬件相关</h4><table>
+<thead>
+<tr>
+<th>指令</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>import torch</code></td>
+<td>导入PyTorch库</td>
+</tr>
+<tr>
+<td><code>torch.cuda.is_available()</code></td>
+<td>检查是否可以使用GPU</td>
+</tr>
+<tr>
+<td><code>device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')</code></td>
+<td>指定当前环境设备（GPU/CPU）</td>
+</tr>
+<tr>
+<td><code>tensor.to(device)</code></td>
+<td>将 tensor 移动到指定设备（GPU/CPU）创建一个张量</td>
+</tr>
+</tbody></table>
+<h4 id="tensor相关"><a href="#tensor相关" class="headerlink" title="tensor相关"></a>tensor相关</h4><table>
+<thead>
+<tr>
+<th>指令</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>torch.zeros(size)</code></td>
+<td>创建全零张量</td>
+</tr>
+<tr>
+<td><code>torch.ones(size)</code></td>
+<td>创建全一张量</td>
+</tr>
+<tr>
+<td><code>torch.randn(size)</code></td>
+<td>创建随机正态分布张量</td>
+</tr>
+<tr>
+<td><code>tensor_a + tensor_b</code></td>
+<td>张量加法</td>
+</tr>
+<tr>
+<td><code>tensor_a - tensor_b</code></td>
+<td>张量减法</td>
+</tr>
+<tr>
+<td><code>tensor_a * tensor_b</code></td>
+<td>张量逐元素乘法</td>
+</tr>
+<tr>
+<td><code>tensor_a / tensor_b</code></td>
+<td>张量逐元素除法</td>
+</tr>
+<tr>
+<td><code>torch.matmul(tensor_a, tensor_b)</code></td>
+<td>矩阵乘法</td>
+</tr>
+<tr>
+<td><code>torch.transpose(tensor, dim0, dim1)</code></td>
+<td>张量转置</td>
+</tr>
+<tr>
+<td><code>torch.reshape(tensor, new_shape)</code></td>
+<td>改变张量形状</td>
+</tr>
+<tr>
+<td><code>tensor[:n]</code></td>
+<td>张量切片，获取前n个元素</td>
+</tr>
+<tr>
+<td><code>torch.sum(tensor)</code></td>
+<td>计算张量所有元素的和</td>
+</tr>
+<tr>
+<td><code>torch.mean(tensor.float())</code></td>
+<td>计算张量所有元素的均值（需转浮点数）</td>
+</tr>
+<tr>
+<td><code>torch.zeros(size)</code></td>
+<td>创建全零张量</td>
+</tr>
+<tr>
+<td><code>torch.ones(size)</code></td>
+<td>创建全一张量</td>
+</tr>
+<tr>
+<td><code>torch.randn(size)</code></td>
+<td>创建随机正态分布张量</td>
+</tr>
+</tbody></table>
+<h4 id="模型相关"><a href="#模型相关" class="headerlink" title="模型相关"></a>模型相关</h4><table>
+<thead>
+<tr>
+<th>指令</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>model.train()</code></td>
+<td>将模型设置为训练模式</td>
+</tr>
+<tr>
+<td><code>model.eval()</code></td>
+<td>将模型设置为评估模式</td>
+</tr>
+<tr>
+<td><code>model.parameters()</code></td>
+<td>获取模型的参数</td>
+</tr>
+<tr>
+<td><code>torch.save(model, path)</code></td>
+<td>保存整个模型</td>
+</tr>
+</tbody></table>
+<h4 id="训练相关"><a href="#训练相关" class="headerlink" title="训练相关"></a>训练相关</h4><table>
+<thead>
+<tr>
+<th>指令</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>model.train()</code></td>
+<td>将模型设置为训练模式</td>
+</tr>
+<tr>
+<td><code>model.parameters()</code></td>
+<td>获取模型的参数</td>
+</tr>
+<tr>
+<td><code>loss = torch.nn.CrossEntropyLoss()</code></td>
+<td>定义交叉熵损失函数</td>
+</tr>
+<tr>
+<td><code>optimizer = torch.optim.Adam(model.parameters(), lr=0.001)</code></td>
+<td>定义Adam优化器</td>
+</tr>
+<tr>
+<td><code>optimizer.zero_grad()</code></td>
+<td>梯度清零</td>
+</tr>
+<tr>
+<td><code>loss.backward()</code></td>
+<td>反向传播计算梯度</td>
+</tr>
+<tr>
+<td><code>optimizer.step()</code></td>
+<td>更新模型参数</td>
+</tr>
+<tr>
+<td><code>torch.save(model, path)</code></td>
+<td>保存整个模型</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="📚-Zotero-文献管理工具"><a href="#📚-Zotero-文献管理工具" class="headerlink" title="📚 Zotero - 文献管理工具"></a>📚 Zotero - 文献管理工具</h2><h4 id="Zotero-简介"><a href="#Zotero-简介" class="headerlink" title="Zotero 简介"></a>Zotero 简介</h4><p><strong><a target="_blank" rel="noopener" href="https://www.zotero.org/">Zotero</a></strong> 是一款 <strong>跨平台</strong> 的 <strong>文献管理工具</strong>，可用于收集、整理和引用学术文献。</p>
+<p>Zotero 支持 Windows、macOS 、Linux、iOS等系统，下载安装非常简便。</p>
+<blockquote>
+<p>Zotero 官方主页：<a target="_blank" rel="noopener" href="https://www.zotero.org/">https://www.zotero.org</a></p>
+</blockquote>
+<p>在摊主看来，Zotero 有以下几个优点：</p>
+<ul>
+<li>开源、免费</li>
+<li>支持多级目录（比如在 <code>DeepLearning</code> 目录下还可以创建多个子目录）</li>
+<li>支持数据同步，可在多个设备上查看自己的文献库（搭配坚果云同步数据）</li>
+<li>内置 PDF 阅览器，方便阅读文献</li>
+<li>丰富的插件资源，可以高度个性化</li>
+</ul>
+<p>摊主也用过像 EndNote、Mendeley 等文献管理软件，但摊主个人觉得 Zotero 的使用体验最好。</p>
+<h3 id="Zotero-下载"><a href="#Zotero-下载" class="headerlink" title="Zotero 下载"></a>Zotero 下载</h3><h5 id="Zotero（PC版）"><a href="#Zotero（PC版）" class="headerlink" title="Zotero（PC版）"></a>Zotero（PC版）</h5><p>Zotero 官网下载界面：<a target="_blank" rel="noopener" href="https://www.zotero.org/download/">https://www.zotero.org/download/</a></p>
+<p>Zotero 官网安装指南：<a target="_blank" rel="noopener" href="https://www.zotero.org/support/installation">https://www.zotero.org/support/installation</a></p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230611142242899.png" alt="Zotero PC版"></p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230611142613057.png" alt="Zotero用户界面（Mac版）"></p>
+<h5 id="Zotero-Connector（浏览器插件）"><a href="#Zotero-Connector（浏览器插件）" class="headerlink" title="Zotero Connector（浏览器插件）"></a>Zotero Connector（浏览器插件）</h5><blockquote>
+<p>Zotero Connector 可以自动感应网页内容，将网页保存至Zotero中</p>
+</blockquote>
+<p>Zotero Connector官网下载界面：<a target="_blank" rel="noopener" href="https://www.zotero.org/download/">https://www.zotero.org/download/</a></p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230611143832252.png"></p>
+<h5 id="Zotero（iOS和iPadOS版）"><a href="#Zotero（iOS和iPadOS版）" class="headerlink" title="Zotero（iOS和iPadOS版）"></a>Zotero（iOS和iPadOS版）</h5><p>App Store 直接搜索下载即可。</p>
+<h5 id="Zoo-for-Zotero（安卓版）"><a href="#Zoo-for-Zotero（安卓版）" class="headerlink" title="Zoo for Zotero（安卓版）"></a>Zoo for Zotero（安卓版）</h5><p>Zoo for GitHub 网页：<a target="_blank" rel="noopener" href="https://github.com/mickstar/Zoo-For-Zotero">https://github.com/mickstar/Zoo-For-Zotero</a></p>
+<blockquote>
+<p>官方下载链接为Google Play，如果无法访问，可通过网盘下载：<a target="_blank" rel="noopener" href="https://rickyxcoder.lanzoul.com/ipZ0k0yv2yna">蓝奏云（提取码：f5mf）</a></p>
+</blockquote>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20230611145258199.png" alt="Zoo for Zotero用户界面"></p>
+<h2 id="🔍-文献检索"><a href="#🔍-文献检索" class="headerlink" title="🔍 文献检索"></a>🔍 文献检索</h2><h3 id="文献基础知识"><a href="#文献基础知识" class="headerlink" title="文献基础知识"></a>文献基础知识</h3><h4 id="优质好文"><a href="#优质好文" class="headerlink" title="优质好文"></a>优质好文</h4><ul>
+<li>为什么计算机学术界认可顶级会议论文，而其他领域几乎都是只认可顶级期刊？ - 游凯超的回答 - 知乎 <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/54142181/answer/2545936843">https://www.zhihu.com/question/54142181/answer/2545936843</a></li>
+<li>CCFrank：用于显示文章的CCF等级 - Chrome插件 <a target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/ccfrank/pfcajmbenomfbjnbjhgbnbdjmiklnkie">https://chromewebstore.google.com/detail/ccfrank/pfcajmbenomfbjnbjhgbnbdjmiklnkie</a></li>
+</ul>
+<h4 id="基本术语表"><a href="#基本术语表" class="headerlink" title="基本术语表"></a>基本术语表</h4><table>
+<thead>
+<tr>
+<th>术语</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>academia</td>
+<td></td>
+</tr>
+<tr>
+<td>Conference Paper</td>
+<td></td>
+</tr>
+<tr>
+<td>Conference Proceedings</td>
+<td></td>
+</tr>
+<tr>
+<td>rebuttal</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="计算机领域顶会"><a href="#计算机领域顶会" class="headerlink" title="计算机领域顶会"></a>计算机领域顶会</h3><table>
+<thead>
+<tr>
+<th>内容</th>
+<th>网站</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>会议评级与检索</td>
+<td>CCF</td>
+<td><a target="_blank" rel="noopener" href="https://ccfddl.top/">https://ccfddl.top/</a></td>
+</tr>
+<tr>
+<td>CCF会议评级</td>
+<td>CCF</td>
+<td><a target="_blank" rel="noopener" href="https://ccf.atom.im/">https://ccf.atom.im/</a></td>
+</tr>
+<tr>
+<td>会议查询</td>
+<td>DBLP</td>
+<td><a target="_blank" rel="noopener" href="https://dblp.org/db/conf/index.html">https://dblp.org/db/conf/index.html</a></td>
+</tr>
+</tbody></table>
+<h3 id="CCF-A"><a href="#CCF-A" class="headerlink" title="CCF-A"></a>CCF-A</h3><h4 id="NeurIPS"><a href="#NeurIPS" class="headerlink" title="NeurIPS"></a>NeurIPS</h4><h4 id="CVPR"><a href="#CVPR" class="headerlink" title="CVPR"></a>CVPR</h4><h4 id="ICML"><a href="#ICML" class="headerlink" title="ICML"></a>ICML</h4><h4 id="ICCV"><a href="#ICCV" class="headerlink" title="ICCV"></a>ICCV</h4><h4 id="AAAI"><a href="#AAAI" class="headerlink" title="AAAI"></a>AAAI</h4><table>
+<thead>
+<tr>
+<th>会议</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AAAI</td>
+<td><a target="_blank" rel="noopener" href="https://dblp.uni-trier.de/db/conf/aaai/index.html">https://dblp.uni-trier.de/db/conf/aaai/index.html</a></td>
+</tr>
+<tr>
+<td>AAAI 2024</td>
+<td><a target="_blank" rel="noopener" href="https://dblp.uni-trier.de/db/conf/aaai/aaai2024.html">https://dblp.uni-trier.de/db/conf/aaai/aaai2024.html</a></td>
+</tr>
+<tr>
+<td>AAAI 2023</td>
+<td><a target="_blank" rel="noopener" href="https://dblp.uni-trier.de/db/conf/aaai/aaai2023.html">https://dblp.uni-trier.de/db/conf/aaai/aaai2023.html</a></td>
+</tr>
+<tr>
+<td>AAAI 2022</td>
+<td><a target="_blank" rel="noopener" href="https://dblp.uni-trier.de/db/conf/aaai/aaai2022.html">https://dblp.uni-trier.de/db/conf/aaai/aaai2022.html</a></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>每个年份的论文可以用command + F按照「<strong>AAAI Technical Track</strong>」关键词搜索。‘</p>
+</blockquote>
+<h4 id="IJCAI"><a href="#IJCAI" class="headerlink" title="IJCAI"></a>IJCAI</h4><p>SIGKDD</p>
+<hr>
+<h3 id="CCF-B"><a href="#CCF-B" class="headerlink" title="CCF-B"></a>CCF-B</h3>
                 
             </div>
             <hr/>
