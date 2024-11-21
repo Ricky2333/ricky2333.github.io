@@ -242,6 +242,13 @@
       </li>
       
       <li>
+        <a href="/AcademicDL">
+          
+          <span>深度学习</span>
+        </a>
+      </li>
+      
+      <li>
         <a href="/Pytorch">
           
           <span>Pytorch</span>
@@ -405,6 +412,13 @@
         <a href="/co-study">
           
           <span>效率｜陪伴学习</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/advice">
+          
+          <span>提升｜经验分享</span>
         </a>
       </li>
       
@@ -599,6 +613,14 @@
               
                 <li>
 
+                  <a href="/AcademicDL " style="margin-left:75px">
+				  
+		          <span>深度学习</span>
+                  </a>
+                </li>
+              
+                <li>
+
                   <a href="/Pytorch " style="margin-left:75px">
 				  
 		          <span>Pytorch</span>
@@ -775,6 +797,14 @@
                   <a href="/co-study " style="margin-left:75px">
 				  
 		          <span>效率｜陪伴学习</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/advice " style="margin-left:75px">
+				  
+		          <span>提升｜经验分享</span>
                   </a>
                 </li>
               
@@ -1022,14 +1052,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
+                    2.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    11 分
                 </div>
                 
 
@@ -1163,7 +1193,7 @@ pip <span class="token function">install</span> opencv-python	<span class="token
 <blockquote>
 <p>至此，深度学习环境配置完成，即可开始炼丹之旅～</p>
 </blockquote>
-<h4 id="四、其他"><a href="#四、其他" class="headerlink" title="四、其他"></a>四、其他</h4><h5 id="网络设置代理"><a href="#网络设置代理" class="headerlink" title="网络设置代理"></a>网络设置代理</h5><p>服务器代理地址有时候会发生变更，可以按照以下步骤更换：</p>
+<h4 id="四、网络代理设置"><a href="#四、网络代理设置" class="headerlink" title="四、网络代理设置"></a>四、网络代理设置</h4><h5 id="网络设置代理"><a href="#网络设置代理" class="headerlink" title="网络设置代理"></a>网络设置代理</h5><p>服务器代理地址有时候会发生变更，可以按照以下步骤更换：</p>
 <p>用 <code>vim</code> 打开配置文件</p>
 <blockquote>
 <p>请务必在了解 <code>vim</code> 使用方式的情况下使用下面的命令！</p>
@@ -1180,9 +1210,26 @@ export all_proxy=socks5h://***<span aria-hidden="true" class="line-numbers-rows"
 
 
 
+<h5 id="外网访问"><a href="#外网访问" class="headerlink" title="外网访问"></a>外网访问</h5><ol>
+<li><strong>以MacBook为例，打开终端，查询本机当前的 Wi-Fi 接口 IP 地址：</strong></li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">ipconfig getifaddr en0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<blockquote>
+<p>或者在「系统偏好设置-网络」中查看。</p>
+</blockquote>
+<ol start="2">
+<li><strong>在本机代理软件「控制台-设置」中，打开「允许来自局域网的连接」，查看「混合代理端口」</strong></li>
+<li><strong>将地址和端口组合，得到 <code>***:***</code></strong></li>
+<li><strong>在服务器的终端中，运行以下命令</strong></li>
+</ol>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">http_proxy</span><span class="token operator">=</span>http://***:***
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">https_proxy</span><span class="token operator">=</span>http://****:***<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h5 id="matplotlib-显示中文字体"><a href="#matplotlib-显示中文字体" class="headerlink" title="matplotlib 显示中文字体"></a>matplotlib 显示中文字体</h5><p>Linux服务器下的解决方案</p>
+<ol start="5">
+<li><strong>使用完毕后，关闭本地代理软件中的「允许来自局域网的连接」（保障安全性）</strong></li>
+</ol>
+<h4 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h4><h5 id="matplotlib-显示中文字体"><a href="#matplotlib-显示中文字体" class="headerlink" title="matplotlib 显示中文字体"></a>matplotlib 显示中文字体</h5><p>Linux服务器下的解决方案</p>
 <ol>
 <li>使用命令 <code>pip install -U mplfonts</code> 安装 <code>mplfonts</code> 库。</li>
 <li>使用命令 <code>mplfonts init</code> 进行初始化配置。</li>
@@ -1660,7 +1707,82 @@ matplotlib<span class="token punctuation">.</span>rcParams<span class="token pun
 <p>每个年份的论文可以用command + F按照「<strong>AAAI Technical Track</strong>」关键词搜索。‘</p>
 </blockquote>
 <hr>
-<h3 id="CCF-B"><a href="#CCF-B" class="headerlink" title="CCF-B"></a>CCF-B</h3>
+<h3 id="CCF-B"><a href="#CCF-B" class="headerlink" title="CCF-B"></a>CCF-B</h3><h2 id="🍃-Overleaf"><a href="#🍃-Overleaf" class="headerlink" title="🍃 Overleaf"></a>🍃 Overleaf</h2><h3 id="Overleaf-文献引用"><a href="#Overleaf-文献引用" class="headerlink" title="Overleaf 文献引用"></a>Overleaf 文献引用</h3><pre class="line-numbers language-latex" data-language="latex"><code class="language-latex"><span class="token function selector">\bibliographystyle</span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">% 可选择引用样式</span>
+<span class="token function selector">\bibliography</span><span class="token punctuation">{</span>references.bib<span class="token punctuation">}</span> <span class="token comment">% 引用文献的文件名</span>
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://youtu.be/Q-ZAfCtJwh4?si=WO26CtOh_kylKvnq">https://youtu.be/Q-ZAfCtJwh4?si=WO26CtOh_kylKvnq</a></p>
+</blockquote>
+<h1 id="🤗-Hugging-Face"><a href="#🤗-Hugging-Face" class="headerlink" title="🤗 Hugging Face"></a>🤗 Hugging Face</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><strong>1. 启动conda环境<env_name></env_name></strong></p>
+<pre class="line-numbers language-pip" data-language="pip"><code class="language-pip">conda activate ***<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>2.下载 <code>transformers</code> 库</strong> </p>
+<pre class="line-numbers language-none"><code class="language-none">pip install transformers<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="换源-1"><a href="#换源-1" class="headerlink" title="换源"></a>换源</h3><p><strong>1. 安装依赖</strong></p>
+<pre class="line-numbers language-pip" data-language="pip"><code class="language-pip">pip install -U huggingface_hubCopy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>2. 设置环境变量</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">HF_ENDPOINT</span><span class="token operator">=</span>https://hf-mirror.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="pipeline示例"><a href="#pipeline示例" class="headerlink" title="pipeline示例"></a>pipeline示例</h3><p><a target="_blank" rel="noopener" href="https://huggingface.co/docs/transformers/en/main_classes/pipelines#transformers.pipeline">https://huggingface.co/docs/transformers/en/main_classes/pipelines#transformers.pipeline</a></p>
+<p>情感识别</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> transformers <span class="token keyword">import</span> pipeline
+
+<span class="token comment"># classifer = pipeline("sentiment-analysis")</span>
+classifer <span class="token operator">=</span> pipeline<span class="token punctuation">(</span><span class="token string">"sentiment-analysis"</span><span class="token punctuation">,</span> model<span class="token operator">=</span><span class="token string">"distilbert-base-uncased-finetuned-sst-2-english"</span><span class="token punctuation">)</span>
+
+sentences <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token string">"I love using Hugging Face!"</span><span class="token punctuation">,</span>
+    <span class="token string">"This is a terrible idea."</span><span class="token punctuation">,</span>
+    <span class="token string">"The weather today is amazing."</span><span class="token punctuation">,</span>
+    <span class="token string">"I'm not sure how I feel about this."</span>
+<span class="token punctuation">]</span>
+
+res <span class="token operator">=</span> classifer<span class="token punctuation">(</span>sentences<span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i<span class="token punctuation">,</span> sentence <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>sentences<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Sentence: </span><span class="token interpolation"><span class="token punctuation">{</span>sentence<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Result: </span><span class="token interpolation"><span class="token punctuation">{</span>res<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>文本生成</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> transformers <span class="token keyword">import</span> pipeline
+
+generator <span class="token operator">=</span> pipeline<span class="token punctuation">(</span><span class="token string">"text-generation"</span><span class="token punctuation">,</span> model<span class="token operator">=</span><span class="token string">'distilgpt2'</span><span class="token punctuation">)</span>
+
+sentence <span class="token operator">=</span> <span class="token string">"In this course, we will teach you how to"</span>
+
+results <span class="token operator">=</span> generator<span class="token punctuation">(</span>
+    sentence<span class="token punctuation">,</span>
+    max_length<span class="token operator">=</span><span class="token number">30</span><span class="token punctuation">,</span>
+    num_return_sequences<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Sentence: </span><span class="token interpolation"><span class="token punctuation">{</span>sentence<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i<span class="token punctuation">,</span> result <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>results<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">[</span><span class="token string">'generated_text'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>零样本预测</p>
+<pre class="line-numbers language-none"><code class="language-none">from transformers import pipeline
+
+classifier = pipeline("zero-shot-classification", model='facebook/bart-large-mnli')
+
+res = classifier(
+    "This is a course about Python list comprehension",
+    candidate_labels=["education", "politics", "business"]
+)
+
+print()
+print(res)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
                 
             </div>
             <hr/>
@@ -2200,7 +2322,7 @@ matplotlib<span class="token punctuation">.</span>rcParams<span class="token pun
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">308.2k</span>&nbsp;字
+                class="white-color">309.4k</span>&nbsp;字
             
             
             
