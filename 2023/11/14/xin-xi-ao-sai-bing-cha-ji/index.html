@@ -1111,14 +1111,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    784
+                    925
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -1293,6 +1293,27 @@
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>在基础模版上，添加 <code>输出当前所有集合</code> 的功能</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 存储当前已有集合至sets中</span>
+unordered_map<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;&gt;</span> sets<span class="token punctuation">;</span>  <span class="token comment">// 使用unordered_map存储</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">int</span> root <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  sets<span class="token punctuation">[</span>root<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 输出当前所有的集合</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">auto</span> <span class="token operator">&amp;</span>p<span class="token operator">:</span> sets<span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// 思考代码const auto &amp;p 与 auto p, auto &amp;p 的区别</span>
+  cout <span class="token operator">&lt;&lt;</span> <span class="token string">"当前的集合的代表元为："</span> <span class="token operator">&lt;&lt;</span> p<span class="token punctuation">.</span>first <span class="token operator">&lt;&lt;</span> <span class="token string">" ，共有 "</span> <span class="token operator">&lt;&lt;</span> p<span class="token punctuation">.</span>second<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" 个元素，元素为："</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">auto</span> t<span class="token operator">:</span> p<span class="token punctuation">.</span>second<span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> t <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+  cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
 
 <hr>
 <h2 id="刷题题单-🧑🏻‍💻"><a href="#刷题题单-🧑🏻‍💻" class="headerlink" title="刷题题单 🧑🏻‍💻"></a>刷题题单 🧑🏻‍💻</h2><p>刷题题单与相应题解请见博客：<a href="/2023/11/14/xin-xi-ao-sai-ti-dan-bing-cha-ji/">信息奥赛题单｜并查集🔗</a></p>
@@ -1901,7 +1922,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">310.1k</span>&nbsp;字
+                class="white-color">311.5k</span>&nbsp;字
             
             
             
