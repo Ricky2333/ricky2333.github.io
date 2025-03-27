@@ -209,28 +209,28 @@
       <li>
         <a href="/EngTOEFL">
           
-          <span>TOEFL</span>
+          <span>EN｜TOEFL经验</span>
         </a>
       </li>
       
       <li>
         <a href="/AcademicEnglish">
           
-          <span>学术英语</span>
+          <span>EN｜学术英语</span>
         </a>
       </li>
       
       <li>
         <a href="/EngGrammar">
           
-          <span>语法</span>
+          <span>EN｜英语语法</span>
         </a>
       </li>
       
       <li>
         <a href="/Japbasic">
           
-          <span>日本語入门</span>
+          <span>JP｜日语基础</span>
         </a>
       </li>
       
@@ -594,7 +594,7 @@
 
                   <a href="/EngTOEFL " style="margin-left:75px">
 				  
-		          <span>TOEFL</span>
+		          <span>EN｜TOEFL经验</span>
                   </a>
                 </li>
               
@@ -602,7 +602,7 @@
 
                   <a href="/AcademicEnglish " style="margin-left:75px">
 				  
-		          <span>学术英语</span>
+		          <span>EN｜学术英语</span>
                   </a>
                 </li>
               
@@ -610,7 +610,7 @@
 
                   <a href="/EngGrammar " style="margin-left:75px">
 				  
-		          <span>语法</span>
+		          <span>EN｜英语语法</span>
                   </a>
                 </li>
               
@@ -618,7 +618,7 @@
 
                   <a href="/Japbasic " style="margin-left:75px">
 				  
-		          <span>日本語入门</span>
+		          <span>JP｜日语基础</span>
                   </a>
                 </li>
               
@@ -1103,14 +1103,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    662
+                    806
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -1205,8 +1205,40 @@ tgxgdqkyjzhyputjjtllptdfxocrylqfqjynmfbfucbir<span aria-hidden="true" class="lin
     cout <span class="token operator">&lt;&lt;</span> ans <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>代码2</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">;</span>
+string s<span class="token punctuation">;</span>
+
+<span class="token comment">// 返回字符串s1和s2的重复元素个数</span>
+<span class="token keyword">int</span> <span class="token function">f</span><span class="token punctuation">(</span>string s1<span class="token punctuation">,</span> string s2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 将string转为集合</span>
+    set<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token operator">&gt;</span> <span class="token function">set1</span><span class="token punctuation">(</span>s1<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> s1<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    set<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token operator">&gt;</span> <span class="token function">set2</span><span class="token punctuation">(</span>s2<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> s2<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 统计两个集合的并集元素个数</span>
+    <span class="token keyword">int</span> cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">auto</span> t<span class="token operator">:</span> set1<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>set2<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span> <span class="token operator">!=</span> set2<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> cnt<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> cnt<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> s<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token comment">// 枚举所有分割的可能性，取最大值</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> <span class="token function">f</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">,</span> s<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> res <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
 <h3 id="【Python代码】"><a href="#【Python代码】" class="headerlink" title="【Python代码】"></a>【Python代码】</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 统计字符串s1和s2的共同字符数</span>
@@ -1842,7 +1874,7 @@ tgxgdqkyjzhyputjjtllptdfxocrylqfqjynmfbfucbir<span aria-hidden="true" class="lin
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">311.5k</span>&nbsp;字
+                class="white-color">311.7k</span>&nbsp;字
             
             
             
