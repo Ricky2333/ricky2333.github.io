@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky的朋友圈</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viewerjs@1.11.1/dist/viewer.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Ricky的朋友圈</h1>
+        <button id="add-moment-btn" class="add-btn">
+            <i class="fas fa-plus"></i>
+        </button>
+    </header>
+
+    <main class="moments-container" id="moments-container">
+        <!-- 动态将通过JS动态插入 -->
+    </main>
+
+    <div class="modal" id="moment-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>发布动态</h2>
+            <form id="moment-form">
+                <textarea id="moment-text" placeholder="分享你的想法..." rows="4"></textarea>
+                
+                <div class="image-upload">
+                    <label for="image-input" class="upload-btn">
+                        <i class="fas fa-image"></i> 添加图片 (0/9)
+                    </label>
+                    <input type="file" id="image-input" multiple accept="image/*">
+                    <div id="image-preview" class="image-preview"></div>
+                </div>
+                
+                <div class="location-input">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="location-input" placeholder="添加地点">
+                </div>
+                
+                <button type="submit" class="submit-btn">发布</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/viewerjs@1.11.1/dist/viewer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

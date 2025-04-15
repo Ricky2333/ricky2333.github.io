@@ -297,14 +297,28 @@
       <li>
         <a href="/AI-basics">
           
-          <span>大模型理论基础</span>
+          <span>AI-大模型</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/AI-theory">
+          
+          <span>AI-相关理论</span>
         </a>
       </li>
       
       <li>
         <a href="/AI-tools">
           
-          <span>AI实用工具</span>
+          <span>AI-实用工具</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/AI-news">
+          
+          <span>AI-好文收录</span>
         </a>
       </li>
       
@@ -688,7 +702,15 @@
 
                   <a href="/AI-basics " style="margin-left:75px">
 				  
-		          <span>大模型理论基础</span>
+		          <span>AI-大模型</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/AI-theory " style="margin-left:75px">
+				  
+		          <span>AI-相关理论</span>
                   </a>
                 </li>
               
@@ -696,7 +718,15 @@
 
                   <a href="/AI-tools " style="margin-left:75px">
 				  
-		          <span>AI实用工具</span>
+		          <span>AI-实用工具</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/AI-news " style="margin-left:75px">
+				  
+		          <span>AI-好文收录</span>
                   </a>
                 </li>
               
@@ -1086,14 +1116,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    7.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    31 分
                 </div>
                 
 
@@ -1116,7 +1146,70 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Ricky-の-大模型学习之路"><a href="#Ricky-の-大模型学习之路" class="headerlink" title="Ricky の 大模型学习之路"></a>Ricky の 大模型学习之路</h1><h2 id="微调"><a href="#微调" class="headerlink" title="微调"></a>微调</h2><h4 id="微调概念清单"><a href="#微调概念清单" class="headerlink" title="微调概念清单"></a>微调概念清单</h4><ul>
+                <h1 id="Ricky-の-大模型学习之路"><a href="#Ricky-の-大模型学习之路" class="headerlink" title="Ricky の 大模型学习之路"></a>Ricky の 大模型学习之路</h1><h2 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h2><h4 id="Tokens-与-Embeddings"><a href="#Tokens-与-Embeddings" class="headerlink" title="Tokens 与 Embeddings"></a>Tokens 与 Embeddings</h4><p>Tokens 与 Embeddings 的区别</p>
+<table>
+<thead>
+<tr>
+<th align="center">Concept</th>
+<th align="center">Tokens</th>
+<th align="center"><strong>Embeddings</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>What is it?</strong></td>
+<td align="center">A <strong>textual unit</strong> (like a word or subword)</td>
+<td align="center">A <strong>numerical vector</strong> that represents a token’s meaning</td>
+</tr>
+<tr>
+<td align="center"><strong>Data type</strong></td>
+<td align="center">Discrete integers (IDs)</td>
+<td align="center">Dense floating-point tensors</td>
+</tr>
+<tr>
+<td align="center"><strong>Example</strong></td>
+<td align="center"><code>"insulin"</code> → <code>2345</code> (token ID)</td>
+<td align="center"><code>[-0.01, 0.32, ..., 1.25]</code> (vector of 1024 floats)</td>
+</tr>
+<tr>
+<td align="center"><strong>Used for</strong></td>
+<td align="center">Input to the model (after tokenization)</td>
+<td align="center">Internal representation in the model</td>
+</tr>
+<tr>
+<td align="center"><strong>Reversible?</strong></td>
+<td align="center">✅ Can convert back to text via tokenizer</td>
+<td align="center">❌ Cannot easily recover original text from embedding</td>
+</tr>
+</tbody></table>
+<p>Text → Tokens → Embeddings 的可视化</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">  ┌──────────────────────────────────────────────┐
+  │ <span class="token string">"What condition is characterized by..."</span>      │  → text
+  └──────────────────────────────────────────────┘
+                        ↓
+                   Tokenization
+                        ↓
+┌────────────┬────────────┬────────────┬────────────┐
+│  <span class="token string">"What"</span>    │ <span class="token string">"condition"</span>│    <span class="token string">"is"</span>    │   <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>      │  → tokens
+└────────────┴────────────┴────────────┴────────────┘
+                        ↓
+           <span class="token punctuation">[</span><span class="token number">1023</span><span class="token punctuation">,</span> <span class="token number">5678</span><span class="token punctuation">,</span> <span class="token number">2345</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span>  → token IDs
+                        ↓
+              ┌───────────────────────┐
+              │    Language Model     │   →   Language Model
+              └───────────────────────┘
+                        ↓
+ ┌────────────────────────────────────────────────┐
+ │      last_hidden_state <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> seq_len<span class="token punctuation">,</span> <span class="token number">1024</span><span class="token punctuation">)</span>      │ → token embeddings
+ └────────────────────────────────────────────────┘
+                        ↓
+             Mean across tokens <span class="token punctuation">(</span>dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+                        ↓
+         ┌──────────────────────────────┐
+         │ Sentence Embedding <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1024</span><span class="token punctuation">)</span> │  → sentence embeddings
+         └──────────────────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="微调"><a href="#微调" class="headerlink" title="微调"></a>微调</h3><h4 id="微调概念清单"><a href="#微调概念清单" class="headerlink" title="微调概念清单"></a>微调概念清单</h4><ul>
 <li>为什么需要微调 ？✅（2025.3.11）</li>
 <li>微调的概念 ✅ （2025.3.11）</li>
 <li>微调的步骤 ✅ （2025.3.11）</li>
@@ -1170,7 +1263,7 @@
 <li><strong>数据需求</strong>：微调需要大量标注数据，数据不足时效果受限。</li>
 <li><strong>计算资源</strong>：大模型微调需要大量计算资源，尤其是全模型微调。</li>
 </ul>
-<h4 id="微调的相关术语"><a href="#微调的相关术语" class="headerlink" title="微调的相关术语"></a>微调的相关术语</h4><h3 id="微调（Fine-tuning）相关术语总结表"><a href="#微调（Fine-tuning）相关术语总结表" class="headerlink" title="微调（Fine-tuning）相关术语总结表"></a><strong>微调（Fine-tuning）相关术语总结表</strong></h3><table>
+<h4 id="微调（Fine-tuning）相关术语总结表"><a href="#微调（Fine-tuning）相关术语总结表" class="headerlink" title="微调（Fine-tuning）相关术语总结表"></a>微调（Fine-tuning）相关术语总结表</h4><table>
 <thead>
 <tr>
 <th align="center"><strong>中文术语</strong></th>
@@ -1329,7 +1422,1145 @@
 <td>使用 FP32 进行训练，计算精度高但显存占用大。</td>
 </tr>
 </tbody></table>
-<h2 id="学习材料清单"><a href="#学习材料清单" class="headerlink" title="学习材料清单"></a>学习材料清单</h2>
+<hr>
+<h2 id="Hugging-Face-实战"><a href="#Hugging-Face-实战" class="headerlink" title="Hugging Face 实战"></a>Hugging Face 实战</h2><h3 id="平台简介"><a href="#平台简介" class="headerlink" title="平台简介"></a>平台简介</h3><p><strong>Hugging Face</strong> 是一家专注于 <strong>自然语言处理（NLP）</strong> 和 <strong>人工智能模型开源与部署</strong> 的公司。</p>
+<p>它提供了：</p>
+<ul>
+<li>✅ 大量预训练模型（BERT、GPT、T5 等）</li>
+<li>✅ 一个统一的 Python 库（<code>transformers</code>）</li>
+<li>✅ 训练、微调、部署、分享模型的一整套工具</li>
+</ul>
+<p>Hugging Face 的 <strong>核心产品</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>🤗 transformers</strong></td>
+<td>一个强大易用的 Python 库，支持加载、使用、训练各种预训练 transformer 模型</td>
+</tr>
+<tr>
+<td><strong>🤗 Datasets</strong></td>
+<td>提供上千个标准数据集（如 SQuAD、SST-2、CoQA）</td>
+</tr>
+<tr>
+<td><strong>🤗 Hub</strong></td>
+<td>一个模型社区平台，你可以上传、下载别人训练好的模型</td>
+</tr>
+<tr>
+<td><strong>🤗 Spaces</strong></td>
+<td>免费托管和展示你的 AI 项目（支持 Gradio、Streamlit 等）</td>
+</tr>
+<tr>
+<td><strong>🤗 Auto Classes</strong></td>
+<td>提供统一的模型加载接口（如 <code>AutoTokenizer</code>, <code>AutoModel</code>）简化使用流程</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="模型下载"><a href="#模型下载" class="headerlink" title="模型下载"></a>模型下载</h3><p><strong><u>模型名称结构解析</u></strong></p>
+<table>
+<thead>
+<tr>
+<th>部分</th>
+<th>示例</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>组织名/作者</strong></td>
+<td><code>bert-base-uncased</code>（无组织）<br> <code>facebook/bart-large</code></td>
+<td>模型发布者，通常是作者、研究机构、公司等</td>
+</tr>
+<tr>
+<td><strong>模型架构</strong></td>
+<td><code>bert</code>, <code>roberta</code>, <code>gpt2</code>, <code>t5</code>, <code>llama</code>, <code>distilbert</code></td>
+<td>说明使用的 Transformer 架构类型</td>
+</tr>
+<tr>
+<td><strong>大小</strong></td>
+<td><code>base</code>, <code>large</code>, <code>small</code></td>
+<td>控制参数量和模型规模</td>
+</tr>
+<tr>
+<td><strong>大小写</strong></td>
+<td><code>cased</code> / <code>uncased</code></td>
+<td>英文是否区分大小写（如 Apple ≠ apple）</td>
+</tr>
+<tr>
+<td><strong>语言</strong></td>
+<td><code>english</code>, <code>chinese</code>, <code>multilingual</code></td>
+<td>支持的语言</td>
+</tr>
+<tr>
+<td><strong>训练任务 / 数据集</strong></td>
+<td><code>finetuned-sst-2</code>, <code>squad</code>, <code>cnn-dailymail</code></td>
+<td>说明是否在特定任务上微调过</td>
+</tr>
+<tr>
+<td><strong>特殊训练方法</strong></td>
+<td><code>wwm</code>, <code>whole-word-masking</code>, <code>ext</code>, <code>dapt</code>, <code>adapter</code></td>
+<td>特殊技术如全词掩码、扩展训练、适配器等</td>
+</tr>
+</tbody></table>
+<p><strong><u>常见命名实例解析</u></strong></p>
+<table>
+<thead>
+<tr>
+<th>模型名</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>bert-base-uncased</code></td>
+<td>Google 的基础版 BERT，不区分大小写，未微调</td>
+</tr>
+<tr>
+<td><code>google-bert/bert-large-cased-whole-word-masking</code></td>
+<td>更大、区分大小写、使用全词掩码的 BERT</td>
+</tr>
+<tr>
+<td><code>distilbert-base-uncased-finetuned-sst-2-english</code></td>
+<td>DistilBERT 模型，SST-2 上训练的英文情感分析模型</td>
+</tr>
+<tr>
+<td><code>facebook/bart-large-cnn</code></td>
+<td>Facebook 的 BART 模型，微调在 CNN 新闻摘要任务上</td>
+</tr>
+<tr>
+<td><code>google/flan-t5-xl</code></td>
+<td>Google 的 FLAN T5 模型，超大版，适合 zero-shot 多任务</td>
+</tr>
+<tr>
+<td><code>microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext</code></td>
+<td>微软训练的用于生物医学的 PubMed-BERT，专门处理论文摘要</td>
+</tr>
+</tbody></table>
+<p>当手动下载 Hugging Face 上的一个模型（比如 <code>bert-base-uncased</code>），<strong>最重要的文件</strong>有这几类：</p>
+<table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>作用</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>config.json</code></td>
+<td>模型结构配置（层数、隐藏维度、分类头等）</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>pytorch_model.bin</code></td>
+<td>模型的权重（PyTorch 格式）</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>tokenizer_config.json</code></td>
+<td>分词器的配置</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>vocab.txt</code> 或 <code>merges.txt</code> + <code>vocab.json</code></td>
+<td>词表（不同模型格式不同）</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>special_tokens_map.json</code></td>
+<td>特殊 token（如 <code>[CLS]</code>, <code>[SEP]</code>, <code>[MASK]</code>）的定义</td>
+<td>⚠️ 推荐</td>
+</tr>
+<tr>
+<td><code>tokenizer.json</code></td>
+<td>分词器的 fast version 文件</td>
+<td>⚠️ 推荐</td>
+</tr>
+<tr>
+<td><code>README.md</code></td>
+<td>模型说明文档</td>
+<td>❌ 可选</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="代码基础"><a href="#代码基础" class="headerlink" title="代码基础"></a>代码基础</h3><h4 id="transformer库"><a href="#transformer库" class="headerlink" title="transformer库"></a>transformer库</h4><p><code>transformer</code>库是 Hugging Face 出品的开源库，用于：</p>
+<ul>
+<li>下载和使用预训练模型（如 BERT, GPT, BioGPT, T5 等）</li>
+<li>快速进行文本分类、文本生成、问答、翻译、摘要等任务</li>
+<li>提供统一的 <strong>Tokenizer</strong>, <strong>Model</strong>, 和 <strong>Pipeline</strong> 接口</li>
+</ul>
+<h5 id="🗂️-transformer-核心组件"><a href="#🗂️-transformer-核心组件" class="headerlink" title="🗂️ transformer 核心组件"></a>🗂️ <code>transformer</code> 核心组件</h5><table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能简述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>AutoTokenizer</code> / <code>XXXTokenizer</code></td>
+<td>把文本转成 tokens 和 ids</td>
+</tr>
+<tr>
+<td><code>AutoModel</code> / <code>XXXModel</code></td>
+<td>返回隐藏状态（embeddings）</td>
+</tr>
+<tr>
+<td><code>AutoModelForCausalLM</code> / <code>XXXForCausalLM</code></td>
+<td>用于文本生成</td>
+</tr>
+<tr>
+<td><code>pipeline</code></td>
+<td>快速使用模型进行任务（如情感分析、QA）</td>
+</tr>
+</tbody></table>
+<h5 id="🧠-不同模型任务的选择"><a href="#🧠-不同模型任务的选择" class="headerlink" title="🧠 不同模型任务的选择"></a>🧠 不同模型任务的选择</h5><table>
+<thead>
+<tr>
+<th>任务</th>
+<th>模型类</th>
+<th>示例模型名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文本嵌入</td>
+<td><code>AutoModel</code></td>
+<td><code>bert-base-uncased</code></td>
+</tr>
+<tr>
+<td>文本分类</td>
+<td><code>AutoModelForSequenceClassification</code></td>
+<td><code>distilbert-base-uncased-finetuned-sst-2-english</code></td>
+</tr>
+<tr>
+<td>文本生成</td>
+<td><code>AutoModelForCausalLM</code></td>
+<td><code>gpt2</code>, <code>BioGPT</code></td>
+</tr>
+<tr>
+<td>问答系统</td>
+<td><code>AutoModelForQuestionAnswering</code></td>
+<td><code>distilbert-base-uncased-distilled-squad</code></td>
+</tr>
+<tr>
+<td>翻译</td>
+<td><code>AutoModelForSeq2SeqLM</code></td>
+<td><code>t5-small</code>, <code>facebook/mbart-large-50-many-to-many-mmt</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="pipeline-的使用"><a href="#pipeline-的使用" class="headerlink" title="pipeline 的使用"></a>pipeline 的使用</h4><hr>
+<h4 id="不同任务的简单示例"><a href="#不同任务的简单示例" class="headerlink" title="不同任务的简单示例"></a>不同任务的简单示例</h4><h5 id="📘-句子-x2F-文本嵌入（AutoModel）"><a href="#📘-句子-x2F-文本嵌入（AutoModel）" class="headerlink" title="📘 句子/文本嵌入（AutoModel）"></a>📘 <strong>句子/文本嵌入（<code>AutoModel</code>）</strong></h5><p><code>AutoModel</code> 只返回 <strong>hidden states</strong>，不包含分类头（不进行预测，<strong>只做特征提取</strong>）。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> torch
+<span class="token keyword">from</span> transformers <span class="token keyword">import</span> AutoTokenizer<span class="token punctuation">,</span> AutoModel
+
+<span class="token comment"># 加载本地保存的 DistilBERT 模型和分词器</span>
+model_path <span class="token operator">=</span> <span class="token string">'***/distilbert-base-uncased-finetuned-sst-2-english'</span>
+tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+model <span class="token operator">=</span> AutoModel<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+
+<span class="token comment"># 输入句子</span>
+text <span class="token operator">=</span> <span class="token string">"Transformers are powerful models for NLP."</span>
+
+<span class="token comment"># 使用分词器将句子转为模型输入张量</span>
+inputs <span class="token operator">=</span> tokenizer<span class="token punctuation">(</span>text<span class="token punctuation">,</span> return_tensors<span class="token operator">=</span><span class="token string">"pt"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 禁用梯度计算，执行前向传播</span>
+<span class="token keyword">with</span> torch<span class="token punctuation">.</span>no_grad<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    outputs <span class="token operator">=</span> model<span class="token punctuation">(</span><span class="token operator">**</span>inputs<span class="token punctuation">)</span>
+
+<span class="token comment"># 对所有 token 的隐藏状态做平均，得到句子级别的向量表示</span>
+sentence_embedding <span class="token operator">=</span> outputs<span class="token punctuation">.</span>last_hidden_state<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 打印Embedding的形状（应该是 [1, hidden_size]，如 [1, 768]）</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>sentence_embedding<span class="token punctuation">.</span>shape<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>torch.Size([1, 768])</p>
+</blockquote>
+<hr>
+<h5 id="🧾-文本生成（AutoModelForCausalLM）"><a href="#🧾-文本生成（AutoModelForCausalLM）" class="headerlink" title="🧾 文本生成（AutoModelForCausalLM）"></a>🧾 <strong>文本生成（<code>AutoModelForCausalLM</code>）</strong></h5><p><code>AutoModelForCausalLM</code> 是 Hugging Face 的自动模型加载器的一种，用于加载 <strong>因果语言建模（Causal Language Modeling）</strong> 的模型。该模型用于「给定前文，预测下一个词（token）」的场景。</p>
+<blockquote>
+<p>🧠 “Causal LM” 是什么意思？</p>
+<p><strong>Causal = 因果性</strong>：只能看到“过去”的词，不能看到未来的词。</p>
+<p>训练目标：预测当前 token 只依赖于它左边（前面的）token。</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> transformers <span class="token keyword">import</span> AutoTokenizer<span class="token punctuation">,</span> AutoModelForCausalLM
+
+<span class="token comment"># Load GPT-2 tokenizer and model (causal language model)</span>
+model_path <span class="token operator">=</span> <span class="token string">'***/gpt2'</span>
+tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+model <span class="token operator">=</span> AutoModelForCausalLM<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+
+<span class="token comment"># Define prompt for text generation</span>
+prompt <span class="token operator">=</span> <span class="token string">"The future of medicine is"</span>
+
+<span class="token comment"># Tokenize input (returns dictionary with input_ids and attention_mask)</span>
+inputs <span class="token operator">=</span> tokenizer<span class="token punctuation">(</span>prompt<span class="token punctuation">,</span> return_tensors<span class="token operator">=</span><span class="token string">"pt"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Generate text using sampling method</span>
+output_ids <span class="token operator">=</span> model<span class="token punctuation">.</span>generate<span class="token punctuation">(</span>
+    <span class="token operator">**</span>inputs<span class="token punctuation">,</span>  <span class="token comment"># Unpack tokenized inputs</span>
+    max_length<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span>  <span class="token comment"># Maximum total tokens (input + generated)</span>
+    do_sample<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>  <span class="token comment"># Enable probabilistic sampling</span>
+    top_k<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span>  <span class="token comment"># Consider top 50 probable tokens at each step</span>
+    top_p<span class="token operator">=</span><span class="token number">0.9</span><span class="token punctuation">,</span>  <span class="token comment"># Nucleus sampling: choose from top tokens covering 90% probability mass</span>
+    temperature<span class="token operator">=</span><span class="token number">0.9</span><span class="token punctuation">,</span>  <span class="token comment"># Lower = more predictable, higher = more creative</span>
+    pad_token_id<span class="token operator">=</span>tokenizer<span class="token punctuation">.</span>eos_token_id  <span class="token comment"># Use EOS token for padding</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment"># Decode generated token IDs to text</span>
+generated_text <span class="token operator">=</span> tokenizer<span class="token punctuation">.</span>decode<span class="token punctuation">(</span>output_ids<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> skip_special_tokens<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>generated_text<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>tensor([[  464,  2003,   286,  9007,   318,   284,  1064,   649, 23533,    11,<br>           475,   340,   468,   257,   890,   835,   284,   467,   878,   326,<br>          4325,    13,   198,   198,   464,   717,  1688,  8668,  4473,   319,<br>           428,  1808,   373,  5952,   287,   262,  3095,    12, 23664,    82,<br>            11,   475,   340,   373,   407,   257,  1688,  1943,    13,   198]])<br>The future of medicine is to find new medicines, but it has a long way to go before that happens.</p>
+<p>The first major clinical trial on this question was conducted in the mid-1980s, but it was not a major success.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>**inputs</code></td>
+<td>dict</td>
+<td>传入经过分词器编码后的输入（如 <code>input_ids</code>、<code>attention_mask</code>）</td>
+</tr>
+<tr>
+<td><code>max_length</code></td>
+<td>int</td>
+<td>最多生成 <code>max_length</code> 个 token 的文本</td>
+</tr>
+<tr>
+<td><code>do_sample</code></td>
+<td>bool</td>
+<td>是否启用采样策略（True 表示每一步不只选最可能的词，而是根据概率分布采样）</td>
+</tr>
+<tr>
+<td><code>top_k</code></td>
+<td>int</td>
+<td>每一步只从概率最高的前 K 个词中进行采样，限制采样范围，避免奇怪的词被选中</td>
+</tr>
+<tr>
+<td><code>top_p</code></td>
+<td>float (0-1)</td>
+<td>核采样（nucleus sampling）：只从累计概率达到 p 的前几个词中采样，动态选择候选词数量</td>
+</tr>
+<tr>
+<td><code>temperature</code></td>
+<td>float (&gt;0)</td>
+<td>控制输出的“创造性”：越低越保守（趋近确定性），越高越发散（趋近随机）</td>
+</tr>
+<tr>
+<td><code>pad_token_id</code></td>
+<td>int</td>
+<td>填充 token 的 ID（用于对齐长度），这里设为模型的终止符号（EOS）ID，避免报错</td>
+</tr>
+</tbody></table>
+<hr>
+<h5 id="📊-文本分类（AutoModelForSequenceClassification）"><a href="#📊-文本分类（AutoModelForSequenceClassification）" class="headerlink" title="📊 文本分类（AutoModelForSequenceClassification）"></a>📊 <strong>文本分类（<code>AutoModelForSequenceClassification</code>）</strong></h5><p><code>AutoModelForSequenceClassification</code> 是 Hugging Face Transformers 库中的一个通用模型接口，用于<strong>加载和使用预训练的文本分类模型</strong>。</p>
+<p>它是在一个基础模型（比如 BERT、RoBERTa、DistilBERT 等）后面<strong>加了一个分类头</strong>（通常是一个线性层 + Softmax）：</p>
+<pre class="line-numbers language-none"><code class="language-none">Text → Tokenizer → Transformer Encoder (BERT) → [CLS] → Linear Layer → 分类概率<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>最终输出是：</p>
+<pre class="line-numbers language-none"><code class="language-none">outputs.logits  # shape = (batch_size, num_labels)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>✅ 适用任务类型</p>
+<table>
+<thead>
+<tr>
+<th>任务类型</th>
+<th>示例输入</th>
+<th>示例输出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>二分类（情感分析）</td>
+<td>“I love this product.”</td>
+<td>[Negative, ✅Positive]</td>
+</tr>
+<tr>
+<td>多分类（意图识别）</td>
+<td>“Book a flight to Tokyo tomorrow.”</td>
+<td>[weather, ✅booking, cancel]</td>
+</tr>
+<tr>
+<td>文档分类</td>
+<td>一篇完整文章</td>
+<td>[sport, politics, tech]</td>
+</tr>
+</tbody></table>
+<p>示例代码</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> torch
+<span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn<span class="token punctuation">.</span>functional <span class="token keyword">as</span> F
+<span class="token keyword">from</span> transformers <span class="token keyword">import</span> AutoTokenizer<span class="token punctuation">,</span> AutoModelForSequenceClassification
+
+<span class="token comment"># ==== 1. 加载本地模型和分词器 ====</span>
+model_path <span class="token operator">=</span> <span class="token string">'***/distilbert-base-uncased-finetuned-sst-2-english'</span>
+tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+model <span class="token operator">=</span> AutoModelForSequenceClassification<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+
+<span class="token comment"># ==== 2. 输入文本 ====</span>
+text <span class="token operator">=</span> <span class="token string">"Clannad is the best anime I have ever seen."</span>  
+<span class="token comment"># 将文本编码为模型输入（包含 input_ids 和 attention_mask）</span>
+inputs <span class="token operator">=</span> tokenizer<span class="token punctuation">(</span>text<span class="token punctuation">,</span> return_tensors<span class="token operator">=</span><span class="token string">"pt"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># ==== 3. 前向传播并计算概率 ====</span>
+<span class="token keyword">with</span> torch<span class="token punctuation">.</span>no_grad<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 禁用梯度，节省内存，仅推理</span>
+    outputs <span class="token operator">=</span> model<span class="token punctuation">(</span><span class="token operator">**</span>inputs<span class="token punctuation">)</span>        <span class="token comment"># 输出包含 logits（原始分数）</span>
+    logits <span class="token operator">=</span> outputs<span class="token punctuation">.</span>logits          <span class="token comment"># logits 形状: (1, 2)，表示对两个标签的评分</span>
+    probabilities <span class="token operator">=</span> F<span class="token punctuation">.</span>softmax<span class="token punctuation">(</span>logits<span class="token punctuation">,</span> dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>  <span class="token comment"># 使用 softmax 转为概率分布</span>
+
+<span class="token comment"># ==== 4. 获取预测类别 ====</span>
+predicted_class <span class="token operator">=</span> torch<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>probabilities<span class="token punctuation">,</span> dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>item<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 获取最大概率对应的索引</span>
+labels <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Negative"</span><span class="token punctuation">,</span> <span class="token string">"Positive"</span><span class="token punctuation">]</span>  <span class="token comment"># SST-2 数据集的两个标签</span>
+
+<span class="token comment"># ==== 5. 打印输出结果 ====</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n=== 原始模型输出 ==="</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>outputs<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n=== Logits（未归一化分数）==="</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>logits<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n=== 概率分布（Softmax 之后）==="</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>probabilities<span class="token punctuation">)</span>
+
+<span class="token comment"># 打印最终预测标签与概率</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"\n✅ 预测情感类别: </span><span class="token interpolation"><span class="token punctuation">{</span>labels<span class="token punctuation">[</span>predicted_class<span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string"> (</span><span class="token interpolation"><span class="token punctuation">{</span>probabilities<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span>predicted_class<span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token format-spec">.4f</span><span class="token punctuation">}</span></span><span class="token string">)"</span></span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>=== Raw model outputs ===<br>SequenceClassifierOutput(loss=None, logits=tensor([[-4.2006,  4.5068]]), hidden_states=None, attentions=None)</p>
+<p>=== Logits (unnormalized scores) ===<br>tensor([[-4.2006,  4.5068]])</p>
+<p>=== Probabilities (after softmax) ===<br>tensor([[1.6534e-04, 9.9983e-01]])</p>
+<p>✅ Predicted class: Positive (0.9998)</p>
+</blockquote>
+<hr>
+<h5 id="❓问答系统（AutoModelForQuestionAnswering）"><a href="#❓问答系统（AutoModelForQuestionAnswering）" class="headerlink" title="❓问答系统（AutoModelForQuestionAnswering）"></a>❓<strong>问答系统（<code>AutoModelForQuestionAnswering</code>）</strong></h5><p><code>AutoModelForQuestionAnswering</code> 是 Hugging Face 提供的自动加载接口，用于构建 <strong>提取式问答系统</strong>。</p>
+<blockquote>
+<p><strong>提取式问答系统</strong>：给定一个<strong>问题</strong>和一个<strong>上下文段落</strong>，模型从段落中<strong>提取出一个连续的答案片段</strong>。</p>
+<p><strong>输入：</strong></p>
+<p>上下文（context）：”The heart pumps blood through the body using rhythmic contractions.”</p>
+<p>问题（question）：”What does the heart do?”</p>
+<p><strong>模型输出：</strong>“pumps blood through the body”</p>
+</blockquote>
+<p>此类模型基于 BERT、RoBERTa 等 Transformer 架构，模型学习为每个 token 预测两个分数：</p>
+<ul>
+<li><strong>Start score</strong>：答案起始位置的概率</li>
+<li><strong>End score</strong>：答案结束位置的概率</li>
+</ul>
+<p>最终选择：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">start_index <span class="token operator">=</span> argmax<span class="token punctuation">(</span>start_scores<span class="token punctuation">)</span>
+end_index <span class="token operator">=</span> argmax<span class="token punctuation">(</span>end_scores<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>所以：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">answer <span class="token operator">=</span> context_tokens<span class="token punctuation">[</span>start_index <span class="token punctuation">:</span> end_index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>示例代码</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> torch
+<span class="token keyword">from</span> transformers <span class="token keyword">import</span> AutoTokenizer<span class="token punctuation">,</span> AutoModelForQuestionAnswering
+
+<span class="token comment"># ========== 1. 加载模型与分词器 ==========</span>
+model_path <span class="token operator">=</span> <span class="token string">"***/distilbert-base-cased-distilled-squad"</span>
+tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+model <span class="token operator">=</span> AutoModelForQuestionAnswering<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+
+<span class="token comment"># ========== 2. 输入问题与上下文 ==========</span>
+question <span class="token operator">=</span> <span class="token string">"What does NLP stand for?"</span>
+context <span class="token operator">=</span> <span class="token string">"NLP stands for Natural Language Processing, a subfield of artificial intelligence."</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n=== 原始输入 ==="</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"📌 Question:"</span><span class="token punctuation">,</span> question<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"📄 Context:"</span><span class="token punctuation">,</span> context<span class="token punctuation">)</span>
+
+<span class="token comment"># 编码输入</span>
+inputs <span class="token operator">=</span> tokenizer<span class="token punctuation">(</span>question<span class="token punctuation">,</span> context<span class="token punctuation">,</span> return_tensors<span class="token operator">=</span><span class="token string">"pt"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 打印编码后的输入</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n=== Tokenizer 编码结果 ==="</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"🧾 input_ids:"</span><span class="token punctuation">,</span> inputs<span class="token punctuation">[</span><span class="token string">"input_ids"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"🧠 tokens:"</span><span class="token punctuation">,</span> tokenizer<span class="token punctuation">.</span>convert_ids_to_tokens<span class="token punctuation">(</span>inputs<span class="token punctuation">[</span><span class="token string">"input_ids"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"📊 attention_mask:"</span><span class="token punctuation">,</span> inputs<span class="token punctuation">[</span><span class="token string">"attention_mask"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># ========== 3. 模型推理 ==========</span>
+<span class="token keyword">with</span> torch<span class="token punctuation">.</span>no_grad<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    outputs <span class="token operator">=</span> model<span class="token punctuation">(</span><span class="token operator">**</span>inputs<span class="token punctuation">)</span>
+
+<span class="token comment"># ========== 4. 查看 logits ==========</span>
+start_logits <span class="token operator">=</span> outputs<span class="token punctuation">.</span>start_logits
+end_logits <span class="token operator">=</span> outputs<span class="token punctuation">.</span>end_logits
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n=== 模型输出分数（logits） ==="</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"🚩 start_logits:"</span><span class="token punctuation">,</span> start_logits<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"🏁 end_logits:"</span><span class="token punctuation">,</span> end_logits<span class="token punctuation">)</span>
+
+<span class="token comment"># ========== 5. 计算起止位置 ==========</span>
+start_idx <span class="token operator">=</span> torch<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>start_logits<span class="token punctuation">,</span> dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>item<span class="token punctuation">(</span><span class="token punctuation">)</span>
+end_idx <span class="token operator">=</span> torch<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>end_logits<span class="token punctuation">,</span> dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>item<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"\n📍 预测的起始位置: </span><span class="token interpolation"><span class="token punctuation">{</span>start_idx<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"📍 预测的结束位置: </span><span class="token interpolation"><span class="token punctuation">{</span>end_idx<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># ========== 6. 解码答案 ==========</span>
+<span class="token keyword">if</span> start_idx <span class="token operator">&gt;</span> end_idx<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"⚠️ 起始位置大于结束位置，答案无效。"</span><span class="token punctuation">)</span>
+    answer <span class="token operator">=</span> <span class="token string">"[Invalid prediction]"</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    tokens <span class="token operator">=</span> tokenizer<span class="token punctuation">.</span>convert_ids_to_tokens<span class="token punctuation">(</span>inputs<span class="token punctuation">[</span><span class="token string">"input_ids"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span>start_idx<span class="token punctuation">:</span>end_idx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"🔍 答案相关 tokens:"</span><span class="token punctuation">,</span> tokens<span class="token punctuation">)</span>
+    answer <span class="token operator">=</span> tokenizer<span class="token punctuation">.</span>convert_tokens_to_string<span class="token punctuation">(</span>tokens<span class="token punctuation">)</span>
+
+<span class="token comment"># ========== 7. 输出最终结果 ==========</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n✅ 最终预测答案:"</span><span class="token punctuation">,</span> answer<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>示例输出</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">
+=== 原始输入 ===
+📌 Question: What does NLP stand for?
+📄 Context: NLP stands for Natural Language Processing, a subfield of artificial intelligence.
+
+=== Tokenizer 编码结果 ===
+🧾 input_ids: tensor([[  101,  1327,  1674, 21239,  2101,  2484,  1111,   136,   102, 21239,
+          2101,  4061,  1111,  6240,  6828, 18821,  1158,   117,   170,  4841,
+          2427,  1104,  8246,  4810,   119,   102]])
+🧠 tokens: ['[CLS]', 'What', 'does', 'NL', '##P', 'stand', 'for', '?', '[SEP]', 'NL', '##P', 'stands', 'for', 'Natural', 'Language', 'Process', '##ing', ',', 'a', 'sub', '##field', 'of', 'artificial', 'intelligence', '.', '[SEP]']
+📊 attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1]])
+
+=== 模型输出分数（logits） ===
+🚩 start_logits: tensor([[-2.3248e+00, -2.4476e+00, -3.1210e+00, -2.7561e+00, -4.8028e+00,
+         -4.4546e+00, -5.1295e+00, -2.0812e+00,  1.0627e-02,  3.7939e+00,
+         -1.8733e+00, -1.1664e+00, -1.4235e+00,  1.1914e+01,  2.4047e+00,
+          2.3639e+00,  4.6805e-01, -1.6326e+00,  1.9572e+00,  1.0077e+00,
+         -2.5621e+00, -3.3284e+00,  3.0263e+00, -1.2865e+00, -2.7076e+00,
+          1.0653e-02]])
+🏁 end_logits: tensor([[-0.8734, -2.4869, -3.9640, -4.1681, -3.1094, -4.6843, -4.2300, -2.2853,
+          0.8502, -2.0429,  0.0950, -2.6078, -2.2444,  4.0181,  5.2197,  2.5751,
+         11.4774,  5.3121, -2.4660, -3.0402,  0.7667, -4.4215, -1.3441,  4.3169,
+          4.8004,  0.8503]])
+
+📍 预测的起始位置: 13
+📍 预测的结束位置: 16
+🔍 答案相关 tokens: ['Natural', 'Language', 'Process', '##ing']
+
+✅ 最终预测答案: Natural Language Processing<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>🔴 PS：<code>AutoModelForQuestionAnswering</code> 仅用于构建 <strong>提取式问答系统</strong>，不包含其他类型的问答）</p>
+<blockquote>
+<p><strong><u>拓展：问答系统的若干种范式</u></strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th align="left">是否需要上下文</th>
+<th align="left">答案来源</th>
+<th align="left">典型模型</th>
+<th align="left">适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">抽取式QA</td>
+<td align="left">是</td>
+<td align="left">上下文片段</td>
+<td align="left">BERT, RoBERTa</td>
+<td align="left">文档阅读理解</td>
+</tr>
+<tr>
+<td align="left">生成式QA</td>
+<td align="left">可选</td>
+<td align="left">模型生成</td>
+<td align="left">T5, GPT</td>
+<td align="left">开放域问答</td>
+</tr>
+<tr>
+<td align="left">多选QA</td>
+<td align="left">是</td>
+<td align="left">给定选项</td>
+<td align="left">BERT, XLNet</td>
+<td align="left">考试系统</td>
+</tr>
+<tr>
+<td align="left">开放域QA</td>
+<td align="left">否</td>
+<td align="left">知识库/模型</td>
+<td align="left">DPR + BERT</td>
+<td align="left">智能助手</td>
+</tr>
+<tr>
+<td align="left">视觉QA</td>
+<td align="left">是（图片）</td>
+<td align="left">图片内容</td>
+<td align="left">ViLBERT, CLIP</td>
+<td align="left">图像理解</td>
+</tr>
+<tr>
+<td align="left">表格QA</td>
+<td align="left">是（表格）</td>
+<td align="left">表格数据</td>
+<td align="left">TAPAS</td>
+<td align="left">结构化数据查询</td>
+</tr>
+</tbody></table>
+<p><strong><u>对比表：提取式问答 vs Zero-shot 问答</u></strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>提取式问答（Extractive QA）</th>
+<th>Zero-shot 问答（Zero-shot QA）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>定义</strong></td>
+<td>从<strong>提供的上下文段落</strong>中提取一个连续的答案</td>
+<td>不依赖于提供上下文，直接基于预训练知识生成答案</td>
+</tr>
+<tr>
+<td><strong>依赖上下文</strong></td>
+<td>✅ 必须有上下文</td>
+<td>❌ 可没有上下文</td>
+</tr>
+<tr>
+<td><strong>模型训练</strong></td>
+<td>需要在问答数据集（如 SQuAD）上进行 fine-tune</td>
+<td>通常基于大型语言模型（如 GPT-3、T5），无需特定 QA 微调</td>
+</tr>
+<tr>
+<td><strong>输出形式</strong></td>
+<td>通常是段落中的子字符串</td>
+<td>模型生成的自由形式答案</td>
+</tr>
+<tr>
+<td><strong>模型接口</strong></td>
+<td><code>AutoModelForQuestionAnswering</code></td>
+<td><code>AutoModelForSeq2SeqLM</code> / <code>AutoModelForCausalLM</code></td>
+</tr>
+<tr>
+<td><strong>示例模型</strong></td>
+<td>BERT QA, RoBERTa QA, ALBERT QA</td>
+<td>GPT-3, T5, FLAN-T5, BioGPT</td>
+</tr>
+</tbody></table>
+<p><u><strong>各类问答的具体介绍：</strong></u></p>
+<p>1.<strong>抽取式问答（Extractive QA）</strong></p>
+<ul>
+<li><p><strong>特点</strong>：从给定的文本中直接抽取答案片段（span）。</p>
+</li>
+<li><p><strong>模型示例</strong>：BERT、RoBERTa、DistilBERT。</p>
+</li>
+<li><p><strong>输入输出</strong>：</p>
+<ul>
+<li>输入：问题 + 上下文（context）</li>
+<li>输出：答案在上下文中的起始和结束位置（字符或token索引）</li>
+</ul>
+</li>
+<li><p><strong>代码示例</strong>：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> transformers <span class="token keyword">import</span> pipeline
+qa_pipeline <span class="token operator">=</span> pipeline<span class="token punctuation">(</span><span class="token string">"question-answering"</span><span class="token punctuation">,</span> model<span class="token operator">=</span><span class="token string">"bert-large-uncased-whole-word-masking-finetuned-squad"</span><span class="token punctuation">)</span>
+result <span class="token operator">=</span> qa_pipeline<span class="token punctuation">(</span>
+    question<span class="token operator">=</span><span class="token string">"What is the capital of France?"</span><span class="token punctuation">,</span>
+    context<span class="token operator">=</span><span class="token string">"France is a country in Europe. Its capital is Paris."</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>  <span class="token comment"># 输出：{'answer': 'Paris', 'score': 0.98, ...}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>应用场景</strong>：阅读理解、文档检索（如SQuAD数据集）。</p>
+</li>
+</ul>
+<hr>
+<ol start="2">
+<li><strong>生成式问答（Generative QA）</strong></li>
+</ol>
+<ul>
+<li><p><strong>特点</strong>：模型根据问题生成自由文本答案（无需依赖上下文中的原句）。</p>
+</li>
+<li><p><strong>模型示例</strong>：T5、GPT-3、BART。</p>
+</li>
+<li><p><strong>输入输出</strong>：</p>
+<ul>
+<li>输入：问题（+ 可选的上下文）</li>
+<li>输出：生成的答案文本</li>
+</ul>
+</li>
+<li><p><strong>代码示例</strong>：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> transformers <span class="token keyword">import</span> pipeline
+generator <span class="token operator">=</span> pipeline<span class="token punctuation">(</span><span class="token string">"text2text-generation"</span><span class="token punctuation">,</span> model<span class="token operator">=</span><span class="token string">"t5-small"</span><span class="token punctuation">)</span>
+answer <span class="token operator">=</span> generator<span class="token punctuation">(</span>
+    <span class="token string">"question: What is the capital of France? context: France is a country in Europe."</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>answer<span class="token punctuation">)</span>  <span class="token comment"># 输出：[{'generated_text': 'Paris'}]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>应用场景</strong>：开放域问答、聊天机器人。</p>
+</li>
+</ul>
+<hr>
+<ol start="3">
+<li><strong>多选问答（Multiple-Choice QA）</strong></li>
+</ol>
+<ul>
+<li><p><strong>特点</strong>：从给定的选项中选择正确答案。</p>
+</li>
+<li><p><strong>模型示例</strong>：BERT、XLNet。</p>
+</li>
+<li><p><strong>输入输出</strong>：</p>
+<ul>
+<li>输入：问题 + 上下文 + 候选选项</li>
+<li>输出：选项标签（如A/B/C/D）或置信度分数</li>
+</ul>
+</li>
+<li><p><strong>代码示例</strong>：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> transformers <span class="token keyword">import</span> AutoModelForMultipleChoice<span class="token punctuation">,</span> AutoTokenizer
+model <span class="token operator">=</span> AutoModelForMultipleChoice<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">"bert-base-uncased"</span><span class="token punctuation">)</span>
+tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">"bert-base-uncased"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 问题与选项</span>
+question <span class="token operator">=</span> <span class="token string">"What is the capital of France?"</span>
+options <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"London"</span><span class="token punctuation">,</span> <span class="token string">"Berlin"</span><span class="token punctuation">,</span> <span class="token string">"Paris"</span><span class="token punctuation">,</span> <span class="token string">"Madrid"</span><span class="token punctuation">]</span>
+
+<span class="token comment"># 对每个选项编码并计算分数</span>
+inputs <span class="token operator">=</span> <span class="token punctuation">[</span>tokenizer<span class="token punctuation">(</span>question<span class="token punctuation">,</span> opt<span class="token punctuation">,</span> return_tensors<span class="token operator">=</span><span class="token string">"pt"</span><span class="token punctuation">)</span> <span class="token keyword">for</span> opt <span class="token keyword">in</span> options<span class="token punctuation">]</span>
+outputs <span class="token operator">=</span> <span class="token punctuation">[</span>model<span class="token punctuation">(</span><span class="token operator">**</span><span class="token builtin">input</span><span class="token punctuation">)</span><span class="token punctuation">.</span>logits <span class="token keyword">for</span> <span class="token builtin">input</span> <span class="token keyword">in</span> inputs<span class="token punctuation">]</span>
+best_answer <span class="token operator">=</span> options<span class="token punctuation">[</span>torch<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>outputs<span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>best_answer<span class="token punctuation">)</span>  <span class="token comment"># 输出：Paris</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>应用场景</strong>：考试系统、标准化测试。</p>
+</li>
+</ul>
+<hr>
+<ol start="4">
+<li><strong>开放域问答（Open-Domain QA）</strong></li>
+</ol>
+<ul>
+<li><p><strong>特点</strong>：无需提供上下文，直接从知识库或模型参数中检索答案。</p>
+</li>
+<li><p><strong>技术组合</strong>：</p>
+<ul>
+<li>检索器（如DPR） + 阅读器（如BERT）</li>
+<li>纯生成式模型（如GPT-3）</li>
+</ul>
+</li>
+<li><p><strong>代码示例</strong>（检索+生成结合）：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 使用Haystack框架（基于检索的QA）</span>
+<span class="token keyword">from</span> haystack <span class="token keyword">import</span> Pipeline
+<span class="token keyword">from</span> haystack<span class="token punctuation">.</span>nodes <span class="token keyword">import</span> BM25Retriever<span class="token punctuation">,</span> FARMReader
+
+retriever <span class="token operator">=</span> BM25Retriever<span class="token punctuation">(</span>document_store<span class="token operator">=</span>my_document_store<span class="token punctuation">)</span>
+reader <span class="token operator">=</span> FARMReader<span class="token punctuation">(</span>model_name<span class="token operator">=</span><span class="token string">"deepset/bert-base-cased-squad2"</span><span class="token punctuation">)</span>
+pipeline <span class="token operator">=</span> Pipeline<span class="token punctuation">(</span><span class="token punctuation">)</span>
+pipeline<span class="token punctuation">.</span>add_node<span class="token punctuation">(</span>component<span class="token operator">=</span>retriever<span class="token punctuation">,</span> name<span class="token operator">=</span><span class="token string">"Retriever"</span><span class="token punctuation">,</span> inputs<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"Query"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+pipeline<span class="token punctuation">.</span>add_node<span class="token punctuation">(</span>component<span class="token operator">=</span>reader<span class="token punctuation">,</span> name<span class="token operator">=</span><span class="token string">"Reader"</span><span class="token punctuation">,</span> inputs<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"Retriever"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+result <span class="token operator">=</span> pipeline<span class="token punctuation">.</span>run<span class="token punctuation">(</span>query<span class="token operator">=</span><span class="token string">"What is the capital of France?"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>应用场景</strong>：智能助手（如Alexa、Siri）。</p>
+</li>
+</ul>
+<hr>
+<ol start="5">
+<li><strong>视觉问答（Visual QA, VQA）</strong></li>
+</ol>
+<ul>
+<li><p><strong>特点</strong>：基于图像内容回答问题。</p>
+</li>
+<li><p><strong>模型示例</strong>：ViLBERT、CLIP、BLIP。</p>
+</li>
+<li><p><strong>输入输出</strong>：</p>
+<ul>
+<li>输入：图片 + 问题</li>
+<li>输出：文本答案</li>
+</ul>
+</li>
+<li><p><strong>代码示例</strong>：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> transformers <span class="token keyword">import</span> pipeline
+vqa_pipeline <span class="token operator">=</span> pipeline<span class="token punctuation">(</span><span class="token string">"visual-question-answering"</span><span class="token punctuation">,</span> model<span class="token operator">=</span><span class="token string">"dandelin/vilt-b32-finetuned-vqa"</span><span class="token punctuation">)</span>
+answer <span class="token operator">=</span> vqa_pipeline<span class="token punctuation">(</span>
+    image<span class="token operator">=</span><span class="token string">"paris.jpg"</span><span class="token punctuation">,</span>
+    question<span class="token operator">=</span><span class="token string">"What is in the center of the image?"</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>answer<span class="token punctuation">)</span>  <span class="token comment"># 输出：{'answer': 'Eiffel Tower'}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>应用场景</strong>：图像理解、盲人辅助工具。</p>
+</li>
+</ul>
+<hr>
+<ol start="6">
+<li><strong>表格问答（Table QA）</strong></li>
+</ol>
+<ul>
+<li><p><strong>特点</strong>：从结构化表格中提取答案。</p>
+</li>
+<li><p><strong>模型示例</strong>：TAPAS、TaBERT。</p>
+</li>
+<li><p><strong>代码示例</strong>：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> transformers <span class="token keyword">import</span> pipeline
+table_qa <span class="token operator">=</span> pipeline<span class="token punctuation">(</span><span class="token string">"table-question-answering"</span><span class="token punctuation">,</span> model<span class="token operator">=</span><span class="token string">"google/tapas-base-finetuned-wtq"</span><span class="token punctuation">)</span>
+
+table <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">"City"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"Paris"</span><span class="token punctuation">,</span> <span class="token string">"London"</span><span class="token punctuation">,</span> <span class="token string">"Berlin"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">"Country"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"France"</span><span class="token punctuation">,</span> <span class="token string">"UK"</span><span class="token punctuation">,</span> <span class="token string">"Germany"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+answer <span class="token operator">=</span> table_qa<span class="token punctuation">(</span>
+    table<span class="token operator">=</span>table<span class="token punctuation">,</span>
+    query<span class="token operator">=</span><span class="token string">"Which city is in France?"</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>answer<span class="token punctuation">)</span>  <span class="token comment"># 输出：{'answer': 'Paris', ...}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>应用场景</strong>：Excel/数据库查询、金融报表分析。</p>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h5 id="🌍-翻译任务（AutoModelForSeq2SeqLM）"><a href="#🌍-翻译任务（AutoModelForSeq2SeqLM）" class="headerlink" title="🌍 翻译任务（AutoModelForSeq2SeqLM）"></a>🌍 <strong>翻译任务（<code>AutoModelForSeq2SeqLM</code>）</strong></h5><p><code>AutoModelForSeq2SeqLM</code> 是 Hugging Face 中用于 <strong>生成式任务</strong>（如摘要、翻译、问答、对话）的模型接口，适用于 <strong>编码器-解码器结构（Encoder-Decoder）</strong> 的模型架构。</p>
+<table>
+<thead>
+<tr>
+<th>任务类型</th>
+<th>示例模型</th>
+<th>输入</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>文本摘要</strong></td>
+<td><code>facebook/bart-large-cnn</code></td>
+<td>新闻文章</td>
+<td>概括句子</td>
+</tr>
+<tr>
+<td><strong>机器翻译</strong></td>
+<td><code>Helsinki-NLP/opus-mt-en-zh</code></td>
+<td>English</td>
+<td>中文</td>
+</tr>
+<tr>
+<td><strong>生成式问答</strong></td>
+<td><code>t5-base</code>, <code>flan-t5-base</code></td>
+<td>问题 + 文档</td>
+<td>自由文本答案</td>
+</tr>
+<tr>
+<td><strong>多任务学习</strong></td>
+<td><code>google/flan-t5-xl</code></td>
+<td>指令式 prompt</td>
+<td>任意任务输出</td>
+</tr>
+</tbody></table>
+<p>常见的 Seq2Seq 模型（可用于 <code>AutoModelForSeq2SeqLM</code>）</p>
+<table>
+<thead>
+<tr>
+<th>模型名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>t5-base</code></td>
+<td>Google 的多任务 Seq2Seq 模型</td>
+</tr>
+<tr>
+<td><code>flan-t5-base</code></td>
+<td>更强版本的 T5，经过 instruction tuning</td>
+</tr>
+<tr>
+<td><code>facebook/bart-large-cnn</code></td>
+<td>BART 微调用于新闻摘要</td>
+</tr>
+<tr>
+<td><code>Helsinki-NLP/opus-mt-*</code></td>
+<td>多语言机器翻译模型</td>
+</tr>
+</tbody></table>
+<p>示例代码：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> torch
+<span class="token keyword">from</span> transformers <span class="token keyword">import</span> AutoTokenizer<span class="token punctuation">,</span> AutoModelForSeq2SeqLM
+
+<span class="token comment"># 1. 加载分词器和模型</span>
+model_path <span class="token operator">=</span> <span class="token string">'***/Helsinki-NLP:opus-mt-en-zh'</span>
+tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+model <span class="token operator">=</span> AutoModelForSeq2SeqLM<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+
+<span class="token comment"># 2. 准备输入文本</span>
+source_text <span class="token operator">=</span> <span class="token string">"The future of AI is full of possibilities."</span>
+
+<span class="token comment"># 3. 对输入文本进行分词编码（转换为模型可接受的格式）</span>
+inputs <span class="token operator">=</span> tokenizer<span class="token punctuation">(</span>source_text<span class="token punctuation">,</span> return_tensors<span class="token operator">=</span><span class="token string">"pt"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 4. 生成翻译结果（禁用梯度，提高推理速度）</span>
+<span class="token keyword">with</span> torch<span class="token punctuation">.</span>no_grad<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    output_ids <span class="token operator">=</span> model<span class="token punctuation">.</span>generate<span class="token punctuation">(</span>
+        <span class="token operator">**</span>inputs<span class="token punctuation">,</span>
+        max_length<span class="token operator">=</span><span class="token number">64</span><span class="token punctuation">,</span>     <span class="token comment"># 最长输出长度</span>
+        num_beams<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span>       <span class="token comment"># beam search 的宽度，越大越稳但速度越慢</span>
+        early_stopping<span class="token operator">=</span><span class="token boolean">True</span>  <span class="token comment"># 如果 beam 提前收敛就停止生成</span>
+    <span class="token punctuation">)</span>
+
+<span class="token comment"># 5. 解码输出的 token IDs，转换为可读的翻译结果</span>
+translated_text <span class="token operator">=</span> tokenizer<span class="token punctuation">.</span>decode<span class="token punctuation">(</span>output_ids<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> skip_special_tokens<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 6. 打印原文与翻译结果</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n🌐 Original:"</span><span class="token punctuation">,</span> source_text<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"🌍 Translated:"</span><span class="token punctuation">,</span> translated_text<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>🌐 Original: The future of AI is full of possibilities.<br>🌍 Translated: AI的未来充满了可能性。</p>
+</blockquote>
+<hr>
+<h4 id="Tokens-基础"><a href="#Tokens-基础" class="headerlink" title="Tokens 基础"></a>Tokens 基础</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> transformers <span class="token keyword">import</span> AutoTokenizer
+
+<span class="token comment"># Initialize tokenizer from a fine-tuned DistilBERT model for sentiment analysis</span>
+model_åpath <span class="token operator">=</span> <span class="token string">'***/distilbert-base-uncased-finetuned-sst-2-english'</span>
+tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+
+<span class="token comment"># Sample text for tokenization demonstration</span>
+text <span class="token operator">=</span> <span class="token string">"Hello, my name is Ricky"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Raw text: </span><span class="token interpolation"><span class="token punctuation">{</span>text<span class="token punctuation">}</span></span><span class="token string">\n'</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># Tokenization: text -&gt; subword tokens</span>
+tokens <span class="token operator">=</span> tokenizer<span class="token punctuation">.</span>tokenize<span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Tokenized output: </span><span class="token interpolation"><span class="token punctuation">{</span>tokens<span class="token punctuation">}</span></span><span class="token string">\n'</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># tokens -&gt; vocabulary IDs</span>
+token_ids <span class="token operator">=</span> tokenizer<span class="token punctuation">.</span>convert_tokens_to_ids<span class="token punctuation">(</span>tokens<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Token IDs: </span><span class="token interpolation"><span class="token punctuation">{</span>token_ids<span class="token punctuation">}</span></span><span class="token string">\n'</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># text -&gt; model input format</span>
+input_py <span class="token operator">=</span> tokenizer<span class="token punctuation">(</span>text<span class="token punctuation">)</span>  <span class="token comment"># Returns Python dictionary with lists</span>
+input_pt <span class="token operator">=</span> tokenizer<span class="token punctuation">(</span>text<span class="token punctuation">,</span> return_tensors<span class="token operator">=</span><span class="token string">'pt'</span><span class="token punctuation">)</span>  <span class="token comment"># Returns Python dictionary with ready-to-use PyTorch tensors</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Python dictionary format (input_py): </span><span class="token interpolation"><span class="token punctuation">{</span>input_py<span class="token punctuation">}</span></span><span class="token string">\n'</span></span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'PyTorch tensor format (input_pt): </span><span class="token interpolation"><span class="token punctuation">{</span>input_pt<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># Best Practice Note:</span>
+<span class="token comment"># The PyTorch tensor format (input_pt) is preferred for production because:</span>
+<span class="token comment"># 1. Direct compatibility with model.forward() expectations</span>
+<span class="token comment"># 2. Automatic GPU acceleration when available (via .cuda() or .to(device))</span>
+<span class="token comment"># 3. Built-in support for batch processing</span>
+<span class="token comment"># 4. Memory efficiency for large-scale inference</span>
+<span class="token comment"># 5. Seamless integration with PyTorch's computation graph</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>测试结果</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">Raw text: Hello, my name is Ricky
+
+Tokenized output: ['hello', ',', 'my', 'name', 'is', 'ricky']
+
+Token IDs: [7592, 1010, 2026, 2171, 2003, 11184]
+
+Python dictionary format (input_py): {'input_ids': [101, 7592, 1010, 2026, 2171, 2003, 11184, 102], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1]}
+
+PyTorch tensor format (input_pt): {'input_ids': tensor([[  101,  7592,  1010,  2026,  2171,  2003, 11184,   102]]), 'attention_mask': tensor([[1, 1, 1, 1, 1, 1, 1, 1]])}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Embeddings-基础"><a href="#Embeddings-基础" class="headerlink" title="Embeddings 基础"></a>Embeddings 基础</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> torch
+<span class="token keyword">from</span> transformers <span class="token keyword">import</span> AutoTokenizer<span class="token punctuation">,</span> AutoModel
+
+<span class="token comment"># Load pre-trained model and tokenizer</span>
+model_path <span class="token operator">=</span> <span class="token string">'/home/xixingyu/disk1/PretrainedModels/distilbert-base-uncased-finetuned-sst-2-english'</span>
+tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+model <span class="token operator">=</span> AutoModel<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+
+<span class="token comment"># Sample text </span>
+text <span class="token operator">=</span> <span class="token string">'Hello, my name is Ricky.'</span>
+
+<span class="token comment"># =============================================</span>
+<span class="token comment"># STEP 1: TOKENIZATION - Converting text to numbers</span>
+<span class="token comment"># =============================================</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n=== Tokenization ==="</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"\nRaw text: </span><span class="token interpolation"><span class="token punctuation">{</span>text<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+
+inputs <span class="token operator">=</span> tokenizer<span class="token punctuation">(</span>text<span class="token punctuation">,</span> return_tensors<span class="token operator">=</span><span class="token string">'pt'</span><span class="token punctuation">)</span>  
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Tokenized Input Structure (PyTorch tensors):"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>inputs<span class="token punctuation">)</span>
+
+<span class="token comment"># Let's see what each component means</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nInput IDs (numerical representation of tokens):"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>inputs<span class="token punctuation">[</span><span class="token string">'input_ids'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nAttention Mask (shows which tokens are real vs padding):"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>inputs<span class="token punctuation">[</span><span class="token string">'attention_mask'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># =============================================</span>
+<span class="token comment"># STEP 2: GENERATING EMBEDDINGS</span>
+<span class="token comment"># =============================================</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n=== Generating Embeddings ==="</span><span class="token punctuation">)</span>
+<span class="token keyword">with</span> torch<span class="token punctuation">.</span>no_grad<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># Disable gradient calculation for inference</span>
+    outputs <span class="token operator">=</span> model<span class="token punctuation">(</span><span class="token operator">**</span>inputs<span class="token punctuation">)</span> <span class="token comment"># # Forward pass through the model</span>
+    
+    <span class="token comment"># The model returns a tuple where the first element contains token embeddings</span>
+    token_embeddings <span class="token operator">=</span> outputs<span class="token punctuation">.</span>last_hidden_state
+    
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nShape of Token Embeddings:"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"[Batch Size, Sequence Length, Embedding Dimension] = </span><span class="token interpolation"><span class="token punctuation">{</span>token_embeddings<span class="token punctuation">.</span>shape<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"- Batch Size = 1 (we processed one sentence)"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"- Sequence Length = </span><span class="token interpolation"><span class="token punctuation">{</span>token_embeddings<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string"> (number of tokens)"</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"- Embedding Dimension = </span><span class="token interpolation"><span class="token punctuation">{</span>token_embeddings<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string"> (size of each vector)"</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># =============================================</span>
+<span class="token comment"># STEP 3: CREATING SENTENCE EMBEDDINGS</span>
+<span class="token comment"># =============================================</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n=== Creating Sentence Embeddings ==="</span><span class="token punctuation">)</span>
+<span class="token comment"># Simple method: Average all token embeddings (mean pooling)</span>
+sentence_embedding <span class="token operator">=</span> token_embeddings<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nShape of Sentence Embedding:"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"[Batch Size, Embedding Dimension] = </span><span class="token interpolation"><span class="token punctuation">{</span>sentence_embedding<span class="token punctuation">.</span>shape<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"- Represents the entire sentence as a single vector"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># =============================================</span>
+<span class="token comment"># EDUCATIONAL NOTES</span>
+<span class="token comment"># =============================================</span>
+<span class="token triple-quoted-string string">"""
+WHAT ARE EMBEDDINGS?
+
+1. Token Embeddings:
+- Each word/subword is converted to a high-dimensional vector
+- These vectors capture semantic meaning and context
+- Example: "cat" and "kitten" will have similar vectors
+
+2. Sentence Embeddings:
+- A single vector representing the entire sentence
+- Created by combining token embeddings (here by averaging)
+- Can be used for tasks like similarity comparison
+
+WHY THIS MATTERS:
+- Computers don't understand words, only numbers
+- Embeddings convert language to numerical representations
+- Similar meanings → Similar vectors → Better AI understanding
+"""</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>测试结果</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">=== Tokenization ===
+
+Raw text: Hello, my name is Ricky.
+Tokenized Input Structure (PyTorch tensors):
+{'input_ids': tensor([[  101,  7592,  1010,  2026,  2171,  2003, 11184,  1012,   102]]), 'attention_mask': tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1]])}
+
+Input IDs (numerical representation of tokens):
+tensor([[  101,  7592,  1010,  2026,  2171,  2003, 11184,  1012,   102]])
+
+Attention Mask (shows which tokens are real vs padding):
+tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1]])
+
+=== Generating Embeddings ===
+
+Shape of Token Embeddings:
+[Batch Size, Sequence Length, Embedding Dimension] = torch.Size([1, 9, 768])
+- Batch Size = 1 (we processed one sentence)
+- Sequence Length = 9 (number of tokens)
+- Embedding Dimension = 768 (size of each vector)
+
+=== Creating Sentence Embeddings ===
+
+Shape of Sentence Embedding:
+[Batch Size, Embedding Dimension] = torch.Size([1, 768])
+- Represents the entire sentence as a single vector<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+<h4 id="文本情感分类（入门程序）"><a href="#文本情感分类（入门程序）" class="headerlink" title="文本情感分类（入门程序）"></a>文本情感分类（入门程序）</h4><p>大模型调用版本的 <code>helloworld.py</code> </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> transformers <span class="token keyword">import</span> AutoTokenizer<span class="token punctuation">,</span> AutoModelForSequenceClassification  <span class="token comment"># Hugging Face的Transformer库</span>
+<span class="token keyword">import</span> torch 
+
+<span class="token comment"># 预训练模型的路径（该模型是在SST-2英文情感数据集上微调的DistilBERT模型，用于情感分类）</span>
+model_path <span class="token operator">=</span> <span class="token string">'***/distilbert-base-uncased-finetuned-sst-2-english'</span>
+
+<span class="token comment"># ===================== 加载模型和分词器 =====================</span>
+<span class="token comment"># 加载与预训练模型对应的分词器，负责将原始文本转换为模型可以理解的token ID序列）</span>
+tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+
+<span class="token comment"># 加载预训练好的序列分类模型</span>
+model <span class="token operator">=</span> AutoModelForSequenceClassification<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>model_path<span class="token punctuation">)</span>
+
+<span class="token comment"># ===================== 准备输入数据 =====================</span>
+<span class="token comment"># 待分析的文本</span>
+text <span class="token operator">=</span> <span class="token string">"I love China"</span>
+
+<span class="token comment"># 使用分词器处理文本：</span>
+<span class="token comment"># - 将文本分割成token</span>
+<span class="token comment"># - 添加特殊token（如[CLS], [SEP]）</span>
+<span class="token comment"># - 将token转换为对应的ID</span>
+<span class="token comment"># - 生成注意力掩码（attention mask）</span>
+<span class="token comment"># return_tensors='pt'表示返回PyTorch张量（而不是NumPy数组）</span>
+<span class="token builtin">input</span> <span class="token operator">=</span> tokenizer<span class="token punctuation">(</span>text<span class="token punctuation">,</span> return_tensors<span class="token operator">=</span><span class="token string">'pt'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 查看输入的结构（调试用）：</span>
+<span class="token comment"># input_ids: token对应的数字ID</span>
+<span class="token comment"># attention_mask: 指示哪些位置是有效token（1表示真实token，0表示填充padding）</span>
+
+<span class="token comment"># ===================== 模型推理 =====================</span>
+<span class="token comment"># 将处理好的输入传入模型</span>
+output <span class="token operator">=</span> model<span class="token punctuation">(</span><span class="token operator">**</span><span class="token builtin">input</span><span class="token punctuation">)</span> <span class="token comment">#**操作符用于将字典解包为关键字参数</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>output<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># ===================== 解析模型输出 =====================</span>
+<span class="token comment"># 从输出中获取logits（未经过softmax的原始输出分数）</span>
+<span class="token comment"># logits形状为[batch_size, num_classes]</span>
+<span class="token comment"># 因为我们只输入了一个句子，所以batch_size为1</span>
+<span class="token comment"># SST-2是二分类任务，所以num_classes为2（索引0:负面，1:正面）</span>
+logits <span class="token operator">=</span> output<span class="token punctuation">.</span>logits
+<span class="token keyword">print</span><span class="token punctuation">(</span>logits<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 获取预测类别：找到logits中最大值的索引</span>
+<span class="token comment"># torch.argmax返回最大值所在的索引</span>
+<span class="token comment"># dim=1表示我们在类别维度（而不是批次维度）上寻找最大值</span>
+predicted_class_id <span class="token operator">=</span> torch<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>logits<span class="token punctuation">,</span> dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>predicted_class_id<span class="token punctuation">)</span>  <span class="token comment"># 此时还是PyTorch张量</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+predicted_class_id <span class="token operator">=</span> predicted_class_id<span class="token punctuation">.</span>item<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 使用.item()将张量转换为Python整数</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>predicted_class_id<span class="token punctuation">)</span>  <span class="token comment"># 现在是普通整数（0或1）</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># ===================== 结果映射和输出 =====================</span>
+<span class="token comment"># 定义类别标签（注意SST-2的标准顺序）</span>
+labels <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Negative'</span><span class="token punctuation">,</span> <span class="token string">'Positive'</span><span class="token punctuation">]</span>
+
+<span class="token comment"># 获取预测结果对应的人类可读标签</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>labels<span class="token punctuation">[</span>predicted_class_id<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>测试结果</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">{</span><span class="token string">'input_ids'</span><span class="token punctuation">:</span> tensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token number">101</span><span class="token punctuation">,</span> <span class="token number">1045</span><span class="token punctuation">,</span> <span class="token number">2293</span><span class="token punctuation">,</span> <span class="token number">2859</span><span class="token punctuation">,</span>  <span class="token number">102</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'attention_mask'</span><span class="token punctuation">:</span> tensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+
+SequenceClassifierOutput<span class="token punctuation">(</span>loss<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> logits<span class="token operator">=</span>tensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">4.1768</span><span class="token punctuation">,</span>  <span class="token number">4.4845</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> grad_fn<span class="token operator">=</span><span class="token operator">&lt;</span>AddmmBackward0<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> hidden_states<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> attentions<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+
+tensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">4.1768</span><span class="token punctuation">,</span>  <span class="token number">4.4845</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> grad_fn<span class="token operator">=</span><span class="token operator">&lt;</span>AddmmBackward0<span class="token operator">&gt;</span><span class="token punctuation">)</span>
+
+tensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token number">1</span>
+
+Positive<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+<h2 id="医疗大模型"><a href="#医疗大模型" class="headerlink" title="医疗大模型"></a>医疗大模型</h2><table>
+<thead>
+<tr>
+<th>模型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>华佗</td>
+</tr>
+<tr>
+<td>BioGPT</td>
+</tr>
+</tbody></table>
+
                 
             </div>
             <hr/>
