@@ -217,6 +217,15 @@
         </a>
       </li>
       
+      <li>
+        <a href="/12month-celebration">
+          
+          <i class="fas fa-celebrate" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>一年庆典</span>
+        </a>
+      </li>
+      
     </ul>
     
   </li>
@@ -664,6 +673,16 @@
 				   <i class="fa fas fa-globe" style="position: absolute;left:50px" ></i>
 			      
 		          <span>世界探索</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/12month-celebration " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-celebrate" style="position: absolute;left:50px" ></i>
+			      
+		          <span>一年庆典</span>
                   </a>
                 </li>
               
@@ -1218,14 +1237,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3k
+                    3.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    13 分
                 </div>
                 
 
@@ -1423,7 +1442,33 @@ export all_proxy=socks5h://***<span aria-hidden="true" class="line-numbers-rows"
 
 
 
-<h4 id="六、其他"><a href="#六、其他" class="headerlink" title="六、其他"></a>六、其他</h4><h5 id="matplotlib-显示中文字体"><a href="#matplotlib-显示中文字体" class="headerlink" title="matplotlib 显示中文字体"></a>matplotlib 显示中文字体</h5><p>Linux服务器下的解决方案</p>
+<h4 id="六、Docker网络环境"><a href="#六、Docker网络环境" class="headerlink" title="六、Docker网络环境"></a>六、Docker网络环境</h4><p>登陆root账户，执行：</p>
+<pre class="line-numbers language-none"><code class="language-none">cat /etc/systemd/system/docker.service.d/http-proxy.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>大概率会得到：</p>
+<pre class="line-numbers language-none"><code class="language-none">[Service]
+Environment="HTTP_PROXY=http://XXX:7788"
+Environment="HTTPS_PROXY=http://XXX:7788"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>执行以下命令，修改<code>HTTP_PROXY</code> 和 <code>HTTPS_PROXY</code> 两个变量为可用代理</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo vim /etc/systemd/system/docker.service.d/http-proxy.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>执行以下命令，刷新、重启、测试docker：</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo systemctl daemon-reload
+sudo systemctl restart docker
+docker pull hello-world<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>如果出现下面内容，则配置成功：</p>
+<pre class="line-numbers language-none"><code class="language-none">Using default tag: latest
+latest: Pulling from library/hello-world
+17eec7bbc9d7: Pull complete 
+Digest: sha256:f7931603f70e13dbd844253370742c4fc4202d290c80442b2e68706d8f33ce26
+Status: Downloaded newer image for hello-world:latest
+docker.io/library/hello-world:latest<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="七、其他"><a href="#七、其他" class="headerlink" title="七、其他"></a>七、其他</h4><h5 id="matplotlib-显示中文字体"><a href="#matplotlib-显示中文字体" class="headerlink" title="matplotlib 显示中文字体"></a>matplotlib 显示中文字体</h5><p>Linux服务器下的解决方案</p>
 <ol>
 <li>使用命令 <code>pip install -U mplfonts</code> 安装 <code>mplfonts</code> 库。</li>
 <li>使用命令 <code>mplfonts init</code> 进行初始化配置。</li>
@@ -2591,7 +2636,7 @@ print(res)<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2023-2025</span>
+                <span id="year">2023-2026</span>
             
             <!-- <span id="year">2023</span> -->
             <a href="/about" target="_blank">Rickyの水果摊</a>
