@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="归档: 2025, Rickyの水果摊">
+    <meta name="keywords" content="科研日记｜报告心得记录, Rickyの水果摊">
     <meta name="description" content="Rickyの个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>归档: 2025 | Rickyの水果摊</title>
+    <title>科研日记｜报告心得记录 | Rickyの水果摊</title>
     <link rel="icon" type="image/png" href="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/avatar_circle_mini.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -1084,221 +1084,805 @@
 </header>
 
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                Rickyの水果摊
-                
-            </div>
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['回首过去，恋苍蓝清澈透明','未来崎岖，愿苍蓝永栖我心'],
-                        startDelay: 150,
-                        typeSpeed: 110,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/32.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">科研日记｜报告心得记录</h1>
+                </div>
             </div>
         </div>
     </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+        background-color: rgb(255, 255, 255,0.7);
+        border-radius: 10px;
+        box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        /* color: #42b983; */
+        color: #20BDFF;
+        font-weight: 700;
+        /* text-decoration: underline; */
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+        /* color: #20BDFF; */
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/">
+                                <span class="chip bg-color">科研经验</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">讲座笔记</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/" class="post-category">
+                                科研经验
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2026-01-25
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    634
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    2 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="科研日记｜讲座笔记"><a href="#科研日记｜讲座笔记" class="headerlink" title="科研日记｜讲座笔记"></a>科研日记｜讲座笔记</h1><h2 id="分享人基本信息-🧑🏻‍💻"><a href="#分享人基本信息-🧑🏻‍💻" class="headerlink" title="分享人基本信息 🧑🏻‍💻"></a>分享人基本信息 🧑🏻‍💻</h2><p>分享人：<a target="_blank" rel="noopener" href="http://qizhang.info/">张奇教授</a>（复旦大学）</p>
+<p>视频链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1gW4y1M7BF/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249">人工智能领域顶会论文的发表指南 - bilibili 🔗</a></p>
+<p>PPT链接：<a target="_blank" rel="noopener" href="http://qizhang.info/slides/NLPerV2.pdf">链接🔗</a>（视频中的PPT并未找到链接，此处为张奇教授另一场相似主题的PPT链接）</p>
+<hr>
+<h2 id="笔记记录-✍️"><a href="#笔记记录-✍️" class="headerlink" title="笔记记录 ✍️"></a>笔记记录 ✍️</h2><h4 id="🎯人工智能领域顶会"><a href="#🎯人工智能领域顶会" class="headerlink" title="🎯人工智能领域顶会"></a>🎯人工智能领域顶会</h4><p>“参考”《<strong>中国计算机学会推荐国际学术会议和期刊目录</strong>》<a target="_blank" rel="noopener" href="https://www.ccf.org.cn/Academic_Evaluation/By_category/">链接🔗</a></p>
+<p>常见的顶会</p>
+<ul>
+<li>CCF-A<ul>
+<li>ICML、NeurIPS、AAAI、IJCAI、SIGIR、SIGKDD、SIGMOD、WWW 等</li>
+</ul>
+</li>
+<li>CCF-B<ul>
+<li>EMNLP、ECCV、CIKM、WSDM、ICDM</li>
+</ul>
+</li>
+</ul>
+<h4 id="🧐-人工智能领域顶会的若干感想"><a href="#🧐-人工智能领域顶会的若干感想" class="headerlink" title="🧐 人工智能领域顶会的若干感想"></a>🧐 人工智能领域顶会的若干感想</h4><ul>
+<li>A类论文和B类论文 <strong>投稿难度区别不太大</strong></li>
+<li>不同领域的会议和期刊 <strong>风格差别非常大</strong></li>
+<li>动机是 <strong>关键</strong>，“故事”要 <strong>讲好</strong></li>
+<li>实验要 <strong>充分</strong></li>
+<li>写作 <strong>规范专业</strong>，无语法等低级错误</li>
+<li>论文命中是 <strong>条件概率</strong> 问题</li>
+</ul>
+<h3 id="🚀-论文发表的四个关卡"><a href="#🚀-论文发表的四个关卡" class="headerlink" title="🚀 论文发表的四个关卡"></a>🚀 论文发表的四个关卡</h3><p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20250125230134952.png" alt="论文发表路线图-张奇教授"></p>
+<ul>
+<li><strong>基础关</strong><ul>
+<li>机器学习 + 深度学习 + 编程能力</li>
+<li>合格目标：1周内可独立实现R-NET、Transformer结构</li>
+</ul>
+</li>
+<li><strong>阅读关</strong><ul>
+<li>泛读 → Motivation + Method</li>
+</ul>
+</li>
+<li><strong>动机关</strong><ul>
+<li>寻找动机，需要和导师重点讨论</li>
+</ul>
+</li>
+<li><strong>写作关</strong><ul>
+<li>八股文格式</li>
+</ul>
+</li>
+</ul>
+<h3 id="🧱-基础关"><a href="#🧱-基础关" class="headerlink" title="🧱 基础关"></a>🧱 基础关</h3><p><strong>基础关核心</strong>：机器学习 + 深度学习 + 相关编程</p>
+<p><strong>基础关合格目标</strong>：1周内可独立实现R-NET、Transformer结构</p>
+<p><strong>基础关相关资源</strong>：</p>
+<ul>
+<li>机器学习和自然语言处理基础篇<ul>
+<li>《<a target="_blank" rel="noopener" href="https://book.douban.com/subject/26708119/">西瓜书</a>》- <a target="_blank" rel="noopener" href="https://cs.nju.edu.cn/zhouzh/">周志华</a></li>
+<li>《<a target="_blank" rel="noopener" href="https://book.douban.com/subject/35044046/">神经网络与深度学习</a>》- <a target="_blank" rel="noopener" href="https://xpqiu.github.io/">邱锡鹏</a></li>
+<li>《<a target="_blank" rel="noopener" href="https://book.douban.com/subject/25746399/">统计自然语言处理（第二版）</a>》- <a target="_blank" rel="noopener" href="https://nlpr.ia.ac.cn/cip/cqzong.htm">宗成庆</a></li>
+</ul>
+</li>
+<li>机器学习和自然语言处理提高篇<ul>
+<li>《统计学习方法》- 李航</li>
+<li>《深度学习花书》</li>
+<li>《<a target="_blank" rel="noopener" href="https://book.douban.com/subject/30195974/">自然语言处理综论（第二版）</a>》</li>
+</ul>
+</li>
+<li>网络课程<ul>
+<li>台湾大学 李宏毅教授 2020年 《机器学习深度学习》课程： <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JE411g7XF">https://www.bilibili.com/video/BV1JE411g7XF</a></li>
+<li>台湾大学 李宏毅教授 2025年 《机器学习深度学习》课程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YsqSY8EiW">https://www.bilibili.com/video/BV1YsqSY8EiW</a></li>
+<li>斯坦福大学 2021年 CS224N《深度学习自然语言处理》课程：<a target="_blank" rel="noopener" href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/">官方课程网站 🔗</a>、<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nP4y1j7rZ/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249">B站视频链接🔗</a></li>
+<li>斯坦福大学 2024年 CS224N《深度学习自然语言处理》课程：<a target="_blank" rel="noopener" href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/">官方课程网站 🔗</a>、<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1jt421L7ui/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249">B站视频链接🔗</a></li>
+<li>复旦大学 邱锡鹏教授 2021年《神经网络与深度学习》 课程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13b4y1177W/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249">1-6讲 🔗</a>、<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19u411d7r3/?share_source=copy_web&amp;vd_source=33934722b558a5cefa750c1a9be72249">7-10讲 🔗</a></li>
+<li>中科院 宗成庆教授《自然语言理解》课程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1EW411c7Md">B站视频链接</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="📖-论文关"><a href="#📖-论文关" class="headerlink" title="📖 论文关"></a>📖 论文关</h3><p><strong>论文筛选</strong>：分层过滤，集团作战，公众号热点</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20250126232725874.png" alt="论文过滤金字塔"></p>
+<p><strong>论文泛读</strong>：通过阅读 Abstract + Introduction，得到 Motivation + Methods</p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20250126233724424.png" alt="泛读案例"></p>
+<p><img src="https://ricky-typora-notes.oss-cn-hangzhou.aliyuncs.com/image-20250126233815874.png" alt="泛读案例"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Rickyの水果摊</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://ricky2333.github.io/2026/01/25/ke-yan-ri-ji-jiang-zuo-xin-de-ji-lu-1/">https://ricky2333.github.io/2026/01/25/ke-yan-ri-ji-jiang-zuo-xin-de-ji-lu-1/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Rickyの水果摊</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/">
+                                    <span class="chip bg-color">科研经验</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">讲座笔记</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2026/01/25/ke-yan-ri-ji-jiang-zuo-xin-de-ji-lu-1/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="科研日记｜报告心得记录">
+                        
+                        <span class="card-title">科研日记｜报告心得记录</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            人工智能领域顶会论文的发表指南 - 张奇教授
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-01-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/" class="post-category">
+                                    科研经验
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/">
+                        <span class="chip bg-color">科研经验</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">讲座笔记</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/11/06/ke-yan-ri-ji-jiang-zuo-xin-de-ji-lu/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="科研日记｜讲座心得记录">
+                        
+                        <span class="card-title">科研日记｜讲座心得记录</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            2024.11.6学术讲座笔记
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-11-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/" class="post-category">
+                                    科研经验
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/">
+                        <span class="chip bg-color">科研经验</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">讲座笔记</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
 </div>
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    // $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-    // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.webp';
-// $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.webp)');
-    // 每次随机换 banner 图
-    // var bannerUrl = "/medias/banner/" + Math.floor(Math.random() * 7) + '.jpg';
-    // $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-    var bannerUrl = "/medias/banner/" + Math.floor(Math.random() * 8) + '.jpg';
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + Math.floor(Math.random() * 8) + '.jpg)');
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        // if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+        //     newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        // }
+        newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Rickyの水果摊<br />'
+            + '文章作者: Rickyの水果摊<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
 </script>
 
 
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
     </div>
-</div>
-
-<main class="content">
-
-    
-    <div class="container archive-calendar">
-    <div class="card">
-        <div id="post-calendar" class="card-content"></div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let myChart = echarts.init(document.getElementById('post-calendar'));
-
-    
-
-    let option = {
-        title: {
-            top: 0,
-            text: '文章日历',
-            left: 'center',
-            textStyle: {
-                color: '#3C4858'
-            }
-        },
-        tooltip: {
-            padding: 10,
-            backgroundColor: '#555',
-            borderColor: '#777',
-            borderWidth: 1,
-            formatter: function (obj) {
-                var value = obj.value;
-                return '<div style="font-size: 14px;">' + value[0] + '：' + value[1] + '</div>';
-            }
-        },
-        visualMap: {
-            show: true,
-            showLabel: true,
-            categories: [0, 1, 2, 3, 4],
-            calculable: true,
-            inRange: {
-                symbol: 'rect',
-                color: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
-            },
-            itemWidth: 12,
-            itemHeight: 12,
-            orient: 'horizontal',
-            left: 'center',
-            bottom: 0
-        },
-        calendar: [{
-            left: 'center',
-            range: ["2025-01-18", "2026-01-18"],
-            cellSize: [13, 13],
-            splitLine: {
-                show: false
-            },
-            itemStyle: {
-                color: '#196127',
-                borderColor: '#fff',
-                borderWidth: 2
-            },
-            yearLabel: {
-                show: false
-            },
-            monthLabel: {
-                nameMap: 'cn',
-                fontSize: 11
-            },
-            dayLabel: {
-                formatter: '{start}  1st',
-                nameMap: 'cn',
-                fontSize: 11
-            }
-        }],
-        series: [{
-            type: 'heatmap',
-            coordinateSystem: 'calendar',
-            calendarIndex: 0,
-            data: [["2025-01-18", 0], ["2025-01-19", 0], ["2025-01-20", 0], ["2025-01-21", 0], ["2025-01-22", 0], ["2025-01-23", 0], ["2025-01-24", 0], ["2025-01-25", 1], ["2025-01-26", 0], ["2025-01-27", 0], ["2025-01-28", 0], ["2025-01-29", 0], ["2025-01-30", 0], ["2025-01-31", 0], ["2025-02-01", 0], ["2025-02-02", 0], ["2025-02-03", 0], ["2025-02-04", 0], ["2025-02-05", 0], ["2025-02-06", 0], ["2025-02-07", 0], ["2025-02-08", 0], ["2025-02-09", 0], ["2025-02-10", 0], ["2025-02-11", 0], ["2025-02-12", 0], ["2025-02-13", 0], ["2025-02-14", 0], ["2025-02-15", 0], ["2025-02-16", 0], ["2025-02-17", 0], ["2025-02-18", 0], ["2025-02-19", 0], ["2025-02-20", 0], ["2025-02-21", 0], ["2025-02-22", 0], ["2025-02-23", 0], ["2025-02-24", 0], ["2025-02-25", 0], ["2025-02-26", 0], ["2025-02-27", 0], ["2025-02-28", 0], ["2025-03-01", 0], ["2025-03-02", 0], ["2025-03-03", 0], ["2025-03-04", 0], ["2025-03-05", 0], ["2025-03-06", 0], ["2025-03-07", 0], ["2025-03-08", 0], ["2025-03-09", 0], ["2025-03-10", 0], ["2025-03-11", 0], ["2025-03-12", 0], ["2025-03-13", 0], ["2025-03-14", 0], ["2025-03-15", 0], ["2025-03-16", 0], ["2025-03-17", 0], ["2025-03-18", 0], ["2025-03-19", 0], ["2025-03-20", 0], ["2025-03-21", 0], ["2025-03-22", 0], ["2025-03-23", 0], ["2025-03-24", 0], ["2025-03-25", 0], ["2025-03-26", 0], ["2025-03-27", 0], ["2025-03-28", 0], ["2025-03-29", 0], ["2025-03-30", 0], ["2025-03-31", 0], ["2025-04-01", 0], ["2025-04-02", 0], ["2025-04-03", 0], ["2025-04-04", 0], ["2025-04-05", 0], ["2025-04-06", 0], ["2025-04-07", 0], ["2025-04-08", 0], ["2025-04-09", 0], ["2025-04-10", 0], ["2025-04-11", 0], ["2025-04-12", 0], ["2025-04-13", 0], ["2025-04-14", 0], ["2025-04-15", 0], ["2025-04-16", 0], ["2025-04-17", 0], ["2025-04-18", 0], ["2025-04-19", 0], ["2025-04-20", 0], ["2025-04-21", 0], ["2025-04-22", 0], ["2025-04-23", 0], ["2025-04-24", 0], ["2025-04-25", 0], ["2025-04-26", 0], ["2025-04-27", 0], ["2025-04-28", 0], ["2025-04-29", 0], ["2025-04-30", 0], ["2025-05-01", 0], ["2025-05-02", 0], ["2025-05-03", 0], ["2025-05-04", 0], ["2025-05-05", 0], ["2025-05-06", 0], ["2025-05-07", 0], ["2025-05-08", 0], ["2025-05-09", 0], ["2025-05-10", 0], ["2025-05-11", 0], ["2025-05-12", 0], ["2025-05-13", 0], ["2025-05-14", 0], ["2025-05-15", 0], ["2025-05-16", 0], ["2025-05-17", 0], ["2025-05-18", 0], ["2025-05-19", 0], ["2025-05-20", 0], ["2025-05-21", 0], ["2025-05-22", 0], ["2025-05-23", 0], ["2025-05-24", 0], ["2025-05-25", 0], ["2025-05-26", 0], ["2025-05-27", 0], ["2025-05-28", 0], ["2025-05-29", 0], ["2025-05-30", 0], ["2025-05-31", 0], ["2025-06-01", 0], ["2025-06-02", 0], ["2025-06-03", 0], ["2025-06-04", 0], ["2025-06-05", 0], ["2025-06-06", 0], ["2025-06-07", 0], ["2025-06-08", 0], ["2025-06-09", 0], ["2025-06-10", 0], ["2025-06-11", 0], ["2025-06-12", 0], ["2025-06-13", 0], ["2025-06-14", 0], ["2025-06-15", 0], ["2025-06-16", 0], ["2025-06-17", 0], ["2025-06-18", 0], ["2025-06-19", 0], ["2025-06-20", 0], ["2025-06-21", 0], ["2025-06-22", 0], ["2025-06-23", 0], ["2025-06-24", 0], ["2025-06-25", 0], ["2025-06-26", 0], ["2025-06-27", 0], ["2025-06-28", 0], ["2025-06-29", 0], ["2025-06-30", 0], ["2025-07-01", 0], ["2025-07-02", 0], ["2025-07-03", 0], ["2025-07-04", 0], ["2025-07-05", 0], ["2025-07-06", 0], ["2025-07-07", 0], ["2025-07-08", 0], ["2025-07-09", 0], ["2025-07-10", 0], ["2025-07-11", 0], ["2025-07-12", 0], ["2025-07-13", 0], ["2025-07-14", 0], ["2025-07-15", 0], ["2025-07-16", 0], ["2025-07-17", 0], ["2025-07-18", 0], ["2025-07-19", 0], ["2025-07-20", 0], ["2025-07-21", 0], ["2025-07-22", 0], ["2025-07-23", 0], ["2025-07-24", 0], ["2025-07-25", 0], ["2025-07-26", 0], ["2025-07-27", 0], ["2025-07-28", 0], ["2025-07-29", 0], ["2025-07-30", 0], ["2025-07-31", 0], ["2025-08-01", 0], ["2025-08-02", 0], ["2025-08-03", 0], ["2025-08-04", 0], ["2025-08-05", 0], ["2025-08-06", 0], ["2025-08-07", 0], ["2025-08-08", 0], ["2025-08-09", 0], ["2025-08-10", 0], ["2025-08-11", 0], ["2025-08-12", 0], ["2025-08-13", 0], ["2025-08-14", 0], ["2025-08-15", 0], ["2025-08-16", 0], ["2025-08-17", 0], ["2025-08-18", 0], ["2025-08-19", 0], ["2025-08-20", 0], ["2025-08-21", 0], ["2025-08-22", 0], ["2025-08-23", 0], ["2025-08-24", 0], ["2025-08-25", 0], ["2025-08-26", 0], ["2025-08-27", 0], ["2025-08-28", 0], ["2025-08-29", 0], ["2025-08-30", 0], ["2025-08-31", 0], ["2025-09-01", 0], ["2025-09-02", 0], ["2025-09-03", 0], ["2025-09-04", 0], ["2025-09-05", 0], ["2025-09-06", 0], ["2025-09-07", 0], ["2025-09-08", 0], ["2025-09-09", 0], ["2025-09-10", 0], ["2025-09-11", 0], ["2025-09-12", 0], ["2025-09-13", 0], ["2025-09-14", 0], ["2025-09-15", 0], ["2025-09-16", 0], ["2025-09-17", 0], ["2025-09-18", 0], ["2025-09-19", 0], ["2025-09-20", 0], ["2025-09-21", 0], ["2025-09-22", 0], ["2025-09-23", 0], ["2025-09-24", 0], ["2025-09-25", 0], ["2025-09-26", 0], ["2025-09-27", 0], ["2025-09-28", 0], ["2025-09-29", 0], ["2025-09-30", 0], ["2025-10-01", 0], ["2025-10-02", 0], ["2025-10-03", 0], ["2025-10-04", 0], ["2025-10-05", 0], ["2025-10-06", 0], ["2025-10-07", 0], ["2025-10-08", 0], ["2025-10-09", 0], ["2025-10-10", 0], ["2025-10-11", 0], ["2025-10-12", 0], ["2025-10-13", 0], ["2025-10-14", 0], ["2025-10-15", 0], ["2025-10-16", 0], ["2025-10-17", 0], ["2025-10-18", 0], ["2025-10-19", 0], ["2025-10-20", 0], ["2025-10-21", 0], ["2025-10-22", 0], ["2025-10-23", 0], ["2025-10-24", 0], ["2025-10-25", 0], ["2025-10-26", 0], ["2025-10-27", 0], ["2025-10-28", 0], ["2025-10-29", 0], ["2025-10-30", 0], ["2025-10-31", 0], ["2025-11-01", 0], ["2025-11-02", 0], ["2025-11-03", 0], ["2025-11-04", 0], ["2025-11-05", 0], ["2025-11-06", 0], ["2025-11-07", 0], ["2025-11-08", 0], ["2025-11-09", 0], ["2025-11-10", 0], ["2025-11-11", 0], ["2025-11-12", 0], ["2025-11-13", 0], ["2025-11-14", 0], ["2025-11-15", 0], ["2025-11-16", 0], ["2025-11-17", 0], ["2025-11-18", 0], ["2025-11-19", 0], ["2025-11-20", 0], ["2025-11-21", 0], ["2025-11-22", 0], ["2025-11-23", 0], ["2025-11-24", 0], ["2025-11-25", 0], ["2025-11-26", 0], ["2025-11-27", 0], ["2025-11-28", 0], ["2025-11-29", 0], ["2025-11-30", 0], ["2025-12-01", 0], ["2025-12-02", 0], ["2025-12-03", 0], ["2025-12-04", 0], ["2025-12-05", 0], ["2025-12-06", 0], ["2025-12-07", 0], ["2025-12-08", 0], ["2025-12-09", 0], ["2025-12-10", 0], ["2025-12-11", 0], ["2025-12-12", 0], ["2025-12-13", 0], ["2025-12-14", 0], ["2025-12-15", 0], ["2025-12-16", 0], ["2025-12-17", 0], ["2025-12-18", 0], ["2025-12-19", 0], ["2025-12-20", 0], ["2025-12-21", 0], ["2025-12-22", 0], ["2025-12-23", 0], ["2025-12-24", 0], ["2025-12-25", 0], ["2025-12-26", 0], ["2025-12-27", 0], ["2025-12-28", 0], ["2025-12-29", 0], ["2025-12-30", 0], ["2025-12-31", 0], ["2026-01-01", 0], ["2026-01-02", 0], ["2026-01-03", 0], ["2026-01-04", 0], ["2026-01-05", 0], ["2026-01-06", 0], ["2026-01-07", 0], ["2026-01-08", 0], ["2026-01-09", 0], ["2026-01-10", 0], ["2026-01-11", 0], ["2026-01-12", 0], ["2026-01-13", 0], ["2026-01-14", 0], ["2026-01-15", 0], ["2026-01-16", 0], ["2026-01-17", 0], ["2026-01-18", 0]]
-        }]
-
-    };
-
-    myChart.setOption(option);
-</script>
-
-    
-
-    
-
-    <div id="cd-timeline" class="container">
-        
-        <div class="cd-timeline-block">
-
-            
-            
-            
-            <div class="cd-timeline-img year" data-aos="zoom-in-up">
-                <a href="/archives/2025">2025</a>
-            </div>
-            
-
-            
-            
-            
-            <div class="cd-timeline-img month" data-aos="zoom-in-up">
-                <a href="/archives/2025/01">01</a>
-            </div>
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>25</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2025/01/25/ke-yan-ri-ji-jiang-zuo-xin-de-ji-lu-1/">
-                            <div class="card-image">
-                                
-                                <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="科研日记｜报告心得记录">
-                                
-                                <span class="card-title">科研日记｜报告心得记录</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    人工智能领域顶会论文的发表指南 - 张奇教授
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2025-01-25
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/" class="post-category">
-                                    科研经验
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"><span class="chip bg-color">科研经验</span></a>
-                            
-                            <a href="/tags/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/"><span class="chip bg-color">讲座笔记</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <!-- <div class="toc-widget card" style="background-color: white;"> -->
+        <div class="toc-widget card">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
         </div>
-        
     </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        // tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
 
 
 
@@ -1371,7 +1955,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">311.7k</span>&nbsp;字
+                class="white-color">311.6k</span>&nbsp;字
             
             
             
