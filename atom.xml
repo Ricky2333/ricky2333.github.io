@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2026-01-27T10:33:52.699Z</updated>
+  <updated>2026-02-14T13:02:02.298Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,91 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AI手记｜达沃斯论坛2026</title>
+    <link href="https://ricky2333.github.io/2026/02/14/ai-shou-ji-da-wo-si-lun-tan-2026/"/>
+    <id>https://ricky2333.github.io/2026/02/14/ai-shou-ji-da-wo-si-lun-tan-2026/</id>
+    <published>2026-02-14T12:32:10.000Z</published>
+    <updated>2026-02-14T13:02:02.298Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在两大-AI-巨头-Anthropic与DeepMind-的达沃斯论坛对话中，我看到的2026年&quot;&gt;&lt;a href=&quot;#在两大-AI-巨头-Anthropic与DeepMind-的达沃斯论坛对话中，我看到的2026年&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AI手记" scheme="https://ricky2333.github.io/categories/AI%E6%89%8B%E8%AE%B0/"/>
+    
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
+    
+    <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="Agent" scheme="https://ricky2333.github.io/tags/Agent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python VS C（下篇）</title>
+    <link href="https://ricky2333.github.io/2026/02/08/python-vs-c-xia-pian/"/>
+    <id>https://ricky2333.github.io/2026/02/08/python-vs-c-xia-pian/</id>
+    <published>2026-02-08T11:16:29.000Z</published>
+    <updated>2026-02-14T13:09:40.410Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;写在最前-✍️&quot;&gt;&lt;a href=&quot;#写在最前-✍️&quot; class=&quot;headerlink&quot; title=&quot;写在最前 ✍️&quot;&gt;&lt;/a&gt;写在最前 ✍️&lt;/h2&gt;&lt;p&gt;在上一篇博客 &lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python VS C（上篇）</title>
+    <link href="https://ricky2333.github.io/2026/02/03/python-vs-c-shang-pian/"/>
+    <id>https://ricky2333.github.io/2026/02/03/python-vs-c-shang-pian/</id>
+    <published>2026-02-03T02:20:06.000Z</published>
+    <updated>2026-02-14T13:08:26.108Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;写在最前-✍️&quot;&gt;&lt;a href=&quot;#写在最前-✍️&quot; class=&quot;headerlink&quot; title=&quot;写在最前 ✍️&quot;&gt;&lt;/a&gt;写在最前 ✍️&lt;/h2&gt;&lt;p&gt;相信不少科班的同学最先学习的编程语言是</summary>
+        
+      
+    
+    
+    
+    <category term="Python基础" scheme="https://ricky2333.github.io/categories/Python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
+    
+    <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>科研日记｜报告心得记录</title>
@@ -37,9 +122,9 @@
     <category term="科研经验" scheme="https://ricky2333.github.io/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
     
     
-    <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
+    
+    <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
     <category term="科研经验" scheme="https://ricky2333.github.io/tags/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
     
@@ -500,7 +585,7 @@
     <link href="https://ricky2333.github.io/2025/10/21/atcoder-ti-jie-gcd-on-blackboard/"/>
     <id>https://ricky2333.github.io/2025/10/21/atcoder-ti-jie-gcd-on-blackboard/</id>
     <published>2025-10-20T23:40:05.000Z</published>
-    <updated>2026-01-27T09:49:45.516Z</updated>
+    <updated>2026-02-14T13:03:02.297Z</updated>
     
     
       
@@ -523,93 +608,6 @@
     <category term="前缀和" scheme="https://ricky2333.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
     <category term="gcd" scheme="https://ricky2333.github.io/tags/gcd/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AtCoder题解｜Flipping Signs</title>
-    <link href="https://ricky2333.github.io/2025/10/09/atcoder-ti-jie-flipping-signs/"/>
-    <id>https://ricky2333.github.io/2025/10/09/atcoder-ti-jie-flipping-signs/</id>
-    <published>2025-10-09T04:09:29.000Z</published>
-    <updated>2026-01-27T09:50:35.588Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-125D-Flipping-Signs&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-125D-Flipping-Signs&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 125D</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-    <category term="思维" scheme="https://ricky2333.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF题解｜Challenging Cliffs</title>
-    <link href="https://ricky2333.github.io/2025/09/26/cf-ti-jie-challenging-cliffs/"/>
-    <id>https://ricky2333.github.io/2025/09/26/cf-ti-jie-challenging-cliffs/</id>
-    <published>2025-09-26T10:03:37.000Z</published>
-    <updated>2026-01-27T09:51:11.954Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Codeforces题解｜1537C-Challenging-Cliffs&quot;&gt;&lt;a href=&quot;#Codeforces题解｜1537C-Challenging-Cliffs&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Codeforces题解" scheme="https://ricky2333.github.io/categories/Codeforces%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="思维" scheme="https://ricky2333.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
-    
-    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ultra-Fast Mathematician</title>
-    <link href="https://ricky2333.github.io/2025/09/17/cf-ti-jie-ultra-fast-mathematician/"/>
-    <id>https://ricky2333.github.io/2025/09/17/cf-ti-jie-ultra-fast-mathematician/</id>
-    <published>2025-09-17T04:29:35.000Z</published>
-    <updated>2026-01-27T09:51:52.630Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Codeforces题解｜61A-Ultra-Fast-Mathematician&quot;&gt;&lt;a href=&quot;#Codeforces题解｜61A-Ultra-Fast-Mathematician&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Codeforces题解" scheme="https://ricky2333.github.io/categories/Codeforces%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="异或" scheme="https://ricky2333.github.io/tags/%E5%BC%82%E6%88%96/"/>
-    
-    <category term="Codeforces" scheme="https://ricky2333.github.io/tags/Codeforces/"/>
     
   </entry>
   
