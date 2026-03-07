@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2026-02-14T13:02:02.298Z</updated>
+  <updated>2026-02-16T15:22:35.889Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,105 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AI工坊｜Claude Code 指北</title>
+    <link href="https://ricky2333.github.io/2026/02/16/ai-gong-fang-claude-code-zhi-bei/"/>
+    <id>https://ricky2333.github.io/2026/02/16/ai-gong-fang-claude-code-zhi-bei/</id>
+    <published>2026-02-16T06:30:00.000Z</published>
+    <updated>2026-02-16T15:22:35.889Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;Claude Code 是 &lt;a href=&quot;https://www.anthropic.com/&quot;&gt;Anthropic&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="AI工坊" scheme="https://ricky2333.github.io/categories/AI%E5%B7%A5%E5%9D%8A/"/>
+    
+    
+    <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI Coding" scheme="https://ricky2333.github.io/tags/AI-Coding/"/>
+    
+    <category term="Claude Code" scheme="https://ricky2333.github.io/tags/Claude-Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AI工坊｜Claude Code部署</title>
+    <link href="https://ricky2333.github.io/2026/02/16/ai-gong-fang-claude-code-bu-shu/"/>
+    <id>https://ricky2333.github.io/2026/02/16/ai-gong-fang-claude-code-bu-shu/</id>
+    <published>2026-02-16T05:58:33.000Z</published>
+    <updated>2026-02-16T07:21:00.241Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;本文使用设备&lt;/strong&gt;：MacBook Pro (M1 Pro, 16GB)，macOS Monterey 12.3.1，仅供参考&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AI工坊" scheme="https://ricky2333.github.io/categories/AI%E5%B7%A5%E5%9D%8A/"/>
+    
+    
+    <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI Coding" scheme="https://ricky2333.github.io/tags/AI-Coding/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
+    
+    <category term="AI工具" scheme="https://ricky2333.github.io/tags/AI%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AI手记｜Matt Shumer博客</title>
+    <link href="https://ricky2333.github.io/2026/02/14/ai-shou-ji-matt-shumer-zui-xin-bo-ke/"/>
+    <id>https://ricky2333.github.io/2026/02/14/ai-shou-ji-matt-shumer-zui-xin-bo-ke/</id>
+    <published>2026-02-14T14:14:53.000Z</published>
+    <updated>2026-02-14T15:49:26.882Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;XXX&quot;&gt;&lt;a href=&quot;#XXX&quot; class=&quot;headerlink&quot; title=&quot;XXX&quot;&gt;&lt;/a&gt;XXX&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;📕链接：&lt;a href=&quot;&quot;&gt;传送门🔗&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原博客链接：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="AI手记" scheme="https://ricky2333.github.io/categories/AI%E6%89%8B%E8%AE%B0/"/>
+    
+    
+    <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
+    
+    <category term="AI手记" scheme="https://ricky2333.github.io/tags/AI%E6%89%8B%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>AI手记｜达沃斯论坛2026</title>
     <link href="https://ricky2333.github.io/2026/02/14/ai-shou-ji-da-wo-si-lun-tan-2026/"/>
     <id>https://ricky2333.github.io/2026/02/14/ai-shou-ji-da-wo-si-lun-tan-2026/</id>
     <published>2026-02-14T12:32:10.000Z</published>
-    <updated>2026-02-14T13:02:02.298Z</updated>
+    <updated>2026-02-14T14:40:05.729Z</updated>
     
     
       
@@ -37,11 +131,38 @@
     <category term="AI手记" scheme="https://ricky2333.github.io/categories/AI%E6%89%8B%E8%AE%B0/"/>
     
     
-    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
-    
     <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
+    
     <category term="Agent" scheme="https://ricky2333.github.io/tags/Agent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高中信技｜必修一章节概要</title>
+    <link href="https://ricky2333.github.io/2026/02/10/gao-zhong-xin-xi-ji-zhu-bi-xiu-yi-zhang-jie-gai-yao/"/>
+    <id>https://ricky2333.github.io/2026/02/10/gao-zhong-xin-xi-ji-zhu-bi-xiu-yi-zhang-jie-gai-yao/</id>
+    <published>2026-02-10T08:09:43.000Z</published>
+    <updated>2026-02-16T08:19:19.315Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;高中信息技术必修一章节概要&quot;&gt;&lt;a href=&quot;#高中信息技术必修一章节概要&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="高中信息技术" scheme="https://ricky2333.github.io/categories/%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="高中信息技术" scheme="https://ricky2333.github.io/tags/%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="必修一" scheme="https://ricky2333.github.io/tags/%E5%BF%85%E4%BF%AE%E4%B8%80/"/>
     
   </entry>
   
@@ -66,9 +187,9 @@
     
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
-    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
-    
     <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
   </entry>
   
@@ -95,9 +216,9 @@
     
     <category term="CS50" scheme="https://ricky2333.github.io/tags/CS50/"/>
     
-    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
-    
     <category term="Python" scheme="https://ricky2333.github.io/tags/Python/"/>
+    
+    <category term="C" scheme="https://ricky2333.github.io/tags/C/"/>
     
   </entry>
   
@@ -122,9 +243,9 @@
     <category term="科研经验" scheme="https://ricky2333.github.io/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
     
     
-    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
-    
     <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
     
     <category term="科研经验" scheme="https://ricky2333.github.io/tags/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
     
@@ -488,126 +609,6 @@
     <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
     
     <category term="异或" scheme="https://ricky2333.github.io/tags/%E5%BC%82%E6%88%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AtCoder题解｜Unification</title>
-    <link href="https://ricky2333.github.io/2025/11/18/atcoder-ti-jie-unification/"/>
-    <id>https://ricky2333.github.io/2025/11/18/atcoder-ti-jie-unification/</id>
-    <published>2025-11-18T12:21:55.000Z</published>
-    <updated>2026-01-27T09:48:11.534Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-120C-Unification&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-120C-Unification&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 120C</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-    <category term="stack" scheme="https://ricky2333.github.io/tags/stack/"/>
-    
-    <category term="栈" scheme="https://ricky2333.github.io/tags/%E6%A0%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AtCoder题解｜Skip</title>
-    <link href="https://ricky2333.github.io/2025/11/10/atcoder-ti-jie-skip/"/>
-    <id>https://ricky2333.github.io/2025/11/10/atcoder-ti-jie-skip/</id>
-    <published>2025-11-10T03:52:26.000Z</published>
-    <updated>2026-01-27T09:48:35.378Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-109B-Skip&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-109B-Skip&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 109B Skip&quot;&gt;&lt;/a&gt;AtCoder题解｜ABC</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-    <category term="gcd" scheme="https://ricky2333.github.io/tags/gcd/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AtCoder题解｜Pyramid</title>
-    <link href="https://ricky2333.github.io/2025/11/01/atcoder-ti-jie-pyramid/"/>
-    <id>https://ricky2333.github.io/2025/11/01/atcoder-ti-jie-pyramid/</id>
-    <published>2025-11-01T06:32:32.000Z</published>
-    <updated>2026-01-27T09:55:35.639Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-112C-Pyramid&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-112C-Pyramid&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 112C</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-    <category term="枚举" scheme="https://ricky2333.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ABC｜GCD on Blackboard</title>
-    <link href="https://ricky2333.github.io/2025/10/21/atcoder-ti-jie-gcd-on-blackboard/"/>
-    <id>https://ricky2333.github.io/2025/10/21/atcoder-ti-jie-gcd-on-blackboard/</id>
-    <published>2025-10-20T23:40:05.000Z</published>
-    <updated>2026-02-14T13:03:02.297Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-125C-GCD-on-Blackboard&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-125C-GCD-on-Blackboard&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 125C</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-    <category term="前缀和" scheme="https://ricky2333.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
-    
-    <category term="gcd" scheme="https://ricky2333.github.io/tags/gcd/"/>
     
   </entry>
   
