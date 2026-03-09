@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2026-03-07T15:22:50.384Z</updated>
+  <updated>2026-03-09T05:28:03.297Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AI手记｜教非工科学长Vibe Coding学到的...</title>
+    <link href="https://ricky2333.github.io/2026/03/09/ai-shou-ji-jiao-xue-chang-vibe-coding-xue-dao-de/"/>
+    <id>https://ricky2333.github.io/2026/03/09/ai-shou-ji-jiao-xue-chang-vibe-coding-xue-dao-de/</id>
+    <published>2026-03-09T05:02:35.000Z</published>
+    <updated>2026-03-09T05:28:03.297Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;AI手记｜教学长Vibe-Coding学到的三件事&quot;&gt;&lt;a href=&quot;#AI手记｜教学长Vibe-Coding学到的三件事&quot; class=&quot;headerlink&quot; title=&quot;AI手记｜教学长Vibe</summary>
+        
+      
+    
+    
+    
+    <category term="AI手记" scheme="https://ricky2333.github.io/categories/AI%E6%89%8B%E8%AE%B0/"/>
+    
+    
+    <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
+    
+    <category term="Vibe Coding" scheme="https://ricky2333.github.io/tags/Vibe-Coding/"/>
+    
+  </entry>
   
   <entry>
     <title>AI手记｜AI帮你做旅游攻略</title>
@@ -37,9 +66,9 @@
     <category term="AI手记" scheme="https://ricky2333.github.io/categories/AI%E6%89%8B%E8%AE%B0/"/>
     
     
-    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
-    
     <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
     
   </entry>
   
@@ -96,13 +125,13 @@
     <category term="AI工坊" scheme="https://ricky2333.github.io/categories/AI%E5%B7%A5%E5%9D%8A/"/>
     
     
-    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
-    
     <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
     <category term="AI Coding" scheme="https://ricky2333.github.io/tags/AI-Coding/"/>
     
     <category term="AI工具" scheme="https://ricky2333.github.io/tags/AI%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
     
   </entry>
   
@@ -127,9 +156,9 @@
     <category term="AI手记" scheme="https://ricky2333.github.io/categories/AI%E6%89%8B%E8%AE%B0/"/>
     
     
-    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
-    
     <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
     
     <category term="AI手记" scheme="https://ricky2333.github.io/tags/AI%E6%89%8B%E8%AE%B0/"/>
     
@@ -156,9 +185,9 @@
     <category term="AI手记" scheme="https://ricky2333.github.io/categories/AI%E6%89%8B%E8%AE%B0/"/>
     
     
-    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
-    
     <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
     
     <category term="Agent" scheme="https://ricky2333.github.io/tags/Agent/"/>
     
@@ -268,9 +297,9 @@
     <category term="科研经验" scheme="https://ricky2333.github.io/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
     
     
-    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
-    
     <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
     
     <category term="科研经验" scheme="https://ricky2333.github.io/tags/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
     
@@ -576,35 +605,6 @@
     <category term="gcd" scheme="https://ricky2333.github.io/tags/gcd/"/>
     
     <category term="stack" scheme="https://ricky2333.github.io/tags/stack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AtCoder题解｜XXOR</title>
-    <link href="https://ricky2333.github.io/2025/11/27/atcoder-ti-jie-xxor/"/>
-    <id>https://ricky2333.github.io/2025/11/27/atcoder-ti-jie-xxor/</id>
-    <published>2025-11-27T06:31:03.000Z</published>
-    <updated>2026-01-27T09:47:53.038Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-117D-XXOR&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-117D-XXOR&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 117D XXOR&quot;&gt;&lt;/a&gt;AtCoder题解｜ABC</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-    <category term="异或" scheme="https://ricky2333.github.io/tags/%E5%BC%82%E6%88%96/"/>
     
   </entry>
   
