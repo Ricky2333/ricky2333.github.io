@@ -6,7 +6,7 @@
   <link href="https://ricky2333.github.io/atom.xml" rel="self"/>
   
   <link href="https://ricky2333.github.io/"/>
-  <updated>2026-05-12T05:58:28.675Z</updated>
+  <updated>2026-05-15T08:53:07.443Z</updated>
   <id>https://ricky2333.github.io/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AI巨头全景｜国内外主要 AI 公司、负责人和代表产品</title>
+    <link href="https://ricky2333.github.io/2026/05/15/ai-ju-tou-quan-jing-guo-nei-wai-zhu-yao-ai-gong-si-fu-ze-ren-he-dai-biao-chan-pin/"/>
+    <id>https://ricky2333.github.io/2026/05/15/ai-ju-tou-quan-jing-guo-nei-wai-zhu-yao-ai-gong-si-fu-ze-ren-he-dai-biao-chan-pin/</id>
+    <published>2026-05-15T02:00:00.000Z</published>
+    <updated>2026-05-15T08:53:07.443Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;大家好，我是 Ricky X。&lt;/p&gt;
+&lt;p&gt;随着AI大模型、相关应用越来越多，不知道你有没有遇到过这种情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;知道 ChatGPT，但搞不清 GPT-5.5 和 Codex 是什么关系？&lt;/li&gt;
+&lt;li&gt;听说 Claude Code</summary>
+        
+      
+    
+    
+    
+    <category term="AI观察" scheme="https://ricky2333.github.io/categories/AI%E8%A7%82%E5%AF%9F/"/>
+    
+    
+    <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI巨头" scheme="https://ricky2333.github.io/tags/AI%E5%B7%A8%E5%A4%B4/"/>
+    
+    <category term="AI行业观察" scheme="https://ricky2333.github.io/tags/AI%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>AI重构了我的工作流｜Git</title>
     <link href="https://ricky2333.github.io/2026/05/12/ai-gong-zuo-liu-cc-jie-guan-github/"/>
     <id>https://ricky2333.github.io/2026/05/12/ai-gong-zuo-liu-cc-jie-guan-github/</id>
     <published>2026-05-12T02:00:00.000Z</published>
-    <updated>2026-05-12T05:58:28.675Z</updated>
+    <updated>2026-05-12T06:09:33.273Z</updated>
     
     
       
@@ -214,9 +247,9 @@
     
     <category term="人工智能" scheme="https://ricky2333.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
-    <category term="AI工具" scheme="https://ricky2333.github.io/tags/AI%E5%B7%A5%E5%85%B7/"/>
-    
     <category term="AI Coding" scheme="https://ricky2333.github.io/tags/AI-Coding/"/>
+    
+    <category term="AI工具" scheme="https://ricky2333.github.io/tags/AI%E5%B7%A5%E5%85%B7/"/>
     
     <category term="AI" scheme="https://ricky2333.github.io/tags/AI/"/>
     
@@ -570,35 +603,6 @@
     <category term="模拟" scheme="https://ricky2333.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
     
     <category term="多级排序" scheme="https://ricky2333.github.io/tags/%E5%A4%9A%E7%BA%A7%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AtCoder｜Grid Compression</title>
-    <link href="https://ricky2333.github.io/2025/12/16/atcoder-ti-jie-grid-compression/"/>
-    <id>https://ricky2333.github.io/2025/12/16/atcoder-ti-jie-grid-compression/</id>
-    <published>2025-12-16T08:43:07.000Z</published>
-    <updated>2026-01-27T09:45:03.876Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AtCoder题解｜ABC-107B-Grid-Compression&quot;&gt;&lt;a href=&quot;#AtCoder题解｜ABC-107B-Grid-Compression&quot; class=&quot;headerlink&quot; title=&quot;AtCoder题解｜ABC 107B</summary>
-        
-      
-    
-    
-    
-    <category term="AtCoder题解" scheme="https://ricky2333.github.io/categories/AtCoder%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="信息奥赛" scheme="https://ricky2333.github.io/tags/%E4%BF%A1%E6%81%AF%E5%A5%A5%E8%B5%9B/"/>
-    
-    <category term="AtCoder" scheme="https://ricky2333.github.io/tags/AtCoder/"/>
-    
-    <category term="模拟" scheme="https://ricky2333.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
     
   </entry>
   
